@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Google Font API */
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700");
+// /* Icon Font */
+// @import "font-awesome";
+
+// /* YAML Framework */
+@import "yaml/yaml_globals",
+		"yaml/mixins/yaml_mixins",
+
+		"yaml/core/base",
+		"yaml/navigation/hlist",
+		"yaml/addons/accessible-tabs",
+		"yaml/forms/gray-theme",
+		"yaml/screen/typography";
+
+@media screen and (max-width: 760px) {
+
+	.linearize-grids-1 {
+		@include linearize-grids();
+	}
+	.linearize-forms-1 {
+		@include linearize-columns();
+	}
+	.linearize-all-1 {
+		@include linearize-grids-and-columns();
+	}
+
+	.linearize-form {
+		@include linearize-form();
+	}
+
+
+	.cf {
+		@include yaml-clearfix();
+	}
+}

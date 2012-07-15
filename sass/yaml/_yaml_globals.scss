@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////
+//
+// YAML Core
+//
+////////////////////////////////////////////////////////////////////
+
+// Columns Module
+// ---------------------------------
+$default-column-width		: 20%;
+$default-cbox-padding		: 10px;
+
+// Grids Module
+// ---------------------------------
+$default-rounding-tolerance	: -5px;
+$default-gbox-padding		: 10px;
+
+////////////////////////////////////////////////////////////////////
+//
+// Typography Module
+//
+////////////////////////////////////////////////////////////////////
+
+// Font Settings
+// ---------------------------------
+$font-sans					: "Droid Sans", Arial, Helvetica, sans-serif;
+$font-serif					: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+$font-console				: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+
+// Color Settings
+// ---------------------------------
+// standard typography colors
+$text-color					: #444;
+$headings-color				: #161e21;
+$blockquote-text-color		: #666;
+$blockquote-bg-color		: transparent;
+$pre-text-color				: #800;
+$kbd-text-color				: #666;
+$mark-text-color			: #000;
+$mark-bg-color				: #ff0;
+
+// link colors
+$link-text-color			: #4d87c7;
+$link-bg-color				: transparent;
+$link-focus-text-color		: #fff;
+$link-focus-bg-color		: #4d87c7;
+
+$hr-color					: #eee;
+
+// special colors
+$highlight-text-color		: #c30;
+$dimmed-text-color			: #888;
+
+// Vertical Rhythm
+// ---------------------------------------------------
+// font values have to be defined in [px] without unit
+$browser-default-font-size	: 16;
+$base-font-size				: 14;
+$base-line-height			: 21;
+
+$h1-font-size				: 49;
+$h2-font-size				: 35;
+$h3-font-size				: 24;
+$h4-font-size				: 21;
+$h5-font-size				: 18;
+$h6-font-size				: 14;
+$text-big-font-size			: 16;
+$text-small-font-size		: 12;
+
+// scale factors (don't change - unless you know what you do)
+$line-height				: $base-line-height / $base-font-size;
+$h1-font-scale				: $h1-font-size / $base-font-size;
+$h2-font-scale				: $h2-font-size / $base-font-size;
+$h3-font-scale				: $h3-font-size / $base-font-size;
+$h4-font-scale				: $h4-font-size / $base-font-size;
+$h5-font-scale				: $h5-font-size / $base-font-size;
+$h6-font-scale				: $h6-font-size / $base-font-size;
+$text-font-scale			: 1;
+$text-big-font-scale		: $text-big-font-size / $base-font-size;
+$text-small-font-scale		: $text-small-font-size / $base-font-size;

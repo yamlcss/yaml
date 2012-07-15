@@ -1,0 +1,165 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * Blueprint CSS port for YAML - 24 columns
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         v4.0.1
+ * @revision        $Revision: 724 $
+ * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sa, 03 Mrz 2012) $
+ */
+.ym-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ym-gbox {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+[class*="ym-push-"],
+[class*="ym-pull-"] {
+  position: relative;
+}
+
+.ym-span-1 {
+  width: 8.333%;
+}
+
+.ym-span-2 {
+  width: 16.667%;
+}
+
+.ym-span-3 {
+  width: 25%;
+}
+
+.ym-span-4 {
+  width: 33.333%;
+}
+
+.ym-span-5 {
+  width: 41.667%;
+}
+
+.ym-span-6 {
+  width: 50%;
+}
+
+.ym-span-7 {
+  width: 58.333%;
+}
+
+.ym-span-8 {
+  width: 66.667%;
+}
+
+.ym-span-9 {
+  width: 75%;
+}
+
+.ym-span-10 {
+  width: 83.333%;
+}
+
+.ym-span-11 {
+  width: 91.667%;
+}
+
+.ym-span-12 {
+  width: 100%;
+}
+
+.ym-push-1 {
+  left: 8.333%;
+}
+
+.ym-push-2 {
+  left: 16.667%;
+}
+
+.ym-push-3 {
+  left: 25%;
+}
+
+.ym-push-4 {
+  left: 33.333%;
+}
+
+.ym-push-5 {
+  left: 41.667%;
+}
+
+.ym-push-6 {
+  left: 50%;
+}
+
+.ym-push-7 {
+  left: 58.333%;
+}
+
+.ym-push-8 {
+  left: 66.667%;
+}
+
+.ym-push-9 {
+  left: 75%;
+}
+
+.ym-push-10 {
+  left: 83.333%;
+}
+
+.ym-push-11 {
+  left: 91.667%;
+}
+
+.ym-pull-1 {
+  left: -8.333%;
+}
+
+.ym-pull-2 {
+  left: -16.667%;
+}
+
+.ym-pull-3 {
+  left: -25%;
+}
+
+.ym-pull-4 {
+  left: -33.333%;
+}
+
+.ym-pull-5 {
+  left: -41.667%;
+}
+
+.ym-pull-6 {
+  left: -50%;
+}
+
+.ym-pull-7 {
+  left: -58.333%;
+}
+
+.ym-pull-8 {
+  left: -66.667%;
+}
+
+.ym-pull-9 {
+  left: -75%;
+}
+
+.ym-pull-10 {
+  left: -83.333%;
+}
+
+.ym-pull-11 {
+  left: -91.667%;
+}
