@@ -36,7 +36,7 @@
     outline: 0 none;
     text-decoration: none;
   }
-  .jquery_tabs ul.tabs-list li.current a:focus, .jquery_tabs ul.tabs-list li.current a:hover, .jquery_tabs ul.tabs-list li.current a:active {
+  .jquery_tabs ul.tabs-list li.current a, .jquery_tabs ul.tabs-list li.current a:focus, .jquery_tabs ul.tabs-list li.current a:hover, .jquery_tabs ul.tabs-list li.current a:active {
     background: #fff;
     border: 1px #ccc solid;
     border-radius: 0.2em 0.2em 0 0;
@@ -97,8 +97,7 @@
   .jquery_tabs .tabs-list {
     display: none !important;
   }
-  .jquery_tabs .tabbody,
-  .jquery_tabs .tabhead {
+  .jquery_tabs .tabbody, .jquery_tabs .tabhead {
     display: block !important;
   }
 }

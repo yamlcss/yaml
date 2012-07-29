@@ -37,11 +37,14 @@
   }
 
   .vcard {
-    background: #f8f8ec url(images/microformat/hcard.png) 5px 5px no-repeat !important;
+    background-color: #f8f8ec;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    background: #f8f8ec url(icons/hcard.png) 5px 5px no-repeat !important;
   }
   .vcard a {
     padding-left: 11px;
-    background: url(images/microformat/external_link.png) top left no-repeat;
+    background: url(icons/external_link.png) top left no-repeat;
     color: #679A06;
   }
   .vcard .adr {
@@ -53,26 +56,26 @@
   }
 
   .vevent {
-    background: #f8f8ec url(images/microformat/hcalendar.png) 5px 5px no-repeat !important;
+    background: #f8f8ec url(icons/hcalendar.png) 5px 5px no-repeat !important;
   }
 
   .vevent a {
     padding-left: 11px;
-    background: url(images/microformat/external_link.png) top left no-repeat;
+    background: url(icons/external_link.png) top left no-repeat;
     color: #679A06;
   }
-  .vevent a p {
+  .vevent p {
     margin: 0;
   }
-  .vevent a .description {
+  .vevent .description {
     display: block;
     margin-top: 1em;
   }
-  .vevent a .location {
+  .vevent .location {
     display: block;
     color: #679A06;
   }
-  .vevent a .summary {
+  .vevent .summary {
     display: block;
     color: #679A06;
     font-weight: bold;
@@ -81,59 +84,59 @@
   /* XFN relationship */
   a.xfnRelationship {
     padding-right: 26px;
-    background-image: url(images/microformat/xfn/xfn-small.png);
+    background-image: url(icons/xfn/xfn-small.png);
     background-repeat: no-repeat;
     background-position: right;
   }
   a.xfnRelationship[rel~="colleague"], a.xfnRelationship[rel~="co-worker"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-colleague.png);
+    background-image: url(icons/xfn/xfn-colleague.png);
   }
   a.xfnRelationship[rel~="met"] {
     padding-right: 32px;
-    background-image: url(images/microformat/icon-xfn.png);
+    background-image: url(icons/icon-xfn.png);
   }
   a.xfnRelationship[rel~="colleague"][rel~="met"], a.xfnRelationship[rel~="co-worker"][rel~="met"] {
     padding-right: 26px;
-    background-image: url(images/microformat/xfn/xfn-colleague-met.png);
+    background-image: url(icons/xfn/xfn-colleague-met.png);
   }
   a.xfnRelationship[rel~="friend"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-friend.png);
+    background-image: url(icons/xfn/xfn-friend.png);
   }
   a.xfnRelationship[rel~="friend"][rel~="met"] {
     padding-right: 26px;
-    background-image: url(images/microformat/xfn/xfn-friend-met.png);
+    background-image: url(icons/xfn/xfn-friend-met.png);
   }
   a.xfnRelationship[rel~="sweetheart"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-sweetheart.png);
+    background-image: url(icons/xfn/xfn-sweetheart.png);
   }
   a.xfnRelationship[rel~="sweetheart"][rel~="met"] {
     padding-right: 26px;
-    background-image: url(images/microformat/xfn/xfn-sweetheart-met.png);
+    background-image: url(icons/xfn/xfn-sweetheart-met.png);
   }
   a.xfnRelationship[rel~="child"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-child.png);
+    background-image: url(icons/xfn/xfn-child.png);
   }
   a.xfnRelationship[rel~="parent"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-parent.png);
+    background-image: url(icons/xfn/xfn-parent.png);
   }
   a.xfnRelationship[rel~="spouse"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-spouse.png);
+    background-image: url(icons/xfn/xfn-spouse.png);
   }
   a.xfnRelationship[rel~="me"] {
     padding-right: 21px;
-    background-image: url(images/microformat/xfn/xfn-me.png);
+    background-image: url(icons/xfn/xfn-me.png);
   }
 
   /* rel-tag */
   a[rel~="tag"] {
     padding-right: 32px;
-    background-image: url(images/microformat/icon-rel-tag.png);
+    background-image: url(icons/icon-rel-tag.png);
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -141,7 +144,7 @@
   /* geo */
   abbr[class~="geo"] {
     padding-right: 32px;
-    background: url(images/microformat/icon-geo.png) no-repeat right;
+    background: url(icons/icon-geo.png) no-repeat right;
     border: none;
     cursor: default;
   }

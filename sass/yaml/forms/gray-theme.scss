@@ -48,11 +48,9 @@
 
 	.ym-full {
 		.ym-fbox-select select,
-		.ym-fbox-text {
-			input,
-			textarea {
+		.ym-fbox-text input,
+		.ym-fbox-text textarea {
 				width:100%;
-			}
 		}
 	}
 }
@@ -107,7 +105,7 @@
 			padding: 0 0.5em;
 			margin-right: 0;
 		}
-		h3 {
+		h6 {
 			font-size: 100%;
 			color: #000;
 			margin: 1em 0 1em 1em;

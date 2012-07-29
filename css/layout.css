@@ -481,7 +481,6 @@
 @media all {
   /* title */
   .ym-vtitle {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 100%;
     width: 90%;
@@ -635,7 +634,6 @@
     position: relative;
     line-height: 1em;
     background: #222;
-    border-bottom: 4px #f00 solid;
   }
   .ym-hlist ul {
     margin: 0;
@@ -751,8 +749,7 @@
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select input,
-  .ym-full .ym-fbox-select select textarea,
+  .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
   .ym-full .ym-fbox-text textarea {
     width: 100%;
@@ -808,7 +805,7 @@
     padding: 0 0.5em;
     margin-right: 0;
   }
-  .ym-form h3 {
+  .ym-form h6 {
     font-size: 100%;
     color: #000;
     margin: 1em 0 1em 1em;

@@ -55,8 +55,8 @@
 					}
 				}
 
-				&.current a {
-					&:focus, &:hover, &:active {
+				&.current {
+					a,a:focus, a:hover, a:active {
 						background:#fff;
 						border:1px #ccc solid;
 						border-radius:0.2em 0.2em 0 0;

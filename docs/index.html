@@ -1626,8 +1626,10 @@ body &gt; header { min-width: 760px; }
 				<div class="ym-gbox-right">
 					<h4>Progressive Linearization</h4>
 					<p>Here's a code-snippet for  linearization of the <em>default</em> and <em>columnar</em> form-style at a viewport size, lower then 760px. Forms get linearized to stacked style and element widths are normalized to 100% to fit  better on small screens.</p>
-					<div class="box info"><p></p><strong>Note:</strong> This code snippet assumes that all form elements are using the CSS3 box model: <em>border-box</em> (<code>box-sizing: border-box;</code>). Otherwise, the element width might have to be adjusted.</p>
-<p>If you want further information on how to setup this CSS3 box model, take a  look at the sample implementation in YAMLs default form theme <em>gray-theme.css</em> in folder <em>yaml/forms/</em>.</p></div>
+					<div class="box info">
+						<p><strong>Note:</strong> This code snippet assumes that all form elements are using the CSS3 box model: <em>border-box</em> (<code>box-sizing: border-box;</code>). Otherwise, the element width might have to be adjusted.</p>
+						<p>If you want further information on how to setup this CSS3 box model, take a  look at the sample implementation in YAMLs default form theme <em>gray-theme.css</em> in folder <em>yaml/forms/</em>.</p>
+					</div>
 <pre class="cssCode">
 /* optimize forms on small screens by forcing display mode: full */
 @media screen and ( max-width: 740px )  {

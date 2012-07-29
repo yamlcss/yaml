@@ -28,7 +28,7 @@
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select input, .ym-full .ym-fbox-select select textarea, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
     width: 100%;
   }
 }
@@ -79,7 +79,7 @@
     padding: 0 0.5em;
     margin-right: 0;
   }
-  .ym-form h3 {
+  .ym-form h6 {
     font-size: 100%;
     color: #000;
     margin: 1em 0 1em 1em;

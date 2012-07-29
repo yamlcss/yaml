@@ -18,7 +18,6 @@
  */
 
 /* hCards + hCalendars */
-
 @media all {
 
 	.vcard,
@@ -41,11 +40,14 @@
 	}
 
 	.vcard {
-		background:#f8f8ec url(images/microformat/hcard.png) 5px 5px no-repeat !important;
+		background-color: #f8f8ec;
+		background-repeat: no-repeat;
+		background-position: 5px 5px;
+		background:#f8f8ec url(icons/hcard.png) 5px 5px no-repeat !important;
 
 		a {
 			padding-left:11px;
-			background:url(images/microformat/external_link.png) top left no-repeat;
+			background:url(icons/external_link.png) top left no-repeat;
 			color:#679A06;
 		}
 
@@ -61,13 +63,15 @@
 
 
 	.vevent {
-		background:#f8f8ec url(images/microformat/hcalendar.png) 5px 5px no-repeat !important;
+		background:#f8f8ec url(icons/hcalendar.png) 5px 5px no-repeat !important;
 	}
 
-	.vevent a {
-		padding-left:11px;
-		background:url(images/microformat/external_link.png) top left no-repeat;
-		color:#679A06;
+	.vevent {
+		a {
+			padding-left:11px;
+			background:url(icons/external_link.png) top left no-repeat;
+			color:#679A06;
+		}
 
 		p {
 			margin: 0;
@@ -94,64 +98,64 @@
 
 	a.xfnRelationship {
 		padding-right:26px;
-		background-image:url(images/microformat/xfn/xfn-small.png);
+		background-image:url(icons/xfn/xfn-small.png);
 		background-repeat: no-repeat;
 		background-position: right;
 		&[rel~="colleague"],
 		&[rel~="co-worker"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-colleague.png);
+			background-image:url(icons/xfn/xfn-colleague.png);
 		}
 
 		&[rel~="met"] {
 			padding-right:32px;
-			background-image:url(images/microformat/icon-xfn.png);
+			background-image:url(icons/icon-xfn.png);
 		}
 
 		&[rel~="colleague"][rel~="met"],
 		&[rel~="co-worker"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(images/microformat/xfn/xfn-colleague-met.png);
+			background-image:url(icons/xfn/xfn-colleague-met.png);
 		}
 
 		&[rel~="friend"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-friend.png);
+			background-image:url(icons/xfn/xfn-friend.png);
 		}
 
 		&[rel~="friend"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(images/microformat/xfn/xfn-friend-met.png);
+			background-image:url(icons/xfn/xfn-friend-met.png);
 		}
 
 		&[rel~="sweetheart"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-sweetheart.png);
+			background-image:url(icons/xfn/xfn-sweetheart.png);
 		}
 
 		&[rel~="sweetheart"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(images/microformat/xfn/xfn-sweetheart-met.png);
+			background-image:url(icons/xfn/xfn-sweetheart-met.png);
 		}
 
 		&[rel~="child"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-child.png);
+			background-image:url(icons/xfn/xfn-child.png);
 		}
 
 		&[rel~="parent"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-parent.png);
+			background-image:url(icons/xfn/xfn-parent.png);
 		}
 
 		&[rel~="spouse"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-spouse.png);
+			background-image:url(icons/xfn/xfn-spouse.png);
 		}
 
 		&[rel~="me"] {
 			padding-right:21px;
-			background-image:url(images/microformat/xfn/xfn-me.png);
+			background-image:url(icons/xfn/xfn-me.png);
 		}
 	}
 
@@ -159,7 +163,7 @@
 
 	a[rel~="tag"] {
 		padding-right:32px;
-		background-image:url(images/microformat/icon-rel-tag.png);
+		background-image:url(icons/icon-rel-tag.png);
 		background-repeat: no-repeat;
 		background-position: right;
 	}
@@ -168,7 +172,7 @@
 
 	abbr[class~="geo"] {
 		padding-right:32px;
-		background:url(images/microformat/icon-geo.png) no-repeat right;
+		background:url(icons/icon-geo.png) no-repeat right;
 		border:none;
 		cursor:default;
 	}
