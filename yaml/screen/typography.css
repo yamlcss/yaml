@@ -1,4 +1,3 @@
-@charset "CP850";
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) Uniform design of standard content elements
@@ -331,7 +330,6 @@
     padding: 1.429em;
     margin: 1.5em 0 0 0;
   }
-
   .box > *:first-child {
     margin-top: 0;
   }
@@ -357,15 +355,15 @@
   }
 
   .success {
-    background: #8c8;
+    background: #88cc88;
   }
 
   .warning {
-    background: #cc8;
+    background: #cccc88;
   }
 
   .error {
-    background: #c88;
+    background: #cc8888;
   }
 
   .float-left {
@@ -404,19 +402,29 @@
     border-bottom: 1px #ccc solid;
     margin: 1.357em 0 0 0;
   }
-
   table.narrow {
     margin: 1.429em 0 0 0;
   }
-
-  table.narrow th,
-  table.narrow td {
+  table.narrow th, table.narrow td {
     padding: 0 0.5em;
     line-height: 1.429;
   }
-
   table.bordertable {
     border: 1px #ccc solid;
+  }
+  table.bordertable thead th {
+    background: #e0e0e0;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+  }
+  table.bordertable tbody th[scope="row"] {
+    background: #f0f0f0;
+  }
+  table.bordertable tbody th {
+    border-right: 1px solid #ccc;
+  }
+  table.bordertable tbody td {
+    border-right: 1px solid #ccc;
   }
 
   table caption {
@@ -445,36 +453,18 @@
     border-bottom: 2px #000 solid;
   }
 
-  .bordertable thead th {
-    background: #e0e0e0;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
+  tbody {
+    /* highlight row on mouse over */
   }
-
-  .bordertable tbody th[scope="row"] {
-    background: #f0f0f0;
-  }
-
   tbody th {
     text-align: left;
     border-top: 1px solid #ccc;
     text-align: left;
   }
-
-  .bordertable tbody th {
-    border-right: 1px solid #ccc;
-  }
-
   tbody td {
     text-align: left;
     border-top: 1px solid #ccc;
   }
-
-  .bordertable tbody td {
-    border-right: 1px solid #ccc;
-  }
-
-  /* highlight row on mouse over */
   tbody tr:hover th,
   tbody tr:hover td {
     background: #f8f8f8;

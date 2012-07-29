@@ -4,15 +4,31 @@
 //
 ////////////////////////////////////////////////////////////////////
 
-// Columns Module
+// Disable/Enable Core Modules
+// ---------------------------------
+$default-base-normalization	: true;
+$default-base-floathandling	: true;
+$default-base-columns		: true;
+$default-base-grids			: true;
+$default-base-forms			: true;
+$default-base-accessibility	: true;
+$default-base-print			: true;
+
+// Config: Columns Module
 // ---------------------------------
 $default-column-width		: 20%;
 $default-cbox-padding		: 10px;
 
-// Grids Module
+// Config: Grids Module
 // ---------------------------------
 $default-rounding-tolerance	: -5px;
 $default-gbox-padding		: 10px;
+
+// Config: Print Module
+// ---------------------------------
+$default-print-fontsize		: 10pt;
+$default-print-abbreviation	: true;
+$default-print-href			: true;
 
 ////////////////////////////////////////////////////////////////////
 //
@@ -37,6 +53,12 @@ $pre-text-color				: #800;
 $kbd-text-color				: #666;
 $mark-text-color			: #000;
 $mark-bg-color				: #ff0;
+
+// highlight colors
+$highlight-info-color		: #f4f4f4;
+$highlight-success-color	: #8c8;
+$highlight-warning-color	: #cc8;
+$highlight-error-color		: #c88;
 
 // link colors
 $link-text-color			: #4d87c7;

@@ -1,20 +1,21 @@
-/**
+@if $default-base-forms == true {
+	/**
 	* @section Form Module
-*/
+	*/
 
-// Vertical-Forms - technical base (standard)
-//
-// |-------------------------------|
-// | form                          |
-// |-------------------------------|
-// |   label                       |
-// |   input / select / textarea   |
-// |-------------------------------|
-// | /form                         |
-// |-------------------------------|
-//
-// (en) Styling of forms where both label and input/select/textarea are styled with display:block;
-// (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+	// Vertical-Forms - technical base (standard)
+	//
+	// |-------------------------------|
+	// | form                          |
+	// |-------------------------------|
+	// |   label                       |
+	// |   input / select / textarea   |
+	// |-------------------------------|
+	// | /form                         |
+	// |-------------------------------|
+	//
+	// (en) Styling of forms where both label and input/select/textarea are styled with display:block;
+	// (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
 
 	.ym-form,
 	.ym-form fieldset { overflow:hidden; }
@@ -114,20 +115,20 @@
 		}
 	}
 
-//  Columnar forms display - technical base (optional)
-//
-//  |-------------------------------------------|
-//  | form                                      |
-//  |-------------------------------------------|
-//  |                                           |
-//  |   label   |   input / select / textarea   |
-//  |                                           |
-//  |-------------------------------------------|
-//  | /form                                     |
-//  |-------------------------------------------|
-//
-//  (en) Styling of forms where label floats left of form-elements
-//  (de) Formulargestaltung, bei der die label-Elemente nach links fließen
+	//  Columnar forms display - technical base (optional)
+	//
+	//  |-------------------------------------------|
+	//  | form                                      |
+	//  |-------------------------------------------|
+	//  |                                           |
+	//  |   label   |   input / select / textarea   |
+	//  |                                           |
+	//  |-------------------------------------------|
+	//  | /form                                     |
+	//  |-------------------------------------------|
+	//
+	//  (en) Styling of forms where label floats left of form-elements
+	//  (de) Formulargestaltung, bei der die label-Elemente nach links fließen
 
 	.ym-columnar {
 		// Columnar display
@@ -175,3 +176,4 @@
 	.ym-fbox-select select { width:60%; }
 	.ym-full .ym-fbox-select select { width:94.8%; }
 	.ym-columnar .ym-fbox-select select { width:68.8%; }
+}

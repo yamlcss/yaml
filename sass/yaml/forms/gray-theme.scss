@@ -10,41 +10,51 @@
 // * @revision             $Revision: 729 $
 // * @lastmodified         $Date: 2012-03-03 13:20:39 +0100 (Sat, 03 Mar 2012) $
 // */
-@import "yaml/mixins/css3-mixins";
-@media screen and (min-width: 0px){
-//	/**
-//	* @section general width settings for formular elements in modern browsers
-//	*          switching to CSS3 box modell "border-box" for perfect flexible forms
-//	*
-//	* Styling for: <labels>, <input>, <textarea> and <select>
-//	*
-//	*/
 
-	.ym-form input,
-	.ym-form input,
-	.ym-form textarea,
-	.ym-form select {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-		width:60%;
+@import "yaml/mixins/css3-mixins",
+		"yaml/mixins/yaml-mixins";
+
+@media screen and (min-width: 0px){
+	/**
+	* @section general width settings for formular elements in modern browsers
+	*          switching to CSS3 box modell "border-box" for perfect flexible forms
+	*
+	* Styling for: <labels>, <input>, <textarea> and <select>
+	*
+	*/
+
+	.ym-form {
+		input,
+		textarea,
+		select {
+			@include box-sizing(border-box);
+			width:60%;
+		}
 	}
 
 	.ym-columnar label {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
+		@include box-sizing(border-box);
 	}
 
-	.ym-columnar .ym-fbox-select select,
-	.ym-columnar .ym-fbox-text input,
-	.ym-columnar .ym-fbox-text textarea { width:70%; }
+	.ym-columnar {
+		.ym-fbox-select select,
+		.ym-fbox-text {
+			input,
+			textarea {
+				width:70%;
+			}
+		}
+	}
 
-	.ym-full .ym-fbox-select select,
-	.ym-full .ym-fbox-text input,
-	.ym-full .ym-fbox-text textarea { width:100%; }
+	.ym-full {
+		.ym-fbox-select select,
+		.ym-fbox-text {
+			input,
+			textarea {
+				width:100%;
+			}
+		}
+	}
 }
 
 @media screen, projection {

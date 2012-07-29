@@ -138,3 +138,15 @@
 		.ym-pull-#{$i} { left: -$column_width * $i; }
 	}
 }
+
+//
+// CSS3 Mixins
+//
+
+// BOX SIZING
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing:	$type;
+	-moz-box-sizing:	$type;
+	-ms-box-sizing:		$type;
+	box-sizing:			$type;
+}

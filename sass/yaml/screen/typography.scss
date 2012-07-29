@@ -8,13 +8,10 @@
  // * @link            http://www.yaml.de
  // * @package         yaml
  // * @version         v4.0.1
- // * @revision        $Revision: 724 $
- // * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sa, 03 Mrz 2012) $
  // * @appdef yaml
  // */
 
 @import "yaml/yaml_globals";
-
 
 @media all {
 
@@ -327,10 +324,10 @@
 		color: rgba(0,0,0,.8);
 		padding: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em;
 		margin: $line-height*1em 0 0 0;
-	}
 
-	.box > *:first-child {
-		margin-top: 0;
+		& > *:first-child {
+			margin-top: 0;
+		}
 	}
 
 	.label {
@@ -350,19 +347,19 @@
 	}
 
 	.info {
-		background:#f4f4f4;
+		background:$highlight-info-color;
 	}
 
 	.success {
-		background:#8c8;
+		background:$highlight-success-color;
 	}
 
 	.warning {
-		background:#cc8;
+		background:$highlight-warning-color;
 	}
 
 	.error {
-		background:#c88;
+		background:$highlight-error-color;
 	}
 
 	.float-left {
@@ -401,20 +398,37 @@
 		border-top: 1px #ccc solid;
 		border-bottom: 1px #ccc solid;
 		margin: ($base-line-height - 2 ) / $base-line-height * $line-height * 1em 0 0 0;
-	}
 
-	table.narrow {
-		margin: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em 0 0 0;
-	}
+		&.narrow {
+			margin: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em 0 0 0;
 
-	table.narrow th,
-	table.narrow td {
-		padding: 0 0.5em;
-		line-height: ($base-line-height - 1 ) / $base-line-height * $line-height;
-	}
+			th, td {
+				padding: 0 0.5em;
+				line-height: ($base-line-height - 1 ) / $base-line-height * $line-height;
+			}
+		}
 
-	table.bordertable {
-		border:1px #ccc solid;
+		&.bordertable {
+			border:1px #ccc solid;
+
+			thead th {
+				background:#e0e0e0;
+				border-right:1px #ccc solid;
+				border-bottom:1px #ccc solid;
+			}
+
+			tbody {
+				th[scope="row"] {
+					background:#f0f0f0;
+				}
+				th {
+					border-right:1px solid #ccc;
+				}
+				td {
+					border-right:1px solid #ccc;
+				}
+			}
+		}
 	}
 
 	table caption {
@@ -443,38 +457,22 @@
 		border-bottom:2px #000 solid;
 	}
 
-	.bordertable thead th {
-		background:#e0e0e0;
-		border-right:1px #ccc solid;
-		border-bottom:1px #ccc solid;
-	}
+	tbody {
+		th {
+			text-align: left;
+			border-top:1px solid #ccc;
+			text-align:left;
+		}
 
-	.bordertable tbody th[scope="row"] {
-		background:#f0f0f0;
-	}
+		td {
+			text-align: left;
+			border-top:1px solid #ccc;
+		}
 
-	tbody th {
-		text-align: left;
-		border-top:1px solid #ccc;
-		text-align:left;
-	}
-
-	.bordertable tbody th {
-		border-right:1px solid #ccc;
-	}
-
-	tbody td {
-		text-align: left;
-		border-top:1px solid #ccc;
-	}
-
-	.bordertable tbody td {
-		border-right:1px solid #ccc;
-	}
-
-	/* highlight row on mouse over */
-	tbody tr:hover th,
-	tbody tr:hover td {
-		background:#f8f8f8;
+		/* highlight row on mouse over */
+		tr:hover th,
+		tr:hover td {
+			background:#f8f8f8;
+		}
 	}
 }

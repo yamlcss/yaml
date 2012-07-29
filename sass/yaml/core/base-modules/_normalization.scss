@@ -1,100 +1,102 @@
-/*
- *  @section Normalisation Module
- */
+@if $default-base-normalization == true {
+	/*
+	 *  @section Normalisation Module
+	 */
 
-// (en) Global reset of paddings and margins for all HTML elements
-// (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente
-* { margin:0; padding:0; }
+	// (en) Global reset of paddings and margins for all HTML elements
+	// (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente
+	* { margin:0; padding:0; }
 
-// (en) Correction:margin/padding reset caused too small select boxes.
-// (de) Korrektur:Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen.
-option { padding-left:0.4em; } // LTR
-select { padding:1px; }
+	// (en) Correction:margin/padding reset caused too small select boxes.
+	// (de) Korrektur:Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen.
+	option { padding-left:0.4em; } // LTR
+	select { padding:1px; }
 
-// (en) Global fix of the Italics bugs in IE 5.x and IE 6
-// (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
-//
-// @bugfix
-// @affected   IE 5.x/Win, IE6
-// @css-for    IE 5.x/Win, IE6
-// @valid      yes
+	// (en) Global fix of the Italics bugs in IE 5.x and IE 6
+	// (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
+	//
+	// @bugfix
+	// @affected   IE 5.x/Win, IE6
+	// @css-for    IE 5.x/Win, IE6
+	// @valid      yes
 
-* html body * { overflow:visible; }
+	* html body * { overflow:visible; }
 
-body {
-	// (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
-	// (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen
-	font-size:100%;
+	body {
+		// (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
+		// (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen
+		font-size:100%;
 
-	// (en) Standard values for colors and text alignment
-	// (de) Vorgabe der Standardfarben und Textausrichtung
-	background:#fff;
-	color:#000;
-	text-align:left; // LTR
-}
+		// (en) Standard values for colors and text alignment
+		// (de) Vorgabe der Standardfarben und Textausrichtung
+		background:#fff;
+		color:#000;
+		text-align:left; // LTR
+	}
 
-// (en) avoid visible outlines on DIV containers in Webkit browsers
-// (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern
-div:target { outline:0 none; }
+	// (en) avoid visible outlines on DIV containers in Webkit browsers
+	// (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern
+	div:target { outline:0 none; }
 
-// (en) HTML 5 - adjusting visual formatting model to block level
-// (en) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente
-article,aside,details,figcaption,figure,
-footer,header,hgroup,nav,section {
-	display:block;
-}
+	// (en) HTML 5 - adjusting visual formatting model to block level
+	// (en) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,nav,section {
+		display:block;
+	}
 
-// (en) HTML5 - default media element styles
-// (de) HTML5 - Standard Eigenschaften für Media-Elemente
-audio,
-canvas,
-video {
-	display: inline-block;
-}
+	// (en) HTML5 - default media element styles
+	// (de) HTML5 - Standard Eigenschaften für Media-Elemente
+	audio,
+	canvas,
+	video {
+		display: inline-block;
+	}
 
-// (en) HTML5 - don't show <audio> element if there aren't controls
-// (de) HTML5 - <audio> ohne Kontrollelemente sollten nicht angezeigt werden
-audio:not([controls]) {
-	display: none;
-}
+	// (en) HTML5 - don't show <audio> element if there aren't controls
+	// (de) HTML5 - <audio> ohne Kontrollelemente sollten nicht angezeigt werden
+	audio:not([controls]) {
+		display: none;
+	}
 
-// (en) HTML5 - add missing styling in IE & old FF for hidden attribute
-// (de) HTML5 - Eigenschaften für das hidden-Attribut in älteren IEs und FF nachrüsten
-[hidden] {
-	display: none;
-}
+	// (en) HTML5 - add missing styling in IE & old FF for hidden attribute
+	// (de) HTML5 - Eigenschaften für das hidden-Attribut in älteren IEs und FF nachrüsten
+	[hidden] {
+		display: none;
+	}
 
-// (en) force consistant appearance of input[type="search"] elements in all browser
-// (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen
-input[type="search"] {
-	-webkit-appearance: textfield;
-}
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
+	// (en) force consistant appearance of input[type="search"] elements in all browser
+	// (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen
+	input[type="search"] {
+		-webkit-appearance: textfield;
+	}
+	input[type="search"]::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
 
-// (en) Clear borders for <fieldset> and <img> elements
-// (de) Rahmen für <fieldset> und <img> Elemente löschen
-fieldset, img { border:0 solid; }
+	// (en) Clear borders for <fieldset> and <img> elements
+	// (de) Rahmen für <fieldset> und <img> Elemente löschen
+	fieldset, img { border:0 solid; }
 
-// (en) new standard values for lists, blockquote, cite and tables
-// (de) Neue Standardwerte für Listen, Zitate und Tabellen
-ul, ol, dl { margin:0 0 1em 1em; } // LTR
-li {
-	line-height:1.5em;
-	margin-left:0.8em; // LTR
-}
+	// (en) new standard values for lists, blockquote, cite and tables
+	// (de) Neue Standardwerte für Listen, Zitate und Tabellen
+	ul, ol, dl { margin:0 0 1em 1em; } // LTR
+	li {
+		line-height:1.5em;
+		margin-left:0.8em; // LTR
+	}
 
-dt { font-weight:bold; }
-dd { margin:0 0 1em 0.8em; } // LTR
+	dt { font-weight:bold; }
+	dd { margin:0 0 1em 0.8em; } // LTR
 
-blockquote { margin:0 0 1em 0.8em; } // LTR
-q { quotes: none; }
+	blockquote { margin:0 0 1em 0.8em; } // LTR
+	q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after { content: ''; content:none }
+	blockquote:before, blockquote:after,
+	q:before, q:after { content: ''; content:none }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 }

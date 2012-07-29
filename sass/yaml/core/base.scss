@@ -14,9 +14,6 @@
 // @link            http://www.yaml.de
 // @package         yaml
 // @version         v4.0.1
-//
-// @revision        $Revision: 726 $
-// @lastmodified    $Date: 2012-03-03 12:21:50 +0100 (Sat, 03 Mar 2012) $
 
 @import "yaml/yaml_globals";
 
@@ -28,6 +25,7 @@
 			"base-modules/forms-core",
 			"base-modules/accessibility";
 }
+
 @media print {
 	@import "base-modules/print-core";
 }

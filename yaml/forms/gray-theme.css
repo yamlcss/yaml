@@ -6,20 +6,12 @@ Syntax error: File to import not found or unreadable: yaml/mixins/yaml-mixins.
                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
         on line 15 of /Users/djesse/webdev/YAML/yaml4-sass/sass/yaml/forms/gray-theme.scss
-        from line 15 of /Users/djesse/webdev/YAML/yaml4-sass/sass/css/layout.scss
 
 Backtrace:
 /Users/djesse/webdev/YAML/yaml4-sass/sass/yaml/forms/gray-theme.scss:15
-/Users/djesse/webdev/YAML/yaml4-sass/sass/css/layout.scss:15
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/import_node.rb:64:in `import'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/import_node.rb:25:in `imported_file'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:149:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:146:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:146:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:146:in `visit_import'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
 /Library/Ruby/Gems/1.8/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
@@ -81,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: yaml/mixins/yaml-mixins.\A               Load paths:\A                 /Users/djesse/webdev/YAML/yaml4-sass/sass\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 15 of /Users/djesse/webdev/YAML/yaml4-sass/sass/yaml/forms/gray-theme.scss\A         from line 15 of /Users/djesse/webdev/YAML/yaml4-sass/sass/css/layout.scss"; }
+  content: "Syntax error: File to import not found or unreadable: yaml/mixins/yaml-mixins.\A               Load paths:\A                 /Users/djesse/webdev/YAML/yaml4-sass/sass\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 15 of /Users/djesse/webdev/YAML/yaml4-sass/sass/yaml/forms/gray-theme.scss"; }
