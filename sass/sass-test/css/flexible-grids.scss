@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * central stylesheet - layout example "flexible-grids"
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         v4.0.1
+ */
+
+/* Google Font API */
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700");
+
+/* YAML Framework Components */
+@import "yaml/yaml_globals",
+		"yaml/mixins/yaml_mixins",
+
+		"yaml/core/base",
+		"yaml/navigation/hlist",
+		"yaml/forms/gray-theme",
+		"yaml/screen/typography",
+		"yaml/screen/screen-FULLPAGE-layout",
+		"yaml/print/print";
