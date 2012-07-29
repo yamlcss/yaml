@@ -465,8 +465,7 @@
     text-align: left;
     border-top: 1px solid #ccc;
   }
-  tbody tr:hover th,
-  tbody tr:hover td {
+  tbody tr:hover th, tbody tr:hover td {
     background: #f8f8f8;
   }
 }
