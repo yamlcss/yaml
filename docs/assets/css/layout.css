@@ -1106,7 +1106,7 @@
     z-index: 1;
   }
   .jquery_tabs ul.tabs-list li {
-    margin: 0 0.3em 0 0;
+    margin: 0 4px 0 0;
     border: 0 none;
     display: inline;
     float: left;
