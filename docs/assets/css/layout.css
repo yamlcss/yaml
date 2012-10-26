@@ -1829,19 +1829,6 @@
   }
 }
 /* Screen Design */
-/**
-* "Yet Another Multicolumn Layout" - YAML CSS Framework
-*
-* (en) screen layout for YAML documentation
-*
-* @copyright       Copyright 2005-2012, Dirk Jesse
-* @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
-*                  YAML-CDL (http://www.yaml.de/license.html)
-* @link            http://www.yaml.de
-* @package         yaml
-* @version         4.0
-* @lastmodified    $Date: 2012-03-03 13:20:39 +0100 (Sat, 03 Mar 2012) $
-*/
 @media screen, projection {
   /**
   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera
