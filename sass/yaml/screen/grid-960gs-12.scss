@@ -12,5 +12,5 @@
  * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sa, 03 Mrz 2012) $
  */
 
-@import "yaml/mixins/yaml_mixins";
+@import "yaml/mixins/yaml_mixins_core";
 @include custom-grid("grid",12, 960px, 10px, 10px);
