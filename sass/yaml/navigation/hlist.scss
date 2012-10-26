@@ -1,5 +1,3 @@
-@import "yaml/mixins/css3-mixins";
-
 @media all {
 	.ym-hlist {
 		// (en) containing floats in IE
@@ -15,7 +13,7 @@
 			padding: 0.5em 1.5em;
 			display:inline; // (en|de) Bugfix:IE - Doubled Float Margin Bug
 			float:left; // LTR
-
+			
 			li {
 				display:inline; // (en|de) Bugfix:IE - Doubled Float Margin Bug
 				float:left; // LTR
@@ -78,7 +76,7 @@
 			border: solid 1px #888;
 			border: solid 1px rgba(255,255,255,.1);
 			outline: none;
-			@include box-shadow(0,1px,3px,rgba(0,0,0,.2),inset);
+			box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 		}
 
 		.ym-searchbutton {
