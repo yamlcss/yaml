@@ -8,6 +8,7 @@
 //                  YAML-CDL (http://www.yaml.de/license.html)
 // @link            http://www.yaml.de
 // @package         yaml
+@import "yaml/mixins/yaml_mixins_core";
 
 @media screen, projection {
 
@@ -74,8 +75,7 @@
 		z-index: 10000;
 		width: 100%;
 		-webkit-box-shadow: 0 0 12px 6px rgba(0,0,0,.5);
-		-moz-box-shadow: 0 0 12px 6px rgba(0,0,0,.5);
-		box-shadow: 0 0 12px 6px rgba(0,0,0,.5);
+				box-shadow: 0 0 12px 6px rgba(0,0,0,.5);
 	}
 
 	/* (en) Layout:width, background, borders */
@@ -98,9 +98,7 @@
 		background: #161e21;
 		color: #fff;
 		text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-		-webkit-box-shadow: inset 0 -32px 64px rgba(0,0,0,.5);
-		-moz-box-shadow: inset 0 -32px 64px rgba(0,0,0,.5);
-		box-shadow: inset 0 -32px 64px rgba(0,0,0,.5);
+		@include ym-box-shadow(0,-32px,64px,rgba(0,0,0,.5),inset);
 
 		/* IE5.5 - IE7 */
 		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF141C1F,EndColorStr=#FF0D1214);
@@ -184,9 +182,7 @@
 
 	#secondary {
 		background: #464b4e;
-		-webkit-box-shadow: inset 0 -24px 48px rgba(0,0,0,.3);
-		-moz-box-shadow: inset 0 -24px 48px rgba(0,0,0,.3);
-		box-shadow: inset 0 -24px 48px rgba(0,0,0,.3);
+		@include ym-box-shadow(0,-24px,48px,rgba(0,0,0,.3),inset);
 		text-shadow: 0px 1px 1px rgba(0,0,0,.8);
 	}
 
@@ -216,9 +212,7 @@
 
 	#sitenav {
 		background: #161e21;
-		-webkit-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		-moz-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
+		@include ym-box-shadow(0,-24px,30px,rgba(255,255,255,.1),inset);
 		border-top: 1px solid rgb(100,100,100);
 		border-top: 1px solid rgba(255,255,255,.1);
 		border-bottom: 1px solid rgb(50,50,50);
@@ -263,9 +257,7 @@
 	}
 
 	.mnav li {
-		-webkit-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		-moz-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
+		@include ym-box-shadow(0,-24px,30px,rgba(255,255,255,.1),inset);
 		overflow: hidden;
 		text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 	}
@@ -323,18 +315,14 @@
 
 	.mnav li strong {
 		color:#fff;
-		-webkit-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		-moz-box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
-		box-shadow: inset 0 -24px 30px rgba(255,255,255,.1);
+		@include ym-box-shadow(0,-24px,30px,rgba(255,255,255,.1),inset);
 	}
 
 	.mnav li a:hover,
 	.mnav li a:focus,
 	.mnav li a:active {
 		color:#fff;
-		-webkit-box-shadow: inset 0 -24px 30px rgba(255,255,255,.2);
-		-moz-box-shadow: inset 0 -24px 30px rgba(255,255,255,.2);
-		box-shadow: inset 0 -24px 30px rgba(255,255,255,.2);
+		@include ym-box-shadow(0,-24px,30px,rgba(255,255,255,.2),inset);
 		background: #800;
 		-webkit-transition: background-color .1s linear;
 		-moz-transition: background-color .1s linear;
@@ -378,9 +366,7 @@
 
 	#overview {
 		background: #eee;
-		-webkit-box-shadow: inset 0 0 48px rgba(0,0,0,.25);
-		-moz-box-shadow: inset 0 0 48px rgba(0,0,0,.25);
-		box-shadow: inset 0 0 48px rgba(0,0,0,.25);
+		@include ym-box-shadow(0,0,48px,rgba(0,0,0,.25),inset);
 		zoom:1;
 	}
 
@@ -397,9 +383,7 @@
 	}
 
 	#examples img {
-		-webkit-box-shadow: 0 0 64px rgba(255,255,255,.3);
-		-moz-box-shadow: 0 0 64px rgba(255,255,255,.3);
-		box-shadow: 0 0 64px rgba(255,255,255,.3);
+		@include ym-box-shadow(0,0,64px,rgba(255,255,255,.3));
 		*width: 99%;
 	}
 
@@ -750,9 +734,7 @@
 	}
 
 	.mnav li {
-		-webkit-box-shadow: inset 0 -10px 30px rgba(255,255,255,.1);
-		-moz-box-shadow: inset 0 -10px 30px rgba(255,255,255,.1);
-		box-shadow: inset 0 -10px 30px rgba(255,255,255,.1);
+		@include ym-box-shadow(0,-10px,30px,rgba(255,255,255,.1),inset);
 	}
 
 	.mnav li a span,

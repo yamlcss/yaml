@@ -677,6 +677,7 @@
     border: solid 1px #888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .ym-searchform .ym-searchbutton {
@@ -1902,7 +1903,6 @@
     z-index: 10000;
     width: 100%;
     -webkit-box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.5);
   }
 
@@ -1925,7 +1925,6 @@
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: inset 0 -32px 64px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0 -32px 64px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 -32px 64px rgba(0, 0, 0, 0.5);
     /* IE5.5 - IE7 */
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF141C1F,EndColorStr=#FF0D1214);
@@ -2009,7 +2008,6 @@
   #secondary {
     background: #464b4e;
     -webkit-box-shadow: inset 0 -24px 48px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: inset 0 -24px 48px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 -24px 48px rgba(0, 0, 0, 0.3);
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
   }
@@ -2042,7 +2040,6 @@
   #sitenav {
     background: #161e21;
     -webkit-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
-    -moz-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
     border-top: 1px solid #646464;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -2087,7 +2084,6 @@
 
   .mnav li {
     -webkit-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
-    -moz-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
     overflow: hidden;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -2148,7 +2144,6 @@
   .mnav li strong {
     color: #fff;
     -webkit-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
-    -moz-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.1);
   }
 
@@ -2157,7 +2152,6 @@
   .mnav li a:active {
     color: #fff;
     -webkit-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.2);
-    -moz-box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.2);
     box-shadow: inset 0 -24px 30px rgba(255, 255, 255, 0.2);
     background: #800;
     -webkit-transition: background-color .1s linear;
@@ -2206,7 +2200,6 @@
   #overview {
     background: #eee;
     -webkit-box-shadow: inset 0 0 48px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: inset 0 0 48px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 0 48px rgba(0, 0, 0, 0.25);
     zoom: 1;
   }
@@ -2225,7 +2218,6 @@
 
   #examples img {
     -webkit-box-shadow: 0 0 64px rgba(255, 255, 255, 0.3);
-    -moz-box-shadow: 0 0 64px rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 64px rgba(255, 255, 255, 0.3);
     *width: 99%;
   }
@@ -2635,7 +2627,6 @@
 
   .mnav li {
     -webkit-box-shadow: inset 0 -10px 30px rgba(255, 255, 255, 0.1);
-    -moz-box-shadow: inset 0 -10px 30px rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 -10px 30px rgba(255, 255, 255, 0.1);
   }
 
