@@ -1,16 +1,12 @@
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- * Blueprint CSS port for YAML - 24 columns
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sa, 03 Mrz 2012) $
- */
+// 
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+// Blueprint CSS port for YAML - 24 columns
+// 
+// @copyright       Copyright 2005-2012, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
 
 @import "yaml/mixins/yaml_mixins_core";
 @include custom-grid("span", 12, 100%, 0, 10px);
