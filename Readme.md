@@ -8,7 +8,7 @@ YAML ist also availabe in a static CSS version, that can be downloaded at: <http
 yaml4-sass: 4.0.3b
 
 ## Overview
-The Sass port is build in a way, that allows you to create a fully customized version of YAML's framework files.
+The Sass port is built in a way that allows you to create a fully customized version of YAML's framework files.
 
 The Sass port creates all CSS files in the following folders:
 
