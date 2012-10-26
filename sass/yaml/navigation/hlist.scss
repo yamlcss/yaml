@@ -1,3 +1,5 @@
+@import "yaml/mixins/yaml_mixins_core";
+
 @media all {
 	.ym-hlist {
 		// (en) containing floats in IE
@@ -76,7 +78,7 @@
 			border: solid 1px #888;
 			border: solid 1px rgba(255,255,255,.1);
 			outline: none;
-			box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+			@include ym-box-shadow(0,1px,3px,rgba(0,0,0,.2),inset);
 		}
 
 		.ym-searchbutton {

@@ -9,4 +9,4 @@
 // @package         yaml
 
 @import "yaml/mixins/yaml_mixins_core";
-@include custom-grid("grid",16, 960px, 10px, 10px);
+@include ym-custom-grid("grid",16, 960px, 10px, 10px);

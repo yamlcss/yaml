@@ -24,13 +24,13 @@
 		input,
 		textarea,
 		select {
-			@include box-sizing(border-box);
+			@include ym-box-sizing(border-box);
 			width:60%;
 		}
 	}
 
 	.ym-columnar label {
-		@include box-sizing(border-box);
+		@include ym-box-sizing(border-box);
 	}
 
 	.ym-columnar {
