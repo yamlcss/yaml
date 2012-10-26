@@ -1,471 +1,97 @@
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- * (en) Uniform design of standard content elements
- * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
- */
-@media all {
-  /*
-  * @section global typography settings
-  *
-  * vertical rhythm settings (based on em-unit)
-  * -------------------------------------------
-  * basefont-size:  14px (87.5%)
-  * line-height  :  21px (factor: 1.5) */
-  /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
-  html * {
-    font-size: 100%;
-  }
+/*
+Syntax error: Undefined mixin 'ym-box-shadow'.
+        on line 289 of /Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss, in `ym-box-shadow'
+        from line 289 of /Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss
 
-  /**
-  * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
-  *
-  * @see: http://webkit.org/blog/67/strange-medium/
-  */
-  textarea,
-  pre,
-  code,
-  kbd,
-  samp,
-  var,
-  tt {
-    font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
-  }
-
-  body {
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
-    /* font-size: 14px; */
-    font-size: 87.5%;
-    color: #444444;
-    /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
-    -webkit-text-size-adjust: 100%;
-  }
-
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Droid Sans", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: #161e21;
-    margin: 0;
-  }
-
-  h1 {
-    /* font-size: 49px; */
-    font-size: 350%;
-    line-height: 0.857;
-    margin: 0.429em 0 0;
-  }
-
-  h2 {
-    /* font-size: 35px; */
-    font-size: 250%;
-    line-height: 1.2;
-    margin: 0.6em 0 0;
-  }
-
-  h3 {
-    /* font-size: 24px; */
-    font-size: 171.429%;
-    line-height: 0.875;
-    margin: 0.875em 0 0;
-  }
-
-  h4 {
-    /* font-size: 21px; */
-    font-size: 150%;
-    line-height: 1;
-    margin: 1em 0 0;
-  }
-
-  h5 {
-    /* font-size: 18px; */
-    font-size: 128.571%;
-    line-height: 1.167;
-    margin: 1.167em 0 0;
-  }
-
-  h6 {
-    font-weight: bold;
-    /* font-size: 14px; */
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 1.5em 0 0;
-  }
-
-  /* --- Lists | Listen  -------------------------------------------------------------------------------- */
-  ul,
-  ol,
-  dl {
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 1.5em 0 1em;
-  }
-
-  ul {
-    list-style-type: disc;
-  }
-
-  ol {
-    list-style-type: decimal;
-  }
-
-  ul ul {
-    list-style-type: circle;
-    margin-top: 0;
-  }
-
-  ol ol {
-    list-style-type: lower-latin;
-    margin-top: 0;
-  }
-
-  ol ul {
-    list-style-type: circle;
-    margin-top: 0;
-  }
-
-  li {
-    font-size: 100%;
-    line-height: 1.5;
-    margin-left: 0.8em;
-  }
-
-  dt {
-    font-weight: bold;
-  }
-
-  dd {
-    margin: 1.5em 0 0 0.8em;
-  }
-
-  /* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
-  p {
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 1.5em 0 0;
-  }
-
-  blockquote, cite, q {
-    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-  }
-
-  blockquote {
-    background: transparent;
-    color: #666666;
-    margin: 1.5em 0 0 1.5em;
-  }
-
-  strong, b {
-    font-weight: bold;
-  }
-
-  em, i {
-    font-style: italic;
-  }
-
-  big {
-    /* font-size: 16px; */
-    font-size: 114.286%;
-    line-height: 1.313;
-  }
-
-  small {
-    /* font-size: 12px; */
-    font-size: 85.714%;
-    line-height: 1.75;
-  }
-
-  pre,
-  code,
-  kbd,
-  tt,
-  samp,
-  var {
-    font-size: 100%;
-  }
-
-  pre {
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 1.5em 0 0;
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  pre, code {
-    color: #880000;
-  }
-
-  kbd, samp, var, tt {
-    color: #666666;
-    font-weight: bold;
-  }
-
-  var, dfn {
-    font-style: italic;
-  }
-
-  acronym, abbr {
-    border-bottom: 1px #aaa dotted;
-    font-variant: small-caps;
-    letter-spacing: .07em;
-    cursor: help;
-  }
-
-  sub,
-  sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-
-  sup {
-    top: -0.5em;
-  }
-
-  sub {
-    bottom: -0.25em;
-  }
-
-  mark {
-    background: yellow;
-    color: black;
-  }
-
-  hr {
-    color: #fff;
-    background: transparent;
-    margin: 0 0 0.75em 0;
-    padding: 0 0 0.679em 0;
-    border: 0;
-    border-bottom: 1px #eeeeee solid;
-  }
-
-  /*--- Links ----------------------------------------------------------------------------------------- */
-  a {
-    color: #4d87c7;
-    background: transparent;
-    text-decoration: none;
-  }
-
-  a:active {
-    outline: none;
-  }
-
-  /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
-  a:hover,
-  a:focus {
-    background-color: #4d87c7;
-    color: white;
-    text-decoration: none;
-  }
-
-  /* --- images ------------------ */
-  img,
-  figure {
-    margin: 0;
-  }
-
-  .flexible {
-    margin-top: 1.5em;
-    max-width: 100%;
-    height: auto;
-  }
-
-  * html .flexible {
-    /* IE6 support */
-    width: 98%;
-    /* 2% space for borders */
-  }
-
-  .bordered {
-    margin-top: 1.5em;
-    border: 2px #eee solid;
-    border: 2px white solid;
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-  }
-
-  /**
-  * ----------------------------------------------------------------------- #
-  *
-  * Generic Content Classes
-  *
-  * (en) standard classes for positioning and highlighting
-  * (de) Standardklassen zur Positionierung und Hervorhebung
-  *
-  * @section content-generic-classes
-  */
-  .highlight {
-    color: #cc3300;
-  }
-
-  .dimmed {
-    color: #888888;
-  }
-
-  .box {
-    border-radius: 0.3em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #888;
-    border-color: rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    color: #444;
-    color: rgba(0, 0, 0, 0.8);
-    padding: 1.429em;
-    margin: 1.5em 0 0 0;
-  }
-  .box > *:first-child {
-    margin-top: 0;
-  }
-
-  .label {
-    font-family: Verdana, Geneva, sans-serif;
-    padding: 1px 6px 2px;
-    display: inline-block;
-    vertical-align: middle;
-    letter-spacing: normal;
-    white-space: nowrap;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background: #06C;
-    color: #fff;
-    font-size: 10px;
-    line-height: 12px;
-  }
-
-  .info {
-    background: #f4f4f4;
-  }
-
-  .success {
-    background: #88cc88;
-  }
-
-  .warning {
-    background: #cccc88;
-  }
-
-  .error {
-    background: #cc8888;
-  }
-
-  .float-left {
-    float: left;
-    display: inline;
-    margin: 1.5em 1em 0 0;
-  }
-
-  .float-right {
-    float: right;
-    display: inline;
-    margin: 1.5em 0 0 1em;
-  }
-
-  .center {
-    display: block;
-    text-align: center;
-    margin: 1.5em auto 0 auto;
-  }
-
-  /**
-  * ------------------------------------------------------------------------------------------------- #
-  *
-  * Tables | Tabellen
-  *
-  * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
-  *
-  * @section content-tables
-  */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    color: #444444;
-    border-top: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
-    margin: 1.357em 0 0 0;
-  }
-  table.narrow {
-    margin: 1.429em 0 0 0;
-  }
-  table.narrow th, table.narrow td {
-    padding: 0 0.5em;
-    line-height: 1.429;
-  }
-  table.bordertable {
-    border: 1px #ccc solid;
-  }
-  table.bordertable thead th {
-    background: #e0e0e0;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
-  }
-  table.bordertable tbody th[scope="row"] {
-    background: #f0f0f0;
-  }
-  table.bordertable tbody th {
-    border-right: 1px solid #ccc;
-  }
-  table.bordertable tbody td {
-    border-right: 1px solid #ccc;
-  }
-
-  table caption {
-    font-variant: small-caps;
-  }
-
-  th, td {
-    line-height: 1.5em;
-    vertical-align: top;
-    padding: 0.714em 0.5em;
-  }
-
-  th *:first-child,
-  td *:first-child {
-    margin-top: 0;
-  }
-
-  th.nowrap,
-  td.nowrap {
-    white-space: nowrap;
-  }
-
-  thead th {
-    text-align: left;
-    color: #000;
-    border-bottom: 2px #000 solid;
-  }
-
-  tbody {
-    /* highlight row on mouse over */
-  }
-  tbody th {
-    text-align: left;
-    border-top: 1px solid #ccc;
-    text-align: left;
-  }
-  tbody td {
-    text-align: left;
-    border-top: 1px solid #ccc;
-  }
-  tbody tr:hover th, tbody tr:hover td {
-    background: #f8f8f8;
-  }
-}
+Backtrace:
+/Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss:289:in `ym-box-shadow'
+/Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss:289
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:249:in `visit_mixin'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:360:in `visit_media'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:30:in `temporary_multipath_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `run'
+/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.9.0/lib/rb-fsevent/fsevent.rb:37:in `call'
+/Library/Ruby/Gems/1.8/gems/rb-fsevent-0.9.0/lib/rb-fsevent/fsevent.rb:37:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'ym-box-shadow'.\A         on line 289 of /Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss, in `ym-box-shadow'\A         from line 289 of /Users/jens/Documents/git/yaml4-sass/sass/yaml/screen/typography.scss"; }

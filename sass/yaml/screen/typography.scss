@@ -7,8 +7,6 @@
  // *                  YAML-CDL (http://www.yaml.de/license.html)
  // * @link            http://www.yaml.de
  // * @package         yaml
- // * @version         v4.0.1
- // * @appdef yaml
  // */
 
 @import "yaml/yaml_globals";
@@ -41,7 +39,7 @@
 	samp,
 	var,
 	tt {
-		font-family: $font-console;
+		font-family: $font-monospace;
 	}
 
 	body {
@@ -288,9 +286,7 @@
 		margin-top: $line-height*1em;
 		border: 2px #eee solid;
 		border: 2px rgba(255,255,255,1) solid;
-		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.25);
-		-moz-box-shadow: 0 0 3px rgba(0,0,0,.25);
-		box-shadow: 0 0 3px rgba(0,0,0,.25);
+		@include ym-box-shadow(0,0,3px,rgba(0,0,0,.25));
 	}
 
 	/**
@@ -317,9 +313,7 @@
 		border-style: solid;
 		border-color: #888;
 		border-color: rgba(0,0,0,.3);
-		-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-		-moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+		@include ym-box-shadow(1px,1px,3px,rgba(0,0,0,.2),inset);
 		color: #444;
 		color: rgba(0,0,0,.8);
 		padding: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em;
@@ -338,7 +332,6 @@
 		letter-spacing: normal;
 		white-space:nowrap;
 		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
 		border-radius: 3px;
 		background: #06C;
 		color: #fff;

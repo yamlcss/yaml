@@ -1,17 +1,4 @@
-@charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700");
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * central stylesheet - layout example "flexible-columns"
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- */
 /* Google Font API */
 /* YAML Framework Components */
 /**
@@ -543,7 +530,6 @@
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .ym-searchform .ym-searchbutton {
@@ -607,9 +593,8 @@
     border: 2px #fff solid;
     margin: 1.5em 0 0 0;
     padding: 0;
-    -webkit-box-shadow: 0 0 4px #ddd;
-    -moz-box-shadow: 0 0 4px #ddd;
-    box-shadow: 0 0 4px #ddd;
+    -webkit-box-shadow: 0 0 4px #dddddd;
+    box-shadow: 0 0 4px #dddddd;
   }
   .ym-form fieldset {
     position: static;
@@ -680,9 +665,8 @@
   }
   .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-box-shadow: inset 0 0 4px #eee;
-    -moz-box-shadow: inset 0 0 4px #eee;
-    box-shadow: inset 0 0 4px #eee;
+    -webkit-box-shadow: inset 0 0 4px #eeeeee;
+    box-shadow: inset 0 0 4px #eeeeee;
   }
   .ym-form optgroup {
     font-style: normal;
@@ -748,11 +732,8 @@
     background-image: linear-gradient(top, #eeeeee, #cccccc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
     border: 1px solid #777;
-    -webkit-border-radius: .2em;
-    -moz-border-radius: .2em;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     color: #333 !important;
     cursor: pointer;
@@ -813,11 +794,8 @@
     font-size: 1.5em;
     margin: 0 1em 0 -1em;
     padding: 0 .2em;
-    -moz-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
-    -moz-border-radius: .15em 0 0 .15em;
-    -webkit-border-radius: .15em 0 0 .15em;
     border-radius: .15em 0 0 .15em;
     pointer-events: none;
   }
@@ -893,7 +871,6 @@
     text-shadow: none;
     position: static;
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
   }
 
@@ -1237,7 +1214,6 @@
     border: 2px #eee solid;
     border: 2px white solid;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   }
 
@@ -1265,9 +1241,8 @@
     border-style: solid;
     border-color: #888;
     border-color: rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     color: #444;
     color: rgba(0, 0, 0, 0.8);
     padding: 1.42857em;
@@ -1285,7 +1260,6 @@
     letter-spacing: normal;
     white-space: nowrap;
     -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background: #06C;
     color: #fff;
@@ -1413,18 +1387,6 @@
     background: #f8f8f8;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default screen stylesheet - PAGE-layout type layout
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- */
 @media screen {
   /* force vertical scrollbar */
   body {
@@ -1605,20 +1567,6 @@
     width: 75%;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default print stylesheet
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sat, 03 Mar 2012) $
- */
 @media print {
   /**
   * @section basic layout preparation

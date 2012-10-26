@@ -3,17 +3,30 @@
 //
 
 // BOX SIZING
-@mixin box-sizing($type: border-box) {
+@mixin ym-box-sizing($type: border-box) {
 	-webkit-box-sizing:	$type;
 	-moz-box-sizing:	$type;
 	-ms-box-sizing:		$type;
 	box-sizing:			$type;
 }
 
+// BOX SHADOW 
+@mixin ym-box-shadow($x: 1px, $y: 1px, $blur: 5px, $color: rgba(0,0,0,.5), $inset: false) {
+ 
+	@if $inset{
+    -webkit-box-shadow: $inset $x $y $blur $color;
+    		box-shadow: $inset $x $y $blur $color;		
+	}
+	@else {
+    -webkit-box-shadow: $x $y $blur $color;
+    		box-shadow: $x $y $blur $color;		
+	}
+}
+
 //
 // Progessive Linearization
 //
-@mixin linearize-grids {
+@mixin ym-linearize-grids {
 	&,
 	& > [class*="ym-g"] {
 		/* linearization for grid module */
@@ -33,7 +46,7 @@
 	}
 }
 
-@mixin linearize-columns {
+@mixin ym-linearize-columns {
 	&,
 	& > [class*="ym-c"] {
 		/* linearization for column module */
@@ -53,7 +66,7 @@
 	}
 }
 
-@mixin linearize-grids-and-columns {
+@mixin ym-linearize-grids-and-columns {
 	&,
 	& > [class*="ym-c"],
 	& > [class*="ym-g"] {
@@ -75,7 +88,7 @@
 	}
 }
 
-@mixin linearize-form {
+@mixin ym-linearize-form {
 	& [class*="ym-fbox"]:not([class*="ym-fbox-check"]) label,
 	& .ym-label,
 	& .ym-message,
@@ -98,7 +111,7 @@
 //
 // Tools
 //
-@mixin yaml-clearfix {
+@mixin ym-clearfix {
 	&:before {
 		content:"";
 		display:table;
@@ -121,7 +134,7 @@
 // YAML4 Custom Grid Generator
 // Generates CSS for custom grids, based on YAML's grid-module
 //
-@mixin custom-grid($prefix, $columns, $width, $margin-left, $margin-right) {
+@mixin ym-custom-grid($prefix, $columns, $width, $margin-left, $margin-right) {
 
 	$column_width	: $width / $columns;
 

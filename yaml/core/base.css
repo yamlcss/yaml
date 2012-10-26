@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  *  "Yet Another Multicolumn Layout" - YAML CSS Framework
  *  (en) YAML core stylesheet
@@ -283,17 +282,22 @@
   .ym-form div {
     position: relative;
   }
-  .ym-form label, .ym-form .ym-message {
+  .ym-form label,
+  .ym-form .ym-message {
     position: relative;
     display: block;
   }
   .ym-form .ym-fbox-check label {
     display: inline;
   }
-  .ym-form input, .ym-form textarea {
+  .ym-form input,
+  .ym-form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"], .ym-form input[type="radio"], .ym-form select, .ym-form label {
+  .ym-form input[type="checkbox"],
+  .ym-form input[type="radio"],
+  .ym-form select,
+  .ym-form label {
     cursor: pointer;
   }
   .ym-form textarea {
@@ -302,11 +306,17 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox-text:before, .ym-form .ym-fbox-select:before, .ym-form .ym-fbox-check:before, .ym-form .ym-fbox-button:before {
+  .ym-form .ym-fbox-text:before,
+  .ym-form .ym-fbox-select:before,
+  .ym-form .ym-fbox-check:before,
+  .ym-form .ym-fbox-button:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox-text:after, .ym-form .ym-fbox-select:after, .ym-form .ym-fbox-check:after, .ym-form .ym-fbox-button:after {
+  .ym-form .ym-fbox-text:after,
+  .ym-form .ym-fbox-select:after,
+  .ym-form .ym-fbox-check:after,
+  .ym-form .ym-fbox-button:after {
     clear: both;
     content: ".";
     display: block;
@@ -314,7 +324,9 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select, .ym-form input, .ym-form textarea {
+  .ym-form select,
+  .ym-form input,
+  .ym-form textarea {
     display: block;
     position: relative;
     width: 58.5%;
@@ -328,21 +340,28 @@
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-fbox-check input:focus, .ym-form .ym-fbox-check input:hover, .ym-form .ym-fbox-check input:active {
+  .ym-form .ym-fbox-check input:focus,
+  .ym-form .ym-fbox-check input:hover,
+  .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
 
-  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select,
+  .ym-full .ym-fbox-text input,
+  .ym-full .ym-fbox-text textarea {
     width: 94.2%;
     margin-right: -3px;
   }
 
-  .ym-columnar .ym-fbox-text label, .ym-columnar .ym-fbox-select label {
+  .ym-columnar .ym-fbox-text label,
+  .ym-columnar .ym-fbox-select label {
     display: inline;
     float: left;
     width: 30%;
   }
-  .ym-columnar .ym-fbox-select select, .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-select select,
+  .ym-columnar .ym-fbox-text input,
+  .ym-columnar .ym-fbox-text textarea {
     float: left;
     width: 67.2%;
     margin-right: -3px;
@@ -354,7 +373,8 @@
     position: absolute;
     top: 0;
   }
-  .ym-columnar .ym-fbox-check input, .ym-columnar .ym-error .ym-message {
+  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
 
@@ -407,7 +427,8 @@
     padding: 0;
     list-style-type: none;
   }
-  .ym-skiplinks .ym-skip:focus, .ym-skiplinks .ym-skip:active {
+  .ym-skiplinks .ym-skip:focus,
+  .ym-skiplinks .ym-skip:active {
     left: 32768px;
     outline: 0 none;
     position: absolute;

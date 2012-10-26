@@ -1,20 +1,3 @@
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * (en) YAML-Addon:Microformats Support
- * (de) YAML-Addon:Unterstützung für Microformate
- *
- * @note            Many thanks to Michael Jendryschik (http://jendryschik.de/) for contribution
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date:2009-07-05 12:18:40 +0200 (So, 05. Jul 2009) $
- */
 /* hCards + hCalendars */
 @media all {
   .vcard,

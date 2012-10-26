@@ -1,17 +1,16 @@
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default screen stylesheet - PAGE-layout type layout
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- */
+// 
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+// 
+// default screen stylesheet - PAGE-layout type layout
+// 
+// @copyright       Copyright 2005-2012, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
+// 
 
-@import "yaml/mixins/yaml_mixins";
+@import "yaml/mixins/yaml_mixins_core";
 
 @media screen {
 
@@ -107,7 +106,7 @@
 
 	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
 	.linearize-level-1 {
-		@include linearize-grids-and-columns();
+		@include ym-linearize-grids-and-columns();
 	}
 
 	nav .ym-hlist ul {
@@ -153,7 +152,7 @@
 
 	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
 	.linearize-level-2 {
-		@include linearize-grids-and-columns();
+		@include ym-linearize-grids-and-columns();
 	}
 
 	.ym-searchform,
