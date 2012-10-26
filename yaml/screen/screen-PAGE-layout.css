@@ -33,7 +33,6 @@
     color: #ccc;
     padding: 1.5em;
   }
-
   header h1 {
     background: transparent;
     color: #fff;
@@ -49,7 +48,6 @@
     color: #444;
     padding: 1.5em;
   }
-
   footer p {
     margin: 0;
   }
@@ -101,12 +99,12 @@
   }
 }
 /* reset fallback values in modern browsers */
-@media screen and ( min-width: 0px ) {
+@media screen and (min-width: 0px) {
   .ym-wrapper {
     min-width: 0px;
   }
 }
-@media screen and ( max-width: 740px ) {
+@media screen and (max-width: 740px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
   .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
@@ -140,7 +138,7 @@
     width: 14%;
   }
 }
-@media screen and ( max-width: 480px) {
+@media screen and (max-width: 480px) {
   .ym-wbox {
     padding: 0;
   }
@@ -148,7 +146,6 @@
   header {
     padding: 0.75em 10px;
   }
-
   header h1 {
     font-size: 1.5em;
     line-height: 1em;

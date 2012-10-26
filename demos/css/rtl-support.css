@@ -1104,7 +1104,6 @@
     color: #ccc;
     padding: 1.5em;
   }
-
   header h1 {
     background: transparent;
     color: #fff;
@@ -1120,7 +1119,6 @@
     color: #444;
     padding: 1.5em;
   }
-
   footer p {
     margin: 0;
   }
@@ -1219,7 +1217,6 @@
   header {
     padding: 0.75em 10px;
   }
-
   header h1 {
     font-size: 1.5em;
     line-height: 1em;
