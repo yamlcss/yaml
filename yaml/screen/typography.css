@@ -59,8 +59,8 @@
   h1 {
     /* font-size: 49px; */
     font-size: 350%;
-    line-height: 0.857;
-    margin: 0.429em 0 0;
+    line-height: 0.85714;
+    margin: 0.42857em 0 0;
   }
 
   h2 {
@@ -72,7 +72,7 @@
 
   h3 {
     /* font-size: 24px; */
-    font-size: 171.429%;
+    font-size: 171.42857%;
     line-height: 0.875;
     margin: 0.875em 0 0;
   }
@@ -86,9 +86,9 @@
 
   h5 {
     /* font-size: 18px; */
-    font-size: 128.571%;
-    line-height: 1.167;
-    margin: 1.167em 0 0;
+    font-size: 128.57143%;
+    line-height: 1.16667;
+    margin: 1.16667em 0 0;
   }
 
   h6 {
@@ -173,13 +173,13 @@
 
   big {
     /* font-size: 16px; */
-    font-size: 114.286%;
-    line-height: 1.313;
+    font-size: 114.28571%;
+    line-height: 1.3125;
   }
 
   small {
     /* font-size: 12px; */
-    font-size: 85.714%;
+    font-size: 85.71429%;
     line-height: 1.75;
   }
 
@@ -246,7 +246,7 @@
     color: #fff;
     background: transparent;
     margin: 0 0 0.75em 0;
-    padding: 0 0 0.679em 0;
+    padding: 0 0 0.67857em 0;
     border: 0;
     border-bottom: 1px #eeeeee solid;
   }
@@ -327,7 +327,7 @@
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
     color: #444;
     color: rgba(0, 0, 0, 0.8);
-    padding: 1.429em;
+    padding: 1.42857em;
     margin: 1.5em 0 0 0;
   }
   .box > *:first-child {
@@ -400,14 +400,14 @@
     color: #444444;
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
-    margin: 1.357em 0 0 0;
+    margin: 1.35714em 0 0 0;
   }
   table.narrow {
-    margin: 1.429em 0 0 0;
+    margin: 1.42857em 0 0 0;
   }
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
-    line-height: 1.429;
+    line-height: 1.42857;
   }
   table.bordertable {
     border: 1px #ccc solid;
@@ -434,7 +434,7 @@
   th, td {
     line-height: 1.5em;
     vertical-align: top;
-    padding: 0.714em 0.5em;
+    padding: 0.71429em 0.5em;
   }
 
   th *:first-child,
@@ -465,7 +465,8 @@
     text-align: left;
     border-top: 1px solid #ccc;
   }
-  tbody tr:hover th, tbody tr:hover td {
+  tbody tr:hover th,
+  tbody tr:hover td {
     background: #f8f8f8;
   }
 }

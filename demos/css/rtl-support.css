@@ -461,26 +461,6 @@
     display: none !important;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * (en) YAML core RTL stylesheet
- * (de) YAML Basis-RTL-Stylesheet
- *
- * Don't make any changes in this file!
- * Your changes should be placed in any css-file in your own stylesheet folder.
- *
- * @note:           Many thanks to Alexander Hass (http://www.yaml-fuer-drupal.de/) for contribution
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sat, 03 Mar 2012) $
- */
 @media all {
   /**
   * @section browser normalisation
@@ -616,8 +596,6 @@
     border: solid 1px #888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .ym-searchform .ym-searchbutton {
@@ -634,23 +612,6 @@
     background: rgba(255, 255, 255, 0.2);
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * (en) RTL Horizontal list navigation "hlist"
- * (de) RTL Horizontale Navigationsliste "hlist"
- *
- * @note:           Many thanks to Alexander Hass (http://www.yaml-fuer-drupal.de/) for contribution
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.2
- * @revision        $Revision: 743 $
- * @lastmodified    $Date: 2012-10-23 23:01:14 +0200 (Tue, 23 Oct 2012) $
- */
 @media all {
   /**
   * (en) Workaround disappearing list elements on hover
@@ -1069,18 +1030,6 @@
     position: static;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default screen stylesheet - PAGE-layout type layout
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- */
 @media screen {
   /* force vertical scrollbar */
   body {
@@ -1733,21 +1682,6 @@
     background: #f8f8f8;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * (en) Uniform design of standard content elements
- * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         4.0
- * @revision        $Revision: 657 $
- * @lastmodified    $Date: 2012-01-11 21:36:23 +0100 (Wed, 11 Jan 2012) $
- */
 @media all {
   /* --- Lists | Listen  -------------------------------------------------------------------------------- */
   ul,
@@ -1773,20 +1707,6 @@
     margin-right: 1.5em;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default print stylesheet
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sat, 03 Mar 2012) $
- */
 @media print {
   /**
   * @section basic layout preparation

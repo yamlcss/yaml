@@ -1,18 +1,3 @@
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * (en) Vertical list navigation "vlist"
- * (de) Vertikale Navigationsliste "vlist"
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sat, 03 Mar 2012) $
- */
 @media all {
   /* title */
   .ym-vtitle {
@@ -61,13 +46,16 @@
     padding: 0;
     background-color: #fff;
   }
-  .ym-vlist a, .ym-vlist strong, .ym-vlist span {
+  .ym-vlist a,
+  .ym-vlist strong,
+  .ym-vlist span {
     display: block;
     padding: 3px 0px 3px 10%;
     text-decoration: none;
     border-bottom: 1px #ddd solid;
   }
-  .ym-vlist a, .ym-vlist a:visited {
+  .ym-vlist a,
+  .ym-vlist a:visited {
     color: #444;
   }
   .ym-vlist li span {
@@ -85,11 +73,15 @@
   .ym-vlist li {
     /* LTR */
   }
-  .ym-vlist li a, .ym-vlist li strong, .ym-vlist li span {
+  .ym-vlist li a,
+  .ym-vlist li strong,
+  .ym-vlist li span {
     width: 90%;
     padding-left: 10%;
   }
-  .ym-vlist li a:focus, .ym-vlist li a:hover, .ym-vlist li a:active {
+  .ym-vlist li a:focus,
+  .ym-vlist li a:hover,
+  .ym-vlist li a:active {
     background-color: #888;
     color: #fff;
     outline: 0 none;
@@ -97,45 +89,60 @@
   .ym-vlist li ul li {
     /* LTR */
   }
-  .ym-vlist li ul li a, .ym-vlist li ul li strong, .ym-vlist li ul li span {
+  .ym-vlist li ul li a,
+  .ym-vlist li ul li strong,
+  .ym-vlist li ul li span {
     width: 80%;
     padding-left: 20%;
   }
-  .ym-vlist li ul li a, .ym-vlist li ul li a:visited {
+  .ym-vlist li ul li a,
+  .ym-vlist li ul li a:visited {
     background-color: #f8f8f8;
     color: #333;
   }
-  .ym-vlist li ul li a:focus, .ym-vlist li ul li a:hover, .ym-vlist li ul li a:active {
+  .ym-vlist li ul li a:focus,
+  .ym-vlist li ul li a:hover,
+  .ym-vlist li ul li a:active {
     background-color: #888;
     color: #fff;
   }
   .ym-vlist li ul li ul li {
     /* LTR */
   }
-  .ym-vlist li ul li ul li a, .ym-vlist li ul li ul li strong, .ym-vlist li ul li ul li span {
+  .ym-vlist li ul li ul li a,
+  .ym-vlist li ul li ul li strong,
+  .ym-vlist li ul li ul li span {
     width: 70%;
     padding-left: 30%;
   }
-  .ym-vlist li ul li ul li a, .ym-vlist li ul li ul li a:visited {
+  .ym-vlist li ul li ul li a,
+  .ym-vlist li ul li ul li a:visited {
     background-color: #f0f0f0;
     color: #222;
   }
-  .ym-vlist li ul li ul li a:focus, .ym-vlist li ul li ul li a:hover, .ym-vlist li ul li ul li a:active {
+  .ym-vlist li ul li ul li a:focus,
+  .ym-vlist li ul li ul li a:hover,
+  .ym-vlist li ul li ul li a:active {
     background-color: #888;
     color: #fff;
   }
   .ym-vlist li ul li ul li ul li {
     /* LTR */
   }
-  .ym-vlist li ul li ul li ul li a, .ym-vlist li ul li ul li ul li strong, .ym-vlist li ul li ul li ul li span {
+  .ym-vlist li ul li ul li ul li a,
+  .ym-vlist li ul li ul li ul li strong,
+  .ym-vlist li ul li ul li ul li span {
     width: 60%;
     padding-left: 40%;
   }
-  .ym-vlist li ul li ul li ul li a, .ym-vlist li ul li ul li ul li a:visited {
+  .ym-vlist li ul li ul li ul li a,
+  .ym-vlist li ul li ul li ul li a:visited {
     background-color: #e8e8e8;
     color: #111;
   }
-  .ym-vlist li ul li ul li ul li a:focus, .ym-vlist li ul li ul li ul li a:hover, .ym-vlist li ul li ul li ul li a:active {
+  .ym-vlist li ul li ul li ul li a:focus,
+  .ym-vlist li ul li ul li ul li a:hover,
+  .ym-vlist li ul li ul li ul li a:active {
     background-color: #888;
     color: #fff;
   }

@@ -542,8 +542,6 @@
     border: solid 1px #888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
   .ym-searchform .ym-searchbutton {
@@ -1413,18 +1411,6 @@
     background: #f8f8f8;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default screen stylesheet - PAGE-layout type layout
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- */
 @media screen {
   /* force vertical scrollbar */
   body {
@@ -1605,20 +1591,6 @@
     width: 75%;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- *
- * default print stylesheet
- *
- * @copyright       Copyright 2005-2012, Dirk Jesse
- * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
- *                  YAML-CDL (http://www.yaml.de/license.html)
- * @link            http://www.yaml.de
- * @package         yaml
- * @version         v4.0.1
- * @revision        $Revision: 724 $
- * @lastmodified    $Date: 2012-03-03 11:45:41 +0100 (Sat, 03 Mar 2012) $
- */
 @media print {
   /**
   * @section basic layout preparation
