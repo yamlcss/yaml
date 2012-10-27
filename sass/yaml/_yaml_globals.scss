@@ -27,8 +27,8 @@ $default-gbox-padding		: 10px;
 // Config: Print Module
 // ---------------------------------
 $default-print-fontsize		: 10pt;
-$default-print-abbreviation	: true;
-$default-print-href			: true;
+$default-print-abbreviation	: false;
+$default-print-href			: false;
 
 ////////////////////////////////////////////////////////////////////
 //
@@ -66,9 +66,8 @@ $link-bg-color				: transparent;
 $link-focus-text-color		: #fff;
 $link-focus-bg-color		: #4d87c7;
 
-$hr-color					: #eee;
-
 // special colors
+$hr-color					: #eee;
 $highlight-text-color		: #c30;
 $dimmed-text-color			: #888;
 

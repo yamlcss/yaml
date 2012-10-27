@@ -2575,6 +2575,25 @@ body &gt; header { min-width: 760px; }
   		<div class="ym-grid linearize-level-1">
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
+		  			<h3>Github</h3>
+					<p>Project files are available on Github</p>
+					<ul>
+						<li><a href="https://github.com/djesse/yaml4-sass">yaml4-sass</a></li>
+					</ul>
+				</div>
+	  		</div>
+			<div class="ym-g75 ym-gr">
+				<div class="ym-gbox-right">
+		  			<h3>Introduction</h3>
+					<p><em>yaml4-sass</em> is the official Sass port of YAML. Its project structure of the Sass port is identical to the <em>static</em> version of YAML. All CSS files in the
+						<em>yaml</em> folder, as well as the css files for demos and docs are created dynamically with Sass.</p>
+					<p>Therefore you can easily include YAML in your Sass project as well as create a custom <em>static</em> version of YAML for a standard CSS project.</p>
+				</div>
+	  		</div>
+  		</div>
+  		<div class="ym-grid linearize-level-1">
+			<div class="ym-g25 ym-gl">
+				<div class="ym-gbox-left">
 		  			<h3>Global Variables</h3>
 					<span class="label">sass/yaml/_yaml_globals.scss</span>
 				</div>
@@ -2648,7 +2667,7 @@ body &gt; header { min-width: 760px; }
 							</tr>
 							<tr>
 								<td>$default-cbox-padding</td>
-								<td>Default column content (<code>.ym-cbox-x</code>) padding</td>
+								<td>Default column content (<code>.ym-cbox[-left|-right]</code>) padding</td>
 								<td>10px</td>
 							</tr>
 						</tbody>
@@ -2671,8 +2690,36 @@ body &gt; header { min-width: 760px; }
 							</tr>
 							<tr>
 								<td>$default-gbox-padding</td>
-								<td>Default grid content (<code>.ym-gbox-x</code>) padding</td>
+								<td>Default grid content (<code>.ym-gbox[-left|-right]</code>) padding</td>
 								<td>10px</td>
+							</tr>
+						</tbody>
+					</table>
+
+		  			<h4>Print Module Config</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Variable</th>
+								<th>Description</th>
+								<th>Default</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>$default-print-fontsize</td>
+								<td>Default text font-size for print media</td>
+								<td>10pt</td>
+							</tr>
+							<tr>
+								<td>$default-print-abbreviation</td>
+								<td>Enable abbreviation titles to be shown in print layout</td>
+								<td>false</td>
+							</tr>
+							<tr>
+								<td>$default-print-href</td>
+								<td>Enable URLs to be shown in print layout</td>
+								<td>false</td>
 							</tr>
 						</tbody>
 					</table>
@@ -2702,6 +2749,106 @@ body &gt; header { min-width: 760px; }
 								<td>$font-monospace</td>
 								<td>Default monospace font family</td>
 								<td>Consolas, ...</td>
+							</tr>
+						</tbody>
+					</table>
+
+		  			<h4>Colors</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Variable</th>
+								<th class="ym-g20">Default</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th colspan="2" class="info">standard text colors</th>
+							</tr>
+							<tr>
+								<td>$text-color</td>
+								<td>#444</td>
+							</tr>
+							<tr>
+								<td>$headings-color</td>
+								<td>#161e21</td>
+							</tr>
+							<tr>
+								<td>$blockquote-text-color</td>
+								<td>#666</td>
+							</tr>
+							<tr>
+								<td>$blockquote-bg-color</td>
+								<td>transparent</td>
+							</tr>
+							<tr>
+								<td>$pre-text-color</td>
+								<td>#800</td>
+							</tr>
+							<tr>
+								<td>$kbd-text-color</td>
+								<td>#666</td>
+							</tr>
+							<tr>
+								<td>$mark-text-color</td>
+								<td>#000</td>
+							</tr>
+							<tr>
+								<td>$mark-bg-color</td>
+								<td>#ff0</td>
+							</tr>
+							<tr>
+								<th colspan="2" class="info">highlight colors</th>
+							</tr>
+							<tr>
+								<td>$highlight-info-color</td>
+								<td>#f4f4f4</td>
+							</tr>
+							<tr>
+								<td>$highlight-success-color</td>
+								<td>#666</td>
+							</tr>
+							<tr>
+								<td>$highlight-warning-color</td>
+								<td>#000</td>
+							</tr>
+							<tr>
+								<td>$highlight-error-color</td>
+								<td>#ff0</td>
+							</tr>
+							<tr>
+								<th colspan="2" class="info">link colors</th>
+							</tr>
+							<tr>
+								<td>$link-text-color</td>
+								<td>#4d87c7</td>
+							</tr>
+							<tr>
+								<td>$link-bg-color</td>
+								<td>transparent</td>
+							</tr>
+							<tr>
+								<td>$link-focus-text-color</td>
+								<td>#fff</td>
+							</tr>
+							<tr>
+								<td>$link-focus-bg-color</td>
+								<td>#4d87c7</td>
+							</tr>
+							<tr>
+								<th colspan="2" class="info">special colors</th>
+							</tr>
+							<tr>
+								<td>$hr-color</td>
+								<td>#eee</td>
+							</tr>
+							<tr>
+								<td>$highlight-text-color</td>
+								<td>#c30</td>
+							</tr>
+							<tr>
+								<td>$dimmed-text-color</td>
+								<td>#888</td>
 							</tr>
 						</tbody>
 					</table>
@@ -2793,6 +2940,13 @@ body &gt; header { min-width: 760px; }
 	  		</div>
 			<div class="ym-g75 ym-gr">
 				<div class="ym-gbox-right">
+					<h3>Introduction</h3>
+					<p>YAML Mixins contains a collection of reusable and configurable code-snippets (called mixins). To use them within
+						your Sass project, you have to include the mixin collection into your scss files.<p>
+<pre class="cssCode">
+@import "yaml/mixins/yaml_mixins_core";
+...
+</pre>
 		  			<!-- Inhalt linker Block -->
 		  			<h4>Progressive Linearization</h4>
 					<table>
@@ -2805,19 +2959,44 @@ body &gt; header { min-width: 760px; }
 						<tbody>
 							<tr>
 								<td>ym-linearize-grids()</td>
-								<td>Linearization code for grids module</td>
+								<td>
+									<p>Linearization code for grids module</p>
+<pre class="cssCode">
+.linearize-level-1 {
+	@include ym-linearize-grids();
+}</pre>
+								</td>
 							</tr>
 							<tr>
 								<td>ym-linearize-columns()</td>
-								<td>Linearization code for columns module</td>
+								<td>
+									<p>Linearization code for columns module</p>
+<pre class="cssCode">
+.linearize-level-1 {
+	@include ym-linearize-columns();
+}</pre>
+
+								</td>
 							</tr>
 							<tr>
 								<td>ym-linearize-grids-and-columns()</td>
-								<td>Combined linearization code for columns and grids modules</td>
+								<td>
+									<p>Combined linearization code for columns and grids modules</p>
+<pre class="cssCode">
+.linearize-level-1 {
+	@include ym-linearize-grids-and-colums();
+}</pre>
+								</td>
 							</tr>
 							<tr>
 								<td>ym-linearize-forms()</td>
-								<td>Linearization code for forms module</td>
+								<td>
+									<p>Linearization code for forms module</p>
+<pre class="cssCode">
+.linearize-level-1 {
+	@include ym-linearize-forms();
+}</pre>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -2832,9 +3011,8 @@ body &gt; header { min-width: 760px; }
 						</thead>
 						<tbody>
 							<tr>
-								<td>ym-custom-grid([arguments])</td>
-								<td><p>Generates classes for column widths as well as push- and pull-classes.</p>
-									<p>It expects the following arguments (in this order):</p>
+								<td class="nowrap">ym-custom-grid([arguments])</td>
+								<td><p>Generates classes for column widths as well as push- and pull-classes. It expects the following arguments (in this order):</p>
 									<table class="bordertable">
 										<thead>
 											<tr>
@@ -2865,6 +3043,11 @@ body &gt; header { min-width: 760px; }
 											</tr>
 										</tbody>
 									</table>
+									<p>Example:</p>
+<pre class="cssCode">
+/* 960.gs port for YAML: 960px - 16 columns */
+@include ym-custom-grid("grid",16, 960px, 10px, 10px);
+</pre>
 								</td>
 							</tr>
 						</tbody>
