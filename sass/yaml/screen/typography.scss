@@ -9,7 +9,8 @@
  // * @package         yaml
  // */
 
-@import "yaml/yaml_globals";
+@import "yaml/yaml_globals",
+		"yaml/mixins/yaml_mixins_core";
 
 @media all {
 
