@@ -307,17 +307,21 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox-text:before,
-  .ym-form .ym-fbox-select:before,
+  .ym-form .ym-fbox-button:before,
   .ym-form .ym-fbox-check:before,
-  .ym-form .ym-fbox-button:before {
+  .ym-form .ym-fbox-inline:before,
+  .ym-form .ym-fbox-select:before,
+  .ym-form .ym-fbox-text:before,
+  .ym-form .ym-fbox-wrapper:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox-text:after,
-  .ym-form .ym-fbox-select:after,
+  .ym-form .ym-fbox-button:after,
   .ym-form .ym-fbox-check:after,
-  .ym-form .ym-fbox-button:after {
+  .ym-form .ym-fbox-inline:after,
+  .ym-form .ym-fbox-select:after,
+  .ym-form .ym-fbox-text:after,
+  .ym-form .ym-fbox-wrapper:after {
     clear: both;
     content: ".";
     display: block;
@@ -346,6 +350,12 @@
   .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
+  .ym-form .ym-fbox-multicol select,
+  .ym-form .ym-fbox-multicol input,
+  .ym-form .ym-fbox-multicol textarea {
+    width: 94.2%;
+    margin-right: -3px;
+  }
 
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
@@ -353,12 +363,16 @@
     width: 94.2%;
     margin-right: -3px;
   }
+  .ym-full .ym-fbox-multicol {
+    width: 100%;
+  }
 
   .ym-columnar .ym-fbox-text label,
   .ym-columnar .ym-fbox-select label {
     display: inline;
     float: left;
     width: 30%;
+    z-index: 1;
   }
   .ym-columnar .ym-fbox-select select,
   .ym-columnar .ym-fbox-text input,
@@ -367,20 +381,35 @@
     width: 67.2%;
     margin-right: -3px;
   }
+  .ym-columnar .ym-label {
+    position: absolute;
+    top: 0;
+  }
   .ym-columnar .ym-fbox-check {
     position: relative;
   }
   .ym-columnar .ym-fbox-check .ym-label {
-    position: absolute;
-    top: 0;
+    line-height: 1.0;
   }
   .ym-columnar .ym-fbox-check input,
   .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
+  .ym-columnar .ym-fbox-multicol {
+    margin-left: 30%;
+    width: 70%;
+    margin-right: -3px;
+  }
+  .ym-columnar .ym-fbox-multicol label {
+    display: block;
+    float: none;
+    width: auto;
+    z-index: 1;
+  }
 
   .ym-label {
     display: block;
+    line-height: 1.5;
   }
 
   .ym-columnar fieldset .ym-fbox-button,
@@ -398,6 +427,19 @@
 
   .ym-columnar .ym-fbox-select select {
     width: 68.8%;
+  }
+
+   /**
+	* Inline forms display - technical base (optional)
+	*/
+  .ym-form.ym-inline .ym-fbox-select select, .ym-form.ym-form.ym-inline .ym-fbox-text input,
+  .ym-form .ym-fbox-select.ym-inline select,
+  .ym-form .ym-fbox-text.ym-inline input {
+    width: auto !important;
+    display: inline;
+    float: none;
+    margin: 0 0.25em 0 0;
+    line-height: 1.5;
   }
 
   /**

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	<meta charset="utf-8"/>
-	<title>Documentation – YAML CSS Framework</title>
+	<title>Documentation &amp; Demos &ndash; YAML CSS Framework</title>
 
 	<!-- JavaScript Detection -->
 	<script>document.documentElement.className += " js";</script>
@@ -11,12 +11,13 @@
 
 	<meta name="keywords" content="css, css framework, toolkit, css layout, grid, column, equal height, html5, css3, flexible, mobile layout, responsive layout, accessibility, modular, forms">
 	<meta name="description" content="Online documentation and usage examples  for all framework modules, containing responsive grids and columns, forms, navigations, typography and support for rtl-languages.">
+	<meta name="author" content="Dirk Jesse">
 	<meta name="publisher" content="Dirk Jesse, Highresolution.info">
 	<meta name="content-language" content="en">
 	<meta name="page-topic" content="Computer">
 	<meta name="revisit-after" content="2 days">
-	<meta name="robots" content="noindex,nofollow">
-	<link rel="canonical" href="http://www.yaml.de/docs/" />
+	<meta name="robots" content="index,follow">
+	<link href="https://plus.google.com/+yaml" rel="publisher" />
 
 	<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700&amp;text=YAML4%20CSS%20Framework" rel="stylesheet" type="text/css"/>
 	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700" rel="stylesheet" type="text/css">
@@ -28,8 +29,24 @@
 	<![endif]-->
 
 	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="./lib/html5shiv/html5shiv.js"></script>
 	<![endif]-->
+
+	<!-- Google Analytics -->	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-1851047-1']);
+	  _gaq.push(['_setDomainName', 'yaml.de']);
+	  _gaq.push(['_gat._anonymizeIp']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 <body id="yaml-top" class="doc">
 <!-- skip link navigation -->
@@ -49,7 +66,7 @@
 				<h1><span>YAML</span> 4</h1>
 				<h2>CSS Framework</h2>
 			</hgroup>
-			<p>A modular CSS framework for truely <em>flexible</em>, <em>accessible</em> and <em>responsive</em> websites</p>
+			<p>A modular CSS framework for truly <em>flexible</em>, <em>accessible</em> and <em>responsive</em> websites</p>
 		</div>
 	</div>
 </header>
@@ -92,7 +109,7 @@
 							<div class="ym-gbox-left">
 								<h4>Flexible Grid</h4>
 								<img class="flexible bordered" src="assets/images/demo-flex-grid.png" alt=""/>
-								<p>A  flexible and responsive grid layout showing the basic usage of YAMLs grid elements.</p>
+								<p>A flexible and responsive grid layout showing the basic usage of YAMLs grid elements.</p>
 								<a class="ym-button ym-next" href="../demos/flexible-grid.html" target="_blank">View Example</a>
 							</div>
 						</div>
@@ -142,14 +159,62 @@
 			<div class="ym-grid linearize-level-1">
 				<div class="ym-g25 ym-gl">
 					<div class="ym-gbox-left">
-						<h3>Framework Core</h3>
+						<h3>About</h3>
+						<p>YAML is continuously developed since 2005. It's strongly focussed on device independence and accessibilty.</p>
+						<p>It provides provides layout bullet-proof modules for flexible layouts.</p>
 					</div>
 				</div>
 				<div class="ym-g75 ym-gr">
 					<div class="ym-gbox-right">
-					<h4>Framework Base: "base.css" <span class="label">yaml/core/base.css</span></h4>
-					<p>The stylesheet <em>base.css</em> in the folder <em>yaml/core/</em> is the first and most important core-file of the YAML framework. It lays the foundation (browser normalisation, layout-modules eg. grids, forms etc.). This stylesheet is required for every YAML-based layout and should not be changed!</p>
+						<h3>File Structure</h3>
+						<p>Within the download package fo you will find a folder called <em>yaml</em> with
+							the following file stucture. This folder contains all components of the framework and
+							should stay unchanged for easy updating.</p>
+						<p>If you want to modify any file, put a copy in your local CSS folder and reference it from there</p>
+<pre class="box info"><small>yaml/
+  ├── add-ons/
+  │   ├── accessible-tabs/
+  │   │   ├── jquery.tabs.js
+  │   │   └── tabs.css
+  │   ├── microformats/
+  │   │   ├── icons/
+  │   │   └── microformats.css
+  │   ├── rtl-support/
+  │   │   ├── core/
+  │   │   │   ├── base-rtl.css
+  │   │   │   └── base-rtl.min.css
+  │   │   ├── navigation/
+  │   │   │   ├── hlist-rtl.css
+  │   │   │   └── vlist-rtl.css
+  │   │   └── screen/
+  │   │       └── typography-rtl.css
+  │   └── microformats
+  │       └── jquery.syncheight.css
+  ├── core/
+  │   ├── base.css
+  │   ├── base.min.css
+  │   ├── iehacks.css
+  │   └── iehacks.min.css
+  ├── forms/
+  │   └── gray-theme.css
+  ├── navigation/
+  │   ├── hlist.css
+  │   └── vlist.css
+  ├── print/
+  │   └── print.css
+  └── screen/
+      ├── grid-960-12.css
+      ├── grid-960-16.css
+      ├── screen-FULLPAGE-layout.css
+      ├── screen-PAGE-layout.css
+      └── typography.css
+</small></pre>
+						<h3>Core Components</h3>
+						<h4>Part 1: Framework Base "base.css"</h4>
+						<span class="label">yaml/core/base.css</span>
+						<p>The stylesheet <em>base.css</em> in the folder <em>yaml/core/</em> is the first and most important core-file of the YAML framework. It lays the foundation (browser normalisation, layout-modules eg. grids, forms etc.). This stylesheet is required for every YAML-based layout and should not be changed!</p>
 
+					<h5>List of Core Modules</h5>
 					<table>
 						<thead>
 							<tr>
@@ -214,16 +279,31 @@
 									<code>.ym-fbox-select</code><br>
 									<code>.ym-fbox-check</code><br>
 									<code>.ym-fbox-button</code><br>
+									<code>.ym-fbox-wrapper<br>
+										.ym-fbox-multicol</code><br>
 									<br>
 									<strong>optional classes</strong><br>
 									<code>.ym-full</code><br>
 									<code>.ym-columnar<br>
-									.ym-required
-									<br>
-									.ym-error<br>
-									.ym-message<br>
-									.ym-label
-									</code></p></td>
+										.ym-required
+										<br>
+										.ym-error<br>
+										.ym-message<br>
+										.ym-label<br>
+										.ym-inline</code></p>
+									<p><strong>button classes<br>
+										</strong><code>.ym-button<br>
+										.ym-small<br>
+										.ym-xsmall<br>
+										.ym-large<br>
+										.ym-xlarge<br>
+										.ym-primary<br>
+										.ym-success
+										<br>
+										.ym-warning<br>
+										.ym-danger
+										</code><br>
+									</p></td>
 								<td>The form module provides the standard building blocks for designing robust flexible forms and offers three positioning options for arrangement of labels and form elements. YAML strictly separates structural form design (base.css) from visual styling of the form, to enable easy theming.</td>
 							</tr>
 							<tr>
@@ -254,23 +334,25 @@
 						</tbody>
 					</table>
 
-					<h4>Support for old Internet Explorer versions "iehacks.css" <span class="label">yaml/core/iehacks.css</span></h4>
+					<h4>Part 2: Support for old Internet Explorer versions "iehacks.css"</h4>
+					<span class="label">yaml/core/iehacks.css</span>
 					<p>The stylesheet <em>iehacks.css</em> from the <em>yaml/core/</em> folder is the second core component of the YAML framework. It contains all the structure- and layout-independent bugfixes for Internet Explorer (versions 5.x/Win - 7.0/Win). This bugfix-collection is essential for the robust and error-free presentation of YAML-based layouts in old Internet Explorer.</p>
 					<p>This stylesheet is optional but required for legacy support of old Internet Exlorer versions prior IE 8 and should remain unchanged! Many bugfixes exploit IE's numerous parser bugs - particularly those in older IE versions. The resulting CSS code is therefore not always valid and should thus only be made accessible to IE. This is possible with the use of <em>Conditional Comments</em> in the <code>&lt;head&gt;</code> of the document. The Conditional Comment has to be included below all regular stylesheets.</p>
-					<p>List of CSS bugsfixes provided by <em>iehacks.css</em>:</p>
+					<p>List of IE 6,7 bugsfixes provided by <em>iehacks.css</em>:</p>
 					<ul>
-						<li>fixes italics bug </li>
-						<li>fixes disappearing list-background bug </li>
-						<li>fixes list-numbering bug </li>
+						<li>fixes italics bug</li>
+						<li>fixes disappearing list-background bug</li>
+						<li>fixes list-numbering bug</li>
 						<li>fixes guillotine bug (IE6, in most cases)</li>
 						<li>fixes doubled float-margin bug (for YAML's structural elements)</li>
 						<li>workaround for expanding box problem </li>
 						<li>removes additional paddings in buttons</li>
 						<li>triggers hasLayout for HTML5 elements and YAML's structural elements</li>
 						<li>activates bicubic interpolation for image scaling</li>
-						<li>several stability fixes</li>
+						<li>several stability fixes for YAMLs layout modules</li>
 					</ul>
-					<h4>Basic Framework Integration</h4>
+
+					<h3>Basic HTML/CSS Template</h3>
 					<p>Here's a template of an empty HTML5 file containing the integration of YAML's core stylesheets:</p>
 					<pre class="htmlCode">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -323,24 +405,18 @@
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
 					<h3>HTML5 Support</h3>
-					<p>Visit the <a href="http://code.google.com/p/html5shim/">html5shim</a> project on Google Code.</p>
-					<p>The recent version 3.0 of <em>html5shim</em> has some <a href="https://github.com/aFarkas/html5shiv/issues/21">issues</a>. I recommend watching the discussion and/or try one of these alternatives:</p>
-					<ul>
-						<li><a href="https://github.com/aFarkas/html5shiv/tree/innershiv">html5 innershiv</a></li>
-						<li><a href="https://github.com/aFarkas/html5shiv/tree/iepp-htc">IEPP</a></li>
-					</ul>
+					<span class="label">lib/html5shiv/</span>
+					<p>YAML comes with the IE HTML5 enabling script <em>html5shiv</em>.</p>
+					<p>Visit the <a href="http://code.google.com/p/html5shim/"><em>html5shiv</em></a> project homepage on Google Code to get the latest version.</p>
 				</div>
 			</div>
 			<div class="ym-g75 ym-gr">
 				<div class="ym-gbox-right">
-					<h4>html5shim</h4>
-					<p>HTML5 is supported by all modern browsers. To enable Internet Explorer 6-8 to render HTML5 elements correctly,    JavaScript  is mandatory to register the new elements so that the browser allows them to be styled with CSS. </p>
+					<h4>html5shiv</h4>
+					<p>HTML5 is supported by all modern browsers. To enable Internet Explorer 6-8 to render HTML5 elements correctly, JavaScript is mandatory to register the new elements so that the browser allows them to be styled with CSS. </p>
 					<pre class="htmlCode">&lt;head&gt;<br />  ...
-  &lt;!--[if lt IE 9]&gt;
-  &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;</pre>
-					<p class="box info">On the <a href="http://code.google.com/p/html5shim/">htm5shim</a> project page this code-snippet is presented without the leading &quot;http:&quot; in the script URL. This is no problem as long as you're running on a webserver. It fails, if you're testing an HTML file from the file system on  your local machine &ndash; that's why we included it here.</p>
+  &lt;!--[if lt IE 9]&gt;<br>  &lt;script src=&quot;./lib/html5shiv/html5shiv.js&quot;&gt;&lt;/script&gt;<br>  &lt;![endif]--&gt;<br>&lt;/head&gt;</pre>
+					<p class="box info"><strong>Performance Hint:</strong> Avoid referencing the script directly from Google Code repository due to performance issues. Download the script and include it from your local server as shown in the above code snippet.</p>
 				</div>
 			</div>
 		</div>
@@ -548,7 +624,7 @@ body &gt; header { min-width: 760px; }
 								</tr>
 								<tr>
 									<td><code>.ym-g62</code></td>
-									<td>62.8 % (Golden Ratio)</td>
+									<td>61.8 % (Golden Ratio)</td>
 								</tr>
 								<tr>
 									<td><code>.ym-g66</code></td>
@@ -1124,7 +1200,7 @@ body &gt; header { min-width: 760px; }
   float: left;
   width: 250px; /* column width */
   right: 250px; /* column width */
-  *right: 0px; /* fix for ie6 &amp; ie7 */
+  _right: 0px; /* fix for ie6 */
   margin: 0 0 0 -100%;
 }</pre>
 						</div>
@@ -1177,7 +1253,7 @@ body &gt; header { min-width: 760px; }
  */
 
 .ym-col1 { float: right; width: 75%; } /* content */
-.ym-col3 { width: auto; margin: 0 75% 0 0; } /* sidebar */</pre>
+.ym-col3 { margin: 0 75% 0 0; } /* sidebar */</pre>
 						</div>
 						<h5>Sidebar right aligned</h5>
 						<div class="tab-content">
@@ -1191,7 +1267,7 @@ body &gt; header { min-width: 760px; }
  */
 
 .ym-col1 { float: left; width: 75%; } /* content */
-.ym-col3 { width: auto; margin: 0 0 0 75%; } /* sidebar */</pre>
+.ym-col3 { margin: 0 0 0 75%; } /* sidebar */</pre>
 						</div>
 				</div>
 					<h5>Scenario C: Vertical navigation and flexible content					</h5>
@@ -1208,8 +1284,8 @@ body &gt; header { min-width: 760px; }
  * |-------------------------------------------------------|
  */
 
-.ym-col1 { width: 250px; } /* sidebar */
-.ym-col3 { margin-left: 250px; margin-right: 0; } /* content */</pre>
+.ym-col1 { float: left; width: 250px; } /* sidebar */
+.ym-col3 { margin: 0 0 0 250px; } /* content */</pre>
 						</div>
 						<h5>Navigation right aligned</h5>
 						<div class="tab-content">
@@ -1223,7 +1299,7 @@ body &gt; header { min-width: 760px; }
  */
 
 .ym-col1 { float: right; width: 250px; } /* sidebar */
-.ym-col3 { margin-left: 0; margin-right: 250px; } /* content */</pre>
+.ym-col3 { margin: 0 250px 0 0; } /* content */</pre>
 						</div>
 				</div>
 					<h4>Equal Height Column Rulers</h4>
@@ -1344,7 +1420,7 @@ body &gt; header { min-width: 760px; }
 &lt;/form&gt;</pre>
 
 					<h4>Form Style Options</h4>
-					<p>There is a linear default style (stacked, 60 % width of form elements) and two alternative form styles can be used by adding one of the following classes to the form.</p>
+					<p>There is a linear default style (stacked, 60 % width of form elements) and three alternative form styles can be used by adding one of the following classes to the form.</p>
 					<table>
 						<thead>
 							<tr>
@@ -1448,12 +1524,26 @@ body &gt; header { min-width: 760px; }
   &lt;p class=&quot;<strong>ym-message</strong>&quot;&gt;Error: invalid value!&lt;/p&gt;
   ...
 &lt;/div&gt;</pre>
+				<h5>Headings within Forms</h5>
+				<p>Complex forms should be well structured. You can use <code>&lt;fieldset&gt;</code> elements for this reason but also regulare headings. To make typograhpy settings for your headings independent from their styling within forms, YAML provides class <code>.ym-fbox-heading</code> to force any heading level to fit in your form theme.</p>
+				<pre class="htmlCode">&lt;h6 class=&quot;<strong>ym-fbox-heading</strong>&quot;&gt;Sample Heading&lt;/h6&gt;<br>&lt;div class="ym-fbox-text<strong></strong>"&gt;
+  ...
+&lt;/div&gt;</pre>
+
 				<h5>Extended Labels</h5>
 				<p>In radio button sets, the label elements are needed to label  individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
 				<pre class="htmlCode">&lt;div class="ym-fbox-checkbox<strong></strong>"&gt;
   &lt;div&gt;<br>    &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;/span&gt;<br>    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; value=&quot;Option 1&quot; id=&quot;vote1&quot; /&gt;<br>    &lt;label for=&quot;vote1&quot;&gt;Option 1&lt;/label&gt;<br>  &lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
+
+				<h5>Inline Form Elements</h5>
+				<p>To create inline form elements (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>), which is a very simple way to have multiple form elements within a row (e.g. date or address specification), add class <code>.ym-fbox-inline</code> to the row wrapper (<code>.ym-fbox-text</code> or <code>.ym-fbox-select</code>). In order to make sure, that all included form elements behave according to the global form styling options, wrap multiple elements with class <code>.ym-fbox-wrapper</code>.</p>
+<pre class="htmlCode">&lt;div class=&quot;ym-fbox-text <strong>ym-fbox-inline</strong>&quot;&gt;<br>  &lt;label for=&quot;birthday&quot;&gt;Birthday&lt;/label&gt;<br>  &lt;div class=&quot;<strong>ym-fbox-wrapper</strong>&quot;&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;birthday&quot; id=&quot;birthday&quot; size=&quot;4&quot; /&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;birthmonth&quot; id=&quot;birthmonth&quot; size=&quot;4&quot; /&gt;<br>    &lt;input type=&quot;text&quot; name=&quot;birthyear&quot; id=&quot;birthyear&quot; size=&quot;4&quot; /&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;<br></pre>
+
+				<h5>Multicolumnar Form Fields</h5>
+				<p>A more complex but visually also more compelling solution for multiple form elements within a row is to use YAMLs flexible grid module in combination with cass .ym-fbox-multicol.</p>
+<pre class="htmlCode">&lt;div class=&quot;ym-fbox-text&quot;&gt;<br>  &lt;span class=&quot;ym-label&quot;&gt;Location&lt;/span&gt;<br>  &lt;div class=&quot;ym-grid <strong>ym-fbox-multicol</strong>&quot;&gt;<br>    &lt;div class=&quot;ym-g33 ym-gl&quot;&gt;<br>      &lt;div class=&quot;ym-gbox-left&quot;&gt;<br>        &lt;label for=&quot;plz&quot;&gt;Postal Code&lt;/label&gt;<br>        &lt;input type=&quot;text&quot; name=&quot;plz&quot; id=&quot;plz&quot; size=&quot;20&quot; /&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div class=&quot;ym-g66 ym-gr&quot;&gt;<br>      &lt;div class=&quot;ym-gbox-right&quot;&gt;<br>        &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;<br>        &lt;input type=&quot;text&quot; name=&quot;city&quot; id=&quot;city&quot; size=&quot;20&quot; /&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
 				</div>
 	  		</div>
   		</div>
@@ -1464,7 +1554,7 @@ body &gt; header { min-width: 760px; }
 					<h3>Theme Support</h3>
 					<div class="js-info box warning">JavaScript has to be enabled to demonstrate the available form layouts.</div>
 					<form id="formswitch" class="ym-form ym-full">
-						<h6>Live Preview: Choose Style</h6>
+						<h6 class="ym-fbox-heading">Live Preview: Choose Style</h6>
 						<div class="ym-fbox-check">
 							<div><input type="radio" name="dswitch" data-type="" id="slinear" checked="checked"/> <label for="slinear">Linear (default)</label></div>
 							<div><input type="radio" name="dswitch" data-type="ym-full" id="sfull"/> <label for="sfull">Full Width</label></div>
@@ -1482,48 +1572,79 @@ body &gt; header { min-width: 760px; }
 			<div class="ym-g75 ym-gr">
 				<div class="ym-gbox-right">
 
-					<h4>Basic Form Example</h4>
+					<h4>Form Example</h4>
 					<form method="post" action="" id="demo-form1" class="ym-form linearize-form" role="application">
-						<h6>Text Fields and Simple Select Boxes</h6>
-							<div class="ym-fbox-select">
-								<label for="salutation">Salutation <sup class="ym-required" title="This field is mandatory.">*</sup> </label>
-								<select name="salutation" id="salutation" size="1" aria-required="true">
-									<option value="0" selected="selected" disabled="disabled">Please choose</option>
-									<option value="Mr.">Mr.</option>
-									<option value="Ms.">Ms.</option>
-									<option value="Mrs.">Mrs.</option>
-								</select>
+						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
+
+						<div class="ym-fbox-select">
+							<label for="salutation">Salutation <sup class="ym-required" title="This field is mandatory.">*</sup> </label>
+							<select name="salutation" id="salutation" size="1" aria-required="true">
+								<option value="0" selected="selected" disabled="disabled">Please choose</option>
+								<option value="Mr.">Mr.</option>
+								<option value="Ms.">Ms.</option>
+								<option value="Mrs.">Mrs.</option>
+							</select>
+						</div>
+						<div class="ym-fbox-text">
+							<label for="firstname">First name</label>
+							<input type="text" name="firstname" id="firstname" size="20" />
+						</div>
+						<div class="ym-fbox-select">
+							<label for="more">More Options</label>
+							<select name="more" id="more" size="1">
+								<option value="0" selected="selected" disabled="disabled">Please choose</option>
+								<optgroup label="First options to choose from">
+									<option value="Empfehlung">Option 1</option>
+									<option value="Suchmaschine">Option 2</option>
+								</optgroup>
+								<optgroup label="Yet more options to choose from">
+									<option value="Weblog">Option 3</option>
+									<option value="Werbung">Option 4</option>
+									<option value="Zeitung / Magazin">Option 5</option>
+									<option value="Sonstiges">Option 6</option>
+								</optgroup>
+							</select>
+						</div>
+
+						<h6 class="ym-fbox-heading">Inline Form Elements</h6>
+						<div class="ym-fbox-text ym-inline">
+							<label for="reg1">Registration Code</label>
+							<div class="ym-fbox-wrapper">
+								<input type="text" name="reg1" id="reg1" size="4" />-
+								<input type="text" name="reg2" id="reg2" size="4" />-
+								<input type="text" name="reg3" id="reg3" size="4" />-
+								<input type="text" name="reg4" id="reg4" size="4" />
 							</div>
-							<div class="ym-fbox-text">
-								<label for="firstname">First name</label>
-								<input type="text" name="firstname" id="firstname" size="20" />
+						</div>
+						<h6 class="ym-fbox-heading">Multicolumnar Form Fields</h6>
+						<div class="ym-fbox-text">
+							<span class="ym-label">Location</span>
+							<div class="ym-grid ym-fbox-multicol">
+								<div class="ym-g33 ym-gl">
+									<div class="ym-gbox-left">
+										<label for="plz">Postal Code</label>
+										<input type="text" name="plz" id="plz" size="20" />
+									</div>
+								</div>
+								<div class="ym-g66 ym-gr">
+									<div class="ym-gbox-right">
+										<label for="city">City</label>
+										<input type="text" name="city" id="city" size="20" />
+									</div>
+								</div>
 							</div>
-							<div class="ym-fbox-text ym-error" role="alert" aria-live="assertive">
-								<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
-								<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
-								<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
-							</div>
-							<div class="ym-fbox-text">
-								<label for="email">E-Mail <sup class="ym-required" title="This field is mandatory.">*</sup></label>
-								<input type="text" name="email" id="email" size="20"  aria-required="true"/>
-							</div>
-							<div class="ym-fbox-select">
-								<label for="more">More Options</label>
-								<select name="more" id="more" size="1">
-									<option value="0" selected="selected" disabled="disabled">Please choose</option>
-									<optgroup label="First options to choose from">
-										<option value="Empfehlung">Option 1</option>
-										<option value="Suchmaschine">Option 2</option>
-									</optgroup>
-									<optgroup label="Yet more options to choose from">
-										<option value="Weblog">Option 3</option>
-										<option value="Werbung">Option 4</option>
-										<option value="Zeitung / Magazin">Option 5</option>
-										<option value="Sonstiges">Option 6</option>
-									</optgroup>
-								</select>
-							</div>
-						<h6>Text Areas, Complex Select Boxes, Checkboxes</h6>
+						</div>
+						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
+						<div class="ym-fbox-text ym-error" role="alert" aria-live="assertive">
+							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
+							<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
+							<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
+						</div>
+						<div class="ym-fbox-text">
+							<label for="email">E-Mail <sup class="ym-required" title="This field is mandatory.">*</sup></label>
+							<input type="text" name="email" id="email" size="20"  aria-required="true"/>
+						</div>
+						<h6 class="ym-fbox-heading">Text Areas, Complex Select Boxes, Checkboxes</h6>
 						<div class="ym-fbox-text">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="7"></textarea>
@@ -1532,7 +1653,7 @@ body &gt; header { min-width: 760px; }
 							<input type="checkbox" name="newsletter" id="newsletter" />
 							<label for="newsletter">Sign me up for your newsletter</label>
 						</div>
-						<h6>Radio Buttons</h6>
+						<h6 class="ym-fbox-heading">Radio Buttons</h6>
 						<div class="ym-fbox-check">
 							<div>
 								<span class="ym-label">Custom Label</span>
@@ -1549,8 +1670,8 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 						<div class="ym-fbox-button">
-							<input type="submit" value="submit"  class="save" id="submit" name="submit" />
-							<input type="reset" value="reset" class="delete" id="reset" name="reset" />
+							<input type="submit" value="Submit"  class="save ym-primary" id="submit" name="submit" />
+							<input type="reset" value="Reset" class="delete" id="reset" name="reset" />
 						</div>
 					</form>
 
@@ -1568,7 +1689,7 @@ body &gt; header { min-width: 760px; }
   &lt;/div&gt;
 &lt;/form&gt;</pre>
 					<form method="post" action="" id="demo-form2" class="ym-form linearize-form" role="application">
-						<h6>Another Example Form</h6>
+						<h6 class="ym-fbox-heading">Another Example Form</h6>
 						<div class="ym-grid linearize-level-2">
 							<div class="ym-g50 ym-gl">
 								<div class="ym-gbox ym-fbox-select">
@@ -1609,8 +1730,8 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 						<div class="ym-fbox-button">
-							<input type="submit" value="submit" class="submit" id="submit1" name="submit1" />
-							<input type="reset" value="reset" class="reset" id="reset1" name="reset1" />
+							<input type="submit" value="Submit" class="submit ym-primary" id="submit1" name="submit1" />
+							<input type="reset" value="Reset" class="reset" id="reset1" name="reset1" />
 						</div>
 					</form>
 				</div>
@@ -1628,15 +1749,15 @@ body &gt; header { min-width: 760px; }
 					<h4>Progressive Linearization</h4>
 					<p>Here's a code-snippet for  linearization of the <em>default</em> and <em>columnar</em> form-style at a viewport size, lower then 760px. Forms get linearized to stacked style and element widths are normalized to 100% to fit  better on small screens.</p>
 					<div class="box info">
-						<p><strong>Note:</strong> This code snippet assumes that all form elements are using the CSS3 box model: <em>border-box</em> (<code>box-sizing: border-box;</code>). Otherwise, the element width might have to be adjusted.</p>
-						<p>If you want further information on how to setup this CSS3 box model, take a  look at the sample implementation in YAMLs default form theme <em>gray-theme.css</em> in folder <em>yaml/forms/</em>.</p>
-					</div>
+					<p><strong>Note:</strong> This code snippet assumes that all form elements are using the CSS3 box model: <em>border-box</em> (<code>box-sizing: border-box;</code>), otherwise the element width might have to be adjusted. Furthermore, it doesn't linearize multicolumnar form fields as they're build using the grids module, which has its own linearization code.</p>
+					<p>If you want further information on how to setup this CSS3 box model, take a  look at the sample implementation in YAMLs default form theme <em>gray-theme.css</em> in folder <em>yaml/forms/</em>.</p></div>
 <pre class="cssCode">
 /* optimize forms on small screens by forcing display mode: full */
 @media screen and ( max-width: 740px )  {
 <br>  .linearize-form [class*=&quot;ym-fbox&quot;]:not([class*=&quot;ym-fbox-check&quot;]) label,
   .linearize-form .ym-label,
   .linearize-form .ym-message,
+  .linearize-form .ym-fbox-multicol,
   .linearize-form input[type=&quot;text&quot;],
   .linearize-form textarea,
   .linearize-form select {
@@ -1647,6 +1768,7 @@ body &gt; header { min-width: 760px; }
   }
 
   .linearize-form .ym-message,
+  .linearize-form .ym-fbox-multicol,
   .linearize-form .ym-fbox-check input {<br>    margin-left: 0 !important;		<br>  }
 }</pre>
 <p class="cssCode">Add the class <code>.linearize-form</code> to any form, you want to be linearized. <span class="htmlCode">You should combine these settings with the linarization of your grid or column layout.</span></p>
@@ -1667,18 +1789,99 @@ body &gt; header { min-width: 760px; }
 			</div>
 			<div class="ym-g75 ym-gr">
 				<div class="ym-gbox-right">
-					<h4>Custom Button Types</h4>
-					<p>HTML Button Elements as wall as any other element can be styled as buttons with optional icons. Icons are generated from UTF-8 Dingbats characters (U+2700 ... U+27BF), so they are scalable and no images are needed.</p>
+					<h4>Standard Button Types</h4>
+					<p>Button styles can be applied to any element using class <code>.ym-button</code> (normally <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code>). Within YAML's forms, this is the default for <code>&lt;input type="button|reset|send"/&gt;</code>.</p>
+
 <pre class="htmlCode">
 &lt;!-- simple buttons --&gt;
 &lt;button class="ym-button"&gt;text&lt;/button&gt;
 &lt;a href="#" class="ym-button"&gt;text&lt;/a&gt;
+</pre>
 
-&lt;!-- buttons with icons --&gt;
+ 					<table>
+						<thead>
+							<tr>
+								<th>Button</th>
+								<th>Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><button class="ym-button">Default</button></td>
+								<td><code>ym-button</code></td>
+								<td>Default Button Style</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-primary">Primary</button></td>
+								<td><code>ym-button ym-primary</code></td>
+								<td>Primary action button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-success">Positive</button></td>
+								<td><code>ym-button ym-success</code></td>
+								<td>Positive action button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-warning">Warning</button></td>
+								<td><code>ym-button ym-warning</code></td>
+								<td>"Take with care" action button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-danger">Danger</button></td>
+								<td><code>ym-button ym-danger</code></td>
+								<td>Dangerous action button</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h4>Button Sizes</h4>
+					<p>Button sizes and styles can be combined, of course.</p>
+ 					<table>
+						<thead>
+							<tr>
+								<th>Button</th>
+								<th>Class</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><button class="ym-button ym-xlarge">Default Button</button></td>
+								<td><code>ym-button ym-xlarge</code></td>
+								<td>A very large button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-large">Default Button</button></td>
+								<td><code>ym-button ym-large</code></td>
+								<td>A more emphasized button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button">Default Button</button></td>
+								<td><code>ym-button</code></td>
+								<td>Default button size</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-small">Default Button</button></td>
+								<td><code>ym-button ym-small</code></td>
+								<td>A smaller button</td>
+							</tr>
+							<tr>
+								<td><button class="ym-button ym-xsmall">Default Button</button></td>
+								<td><code>ym-button ym-xsmall</code></td>
+								<td>A very small button</td>
+							</tr>
+						</tbody>
+					</table>
+					<h4>Custom Button Types</h4>
+					<p>HTML Button Elements as wall as any other element can be styled as buttons with optional icons. Icons are generated from UTF-8 Dingbats characters (U+2700 ... U+27BF), so they are scalable and no images are needed.</p>
+<pre class="htmlCode">
+&lt;!-- custom buttons with icons --&gt;
 &lt;button class="ym-button ym-add"&gt;text&lt;/button&gt;
 &lt;a href="#" class="ym-button ym-add"&gt;text&lt;/a&gt;
 </pre>
 					<a href="" class="ym-button ym-add">add</a>
+					<a href="" class="ym-button ym-close">close</a>
 					<a href="" class="ym-button ym-delete">delete</a>
 					<a href="" class="ym-button ym-edit">edit</a>
 					<a href="" class="ym-button ym-email">email</a>
@@ -1686,7 +1889,9 @@ body &gt; header { min-width: 760px; }
 					<a href="" class="ym-button ym-next">next</a>
 					<a href="" class="ym-button ym-play">play</a>
 					<a href="" class="ym-button ym-save">save</a>
+					<a href="" class="ym-button ym-sign">sign</a>
 					<a href="" class="ym-button ym-spark">spark</a>
+					<a href="" class="ym-button ym-support">support</a>
 					<a href="" class="ym-button ym-star">star</a>
 				</div>
 			</div>
@@ -1732,8 +1937,8 @@ body &gt; header { min-width: 760px; }
 								<td class="nowrap"><code>.ym-contain-dt</code></td>
 								<td><p>Containing floats is achieved via <code>display:table; width: 100%;</code>. This should be used, if oversized child-elements should be allowed to slide into neighbor elements or if they have effects attached (e.g. box-shadow) that shouldn't be clipped by the parent element. </p>
 									<div class="box info">
-										<p>Note: In Firefox you can't combine properties <em><code>display:table</code></em> and <code><em>position:relative</em></code>. If you need to, use <code>.ym-contain-fl</code> instead.</p>
-										<p>Note 2: As part of the table characteristics <code><em>display:table</em></code> causes the element to be enlarged to fit all child elements, even if they are oversized. CSS properties <em><code>overflow</code></em> or <em><code>max-width</code></em> doesn't have an effect in this case.</p>
+										<p><strong>Note:</strong> In Firefox you can't combine properties <em><code>display:table</code></em> and <code><em>position:relative</em></code>. If you need to, use <code>.ym-contain-fl</code> instead.</p>
+										<p><strong>Note 2:</strong> As part of the table characteristics <code><em>display:table</em></code> causes the element to be enlarged to fit all child elements, even if they are oversized. CSS properties <em><code>overflow</code></em> or <em><code>max-width</code></em> doesn't have an effect in this case.</p>
 									</div>
 								</td>
 							</tr>
@@ -1754,8 +1959,8 @@ body &gt; header { min-width: 760px; }
 	  		</div>
   		</div>
 
-		<h2 id="yaml-accessibility" tabindex="-1">Accessibility  <span class="label">yaml/core/base.css</span> <span class="label">yaml/core/js/yaml-focusfix.css</span></h2>
-		<div class="ym-grid">
+		<h2 id="yaml-accessibility" tabindex="-1">Accessibility  <span class="label">yaml/core/base.css</span> <span class="label">yaml/core/js/yaml-focusfix.js</span></h2>
+		<div class="ym-grid linearize-level-1">
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
 		  			<!-- Inhalt linker Block -->
@@ -1804,7 +2009,7 @@ body &gt; header { min-width: 760px; }
 							</tr>
 							<tr>
 								<td class="nowrap"><code>.ym-noprint</code></td>
-								<td>Elements with the CSS class <code>.ym-print</code> will not be printent, but are<em></em> visible on  any other media type (e.g. screen).</td>
+								<td>Elements with the CSS class <code>.ym-noprint</code> will not be printed, but are<em></em> visible on  any other media type (e.g. screen).</td>
 							</tr>
 						</tbody>
 					</table>
@@ -1903,7 +2108,7 @@ body &gt; header { min-width: 760px; }
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
 		  			<!-- Inhalt linker Block -->
-					<h3>Headings & Paragraphs</h3>
+					<h3>Headings &amp; Paragraphs</h3>
 				</div>
 	  		</div>
 			<div class="ym-g75 ym-gr">
@@ -1990,7 +2195,7 @@ body &gt; header { min-width: 760px; }
 					<div class="ym-grid v-grid linearize-level-2">
 						<div class="ym-g50 ym-gl">
 							<div class="ym-gbox-left">
-								<h4>Flexible Media</h4>
+								<h4>Flexible Media (responsive)</h4>
 								<img src="http://dummyimage.com/300x200/cccccc/fff.png" class="flexible" alt="" role="presentation"/>
 								<pre class="cssCode">.flexible {
   ...
@@ -2016,7 +2221,7 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 					</div>
-
+					<p class="box info"><strong>Important:</strong> When working with flexible media elements (images, videos with class <code>.flexible</code>) in an evironment that uses <code>display:table</code> to contain floats (e.g. static column <code>.ym-col3</code> in the <a href="#yaml-columns">column module</a> or any element with class <code>.ym-contain-dt</code>), make sure, your media elements are wrapped by any parent element with a defined width (any value except <code>width:auto</code>). Otherwise, some browsers (FF, IE9) will stretch the parent element (because of the behavior of tables) to make the media element fit at 100% width. See also <em>Note 2</em> for <code>.ym-contain-dt</code> in <a href="#yaml-floats">float section</a></p>
 				</div>
 	  		</div>
   		</div>
@@ -2254,19 +2459,6 @@ body &gt; header { min-width: 760px; }
 		<div class="ym-grid linearize-level-1">
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
-		  			<!-- Inhalt linker Block -->
-				</div>
-	  		</div>
-			<div class="ym-g75 ym-gr">
-				<div class="ym-gbox-right">
-		  			<!-- Inhalt linker Block -->
-				</div>
-	  		</div>
-  		</div>
-
-		<div class="ym-grid linearize-level-1">
-			<div class="ym-g25 ym-gl">
-				<div class="ym-gbox-left">
 					<h3>Accessible Tabs</h3>
 					<span class="label">yaml/add-ons/accessible-tabs/</span>
 					<p><em>Accessible Tabs</em> is a jQuery plugin by Dirk Ginader, that generates accessible tabbing environments from standard HTML markup, and therefore provides a perfect fallback solution when JavaScript is disabled.</p>
@@ -2312,33 +2504,33 @@ body &gt; header { min-width: 760px; }
 &lt;/head&gt;
 &lt;body&gt;
   ...
-  &lt;script src="lib/jquery-1.7.1.min.js" type="text/javascript" /&gt;
+  &lt;script src="lib/jquery-1.8.3.min.js" type="text/javascript" /&gt;
   &lt;script src="yaml/add-ons/accessible-tabs/jquery.tabs.js" type="text/javascript" /&gt;
 &lt;/body&gt;</pre>
 <pre class="jsCode">$(document).ready(function(){
   $('.jquery_tabs').accessibleTabs();
 });</pre>
-<h4>Synchronize Heights</h4>
-<p>Tabbing environments can have synchronized tab heights. This is realized by combining the &quot;Accessible Tabs&quot; Plugin with the &quot;syncHeight&quot; Plugin.</p>
-						<div class="jquery_tabs" data-sync="true">
-							<h5>Topic A</h5>
-							<div class="tab-content">
-								<h6>Lorem ipsum ... </h6>
-								<p>Nullam malesuada suscipit pede. Nullam ipsum lacus, varius vel, nonummy in, consequat ut, neque. Vivamus viverra. Duis dolor arcu, lacinia sit amet, sollicitudin sed, aliquet vel, quam. Pellentesque molestie laoreet tortor. Aenean quam. Pellentesque magna metus, venenatis sit amet, congue nec, dictum in, est. Aliquam nibh. </p>
-							</div>
-							<h5>Topic B</h5>
-							<div class="tab-content">
-								<h6>Lorem ipsum ... </h6>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam malesuada   suscipit pede. Nullam ipsum lacus, varius vel, nonummy in, consequat ut, neque. </p>
-							</div>
-							<h5>Topic C</h5>
-							<div class="tab-content">
-								<p>Your content could be here.</p>
-							</div>
+					<h4>Synchronize Heights</h4>
+					<p>Tabbing environments can have synchronized tab heights. This is realized by combining the &quot;Accessible Tabs&quot; Plugin with the &quot;syncHeight&quot; Plugin.</p>
+					<div class="jquery_tabs" data-sync="true">
+						<h5>Topic A</h5>
+						<div class="tab-content">
+							<h6>Lorem ipsum ... </h6>
+							<p>Nullam malesuada suscipit pede. Nullam ipsum lacus, varius vel, nonummy in, consequat ut, neque. Vivamus viverra. Duis dolor arcu, lacinia sit amet, sollicitudin sed, aliquet vel, quam. Pellentesque molestie laoreet tortor. Aenean quam. Pellentesque magna metus, venenatis sit amet, congue nec, dictum in, est. Aliquam nibh. </p>
 						</div>
-<pre class="htmlCode">&lt;body&gt;
+						<h5>Topic B</h5>
+						<div class="tab-content">
+							<h6>Lorem ipsum ... </h6>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam malesuada   suscipit pede. Nullam ipsum lacus, varius vel, nonummy in, consequat ut, neque. </p>
+						</div>
+						<h5>Topic C</h5>
+						<div class="tab-content">
+							<p>Your content could be here.</p>
+						</div>
+					</div>
+					<pre class="htmlCode">&lt;body&gt;
   ...
-  &lt;script src="lib/jquery-1.7.1.min.js" type="text/javascript" /&gt;
+  &lt;script src="lib/jquery-1.8.3.min.js" type="text/javascript" /&gt;
   &lt;script src="yaml/add-ons/accessible-tabs/jquery.tabs.js" type="text/javascript" /&gt;
   &lt;script src="yaml/add-ons/syncheight/jquery.syncheight.js" type="text/javascript" /&gt;
 &lt;/body&gt;</pre>
@@ -2352,9 +2544,9 @@ body &gt; header { min-width: 760px; }
 		<div class="ym-grid linearize-level-1">
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
-				<h3>SyncHeight</h3>
-				<span class="label">yaml/add-ons/syncheight/</span>
-				<p>Get the latest version of this plugin on <a href="https://github.com/ginader/syncHeight">Github</a>.</p>
+					<h3>SyncHeight</h3>
+					<span class="label">yaml/add-ons/syncheight/</span>
+					<p>Get the latest version of this plugin on <a href="https://github.com/ginader/syncHeight">Github</a>.</p>
 				</div>
 	  		</div>
 			<div class="ym-g75 ym-gr">
@@ -2363,7 +2555,7 @@ body &gt; header { min-width: 760px; }
 				<p>The <em>SyncHeight</em> Plugin for <a href="http://www.jquery.com">jQuery</a> allows you to sync heights between all element, defined by the given jQuery selector. To enable resyncing elements after browser resizing, enable <var>updateOnResize</var> option.</p>
 <pre class="htmlCode">&lt;body&gt;
   ...
-  &lt;script src="lib/jquery-1.7.1.min.js" type="text/javascript" /&gt;
+  &lt;script src="lib/jquery-1.8.3.min.js" type="text/javascript" /&gt;
   &lt;script src="yaml/add-ons/syncheight/jquery.syncheight.js" type="text/javascript" /&gt;
 &lt;/body&gt;</pre>
 					<pre class="jsCode">$(document).ready(function(){
@@ -2386,21 +2578,21 @@ body &gt; header { min-width: 760px; }
 					<h4>Handling Hebrew or Arabic languages</h4>
 
 		  			<p>This add-on provides all the relevant components for working with YAML in Hebrew or Arabic languages whose text flows from right to left. </p>
-					<p>The plugin's files are in the folder <em>yaml/add-ons/rtl-support/</em>. Within that folder are the subfolders<em> core/</em> with the adjustments of the core file of the framework: <em>base-rtl.css</em>.  The folder <em>screen/</em> contains typograhpy adjustments in<em> typography-rtl.css</em> and in folder <em>navigation/</em> you will find appropriate ajdustments-files for YAML navigations. </p>
+					<p>The plugin's files are in the folder <em>yaml/add-ons/rtl-support/</em>. Within that folder are the subfolders <em>core/</em> with the adjustments of the core file of the framework: <em>base-rtl.css</em>.  The folder <em>screen/</em> contains typograhpy adjustments in<em> typography-rtl.css</em> and in folder <em>navigation/</em> you will find appropriate ajdustments-files for YAML navigations. </p>
 					<h4>Basic Principles </h4>
-					<p>The support of <em>right-to-left</em> languages comes from special   stylesheets which overwrite existing CSS rules to control text direction   and content positioning.  These stylesheets thus only contain   incremental changes and include the suffix <strong>-rtl</strong> in the filename: the adjustments necessary for the file<em> base.css</em> are found in the file <em>base-rtl.css</em>. </p>
-					<p>The activation of the changed text flow from right to left takes two   steps.  The first step is to change the text direction with the dir   attribute of the <code>&lt;head&gt;</code> element of the page: <code>&lt;head dir="rtl"&gt;</code>. The second step is to merely link the RTL stylesheets into your layout.  Within the <em>base-rtl.css</em>, the CSS property <code>direction: rtl;</code> is assigned again to the <code>&lt;body&gt;</code> element. </p>
+					<p>The support of <em>right-to-left</em> languages comes from special   stylesheets which overwrite existing CSS rules to control text direction   and content positioning.  These stylesheets thus only contain   incremental changes and include the suffix <strong>-rtl</strong> in the filename: the adjustments necessary for the file <em>base.css</em> are found in the file <em>base-rtl.css</em>. </p>
+					<p>The activation of the changed text flow from right to left takes two   steps.  The first step is to change the text direction with the dir   attribute of the <code>&lt;head&gt;</code> element of the page: <code>&lt;head dir="rtl"&gt;</code>. The second step is to merely link the RTL stylesheets into your layout.  Within the <em>base-rtl.css</em>, the CSS property <code>direction: rtl;</code> is assigned again to the <code>&lt;body&gt;</code> element.</p>
 					<pre class="htmlCode">&lt;html lang=&quot;{language-code}&quot; dir=&quot;rtl&quot;&gt;
   ...
 &lt;/hmtl&gt;</pre>
 					<p>Along with the text direction, many other CSS properties must be   changed -- margins, indentations, etc., to present the text correctly. </p>
 					<h4>Implementation</h4>
 					<p>The corresopnding central stylesheet always links the normal YAML components first and then the RTL variation to overwrite them. </p>
-<pre class="cssCode">/* import core styles | Basis-Stylesheets einbinden */
+					<pre class="cssCode">/* import core styles | Basis-Stylesheets einbinden */
 @import url(../yaml/core/base.css);
 <strong>@import url(../yaml/add-ons/rtl-support/core/base-rtl.css);</strong>
 ...</pre>
-<p class="cssCode">This is the best and most simple way for rapid prototyping. For production environments we recommend to combine both stylesheets to reduce the amount of HTTP requests.<br>
+<p>This is the best and most simple way for rapid prototyping. For production environments we recommend to combine both stylesheets to reduce the amount of HTTP requests.
 </p>
 				</div>
 	  		</div>
@@ -2420,7 +2612,7 @@ body &gt; header { min-width: 760px; }
 					  <li><a href="http://microformats.org/code/hreview/creator">hReview creator</a></li>
 					  <li><a href="http://gmpg.org/xfn/creator">XFN creator</a></li>
 					</ul>
-					<cite>Read more on <a href="http://microformats.org">microformats.org.</a></cite>
+					<p>Read more on <a href="http://microformats.org">microformats.org.</a></p>
 				</div>
 	  		</div>
 			<div class="ym-g75 ym-gr">
@@ -2571,533 +2763,521 @@ body &gt; header { min-width: 760px; }
 	  		</div>
   		</div>
 
-  		<h2 id="yaml-sass" tabindex="-1">Sass</h2>
-  		<div class="ym-grid linearize-level-1">
-			<div class="ym-g25 ym-gl">
-				<div class="ym-gbox-left">
-		  			<h3>Github</h3>
-					<p>Project files are available on Github</p>
-					<ul>
-						<li><a href="https://github.com/djesse/yaml4-sass">yaml4-sass</a></li>
-					</ul>
+		<h2 id="yaml-sass" tabindex="-1">Sass</h2>
+		<div class="ym-grid linearize-level-1">
+				<div class="ym-g25 ym-gl">
+					<div class="ym-gbox-left">
+						<h3>Github</h3>
+						<p>Project files are available on Github</p>
+						<ul>
+							<li><a href="https://github.com/djesse/yaml4-sass">yaml4-sass</a></li>
+						</ul>
+					</div>
 				</div>
-	  		</div>
-			<div class="ym-g75 ym-gr">
-				<div class="ym-gbox-right">
-		  			<h3>Introduction</h3>
-					<p><em>yaml4-sass</em> is the official Sass port of YAML. Its project structure of the Sass port is identical to the <em>static</em> version of YAML. All CSS files in the
-						<em>yaml</em> folder, as well as the css files for demos and docs are created dynamically with Sass.</p>
-					<p>Therefore you can easily include YAML in your Sass project as well as create a custom <em>static</em> version of YAML for a standard CSS project.</p>
+				<div class="ym-g75 ym-gr">
+					<div class="ym-gbox-right">
+						<h3>Introduction</h3>
+						<p><em>yaml4-sass</em> is the official Sass port of YAML. Its project structure of the Sass port is identical to the <em>static</em> version of YAML. All CSS files in the <em>yaml</em> folder, as well as the css files for demos and docs are created dynamically with Sass.</p>
+						<p>Therefore you can easily include YAML in your Sass project as well as create a custom <em>static</em> version of YAML for a standard CSS project.</p>
+					</div>
 				</div>
-	  		</div>
-  		</div>
-  		<div class="ym-grid linearize-level-1">
-			<div class="ym-g25 ym-gl">
-				<div class="ym-gbox-left">
-		  			<h3>Global Variables</h3>
-					<span class="label">sass/yaml/_yaml_globals.scss</span>
+			</div>
+		<div class="ym-grid linearize-level-1">
+				<div class="ym-g25 ym-gl">
+					<div class="ym-gbox-left">
+						<h3>Global Variables</h3>
+						<span class="label">sass/yaml/_yaml_globals.scss</span> </div>
 				</div>
-	  		</div>
-			<div class="ym-g75 ym-gr">
-				<div class="ym-gbox-right">
-		  			<!-- Inhalt linker Block -->
-		  			<h3>Framework Core Configuration</h3>
-		  			<h4>Base Module Config</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$default-base-normalization</td>
-								<td>Normalization Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-floathandling</td>
-								<td>Float Handling Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-columns</td>
-								<td>Columns Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-grids</td>
-								<td>Grids Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-forms</td>
-								<td>Forms Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-accessibility</td>
-								<td>Accessibility Module</td>
-								<td>true</td>
-							</tr>
-							<tr>
-								<td>$default-base-print</td>
-								<td>Basic Print Styles</td>
-								<td>true</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Columms Module Config</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$default-column-width</td>
-								<td>Default column width for <code>.ym-col1</code> and <code>.ym-col2</code></td>
-								<td>20%</td>
-							</tr>
-							<tr>
-								<td>$default-cbox-padding</td>
-								<td>Default column content (<code>.ym-cbox[-left|-right]</code>) padding</td>
-								<td>10px</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Grids Module Config</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$default-rounding-tolerance</td>
-								<td>Default value for negative left margin of <code>.ym-gr</code> to compensate rounding errors</td>
-								<td>-5px</td>
-							</tr>
-							<tr>
-								<td>$default-gbox-padding</td>
-								<td>Default grid content (<code>.ym-gbox[-left|-right]</code>) padding</td>
-								<td>10px</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Print Module Config</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$default-print-fontsize</td>
-								<td>Default text font-size for print media</td>
-								<td>10pt</td>
-							</tr>
-							<tr>
-								<td>$default-print-abbreviation</td>
-								<td>Enable abbreviation titles to be shown in print layout</td>
-								<td>false</td>
-							</tr>
-							<tr>
-								<td>$default-print-href</td>
-								<td>Enable URLs to be shown in print layout</td>
-								<td>false</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h3>Typography Settings</h3>
-		  			<h4>Fonts</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$font-sans</td>
-								<td>Default sans-serif font family</td>
-								<td>"Droid Sans", Arial, ...</td>
-							</tr>
-							<tr>
-								<td>$font-serif</td>
-								<td>Default serif font family</td>
-								<td>"Droid Serif", Arial, ...</td>
-							</tr>
-							<tr>
-								<td>$font-monospace</td>
-								<td>Default monospace font family</td>
-								<td>Consolas, ...</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Colors</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th class="ym-g20">Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th colspan="2" class="info">standard text colors</th>
-							</tr>
-							<tr>
-								<td>$text-color</td>
-								<td>#444</td>
-							</tr>
-							<tr>
-								<td>$headings-color</td>
-								<td>#161e21</td>
-							</tr>
-							<tr>
-								<td>$blockquote-text-color</td>
-								<td>#666</td>
-							</tr>
-							<tr>
-								<td>$blockquote-bg-color</td>
-								<td>transparent</td>
-							</tr>
-							<tr>
-								<td>$pre-text-color</td>
-								<td>#800</td>
-							</tr>
-							<tr>
-								<td>$kbd-text-color</td>
-								<td>#666</td>
-							</tr>
-							<tr>
-								<td>$mark-text-color</td>
-								<td>#000</td>
-							</tr>
-							<tr>
-								<td>$mark-bg-color</td>
-								<td>#ff0</td>
-							</tr>
-							<tr>
-								<th colspan="2" class="info">highlight colors</th>
-							</tr>
-							<tr>
-								<td>$highlight-info-color</td>
-								<td>#f4f4f4</td>
-							</tr>
-							<tr>
-								<td>$highlight-success-color</td>
-								<td>#666</td>
-							</tr>
-							<tr>
-								<td>$highlight-warning-color</td>
-								<td>#000</td>
-							</tr>
-							<tr>
-								<td>$highlight-error-color</td>
-								<td>#ff0</td>
-							</tr>
-							<tr>
-								<th colspan="2" class="info">link colors</th>
-							</tr>
-							<tr>
-								<td>$link-text-color</td>
-								<td>#4d87c7</td>
-							</tr>
-							<tr>
-								<td>$link-bg-color</td>
-								<td>transparent</td>
-							</tr>
-							<tr>
-								<td>$link-focus-text-color</td>
-								<td>#fff</td>
-							</tr>
-							<tr>
-								<td>$link-focus-bg-color</td>
-								<td>#4d87c7</td>
-							</tr>
-							<tr>
-								<th colspan="2" class="info">special colors</th>
-							</tr>
-							<tr>
-								<td>$hr-color</td>
-								<td>#eee</td>
-							</tr>
-							<tr>
-								<td>$highlight-text-color</td>
-								<td>#c30</td>
-							</tr>
-							<tr>
-								<td>$dimmed-text-color</td>
-								<td>#888</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Vertical Rhythm</h4>
-		  			<p>All values have to be defined as integer values, but are internally interpreted as [px] values. Vertical rhythm is generated by utilizing [em] units to allow font-scaling.</p>
-					<table>
-						<thead>
-							<tr>
-								<th>Variable</th>
-								<th>Description</th>
-								<th>Default</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>$browser-default-font-size</td>
-								<td>Browser default font size (don't change unless you know what you do!)</td>
-								<td>16</td>
-							</tr>
-							<tr>
-								<td>$base-font-size</td>
-								<td>Default text font-size</td>
-								<td>14</td>
-							</tr>
-							<tr>
-								<td>$base-line-height</td>
-								<td>Default line-height</td>
-								<td>21</td>
-							</tr>
-							<tr>
-								<td>$h1-font-size</td>
-								<td>Heading level 1 font size</td>
-								<td>49</td>
-							</tr>
-							<tr>
-								<td>$h2-font-size</td>
-								<td>Heading level 2 font size</td>
-								<td>35</td>
-							</tr>
-							<tr>
-								<td>$h3-font-size</td>
-								<td>Heading level 3 font size</td>
-								<td>24</td>
-							</tr>
-							<tr>
-								<td>$h4-font-size</td>
-								<td>Heading level 4 font size</td>
-								<td>21</td>
-							</tr>
-							<tr>
-								<td>$h5-font-size</td>
-								<td>Heading level 5 font size</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>$h6-font-size</td>
-								<td>Heading level 6 font size</td>
-								<td>14</td>
-							</tr>
-							<tr>
-								<td>$h6-font-size</td>
-								<td>Heading level 6 font size</td>
-								<td>14</td>
-							</tr>
-							<tr>
-								<td>$text-big-font-size</td>
-								<td>&lt;big&gt; element font size</td>
-								<td>16</td>
-							</tr>
-							<tr>
-								<td>$text-small-font-size</td>
-								<td>&lt;small&gt; element font size</td>
-								<td>12</td>
-							</tr>
-						</tbody>
-					</table>
-
+				<div class="ym-g75 ym-gr">
+					<div class="ym-gbox-right">
+						<!-- Inhalt linker Block -->
+						<h3>Framework Core Configuration</h3>
+						<h4>Base Module Config</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$default-base-normalization</td>
+									<td>Normalization Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-floathandling</td>
+									<td>Float Handling Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-columns</td>
+									<td>Columns Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-grids</td>
+									<td>Grids Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-forms</td>
+									<td>Forms Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-accessibility</td>
+									<td>Accessibility Module</td>
+									<td>true</td>
+								</tr>
+								<tr>
+									<td>$default-base-print</td>
+									<td>Basic Print Styles</td>
+									<td>true</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Columms Module Config</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$default-column-width</td>
+									<td>Default column width for <code>.ym-col1</code> and <code>.ym-col2</code></td>
+									<td>20%</td>
+								</tr>
+								<tr>
+									<td>$default-cbox-padding</td>
+									<td>Default column content (<code>.ym-cbox[-left|-right]</code>) padding</td>
+									<td>10px</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Grids Module Config</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$default-rounding-tolerance</td>
+									<td>Default value for negative left margin of <code>.ym-gr</code> to compensate rounding errors</td>
+									<td>-5px</td>
+								</tr>
+								<tr>
+									<td>$default-gbox-padding</td>
+									<td>Default grid content (<code>.ym-gbox[-left|-right]</code>) padding</td>
+									<td>10px</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Print Module Config</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$default-print-fontsize</td>
+									<td>Default text font-size for print media</td>
+									<td>10pt</td>
+								</tr>
+								<tr>
+									<td>$default-print-abbreviation</td>
+									<td>Enable abbreviation titles to be shown in print layout</td>
+									<td>false</td>
+								</tr>
+								<tr>
+									<td>$default-print-href</td>
+									<td>Enable URLs to be shown in print layout</td>
+									<td>false</td>
+								</tr>
+							</tbody>
+						</table>
+						<h3>Typography Settings</h3>
+						<h4>Fonts</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$font-sans</td>
+									<td>Default sans-serif font family</td>
+									<td>"Droid Sans", Arial, ...</td>
+								</tr>
+								<tr>
+									<td>$font-serif</td>
+									<td>Default serif font family</td>
+									<td>"Droid Serif", Arial, ...</td>
+								</tr>
+								<tr>
+									<td>$font-monospace</td>
+									<td>Default monospace font family</td>
+									<td>Consolas, ...</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Colors</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th class="ym-g20">Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th colspan="2" class="info">standard text colors</th>
+								</tr>
+								<tr>
+									<td>$text-color</td>
+									<td>#444</td>
+								</tr>
+								<tr>
+									<td>$headings-color</td>
+									<td>#161e21</td>
+								</tr>
+								<tr>
+									<td>$blockquote-text-color</td>
+									<td>#666</td>
+								</tr>
+								<tr>
+									<td>$blockquote-bg-color</td>
+									<td>transparent</td>
+								</tr>
+								<tr>
+									<td>$pre-text-color</td>
+									<td>#800</td>
+								</tr>
+								<tr>
+									<td>$kbd-text-color</td>
+									<td>#666</td>
+								</tr>
+								<tr>
+									<td>$mark-text-color</td>
+									<td>#000</td>
+								</tr>
+								<tr>
+									<td>$mark-bg-color</td>
+									<td>#ff0</td>
+								</tr>
+								<tr>
+									<th colspan="2" class="info">highlight colors</th>
+								</tr>
+								<tr>
+									<td>$highlight-info-color</td>
+									<td>#f4f4f4</td>
+								</tr>
+								<tr>
+									<td>$highlight-success-color</td>
+									<td>#666</td>
+								</tr>
+								<tr>
+									<td>$highlight-warning-color</td>
+									<td>#000</td>
+								</tr>
+								<tr>
+									<td>$highlight-error-color</td>
+									<td>#ff0</td>
+								</tr>
+								<tr>
+									<th colspan="2" class="info">link colors</th>
+								</tr>
+								<tr>
+									<td>$link-text-color</td>
+									<td>#4d87c7</td>
+								</tr>
+								<tr>
+									<td>$link-bg-color</td>
+									<td>transparent</td>
+								</tr>
+								<tr>
+									<td>$link-focus-text-color</td>
+									<td>#fff</td>
+								</tr>
+								<tr>
+									<td>$link-focus-bg-color</td>
+									<td>#4d87c7</td>
+								</tr>
+								<tr>
+									<th colspan="2" class="info">special colors</th>
+								</tr>
+								<tr>
+									<td>$hr-color</td>
+									<td>#eee</td>
+								</tr>
+								<tr>
+									<td>$highlight-text-color</td>
+									<td>#c30</td>
+								</tr>
+								<tr>
+									<td>$dimmed-text-color</td>
+									<td>#888</td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Vertical Rhythm</h4>
+						<p>All values have to be defined as integer values, but are internally interpreted as [px] values. Vertical rhythm is generated by utilizing [em] units to allow font-scaling.</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Variable</th>
+									<th>Description</th>
+									<th>Default</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>$browser-default-font-size</td>
+									<td>Browser default font size (don't change unless you know what you do!)</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>$base-font-size</td>
+									<td>Default text font-size</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>$base-line-height</td>
+									<td>Default line-height</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<td>$h1-font-size</td>
+									<td>Heading level 1 font size</td>
+									<td>49</td>
+								</tr>
+								<tr>
+									<td>$h2-font-size</td>
+									<td>Heading level 2 font size</td>
+									<td>35</td>
+								</tr>
+								<tr>
+									<td>$h3-font-size</td>
+									<td>Heading level 3 font size</td>
+									<td>24</td>
+								</tr>
+								<tr>
+									<td>$h4-font-size</td>
+									<td>Heading level 4 font size</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<td>$h5-font-size</td>
+									<td>Heading level 5 font size</td>
+									<td>18</td>
+								</tr>
+								<tr>
+									<td>$h6-font-size</td>
+									<td>Heading level 6 font size</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>$h6-font-size</td>
+									<td>Heading level 6 font size</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>$text-big-font-size</td>
+									<td>&lt;big&gt; element font size</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>$text-small-font-size</td>
+									<td>&lt;small&gt; element font size</td>
+									<td>12</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-	  		</div>
-  		</div>
-
-  		<div class="ym-grid linearize-level-1">
-			<div class="ym-g25 ym-gl">
-				<div class="ym-gbox-left">
-		  			<h3>YAML Mixins</h3>
-					<span class="label">sass/mixins/_yaml_mixins_core.scss</span>
+			</div>
+		<div class="ym-grid linearize-level-1">
+				<div class="ym-g25 ym-gl">
+					<div class="ym-gbox-left">
+						<h3>YAML Mixins</h3>
+						<span class="label">sass/mixins/_yaml_mixins_core.scss</span> </div>
 				</div>
-	  		</div>
-			<div class="ym-g75 ym-gr">
-				<div class="ym-gbox-right">
-					<h3>Introduction</h3>
-					<p>YAML Mixins contains a collection of reusable and configurable code-snippets (called mixins). To use them within
-						your Sass project, you have to include the mixin collection into your scss files.<p>
-<pre class="cssCode">
+				<div class="ym-g75 ym-gr">
+					<div class="ym-gbox-right">
+						<h3>Introduction</h3>
+						<p>YAML Mixins contains a collection of reusable and configurable code-snippets (called mixins). To use them within
+							your Sass project, you have to include the mixin collection into your scss files.
+						<p>
+						<pre class="cssCode">
 @import "yaml/mixins/yaml_mixins_core";
 ...
 </pre>
-		  			<!-- Inhalt linker Block -->
-		  			<h4>Useful Code-Snippets</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Mixin</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>ym-clearfix()</td>
-								<td>
-									<p>YAMLs clearfix mixin</p>
-<pre class="cssCode">
+						<!-- Inhalt linker Block -->
+						<h4>Useful Code-Snippets</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Mixin</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>ym-clearfix()</td>
+									<td><p>YAMLs clearfix mixin</p>
+										<pre class="cssCode">
 .wrapper {
-	@include ym-clearfix();
-}</pre>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-
-		  			<h4>Progressive Linearization</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Mixin</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>ym-linearize-grids()</td>
-								<td>
-									<p>Linearization code for grids module</p>
-<pre class="cssCode">
+@include ym-clearfix();
+}</pre></td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Progressive Linearization</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Mixin</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>ym-linearize-grids()</td>
+									<td><p>Linearization code for grids module</p>
+										<pre class="cssCode">
 .linearize-level-1 {
-	@include ym-linearize-grids();
-}</pre>
-								</td>
-							</tr>
-							<tr>
-								<td>ym-linearize-columns()</td>
-								<td>
-									<p>Linearization code for columns module</p>
-<pre class="cssCode">
+@include ym-linearize-grids();
+}</pre></td>
+								</tr>
+								<tr>
+									<td>ym-linearize-columns()</td>
+									<td><p>Linearization code for columns module</p>
+										<pre class="cssCode">
 .linearize-level-1 {
-	@include ym-linearize-columns();
-}</pre>
-
-								</td>
-							</tr>
-							<tr>
-								<td>ym-linearize-grids-and-columns()</td>
-								<td>
-									<p>Combined linearization code for columns and grids modules</p>
-<pre class="cssCode">
+@include ym-linearize-columns();
+}</pre></td>
+								</tr>
+								<tr>
+									<td>ym-linearize-grids-and-columns()</td>
+									<td><p>Combined linearization code for columns and grids modules</p>
+										<pre class="cssCode">
 .linearize-level-1 {
-	@include ym-linearize-grids-and-colums();
-}</pre>
-								</td>
-							</tr>
-							<tr>
-								<td>ym-linearize-forms()</td>
-								<td>
-									<p>Linearization code for forms module</p>
-<pre class="cssCode">
+@include ym-linearize-grids-and-colums();
+}</pre></td>
+								</tr>
+								<tr>
+									<td>ym-linearize-forms()</td>
+									<td><p>Linearization code for forms module</p>
+										<pre class="cssCode">
 .linearize-level-1 {
-	@include ym-linearize-forms();
-}</pre>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-		  			<h4>Custom Grids Generator</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Mixin</th>
-								<th>Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="nowrap">ym-custom-grid([arguments])</td>
-								<td><p>Generates classes for column widths as well as push- and pull-classes. It expects the following arguments (in this order):</p>
-									<table class="bordertable">
-										<thead>
-											<tr>
-												<th>Argument</th>
-												<th>Description</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th>$prefix</th>
-												<td>optional namespace prefix</td>
-											</tr>
-											<tr>
-												<th>$columns</th>
-												<td>amount of columns</td>
-											</tr>
-											<tr>
-												<th>$width</th>
-												<td>column width</td>
-											</tr>
-											<tr>
-												<th>$margin-left</th>
-												<td>optional left-aligned gutter</td>
-											</tr>
-											<tr>
-												<th>$margin-right</th>
-												<td>optional right-aligned gutter</td>
-											</tr>
-										</tbody>
-									</table>
-									<p>Example:</p>
-<pre class="cssCode">
+@include ym-linearize-forms();
+}</pre></td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>Custom Grids Generator</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Mixin</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="nowrap">ym-custom-grid([arguments])</td>
+									<td><p>Generates classes for column widths as well as push- and pull-classes. It expects the following arguments (in this order):</p>
+										<table class="bordertable">
+											<thead>
+												<tr>
+													<th>Argument</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>$prefix</th>
+													<td>optional namespace prefix</td>
+												</tr>
+												<tr>
+													<th>$columns</th>
+													<td>amount of columns</td>
+												</tr>
+												<tr>
+													<th>$width</th>
+													<td>column width</td>
+												</tr>
+												<tr>
+													<th>$margin-left</th>
+													<td>optional left-aligned gutter</td>
+												</tr>
+												<tr>
+													<th>$margin-right</th>
+													<td>optional right-aligned gutter</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>Example:</p>
+										<pre class="cssCode">
 /* 960.gs port for YAML: 960px - 16 columns */
 @include ym-custom-grid("grid",16, 960px, 10px, 10px);
-</pre>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
+</pre></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-	  		</div>
-  		</div>
-
-
-  		</div>
+			</div>
+</div>
 	</div>
 </div>
 
 <footer role="contentinfo">
 	<div class="ym-wrapper">
 		<div class="ym-wbox">
-			<p>© 2005 – 2012 by Dirk Jesse, <a href="http://www.highresolution.info">Highresolution.info</a><br>
-Code and Documentation licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
+			<div class="ym-grid linearize-level-2">
+				<div class="ym-g66 ym-gl">
+					<div class="ym-gbox-left">
+						<p>© 2005 &ndash; 2012 by Dirk Jesse, <a href="http://www.highresolution.info">Highresolution.info</a><br>
+			Code and Documentation licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
+						<p><a href="../imprint.html">Imprint</a> | <a href="http://shop.yaml.de">YAML-Shop</a> administrated by <a href="http://www.itratos.de">Itratos</a></p>
+					</div>
+				</div>
+				<div class="ym-g33 ym-gr">
+					<div class="ym-gbox-right">
+						<p><a href="https://twitter.com/yamlcss" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @yamlcss</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<a href="https://plus.google.com/+yaml?prsrc=3" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;"/></a></p>
+						<p>Layout based on <a href="http://www.yaml.de">YAML</a></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
+
 <!-- full skip link functionality in webkit browsers -->
 <script src="../yaml/core/js/yaml-focusfix.js"></script>
 
 <!-- jQuery & Plugins -->
-<script src="../lib/jquery-1.7.1.min.js"></script>
+<script src="../lib/jquery-1.8.3.min.js"></script>
 <script src="./assets/js/snippet/jquery.snippet.js"></script>
 <script src="./assets/js/jquery.gridbuilder.js"></script>
 <script src="../yaml/add-ons/accessible-tabs/jquery.tabs.js"></script>

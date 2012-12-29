@@ -9,10 +9,10 @@
     margin: 0;
     color: #444;
     background-color: #fff;
-    border-top: 2px #ddd solid;
+    border-top: 2px #dddddd solid;
   }
   .ym-vtitle + ul {
-    border-top: 4px #888 solid;
+    border-top: 4px #888888 solid;
   }
 
   .ym-vlist {
@@ -32,8 +32,8 @@
     padding: 0;
     width: 100%;
     overflow: hidden;
-    border-top: 2px #ddd solid;
-    border-bottom: 2px #ddd solid;
+    border-top: 2px #dddddd solid;
+    border-bottom: 2px #dddddd solid;
   }
   .ym-vlist ul ul {
     border: 0 none;
@@ -52,7 +52,7 @@
     display: block;
     padding: 3px 0px 3px 10%;
     text-decoration: none;
-    border-bottom: 1px #ddd solid;
+    border-bottom: 1px #dddddd solid;
   }
   .ym-vlist a,
   .ym-vlist a:visited {
@@ -61,7 +61,7 @@
   .ym-vlist li span {
     display: block;
     font-weight: bold;
-    border-bottom: 1px #ddd solid;
+    border-bottom: 1px #dddddd solid;
   }
   .ym-vlist li.active {
     color: #fff;

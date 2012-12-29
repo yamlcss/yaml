@@ -1,13 +1,14 @@
-// 
+//
 // "Yet Another Multicolumn Layout" - YAML CSS Framework
-// 
+//
 // (en) screen layout for YAML documentation
-// 
-// @copyright       Copyright 2005-2012, Dirk Jesse
+//
+// @copyright       Copyright 2005-2013, Dirk Jesse
 // @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
 //                  YAML-CDL (http://www.yaml.de/license.html)
 // @link            http://www.yaml.de
 // @package         yaml
+
 @import "yaml/mixins/yaml_mixins_core";
 
 @media screen, projection {
@@ -645,7 +646,7 @@
 	body > header,
 	body > footer,
 	body > nav,
-	body > #intro,	
+	body > #intro,
 	body > [id] {
 		min-width: 0;
 	}
@@ -670,21 +671,8 @@
 	}
 
 	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
-	.linearize-level-1,
-	.linearize-level-1 > [class*="ym-g"],
-	.linearize-level-1 > [class*="ym-col"] {
-		display: block;
-		float: none;
-		padding: 0;
-		margin: 0;
-		width: 100% !important;
-	}
-
-	.linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"],
-	.linearize-level-1 > [class*="ym-col"] > [class*="ym-cbox"] {
-		overflow:hidden; /* contain floats */
-		padding: 0;
-		margin: 0;
+	.linearize-level-1 {
+		@include ym-linearize-grids-and-columns();
 	}
 
 	#secondary .linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
@@ -756,21 +744,8 @@
 	}
 
 	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
-	.linearize-level-2,
-	.linearize-level-2 > [class*="ym-g"],
-	.linearize-level-2 > [class*="ym-col"] {
-		display: block;
-		float: none;
-		margin: 0;
-		padding: 0;
-		width: 100% !important;
-	}
-
-	.linearize-level-2 > [class*="ym-g"] > [class*="ym-gbox"],
-	.linearize-level-2 > [class*="ym-col"] > [class*="ym-cbox"] {
-		overflow:hidden; /* contain floats */
-		margin: 0;
-		padding: 0;
+	.linearize-level-2 {
+		@include ym-linearize-grids-and-columns();
 	}
 
 	.ym-form .linearize-level-2 [class*="ym-fbox"] {
@@ -778,26 +753,12 @@
 		padding: 0.3em 1em;
 	}
 
-
 	#secondary .linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
 		margin: 0;
 		padding: 0;
 	}
 
-	.linearize-form [class*="ym-fbox"]:not([class*="ym-fbox-check"]) label,
-	.linearize-form .ym-label,
-	.linearize-form .ym-message,
-	.linearize-form  input[type="text"],
-	.linearize-form  textarea,
-	.linearize-form  select {
-		display: block;
-		float: none;
-		position: static !important;
-		width:100% !important;
-	}
-
-	.linearize-form .ym-message,
-	.linearize-form  .ym-fbox-check input {
-		margin-left: 0 !important;		
+	.linearize-form  {
+		@include ym-linearize-forms();
 	}
 }

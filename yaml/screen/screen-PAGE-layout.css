@@ -80,7 +80,7 @@
   .ym-skiplinks a.ym-skip:active {
     color: #fff;
     background: #333;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px black solid;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
