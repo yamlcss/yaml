@@ -353,6 +353,9 @@
   .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
+  .ym-form .ym-fbox-multicol {
+    width: 60%;
+  }
   .ym-form .ym-fbox-multicol select,
   .ym-form .ym-fbox-multicol input,
   .ym-form .ym-fbox-multicol textarea {
@@ -733,9 +736,9 @@
   .ym-form .ym-gbox-right {
     padding-left: 0.25em;
   }
-  .ym-form .ym-fbox-select select,
-  .ym-form .ym-fbox-text input,
-  .ym-form .ym-fbox-text textarea {
+  .ym-form .ym-fbox-multicol select,
+  .ym-form .ym-fbox-multicol input,
+  .ym-form .ym-fbox-multicol textarea {
     width: 100%;
   }
 
@@ -943,26 +946,25 @@
   }
 
   /* Button size-scaling classes */
-  .ym-xlarge {
+  .ym-button {
+    /* 21px */
+    /* 18px */
+    /* 12px */
+    /* 10px */
+  }
+  .ym-button.ym-xlarge {
     font-size: 1.5em;
   }
-
-  /* 21px */
-  .ym-large {
+  .ym-button.ym-large {
     font-size: 1.2857em;
   }
-
-  /* 18px */
-  .ym-small {
+  .ym-button.ym-small {
     font-size: 0.8571em;
   }
-
-  /* 12px */
-  .ym-xsmall {
+  .ym-button.ym-xsmall {
     font-size: 0.7143em;
   }
 
-  /* 10px */
   /* Button color scheme: primary */
   .ym-button.ym-primary,
   .ym-form button.ym-primary,

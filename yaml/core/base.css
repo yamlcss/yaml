@@ -350,6 +350,9 @@
   .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
+  .ym-form .ym-fbox-multicol {
+    width: 60%;
+  }
   .ym-form .ym-fbox-multicol select,
   .ym-form .ym-fbox-multicol input,
   .ym-form .ym-fbox-multicol textarea {

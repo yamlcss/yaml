@@ -51,10 +51,10 @@
 			padding-left: 0.25em;
 		}
 
-		.ym-fbox-select select,
-		.ym-fbox-text input,
-		.ym-fbox-text textarea {
-				width:100%;
+		.ym-fbox-multicol select,
+		.ym-fbox-multicol input,
+		.ym-fbox-multicol textarea {
+			width:100%;
 		}
 	}
 
@@ -257,11 +257,12 @@
 	}
 
 	/* Button size-scaling classes */
-
-	.ym-xlarge { font-size: 1.5em; } /* 21px */
-	.ym-large { font-size: 1.2857em; } /* 18px */
-	.ym-small { font-size: 0.8571em; } /* 12px */
-	.ym-xsmall { font-size: 0.7143em; } /* 10px */
+	.ym-button {
+		&.ym-xlarge { font-size: 1.5em; } /* 21px */
+		&.ym-large { font-size: 1.2857em; } /* 18px */
+		&.ym-small { font-size: 0.8571em; } /* 12px */
+		&.ym-xsmall { font-size: 0.7143em; } /* 10px */
+	}
 
 	/* Button color scheme: primary */
 
