@@ -1,4 +1,4 @@
-@if $default-base-grids == true {
+@if $ym-base-grids == true {
 
 	/**
 	* @section Grid Module
@@ -16,7 +16,7 @@
 	}
 
 	.ym-gl { float:left; margin: 0; }
-	.ym-gr { float:right; margin: 0 0 0 $default-rounding-tolerance; }
+	.ym-gr { float:right; margin: 0 0 0 $ym-rounding-tolerance; }
 
 	.ym-g20 { width:20%; }
 	.ym-g40 { width:40%; }
@@ -30,9 +30,9 @@
 	.ym-g38 { width:38.2%; }
 	.ym-g62 { width:61.8%; }
 
-	.ym-gbox { padding: 0 $default-gbox-padding }
-	.ym-gbox-left { padding: 0 $default-gbox-padding 0 0 }
-	.ym-gbox-right { padding: 0 0 0 $default-gbox-padding }
+	.ym-gbox { padding: 0 $ym-gbox-padding }
+	.ym-gbox-left { padding: 0 $ym-gbox-padding 0 0 }
+	.ym-gbox-right { padding: 0 0 0 $ym-gbox-padding }
 
 	.ym-equalize { overflow:hidden; }
 

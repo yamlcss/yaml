@@ -1,4 +1,4 @@
-@if $default-base-columns == true {
+@if $ym-base-columns == true {
 	/**
 	* @section Column Module
 	*/
@@ -11,13 +11,13 @@
 
 	.ym-column { display:table; width:100%; }
 
-	.ym-col1 { float:left; width:$default-column-width; }
-	.ym-col2 { float:right; width:$default-column-width; }
-	.ym-col3 { width:auto; margin:0 $default-column-width; }
+	.ym-col1 { float:left; width:$ym-column-width; }
+	.ym-col2 { float:right; width:$ym-column-width; }
+	.ym-col3 { width:auto; margin:0 $ym-column-width; }
 
-	.ym-cbox { padding: 0 $default-cbox-padding }
-	.ym-cbox-left { padding: 0 $default-cbox-padding 0 0 }
-	.ym-cbox-right { padding: 0 0 0 $default-cbox-padding }
+	.ym-cbox { padding: 0 $ym-cbox-padding }
+	.ym-cbox-left { padding: 0 $ym-cbox-padding 0 0 }
+	.ym-cbox-right { padding: 0 0 0 $ym-cbox-padding }
 
 	// (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css
 	// (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet

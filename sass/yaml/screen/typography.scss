@@ -19,8 +19,8 @@
 	*
 	* vertical rhythm settings (based on em-unit)
 	* -------------------------------------------
-	* basefont-size:  #{$base-font-size}px (#{$base-font-size/$browser-default-font-size*100}%)
-	* line-height  :  #{$base-line-height}px (factor: #{$base-line-height / $base-font-size}) */
+	* basefont-size:  #{$ym-base-font-size}px (#{$ym-base-font-size/$ym-default-font-size*100}%)
+	* line-height  :  #{$ym-base-line-height}px (factor: #{$ym-base-line-height / $ym-base-font-size}) */
 
 	/* (en) reset font size for all elements to standard (16 Pixel) */
 	/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
@@ -40,14 +40,14 @@
 	samp,
 	var,
 	tt {
-		font-family: $font-monospace;
+		font-family: $ym-font-monospace;
 	}
 
 	body {
-		font-family: $font-serif;
-		/*! font-size: #{$base-font-size}px; */
-		font-size: $base-font-size / $browser-default-font-size * 100%;
-		color: $text-color;
+		font-family: $ym-font-serif;
+		/*! font-size: #{$ym-base-font-size}px; */
+		font-size: $ym-base-font-size / $ym-default-font-size * 100%;
+		color: $ym-text-color;
 
 		/* (en) Prevent auto-scaling of text in mobile webkit browsers */
 		/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
@@ -62,53 +62,53 @@
 	h4,
 	h5,
 	h6 {
-		font-family: $font-sans;
+		font-family: $ym-font-sans;
 		font-weight: 400;
-		color: $headings-color;
+		color: $ym-headings-color;
 		margin:0;
 	}
 
 	h1 {
-		/*! font-size: #{$base-font-size * $h1-font-scale}px; */
-		font-size: $h1-font-scale * 100%;
-		line-height: 2 * $line-height / $h1-font-scale;
-		margin: $line-height / $h1-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h1-font-scale}px; */
+		font-size: $ym-h1-font-scale * 100%;
+		line-height: 2 * $line-height / $ym-h1-font-scale;
+		margin: $line-height / $ym-h1-font-scale*1em 0 0;
 	}
 
 	h2 {
-		/*! font-size: #{$base-font-size * $h2-font-scale}px; */
-		font-size: $h2-font-scale * 100%;
-		line-height: 2 * $line-height / $h2-font-scale;
-		margin: $line-height / $h2-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h2-font-scale}px; */
+		font-size: $ym-h2-font-scale * 100%;
+		line-height: 2 * $line-height / $ym-h2-font-scale;
+		margin: $line-height / $ym-h2-font-scale*1em 0 0;
 	}
 
 	h3 {
-		/*! font-size: #{$base-font-size * $h3-font-scale}px; */
-		font-size: $h3-font-scale * 100%;
-		line-height: 1 * $line-height / $h3-font-scale;
-		margin: $line-height / $h3-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h3-font-scale}px; */
+		font-size: $ym-h3-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-h3-font-scale;
+		margin: $line-height / $ym-h3-font-scale*1em 0 0;
 	}
 
 	h4 {
-		/*! font-size: #{$base-font-size * $h4-font-scale}px; */
-		font-size: $h4-font-scale * 100%;
-		line-height: 1 * $line-height / $h4-font-scale;
-		margin: $line-height / $h4-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h4-font-scale}px; */
+		font-size: $ym-h4-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-h4-font-scale;
+		margin: $line-height / $ym-h4-font-scale*1em 0 0;
 	}
 
 	h5 {
-		/*! font-size: #{$base-font-size * $h5-font-scale}px; */
-		font-size: $h5-font-scale * 100%;
-		line-height: 1 * $line-height / $h5-font-scale;
-		margin: $line-height / $h5-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h5-font-scale}px; */
+		font-size: $ym-h5-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-h5-font-scale;
+		margin: $line-height / $ym-h5-font-scale*1em 0 0;
 	}
 
 	h6 {
 		font-weight: bold;
-		/*! font-size: #{$base-font-size * $h6-font-scale}px; */
-		font-size: $h6-font-scale * 100%;
-		line-height: 1 * $line-height / $h6-font-scale;
-		margin: $line-height / $h6-font-scale*1em 0 0;
+		/*! font-size: #{$ym-base-font-size * $ym-h6-font-scale}px; */
+		font-size: $ym-h6-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-h6-font-scale;
+		margin: $line-height / $ym-h6-font-scale*1em 0 0;
 	}
 
 	/* --- Lists | Listen  -------------------------------------------------------------------------------- */
@@ -116,9 +116,9 @@
 	ul,
 	ol,
 	dl {
-		font-size: $text-font-scale * 100%;
-		line-height: 1 * $line-height / $text-font-scale;
-		margin: $line-height / $text-font-scale*1em 0 1em;
+		font-size: $ym-text-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-font-scale;
+		margin: $line-height / $ym-text-font-scale*1em 0 1em;
 	}
 
 	ul {
@@ -145,8 +145,8 @@
 	}
 
 	li {
-		font-size: $text-font-scale * 100%;
-		line-height: 1 * $line-height / $text-font-scale;
+		font-size: $ym-text-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-font-scale;
 		margin-left:0.8em;
 	}
 
@@ -157,19 +157,19 @@
 	/* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
 
 	p {
-		font-size: $text-font-scale * 100%;
-		line-height: 1 * $line-height / $text-font-scale;
-		margin: $line-height / $text-font-scale*1em 0 0;
+		font-size: $ym-text-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-font-scale;
+		margin: $line-height / $ym-text-font-scale*1em 0 0;
 	}
 
 	blockquote, cite, q {
-		font-family: $font-serif;
+		font-family: $ym-font-serif;
 		font-style:italic;
 	}
 
 	blockquote {
-		background:$blockquote-bg-color;
-		color:$blockquote-text-color;
+		background:$ym-blockquote-bg-color;
+		color:$ym-blockquote-text-color;
 		margin: $line-height * 1em 0 0 1.5em;
 	}
 
@@ -178,15 +178,15 @@
 	em, i { font-style:italic; }
 
 	big {
-		/*! font-size: #{$base-font-size * $text-big-font-scale}px; */
-		font-size: $text-big-font-scale * 100%;
-		line-height: 1 * $line-height / $text-big-font-scale;
+		/*! font-size: #{$ym-base-font-size * $ym-text-big-font-scale}px; */
+		font-size: $ym-text-big-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-big-font-scale;
 	}
 
 	small {
-		/*! font-size: #{$base-font-size * $text-small-font-scale}px; */
-		font-size: $text-small-font-scale * 100%;
-		line-height: 1 * $line-height / $text-small-font-scale;
+		/*! font-size: #{$ym-base-font-size * $ym-text-small-font-scale}px; */
+		font-size: $ym-text-small-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-small-font-scale;
 	}
 
 	pre,
@@ -195,21 +195,21 @@
 	tt,
 	samp,
 	var {
-		font-size: $text-font-scale * 100%;
+		font-size: $ym-text-font-scale * 100%;
 	}
 
 	pre {
-		font-size: $text-font-scale * 100%;
-		line-height: 1 * $line-height / $text-font-scale;
-		margin: $line-height / $text-font-scale*1em 0 0;
+		font-size: $ym-text-font-scale * 100%;
+		line-height: 1 * $line-height / $ym-text-font-scale;
+		margin: $line-height / $ym-text-font-scale*1em 0 0;
 		white-space: pre;
 		white-space: pre-wrap;
 		word-wrap: break-word;
 	}
-	pre, code { color:$pre-text-color; }
+	pre, code { color:$ym-pre-text-color; }
 
 	kbd, samp, var, tt {
-		color:$kbd-text-color;
+		color:$ym-kbd-text-color;
 		font-weight:bold;
 	}
 
@@ -234,24 +234,24 @@
 	sub { bottom: -0.25em; }
 
 	mark {
-		background: $mark-bg-color;
-		color: $mark-text-color;
+		background: $ym-mark-bg-color;
+		color: $ym-mark-text-color;
 	}
 
 	hr {
 		color:#fff;
 		background:transparent;
 		margin: 0 0 $line-height / 2 * 1em 0;
-		padding:0 0 (($base-line-height / 2 - 1 ) / ($base-line-height / 2 )) / 2 * $line-height * 1em 0;
+		padding:0 0 (($ym-base-line-height / 2 - 1 ) / ($ym-base-line-height / 2 )) / 2 * $line-height * 1em 0;
 		border: 0;
-		border-bottom:1px $hr-color solid;
+		border-bottom:1px $ym-hr-color solid;
 	}
 
 	/*--- Links ----------------------------------------------------------------------------------------- */
 
 	a {
-		color:$link-text-color;
-		background:$link-bg-color;
+		color:$ym-link-text-color;
+		background:$ym-link-bg-color;
 		text-decoration:none;
 	}
 
@@ -261,8 +261,8 @@
 	/* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
 	a:hover,
 	a:focus {
-		background-color: $link-focus-bg-color;
-		color:$link-focus-text-color;
+		background-color: $ym-link-focus-bg-color;
+		color:$ym-link-focus-text-color;
 		text-decoration:none;
 	}
 
@@ -301,11 +301,11 @@
 	* @section content-generic-classes
 	*/
 	.highlight {
-		color:$highlight-text-color;
+		color:$ym-highlight-text-color;
 	}
 
 	.dimmed {
-		color:$dimmed-text-color;
+		color:$ym-dimmed-text-color;
 	}
 
 	.box {
@@ -317,7 +317,7 @@
 		@include ym-box-shadow(1px,1px,3px,rgba(0,0,0,.2),inset);
 		color: #444;
 		color: rgba(0,0,0,.8);
-		padding: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em;
+		padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em;
 		margin: $line-height*1em 0 0 0;
 
 		& > *:first-child {
@@ -341,19 +341,19 @@
 	}
 
 	.info {
-		background:$highlight-info-color;
+		background:$ym-highlight-info-color;
 	}
 
 	.success {
-		background:$highlight-success-color;
+		background:$ym-highlight-success-color;
 	}
 
 	.warning {
-		background:$highlight-warning-color;
+		background:$ym-highlight-warning-color;
 	}
 
 	.error {
-		background:$highlight-error-color;
+		background:$ym-highlight-error-color;
 	}
 
 	.float-left {
@@ -388,17 +388,17 @@
 	table {
 		width:100%;
 		border-collapse:collapse;
-		color:$text-color;
+		color:$ym-text-color;
 		border-top: 1px #ccc solid;
 		border-bottom: 1px #ccc solid;
-		margin: ($base-line-height - 2 ) / $base-line-height * $line-height * 1em 0 0 0;
+		margin: ($ym-base-line-height - 2 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
 
 		&.narrow {
-			margin: ($base-line-height - 1 ) / $base-line-height * $line-height * 1em 0 0 0;
+			margin: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
 
 			th, td {
 				padding: 0 0.5em;
-				line-height: ($base-line-height - 1 ) / $base-line-height * $line-height;
+				line-height: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height;
 			}
 		}
 
@@ -432,7 +432,7 @@
 	th, td {
 		line-height: $line-height * 1em;
 		vertical-align: top;
-		padding: ($base-line-height - 1 ) / $base-line-height * $line-height / 2 * 1em 0.5em;
+		padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height / 2 * 1em 0.5em;
 	}
 
 	th *:first-child,
