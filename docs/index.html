@@ -1606,34 +1606,68 @@ body &gt; header { min-width: 760px; }
 							</select>
 						</div>
 
-						<h6 class="ym-fbox-heading">Inline Form Elements</h6>
-						<div class="ym-fbox-text ym-inline">
-							<label for="reg1">Registration Code</label>
-							<div class="ym-fbox-wrapper">
-								<input type="text" name="reg1" id="reg1" size="4" />-
-								<input type="text" name="reg2" id="reg2" size="4" />-
-								<input type="text" name="reg3" id="reg3" size="4" />-
-								<input type="text" name="reg4" id="reg4" size="4" />
-							</div>
-						</div>
-						<h6 class="ym-fbox-heading">Multicolumnar Form Fields</h6>
-						<div class="ym-fbox-text">
-							<span class="ym-label">Location</span>
-							<div class="ym-grid ym-fbox-multicol">
-								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox-left">
-										<label for="plz">Postal Code</label>
-										<input type="text" name="plz" id="plz" size="20" />
-									</div>
+						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
+						<div class="ym-fbox-text ym-fbox-select">
+							<label>Postal Code / City</label>
+							<div class="ym-fbox-multicol">
+								<div class="ym-g50">
+									<label>Postal Code</label>
+									<input type="text" name="plz" id="plz" size="20" />
 								</div>
-								<div class="ym-g66 ym-gr">
-									<div class="ym-gbox-right">
-										<label for="city">City</label>
-										<input type="text" name="city" id="city" size="20" />
-									</div>
+								<div class="ym-g50">
+									<label>City</label>
+									<select name="city" id="city"><option value="">entry</option></select>
 								</div>
 							</div>
 						</div>
+						<div class="ym-fbox-text ym-fbox-select">
+							<label>Postal Code / City</label>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g20" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g80" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g25" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g75" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g33" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g66" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g38" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g62" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g40" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g60" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g50" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g50" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g60" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g40" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g62" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g38" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g66" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g33" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g75" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g25" name="city" id="city"><option value="">entry</option></select>
+							</div>
+							<div class="ym-fbox-multicol">
+								<input class="ym-g80" type="text" name="plz" id="plz" size="20" />
+								<select class="ym-g20" name="city" id="city"><option value="">entry</option></select>
+							</div>
+						</div>
+
 						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
 						<div class="ym-fbox-text ym-error" role="alert" aria-live="assertive">
 							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>

@@ -353,13 +353,55 @@
     border: 0 none;
   }
   .ym-form .ym-fbox-multicol {
+    display: table;
     width: 60%;
   }
-  .ym-form .ym-fbox-multicol select,
-  .ym-form .ym-fbox-multicol input,
-  .ym-form .ym-fbox-multicol textarea {
-    width: 94.2%;
-    margin-right: -3px;
+  .ym-form .ym-g20,
+  .ym-form .ym-g40,
+  .ym-form .ym-g60,
+  .ym-form .ym-g80,
+  .ym-form .ym-g25,
+  .ym-form .ym-g33,
+  .ym-form .ym-g50,
+  .ym-form .ym-g66,
+  .ym-form .ym-g75,
+  .ym-form .ym-g38,
+  .ym-form .ym-g62 {
+    float: left;
+    margin: 0 2% 0 0 !important;
+  }
+  .ym-form .ym-g20 {
+    width: 18% !important;
+  }
+  .ym-form .ym-g40 {
+    width: 38% !important;
+  }
+  .ym-form .ym-g60 {
+    width: 58% !important;
+  }
+  .ym-form .ym-g80 {
+    width: 78% !important;
+  }
+  .ym-form .ym-g25 {
+    width: 23% !important;
+  }
+  .ym-form .ym-g33 {
+    width: 31.333% !important;
+  }
+  .ym-form .ym-g50 {
+    width: 48% !important;
+  }
+  .ym-form .ym-g66 {
+    width: 64.666% !important;
+  }
+  .ym-form .ym-g75 {
+    width: 73% !important;
+  }
+  .ym-form .ym-g38 {
+    width: 36.2% !important;
+  }
+  .ym-form .ym-g62 {
+    width: 59.8% !important;
   }
 
   .ym-full .ym-fbox-select select,
@@ -758,7 +800,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 60%;
+    width: 58%;
   }
 
   .ym-columnar label {
@@ -768,11 +810,12 @@
     box-sizing: border-box;
   }
 
-  .ym-columnar .ym-fbox-select select input,
-  .ym-columnar .ym-fbox-select select textarea,
+  .ym-columnar .ym-fbox-select select {
+    width: 68%;
+  }
   .ym-columnar .ym-fbox-text input,
   .ym-columnar .ym-fbox-text textarea {
-    width: 70%;
+    width: 68%;
   }
 
   .ym-form .ym-gbox-left {
@@ -781,16 +824,16 @@
   .ym-form .ym-gbox-right {
     padding-left: 0.25em;
   }
-  .ym-form .ym-fbox-multicol select,
-  .ym-form .ym-fbox-multicol input,
-  .ym-form .ym-fbox-multicol textarea {
+  .ym-form .ym-fbox-multicol input[type="text"],
+  .ym-form .ym-fbox-multicol select {
     width: 100%;
+    margin: 0;
   }
 
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
   .ym-full .ym-fbox-text textarea {
-    width: 100%;
+    width: 98%;
   }
 }
 @media screen, projection {
@@ -836,7 +879,7 @@
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
     margin: 0;
-    text-align: right;
+    text-align: left;
   }
   .ym-form .ym-gbox {
     padding: 0 0.5em;

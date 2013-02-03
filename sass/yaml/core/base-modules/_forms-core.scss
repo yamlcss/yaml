@@ -106,16 +106,39 @@
 			border:0 none;
 		}
 
+
+		// micro-grid for form elements
+		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
 		.ym-fbox-multicol {
+			display: table;
 			width: 60%;
 		}
 
-		.ym-fbox-multicol select,
-		.ym-fbox-multicol input,
-		.ym-fbox-multicol textarea {
-			width:94.2%;
-			margin-right: -3px;
+		.ym-g20,
+		.ym-g40,
+		.ym-g60,
+		.ym-g80,
+		.ym-g25,
+		.ym-g33,
+		.ym-g50,
+		.ym-g66,
+		.ym-g75,
+		.ym-g38,
+		.ym-g62 {
+			float: left; margin: 0 2% 0 0 !important;
 		}
+
+		.ym-g20 { width:18% !important; }
+		.ym-g40 { width:38% !important; }
+		.ym-g60 { width:58% !important; }
+		.ym-g80 { width:78% !important; }
+		.ym-g25 { width:23% !important; }
+		.ym-g33 { width:31.333% !important; }
+		.ym-g50 { width:48% !important; }
+		.ym-g66 { width:64.666% !important; }
+		.ym-g75 { width:73% !important; }
+		.ym-g38 { width:36.2% !important; }
+		.ym-g62 { width:59.8% !important; }
 	}
 
 	// Indent Checkbox fields to match label-width
