@@ -27,6 +27,12 @@
 			@include ym-box-sizing(border-box);
 			width:58%;
 		}
+
+		.ym-fbox-grid {
+			@include ym-box-sizing(border-box);
+			display: table;
+			width: 60%;
+		}
 	}
 
 	.ym-columnar label {
@@ -43,29 +49,30 @@
 				width:68%;
 			}
 		}
-	}
-
-	.ym-form {
-		.ym-gbox-left {
-			padding-right: 0.25em;
-		}
-		.ym-gbox-right {
-			padding-left: 0.25em;
+		.ym-fbox-grid {
+			width: 70%;
 		}
 
-		.ym-fbox-multicol {
-			input[type="text"],
-			select {
-				width: 100%;
-				margin: 0;
-			}
-		}
 	}
+
 	.ym-full {
 		.ym-fbox-select select,
 		.ym-fbox-text input,
 		.ym-fbox-text textarea {
 				width:98%;
+		}
+		.ym-fbox-grid {
+			width: 100%;
+		}
+	}
+
+	.ym-form {
+		.ym-fbox-grid {
+			input,
+			textarea,
+			select {
+				width: 100%;
+			}
 		}
 	}
 }

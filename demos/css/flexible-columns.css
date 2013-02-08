@@ -312,19 +312,15 @@
   }
   .ym-form .ym-fbox-button:before,
   .ym-form .ym-fbox-check:before,
-  .ym-form .ym-fbox-inline:before,
   .ym-form .ym-fbox-select:before,
-  .ym-form .ym-fbox-text:before,
-  .ym-form .ym-fbox-wrapper:before {
+  .ym-form .ym-fbox-text:before {
     content: "";
     display: table;
   }
   .ym-form .ym-fbox-button:after,
   .ym-form .ym-fbox-check:after,
-  .ym-form .ym-fbox-inline:after,
   .ym-form .ym-fbox-select:after,
-  .ym-form .ym-fbox-text:after,
-  .ym-form .ym-fbox-wrapper:after {
+  .ym-form .ym-fbox-text:after {
     clear: both;
     content: ".";
     display: block;
@@ -353,9 +349,14 @@
   .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
-  .ym-form .ym-fbox-multicol {
+  .ym-form .ym-fbox-grid {
     display: table;
     width: 60%;
+  }
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 94.2%;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -369,7 +370,8 @@
   .ym-form .ym-g38,
   .ym-form .ym-g62 {
     float: left;
-    margin: 0 2% 0 0 !important;
+    margin-left: 0 !important;
+    margin-right: 2% !important;
   }
   .ym-form .ym-g20 {
     width: 18% !important;
@@ -411,7 +413,7 @@
     width: 94.2%;
     margin-right: -3px;
   }
-  .ym-full .ym-fbox-multicol {
+  .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
@@ -443,12 +445,12 @@
   .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
-  .ym-columnar .ym-fbox-multicol {
+  .ym-columnar .ym-fbox-grid {
     margin-left: 30%;
     width: 70%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-multicol label {
+  .ym-columnar .ym-fbox-grid label {
     display: block;
     float: none;
     width: auto;
@@ -654,6 +656,14 @@
     box-sizing: border-box;
     width: 58%;
   }
+  .ym-form .ym-fbox-grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    width: 60%;
+  }
 
   .ym-columnar label {
     -webkit-box-sizing: border-box;
@@ -669,23 +679,23 @@
   .ym-columnar .ym-fbox-text textarea {
     width: 68%;
   }
-
-  .ym-form .ym-gbox-left {
-    padding-right: 0.25em;
-  }
-  .ym-form .ym-gbox-right {
-    padding-left: 0.25em;
-  }
-  .ym-form .ym-fbox-multicol input[type="text"],
-  .ym-form .ym-fbox-multicol select {
-    width: 100%;
-    margin: 0;
+  .ym-columnar .ym-fbox-grid {
+    width: 70%;
   }
 
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
   .ym-full .ym-fbox-text textarea {
     width: 98%;
+  }
+  .ym-full .ym-fbox-grid {
+    width: 100%;
+  }
+
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 100%;
   }
 }
 @media screen, projection {

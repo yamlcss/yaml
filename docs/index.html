@@ -279,8 +279,7 @@
 									<code>.ym-fbox-select</code><br>
 									<code>.ym-fbox-check</code><br>
 									<code>.ym-fbox-button</code><br>
-									<code>.ym-fbox-wrapper<br>
-										.ym-fbox-multicol</code><br>
+									<code>.ym-fbox-grid</code><br>
 									<br>
 									<strong>optional classes</strong><br>
 									<code>.ym-full</code><br>
@@ -1599,8 +1598,8 @@ body &gt; header { min-width: 760px; }
 
 						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
 						<div class="ym-fbox-text ym-fbox-select">
-							<label>Postal Code / City</label>
-							<div class="ym-fbox-multicol">
+							<label>Wrapped Labels</label>
+							<div class="ym-fbox-grid">
 								<div class="ym-g50">
 									<label>Postal Code</label>
 									<input type="text" name="plz" id="plz" size="20" />
@@ -1612,48 +1611,48 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 						<div class="ym-fbox-text ym-fbox-select">
-							<label>Postal Code / City</label>
-							<div class="ym-fbox-multicol">
+							<label>Inline Elements</label>
+							<div class="ym-fbox-grid">
 								<input class="ym-g20" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g80" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g25" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g75" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g33" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g66" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g38" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g62" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g40" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g60" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g50" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g50" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g60" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g40" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g62" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g38" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g66" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g33" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g75" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g25" name="city" id="city"><option value="">entry</option></select>
 							</div>
-							<div class="ym-fbox-multicol">
+							<div class="ym-fbox-grid">
 								<input class="ym-g80" type="text" name="plz" id="plz" size="20" />
 								<select class="ym-g20" name="city" id="city"><option value="">entry</option></select>
 							</div>
@@ -1782,7 +1781,7 @@ body &gt; header { min-width: 760px; }
 <br>  .linearize-form [class*=&quot;ym-fbox&quot;]:not([class*=&quot;ym-fbox-check&quot;]) label,
   .linearize-form .ym-label,
   .linearize-form .ym-message,
-  .linearize-form .ym-fbox-multicol,
+  .linearize-form .ym-fbox-grid,
   .linearize-form input[type=&quot;text&quot;],
   .linearize-form textarea,
   .linearize-form select {
@@ -1793,7 +1792,7 @@ body &gt; header { min-width: 760px; }
   }
 
   .linearize-form .ym-message,
-  .linearize-form .ym-fbox-multicol,
+  .linearize-form .ym-fbox-grid,
   .linearize-form .ym-fbox-check input {<br>    margin-left: 0 !important;		<br>  }
 }</pre>
 <p class="cssCode">Add the class <code>.linearize-form</code> to any form, you want to be linearized. <span class="htmlCode">You should combine these settings with the linarization of your grid or column layout.</span></p>

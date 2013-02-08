@@ -92,7 +92,7 @@
 	& [class*="ym-fbox"]:not([class*="ym-fbox-check"]) label,
 	& .ym-label,
 	& .ym-message,
-	& .ym-fbox-multicol,
+	& .ym-fbox-grid,
 	& input[type="text"],
 	& textarea,
 	& select {
@@ -104,7 +104,7 @@
 	}
 
 	& .ym-message,
-	& .ym-fbox-multicol,
+	& .ym-fbox-grid,
 	& .ym-fbox-check input {
 		margin-left: 0 !important;
 	}

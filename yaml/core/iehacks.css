@@ -249,6 +249,87 @@
     zoom: 1;
   }
 
+  .ym-form .ym-g20,
+  .ym-form .ym-g40,
+  .ym-form .ym-g60,
+  .ym-form .ym-g80,
+  .ym-form .ym-g25,
+  .ym-form .ym-g33,
+  .ym-form .ym-g50,
+  .ym-form .ym-g66,
+  .ym-form .ym-g75,
+  .ym-form .ym-g38,
+  .ym-form .ym-g62 {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .ym-form .ym-g20 {
+    width: 16% !important;
+  }
+  .ym-form .ym-g40 {
+    width: 36% !important;
+  }
+  .ym-form .ym-g60 {
+    width: 56% !important;
+  }
+  .ym-form .ym-g80 {
+    width: 76% !important;
+  }
+  .ym-form .ym-g25 {
+    width: 21% !important;
+  }
+  .ym-form .ym-g33 {
+    width: 29.333% !important;
+  }
+  .ym-form .ym-g50 {
+    width: 46% !important;
+  }
+  .ym-form .ym-g66 {
+    width: 62.666% !important;
+  }
+  .ym-form .ym-g75 {
+    width: 71% !important;
+  }
+  .ym-form .ym-g38 {
+    width: 34.2% !important;
+  }
+  .ym-form .ym-g62 {
+    width: 57.8% !important;
+  }
+  .ym-form select.ym-g20 {
+    width: 14% !important;
+  }
+  .ym-form select.ym-g40 {
+    width: 34% !important;
+  }
+  .ym-form select.ym-g60 {
+    width: 54% !important;
+  }
+  .ym-form select.ym-g80 {
+    width: 74% !important;
+  }
+  .ym-form select.ym-g25 {
+    width: 19% !important;
+  }
+  .ym-form select.ym-g33 {
+    width: 27.333% !important;
+  }
+  .ym-form select.ym-g50 {
+    width: 44% !important;
+  }
+  .ym-form select.ym-g66 {
+    width: 60.666% !important;
+  }
+  .ym-form select.ym-g75 {
+    width: 69% !important;
+  }
+  .ym-form select.ym-g38 {
+    width: 32.2% !important;
+  }
+  .ym-form select.ym-g62 {
+    width: 55.8% !important;
+  }
+
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) Workaround for 'collapsing margin at #col3' when using CSS-property clear

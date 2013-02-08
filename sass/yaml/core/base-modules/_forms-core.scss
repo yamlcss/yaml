@@ -54,20 +54,16 @@
 		// Gestaltung der kapselnden DIV-Elemente
 		.ym-fbox-button:before,
 		.ym-fbox-check:before,
-		.ym-fbox-inline:before,
 		.ym-fbox-select:before,
-		.ym-fbox-text:before,
-		.ym-fbox-wrapper:before {
+		.ym-fbox-text:before {
 			content:"";
 			display:table;
 		}
 
 		.ym-fbox-button:after,
 		.ym-fbox-check:after,
-		.ym-fbox-inline:after,
 		.ym-fbox-select:after,
-		.ym-fbox-text:after,
-		.ym-fbox-wrapper:after {
+		.ym-fbox-text:after {
 			clear:both;
 			content:".";
 			display:block;
@@ -109,11 +105,18 @@
 
 		// micro-grid for form elements
 		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
-		.ym-fbox-multicol {
+		.ym-fbox-grid {
 			display: table;
 			width: 60%;
+
+			input,
+			textarea,
+			select {
+				width: 94.2%;
+			}
 		}
 
+		// redefine grid-classes for usage within forms module
 		.ym-g20,
 		.ym-g40,
 		.ym-g60,
@@ -125,7 +128,9 @@
 		.ym-g75,
 		.ym-g38,
 		.ym-g62 {
-			float: left; margin: 0 2% 0 0 !important;
+			float: left;
+			margin-left: 0 !important;
+			margin-right: 2% !important;
 		}
 
 		.ym-g20 { width:18% !important; }
@@ -151,7 +156,7 @@
 			margin-right: -3px;
 		}
 
-		.ym-fbox-multicol {
+		.ym-fbox-grid {
 			width: 100%;
 		}
 	}
@@ -209,13 +214,13 @@
 			margin-left:30%;
 		}
 
-		.ym-fbox-multicol {
+		.ym-fbox-grid {
 			margin-left:30%;
 			width: 70%;
 			margin-right: -3px;
 		}
 
-		.ym-fbox-multicol label {
+		.ym-fbox-grid label {
 			display:block;
 			float:none;
 			width:auto;

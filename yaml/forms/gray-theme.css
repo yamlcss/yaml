@@ -19,6 +19,14 @@
     box-sizing: border-box;
     width: 58%;
   }
+  .ym-form .ym-fbox-grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    width: 60%;
+  }
 
   .ym-columnar label {
     -webkit-box-sizing: border-box;
@@ -34,23 +42,23 @@
   .ym-columnar .ym-fbox-text textarea {
     width: 68%;
   }
-
-  .ym-form .ym-gbox-left {
-    padding-right: 0.25em;
-  }
-  .ym-form .ym-gbox-right {
-    padding-left: 0.25em;
-  }
-  .ym-form .ym-fbox-multicol input[type="text"],
-  .ym-form .ym-fbox-multicol select {
-    width: 100%;
-    margin: 0;
+  .ym-columnar .ym-fbox-grid {
+    width: 70%;
   }
 
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
   .ym-full .ym-fbox-text textarea {
     width: 98%;
+  }
+  .ym-full .ym-fbox-grid {
+    width: 100%;
+  }
+
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 100%;
   }
 }
 @media screen, projection {
