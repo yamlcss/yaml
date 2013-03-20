@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "yaml/mixins/yaml_mixins_core";
 
 @media all {
@@ -15,7 +16,7 @@
 			padding: 0.5em 1.5em;
 			display:inline; // (en|de) Bugfix:IE - Doubled Float Margin Bug
 			float:left; // LTR
-			
+
 			li {
 				display:inline; // (en|de) Bugfix:IE - Doubled Float Margin Bug
 				float:left; // LTR

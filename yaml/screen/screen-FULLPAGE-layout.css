@@ -40,7 +40,7 @@
     margin-bottom: 1.5em;
   }
   #main aside .ym-gbox-right {
-    border-left: 1px #dddddd solid;
+    border-left: 1px #ddd solid;
   }
 
   footer {
@@ -75,7 +75,7 @@
   .ym-skiplinks a.ym-skip:active {
     color: #fff;
     background: #333;
-    border-bottom: 1px black solid;
+    border-bottom: 1px #000 solid;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
@@ -106,7 +106,7 @@
   }
 
   .secondary {
-    border-top: 1px #888888 solid;
+    border-top: 1px #888 solid;
     margin-top: 1.5em !important;
   }
 
