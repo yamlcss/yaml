@@ -10,9 +10,7 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input,
-  .ym-form textarea,
-  .ym-form select {
+  .ym-form input, .ym-form textarea, .ym-form select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -38,26 +36,21 @@
   .ym-columnar .ym-fbox-select select {
     width: 68%;
   }
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
     width: 68%;
   }
   .ym-columnar .ym-fbox-grid {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
     width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid input, .ym-form .ym-fbox-grid textarea, .ym-form .ym-fbox-grid select {
     width: 100%;
   }
 }
@@ -92,10 +85,7 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text,
-  .ym-form .ym-fbox-select,
-  .ym-form .ym-fbox-check,
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox-text, .ym-form .ym-fbox-select, .ym-form .ym-fbox-check, .ym-form .ym-fbox-button {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
@@ -130,13 +120,11 @@
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
     line-height: 1em;
-    padding: 0.25em 0.3em;
-    margin-top: -2px;
+    padding: 4px 0.3em;
   }
   .ym-form .ym-fbox-select select {
     line-height: 1em;
-    padding: 0.25em 2px 0.25em 1px;
-    margin-top: -2px;
+    padding: 3px 2px 3px 1px;
   }
   .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
@@ -171,9 +159,7 @@
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
     border: 1px #800 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
-  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
-  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus, .ym-form .ym-error select:hover, .ym-form .ym-error select:focus, .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
     border: 1px #800 solid !important;
   }
   .ym-form .ym-error .ym-message {
@@ -181,9 +167,7 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
-  .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
-  .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
+  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus, .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover, .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
     border: 1px #888 solid;
     background: #fff;
   }
@@ -606,8 +590,7 @@
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
-  * html .ym-button,
-  * html .ym-form button {
+  * html .ym-button, * html .ym-form button {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
@@ -622,25 +605,21 @@
     /* removes extra side spacing in IE */
     text-decoration: none !important;
   }
-  * html .ym-form button:focus,
-  * html .ym-button:focus {
+  * html .ym-form button:focus, * html .ym-button:focus {
     outline: 0;
     background: #fafafa;
   }
-  * html .ym-form button:hover,
-  * html .ym-button:hover {
+  * html .ym-form button:hover, * html .ym-button:hover {
     background-color: #ddd;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  * html .ym-form button:active,
-  * html .ym-button:active {
+  * html .ym-form button:active, * html .ym-button:active {
     background-color: #bbb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
     position: relative;
     top: 1px;
   }
-  * html .ym-button.ym-disabled,
-  * html .ym-button.ym-disabled:hover {
+  * html .ym-button.ym-disabled, * html .ym-button.ym-disabled:hover {
     background: #eee;
     color: #aaa !important;
     border-color: #aaa;

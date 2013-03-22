@@ -150,13 +150,11 @@
 	.ym-form {
 		.ym-fbox-text input, .ym-fbox-text textarea {
 			line-height: 1em;
-			padding: 0.25em 0.3em;
-			margin-top: -2px;
+			padding: 4px 0.3em;
 		}
 		.ym-fbox-select select {
 			line-height: 1em;
-			padding: 0.25em 2px 0.25em 1px;
-			margin-top: -2px;
+			padding: 3px 2px 3px 1px;
 		}
 		input, textarea, select, optgroup {
 			font-family:Arial, Helvetica, sans-serif;

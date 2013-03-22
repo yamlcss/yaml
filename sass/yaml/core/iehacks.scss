@@ -212,7 +212,7 @@
 	* @valid     no
 	*/
 
-	button, input { *overflow: visible; }
+	button, input { *overflow: visible !important; }
 	table button, table input { *overflow: auto; }
 
 	fieldset, legend { position:relative; }
@@ -233,47 +233,47 @@
 	.ym-form div * { zoom:1; }
 
 	.ym-form {
-		// adjusted grid paddings for box-modell: content-box
-		.ym-g20,
-		.ym-g40,
-		.ym-g60,
-		.ym-g80,
-		.ym-g25,
-		.ym-g33,
-		.ym-g50,
-		.ym-g66,
-		.ym-g75,
-		.ym-g38,
-		.ym-g62 {
-			padding-left: 1%;
-			padding-right: 1%;
+
+		input,
+		select,
+		textarea {
+			padding-left: 1% !important;
+			padding-right: 1% !important;
+		}
+
+		// no display:table in IE6;
+		.ym-fbox-grid {
+			display: block;
+			overflow: hidden;
+
+			input,
+			textarea,
+			select {
+				width: 96% !important;
+			}
 		}
 
 		// adjusted grid widths for box-modell: content-box
-		.ym-g20 { width:16% !important; }
-		.ym-g40 { width:36% !important; }
-		.ym-g60 { width:56% !important; }
-		.ym-g80 { width:76% !important; }
-		.ym-g25 { width:21% !important; }
-		.ym-g33 { width:29.333% !important; }
-		.ym-g50 { width:46% !important; }
-		.ym-g66 { width:62.666% !important; }
-		.ym-g75 { width:71% !important; }
-		.ym-g38 { width:34.2% !important; }
-		.ym-g62 { width:57.8% !important; }
+		input, select {
+			&.ym-g20 { display:inline; width:16% !important; }
+			&.ym-g40 { display:inline; width:36% !important; }
+			&.ym-g60 { display:inline; width:56% !important; }
+			&.ym-g80 { display:inline; width:76% !important; }
+			&.ym-g25 { display:inline; width:21% !important; }
+			&.ym-g33 { display:inline; width:29.333% !important; }
+			&.ym-g50 { display:inline; width:46% !important; }
+			&.ym-g66 { display:inline; width:62.666% !important; }
+			&.ym-g75 { display:inline; width:71% !important; }
+			&.ym-g38 { display:inline; width:34.2% !important; }
+			&.ym-g62 { display:inline; width:57.8% !important; }
+		}
+	}
 
-		select {
-			&.ym-g20 { width:14% !important; }
-			&.ym-g40 { width:34% !important; }
-			&.ym-g60 { width:54% !important; }
-			&.ym-g80 { width:74% !important; }
-			&.ym-g25 { width:19% !important; }
-			&.ym-g33 { width:27.333% !important; }
-			&.ym-g50 { width:44% !important; }
-			&.ym-g66 { width:60.666% !important; }
-			&.ym-g75 { width:69% !important; }
-			&.ym-g38 { width:32.2% !important; }
-			&.ym-g62 { width:55.8% !important; }
+	// avoid a margin related bug in IE7 ...
+	.ym-columnar {
+		.ym-fbox-grid {
+			margin-left: 0;
+			float: right;
 		}
 	}
 

@@ -335,7 +335,9 @@
   .ym-form textarea {
     display: block;
     position: relative;
-    width: 58.5%;
+    width: 56%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   .ym-form .ym-fbox-check input {
     display: inline;
@@ -352,13 +354,13 @@
     border: 0 none;
   }
   .ym-form .ym-fbox-grid {
-    display: table;
+    overflow: hidden;
     width: 60%;
   }
   .ym-form .ym-fbox-grid input,
   .ym-form .ym-fbox-grid textarea,
   .ym-form .ym-fbox-grid select {
-    width: 94.2%;
+    width: 96%;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -371,6 +373,9 @@
   .ym-form .ym-g75,
   .ym-form .ym-g38,
   .ym-form .ym-g62 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     margin-left: 0 !important;
     margin-right: 2% !important;
@@ -412,7 +417,7 @@
   .ym-full .ym-fbox-select select,
   .ym-full .ym-fbox-text input,
   .ym-full .ym-fbox-text textarea {
-    width: 94.2%;
+    width: 94%;
     margin-right: -3px;
   }
   .ym-full .ym-fbox-grid {
@@ -430,7 +435,7 @@
   .ym-columnar .ym-fbox-text input,
   .ym-columnar .ym-fbox-text textarea {
     float: left;
-    width: 67.2%;
+    width: 65%;
     margin-right: -3px;
   }
   .ym-columnar .ym-label {
@@ -470,15 +475,15 @@
   }
 
   .ym-fbox-select select {
-    width: 60%;
+    width: 58%;
   }
 
   .ym-full .ym-fbox-select select {
-    width: 94.8%;
+    width: 96%;
   }
 
   .ym-columnar .ym-fbox-select select {
-    width: 68.8%;
+    width: 67%;
   }
 
    /**
@@ -769,13 +774,11 @@
   /* Gestaltung der einzelnen Formularelemente mit ann„hend gleicher Breite */
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
     line-height: 1em;
-    padding: 0.25em 0.3em;
-    margin-top: -2px;
+    padding: 4px 0.3em;
   }
   .ym-form .ym-fbox-select select {
     line-height: 1em;
-    padding: 0.25em 2px 0.25em 1px;
-    margin-top: -2px;
+    padding: 3px 2px 3px 1px;
   }
   .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
@@ -1501,21 +1504,21 @@
 
   h1 {
     /* font-size: 48px; */
-    font-size: 342.85714%;
+    font-size: 342.857%;
     line-height: 0.875;
-    margin: 0.4375em 0 0;
+    margin: 0.438em 0 0;
   }
 
   h2 {
     /* font-size: 32px; */
-    font-size: 228.57143%;
-    line-height: 1.3125;
-    margin: 0.65625em 0 0;
+    font-size: 228.571%;
+    line-height: 1.313;
+    margin: 0.656em 0 0;
   }
 
   h3 {
     /* font-size: 24px; */
-    font-size: 171.42857%;
+    font-size: 171.429%;
     line-height: 0.875;
     margin: 0.875em 0 0;
   }
@@ -1529,9 +1532,9 @@
 
   h5 {
     /* font-size: 18px; */
-    font-size: 128.57143%;
-    line-height: 1.16667;
-    margin: 1.16667em 0 0;
+    font-size: 128.571%;
+    line-height: 1.167;
+    margin: 1.167em 0 0;
   }
 
   h6 {
@@ -1616,13 +1619,13 @@
 
   big {
     /* font-size: 16px; */
-    font-size: 114.28571%;
-    line-height: 1.3125;
+    font-size: 114.286%;
+    line-height: 1.313;
   }
 
   small {
     /* font-size: 12px; */
-    font-size: 85.71429%;
+    font-size: 85.714%;
     line-height: 1.75;
   }
 
@@ -1689,7 +1692,7 @@
     color: #fff;
     background: transparent;
     margin: 0 0 0.75em 0;
-    padding: 0 0 0.67857em 0;
+    padding: 0 0 0.679em 0;
     border: 0;
     border-bottom: 1px #eeeeee solid;
   }
@@ -1768,7 +1771,7 @@
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     color: #444;
     color: rgba(0, 0, 0, 0.8);
-    padding: 1.42857em;
+    padding: 1.429em;
     margin: 1.5em 0 0 0;
   }
   .box > *:first-child {
@@ -1840,14 +1843,14 @@
     color: #444444;
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
-    margin: 1.35714em 0 0 0;
+    margin: 1.357em 0 0 0;
   }
   table.narrow {
-    margin: 1.42857em 0 0 0;
+    margin: 1.429em 0 0 0;
   }
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
-    line-height: 1.42857;
+    line-height: 1.429;
   }
   table.bordertable {
     border: 1px #ccc solid;
@@ -1874,7 +1877,7 @@
   th, td {
     line-height: 1.5em;
     vertical-align: top;
-    padding: 0.71429em 0.5em;
+    padding: 0.714em 0.5em;
   }
 
   th *:first-child,
@@ -1948,7 +1951,7 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 759px) {
+@media screen and ( max-width: 759px ) {
   .ym-wrapper {
     width: auto;
   }

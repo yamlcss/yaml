@@ -288,22 +288,17 @@
   .ym-form div {
     position: relative;
   }
-  .ym-form label,
-  .ym-form .ym-message {
+  .ym-form label, .ym-form .ym-message {
     position: relative;
     display: block;
   }
   .ym-form .ym-fbox-check label {
     display: inline;
   }
-  .ym-form input,
-  .ym-form textarea {
+  .ym-form input, .ym-form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"],
-  .ym-form select,
-  .ym-form label {
+  .ym-form input[type="checkbox"], .ym-form input[type="radio"], .ym-form select, .ym-form label {
     cursor: pointer;
   }
   .ym-form textarea {
@@ -312,17 +307,11 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox-button:before,
-  .ym-form .ym-fbox-check:before,
-  .ym-form .ym-fbox-select:before,
-  .ym-form .ym-fbox-text:before {
+  .ym-form .ym-fbox-button:before, .ym-form .ym-fbox-check:before, .ym-form .ym-fbox-select:before, .ym-form .ym-fbox-text:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox-button:after,
-  .ym-form .ym-fbox-check:after,
-  .ym-form .ym-fbox-select:after,
-  .ym-form .ym-fbox-text:after {
+  .ym-form .ym-fbox-button:after, .ym-form .ym-fbox-check:after, .ym-form .ym-fbox-select:after, .ym-form .ym-fbox-text:after {
     clear: both;
     content: ".";
     display: block;
@@ -330,12 +319,12 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select,
-  .ym-form input,
-  .ym-form textarea {
+  .ym-form select, .ym-form input, .ym-form textarea {
     display: block;
     position: relative;
-    width: 58.5%;
+    width: 56%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   .ym-form .ym-fbox-check input {
     display: inline;
@@ -346,31 +335,20 @@
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-fbox-check input:focus,
-  .ym-form .ym-fbox-check input:hover,
-  .ym-form .ym-fbox-check input:active {
+  .ym-form .ym-fbox-check input:focus, .ym-form .ym-fbox-check input:hover, .ym-form .ym-fbox-check input:active {
     border: 0 none;
   }
   .ym-form .ym-fbox-grid {
-    display: table;
+    overflow: hidden;
     width: 60%;
   }
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
-    width: 94.2%;
+  .ym-form .ym-fbox-grid input, .ym-form .ym-fbox-grid textarea, .ym-form .ym-fbox-grid select {
+    width: 96%;
   }
-  .ym-form .ym-g20,
-  .ym-form .ym-g40,
-  .ym-form .ym-g60,
-  .ym-form .ym-g80,
-  .ym-form .ym-g25,
-  .ym-form .ym-g33,
-  .ym-form .ym-g50,
-  .ym-form .ym-g66,
-  .ym-form .ym-g75,
-  .ym-form .ym-g38,
-  .ym-form .ym-g62 {
+  .ym-form .ym-g20, .ym-form .ym-g40, .ym-form .ym-g60, .ym-form .ym-g80, .ym-form .ym-g25, .ym-form .ym-g33, .ym-form .ym-g50, .ym-form .ym-g66, .ym-form .ym-g75, .ym-form .ym-g38, .ym-form .ym-g62 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     margin-left: 0 !important;
     margin-right: 2% !important;
@@ -409,28 +387,23 @@
     width: 59.8% !important;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
-    width: 94.2%;
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
+    width: 94%;
     margin-right: -3px;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-columnar .ym-fbox-text label,
-  .ym-columnar .ym-fbox-select label {
+  .ym-columnar .ym-fbox-text label, .ym-columnar .ym-fbox-select label {
     display: inline;
     float: left;
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-fbox-select select,
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-select select, .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
     float: left;
-    width: 67.2%;
+    width: 65%;
     margin-right: -3px;
   }
   .ym-columnar .ym-label {
@@ -443,8 +416,7 @@
   .ym-columnar .ym-fbox-check .ym-label {
     line-height: 1.0;
   }
-  .ym-columnar .ym-fbox-check input,
-  .ym-columnar .ym-error .ym-message {
+  .ym-columnar .ym-fbox-check input, .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
   .ym-columnar .ym-fbox-grid {
@@ -470,23 +442,21 @@
   }
 
   .ym-fbox-select select {
-    width: 60%;
+    width: 58%;
   }
 
   .ym-full .ym-fbox-select select {
-    width: 94.8%;
+    width: 96%;
   }
 
   .ym-columnar .ym-fbox-select select {
-    width: 68.8%;
+    width: 67%;
   }
 
    /**
 	* Inline forms display - technical base (optional)
 	*/
-  .ym-form.ym-inline .ym-fbox-select select, .ym-form.ym-form.ym-inline .ym-fbox-text input,
-  .ym-form .ym-fbox-select.ym-inline select,
-  .ym-form .ym-fbox-text.ym-inline input {
+  .ym-form.ym-inline .ym-fbox-select select, .ym-form.ym-form.ym-inline .ym-fbox-text input, .ym-form .ym-fbox-select.ym-inline select, .ym-form .ym-fbox-text.ym-inline input {
     width: auto !important;
     display: inline;
     float: none;
@@ -522,8 +492,7 @@
     padding: 0;
     list-style-type: none;
   }
-  .ym-skiplinks .ym-skip:focus,
-  .ym-skiplinks .ym-skip:active {
+  .ym-skiplinks .ym-skip:focus, .ym-skiplinks .ym-skip:active {
     left: 32768px;
     outline: 0 none;
     position: absolute;
@@ -752,9 +721,7 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input,
-  .ym-form textarea,
-  .ym-form select {
+  .ym-form input, .ym-form textarea, .ym-form select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -780,26 +747,21 @@
   .ym-columnar .ym-fbox-select select {
     width: 68%;
   }
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
     width: 68%;
   }
   .ym-columnar .ym-fbox-grid {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
     width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid input, .ym-form .ym-fbox-grid textarea, .ym-form .ym-fbox-grid select {
     width: 100%;
   }
 }
@@ -834,10 +796,7 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text,
-  .ym-form .ym-fbox-select,
-  .ym-form .ym-fbox-check,
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox-text, .ym-form .ym-fbox-select, .ym-form .ym-fbox-check, .ym-form .ym-fbox-button {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
@@ -872,13 +831,11 @@
   /* Gestaltung der einzelnen Formularelemente mit ann„hend gleicher Breite */
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
     line-height: 1em;
-    padding: 0.25em 0.3em;
-    margin-top: -2px;
+    padding: 4px 0.3em;
   }
   .ym-form .ym-fbox-select select {
     line-height: 1em;
-    padding: 0.25em 2px 0.25em 1px;
-    margin-top: -2px;
+    padding: 3px 2px 3px 1px;
   }
   .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
@@ -913,9 +870,7 @@
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
     border: 1px #800 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
-  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
-  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus, .ym-form .ym-error select:hover, .ym-form .ym-error select:focus, .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
     border: 1px #800 solid !important;
   }
   .ym-form .ym-error .ym-message {
@@ -923,9 +878,7 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
-  .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
-  .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
+  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus, .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover, .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
     border: 1px #888 solid;
     background: #fff;
   }
@@ -1348,8 +1301,7 @@
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
-  * html .ym-button,
-  * html .ym-form button {
+  * html .ym-button, * html .ym-form button {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
@@ -1364,25 +1316,21 @@
     /* removes extra side spacing in IE */
     text-decoration: none !important;
   }
-  * html .ym-form button:focus,
-  * html .ym-button:focus {
+  * html .ym-form button:focus, * html .ym-button:focus {
     outline: 0;
     background: #fafafa;
   }
-  * html .ym-form button:hover,
-  * html .ym-button:hover {
+  * html .ym-form button:hover, * html .ym-button:hover {
     background-color: #ddd;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  * html .ym-form button:active,
-  * html .ym-button:active {
+  * html .ym-form button:active, * html .ym-button:active {
     background-color: #bbb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
     position: relative;
     top: 1px;
   }
-  * html .ym-button.ym-disabled,
-  * html .ym-button.ym-disabled:hover {
+  * html .ym-button.ym-disabled, * html .ym-button.ym-disabled:hover {
     background: #eee;
     color: #aaa !important;
     border-color: #aaa;
@@ -1469,8 +1417,7 @@
   }
 
   /* skip links styling */
-  .ym-skiplinks a.ym-skip:focus,
-  .ym-skiplinks a.ym-skip:active {
+  .ym-skiplinks a.ym-skip:focus, .ym-skiplinks a.ym-skip:active {
     color: #fff;
     background: #333;
     border-bottom: 1px #000 solid;
@@ -1480,12 +1427,12 @@
   }
 }
 /* reset fallback values in modern browsers */
-@media screen and (min-width: 0px) {
+@media screen and ( min-width: 0px ) {
   .ym-wrapper {
     min-width: 0px;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and ( max-width: 740px ) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
   .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
@@ -1519,7 +1466,7 @@
     width: 14%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and ( max-width: 480px) {
   .ym-wbox {
     padding: 0;
   }
@@ -1631,21 +1578,21 @@
 
   h1 {
     /* font-size: 48px; */
-    font-size: 342.85714%;
+    font-size: 342.857%;
     line-height: 0.875;
-    margin: 0.4375em 0 0;
+    margin: 0.438em 0 0;
   }
 
   h2 {
     /* font-size: 32px; */
-    font-size: 228.57143%;
-    line-height: 1.3125;
-    margin: 0.65625em 0 0;
+    font-size: 228.571%;
+    line-height: 1.313;
+    margin: 0.656em 0 0;
   }
 
   h3 {
     /* font-size: 24px; */
-    font-size: 171.42857%;
+    font-size: 171.429%;
     line-height: 0.875;
     margin: 0.875em 0 0;
   }
@@ -1659,9 +1606,9 @@
 
   h5 {
     /* font-size: 18px; */
-    font-size: 128.57143%;
-    line-height: 1.16667;
-    margin: 1.16667em 0 0;
+    font-size: 128.571%;
+    line-height: 1.167;
+    margin: 1.167em 0 0;
   }
 
   h6 {
@@ -1746,13 +1693,13 @@
 
   big {
     /* font-size: 16px; */
-    font-size: 114.28571%;
-    line-height: 1.3125;
+    font-size: 114.286%;
+    line-height: 1.313;
   }
 
   small {
     /* font-size: 12px; */
-    font-size: 85.71429%;
+    font-size: 85.714%;
     line-height: 1.75;
   }
 
@@ -1819,7 +1766,7 @@
     color: #fff;
     background: transparent;
     margin: 0 0 0.75em 0;
-    padding: 0 0 0.67857em 0;
+    padding: 0 0 0.679em 0;
     border: 0;
     border-bottom: 1px #eeeeee solid;
   }
@@ -1898,7 +1845,7 @@
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     color: #444;
     color: rgba(0, 0, 0, 0.8);
-    padding: 1.42857em;
+    padding: 1.429em;
     margin: 1.5em 0 0 0;
   }
   .box > *:first-child {
@@ -1970,14 +1917,14 @@
     color: #444444;
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
-    margin: 1.35714em 0 0 0;
+    margin: 1.357em 0 0 0;
   }
   table.narrow {
-    margin: 1.42857em 0 0 0;
+    margin: 1.429em 0 0 0;
   }
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
-    line-height: 1.42857;
+    line-height: 1.429;
   }
   table.bordertable {
     border: 1px #ccc solid;
@@ -2004,7 +1951,7 @@
   th, td {
     line-height: 1.5em;
     vertical-align: top;
-    padding: 0.71429em 0.5em;
+    padding: 0.714em 0.5em;
   }
 
   th *:first-child,
@@ -2035,8 +1982,7 @@
     text-align: left;
     border-top: 1px solid #ccc;
   }
-  tbody tr:hover th,
-  tbody tr:hover td {
+  tbody tr:hover th, tbody tr:hover td {
     background: #f8f8f8;
   }
 }

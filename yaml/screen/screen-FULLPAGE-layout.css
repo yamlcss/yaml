@@ -82,12 +82,12 @@
   }
 }
 /* reset fallback values in modern browsers */
-@media screen and (min-width: 0px) {
+@media screen and ( min-width: 0px ) {
   body > header, body > nav, body > #main, body > footer {
     min-width: 0;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and ( max-width: 760px ) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
   .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
@@ -125,7 +125,7 @@
     width: 14%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and ( max-width: 480px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
   .linearize-level-2, .linearize-level-2 > [class*="ym-c"], .linearize-level-2 > [class*="ym-g"] {
     /* linearization for grids and columns module */

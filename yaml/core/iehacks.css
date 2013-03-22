@@ -223,7 +223,7 @@
   * @valid     no
   */
   button, input {
-    *overflow: visible;
+    *overflow: visible !important;
   }
 
   table button, table input {
@@ -249,85 +249,69 @@
     zoom: 1;
   }
 
-  .ym-form .ym-g20,
-  .ym-form .ym-g40,
-  .ym-form .ym-g60,
-  .ym-form .ym-g80,
-  .ym-form .ym-g25,
-  .ym-form .ym-g33,
-  .ym-form .ym-g50,
-  .ym-form .ym-g66,
-  .ym-form .ym-g75,
-  .ym-form .ym-g38,
-  .ym-form .ym-g62 {
-    padding-left: 1%;
-    padding-right: 1%;
+  .ym-form input,
+  .ym-form select,
+  .ym-form textarea {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
   }
-  .ym-form .ym-g20 {
+  .ym-form .ym-fbox-grid {
+    display: block;
+    overflow: hidden;
+  }
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 96% !important;
+  }
+  .ym-form input.ym-g20, .ym-form select.ym-g20 {
+    display: inline;
     width: 16% !important;
   }
-  .ym-form .ym-g40 {
+  .ym-form input.ym-g40, .ym-form select.ym-g40 {
+    display: inline;
     width: 36% !important;
   }
-  .ym-form .ym-g60 {
+  .ym-form input.ym-g60, .ym-form select.ym-g60 {
+    display: inline;
     width: 56% !important;
   }
-  .ym-form .ym-g80 {
+  .ym-form input.ym-g80, .ym-form select.ym-g80 {
+    display: inline;
     width: 76% !important;
   }
-  .ym-form .ym-g25 {
+  .ym-form input.ym-g25, .ym-form select.ym-g25 {
+    display: inline;
     width: 21% !important;
   }
-  .ym-form .ym-g33 {
+  .ym-form input.ym-g33, .ym-form select.ym-g33 {
+    display: inline;
     width: 29.333% !important;
   }
-  .ym-form .ym-g50 {
+  .ym-form input.ym-g50, .ym-form select.ym-g50 {
+    display: inline;
     width: 46% !important;
   }
-  .ym-form .ym-g66 {
+  .ym-form input.ym-g66, .ym-form select.ym-g66 {
+    display: inline;
     width: 62.666% !important;
   }
-  .ym-form .ym-g75 {
+  .ym-form input.ym-g75, .ym-form select.ym-g75 {
+    display: inline;
     width: 71% !important;
   }
-  .ym-form .ym-g38 {
+  .ym-form input.ym-g38, .ym-form select.ym-g38 {
+    display: inline;
     width: 34.2% !important;
   }
-  .ym-form .ym-g62 {
+  .ym-form input.ym-g62, .ym-form select.ym-g62 {
+    display: inline;
     width: 57.8% !important;
   }
-  .ym-form select.ym-g20 {
-    width: 14% !important;
-  }
-  .ym-form select.ym-g40 {
-    width: 34% !important;
-  }
-  .ym-form select.ym-g60 {
-    width: 54% !important;
-  }
-  .ym-form select.ym-g80 {
-    width: 74% !important;
-  }
-  .ym-form select.ym-g25 {
-    width: 19% !important;
-  }
-  .ym-form select.ym-g33 {
-    width: 27.333% !important;
-  }
-  .ym-form select.ym-g50 {
-    width: 44% !important;
-  }
-  .ym-form select.ym-g66 {
-    width: 60.666% !important;
-  }
-  .ym-form select.ym-g75 {
-    width: 69% !important;
-  }
-  .ym-form select.ym-g38 {
-    width: 32.2% !important;
-  }
-  .ym-form select.ym-g62 {
-    width: 55.8% !important;
+
+  .ym-columnar .ym-fbox-grid {
+    margin-left: 0;
+    float: right;
   }
 
   /*------------------------------------------------------------------------------------------------------*/
