@@ -40,7 +40,7 @@
     margin-bottom: 1.5em;
   }
   #main aside .ym-gbox-right {
-    border-left: 1px #ddd solid;
+    border-left: 1px #dddddd solid;
   }
 
   footer {
@@ -75,19 +75,19 @@
   .ym-skiplinks a.ym-skip:active {
     color: #fff;
     background: #333;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px black solid;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
   }
 }
 /* reset fallback values in modern browsers */
-@media screen and ( min-width: 0px ) {
+@media screen and (min-width: 0px) {
   body > header, body > nav, body > #main, body > footer {
     min-width: 0;
   }
 }
-@media screen and ( max-width: 760px ) {
+@media screen and (max-width: 760px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
   .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
@@ -106,7 +106,7 @@
   }
 
   .secondary {
-    border-top: 1px #888 solid;
+    border-top: 1px #888888 solid;
     margin-top: 1.5em !important;
   }
 
@@ -125,7 +125,7 @@
     width: 14%;
   }
 }
-@media screen and ( max-width: 480px) {
+@media screen and (max-width: 480px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
   .linearize-level-2, .linearize-level-2 > [class*="ym-c"], .linearize-level-2 > [class*="ym-g"] {
     /* linearization for grids and columns module */

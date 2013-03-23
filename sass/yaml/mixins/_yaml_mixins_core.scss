@@ -89,7 +89,7 @@
 }
 
 @mixin ym-linearize-forms {
-	& [class*="ym-fbox"]:not([class*="ym-fbox-check"]) label,
+	& [class*="ym-type"]:not([class*="ym-type-check"]) label,
 	& .ym-label,
 	& .ym-message,
 	& .ym-fbox-grid,
@@ -107,6 +107,11 @@
 	& .ym-fbox-grid,
 	& .ym-fbox-check input {
 		margin-left: 0 !important;
+	}
+
+	& .ym-fbox-grid [class*="ym-g"] {
+		width:100% !important;
+		margin:0;
 	}
 }
 

@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 				$(window).bind('resize',function(){
 					var width = $(window).width();
-					
+
 					if (width > 740) {
 						smnav.siblings().show();
 						smnav.hide();
@@ -44,7 +44,7 @@ $(document).ready(function() {
 						smnav.show();
 					}
 				});
-				
+
 				$(smnav).bind('change', function(){
 					var target = $(this).find('option:selected').data('target');
 					nav.find('a[href='+target+']').trigger('click');
@@ -174,11 +174,11 @@ $(document).ready(function() {
 		installFormSwitcher: function installFormSwitcher () {
 			$('#formswitch [type="checkbox"]').prop('checked', true);
 			$('#formswitch [type="radio"]:first').prop('checked', true);
-			
+
 			$('#formswitch').change(function(event){
 				var target = event.target,
 					type   = $(target).data('type');
-				
+
 				if ($(target).attr('type') == 'radio') {
 					$('#demo-form1, #demo-form2').removeClass('ym-columnar');
 					$('#demo-form1, #demo-form2').removeClass('ym-full');
@@ -202,7 +202,7 @@ $(document).ready(function() {
 $(window).load(function() {
 	var fragment = location.href.split('#'),
 		nav      = $('nav#level2');
-			
+
 	if (fragment.length > 0) {
 		$(nav.find('a[href="#'+fragment[1]+'"]')).trigger('click');
 	}

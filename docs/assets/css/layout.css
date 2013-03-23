@@ -3028,7 +3028,7 @@
     padding: 0;
   }
 
-  .linearize-form [class*="ym-fbox"]:not([class*="ym-fbox-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
+  .linearize-form [class*="ym-type"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
     /* linearization for forms module */
     display: block;
     float: none;
@@ -3037,5 +3037,9 @@
   }
   .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
+  }
+  .linearize-form .ym-fbox-grid [class*="ym-g"] {
+    width: 100% !important;
+    margin: 0;
   }
 }

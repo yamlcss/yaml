@@ -1785,7 +1785,9 @@ body &gt; header { min-width: 760px; }
 <pre class="cssCode">
 /* optimize forms on small screens by forcing display mode: full */
 @media screen and ( max-width: 740px )  {
-<br>  .linearize-form [class*=&quot;ym-fbox&quot;]:not([class*=&quot;ym-fbox-check&quot;]) label,
+
+  /* linearize form elements */
+  .linearize-form [class*=&quot;ym-fbox&quot;]:not([class*=&quot;ym-fbox-check&quot;]) label,
   .linearize-form .ym-label,
   .linearize-form .ym-message,
   .linearize-form .ym-fbox-grid,
@@ -1798,9 +1800,18 @@ body &gt; header { min-width: 760px; }
     width:100% !important;
   }
 
+  /* reset columnar indention */
   .linearize-form .ym-message,
   .linearize-form .ym-fbox-grid,
-  .linearize-form .ym-fbox-check input {<br>    margin-left: 0 !important;		<br>  }
+  .linearize-form .ym-fbox-check input {
+    margin-left: 0 !important;
+  }
+
+  /* linearize micro grid */
+  .linearize-form .ym-fbox-grid [class*="ym-g"] {
+    width:100% !important;
+    margin:0;
+  }
 }</pre>
 <p class="cssCode">Add the class <code>.linearize-form</code> to any form, you want to be linearized. <span class="htmlCode">You should combine these settings with the linarization of your grid or column layout.</span></p>
 <pre class="htmlCode">
