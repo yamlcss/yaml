@@ -111,10 +111,15 @@
 			overflow:hidden;
 			width: 60%;
 
-			input,
-			textarea,
-			select {
+			.ym-fbox-text input,
+			.ym-fbox-text textarea,
+			.ym-fbox-select select {
 				width: 96%;
+				margin-left: 0;
+			}
+			.ym-fbox-check input {
+				display: inline;
+				width: auto;
 			}
 		}
 

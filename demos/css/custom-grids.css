@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700");
 /* Google Font API */
 /* YAML Framework Components */
@@ -357,10 +357,15 @@
     overflow: hidden;
     width: 60%;
   }
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid .ym-fbox-text input,
+  .ym-form .ym-fbox-grid .ym-fbox-text textarea,
+  .ym-form .ym-fbox-grid .ym-fbox-select select {
     width: 96%;
+    margin-left: 0;
+  }
+  .ym-form .ym-fbox-grid .ym-fbox-check input {
+    display: inline;
+    width: auto;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -577,7 +582,7 @@
     font-size: 1.0em;
     line-height: 1;
     list-style-type: none;
-    margin: 0 .25em 0 0;
+    margin: 0 0.25em 0 0;
     padding: 0;
   }
   .ym-hlist ul li a, .ym-hlist ul li strong {
@@ -623,7 +628,7 @@
     line-height: 1;
     padding: 0.25em;
     width: 12em;
-    border: solid 1px #888;
+    border: solid 1px #888888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -708,7 +713,7 @@
 @media screen, projection {
   .ym-form {
     background: #f4f4f4;
-    border: 2px #fff solid;
+    border: 2px white solid;
     margin: 1.5em 0 0 0;
     padding: 0;
     -webkit-box-shadow: 0 0 4px #dddddd;
@@ -771,7 +776,7 @@
   *
   */
   /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit annÑhend gleicher Breite */
+  /* Gestaltung der einzelnen Formularelemente mit ann√§hend gleicher Breite */
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
     line-height: 1em;
     padding: 4px 0.3em;
@@ -790,7 +795,7 @@
     font-weight: bold;
   }
   .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea, .ym-form .ym-fbox-select select {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
   }
   .ym-form .ym-message {
     color: #666;
@@ -811,12 +816,12 @@
     font-weight: normal;
   }
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
-    border: 1px #800 solid;
+    border: 1px #880000 solid;
   }
   .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
   .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
   .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
-    border: 1px #800 solid !important;
+    border: 1px #880000 solid !important;
   }
   .ym-form .ym-error .ym-message {
     color: #800;
@@ -826,7 +831,7 @@
   .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
   .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
   .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
-    border: 1px #888 solid;
+    border: 1px #888888 solid;
     background: #fff;
   }
 
@@ -848,11 +853,11 @@
     background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
     background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777;
+    border: 1px solid #777777;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    color: #333 !important;
+    color: #333333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -936,8 +941,8 @@
     background-image: -o-linear-gradient(top, #8888ee, #6666cc);
     background-image: linear-gradient(to bottom, #8888ee, #6666cc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
-    border: 1px solid #007;
-    color: #fff !important;
+    border: 1px solid #000077;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-primary:hover,
@@ -992,8 +997,8 @@
     background-image: -o-linear-gradient(top, #66bb66, #449944);
     background-image: linear-gradient(to bottom, #66bb66, #449944);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
-    border: 1px solid #070;
-    color: #fff !important;
+    border: 1px solid #007700;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-success:hover,
@@ -1048,8 +1053,8 @@
     background-image: -o-linear-gradient(top, #ddaa44, #bb7722);
     background-image: linear-gradient(to bottom, #ddaa44, #bb7722);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
-    border: 1px solid #970;
-    color: #fff !important;
+    border: 1px solid #997700;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-warning:hover,
@@ -1104,8 +1109,8 @@
     background-image: -o-linear-gradient(top, #bb6666, #994444);
     background-image: linear-gradient(to bottom, #bb6666, #994444);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
-    border: 1px solid #700;
-    color: #fff !important;
+    border: 1px solid #770000;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-danger:hover,
@@ -1154,10 +1159,10 @@
     text-align: center;
     font-size: 1.5em;
     margin: 0 1em 0 -1em;
-    padding: 0 .2em;
+    padding: 0 0.2em;
     -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
-    border-radius: .15em 0 0 .15em;
+    border-radius: 0.15em 0 0 0.15em;
     pointer-events: none;
   }
 
@@ -1238,7 +1243,7 @@
   .ym-button.ym-disabled,
   .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaa !important;
+    color: #aaaaaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;
@@ -1254,8 +1259,8 @@
     white-space: nowrap;
     background-color: #ccc;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777;
-    color: #333 !important;
+    border: 1px solid #777777;
+    color: #333333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -1284,7 +1289,7 @@
   * html .ym-button.ym-disabled,
   * html .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaa !important;
+    color: #aaaaaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;
@@ -1447,7 +1452,7 @@
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) Uniform design of standard content elements
- * (de) Einheitliche Standardformatierungen fÅr die wichtigten Inhalts-Elemente
+ * (de) Einheitliche Standardformatierungen f√ºr die wichtigten Inhalts-Elemente
  */
 @media all {
   /*
@@ -1458,14 +1463,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrî·en auf Standardgrî·e (16 Pixel) zurÅcksetzen */
+  /* (de) Alle Schriftgr√∂√üen auf Standardgr√∂√üe (16 Pixel) zur√ºcksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgrî·e von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr√∂√üe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1485,11 +1490,11 @@
     font-size: 87.5%;
     color: #444444;
     /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrî·erung in mobilen Webkit-Browsern vermeiden */
+    /* (de) Automatische Schriftvergr√∂√üerung in mobilen Webkit-Browsern vermeiden */
     -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | öberschriften ------------------------------------------------------------------------*/
+  /*--- Headings | √úberschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -1504,21 +1509,21 @@
 
   h1 {
     /* font-size: 48px; */
-    font-size: 342.857%;
+    font-size: 342.85714%;
     line-height: 0.875;
-    margin: 0.438em 0 0;
+    margin: 0.4375em 0 0;
   }
 
   h2 {
     /* font-size: 32px; */
-    font-size: 228.571%;
-    line-height: 1.313;
-    margin: 0.656em 0 0;
+    font-size: 228.57143%;
+    line-height: 1.3125;
+    margin: 0.65625em 0 0;
   }
 
   h3 {
     /* font-size: 24px; */
-    font-size: 171.429%;
+    font-size: 171.42857%;
     line-height: 0.875;
     margin: 0.875em 0 0;
   }
@@ -1532,9 +1537,9 @@
 
   h5 {
     /* font-size: 18px; */
-    font-size: 128.571%;
-    line-height: 1.167;
-    margin: 1.167em 0 0;
+    font-size: 128.57143%;
+    line-height: 1.16667;
+    margin: 1.16667em 0 0;
   }
 
   h6 {
@@ -1619,13 +1624,13 @@
 
   big {
     /* font-size: 16px; */
-    font-size: 114.286%;
-    line-height: 1.313;
+    font-size: 114.28571%;
+    line-height: 1.3125;
   }
 
   small {
     /* font-size: 12px; */
-    font-size: 85.714%;
+    font-size: 85.71429%;
     line-height: 1.75;
   }
 
@@ -1661,7 +1666,7 @@
   }
 
   acronym, abbr {
-    border-bottom: 1px #aaa dotted;
+    border-bottom: 1px #aaaaaa dotted;
     font-variant: small-caps;
     letter-spacing: .07em;
     cursor: help;
@@ -1692,7 +1697,7 @@
     color: #fff;
     background: transparent;
     margin: 0 0 0.75em 0;
-    padding: 0 0 0.679em 0;
+    padding: 0 0 0.67857em 0;
     border: 0;
     border-bottom: 1px #eeeeee solid;
   }
@@ -1709,7 +1714,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast fÅr Tab Focus - éndern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f√ºr Tab Focus - √Ñndern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -1737,7 +1742,7 @@
 
   .bordered {
     margin-top: 1.5em;
-    border: 2px #eee solid;
+    border: 2px #eeeeee solid;
     border: 2px white solid;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -1771,7 +1776,7 @@
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     color: #444;
     color: rgba(0, 0, 0, 0.8);
-    padding: 1.429em;
+    padding: 1.42857em;
     margin: 1.5em 0 0 0;
   }
   .box > *:first-child {
@@ -1833,7 +1838,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen fÅr die Tabellenbreite und Gestaltungsvorschriften fÅr Tabellen
+  * (de) Generische Klassen f√ºr die Tabellenbreite und Gestaltungsvorschriften f√ºr Tabellen
   *
   * @section content-tables
   */
@@ -1841,33 +1846,33 @@
     width: 100%;
     border-collapse: collapse;
     color: #444444;
-    border-top: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
-    margin: 1.357em 0 0 0;
+    border-top: 1px #cccccc solid;
+    border-bottom: 1px #cccccc solid;
+    margin: 1.35714em 0 0 0;
   }
   table.narrow {
-    margin: 1.429em 0 0 0;
+    margin: 1.42857em 0 0 0;
   }
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
-    line-height: 1.429;
+    line-height: 1.42857;
   }
   table.bordertable {
-    border: 1px #ccc solid;
+    border: 1px #cccccc solid;
   }
   table.bordertable thead th {
     background: #e0e0e0;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
+    border-right: 1px #cccccc solid;
+    border-bottom: 1px #cccccc solid;
   }
   table.bordertable tbody th[scope="row"] {
     background: #f0f0f0;
   }
   table.bordertable tbody th {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
   }
   table.bordertable tbody td {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
   }
 
   table caption {
@@ -1877,7 +1882,7 @@
   th, td {
     line-height: 1.5em;
     vertical-align: top;
-    padding: 0.714em 0.5em;
+    padding: 0.71429em 0.5em;
   }
 
   th *:first-child,
@@ -1893,7 +1898,7 @@
   thead th {
     text-align: left;
     color: #000;
-    border-bottom: 2px #000 solid;
+    border-bottom: 2px black solid;
   }
 
   tbody {
@@ -1901,12 +1906,12 @@
   }
   tbody th {
     text-align: left;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     text-align: left;
   }
   tbody td {
     text-align: left;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
   }
   tbody tr:hover th,
   tbody tr:hover td {
@@ -1918,14 +1923,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgrî·en-Ma·heinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgr√∂√üen-Ma√üheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) FÅr den Druck nicht benîtigte Container des Layouts abschalten */
+  /* (de) F√ºr den Druck nicht ben√∂tigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -1933,7 +1938,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von SeitenumbrÅchen direkt nach einer öberschrift */
+  /* (de) Vermeidung von Seitenumbr√ºchen direkt nach einer √úberschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }
@@ -1947,11 +1952,11 @@
     /* 1.3571em - px value to reduce rounding errors in IE */
     background: #f0dcdc;
     background: rgba(128, 0, 0, 0.1);
-    border: 1px #800 solid;
+    border: 1px #880000 solid;
     text-align: center;
   }
 }
-@media screen and ( max-width: 759px ) {
+@media screen and (max-width: 759px) {
   .ym-wrapper {
     width: auto;
   }

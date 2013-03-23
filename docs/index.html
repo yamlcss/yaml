@@ -1554,11 +1554,11 @@ body &gt; header { min-width: 760px; }
 </pre>
 </div>
 
-<h5>Grid with Wrapped Labels</h5>
+<h5>Wrapped Elements and Labels</h5>
 <div class="tab-content">
 <pre class="htmlCode">
 &lt;div class=&quot;ym-fbox-text ym-fbox-select&quot;&gt;
-  &lt;label&gt;Wrapped From Elements and Labels&lt;/label&gt;
+  &lt;span class=&quot;ym-label&quot;&gt;Wrapped From Elements and Labels&lt;/span&gt;
   &lt;div class=&quot;ym-fbox-grid&quot;&gt;
     &lt;div class=&quot;ym-g33&quot;&gt;
       &lt;label for=&quot;plz&quot; &gt;Postal Code&lt;/label&gt;
@@ -1641,67 +1641,81 @@ body &gt; header { min-width: 760px; }
 
 						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
 						<div class="ym-fbox-text ym-fbox-select">
-							<label>Wrapped From Elements and Labels</label>
+							<label>Inline Elements</label>
 							<div class="ym-fbox-grid">
-								<div class="ym-g33">
-									<label>Postal Code</label>
-									<input type="text" name="plz" id="plz" size="20" />
-								</div>
-								<div class="ym-g33">
-									<label>City</label>
-									<input type="text" name="city" id="city" size="20" />
-								</div>
-								<div class="ym-g33">
-									<label>Country</label>
-									<select name="country" id="country"><option value="">entry</option></select>
-								</div>
+								<input class="ym-g20" placeholder=".ym-g20" type="text" name="inline1" id="inline1" size="20" />
+								<select class="ym-g80" name="select1" id="select1"><option value="">.ym-g80</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g25" placeholder=".ym-g25" type="text" name="inline2" id="inline2" size="20" />
+								<select class="ym-g75" name="select2" id="select2"><option value="">.ym-g75</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g33" placeholder=".ym-g33" type="text" name="inline3" id="inline3" size="20" />
+								<select class="ym-g66" name="select3" id="select3"><option value="">.ym-g66</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g38" placeholder=".ym-g38" type="text" name="inline4" id="inline4" size="20" />
+								<select class="ym-g62" name="select4" id="select4"><option value="">.ym-g62</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g40" placeholder=".ym-g40" type="text" name="inline5" id="inline5" size="20" />
+								<select class="ym-g60" name="select5" id="select5"><option value="">.ym-g60</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g50" placeholder=".ym-g50" type="text" name="inline6" id="inline6" size="20" />
+								<select class="ym-g50" name="select6" id="select6"><option value="">.ym-g50</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g60" placeholder=".ym-g60" type="text" name="inline7" id="inline7" size="20" />
+								<select class="ym-g40" name="select7" id="select7"><option value="">.ym-g40</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g62" placeholder=".ym-g62" type="text" name="inline8" id="inline8" size="20" />
+								<select class="ym-g38" name="select8" id="select8"><option value="">.ym-g38</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g66" placeholder=".ym-g66" type="text" name="inline9" id="inline9" size="20" />
+								<select class="ym-g33" name="select9" id="select9"><option value="">.ym-g33</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g75" placeholder=".ym-g75" type="text" name="inline10" id="inline10" size="20" />
+								<select class="ym-g25" name="select10" id="select10"><option value="">.ym-g25</option></select>
+							</div>
+							<div class="ym-fbox-grid">
+								<input class="ym-g80" placeholder=".ym-g80" type="text" name="inline11" id="inline11" size="20" />
+								<select class="ym-g20" name="select11" id="select11"><option value="">.ym-g20</option></select>
 							</div>
 						</div>
 						<div class="ym-fbox-text ym-fbox-select">
-							<label>Inline Elements</label>
-							<div class="ym-fbox-grid">
-								<input class="ym-g20" placeholder=".ym-g20" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g80" name="city" id="city"><option value="">.ym-g80</option></select>
+							<span class="ym-label">Wrapped Elements and Labels</span>
+							<div class="ym-fbox-grid ym-fbox-check">
+								<div class="ym-g33">
+									<input type="checkbox" name="check1" id="check1" />
+									<label for="check1">Label</label>
+								</div>
+								<div class="ym-g33">
+									<input type="checkbox" name="check2" id="check2" />
+									<label for="check3">Label</label>
+								</div>
+								<div class="ym-g33">
+									<input type="checkbox" name="check3" id="check3" />
+									<label for="check3">Label</label>
+								</div>
 							</div>
 							<div class="ym-fbox-grid">
-								<input class="ym-g25" placeholder=".ym-g25" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g75" name="city" id="city"><option value="">.ym-g75</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g33" placeholder=".ym-g33" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g66" name="city" id="city"><option value="">.ym-g66</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g38" placeholder=".ym-g38" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g62" name="city" id="city"><option value="">.ym-g62</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g40" placeholder=".ym-g40" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g60" name="city" id="city"><option value="">.ym-g60</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g50" placeholder=".ym-g50" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g50" name="city" id="city"><option value="">.ym-g50</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g60" placeholder=".ym-g60" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g40" name="city" id="city"><option value="">.ym-g40</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g62" placeholder=".ym-g62" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g38" name="city" id="city"><option value="">.ym-g38</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g66" placeholder=".ym-g66" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g33" name="city" id="city"><option value="">.ym-g33</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g75" placeholder=".ym-g75" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g25" name="city" id="city"><option value="">.ym-g25</option></select>
-							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g80" placeholder=".ym-g80" type="text" name="plz" id="plz" size="20" />
-								<select class="ym-g20" name="city" id="city"><option value="">.ym-g20</option></select>
+								<div class="ym-g33">
+									<label for="plz">Postal Code</label>
+									<input type="text" name="plz" id="plz" size="20" />
+								</div>
+								<div class="ym-g33">
+									<label for="city">City</label>
+									<input type="text" name="city" id="city" size="20" />
+								</div>
+								<div class="ym-g33">
+									<label for="country">Country</label>
+									<select name="country" id="country"><option value="">entry</option></select>
+								</div>
 							</div>
 						</div>
 
