@@ -10,7 +10,15 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input, .ym-form textarea, .ym-form select {
+  .ym-form .ym-type-select select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58%;
+  }
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -33,31 +41,36 @@
     box-sizing: border-box;
   }
 
-  .ym-columnar .ym-fbox-select select {
+  .ym-columnar .ym-type-select select {
     width: 68%;
   }
-  .ym-columnar .ym-fbox-text input, .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-type-text input,
+  .ym-columnar .ym-type-text textarea {
     width: 68%;
   }
   .ym-columnar .ym-fbox-grid {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select, .ym-full .ym-fbox-text input, .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-type-text input,
+  .ym-full .ym-type-text textarea,
+  .ym-full .ym-type-select select {
     width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid input, .ym-form .ym-fbox-grid textarea, .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid .ym-type-text input,
+  .ym-form .ym-fbox-grid .ym-type-text textarea,
+  .ym-form .ym-fbox-grid .ym-type-select select {
     width: 100%;
   }
 }
 @media screen, projection {
   .ym-form {
     background: #f4f4f4;
-    border: 2px #fff solid;
+    border: 2px white solid;
     margin: 1.5em 0 0 0;
     padding: 0;
     -webkit-box-shadow: 0 0 4px #dddddd;
@@ -85,11 +98,11 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text, .ym-form .ym-fbox-select, .ym-form .ym-fbox-check, .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-type-button {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
@@ -118,11 +131,12 @@
   */
   /* styling standard form elements with 'almost' equal flexible width */
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     line-height: 1em;
     padding: 4px 0.3em;
   }
-  .ym-form .ym-fbox-select select {
+  .ym-form .ym-type-select select {
     line-height: 1em;
     padding: 3px 2px 3px 1px;
   }
@@ -135,8 +149,10 @@
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea, .ym-form .ym-fbox-select select {
-    border: 1px solid #ddd;
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea,
+  .ym-form .ym-type-select select {
+    border: 1px solid #dddddd;
   }
   .ym-form .ym-message {
     color: #666;
@@ -157,18 +173,22 @@
     font-weight: normal;
   }
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
-    border: 1px #800 solid;
+    border: 1px #880000 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus, .ym-form .ym-error select:hover, .ym-form .ym-error select:focus, .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
-    border: 1px #800 solid !important;
+  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
+  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
+  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+    border: 1px #880000 solid !important;
   }
   .ym-form .ym-error .ym-message {
     color: #800;
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus, .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover, .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
-    border: 1px #888 solid;
+  .ym-form .ym-type-text input:focus, .ym-form .ym-type-select select:focus, .ym-form .ym-type-text textarea:focus,
+  .ym-form .ym-type-text input:hover, .ym-form .ym-type-select select:hover, .ym-form .ym-type-text textarea:hover,
+  .ym-form .ym-type-text input:active, .ym-form .ym-type-select select:active, .ym-form .ym-type-text textarea:active {
+    border: 1px #888888 solid;
     background: #fff;
   }
 
@@ -190,11 +210,11 @@
     background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
     background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777;
+    border: 1px solid #777777;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    color: #333 !important;
+    color: #333333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -278,8 +298,8 @@
     background-image: -o-linear-gradient(top, #8888ee, #6666cc);
     background-image: linear-gradient(to bottom, #8888ee, #6666cc);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
-    border: 1px solid #007;
-    color: #fff !important;
+    border: 1px solid #000077;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-primary:hover,
@@ -334,8 +354,8 @@
     background-image: -o-linear-gradient(top, #66bb66, #449944);
     background-image: linear-gradient(to bottom, #66bb66, #449944);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
-    border: 1px solid #070;
-    color: #fff !important;
+    border: 1px solid #007700;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-success:hover,
@@ -390,8 +410,8 @@
     background-image: -o-linear-gradient(top, #ddaa44, #bb7722);
     background-image: linear-gradient(to bottom, #ddaa44, #bb7722);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
-    border: 1px solid #970;
-    color: #fff !important;
+    border: 1px solid #997700;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-warning:hover,
@@ -446,8 +466,8 @@
     background-image: -o-linear-gradient(top, #bb6666, #994444);
     background-image: linear-gradient(to bottom, #bb6666, #994444);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
-    border: 1px solid #700;
-    color: #fff !important;
+    border: 1px solid #770000;
+    color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
   .ym-button.ym-danger:hover,
@@ -496,10 +516,10 @@
     text-align: center;
     font-size: 1.5em;
     margin: 0 1em 0 -1em;
-    padding: 0 .2em;
+    padding: 0 0.2em;
     -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
-    border-radius: .15em 0 0 .15em;
+    border-radius: 0.15em 0 0 0.15em;
     pointer-events: none;
   }
 
@@ -580,7 +600,7 @@
   .ym-button.ym-disabled,
   .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaa !important;
+    color: #aaaaaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;
@@ -590,13 +610,14 @@
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
-  * html .ym-button, * html .ym-form button {
+  * html .ym-button,
+  * html .ym-form button {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777;
-    color: #333 !important;
+    border: 1px solid #777777;
+    color: #333333 !important;
     cursor: pointer;
     font: normal 1em/2em Arial, Helvetica;
     margin: 1.5em 0.75em 0 0;
@@ -605,23 +626,27 @@
     /* removes extra side spacing in IE */
     text-decoration: none !important;
   }
-  * html .ym-form button:focus, * html .ym-button:focus {
+  * html .ym-form button:focus,
+  * html .ym-button:focus {
     outline: 0;
     background: #fafafa;
   }
-  * html .ym-form button:hover, * html .ym-button:hover {
+  * html .ym-form button:hover,
+  * html .ym-button:hover {
     background-color: #ddd;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  * html .ym-form button:active, * html .ym-button:active {
+  * html .ym-form button:active,
+  * html .ym-button:active {
     background-color: #bbb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
     position: relative;
     top: 1px;
   }
-  * html .ym-button.ym-disabled, * html .ym-button.ym-disabled:hover {
+  * html .ym-button.ym-disabled,
+  * html .ym-button.ym-disabled:hover {
     background: #eee;
-    color: #aaa !important;
+    color: #aaaaaa !important;
     border-color: #aaa;
     cursor: default;
     text-shadow: none;

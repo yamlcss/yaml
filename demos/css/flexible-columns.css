@@ -289,11 +289,13 @@
     position: relative;
   }
   .ym-form label,
+  .ym-form .ym-label,
   .ym-form .ym-message {
     position: relative;
+    line-height: 1.5;
     display: block;
   }
-  .ym-form .ym-fbox-check label {
+  .ym-form .ym-type-check label {
     display: inline;
   }
   .ym-form input,
@@ -312,17 +314,11 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox-button:before,
-  .ym-form .ym-fbox-check:before,
-  .ym-form .ym-fbox-select:before,
-  .ym-form .ym-fbox-text:before {
+  .ym-form .ym-fbox:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox-button:after,
-  .ym-form .ym-fbox-check:after,
-  .ym-form .ym-fbox-select:after,
-  .ym-form .ym-fbox-text:after {
+  .ym-form .ym-fbox:after {
     clear: both;
     content: ".";
     display: block;
@@ -339,33 +335,32 @@
     padding-left: 1%;
     padding-right: 1%;
   }
-  .ym-form .ym-fbox-check input {
+  .ym-form .ym-type-check input {
     display: inline;
     width: auto;
   }
-  .ym-form .ym-fbox-button input {
+  .ym-form .ym-type-button input {
     display: inline;
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-fbox-check input:focus,
-  .ym-form .ym-fbox-check input:hover,
-  .ym-form .ym-fbox-check input:active {
+  .ym-form .ym-type-check input:focus,
+  .ym-form .ym-type-check input:hover,
+  .ym-form .ym-type-check input:active {
     border: 0 none;
   }
   .ym-form .ym-fbox-grid {
     overflow: hidden;
     width: 60%;
   }
-  .ym-form .ym-fbox-grid .ym-fbox-text input,
-  .ym-form .ym-fbox-grid .ym-fbox-text textarea,
-  .ym-form .ym-fbox-grid .ym-fbox-select select {
+  .ym-form .ym-fbox-grid .ym-type-text input,
+  .ym-form .ym-fbox-grid .ym-type-text textarea,
+  .ym-form .ym-fbox-grid .ym-type-select select {
     width: 96%;
     margin-left: 0;
   }
-  .ym-form .ym-fbox-grid .ym-fbox-check input {
-    display: inline;
-    width: auto;
+  .ym-form .ym-fbox-grid .ym-type-check input {
+    margin-left: 0;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -419,9 +414,9 @@
     width: 59.8% !important;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-type-select select,
+  .ym-full .ym-type-text input,
+  .ym-full .ym-type-text textarea {
     width: 94%;
     margin-right: -3px;
   }
@@ -429,16 +424,17 @@
     width: 100%;
   }
 
-  .ym-columnar .ym-fbox-text label,
-  .ym-columnar .ym-fbox-select label {
+  .ym-columnar .ym-label,
+  .ym-columnar .ym-type-text label,
+  .ym-columnar .ym-type-select label {
     display: inline;
     float: left;
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-fbox-select select,
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-type-select select,
+  .ym-columnar .ym-type-text input,
+  .ym-columnar .ym-type-text textarea {
     float: left;
     width: 65%;
     margin-right: -3px;
@@ -447,13 +443,13 @@
     position: absolute;
     top: 0;
   }
-  .ym-columnar .ym-fbox-check {
+  .ym-columnar .ym-type-check {
     position: relative;
   }
-  .ym-columnar .ym-fbox-check .ym-label {
+  .ym-columnar .ym-type-check .ym-label {
     line-height: 1.0;
   }
-  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-type-check input,
   .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
   }
@@ -462,41 +458,46 @@
     width: 70%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-grid label {
+  .ym-columnar .ym-fbox-grid .ym-type-text label,
+  .ym-columnar .ym-fbox-grid .ym-type-select label {
     display: block;
     float: none;
     width: auto;
     z-index: 1;
+    margin-left: 0;
+  }
+  .ym-columnar .ym-fbox-grid .ym-type-check label,
+  .ym-columnar .ym-fbox-grid .ym-type-check input {
+    margin-left: 0;
   }
 
-  .ym-label {
-    display: block;
-    line-height: 1.5;
+  .ym-fbox-grid + .ym-fbox-grid {
+    margin-top: 0.5em;
   }
 
-  .ym-columnar fieldset .ym-fbox-button,
-  fieldset.ym-columnar .ym-fbox-button {
+  .ym-columnar fieldset .ym-type-button,
+  fieldset.ym-columnar .ym-type-button {
     padding-left: 30%;
   }
 
-  .ym-fbox-select select {
+  .ym-type-select select {
     width: 58%;
   }
 
-  .ym-full .ym-fbox-select select {
+  .ym-full .ym-type-select select {
     width: 96%;
   }
 
-  .ym-columnar .ym-fbox-select select {
+  .ym-columnar .ym-type-select select {
     width: 67%;
   }
 
    /**
 	* Inline forms display - technical base (optional)
 	*/
-  .ym-form.ym-inline .ym-fbox-select select, .ym-form.ym-form.ym-inline .ym-fbox-text input,
-  .ym-form .ym-fbox-select.ym-inline select,
-  .ym-form .ym-fbox-text.ym-inline input {
+  .ym-form.ym-inline .ym-type-select select, .ym-form.ym-form.ym-inline .ym-type-text input,
+  .ym-form .ym-type-select.ym-inline select,
+  .ym-form .ym-type-text.ym-inline input {
     width: auto !important;
     display: inline;
     float: none;
@@ -659,9 +660,15 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form input,
-  .ym-form textarea,
-  .ym-form select {
+  .ym-form .ym-type-select select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 58%;
+  }
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -684,29 +691,29 @@
     box-sizing: border-box;
   }
 
-  .ym-columnar .ym-fbox-select select {
+  .ym-columnar .ym-type-select select {
     width: 68%;
   }
-  .ym-columnar .ym-fbox-text input,
-  .ym-columnar .ym-fbox-text textarea {
+  .ym-columnar .ym-type-text input,
+  .ym-columnar .ym-type-text textarea {
     width: 68%;
   }
   .ym-columnar .ym-fbox-grid {
     width: 70%;
   }
 
-  .ym-full .ym-fbox-select select,
-  .ym-full .ym-fbox-text input,
-  .ym-full .ym-fbox-text textarea {
+  .ym-full .ym-type-text input,
+  .ym-full .ym-type-text textarea,
+  .ym-full .ym-type-select select {
     width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
+  .ym-form .ym-fbox-grid .ym-type-text input,
+  .ym-form .ym-fbox-grid .ym-type-text textarea,
+  .ym-form .ym-fbox-grid .ym-type-select select {
     width: 100%;
   }
 }
@@ -741,14 +748,11 @@
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text,
-  .ym-form .ym-fbox-select,
-  .ym-form .ym-fbox-check,
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-type-button {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
@@ -777,11 +781,12 @@
   */
   /* styling standard form elements with 'almost' equal flexible width */
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea {
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea {
     line-height: 1em;
     padding: 4px 0.3em;
   }
-  .ym-form .ym-fbox-select select {
+  .ym-form .ym-type-select select {
     line-height: 1em;
     padding: 3px 2px 3px 1px;
   }
@@ -794,7 +799,9 @@
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-fbox-text input, .ym-form .ym-fbox-text textarea, .ym-form .ym-fbox-select select {
+  .ym-form .ym-type-text input,
+  .ym-form .ym-type-text textarea,
+  .ym-form .ym-type-select select {
     border: 1px solid #dddddd;
   }
   .ym-form .ym-message {
@@ -828,9 +835,9 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form div.ym-fbox-text input:focus, .ym-form div select:focus, .ym-form div textarea:focus,
-  .ym-form div.ym-fbox-text input:hover, .ym-form div select:hover, .ym-form div textarea:hover,
-  .ym-form div.ym-fbox-text input:active, .ym-form div select:active, .ym-form div textarea:active {
+  .ym-form .ym-type-text input:focus, .ym-form .ym-type-select select:focus, .ym-form .ym-type-text textarea:focus,
+  .ym-form .ym-type-text input:hover, .ym-form .ym-type-select select:hover, .ym-form .ym-type-text textarea:hover,
+  .ym-form .ym-type-text input:active, .ym-form .ym-type-select select:active, .ym-form .ym-type-text textarea:active {
     border: 1px #888888 solid;
     background: #fff;
   }

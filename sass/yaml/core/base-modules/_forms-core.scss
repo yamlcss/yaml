@@ -24,12 +24,14 @@
 		div { position:relative; }
 
 		label,
+		.ym-label,
 		.ym-message {
 			position:relative;
+			line-height: 1.5;
 			display:block; //important for Safari
 		}
 
-		.ym-fbox-check label {
+		.ym-type-check label {
 			display:inline;
 		}
 
@@ -52,18 +54,12 @@
 
 		// styling containing DIV elements
 		// Gestaltung der kapselnden DIV-Elemente
-		.ym-fbox-button:before,
-		.ym-fbox-check:before,
-		.ym-fbox-select:before,
-		.ym-fbox-text:before {
+		.ym-fbox:before {
 			content:"";
 			display:table;
 		}
 
-		.ym-fbox-button:after,
-		.ym-fbox-check:after,
-		.ym-fbox-select:after,
-		.ym-fbox-text:after {
+		.ym-fbox:after {
 			clear:both;
 			content:".";
 			display:block;
@@ -84,23 +80,23 @@
 			padding-right: 1%;
 		}
 
-		.ym-fbox-check input {
+		.ym-type-check input {
 			display: inline;
 			width: auto;
 		}
 
 		// Styling of buttons
 		// Gestaltung von Buttons
-		.ym-fbox-button input {
+		.ym-type-button input {
 			display: inline;
 			overflow:visible;  // Fixes IE7 auto-padding bug
 			width:auto;
 		}
 
 		// avoid jumping checkboxes & radiobuttons in IE8
-		.ym-fbox-check input:focus,
-		.ym-fbox-check input:hover,
-		.ym-fbox-check input:active {
+		.ym-type-check input:focus,
+		.ym-type-check input:hover,
+		.ym-type-check input:active {
 			border:0 none;
 		}
 
@@ -111,15 +107,14 @@
 			overflow:hidden;
 			width: 60%;
 
-			.ym-fbox-text input,
-			.ym-fbox-text textarea,
-			.ym-fbox-select select {
+			.ym-type-text input,
+			.ym-type-text textarea,
+			.ym-type-select select {
 				width: 96%;
 				margin-left: 0;
 			}
-			.ym-fbox-check input {
-				display: inline;
-				width: auto;
+			.ym-type-check input {
+				margin-left: 0;
 			}
 		}
 
@@ -160,9 +155,9 @@
 	// Indent Checkbox fields to match label-width
 	// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
 	.ym-full {
-		.ym-fbox-select select,
-		.ym-fbox-text input,
-		.ym-fbox-text textarea {
+		.ym-type-select select,
+		.ym-type-text input,
+		.ym-type-text textarea {
 			width:94%;
 			margin-right: -3px;
 		}
@@ -190,17 +185,18 @@
 	.ym-columnar {
 		// Columnar display
 		// Spalten-Darstellung
-		.ym-fbox-text label,
-		.ym-fbox-select label {
+		.ym-label,
+		.ym-type-text label,
+		.ym-type-select label {
 			display:inline;
 			float:left;
 			width:30%; // Can be fixed width too | Kann auch eine fixe Angabe sein
 			z-index: 1;
 		}
 
-		.ym-fbox-select select,
-		.ym-fbox-text input,
-		.ym-fbox-text textarea {
+		.ym-type-select select,
+		.ym-type-text input,
+		.ym-type-text textarea {
 			float:left;
 			width:65%;
 			margin-right: -3px;
@@ -211,7 +207,7 @@
 			top:0;
 		}
 
-		.ym-fbox-check {
+		.ym-type-check {
 			position:relative;
 			.ym-label {
 				line-height: 1.0;
@@ -220,7 +216,7 @@
 
 		// Indent Checkbox fields to match label-width
 		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
-		.ym-fbox-check input,
+		.ym-type-check input,
 		.ym-error .ym-message {
 			margin-left:30%;
 		}
@@ -229,41 +225,47 @@
 			margin-left:30%;
 			width: 70%;
 			margin-right: -3px;
-		}
 
-		.ym-fbox-grid label {
-			display:block;
-			float:none;
-			width:auto;
-			z-index: 1;
+			.ym-type-text label,
+			.ym-type-select label {
+				display:block;
+				float:none;
+				width:auto;
+				z-index: 1;
+				margin-left: 0;
+			}
+
+			.ym-type-check label,
+			.ym-type-check input {
+				margin-left: 0;
+			}
 		}
 	}
 
-	.ym-label {
-		display:block;
-		line-height: 1.5;
+	.ym-fbox-grid + .ym-fbox-grid {
+		margin-top: 0.5em;
 	}
 
 	// global and local columnar settings for button alignment
-	.ym-columnar fieldset .ym-fbox-button,
-	fieldset.ym-columnar .ym-fbox-button {
+	.ym-columnar fieldset .ym-type-button,
+	fieldset.ym-columnar .ym-type-button {
 		padding-left:30%;
 	}
 
 	// @section Form Construction Kit | Screen Adjustments
-	.ym-fbox-select select { width:58%; }
-	.ym-full .ym-fbox-select select { width:96%; }
-	.ym-columnar .ym-fbox-select select { width:67%; }
+	.ym-type-select select { width:58%; }
+	.ym-full .ym-type-select select { width:96%; }
+	.ym-columnar .ym-type-select select { width:67%; }
 
    /**
 	* Inline forms display - technical base (optional)
 	*/
 
 	.ym-form {
-		&.ym-inline .ym-fbox-select select,
-		&.ym-form.ym-inline .ym-fbox-text input,
-		.ym-fbox-select.ym-inline select,
-		.ym-fbox-text.ym-inline input {
+		&.ym-inline .ym-type-select select,
+		&.ym-form.ym-inline .ym-type-text input,
+		.ym-type-select.ym-inline select,
+		.ym-type-text.ym-inline input {
 			width: auto !important;
 			display: inline;
 			float: none;

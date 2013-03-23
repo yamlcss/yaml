@@ -274,12 +274,14 @@
 								<td class="nowrap"><p><strong>parent class</strong><br>
 									<code>.ym-form</code><br>
 									<br>
-									<strong>child classes</strong><br>
-									<code>.ym-fbox-text</code><br>
-									<code>.ym-fbox-select</code><br>
-									<code>.ym-fbox-check</code><br>
-									<code>.ym-fbox-button</code><br>
-									<code>.ym-fbox-grid</code><br>
+									<strong>row wrapper</strong><br>
+									<code>.ym-fbox</code><br>
+									<code>.ym-fbox-grid</code><br><br>
+									<strong>type classes</strong><br>
+									<code>.ym-type-text</code><br>
+									<code>.ym-type-select</code><br>
+									<code>.ym-type-check</code><br>
+									<code>.ym-type-button</code><br>
 									<br>
 									<strong>optional classes</strong><br>
 									<code>.ym-full</code><br>
@@ -1415,7 +1417,10 @@ body &gt; header { min-width: 760px; }
 					<h3>Default Markup</h3>
 					<pre class="htmlCode">
 &lt;form class=&quot;ym-form&quot;&gt;
-  ...
+  &lt;!-- form row wrapper --&gt;
+  &lt;div class=&quot;ym-fbox&quot;&gt;
+    ...
+  &lt;/div&gt;
 &lt;/form&gt;</pre>
 
 					<h4>Form Style Options</h4>
@@ -1449,7 +1454,7 @@ body &gt; header { min-width: 760px; }
 <h5>Input Field</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class="ym-fbox-text"&gt;
+&lt;div class="ym-fbox <strong>ym-type-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" size="20" /&gt;
 &lt;/div&gt;
@@ -1458,7 +1463,7 @@ body &gt; header { min-width: 760px; }
 	<h5>Textarea</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class="ym-fbox-text"&gt;
+&lt;div class="ym-fbox <strong>ym-type-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;textarea name=&quot;your-id&quot; id=&quot;your-id&quot; cols=&quot;30&quot; rows=&quot;7&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
@@ -1467,7 +1472,7 @@ body &gt; header { min-width: 760px; }
 	<h5>Select</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-select&quot;&gt;
+&lt;div class=&quot;ym-fbox <strong>ym-type-select</strong>&quot;&gt;
   &lt;label for=&quot;your-id&quot;&gt;More Options&lt;/label&gt;
   &lt;select name=&quot;your-id&quot; id=&quot;your-id&quot; size=&quot;1&quot;&gt;
     &lt;option value=&quot;0&quot; selected=&quot;selected&quot; disabled=&quot;disabled&quot;&gt;Please choose&lt;/option&gt;
@@ -1486,7 +1491,7 @@ body &gt; header { min-width: 760px; }
 	<h5>Checkbox</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-check&quot;&gt;
+&lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
   &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id&quot; /&gt;
   &lt;label for=&quot;your-id&quot;&gt;Your checkbox label&lt;/label&gt;
 &lt;/div&gt;</pre>
@@ -1494,7 +1499,7 @@ body &gt; header { min-width: 760px; }
 	<h5>Radio-Buttons</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-check&quot;&gt;
+&lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;your-id&quot; value=&quot;value #1&quot; id=&quot;your-id&quot; /&gt;
   &lt;label for=&quot;your-id&quot;&gt;Your radio-button label&lt;/label&gt;
 &lt;/div&gt;</pre>
@@ -1503,7 +1508,7 @@ body &gt; header { min-width: 760px; }
 <div class="tab-content">
 <p>Optional class <code>.ym-button</code> is needed to enable support for styled button in Internet Explorer 6.</p>
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-button&quot;&gt;
+&lt;div class=&quot;ym-fbox <strong>ym-type-button</strong>&quot;&gt;
   &lt;input type=&quot;submit&quot; class=&quot;ym-button&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
   &lt;input type=&quot;reset&quot; class=&quot;ym-button&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
   &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
@@ -1513,26 +1518,26 @@ body &gt; header { min-width: 760px; }
 				<h4>Form Configuration</h4>
 				<h5>Required Fields</h5>
 				<p>Required form fields can  be  visually emphasized by adding <code>.ym-required</code> element to the label. In any case, you should add  the ARIA attribute <em><code>aria-required=&quot;true&quot;</code></em> or <code><em>required=&quot;required&quot;</em></code> when using HTML5.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-text"&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-text"&gt;
   &lt;label for="your-id">your label<strong>&lt;sup class=&quot;ym-required&quot;&gt;*&lt;/sup&gt;</strong>&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" size="20" required=&quot;required&quot;/&gt;
 &lt;/div&gt;		</pre>
 				<h5>Error Messages</h5>
 				<p>Use class <code>.ym-error</code> to highlight form fields with invalid form elements. By adding this class to the parent container, you have rich styling options. Optionally you can use <code>.ym-message </code>output messages that will be correctly aligned in all form styles.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-text <strong>ym-error</strong>"&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-text <strong>ym-error</strong>"&gt;
   &lt;p class=&quot;<strong>ym-message</strong>&quot;&gt;Error: invalid value!&lt;/p&gt;
   ...
 &lt;/div&gt;</pre>
 				<h5>Headings within Forms</h5>
 				<p>Complex forms should be well structured. You can use <code>&lt;fieldset&gt;</code> elements for this reason but also regulare headings. To make typograhpy settings for your headings independent from their styling within forms, YAML provides class <code>.ym-fbox-heading</code> to force any heading level to fit in your form theme.</p>
-				<pre class="htmlCode">&lt;h6 class=&quot;<strong>ym-fbox-heading</strong>&quot;&gt;Sample Heading&lt;/h6&gt;<br>&lt;div class="ym-fbox-text<strong></strong>"&gt;
+				<pre class="htmlCode">&lt;h6 class=&quot;<strong>ym-fbox-heading</strong>&quot;&gt;Sample Heading&lt;/h6&gt;<br>&lt;div class="ym-fbox"&gt;
   ...
 &lt;/div&gt;</pre>
 
 				<h5>Extended Labels</h5>
 				<p>In radio button sets, the label elements are needed to label  individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-checkbox<strong></strong>"&gt;
-  &lt;div&gt;<br>    &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;/span&gt;<br>    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; value=&quot;Option 1&quot; id=&quot;vote1&quot; /&gt;<br>    &lt;label for=&quot;vote1&quot;&gt;Option 1&lt;/label&gt;<br>  &lt;/div&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-checkbox<strong></strong>"&gt;
+  &lt;div&gt;<br>    &lt;span class=&quot;<strong>ym-label</strong>&quot;&gt;Custom Label&lt;/span&gt;<br>    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; value=&quot;Option 1&quot; id=&quot;vote1&quot; /&gt;<br>    &lt;label for=&quot;vote1&quot;&gt;Option 1&lt;/label&gt;<br>  &lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
 
@@ -1544,11 +1549,11 @@ body &gt; header { min-width: 760px; }
 <h5>Grid Form Elements</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-text ym-fbox-select&quot;&gt;
+&lt;div class=&quot;ym-fbox ym-type-text&quot;&gt;
   &lt;label&gt;Inline Elements&lt;/label&gt;
-  &lt;div class=&quot;ym-fbox-grid&quot;&gt;
-    &lt;input class=&quot;ym-g50&quot; type=&quot;text&quot; name=&quot;valueA&quot; id=&quot;valueA&quot; /&gt;
-    &lt;input class=&quot;ym-g50&quot; type=&quot;text&quot; name=&quot;valueB&quot; id=&quot;valueB&quot; /&gt;
+  &lt;div class=&quot;<strong>ym-fbox-grid</strong>&quot;&gt;
+    &lt;input class=&quot;<strong>ym-g50</strong>&quot; type=&quot;text&quot; name=&quot;valueA&quot; id=&quot;valueA&quot; /&gt;
+    &lt;input class=&quot;<strong>ym-g50</strong>&quot; type=&quot;text&quot; name=&quot;valueB&quot; id=&quot;valueB&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -1557,18 +1562,18 @@ body &gt; header { min-width: 760px; }
 <h5>Wrapped Elements and Labels</h5>
 <div class="tab-content">
 <pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-text ym-fbox-select&quot;&gt;
+&lt;div class=&quot;ym-fbox&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;Wrapped From Elements and Labels&lt;/span&gt;
-  &lt;div class=&quot;ym-fbox-grid&quot;&gt;
-    &lt;div class=&quot;ym-g33&quot;&gt;
+  &lt;div class=&quot;<strong>ym-fbox-grid</strong>&quot;&gt;
+    &lt;div class=&quot;<strong>ym-g33 ym-type-text</strong>&quot;&gt;
       &lt;label for=&quot;plz&quot; &gt;Postal Code&lt;/label&gt;
       &lt;input type=&quot;text&quot; name=&quot;plz&quot; id=&quot;plz&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ym-g33&quot;&gt;
+    &lt;div class=&quot;<strong>ym-g33 ym-type-text</strong>&quot;&gt;
       &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
       &lt;input type=&quot;text&quot; name=&quot;city&quot; id=&quot;city&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ym-g33&quot;&gt;
+    &lt;div class=&quot;<strong>ym-g33 ym-type-text</strong>&quot;&gt;
       &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
       &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;&lt;option value=&quot;&quot;&gt;entry&lt;/option&gt;&lt;/select&gt;
     &lt;/div&gt;
@@ -1588,12 +1593,12 @@ body &gt; header { min-width: 760px; }
 					<div class="js-info box warning">JavaScript has to be enabled to demonstrate the available form layouts.</div>
 					<form id="formswitch" class="ym-form ym-full">
 						<h6 class="ym-fbox-heading">Live Preview: Choose Style</h6>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-type-check">
 							<div><input type="radio" name="dswitch" data-type="" id="slinear" checked="checked"/> <label for="slinear">Linear (default)</label></div>
 							<div><input type="radio" name="dswitch" data-type="ym-full" id="sfull"/> <label for="sfull">Full Width</label></div>
 							<div><input type="radio" name="dswitch" data-type="ym-columnar" id="sleft"/> <label for="sleft">Columnar</label></div>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-type-check">
 							<input type="checkbox" name="dlinear" data-type="linearize-form" id="dlinear" checked="checked"/>
 							<label for="dlinear">Enable Linearization (&lt; 740px)</label></div>
 					</form>
@@ -1609,7 +1614,7 @@ body &gt; header { min-width: 760px; }
 					<form method="post" action="" id="demo-form1" class="ym-form linearize-form" role="application">
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
 
-						<div class="ym-fbox-select">
+						<div class="ym-fbox ym-type-select">
 							<label for="salutation">Salutation <sup class="ym-required" title="This field is mandatory.">*</sup> </label>
 							<select name="salutation" id="salutation" size="1" aria-required="true">
 								<option value="0" selected="selected" disabled="disabled">Please choose</option>
@@ -1618,11 +1623,11 @@ body &gt; header { min-width: 760px; }
 								<option value="Mrs.">Mrs.</option>
 							</select>
 						</div>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox ym-type-text">
 							<label for="firstname">First name</label>
 							<input type="text" name="firstname" id="firstname" size="20" />
 						</div>
-						<div class="ym-fbox-select">
+						<div class="ym-fbox ym-type-select">
 							<label for="more">More Options</label>
 							<select name="more" id="more" size="1">
 								<option value="0" selected="selected" disabled="disabled">Please choose</option>
@@ -1640,79 +1645,79 @@ body &gt; header { min-width: 760px; }
 						</div>
 
 						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
-						<div class="ym-fbox-text ym-fbox-select">
-							<label>Inline Elements</label>
-							<div class="ym-fbox-grid">
-								<input class="ym-g20" placeholder=".ym-g20" type="text" name="inline1" id="inline1" size="20" />
+						<div class="ym-fbox">
+							<span class="ym-label">Inline Elements</span>
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g20" value=".ym-g20" type="text" name="inline1" id="inline1" size="20" />
 								<select class="ym-g80" name="select1" id="select1"><option value="">.ym-g80</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g25" placeholder=".ym-g25" type="text" name="inline2" id="inline2" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g25" value=".ym-g25" type="text" name="inline2" id="inline2" size="20" />
 								<select class="ym-g75" name="select2" id="select2"><option value="">.ym-g75</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g33" placeholder=".ym-g33" type="text" name="inline3" id="inline3" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g33" value=".ym-g33" type="text" name="inline3" id="inline3" size="20" />
 								<select class="ym-g66" name="select3" id="select3"><option value="">.ym-g66</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g38" placeholder=".ym-g38" type="text" name="inline4" id="inline4" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g38" value=".ym-g38" type="text" name="inline4" id="inline4" size="20" />
 								<select class="ym-g62" name="select4" id="select4"><option value="">.ym-g62</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g40" placeholder=".ym-g40" type="text" name="inline5" id="inline5" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g40" value=".ym-g40" type="text" name="inline5" id="inline5" size="20" />
 								<select class="ym-g60" name="select5" id="select5"><option value="">.ym-g60</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g50" placeholder=".ym-g50" type="text" name="inline6" id="inline6" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g50" value=".ym-g50" type="text" name="inline6" id="inline6" size="20" />
 								<select class="ym-g50" name="select6" id="select6"><option value="">.ym-g50</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g60" placeholder=".ym-g60" type="text" name="inline7" id="inline7" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g60" value=".ym-g60" type="text" name="inline7" id="inline7" size="20" />
 								<select class="ym-g40" name="select7" id="select7"><option value="">.ym-g40</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g62" placeholder=".ym-g62" type="text" name="inline8" id="inline8" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g62" value=".ym-g62" type="text" name="inline8" id="inline8" size="20" />
 								<select class="ym-g38" name="select8" id="select8"><option value="">.ym-g38</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g66" placeholder=".ym-g66" type="text" name="inline9" id="inline9" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g66" value=".ym-g66" type="text" name="inline9" id="inline9" size="20" />
 								<select class="ym-g33" name="select9" id="select9"><option value="">.ym-g33</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g75" placeholder=".ym-g75" type="text" name="inline10" id="inline10" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g75" value=".ym-g75" type="text" name="inline10" id="inline10" size="20" />
 								<select class="ym-g25" name="select10" id="select10"><option value="">.ym-g25</option></select>
 							</div>
-							<div class="ym-fbox-grid">
-								<input class="ym-g80" placeholder=".ym-g80" type="text" name="inline11" id="inline11" size="20" />
+							<div class="ym-fbox-grid ym-type-text ym-type-select">
+								<input class="ym-g80" value=".ym-g80" type="text" name="inline11" id="inline11" size="20" />
 								<select class="ym-g20" name="select11" id="select11"><option value="">.ym-g20</option></select>
 							</div>
 						</div>
-						<div class="ym-fbox-text ym-fbox-select">
+						<div class="ym-fbox">
 							<span class="ym-label">Wrapped Elements and Labels</span>
-							<div class="ym-fbox-grid ym-fbox-check">
-								<div class="ym-g33">
+							<div class="ym-fbox-grid">
+								<div class="ym-g33 ym-type-check">
 									<input type="checkbox" name="check1" id="check1" />
 									<label for="check1">Label</label>
 								</div>
-								<div class="ym-g33">
+								<div class="ym-g33 ym-type-check">
 									<input type="checkbox" name="check2" id="check2" />
 									<label for="check3">Label</label>
 								</div>
-								<div class="ym-g33">
+								<div class="ym-g33 ym-type-check">
 									<input type="checkbox" name="check3" id="check3" />
 									<label for="check3">Label</label>
 								</div>
 							</div>
 							<div class="ym-fbox-grid">
-								<div class="ym-g33">
+								<div class="ym-g33 ym-type-text">
 									<label for="plz">Postal Code</label>
 									<input type="text" name="plz" id="plz" size="20" />
 								</div>
-								<div class="ym-g33">
+								<div class="ym-g33 ym-type-text">
 									<label for="city">City</label>
 									<input type="text" name="city" id="city" size="20" />
 								</div>
-								<div class="ym-g33">
+								<div class="ym-g33 ym-type-select">
 									<label for="country">Country</label>
 									<select name="country" id="country"><option value="">entry</option></select>
 								</div>
@@ -1720,105 +1725,46 @@ body &gt; header { min-width: 760px; }
 						</div>
 
 						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
-						<div class="ym-fbox-text ym-error" role="alert" aria-live="assertive">
+						<div class="ym-fbox ym-type-text ym-error" role="alert" aria-live="assertive">
 							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
 							<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
 							<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
 						</div>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox ym-type-text">
 							<label for="email">E-Mail <sup class="ym-required" title="This field is mandatory.">*</sup></label>
 							<input type="text" name="email" id="email" size="20"  aria-required="true"/>
 						</div>
 						<h6 class="ym-fbox-heading">Text Areas, Complex Select Boxes, Checkboxes</h6>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox ym-type-text">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="7"></textarea>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-type-check">
 							<input type="checkbox" name="newsletter" id="newsletter" />
 							<label for="newsletter">Sign me up for your newsletter</label>
 						</div>
 						<h6 class="ym-fbox-heading">Radio Buttons</h6>
-						<div class="ym-fbox-check">
-							<div>
-								<span class="ym-label">Custom Label</span>
+						<div class="ym-fbox">
+							<span class="ym-label">Custom Label</span>
+							<div class="ym-type-check">
 								<input type="radio" name="vote" value="Option 1" id="vote1" />
 								<label for="vote1">Option 1</label>
 							</div>
-							<div>
+							<div class="ym-type-check">
 								<input type="radio" name="vote" id="vote2" />
 								<label for="vote2">Option 2</label>
 							</div>
-							<div>
+							<div class="ym-type-check">
 								<input type="radio" name="vote" id="vote3" />
 								<label for="vote3">Option 3</label>
 							</div>
 						</div>
-						<div class="ym-fbox-button">
+						<div class="ym-fbox ym-type-button">
 							<input type="submit" value="Submit"  class="save ym-primary" id="submit" name="submit" />
 							<input type="reset" value="Reset" class="delete" id="reset" name="reset" />
 						</div>
 					</form>
 
-					<h4>Multicolumnar Forms</h4>
-					<p>Use grids module to create multicolumnar forms or multiple form elements in a row.</p>
-					<pre class="htmlCode">&lt;form class=&quot;ym-form&quot;&gt;
-  &lt;div class=&quot;ym-grid&quot;&gt;<br>    &lt;div class=&quot;ym-g50 ym-gl&quot;&gt;<br>      &lt;div class=&quot;ym-gbox ym-fbox-select&quot;&gt;<br>        &lt;label for=&quot;select-1&quot;&gt;Select Field&lt;/label&gt;<br>        &lt;select name=&quot;select-1&quot; id=&quot;select-1&quot; size=&quot;1&quot;&gt; ... &lt;/select&gt;
-      &lt;/div&gt;
-      ...
-    &lt;/div&gt;
-    &lt;div class=&quot;ym-g50 ym-gl&quot;&gt;<br>      &lt;div class=&quot;ym-gbox ym-fbox-text&quot;&gt;<br>        &lt;label for=&quot;input-1&quot;&gt;Input Field&lt;/label&gt;<br>	      &lt;input type=&quot;text&quot; name=&quot;input-1&quot; id=&quot;input-1&quot;/&gt;
-        ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/form&gt;</pre>
-					<form method="post" action="" id="demo-form2" class="ym-form linearize-form" role="application">
-						<h6 class="ym-fbox-heading">Another Example Form</h6>
-						<div class="ym-grid linearize-level-2">
-							<div class="ym-g50 ym-gl">
-								<div class="ym-gbox ym-fbox-select">
-									<label for="select-1">Select Field</label>
-									<select name="select-1" id="select-1" size="1">
-										<option value="0" selected="selected" disabled="disabled">Please choose</option>
-										<option value="Test 1">Test 1</option>
-										<option value="Test 2">Test 2</option>
-										<option value="Test 3">Test 3</option>
-									</select>
-								</div>
-								<div class="ym-gbox ym-fbox-text">
-									<label for="textarea-1">Textarea</label>
-									<textarea name="textarea-1" id="textarea-1" cols="30" rows="5"></textarea>
-								</div>
-							</div>
-
-							<div class="ym-g50 ym-gr">
-								<div class="ym-gbox ym-fbox-text">
-									<label for="input-1">Input Field</label>
-									<input type="text" name="input-1" id="input-1" size="20" />
-								</div>
-								<div class="ym-gbox ym-fbox-check">
-									<div>
-										<span class="ym-label">Custom Label</span>
-										<input type="radio" name="vote" value="Option 1" id="vote4" />
-										<label for="vote4">Option 1</label>
-									</div>
-									<div>
-										<input type="radio" name="vote" id="vote5" />
-										<label for="vote5">Option 2</label>
-									</div>
-									<div>
-										<input type="radio" name="vote" id="vote6" />
-										<label for="vote6">Option 3</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ym-fbox-button">
-							<input type="submit" value="Submit" class="submit ym-primary" id="submit1" name="submit1" />
-							<input type="reset" value="Reset" class="reset" id="reset1" name="reset1" />
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -1959,7 +1905,7 @@ body &gt; header { min-width: 760px; }
 						</tbody>
 					</table>
 					<h4>Custom Button Types</h4>
-					<p>HTML Button Elements as wall as any other element can be styled as buttons with optional icons. Icons are generated from UTF-8 Dingbats characters (U+2700 ... U+27BF), so they are scalable and no images are needed.</p>
+					<p>HTML Button Elements as well as any other element can be styled as buttons with optional icons. Icons are generated from UTF-8 Dingbats characters (U+2700 ... U+27BF), so they are scalable and no images are needed.</p>
 <pre class="htmlCode">
 &lt;!-- custom buttons with icons --&gt;
 &lt;button class="ym-button ym-add"&gt;text&lt;/button&gt;

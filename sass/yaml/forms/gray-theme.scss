@@ -22,11 +22,16 @@
 	*/
 
 	.ym-form {
-		input,
-		textarea,
-		select {
+		.ym-type-select select {
 			@include ym-box-sizing(border-box);
-			width:58%;
+			width: 58%;
+		}
+		.ym-type-text {
+			input,
+			textarea {
+				@include ym-box-sizing(border-box);
+				width:58%;
+			}
 		}
 
 		.ym-fbox-grid {
@@ -41,10 +46,10 @@
 	}
 
 	.ym-columnar {
-		.ym-fbox-select select {
+		.ym-type-select select {
 			width: 68%;
 		}
-		.ym-fbox-text {
+		.ym-type-text {
 			input,
 			textarea {
 				width:68%;
@@ -57,9 +62,9 @@
 	}
 
 	.ym-full {
-		.ym-fbox-select select,
-		.ym-fbox-text input,
-		.ym-fbox-text textarea {
+		.ym-type-text input,
+		.ym-type-text textarea,
+		.ym-type-select select {
 				width:98%;
 		}
 		.ym-fbox-grid {
@@ -69,9 +74,9 @@
 
 	.ym-form {
 		.ym-fbox-grid {
-			input,
-			textarea,
-			select {
+			.ym-type-text input,
+			.ym-type-text textarea,
+			.ym-type-select select {
 				width: 100%;
 			}
 		}
@@ -108,14 +113,11 @@
 			padding-top: 0.25em;
 		}
 
-		.ym-fbox-text,
-		.ym-fbox-select,
-		.ym-fbox-check,
-		.ym-fbox-button {
+		.ym-fbox {
 			padding: 0.3em 1em;
 			margin-bottom: 0.5em;
 		}
-		.ym-fbox-button {
+		.ym-type-button {
 			background: #ececec;
 			border-top: 1px #e0e0e0 solid;
 			padding:0 1em 1.5em 1em;
@@ -148,11 +150,12 @@
 	/* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
 
 	.ym-form {
-		.ym-fbox-text input, .ym-fbox-text textarea {
+		.ym-type-text input,
+		.ym-type-text textarea {
 			line-height: 1em;
 			padding: 4px 0.3em;
 		}
-		.ym-fbox-select select {
+		.ym-type-select select {
 			line-height: 1em;
 			padding: 3px 2px 3px 1px;
 		}
@@ -164,7 +167,9 @@
 			font-style:normal;
 			font-weight:bold;
 		}
-		.ym-fbox-text input, .ym-fbox-text textarea, .ym-fbox-select select {
+		.ym-type-text input,
+		.ym-type-text textarea,
+		.ym-type-select select {
 			border:1px solid #ddd;
 		}
 		.ym-message {
@@ -175,8 +180,10 @@
 			color:#800;
 			font-weight:bold;
 		}
+		// valid & invalid state
 		input:valid, textarea:valid { background-color: #fff; }
 		input:invalid, textarea:invalid { background-color: #fdd; }
+
 		.ym-error {
 			label {
 				color:#800;
@@ -196,9 +203,9 @@
 				margin-top: 0;
 			}
 		}
-		div.ym-fbox-text input:focus,  div select:focus, div textarea:focus,
-		div.ym-fbox-text input:hover,  div select:hover, div textarea:hover,
-		div.ym-fbox-text input:active, div select:active, div textarea:active {
+		.ym-type-text input:focus,  .ym-type-select select:focus, .ym-type-text textarea:focus,
+		.ym-type-text input:hover,  .ym-type-select select:hover, .ym-type-text textarea:hover,
+		.ym-type-text input:active, .ym-type-select select:active, .ym-type-text textarea:active {
 			border:1px #888 solid;
 			background:#fff;
 		}
