@@ -1,3 +1,5 @@
+@import "yaml/mixins/yaml_mixins_core";
+
 @if $ym-base-columns == true {
 	/**
 	* @section Column Module
@@ -9,7 +11,9 @@
 	// | 20%     | flexible  | 20%     |
 	// |-------------------------------|
 
-	.ym-column { display:table; table-layout: fixed; width:100%; }
+	.ym-column {
+		@include ym-contain(dt);
+	}
 
 	.ym-col1 { float:left; width:$ym-column-width; }
 	.ym-col2 { float:right; width:$ym-column-width; }

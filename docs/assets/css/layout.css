@@ -39,7 +39,7 @@
   }
 
   article, aside, details, figcaption, figure,
-  footer, header, hgroup, nav, section {
+  footer, header, hgroup, main, nav, section {
     display: block;
   }
 
@@ -126,13 +126,12 @@
     display: table;
     table-layout: fixed;
     width: 100%;
-    overflow: visible;
   }
 
   .ym-contain-oh {
+    display: block;
     overflow: hidden;
     width: 100%;
-    display: block;
   }
 
   .ym-contain-fl {
@@ -3029,7 +3028,6 @@
   }
 
   .linearize-form [class*="ym-type"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
-    /* linearization for forms module */
     display: block;
     float: none;
     position: static !important;

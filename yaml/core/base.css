@@ -37,7 +37,7 @@
   }
 
   article, aside, details, figcaption, figure,
-  footer, header, hgroup, nav, section {
+  footer, header, hgroup, main, nav, section {
     display: block;
   }
 
@@ -124,13 +124,12 @@
     display: table;
     table-layout: fixed;
     width: 100%;
-    overflow: visible;
   }
 
   .ym-contain-oh {
+    display: block;
     overflow: hidden;
     width: 100%;
-    display: block;
   }
 
   .ym-contain-fl {

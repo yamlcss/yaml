@@ -89,6 +89,7 @@
 }
 
 @mixin ym-linearize-forms {
+	// linearization for form module
 	& [class*="ym-type"]:not([class*="ym-type-check"]) label,
 	& .ym-label,
 	& .ym-message,
@@ -96,19 +97,20 @@
 	& input[type="text"],
 	& textarea,
 	& select {
-		/* linearization for forms module */
 		display: block;
 		float: none;
 		position: static !important;
 		width:100% !important;
 	}
 
+	// reset columnar settings
 	& .ym-message,
 	& .ym-fbox-grid,
 	& .ym-fbox-check input {
 		margin-left: 0 !important;
 	}
 
+	// linearization form micro grid
 	& .ym-fbox-grid [class*="ym-g"] {
 		width:100% !important;
 		margin:0;
@@ -133,8 +135,29 @@
 		visibility:hidden;
 	}
 
-	/* IE < 8 */
+	// IE < 8
 	zoom: 1;
+}
+
+// CONTAINING FLOATS
+@mixin ym-contain($type: dt) {
+
+	@if $type == oh {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	@if $type == fl {
+		float: left;
+		width: 100%;
+	}
+
+	@if $type == dt {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
 }
 
 //

@@ -1,3 +1,5 @@
+@import "yaml/mixins/yaml_mixins_core";
+
 @if $ym-base-floathandling == true {
 	/**
 	* @section Float Handling Module
@@ -21,18 +23,12 @@
 	// (en) alternative solutions to contain floats
 	// (de) Alternative Methoden zum Einschließen von Float-Umgebungen
 	.ym-contain-dt {
-		display:table;
-		table-layout:fixed;
-		width:100%;
-		overflow: visible;
+		@include ym-contain(dt);
 	}
 	.ym-contain-oh {
-		overflow:hidden;
-		width:100%;
-		display:block;
+		@include ym-contain(oh);
 	}
 	.ym-contain-fl {
-		float:left;
-		width:100%;
+		@include ym-contain(fl);
 	}
 }

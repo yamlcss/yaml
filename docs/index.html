@@ -3288,11 +3288,26 @@ body &gt; header { min-width: 760px; }
 							<tbody>
 								<tr>
 									<td>ym-clearfix()</td>
-									<td><p>YAMLs clearfix mixin</p>
-										<pre class="cssCode">
+									<td><p>YAMLs clearfix mixin:</p>
+<pre class="cssCode">
 .wrapper {
-@include ym-clearfix();
-}</pre></td>
+  @include ym-clearfix();
+}</pre>
+									</td>
+								</tr>
+								<tr>
+									<td>ym-contain()</td>
+									<td><p>Configurable mixin for containing floats:</p>
+<pre class="cssCode">
+.container {
+  @include ym-contain([dt|oh|fl]);
+}</pre>
+<ul>
+	<li>dt - float containing using CSS property "display:table"</li>
+	<li>oh - float containing using CSS property "overflow:hidden"</li>
+	<li>fl - float containing using CSS property "float:left"</li>
+</ul>
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -3310,7 +3325,7 @@ body &gt; header { min-width: 760px; }
 									<td><p>Linearization code for grids module</p>
 										<pre class="cssCode">
 .linearize-level-1 {
-@include ym-linearize-grids();
+  @include ym-linearize-grids();
 }</pre></td>
 								</tr>
 								<tr>
@@ -3318,7 +3333,7 @@ body &gt; header { min-width: 760px; }
 									<td><p>Linearization code for columns module</p>
 										<pre class="cssCode">
 .linearize-level-1 {
-@include ym-linearize-columns();
+  @include ym-linearize-columns();
 }</pre></td>
 								</tr>
 								<tr>
@@ -3326,15 +3341,15 @@ body &gt; header { min-width: 760px; }
 									<td><p>Combined linearization code for columns and grids modules</p>
 										<pre class="cssCode">
 .linearize-level-1 {
-@include ym-linearize-grids-and-colums();
+  @include ym-linearize-grids-and-colums();
 }</pre></td>
 								</tr>
 								<tr>
 									<td>ym-linearize-forms()</td>
-									<td><p>Linearization code for forms module</p>
+									<td><p>Linearization code for form module</p>
 										<pre class="cssCode">
 .linearize-level-1 {
-@include ym-linearize-forms();
+  @include ym-linearize-forms();
 }</pre></td>
 								</tr>
 							</tbody>
