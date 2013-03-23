@@ -1402,7 +1402,7 @@ body &gt; header { min-width: 760px; }
 			</div>
 		</div>
 
-		<h2 id="yaml-forms" tabindex="-1">Forms Module <span class="label">yaml/core/base.css</span> <span class="label">yaml/forms/gray-theme.css</span></h2>
+		<h2 id="yaml-forms" tabindex="-1">Form Module <span class="label">yaml/core/base.css</span> <span class="label">yaml/forms/gray-theme.css</span></h2>
 		<div class="ym-grid linearize-level-1">
 			<div class="ym-g25 ym-gl">
 				<div class="ym-gbox-left">
@@ -1453,27 +1453,63 @@ body &gt; header { min-width: 760px; }
 <div class="jquery_tabs">
 <h5>Input Field</h5>
 <div class="tab-content">
+
+<form class="ym-form">
+	<div class="ym-fbox ym-type-text">
+		<label for="form1">your label</label>
+		<input type="text" name="form1" id="form1" placeholder="enter a value"/>
+	</div>
+</form>
+
 <pre class="htmlCode">
 &lt;div class="ym-fbox <strong>ym-type-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
-  &lt;input type="text" name="your-id" id="your-id" size="20" /&gt;
+  &lt;input type="text" name="your-id" id="your-id" placeholder="enter a value" /&gt;
 &lt;/div&gt;
 </pre>
 	</div>
 	<h5>Textarea</h5>
 <div class="tab-content">
+
+<form class="ym-form">
+	<div class="ym-fbox ym-type-text">
+		<label for="form2">your label</label>
+		<textarea name="form2" id="form2" rows="5"></textarea>
+	</div>
+</form>
+
 <pre class="htmlCode">
 &lt;div class="ym-fbox <strong>ym-type-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
-  &lt;textarea name=&quot;your-id&quot; id=&quot;your-id&quot; cols=&quot;30&quot; rows=&quot;7&quot;&gt;&lt;/textarea&gt;
+  &lt;textarea name=&quot;your-id&quot; id=&quot;your-id&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 </pre>
 	</div>
 	<h5>Select</h5>
 <div class="tab-content">
+
+<form class="ym-form">
+	<div class="ym-fbox ym-type-select">
+		<label for="form3">Available Options</label>
+		<select name="form3" id="form3" size="1">
+			<option value="0" selected="selected" disabled="disabled">Please choose</option>
+			<optgroup label="First options to choose from">
+				<option value="Empfehlung">Option 1</option>
+				<option value="Suchmaschine">Option 2</option>
+			</optgroup>
+			<optgroup label="Yet more options to choose from">
+				<option value="Weblog">Option 3</option>
+				<option value="Werbung">Option 4</option>
+				<option value="Zeitung / Magazin">Option 5</option>
+				<option value="Sonstiges">Option 6</option>
+			</optgroup>
+		</select>
+	</div>
+</form>
+
 <pre class="htmlCode">
 &lt;div class=&quot;ym-fbox <strong>ym-type-select</strong>&quot;&gt;
-  &lt;label for=&quot;your-id&quot;&gt;More Options&lt;/label&gt;
+  &lt;label for=&quot;your-id&quot;&gt;Available Options&lt;/label&gt;
   &lt;select name=&quot;your-id&quot; id=&quot;your-id&quot; size=&quot;1&quot;&gt;
     &lt;option value=&quot;0&quot; selected=&quot;selected&quot; disabled=&quot;disabled&quot;&gt;Please choose&lt;/option&gt;
     &lt;optgroup label=&quot;First options to choose from&quot;&gt;
@@ -1490,58 +1526,148 @@ body &gt; header { min-width: 760px; }
 	</div>
 	<h5>Checkbox</h5>
 <div class="tab-content">
-<pre class="htmlCode">
-&lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
-  &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id&quot; /&gt;
-  &lt;label for=&quot;your-id&quot;&gt;Your checkbox label&lt;/label&gt;
-&lt;/div&gt;</pre>
+
+<form class="ym-form">
+	<div class="ym-fbox ym-type-check">
+		<span class="ym-label">A single checkbox</span>
+		<input type="checkbox" name="your-id1" id="your-id1" />
+		<label for="your-id1">Your checkbox label</label>
 	</div>
-	<h5>Radio-Buttons</h5>
-<div class="tab-content">
+
+	<div class="ym-fbox ym-type-check">
+		<span class="ym-label">A set of checkboxes</span>
+		<div>
+			<input type="checkbox" name="your-id1" id="your-id1" />
+			<label for="your-id1">Your checkbox label</label>
+		</div>
+		<div>
+			<input type="checkbox" name="your-id2" id="your-id2" />
+			<label for="your-id2">Your checkbox label</label>
+		</div>
+	</div>
+</form>
+
 <pre class="htmlCode">
 &lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
-  &lt;input type=&quot;radio&quot; name=&quot;your-id&quot; value=&quot;value #1&quot; id=&quot;your-id&quot; /&gt;
-  &lt;label for=&quot;your-id&quot;&gt;Your radio-button label&lt;/label&gt;
+  &lt;span class=&quot;ym-label&quot;&gt;A single checkbox&lt;span&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
+  &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
+  &lt;span class=&quot;ym-label&quot;&gt;A set of checkboxs&lt;span&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id2&quot; /&gt;
+    &lt;label for=&quot;your-id2&quot;&gt;Your checkbox label&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id3&quot; /&gt;
+    &lt;label for=&quot;your-id3&quot;&gt;Your checkbox label&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>If you want to combine several checkboxes to a vertical aligned block, you should wrap each row with a block level element (e.g. &lt;div&gt;).
+
+</div>
+
+<h5>Radio-Buttons</h5>
+<div class="tab-content">
+
+<form class="ym-form">
+	<div class="ym-fbox">
+		<span class="ym-label">Custom Label</span>
+		<div class="ym-type-check">
+			<input type="radio" name="vote" value="Option 1" id="vote1" />
+			<label for="vote1">Option 1</label>
+		</div>
+		<div class="ym-type-check">
+			<input type="radio" name="vote" id="vote2" />
+			<label for="vote2">Option 2</label>
+		</div>
+		<div class="ym-type-check">
+			<input type="radio" name="vote" id="vote3" />
+			<label for="vote3">Option 3</label>
+		</div>
+	</div>
+</form>
+
+<pre class="htmlCode">
+&lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
+  &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;span&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id1&quot; /&gt;
+    &lt;label for=&quot;your-id1&quot;&gt;Your radio-button label&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id2&quot; /&gt;
+    &lt;label for=&quot;your-id2&quot;&gt;Your radio-button label&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id3&quot; /&gt;
+    &lt;label for=&quot;your-id3&quot;&gt;Your radio-button label&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
 	</div>
 	<h5>Buttons</h5>
 <div class="tab-content">
-<p>Optional class <code>.ym-button</code> is needed to enable support for styled button in Internet Explorer 6.</p>
+
+<form class="ym-form">
+	<div class="ym-fbox ym-type-button">
+		<input type="submit" value="Submit" class="ym-primary" id="submit" name="submit" />
+		<input type="reset" value="Reset" class="ym-warning" id="reset" name="reset" />
+		<input type="button" value="Button" id="button1" name="button1" />
+	</div>
+</form>
+
 <pre class="htmlCode">
 &lt;div class=&quot;ym-fbox <strong>ym-type-button</strong>&quot;&gt;
-  &lt;input type=&quot;submit&quot; class=&quot;ym-button&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
-  &lt;input type=&quot;reset&quot; class=&quot;ym-button&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+  &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
   &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
 &lt;/div&gt;</pre>
+<p>Optional class <code>.ym-button</code> is needed to enable support for styled button in Internet Explorer 6.</p>
+
 		</div>
 </div>
 				<h4>Form Configuration</h4>
+				<div class="jquery_tabs">
+
 				<h5>Required Fields</h5>
+				<div class="tab-content">
+
 				<p>Required form fields can  be  visually emphasized by adding <code>.ym-required</code> element to the label. In any case, you should add  the ARIA attribute <em><code>aria-required=&quot;true&quot;</code></em> or <code><em>required=&quot;required&quot;</em></code> when using HTML5.</p>
 				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-text"&gt;
   &lt;label for="your-id">your label<strong>&lt;sup class=&quot;ym-required&quot;&gt;*&lt;/sup&gt;</strong>&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" size="20" required=&quot;required&quot;/&gt;
 &lt;/div&gt;		</pre>
+				</div>
+
 				<h5>Error Messages</h5>
+				<div class="tab-content">
 				<p>Use class <code>.ym-error</code> to highlight form fields with invalid form elements. By adding this class to the parent container, you have rich styling options. Optionally you can use <code>.ym-message </code>output messages that will be correctly aligned in all form styles.</p>
 				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-text <strong>ym-error</strong>"&gt;
   &lt;p class=&quot;<strong>ym-message</strong>&quot;&gt;Error: invalid value!&lt;/p&gt;
   ...
 &lt;/div&gt;</pre>
+				</div>
 				<h5>Headings within Forms</h5>
+				<div class="tab-content">
 				<p>Complex forms should be well structured. You can use <code>&lt;fieldset&gt;</code> elements for this reason but also regulare headings. To make typograhpy settings for your headings independent from their styling within forms, YAML provides class <code>.ym-fbox-heading</code> to force any heading level to fit in your form theme.</p>
 				<pre class="htmlCode">&lt;h6 class=&quot;<strong>ym-fbox-heading</strong>&quot;&gt;Sample Heading&lt;/h6&gt;<br>&lt;div class="ym-fbox"&gt;
   ...
 &lt;/div&gt;</pre>
+				</div>
 
 				<h5>Extended Labels</h5>
+				<div class="tab-content">
 				<p>In radio button sets, the label elements are needed to label  individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
 				<pre class="htmlCode">&lt;div class="ym-fbox ym-type-checkbox<strong></strong>"&gt;
   &lt;div&gt;<br>    &lt;span class=&quot;<strong>ym-label</strong>&quot;&gt;Custom Label&lt;/span&gt;<br>    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; value=&quot;Option 1&quot; id=&quot;vote1&quot; /&gt;<br>    &lt;label for=&quot;vote1&quot;&gt;Option 1&lt;/label&gt;<br>  &lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
+				</div>
+				</div>
 
-				<h5>Grids Forms Elements</h5>
+				<h4>Grids Forms Elements</h4>
 				<p>YAMLs form module provides a flexible micro grid to place several form elements in a row. You can use
 				the CSS classes from YAMLs grid module to setup your form layout.</p>
 
@@ -1615,7 +1741,7 @@ body &gt; header { min-width: 760px; }
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
 
 						<div class="ym-fbox ym-type-select">
-							<label for="salutation">Salutation <sup class="ym-required" title="This field is mandatory.">*</sup> </label>
+							<label for="salutation">Salutation</label>
 							<select name="salutation" id="salutation" size="1" aria-required="true">
 								<option value="0" selected="selected" disabled="disabled">Please choose</option>
 								<option value="Mr.">Mr.</option>
@@ -1627,21 +1753,11 @@ body &gt; header { min-width: 760px; }
 							<label for="firstname">First name</label>
 							<input type="text" name="firstname" id="firstname" size="20" />
 						</div>
-						<div class="ym-fbox ym-type-select">
-							<label for="more">More Options</label>
-							<select name="more" id="more" size="1">
-								<option value="0" selected="selected" disabled="disabled">Please choose</option>
-								<optgroup label="First options to choose from">
-									<option value="Empfehlung">Option 1</option>
-									<option value="Suchmaschine">Option 2</option>
-								</optgroup>
-								<optgroup label="Yet more options to choose from">
-									<option value="Weblog">Option 3</option>
-									<option value="Werbung">Option 4</option>
-									<option value="Zeitung / Magazin">Option 5</option>
-									<option value="Sonstiges">Option 6</option>
-								</optgroup>
-							</select>
+						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
+						<div class="ym-fbox ym-type-text ym-error" role="alert" aria-live="assertive">
+							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
+							<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
+							<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
 						</div>
 
 						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
@@ -1724,17 +1840,7 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 
-						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
-						<div class="ym-fbox ym-type-text ym-error" role="alert" aria-live="assertive">
-							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
-							<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
-							<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
-						</div>
-						<div class="ym-fbox ym-type-text">
-							<label for="email">E-Mail <sup class="ym-required" title="This field is mandatory.">*</sup></label>
-							<input type="text" name="email" id="email" size="20"  aria-required="true"/>
-						</div>
-						<h6 class="ym-fbox-heading">Text Areas, Complex Select Boxes, Checkboxes</h6>
+						<h6 class="ym-fbox-heading">Text Areas, Checkboxes, Radio Buttons</h6>
 						<div class="ym-fbox ym-type-text">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="7"></textarea>
@@ -1743,7 +1849,6 @@ body &gt; header { min-width: 760px; }
 							<input type="checkbox" name="newsletter" id="newsletter" />
 							<label for="newsletter">Sign me up for your newsletter</label>
 						</div>
-						<h6 class="ym-fbox-heading">Radio Buttons</h6>
 						<div class="ym-fbox">
 							<span class="ym-label">Custom Label</span>
 							<div class="ym-type-check">
