@@ -330,7 +330,7 @@
   .ym-form textarea {
     display: block;
     position: relative;
-    width: 56%;
+    width: 65%;
     padding-left: 1%;
     padding-right: 1%;
   }
@@ -350,7 +350,7 @@
   }
   .ym-form .ym-fbox-grid {
     overflow: hidden;
-    width: 60%;
+    width: 70%;
   }
   .ym-form .ym-fbox-grid .ym-type-text input,
   .ym-form .ym-fbox-grid .ym-type-text textarea,
@@ -436,7 +436,6 @@
   .ym-columnar .ym-type-text input,
   .ym-columnar .ym-type-text textarea {
     float: left;
-    width: 65%;
     margin-right: -3px;
   }
   .ym-columnar .ym-type-check {
@@ -451,7 +450,6 @@
   }
   .ym-columnar .ym-fbox-grid {
     margin-left: 30%;
-    width: 70%;
     margin-right: -3px;
   }
   .ym-columnar .ym-fbox-grid .ym-type-text label,
@@ -466,6 +464,13 @@
   .ym-columnar .ym-fbox-grid .ym-type-check input {
     margin-left: 0;
   }
+  .ym-columnar .ym-fbox-wrap {
+    margin-left: 30%;
+  }
+  .ym-columnar .ym-fbox-wrap label,
+  .ym-columnar .ym-fbox-wrap input {
+    margin-left: 0;
+  }
 
   .ym-fbox-grid + .ym-fbox-grid {
     margin-top: 0.5em;
@@ -477,15 +482,11 @@
   }
 
   .ym-type-select select {
-    width: 58%;
+    width: 67%;
   }
 
   .ym-full .ym-type-select select {
     width: 96%;
-  }
-
-  .ym-columnar .ym-type-select select {
-    width: 67%;
   }
 
    /**
@@ -764,7 +765,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 58%;
+    width: 68%;
   }
   .ym-form .ym-type-text input,
   .ym-form .ym-type-text textarea {
@@ -772,7 +773,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 58%;
+    width: 68%;
   }
   .ym-form .ym-fbox-grid {
     -webkit-box-sizing: border-box;
@@ -780,7 +781,7 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     display: table;
-    width: 60%;
+    width: 70%;
   }
 
   .ym-columnar label {
@@ -788,17 +789,6 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-  }
-
-  .ym-columnar .ym-type-select select {
-    width: 68%;
-  }
-  .ym-columnar .ym-type-text input,
-  .ym-columnar .ym-type-text textarea {
-    width: 68%;
-  }
-  .ym-columnar .ym-fbox-grid {
-    width: 70%;
   }
 
   .ym-full .ym-type-text input,

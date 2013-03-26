@@ -24,41 +24,25 @@
 	.ym-form {
 		.ym-type-select select {
 			@include ym-box-sizing(border-box);
-			width: 58%;
+			width: 68%;
 		}
 		.ym-type-text {
 			input,
 			textarea {
 				@include ym-box-sizing(border-box);
-				width:58%;
+				width:68%;
 			}
 		}
 
 		.ym-fbox-grid {
 			@include ym-box-sizing(border-box);
 			display: table;
-			width: 60%;
+			width: 70%;
 		}
 	}
 
 	.ym-columnar label {
 		@include ym-box-sizing(border-box);
-	}
-
-	.ym-columnar {
-		.ym-type-select select {
-			width: 68%;
-		}
-		.ym-type-text {
-			input,
-			textarea {
-				width:68%;
-			}
-		}
-		.ym-fbox-grid {
-			width: 70%;
-		}
-
 	}
 
 	.ym-full {
@@ -209,7 +193,6 @@
 			border:1px #888 solid;
 			background:#fff;
 		}
-
 	}
 
 	/**

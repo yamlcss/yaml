@@ -75,7 +75,7 @@
 		textarea {
 			display:block;
 			position:relative;
-			width:56%;
+			width:65%;
 			padding-left: 1%;
 			padding-right: 1%;
 		}
@@ -105,7 +105,7 @@
 		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
 		.ym-fbox-grid {
 			overflow:hidden;
-			width: 60%;
+			width: 70%;
 
 			.ym-type-text input,
 			.ym-type-text textarea,
@@ -151,7 +151,6 @@
 		.ym-g38 { width:36.2% !important; }
 		.ym-g62 { width:59.8% !important; }
 	}
-
 
 	// Indent Checkbox fields to match label-width
 	// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
@@ -199,7 +198,6 @@
 		.ym-type-text input,
 		.ym-type-text textarea {
 			float:left;
-			width:65%;
 			margin-right: -3px;
 		}
 
@@ -219,7 +217,6 @@
 
 		.ym-fbox-grid {
 			margin-left:30%;
-			width: 70%;
 			margin-right: -3px;
 
 			.ym-type-text label,
@@ -236,6 +233,15 @@
 				margin-left: 0;
 			}
 		}
+
+		.ym-fbox-wrap {
+			margin-left: 30%;
+
+			label,
+			input {
+				margin-left: 0;
+			}
+		}
 	}
 
 	.ym-fbox-grid + .ym-fbox-grid {
@@ -249,9 +255,8 @@
 	}
 
 	// @section Form Construction Kit | Screen Adjustments
-	.ym-type-select select { width:58%; }
+	.ym-type-select select { width:67%; }
 	.ym-full .ym-type-select select { width:96%; }
-	.ym-columnar .ym-type-select select { width:67%; }
 
    /**
 	* Inline forms display - technical base (optional)

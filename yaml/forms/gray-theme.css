@@ -15,7 +15,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 58%;
+    width: 68%;
   }
   .ym-form .ym-type-text input,
   .ym-form .ym-type-text textarea {
@@ -23,7 +23,7 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    width: 58%;
+    width: 68%;
   }
   .ym-form .ym-fbox-grid {
     -webkit-box-sizing: border-box;
@@ -31,7 +31,7 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     display: table;
-    width: 60%;
+    width: 70%;
   }
 
   .ym-columnar label {
@@ -39,17 +39,6 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-  }
-
-  .ym-columnar .ym-type-select select {
-    width: 68%;
-  }
-  .ym-columnar .ym-type-text input,
-  .ym-columnar .ym-type-text textarea {
-    width: 68%;
-  }
-  .ym-columnar .ym-fbox-grid {
-    width: 70%;
   }
 
   .ym-full .ym-type-text input,

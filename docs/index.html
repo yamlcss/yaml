@@ -1555,17 +1555,18 @@ body &gt; header { min-width: 760px; }
 &lt;/div&gt;
 &lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;A set of checkboxs&lt;span&gt;
-  &lt;div&gt;
+  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id2&quot; /&gt;
     &lt;label for=&quot;your-id2&quot;&gt;Your checkbox label&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div&gt;
+  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id3&quot; /&gt;
     &lt;label for=&quot;your-id3&quot;&gt;Your checkbox label&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-<p>If you want to combine several checkboxes to a vertical aligned block, you should wrap each row with a block level element (e.g. &lt;div&gt;).
+<p>If you want to combine several checkboxes to a vertical aligned block, you should wrap each row with a block level element.
+YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a universal wrapper that works with all form styles (full and columnar style).
 
 </div>
 
@@ -1593,15 +1594,15 @@ body &gt; header { min-width: 760px; }
 <pre class="htmlCode">
 &lt;div class=&quot;ym-fbox <strong>ym-type-check</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;span&gt;
-  &lt;div&gt;
+  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id1&quot; /&gt;
     &lt;label for=&quot;your-id1&quot;&gt;Your radio-button label&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div&gt;
+  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id2&quot; /&gt;
     &lt;label for=&quot;your-id2&quot;&gt;Your radio-button label&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div&gt;
+  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
     &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id3&quot; /&gt;
     &lt;label for=&quot;your-id3&quot;&gt;Your radio-button label&lt;/label&gt;
   &lt;/div&gt;
@@ -1849,17 +1850,17 @@ body &gt; header { min-width: 760px; }
 							<input type="checkbox" name="newsletter" id="newsletter" />
 							<label for="newsletter">Sign me up for your newsletter</label>
 						</div>
-						<div class="ym-fbox">
+						<div class="ym-fbox ym-type-check">
 							<span class="ym-label">Custom Label</span>
-							<div class="ym-type-check">
+							<div class="ym-fbox-wrap">
 								<input type="radio" name="vote" value="Option 1" id="vote1" />
 								<label for="vote1">Option 1</label>
 							</div>
-							<div class="ym-type-check">
+							<div class="ym-fbox-wrap">
 								<input type="radio" name="vote" id="vote2" />
 								<label for="vote2">Option 2</label>
 							</div>
-							<div class="ym-type-check">
+							<div class="ym-fbox-wrap">
 								<input type="radio" name="vote" id="vote3" />
 								<label for="vote3">Option 3</label>
 							</div>
