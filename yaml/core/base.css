@@ -356,6 +356,7 @@
     margin-left: 0;
   }
   .ym-form .ym-fbox-grid .ym-type-check input {
+    width: auto;
     margin-left: 0;
   }
   .ym-form .ym-g20,
@@ -434,10 +435,6 @@
     float: left;
     width: 65%;
     margin-right: -3px;
-  }
-  .ym-columnar .ym-label {
-    position: absolute;
-    top: 0;
   }
   .ym-columnar .ym-type-check {
     position: relative;
@@ -542,7 +539,7 @@
   * @section print adjustments for core modules
   *
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {

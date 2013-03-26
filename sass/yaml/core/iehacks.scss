@@ -245,16 +245,23 @@
 		.ym-fbox-grid {
 			display: block;
 			overflow: hidden;
+			margin-right: -5px;
 
-			input,
-			textarea,
-			select {
+			.ym-type-text input,
+			.ym-type-text textarea,
+			.ym-type-select select {
 				width: 96% !important;
 			}
 		}
 
+		// Force integer values to avoid float drops
+		.ym-g33 { display:inline; width:31% !important; }
+		.ym-g66 { display:inline; width:64% !important; }
+		.ym-g38 { display:inline; width:36% !important; }
+		.ym-g62 { display:inline; width:59% !important; }
+
 		// adjusted grid widths for box-modell: content-box
-		input, select {
+		input, textarea, select {
 			&.ym-g20 { display:inline; width:16% !important; }
 			&.ym-g40 { display:inline; width:36% !important; }
 			&.ym-g60 { display:inline; width:56% !important; }

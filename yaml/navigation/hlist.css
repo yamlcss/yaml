@@ -18,7 +18,7 @@
     font-size: 1.0em;
     line-height: 1;
     list-style-type: none;
-    margin: 0 0.25em 0 0;
+    margin: 0 .25em 0 0;
     padding: 0;
   }
   .ym-hlist ul li a, .ym-hlist ul li strong {
@@ -64,7 +64,7 @@
     line-height: 1;
     padding: 0.25em;
     width: 12em;
-    border: solid 1px #888888;
+    border: solid 1px #888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
