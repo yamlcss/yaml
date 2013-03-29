@@ -216,7 +216,7 @@
   }
 
   acronym, abbr {
-    border-bottom: 1px #aaa dotted;
+    border-bottom: 1px #aaaaaa dotted;
     font-variant: small-caps;
     letter-spacing: .07em;
     cursor: help;
@@ -292,7 +292,7 @@
 
   .bordered {
     margin-top: 1.5em;
-    border: 2px #eee solid;
+    border: 2px #eeeeee solid;
     border: 2px white solid;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -396,8 +396,8 @@
     width: 100%;
     border-collapse: collapse;
     color: #444444;
-    border-top: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
+    border-top: 1px #cccccc solid;
+    border-bottom: 1px #cccccc solid;
     margin: 1.35714em 0 0 0;
   }
   table.narrow {
@@ -408,21 +408,21 @@
     line-height: 1.42857;
   }
   table.bordertable {
-    border: 1px #ccc solid;
+    border: 1px #cccccc solid;
   }
   table.bordertable thead th {
     background: #e0e0e0;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
+    border-right: 1px #cccccc solid;
+    border-bottom: 1px #cccccc solid;
   }
   table.bordertable tbody th[scope="row"] {
     background: #f0f0f0;
   }
   table.bordertable tbody th {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
   }
   table.bordertable tbody td {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
   }
 
   table caption {
@@ -448,7 +448,7 @@
   thead th {
     text-align: left;
     color: #000;
-    border-bottom: 2px #000 solid;
+    border-bottom: 2px black solid;
   }
 
   tbody {
@@ -456,12 +456,12 @@
   }
   tbody th {
     text-align: left;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     text-align: left;
   }
   tbody td {
     text-align: left;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
   }
   tbody tr:hover th,
   tbody tr:hover td {

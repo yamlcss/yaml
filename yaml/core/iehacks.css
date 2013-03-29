@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) YAML core stylesheet - structure-independent bugfixes of IE/Win CSS-bugs
@@ -40,7 +40,7 @@
   * (de) HTML5 - Standard Eigenschaften für Media-Elemente
   */
   article, aside, details, figcaption, figure,
-  footer, header, hgroup, nav, section {
+  footer, header, main, hgroup, nav, section {
     zoom: 1;
   }
 

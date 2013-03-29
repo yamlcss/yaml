@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  *  "Yet Another Multicolumn Layout" - YAML CSS Framework
  *  (en) YAML core stylesheet
@@ -540,7 +540,7 @@
   * @section print adjustments for core modules
   *
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {
