@@ -8,8 +8,11 @@ YAML ist also availabe in a static CSS version, that can be downloaded at: <http
 yaml4-sass: 4.1.0b
 
 ## Quick Start
-* **compile once** `compass compile` starts a single run to compile sass/scss files to CSS.
-* **edit** `compass watch` starts the watcher that recompiles your sass/scss files on every change.
+You need to have [Node.js](http://nodejs.org/download/) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of yaml4-sass.
+
+* **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
+* **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
+* **minify** `grunt minify` compiles and optimizes all YAML4 CSS files for production.
 
 ## Overview
 The Sass port is built in a way that allows you to create a fully customized version of YAML's framework files.
