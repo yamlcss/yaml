@@ -34,7 +34,8 @@ module.exports = function(grunt) {
         files: [{
           expand : true,           // Enable dynamic expansion.
           cwd    : 'yaml/',        // Src matches are relative to this path.
-          src    : ['**/*.css'],   // Actual pattern(s) to match.
+//          src    : ['**/*.css'],   // Actual pattern(s) to match.
+          src    : ['core/*.css','add-ons/rtl-support/core/*.css'],   // Actual pattern(s) to match.
           dest   : 'yaml/',        // Destination path prefix.
           ext    : '.min.css'      // Dest filepaths will have this extension.
         }]
