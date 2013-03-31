@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           sassDir        : 'sass/static-build',
           cssDir         : 'yaml',
           importPath     : 'sass',
+          imagesDir      : 'yaml',
           outputStyle    : 'expanded',
           noLineComments : true
         }
@@ -20,6 +21,7 @@ module.exports = function(grunt) {
           sassDir        : 'sass/docs',
           cssDir         : 'docs',
           importPath     : 'sass',
+          imagesDir      : 'yaml',
           outputStyle    : 'expanded',
           noLineComments : true
         }
@@ -29,6 +31,7 @@ module.exports = function(grunt) {
           sassDir        : 'sass/css',
           cssDir         : 'css',
           importPath     : 'sass',
+          imagesDir      : 'yaml',
           outputStyle    : 'expanded',
           noLineComments : true
         }
@@ -45,6 +48,17 @@ module.exports = function(grunt) {
               pattern     : /@charset "utf-8";/ig,
               replacement : ''
             }]
+        }
+      },
+      microformatsImgPath: {
+        files: {
+          './': 'yaml/add-ons/microformats/*.css'
+        },
+        options: {
+          replacements: [{
+              pattern     : /\/yaml\/add-ons\/microformats\//ig,
+              replacement : ''
+          }]
         }
       }
     },
@@ -65,7 +79,8 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: 'sass/yaml-sass/', src: ['**/*.js'], dest: 'yaml/'} // makes all src relative to cwd
+          {expand: true, cwd: 'sass/yaml-sass/', src: ['**/*.js'], dest: 'yaml/'}, // makes all src relative to cwd
+          {expand: true, cwd: 'sass/yaml-sass/', src: ['**/*.png', '**/*.gif', '**/*.jpg'], dest: 'yaml/'} // makes all src relative to cwd
         ]
       }
     },
@@ -84,6 +99,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['clean', 'compass:css', 'compass:docs', 'copy']);
-  grunt.registerTask('build',  ['clean', 'compass', 'string-replace', 'copy', 'cssmin']);
+  grunt.registerTask('default', ['clean', 'copy', 'compass:css', 'compass:docs']);
+  grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin']);
 };
