@@ -1,0 +1,15 @@
+@charset "utf-8";
+//
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+// 960.gs port for YAML: 960px - 16 columns
+//
+// @copyright       Copyright 2005-2013, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
+
+@import "yaml-sass/_yaml_globals";
+@import "yaml-sass/mixins/yaml_mixins_core";
+
+@include ym-custom-grid("g960",16, 960px, 10px, 10px);

@@ -2,17 +2,17 @@
 // @import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|Droid+Sans:700");
 
 /* YAML Framework Components */
-@import "yaml/yaml_globals",
-		"yaml/mixins/yaml_mixins_core",
+@import "yaml-sass/yaml_globals",
+		"yaml-sass/mixins/yaml_mixins_core",
 
-		"yaml/core/base",
-		"yaml/navigation/vlist",
-		"yaml/navigation/hlist",
-		"yaml/forms/gray-theme",
-		"yaml/add-ons/accessible-tabs/tabs",
-		"yaml/add-ons/microformats/microformats",
-		"yaml/screen/typography",
-		"yaml/print/print";
+		"yaml-sass/core/base",
+		"yaml-sass/navigation/vlist",
+		"yaml-sass/navigation/hlist",
+		"yaml-sass/forms/gray-theme",
+		"yaml-sass/add-ons/accessible-tabs/tabs",
+		"yaml-sass/add-ons/microformats/microformats",
+		"yaml-sass/screen/typography",
+		"yaml-sass/print/print";
 
 /* Screen Design */
 @import "docs/assets/css/screen";

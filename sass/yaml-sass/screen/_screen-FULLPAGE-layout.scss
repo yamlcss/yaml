@@ -1,0 +1,185 @@
+@charset "utf-8";
+//
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+//
+// default screen stylesheet - FULLPAGE-layout type layout
+//
+// @copyright       Copyright 2005-2013, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
+//
+
+@import "yaml-sass/_yaml_globals";
+@import "yaml-sass/mixins/yaml_mixins_core";
+
+@media screen {
+
+	/* force vertical scrollbar */
+	body {
+		overflow-y: scroll;
+	}
+
+	/* Layout Module Configuration */
+	.#{$yaml-prefix}wrapper {
+		max-width: 80em;
+		margin: 0 auto;
+	}
+
+	.#{$yaml-prefix}wbox {
+		padding: 1.5em;
+	}
+
+	/* fallback for missing media queries support*/
+	body {
+		& > header,
+		& > nav,
+		& > #main,
+		& > footer {
+			min-width: 760px;
+		}
+	}
+
+	/* Basic Element Styling */
+	header {
+		background: #444;
+		color: #ccc;
+
+		h1 {
+			background: transparent;
+			color: #fff;
+		}
+
+		.#{$yaml-prefix}wbox {
+			padding: 1.5em;
+		}
+	}
+
+	nav {
+		background: #222222;
+	}
+
+	#main {
+		.info {
+			margin-bottom: 1.5em;
+		}
+		aside .#{$yaml-prefix}gbox-right {
+			border-left: 1px #ddd solid;
+		}
+	}
+
+	footer {
+		background: #eee;
+		color: #444;
+
+		p {
+			margin: 0;
+		}
+
+		.#{$yaml-prefix}wbox {
+			padding: 1.5em;
+		}
+	}
+
+	.#{$yaml-prefix}gbox { padding: 0 1.5em; }
+	.#{$yaml-prefix}gbox-left { padding: 0 1.5em 0 0; }
+	.#{$yaml-prefix}gbox-right { padding: 0 0 0 1.5em; }
+
+	section.box { padding: 0 1.5em 1.5em 1.5em; }
+
+	/* skip links styling */
+	.#{$yaml-prefix}skiplinks {
+		a.#{$yaml-prefix}skip:focus,
+		a.#{$yaml-prefix}skip:active {
+			color:#fff;
+			background:#333;
+			border-bottom:1px #000 solid;
+			padding:10px 0;
+			text-align: center;
+			text-decoration:none;
+		}
+	}
+}
+
+/* reset fallback values in modern browsers */
+@media screen and ( min-width: 0px ) {
+
+	body {
+		& > header,
+		& > nav,
+		& > #main,
+		& > footer {
+			min-width: 0;
+		}
+	}
+}
+
+@media screen and ( max-width: 760px ) {
+
+	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
+	.linearize-level-1 {
+		@include ym-linearize-grids-and-columns();
+	}
+
+	.secondary {
+		border-top: 1px #888 solid;
+		margin-top: 1.5em !important;
+	}
+
+	#main aside .#{$yaml-prefix}gbox-right {
+		border: 0 none;
+	}
+
+	.#{$yaml-prefix}searchform {
+		display:block;
+		float: none;
+		width: auto;
+		text-align: right;
+	}
+
+	.#{$yaml-prefix}searchform input[type="search"] {
+		width: 14%;
+	}
+}
+
+@media screen and ( max-width: 480px) {
+
+	/* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
+	.linearize-level-2 {
+		@include ym-linearize-grids-and-columns();
+	}
+
+	header {
+		.#{$yaml-prefix}wbox {
+			padding: 0.75em 10px;
+		}
+
+		h1 {
+			font-size: 1.5em;
+			line-height: 1em;
+			margin: 0;
+		}
+	}
+
+	footer .#{$yaml-prefix}wbox,
+	.#{$yaml-prefix}wbox,
+	.#{$yaml-prefix}searchform,
+	nav .#{$yaml-prefix}hlist ul {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.#{$yaml-prefix}searchform,
+	nav .#{$yaml-prefix}hlist ul,
+	nav .#{$yaml-prefix}hlist li {
+		display:block;
+		float: none;
+		width: auto;
+		text-align: left;
+	}
+
+	.#{$yaml-prefix}searchform input[type="search"] {
+		width: 75%;
+	}
+}

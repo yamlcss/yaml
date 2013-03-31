@@ -1,0 +1,34 @@
+@import "yaml-sass/mixins/yaml_mixins_core";
+
+@if $ym-base-floathandling == true {
+	/**
+	* @section Float Handling Module
+	*/
+
+	// (en) clearfix method for clearing floats
+	// (de) Clearfix-Methode zum Clearen der Float-Umgebungen
+	.#{$yaml-prefix}clearfix:before {
+		content:"";
+		display:table;
+	}
+	.#{$yaml-prefix}clearfix:after {
+		clear:both;
+		content:".";
+		display:block;
+		font-size:0;
+		height:0;
+		visibility:hidden;
+	}
+
+	// (en) alternative solutions to contain floats
+	// (de) Alternative Methoden zum Einschließen von Float-Umgebungen
+	.#{$yaml-prefix}contain-dt {
+		@include ym-contain(dt);
+	}
+	.#{$yaml-prefix}contain-oh {
+		@include ym-contain(oh);
+	}
+	.#{$yaml-prefix}contain-fl {
+		@include ym-contain(fl);
+	}
+}

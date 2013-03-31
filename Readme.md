@@ -12,7 +12,7 @@ You need to have [Node.js](http://nodejs.org/download/) and [Compass](http://com
 
 * **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
 * **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
-* **minify** `grunt minify` compiles and optimizes all YAML4 CSS files for production.
+* **build** `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
 
 ## Overview
 The Sass port is built in a way that allows you to create a fully customized version of YAML's framework files.

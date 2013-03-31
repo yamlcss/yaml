@@ -1,0 +1,142 @@
+@charset "utf-8";
+//
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+//
+// (en) Vertical list navigation "vlist"
+// (de) Vertikale Navigationsliste "vlist"
+//
+// @copyright       Copyright 2005-2013, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
+//
+
+@import "yaml-sass/_yaml_globals";
+
+@media all {
+
+	/* title */
+	.#{$yaml-prefix}vtitle {
+		font-weight:bold;
+		font-size:100%;
+		width:90%;
+		padding:3px 0px 3px 10%; /* LTR */
+		margin:0;
+		color:#444;
+		background-color:#fff;
+		border-top:2px #ddd solid;
+
+		& + ul {
+			border-top:4px #888 solid;
+		}
+	}
+
+	.#{$yaml-prefix}vlist {
+		margin:0 0 1.5em 0;
+		list-style-type:none;
+		background: transparent;
+		border: 0 none;
+
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			width:100%;
+			overflow:hidden;
+			border-top:2px #ddd solid;
+			border-bottom:2px #ddd solid;
+		}
+
+		ul ul {
+			border: 0 none;
+		}
+
+		li {
+			float:left; /* LTR */
+			width:100%;
+			margin:0;
+			padding:0;
+			background-color:#fff;
+		}
+
+		a,
+		strong,
+		span {
+			display:block;
+			padding:3px 0px 3px 10%;
+			text-decoration:none;
+			border-bottom:1px #ddd solid;
+		}
+
+		a,
+		a:visited {
+			color:#444;
+		}
+
+		li span {
+			display:block;
+			font-weight:bold;
+			border-bottom:1px #ddd solid;
+		}
+
+		/* active list element */
+		li.active {
+			color:#fff;
+			background-color:#444;
+			strong {
+				font-weight:bold;
+			}
+		}
+
+		/* Level 1 */
+		li {
+			a,
+			strong,
+			span { width:90%; padding-left:10%; } /* LTR */
+
+			a:focus,
+			a:hover,
+			a:active { background-color:#888; color:#fff; outline: 0 none; }
+		}
+
+		/* Level 2 */
+		li ul li  {
+			a,
+			strong,
+			span { width:80%; padding-left:20%; } /* LTR */
+
+			a,
+			a:visited { background-color:#f8f8f8; color:#333; }
+			a:focus,
+			a:hover,
+			a:active { background-color:#888; color:#fff; }
+		}
+
+		/* Level 3 */
+		li ul li ul li {
+			a,
+			strong,
+			span { width:70%; padding-left:30%; } /* LTR */
+
+			a,
+			a:visited{ background-color:#f0f0f0; color:#222; }
+			a:focus,
+			a:hover,
+			a:active { background-color:#888; color:#fff; }
+		}
+
+		/* Level 4 */
+		li ul li ul li ul li {
+			a,
+			strong,
+			span { width:60%; padding-left:40%; } /* LTR */
+
+			a,
+			a:visited { background-color:#e8e8e8; color:#111; }
+			a:focus,
+			a:hover,
+			a:active { background-color:#888; color:#fff; }
+		}
+	}
+}

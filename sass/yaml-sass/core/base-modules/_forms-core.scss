@@ -1,0 +1,262 @@
+@import "yaml-sass/yaml_globals";
+
+@if $ym-base-forms == true {
+	/**
+	* @section Form Module
+	*/
+
+	// Vertical-Forms - technical base (standard)
+	//
+	// |-------------------------------|
+	// | form                          |
+	// |-------------------------------|
+	// |   label                       |
+	// |   input / select / textarea   |
+	// |-------------------------------|
+	// | /form                         |
+	// |-------------------------------|
+	//
+	// (en) Styling of forms where both label and input/select/textarea are styled with display:block;
+	// (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+
+	.#{$yaml-prefix}form,
+	.#{$yaml-prefix}form fieldset { overflow:hidden; }
+
+	.#{$yaml-prefix}form {
+		div { position:relative; }
+
+		label,
+		.#{$yaml-prefix}label,
+		.#{$yaml-prefix}message {
+			position:relative;
+			line-height: 1.5;
+			display:block; //important for Safari
+		}
+
+		.#{$yaml-prefix}type-check label {
+			display:inline;
+		}
+
+		input,
+		textarea { cursor:text; }
+
+		input[type="checkbox"],
+		input[type="radio"],
+		select,
+		label {
+			cursor:pointer;
+		}
+
+		// small adjustments for Internet Explorer - all versions
+		textarea { overflow: auto; }
+
+		// Hiding of hidden fields (otherwise ugly spaces in Firefox)
+		// Versteckte Felder wirklich verstecken (sonst ggf. häßliche Lücken im Firefox)
+		input[type=hidden] { display:none !important; }
+
+		// styling containing DIV elements
+		// Gestaltung der kapselnden DIV-Elemente
+		.#{$yaml-prefix}fbox:before {
+			content:"";
+			display:table;
+		}
+
+		.#{$yaml-prefix}fbox:after {
+			clear:both;
+			content:".";
+			display:block;
+			font-size:0;
+			height:0;
+			visibility:hidden;
+		}
+
+		// styling standard form elements with 'almost' equal flexible width
+		// Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite
+		select,
+		input,
+		textarea {
+			display:block;
+			position:relative;
+			width:65%;
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+
+		.#{$yaml-prefix}type-check input {
+			display: inline;
+			width: auto;
+		}
+
+		// Styling of buttons
+		// Gestaltung von Buttons
+		.#{$yaml-prefix}type-button input {
+			display: inline;
+			overflow:visible;  // Fixes IE7 auto-padding bug
+			width:auto;
+		}
+
+		// avoid jumping checkboxes & radiobuttons in IE8
+		.#{$yaml-prefix}type-check input:focus,
+		.#{$yaml-prefix}type-check input:hover,
+		.#{$yaml-prefix}type-check input:active {
+			border:0 none;
+		}
+
+
+		// micro-grid for form elements
+		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+		.#{$yaml-prefix}fbox-grid {
+			overflow:hidden;
+			width: 70%;
+
+			.#{$yaml-prefix}type-text input,
+			.#{$yaml-prefix}type-text textarea,
+			.#{$yaml-prefix}type-select select {
+				width: 96%;
+				margin-left: 0;
+			}
+			.#{$yaml-prefix}type-check input {
+				width:auto;
+				margin-left: 0;
+			}
+		}
+
+		// redefine grid-classes for usage within forms module
+		.#{$yaml-prefix}g20,
+		.#{$yaml-prefix}g40,
+		.#{$yaml-prefix}g60,
+		.#{$yaml-prefix}g80,
+		.#{$yaml-prefix}g25,
+		.#{$yaml-prefix}g33,
+		.#{$yaml-prefix}g50,
+		.#{$yaml-prefix}g66,
+		.#{$yaml-prefix}g75,
+		.#{$yaml-prefix}g38,
+		.#{$yaml-prefix}g62 {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			float: left;
+			margin-left: 0 !important;
+			margin-right: 2% !important;
+		}
+
+		.#{$yaml-prefix}g20 { width:18% !important; }
+		.#{$yaml-prefix}g40 { width:38% !important; }
+		.#{$yaml-prefix}g60 { width:58% !important; }
+		.#{$yaml-prefix}g80 { width:78% !important; }
+		.#{$yaml-prefix}g25 { width:23% !important; }
+		.#{$yaml-prefix}g33 { width:31.333% !important; }
+		.#{$yaml-prefix}g50 { width:48% !important; }
+		.#{$yaml-prefix}g66 { width:64.666% !important; }
+		.#{$yaml-prefix}g75 { width:73% !important; }
+		.#{$yaml-prefix}g38 { width:36.2% !important; }
+		.#{$yaml-prefix}g62 { width:59.8% !important; }
+	}
+
+	// Indent Checkbox fields to match label-width
+	// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+	.#{$yaml-prefix}full {
+		.#{$yaml-prefix}type-select select,
+		.#{$yaml-prefix}type-text input,
+		.#{$yaml-prefix}type-text textarea {
+			width:94%;
+			margin-right: -3px;
+		}
+
+		.#{$yaml-prefix}fbox-grid {
+			width: 100%;
+		}
+	}
+
+	//  Columnar forms display - technical base (optional)
+	//
+	//  |-------------------------------------------|
+	//  | form                                      |
+	//  |-------------------------------------------|
+	//  |                                           |
+	//  |   label   |   input / select / textarea   |
+	//  |                                           |
+	//  |-------------------------------------------|
+	//  | /form                                     |
+	//  |-------------------------------------------|
+	//
+	//  (en) Styling of forms where label floats left of form-elements
+	//  (de) Formulargestaltung, bei der die label-Elemente nach links fließen
+
+	.#{$yaml-prefix}columnar {
+		// Columnar display
+		// Spalten-Darstellung
+		.#{$yaml-prefix}label,
+		.#{$yaml-prefix}type-text label,
+		.#{$yaml-prefix}type-select label {
+			display:inline;
+			float:left;
+			width:30%; // Can be fixed width too | Kann auch eine fixe Angabe sein
+			z-index: 1;
+		}
+
+		.#{$yaml-prefix}type-select select,
+		.#{$yaml-prefix}type-text input,
+		.#{$yaml-prefix}type-text textarea {
+			float:left;
+			margin-right: -3px;
+		}
+
+		.#{$yaml-prefix}type-check {
+			position:relative;
+			.#{$yaml-prefix}label {
+				line-height: 1.0;
+			}
+		}
+
+		// Indent Checkbox fields to match label-width
+		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+		.#{$yaml-prefix}type-check input,
+		.#{$yaml-prefix}error .#{$yaml-prefix}message {
+			margin-left:30%;
+		}
+
+		.#{$yaml-prefix}fbox-grid {
+			margin-left:30%;
+			margin-right: -3px;
+
+			.#{$yaml-prefix}type-text label,
+			.#{$yaml-prefix}type-select label {
+				display:block;
+				float:none;
+				width:auto;
+				z-index: 1;
+				margin-left: 0;
+			}
+
+			.#{$yaml-prefix}type-check label,
+			.#{$yaml-prefix}type-check input {
+				margin-left: 0;
+			}
+		}
+
+		.#{$yaml-prefix}fbox-wrap {
+			margin-left: 30%;
+
+			label,
+			input {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.#{$yaml-prefix}fbox-grid + .#{$yaml-prefix}fbox-grid {
+		margin-top: 0.5em;
+	}
+
+	// global and local columnar settings for button alignment
+	.#{$yaml-prefix}columnar fieldset .#{$yaml-prefix}type-button,
+	fieldset.#{$yaml-prefix}columnar .#{$yaml-prefix}type-button {
+		padding-left:30%;
+	}
+
+	// @section Form Construction Kit | Screen Adjustments
+	.#{$yaml-prefix}type-select select { width:67%; }
+	.#{$yaml-prefix}full .#{$yaml-prefix}type-select select { width:96%; }
+}

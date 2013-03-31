@@ -1,0 +1,29 @@
+@import "yaml-sass/mixins/yaml_mixins_core";
+
+@if $ym-base-columns == true {
+	/**
+	* @section Column Module
+	*/
+
+	// default column config:
+	// |-------------------------------|
+	// | col1    | col3      | col2    |
+	// | 20%     | flexible  | 20%     |
+	// |-------------------------------|
+
+	.#{$yaml-prefix}column {
+		@include ym-contain(dt);
+	}
+
+	.#{$yaml-prefix}col1 { float:left; width:$ym-column-width; }
+	.#{$yaml-prefix}col2 { float:right; width:$ym-column-width; }
+	.#{$yaml-prefix}col3 { width:auto; margin:0 $ym-column-width; }
+
+	.#{$yaml-prefix}cbox { padding: 0 $ym-cbox-padding }
+	.#{$yaml-prefix}cbox-left { padding: 0 $ym-cbox-padding 0 0 }
+	.#{$yaml-prefix}cbox-right { padding: 0 0 0 $ym-cbox-padding }
+
+	// (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css
+	// (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet
+	.#{$yaml-prefix}ie-clearing { display:none; }
+}

@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /**
  *  "Yet Another Multicolumn Layout" - YAML CSS Framework
  *  (en) YAML core stylesheet
@@ -484,19 +484,6 @@
 
   .ym-full .ym-type-select select {
     width: 96%;
-  }
-
-   /**
-	* Inline forms display - technical base (optional)
-	*/
-  .ym-form.ym-inline .ym-type-select select, .ym-form.ym-form.ym-inline .ym-type-text input,
-  .ym-form .ym-type-select.ym-inline select,
-  .ym-form .ym-type-text.ym-inline input {
-    width: auto !important;
-    display: inline;
-    float: none;
-    margin: 0 0.25em 0 0;
-    line-height: 1.5;
   }
 
   /**

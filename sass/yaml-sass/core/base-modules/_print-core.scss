@@ -1,0 +1,34 @@
+@if $ym-base-print == true {
+
+	@if $ym-base-grids == true {
+	/**
+	* @section print adjustments for core modules
+	*
+	* (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
+	* (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+	*/
+	// @bugfix
+	// @since     3.0
+	// @affected  FF2.0, FF3.0, IE7
+	// @css-for   all browsers
+	// @valid     yes
+
+		.#{$yaml-prefix}grid > .#{$yaml-prefix}gl,
+		.#{$yaml-prefix}grid > .#{$yaml-prefix}gr {
+			overflow:visible;
+			display:table;
+		}
+	}
+	// (en) make .#{$yaml-prefix}print class visible
+	// (de) .#{$yaml-prefix}print-Klasse sichtbar schalten
+	.#{$yaml-prefix}print {
+		position:static;
+		left:0;
+	}
+
+	// (en) generic class to hide elements for print
+	// (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden
+	.#{$yaml-prefix}noprint {
+		display:none !important;
+	}
+}

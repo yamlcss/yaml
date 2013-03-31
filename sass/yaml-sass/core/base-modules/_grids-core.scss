@@ -1,0 +1,50 @@
+@import "yaml-sass/mixins/yaml_mixins_core";
+
+@if $ym-base-grids == true {
+
+	/**
+	* @section Grid Module
+	*/
+
+	.#{$yaml-prefix}grid {
+		@include ym-contain(dt);
+		list-style-type: none;
+		padding-left:0;
+		padding-right:0;
+		margin-left:0;
+		margin-right:0;
+	}
+
+	.#{$yaml-prefix}gl { float:left; margin: 0; }
+	.#{$yaml-prefix}gr { float:right; margin: 0 0 0 $ym-rounding-tolerance; }
+
+	.#{$yaml-prefix}g20 { width:20%; }
+	.#{$yaml-prefix}g40 { width:40%; }
+	.#{$yaml-prefix}g60 { width:60%; }
+	.#{$yaml-prefix}g80 { width:80%; }
+	.#{$yaml-prefix}g25 { width:25%; }
+	.#{$yaml-prefix}g33 { width:33.333%; }
+	.#{$yaml-prefix}g50 { width:50%; }
+	.#{$yaml-prefix}g66 { width:66.666%; }
+	.#{$yaml-prefix}g75 { width:75%; }
+	.#{$yaml-prefix}g38 { width:38.2%; }
+	.#{$yaml-prefix}g62 { width:61.8%; }
+
+	.#{$yaml-prefix}gbox { padding: 0 $ym-gbox-padding }
+	.#{$yaml-prefix}gbox-left { padding: 0 $ym-gbox-padding 0 0 }
+	.#{$yaml-prefix}gbox-right { padding: 0 0 0 $ym-gbox-padding }
+
+	.#{$yaml-prefix}equalize { overflow:hidden; }
+
+	.#{$yaml-prefix}equalize > [class*="ym-g"] {
+		display:table-cell;
+		float:none;
+		margin:0;
+		vertical-align:top;
+	}
+
+	.#{$yaml-prefix}equalize > [class*="ym-g"] > [class*="ym-gbox"] {
+		padding-bottom: 10000px;
+		margin-bottom: -10000px
+	}
+}

@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////
+//
+// YAML Core
+//
+////////////////////////////////////////////////////////////////////
+
+$use-yaml				: true !default;
+$yaml-prefix			: 'ym-' !default;
+
+// Disable/Enable Core Modules
+// ---------------------------------
+$ym-base-normalization	: true !default;
+$ym-base-floathandling	: true !default;
+$ym-base-columns		: true !default;
+$ym-base-grids			: true !default;
+$ym-base-forms			: true !default;
+$ym-base-accessibility	: true !default;
+$ym-base-print			: true !default;
+
+@if $use-yaml == false {
+	$ym-base-normalization	: false;
+	$ym-base-floathandling	: false;
+	$ym-base-columns		: false;
+	$ym-base-grids			: false;
+	$ym-base-forms			: false;
+	$ym-base-accessibility	: false;
+	$ym-base-print			: false;
+}
+
+// Config: Columns Module
+// ---------------------------------
+$ym-column-width		: 20% !default;
+$ym-cbox-padding		: 10px !default;
+
+// Config: Grids Module
+// ---------------------------------
+$ym-rounding-tolerance	: -5px !default;
+$ym-gbox-padding		: 10px !default;
+
+// Config: Print Module
+// ---------------------------------
+$ym-print-fontsize		: 10pt !default;
+$ym-print-abbreviation	: false !default;
+$ym-print-href			: false !default;
+
+////////////////////////////////////////////////////////////////////
+//
+// Typography Module
+//
+////////////////////////////////////////////////////////////////////
+
+// Font Settings
+// ---------------------------------
+$ym-font-sans				: "Droid Sans", Arial, Helvetica, sans-serif;
+$ym-font-serif				: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+$ym-font-monospace			: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+
+// Color Settings
+// ---------------------------------
+// standard typography colors
+$ym-text-color				: #444;
+$ym-headings-color			: #161e21;
+$ym-blockquote-text-color	: #666;
+$ym-blockquote-bg-color		: transparent;
+$ym-pre-text-color			: #800;
+$ym-kbd-text-color			: #666;
+$ym-mark-text-color			: #000;
+$ym-mark-bg-color			: #ff0;
+
+// highlight colors
+$ym-highlight-info-color	: #f4f4f4;
+$ym-highlight-success-color	: #8c8;
+$ym-highlight-warning-color	: #cc8;
+$ym-highlight-error-color	: #c88;
+
+// link colors
+$ym-link-text-color			: #4d87c7;
+$ym-link-bg-color			: transparent;
+$ym-link-focus-text-color	: #fff;
+$ym-link-focus-bg-color		: #4d87c7;
+
+// special colors
+$ym-hr-color				: #eee;
+$ym-highlight-text-color	: #c30;
+$ym-dimmed-text-color		: #888;
+
+// Vertical Rhythm
+// ---------------------------------------------------
+// font values have to be defined in [px] without unit
+$ym-default-font-size		: 16;
+$ym-base-font-size			: 14;
+$ym-base-line-height		: 21;
+
+$ym-h1-font-size			: 48;
+$ym-h2-font-size			: 32;
+$ym-h3-font-size			: 24;
+$ym-h4-font-size			: 21;
+$ym-h5-font-size			: 18;
+$ym-h6-font-size			: 14;
+$ym-text-big-font-size		: 16;
+$ym-text-small-font-size	: 12;
+
+// scale factors (don't change - unless you know what you do)
+$line-height				: $ym-base-line-height / $ym-base-font-size;
+$ym-h1-font-scale			: $ym-h1-font-size / $ym-base-font-size;
+$ym-h2-font-scale			: $ym-h2-font-size / $ym-base-font-size;
+$ym-h3-font-scale			: $ym-h3-font-size / $ym-base-font-size;
+$ym-h4-font-scale			: $ym-h4-font-size / $ym-base-font-size;
+$ym-h5-font-scale			: $ym-h5-font-size / $ym-base-font-size;
+$ym-h6-font-scale			: $ym-h6-font-size / $ym-base-font-size;
+$ym-text-font-scale			: 1;
+$ym-text-big-font-scale		: $ym-text-big-font-size / $ym-base-font-size;
+$ym-text-small-font-scale	: $ym-text-small-font-size / $ym-base-font-size;

@@ -1,13 +1,33 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    // remove all files from yaml folder
     clean: ['yaml'],
 
+    // compile YAML build
     compass: {
-      dist: {
+      build: {
         options: {
-          sassDir        : 'sass/yaml',
+          sassDir        : 'sass/static-build',
           cssDir         : 'yaml',
+          importPath     : 'sass',
+          outputStyle    : 'expanded',
+          noLineComments : true
+        }
+      },
+      docs: {
+        options: {
+          sassDir        : 'sass/docs',
+          cssDir         : 'docs',
+          importPath     : 'sass',
+          outputStyle    : 'expanded',
+          noLineComments : true
+        }
+      }
+      css: {
+        options: {
+          sassDir        : 'sass/css',
+          cssDir         : 'css',
           importPath     : 'sass',
           outputStyle    : 'expanded',
           noLineComments : true
@@ -42,6 +62,14 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      main: {
+        files: [
+          {expand: true, cwd: 'sass/yaml-sass/', src: ['**/*.js'], dest: 'yaml/'}, // makes all src relative to cwd
+        ]
+      }
+    },
+
     watch: {
       files: '<%= compass.dist.options.sassDir %>/**/*.scss',
       tasks: 'compass'
@@ -54,8 +82,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['clean', 'compass']);
-  grunt.registerTask('minify',  ['clean', 'compass', 'string-replace', 'cssmin']);
-
+  grunt.registerTask('default', ['clean', 'compass:css', 'compass:docs', 'copy']);
+  grunt.registerTask('build',  ['clean', 'compass', 'string-replace', 'copy', 'cssmin']);
 };
