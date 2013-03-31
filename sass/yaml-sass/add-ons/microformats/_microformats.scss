@@ -14,6 +14,8 @@
 // @package         yaml
 //
 
+$mf-image-path: 'add-ons/microformats/img/' !default;
+
 /* hCards + hCalendars */
 @media all {
 
@@ -40,11 +42,11 @@
 		background-color: #f8f8ec;
 		background-repeat: no-repeat;
 		background-position: 5px 5px;
-		background:#f8f8ec url(icons/hcard.png) 5px 5px no-repeat !important;
+		background:#f8f8ec inline-image($mf-image-path + "icons/hcard.png") 5px 5px no-repeat !important;
 
 		a {
 			padding-left:11px;
-			background:url(icons/external_link.png) top left no-repeat;
+			background:inline-image($mf-image-path + "icons/external_link.png") top left no-repeat;
 			color:#679A06;
 		}
 
@@ -60,13 +62,13 @@
 
 
 	.vevent {
-		background:#f8f8ec url(icons/hcalendar.png) 5px 5px no-repeat !important;
+		background:#f8f8ec inline-image($mf-image-path + "icons/hcalendar.png") 5px 5px no-repeat !important;
 	}
 
 	.vevent {
 		a {
 			padding-left:11px;
-			background:url(icons/external_link.png) top left no-repeat;
+			background:inline-image($mf-image-path + "icons/external_link.png") top left no-repeat;
 			color:#679A06;
 		}
 
@@ -95,64 +97,64 @@
 
 	a.xfnRelationship {
 		padding-right:26px;
-		background-image:url(icons/xfn/xfn-small.png);
+		background:inline-image($mf-image-path + "xfn/xfn-small.png");
 		background-repeat: no-repeat;
 		background-position: right;
 		&[rel~="colleague"],
 		&[rel~="co-worker"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-colleague.png);
+			background:inline-image($mf-image-path + "xfn/xfn-colleague.png");
 		}
 
 		&[rel~="met"] {
 			padding-right:32px;
-			background-image:url(icons/icon-xfn.png);
+			background:inline-image($mf-image-path + "icons/icon-xfn.png");
 		}
 
 		&[rel~="colleague"][rel~="met"],
 		&[rel~="co-worker"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-colleague-met.png);
+			background:inline-image($mf-image-path + "xfn/xfn-colleague-met.png");
 		}
 
 		&[rel~="friend"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-friend.png);
+			background:inline-image($mf-image-path + "xfn/xfn-friend.png");
 		}
 
 		&[rel~="friend"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-friend-met.png);
+			background:inline-image($mf-image-path + "xfn/xfn-friend-met.png");
 		}
 
 		&[rel~="sweetheart"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-sweetheart.png);
+			background:inline-image($mf-image-path + "xfn/xfn-sweetheart.png");
 		}
 
 		&[rel~="sweetheart"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-sweetheart-met.png);
+			background:inline-image($mf-image-path + "xfn/xfn-sweetheart-met.png");
 		}
 
 		&[rel~="child"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-child.png);
+			background:inline-image($mf-image-path + "xfn/xfn-child.png");
 		}
 
 		&[rel~="parent"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-parent.png);
+			background:inline-image($mf-image-path + "xfn/xfn-parent.png");
 		}
 
 		&[rel~="spouse"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-spouse.png);
+			background:inline-image($mf-image-path + "xfn/xfn-spouse.png");
 		}
 
 		&[rel~="me"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-me.png);
+			background:inline-image($mf-image-path + "xfn/xfn-me.png");
 		}
 	}
 
@@ -160,7 +162,7 @@
 
 	a[rel~="tag"] {
 		padding-right:32px;
-		background-image:url(icons/icon-rel-tag.png);
+		background:inline-image($mf-image-path + "icons/icon-rel-tag.png");
 		background-repeat: no-repeat;
 		background-position: right;
 	}
@@ -169,7 +171,7 @@
 
 	abbr[class~="geo"] {
 		padding-right:32px;
-		background:url(icons/icon-geo.png) no-repeat right;
+		background:inline-image($mf-image-path + "icons/icon-geo.png") no-repeat right;
 		border:none;
 		cursor:default;
 	}

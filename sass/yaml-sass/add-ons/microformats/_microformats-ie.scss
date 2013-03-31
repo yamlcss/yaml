@@ -1,0 +1,67 @@
+@charset "utf-8";
+//
+// "Yet Another Multicolumn Layout" - YAML CSS Framework
+//
+// (en) YAML-Addon:Microformats Support
+// (de) YAML-Addon:Unterstützung für Microformate
+//
+// @note            Many thanks to Michael Jendryschik (http://jendryschik.de/) for contribution
+//
+// @copyright       Copyright 2005-2013, Dirk Jesse
+// @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                  YAML-CDL (http://www.yaml.de/license.html)
+// @link            http://www.yaml.de
+// @package         yaml
+//
+
+$mf-image-path: 'add-ons/microformats/img/' !default;
+
+// sprites
+$mf-icons: sprite-map($mf-image-path + "icons/*.png", $spacing: 20px, $layout: vertical);
+$mf-xfn: sprite-map($mf-image-path + "xfn/*.png", $spacing: 20px, $layout: vertical);
+
+@media all {
+
+	%mf-icons {
+		background-repeat: no-repeat;
+		background-image: sprite-url($mf-icons) !important;
+	}
+
+	%mf-xfn {
+		background-repeat: no-repeat;
+		background-image: sprite-url($mf-xfn) !important;
+	}
+
+	.vcard {
+		@extend %mf-icons;
+		background-position: sprite-position($mf-icons, hcard, 5px, 5px);
+
+		a {
+			@extend %mf-icons;
+			background-position: sprite-position($mf-icons, external_link);
+		}
+	}
+
+	.vevent {
+		@extend %mf-icons;
+		background-position: sprite-position($mf-icons, hcalendar, 5px, 5px);
+
+		a {
+			@extend %mf-icons;
+			background-position: sprite-position($mf-icons, external_link);
+		}
+	}
+
+	/* XFN relationship */
+
+	a.xfnRelationship {
+		@extend %mf-xfn;
+		background-position: sprite-position($mf-xfn, xfn-small);
+
+		&[rel~="colleague"],
+		&[rel~="co-worker"] {
+			background-position: sprite-position($mf-xfn, xfn-colleague);
+		}
+	}
+
+}
