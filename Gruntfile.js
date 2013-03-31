@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           outputStyle    : 'expanded',
           noLineComments : true
         }
-      }
+      },
       css: {
         options: {
           sassDir        : 'sass/css',
