@@ -14,6 +14,8 @@
 // @package         yaml
 //
 
+$ym-mf-imagepath: 'add-ons/microformats/icons/' !default; // relative path to compass image directory
+
 /* hCards + hCalendars */
 @media all {
 
@@ -37,14 +39,16 @@
 	}
 
 	.vcard {
-		background-color: #f8f8ec;
-		background-repeat: no-repeat;
-		background-position: 5px 5px;
-		background:#f8f8ec url(icons/hcard.png) 5px 5px no-repeat !important;
+		background-color:#f8f8ec;
+		background-repeat:no-repeat;
+		background-position:5px 5px;
+		background-image:url(icons/hcard.png) !important;
+		background-image:inline-image($ym-mf-imagepath + "hcard.png") !important;
 
 		a {
 			padding-left:11px;
 			background:url(icons/external_link.png) top left no-repeat;
+			background:inline-image($ym-mf-imagepath + "external_link.png") top left no-repeat;
 			color:#679A06;
 		}
 
@@ -61,12 +65,14 @@
 
 	.vevent {
 		background:#f8f8ec url(icons/hcalendar.png) 5px 5px no-repeat !important;
+		background:#f8f8ec inline-image($ym-mf-imagepath + "hcalendar.png") 5px 5px no-repeat !important;
 	}
 
 	.vevent {
 		a {
 			padding-left:11px;
 			background:url(icons/external_link.png) top left no-repeat;
+			background:inline-image($ym-mf-imagepath + "external_link.png") top left no-repeat;
 			color:#679A06;
 		}
 
@@ -95,64 +101,77 @@
 
 	a.xfnRelationship {
 		padding-right:26px;
-		background-image:url(icons/xfn/xfn-small.png);
-		background-repeat: no-repeat;
-		background-position: right;
+		background-image:url(xfn/xfn-small.png);
+		background-image:inline-image($ym-mf-imagepath + "xfn/xfn-small.png");
+		background-repeat:no-repeat;
+		background-position:right;
+
 		&[rel~="colleague"],
 		&[rel~="co-worker"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-colleague.png);
+			background:url(icons/xfn/xfn-colleague.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-colleague.png");
 		}
 
 		&[rel~="met"] {
 			padding-right:32px;
-			background-image:url(icons/icon-xfn.png);
+			background:url(icons/icon-xfn.png);
+			background:inline-image($ym-mf-imagepath + "icon-xfn.png");
 		}
 
 		&[rel~="colleague"][rel~="met"],
 		&[rel~="co-worker"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-colleague-met.png);
+			background:url(icons/xfn/xfn-colleague-met.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-colleague-met.png");
 		}
 
 		&[rel~="friend"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-friend.png);
+			background:url(icons/xfn/xfn-friend.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-friend.png");
 		}
 
 		&[rel~="friend"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-friend-met.png);
+			background:url(icons/xfn/xfn-friend-met.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-friend-met.png");
 		}
 
 		&[rel~="sweetheart"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-sweetheart.png);
+			background:url(icons/xfn/xfn-sweetheart.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-sweetheart.png");
 		}
 
 		&[rel~="sweetheart"][rel~="met"] {
 			padding-right:26px;
-			background-image:url(icons/xfn/xfn-sweetheart-met.png);
+			background:url(icons/xfn/xfn-sweetheart-met.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-sweetheart-met.png");
 		}
 
 		&[rel~="child"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-child.png);
+			background:url(icons/xfn/xfn-child.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-child.png");
 		}
 
 		&[rel~="parent"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-parent.png);
+			background:url(icons/xfn/xfn-parent.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-parent.png");
 		}
 
 		&[rel~="spouse"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-spouse.png);
+			background:url(icons/xfn/xfn-spouse.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-spouse.png");
 		}
 
 		&[rel~="me"] {
 			padding-right:21px;
-			background-image:url(icons/xfn/xfn-me.png);
+			background:url(icons/xfn/xfn-me.png);
+			background:inline-image($ym-mf-imagepath + "xfn/xfn-me.png");
 		}
 	}
 
@@ -160,7 +179,8 @@
 
 	a[rel~="tag"] {
 		padding-right:32px;
-		background-image:url(icons/icon-rel-tag.png);
+		background:url(icons/icon-rel-tag.png);
+		background:inline-image($ym-mf-imagepath + "icon-rel-tag.png");
 		background-repeat: no-repeat;
 		background-position: right;
 	}
@@ -170,6 +190,7 @@
 	abbr[class~="geo"] {
 		padding-right:32px;
 		background:url(icons/icon-geo.png) no-repeat right;
+		background:inline-image($ym-mf-imagepath + "icon-geo.png") no-repeat right;
 		border:none;
 		cursor:default;
 	}
