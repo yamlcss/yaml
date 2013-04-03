@@ -49,17 +49,6 @@ module.exports = function(grunt) {
 						replacement : ''
 					}]
 				}
-			},
-			microformatsImgPath: {
-				files: {
-					'./': 'yaml/add-ons/microformats/*.css'
-				},
-				options: {
-					replacements: [{
-						pattern     : /\/yaml\/add-ons\/microformats\//ig,
-						replacement : ''
-					}]
-				}
 			}
 		},
 
