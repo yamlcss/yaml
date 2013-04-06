@@ -5,23 +5,15 @@ YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly fle
 - Version: 4.1
 - Website: <http://www.yaml.de>
 
-## YAML Sass Port: Quick Start
+## Quick Start
 
-### Sass & Compass
+### Using the Sass Port
 You need to have [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed.
 
 * **compile once** `compass compile` starts a single run to compile sass/scss files to CSS.
 * **edit** `compass watch` starts the watcher that recompiles your sass/scss files on every change.
 
-### Create Custom Builds
-
-You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of yaml-sass.
-
-* **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
-* **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
-* **build** `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
-
-### Overview
+#### Folder Structure
 The Sass port is built in a way that allows you to create a fully customized version of YAML's framework files.
 
 * `./sass/css/` (for your Sass projects)
@@ -31,8 +23,17 @@ The Sass port is built in a way that allows you to create a fully customized ver
 
 Please keep in mind, that the /yaml-sass/ folder also contains several JavaScript files that are needed to create a complete YAML build.
 
+
+### Create Custom YAML Builds
+
+You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of yaml-sass.
+
+* **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
+* **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
+* **build** `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
+
 ## Docs
-Download or clone this project and open file "docs/index.html" in your browser.
+Download or clone this project and open file `docs/index.html` in your browser.
 
 ## Licenses
 ### YAML under Creative Commons License (CC-BY 2.0)
