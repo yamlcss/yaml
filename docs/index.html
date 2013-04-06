@@ -2086,7 +2086,6 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 								<td><p>Containing floats is achieved via <code>display:table; width: 100%;</code>. This should be used, if oversized child-elements should be allowed to slide into neighbor elements or if they have effects attached (e.g. box-shadow) that shouldn't be clipped by the parent element. </p>
 									<div class="box info">
 										<p><strong>Note:</strong> In Firefox you can't combine properties <em><code>display:table</code></em> and <code><em>position:relative</em></code>. If you need to, use <code>.ym-contain-fl</code> instead.</p>
-										<p><strong>Note 2:</strong> As part of the table characteristics <code><em>display:table</em></code> causes the element to be enlarged to fit all child elements, even if they are oversized. CSS properties <em><code>overflow</code></em> or <em><code>max-width</code></em> doesn't have an effect in this case.</p>
 									</div>
 								</td>
 							</tr>
@@ -2369,7 +2368,6 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 							</div>
 						</div>
 					</div>
-					<p class="box info"><strong>Important:</strong> When working with flexible media elements (images, videos with class <code>.flexible</code>) in an evironment that uses <code>display:table</code> to contain floats (e.g. static column <code>.ym-col3</code> in the <a href="#yaml-columns">column module</a> or any element with class <code>.ym-contain-dt</code>), make sure, your media elements are wrapped by any parent element with a defined width (any value except <code>width:auto</code>). Otherwise, some browsers (FF, IE9) will stretch the parent element (because of the behavior of tables) to make the media element fit at 100% width. See also <em>Note 2</em> for <code>.ym-contain-dt</code> in <a href="#yaml-floats">float section</a></p>
 				</div>
 	  		</div>
   		</div>

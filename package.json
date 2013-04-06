@@ -1,7 +1,12 @@
 {
-  "name"                    : "yaml-css-framework",
+  "name"                    : "yaml-css",
+  "description"             : "A modular CSS framework for truly flexible, accessible and responsive websites",
+  "url"                     : "http://www.yaml.de",
+  "author"                  : "Dirk Jesse <office@highresolution.info>",
+
   "version"                 : "4.1.0",
   "yamlPrefix"              : "ym-",
+
   "devDependencies": {
     "grunt"                 : "~0.4.0",
     "grunt-contrib-clean"   : "~0.4.0",

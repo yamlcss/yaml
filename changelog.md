@@ -1,7 +1,11 @@
 # Version 4.1
+* Many thanks to the following contributors without whom this new version wouldn't exist:
+  * Jens Grochtdreis (@Flocke)
+  * Michael Schulze (@michsch)
+  * Frederik Hemberger (@fhemberger)
 
 ## General
-* Switched development code base from static CSS to Sass + Compass. YAML can now be used as static CSS framework or via Sass
+* Switched development code base from static CSS to Sass + Compass. YAML can now be used as static CSS framework (as in the past) or as a highly configurable Sass/Compass module.
 * Added Grunt support to create custom YAML builds, including namespace configuration
 
 ## Code Changes
@@ -10,14 +14,23 @@
 ### Column Module
 * fixed a bug where responsive images were always scaled to full size
 ### Forms Module
+* changed standard width of form elements to 70%. Now widths are equal in default and columnar view mode.
 * added micro grid to forms module to allow complex multicolumnar forms. This micro grid uses the width-classes from YAML's layout grid module. 
 * added button types (primary, positive, warning, danger )
 * added button sizes (xlarge,large, small, xsmall)
 ### Print Module
 * removed forced linearisation for grids and columns module for print media
 ### Add-ons
-* updated Accessible Tabs jQuery plugin to version 1.9.7  (jQuery 1.9.x support)
-* updated SyncHeight jQuery plugin to version 1.5 (jQuery 1.9.x support)
+* Accessible Tabs jQuery plugin
+ * Update to version 1.9.7  (jQuery 1.9.x support)
+ * tabs.css - added print styles to enable printing of tab content
+* SyncHeight jQuery plugin
+  * Update to version 1.5 (jQuery 1.9.x support) 
+* Microformats
+  * added Base64 encoded inline images to reduce HTTP requests in modern browsers
+
+### Other Changes
+* added HTML5shiv to project and updated all references in HTML files
 
 # Version 4.0.2
 ## Bugfixes
@@ -58,8 +71,8 @@ All core features of the CSS framework are namespaced with the prefix "ym-". Thi
 ### Bulletproof flexible grid module
 YAML was one of the first framework projects that implemented a flexible grid system. Over 6 years of constant development on the framework the flexible grid module has proven its crossbrowser stability. In YAML 4 it becomes easily customizeable. Now you can design with YAMLs default fluid grid as well as fixed-width custom grid. And it offers you an easy solution for progressive linearization.
 
-### Flexible forms with theming support
-Since version 3.2 YAML offers a form toolkit for flexible forms. This toolkit has been greatly improved by separating functional styles (located in the framework's core stylesheet) and theme-stylesheets for the visual form design. As a developer you can build on this toolkit to create even complex forms in a simple way. You can create new, reusable form themes - which helps to makes prototyping and modifications of forms less complicated.
+### Flexible forms with themeing support
+Since version 3.2 YAML offers a form toolkit for flexible forms. This toolkit has been greatly improved by separating functional styles (located in the framework's core style sheet) and theme-stylesheets for the visual form design. As a developer you can build on this toolkit to create even complex forms in a simple way. You can create new, reusable form themes - which helps to makes prototyping and modifications of forms less complicated.
 
 ### Matched building blocks
 YAML offers several different layout modules, such as grids, columns, navigation bars, form elements, typography, etc. All default styles are matched to each other in order to provide a clean gray-scaled base for rapid prototyping.
@@ -178,6 +191,7 @@ YAML offers several different layout modules, such as grids, columns, navigation
 * Bugfix:       UTF-8 BOM signature removed from some files in examples/04_layout_styling/
 
 # Version 3.1
+## General Changes
 * markup changes: ID's #page_margins and #page are changed into classes for multiple usage within a single layout
 * navigation elements: changed ID's to classes for easier usage, changed classnames for consistency
 * forms support included
