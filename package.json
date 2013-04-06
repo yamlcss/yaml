@@ -1,6 +1,7 @@
 {
-  "name": "yaml4-sass",
-  "version": "4.1.0",
+  "name"                    : "YAML CSS Framework",
+  "version"                 : "4.1.0",
+  "yaml-prefix"             :  "ym-",
   "devDependencies": {
     "grunt"                 : "~0.4.0",
     "grunt-contrib-clean"   : "~0.4.0",

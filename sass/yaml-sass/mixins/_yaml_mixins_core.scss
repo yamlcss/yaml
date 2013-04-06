@@ -91,9 +91,9 @@
 @mixin ym-linearize-forms {
 	// linearization for form module
 	& [class*="ym-type"]:not([class*="ym-type-check"]) label,
-	& .#{$yaml-prefix}label,
-	& .#{$yaml-prefix}message,
-	& .#{$yaml-prefix}fbox-grid,
+	& .ym-label,
+	& .ym-message,
+	& .ym-fbox-grid,
 	& input[type="text"],
 	& textarea,
 	& select {
@@ -104,14 +104,14 @@
 	}
 
 	// reset columnar settings
-	& .#{$yaml-prefix}message,
-	& .#{$yaml-prefix}fbox-grid,
-	& .#{$yaml-prefix}fbox-check input {
+	& .ym-message,
+	& .ym-fbox-grid,
+	& .ym-fbox-check input {
 		margin-left: 0 !important;
 	}
 
 	// linearization form micro grid
-	& .#{$yaml-prefix}fbox-grid [class*="ym-g"] {
+	& .ym-fbox-grid [class*="ym-g"] {
 		width:100% !important;
 		margin:0;
 	}
@@ -168,11 +168,11 @@
 
 	$column_width	: $width / $columns;
 
-	.#{$yaml-prefix}wrapper {
+	.ym-wrapper {
 		width: $width;
 		margin: 0 auto;
 	}
-	.#{$yaml-prefix}gbox {
+	.ym-gbox {
 		padding-left: 0;
 		padding-right: 0;
 		margin-left: $margin-left;
@@ -182,14 +182,14 @@
 	[class*="ym-pull-"] { position:relative; }
 
 	@for $i from 1 through $columns {
-		.#{$yaml-prefix}#{$prefix}-#{$i} { width: $column_width * $i; }
+		.ym-#{$prefix}-#{$i} { width: $column_width * $i; }
 	}
 
 	@for $i from 1 through $columns - 1 {
-		.#{$yaml-prefix}push-#{$i} { left: $column_width * $i; }
+		.ym-push-#{$i} { left: $column_width * $i; }
 	}
 
 	@for $i from 1 through $columns - 1 {
-		.#{$yaml-prefix}pull-#{$i} { left: -$column_width * $i; }
+		.ym-pull-#{$i} { left: -$column_width * $i; }
 	}
 }

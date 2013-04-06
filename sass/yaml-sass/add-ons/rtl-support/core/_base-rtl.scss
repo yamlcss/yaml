@@ -54,17 +54,17 @@
 	* @valid      yes
 	*/
 
-	.#{$yaml-prefix}skiplinks {
+	.ym-skiplinks {
 		left: 32768px !important;
-		.#{$yaml-prefix}skip {
+		.ym-skip {
 			&:focus,
 			&:active{ left: -32768px !important; }
 		}
 	}
 
-	.#{$yaml-prefix}skip,
-	.#{$yaml-prefix}hideme,
-	.#{$yaml-prefix}print { left: 32768px !important; }
+	.ym-skip,
+	.ym-hideme,
+	.ym-print { left: 32768px !important; }
 	/*------------------------------------------------------------------------------------------------------*/
 
 	/**
@@ -74,7 +74,7 @@
 	* (de) Eine CSS-Klasse für ltr-Inhalte (left to right) innerhalb einer rtl-Seite
 	*/
 
-	.#{$yaml-prefix}text-ltr {
+	.ym-text-ltr {
 		direction: ltr;
 		text-align: left;
 	}

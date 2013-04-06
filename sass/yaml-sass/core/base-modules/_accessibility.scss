@@ -8,9 +8,9 @@
 
 	// (en) classes for invisible elements in the base layout
 	// (de) Klassen für unsichtbare Elemente im Basislayout
-	.#{$yaml-prefix}skip,
-	.#{$yaml-prefix}hideme,
-	.#{$yaml-prefix}print {
+	.ym-skip,
+	.ym-hideme,
+	.ym-print {
 		position:absolute;
 		top:-32768px;
 		left:-32768px; // LTR
@@ -18,15 +18,15 @@
 
 	// (en) make skip links visible when using tab navigation
 	// (de) Skip-Links für Tab-Navigation sichtbar schalten
-	.#{$yaml-prefix}skip:focus,
-	.#{$yaml-prefix}skip:active {
+	.ym-skip:focus,
+	.ym-skip:active {
 		position:static;
 		top:0;
 		left:0;
 	}
 
 	// skiplinks:technical setup
-	.#{$yaml-prefix}skiplinks {
+	.ym-skiplinks {
 		position:absolute;
 		top:0px;
 		left:-32768px;
@@ -36,8 +36,8 @@
 		padding:0;
 		list-style-type:none;
 
-		.#{$yaml-prefix}skip:focus,
-		.#{$yaml-prefix}skip:active {
+		.ym-skip:focus,
+		.ym-skip:active {
 			left:32768px;
 			outline:0 none;
 			position:absolute;

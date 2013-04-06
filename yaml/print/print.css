@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 @media print {
   /**
   * @section basic layout preparation
@@ -13,7 +13,7 @@
   /* (en) Hide unneeded container of the screenlayout in print layout */
   /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
   nav,
-  .ym-searchform {
+  searchform {
     display: none;
   }
 

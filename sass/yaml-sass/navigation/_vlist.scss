@@ -17,7 +17,7 @@
 @media all {
 
 	/* title */
-	.#{$yaml-prefix}vtitle {
+	.ym-vtitle {
 		font-weight:bold;
 		font-size:100%;
 		width:90%;
@@ -32,7 +32,7 @@
 		}
 	}
 
-	.#{$yaml-prefix}vlist {
+	.ym-vlist {
 		margin:0 0 1.5em 0;
 		list-style-type:none;
 		background: transparent;

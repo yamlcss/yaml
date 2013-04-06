@@ -1,18 +1,18 @@
 @media all {
-  .ym-hlist {
+  hlist {
     width: 100%;
     overflow: hidden;
     position: relative;
     line-height: 1em;
     background: #222;
   }
-  .ym-hlist ul {
+  hlist ul {
     margin: 0;
     padding: 0.5em 1.5em;
     display: inline;
     float: left;
   }
-  .ym-hlist ul li {
+  hlist ul li {
     display: inline;
     float: left;
     font-size: 1.0em;
@@ -21,7 +21,7 @@
     margin: 0 0.25em 0 0;
     padding: 0;
   }
-  .ym-hlist ul li a, .ym-hlist ul li strong {
+  hlist ul li a, hlist ul li strong {
     background: transparent;
     color: #aaa;
     display: block;
@@ -33,7 +33,7 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     width: auto;
   }
-  .ym-hlist ul li a:focus, .ym-hlist ul li a:hover, .ym-hlist ul li a:active {
+  hlist ul li a:focus, hlist ul li a:hover, hlist ul li a:active {
     color: #ccc;
     background: #666;
     background: rgba(255, 255, 255, 0.25);
@@ -41,25 +41,25 @@
     text-decoration: none;
     outline: 0 none;
   }
-  .ym-hlist ul li.active {
+  hlist ul li.active {
     background: #666;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.2em;
     color: #fff;
   }
-  .ym-hlist ul li.active strong, .ym-hlist ul li.active a:focus, .ym-hlist ul li.active a:hover, .ym-hlist ul li.active a:active {
+  hlist ul li.active strong, hlist ul li.active a:focus, hlist ul li.active a:hover, hlist ul li.active a:active {
     background: transparent;
     color: #fff;
     text-decoration: none;
   }
 
-  .ym-searchform {
+  searchform {
     float: right;
     display: inline;
     line-height: 2;
     padding: 0.5em 1.5em;
   }
-  .ym-searchform .ym-searchfield {
+  searchform searchfield {
     background: #fff;
     line-height: 1;
     padding: 0.25em;
@@ -70,7 +70,7 @@
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
-  .ym-searchform .ym-searchbutton {
+  searchform searchbutton {
     color: #fff;
     cursor: pointer;
     display: inline-block;

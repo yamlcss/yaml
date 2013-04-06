@@ -8,14 +8,14 @@
   * @css-for    IE 5.x/Win, IE6, IE7
   * @valid      yes
   */
-  .ym-hlist * {
+  hlist * {
     direction: ltr !important;
   }
-  .ym-hlist a,
-  .ym-hlist strong {
+  hlist a,
+  hlist strong {
     direction: rtl !important;
   }
-  .ym-hlist ul {
+  hlist ul {
     position: relative;
     float: right;
     /* (en) Left margin of the first button  */
@@ -23,12 +23,12 @@
     margin-left: 0;
     /* Reset LTR */
   }
-  .ym-hlist ul li {
+  hlist ul li {
     float: right;
     text-align: right !important;
   }
 
-  .ym-searchform {
+  searchform {
     float: left;
     display: inline;
     line-height: 2em;

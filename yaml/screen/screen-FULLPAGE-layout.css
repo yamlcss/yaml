@@ -5,12 +5,12 @@
   }
 
   /* Layout Module Configuration */
-  .ym-wrapper {
+  wrapper {
     max-width: 80em;
     margin: 0 auto;
   }
 
-  .ym-wbox {
+  wbox {
     padding: 1.5em;
   }
 
@@ -28,7 +28,7 @@
     background: transparent;
     color: #fff;
   }
-  header .ym-wbox {
+  header wbox {
     padding: 1.5em;
   }
 
@@ -39,7 +39,7 @@
   #main .info {
     margin-bottom: 1.5em;
   }
-  #main aside .ym-gbox-right {
+  #main aside gbox-right {
     border-left: 1px #dddddd solid;
   }
 
@@ -50,19 +50,19 @@
   footer p {
     margin: 0;
   }
-  footer .ym-wbox {
+  footer wbox {
     padding: 1.5em;
   }
 
-  .ym-gbox {
+  gbox {
     padding: 0 1.5em;
   }
 
-  .ym-gbox-left {
+  gbox-left {
     padding: 0 1.5em 0 0;
   }
 
-  .ym-gbox-right {
+  gbox-right {
     padding: 0 0 0 1.5em;
   }
 
@@ -71,8 +71,8 @@
   }
 
   /* skip links styling */
-  .ym-skiplinks a.ym-skip:focus,
-  .ym-skiplinks a.ym-skip:active {
+  skiplinks askip:focus,
+  skiplinks askip:active {
     color: #fff;
     background: #333;
     border-bottom: 1px black solid;
@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 760px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
-  .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
+  .linearize-level-1, .linearize-level-1 > [class*=c"], .linearize-level-1 > [class*=g"] {
     /* linearization for grids and columns module */
     display: block;
     float: none;
@@ -97,7 +97,7 @@
     margin: 0;
     width: 100% !important;
   }
-  .linearize-level-1 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
+  .linearize-level-1 > [class*=c"] > [class*=cbox"], .linearize-level-1 > [class*=g"] > [class*=gbox"] {
     /* reset defined gutter values */
     margin: 0;
     padding: 0;
@@ -110,24 +110,24 @@
     margin-top: 1.5em !important;
   }
 
-  #main aside .ym-gbox-right {
+  #main aside gbox-right {
     border: 0 none;
   }
 
-  .ym-searchform {
+  searchform {
     display: block;
     float: none;
     width: auto;
     text-align: right;
   }
 
-  .ym-searchform input[type="search"] {
+  searchform input[type="search"] {
     width: 14%;
   }
 }
 @media screen and (max-width: 480px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
-  .linearize-level-2, .linearize-level-2 > [class*="ym-c"], .linearize-level-2 > [class*="ym-g"] {
+  .linearize-level-2, .linearize-level-2 > [class*=c"], .linearize-level-2 > [class*=g"] {
     /* linearization for grids and columns module */
     display: block;
     float: none;
@@ -135,7 +135,7 @@
     margin: 0;
     width: 100% !important;
   }
-  .linearize-level-2 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-2 > [class*="ym-g"] > [class*="ym-gbox"] {
+  .linearize-level-2 > [class*=c"] > [class*=cbox"], .linearize-level-2 > [class*=g"] > [class*=gbox"] {
     /* reset defined gutter values */
     margin: 0;
     padding: 0;
@@ -143,7 +143,7 @@
     overflow: hidden;
   }
 
-  header .ym-wbox {
+  header wbox {
     padding: 0.75em 10px;
   }
   header h1 {
@@ -152,24 +152,24 @@
     margin: 0;
   }
 
-  footer .ym-wbox,
-  .ym-wbox,
-  .ym-searchform,
-  nav .ym-hlist ul {
+  footer wbox,
+  wbox,
+  searchform,
+  nav hlist ul {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .ym-searchform,
-  nav .ym-hlist ul,
-  nav .ym-hlist li {
+  searchform,
+  nav hlist ul,
+  nav hlist li {
     display: block;
     float: none;
     width: auto;
     text-align: left;
   }
 
-  .ym-searchform input[type="search"] {
+  searchform input[type="search"] {
     width: 75%;
   }
 }

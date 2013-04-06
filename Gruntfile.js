@@ -49,6 +49,17 @@ module.exports = function(grunt) {
 						replacement : ''
 					}]
 				}
+			},
+			setNamespace: {
+				files: {
+					'./': 'yaml/**/*.css'
+				},
+				options: {
+					replacements: [{
+						pattern     : /.ym-/ig,
+						replacement : ''
+					}]
+				}
 			}
 		},
 
@@ -75,7 +86,7 @@ module.exports = function(grunt) {
 		},
 
 		watch: {
-			files: '<%= compass.dist.options.sassDir %>/**/*.scss',
+			files: 'sass/**/*.scss',
 			tasks: 'compass'
 		}
 

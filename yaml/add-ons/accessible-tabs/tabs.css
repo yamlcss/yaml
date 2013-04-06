@@ -4,8 +4,8 @@
   }
   .jquery_tabs ul.tabs-list {
     font-size: 1em;
-    line-height: 1.5em;
     display: table;
+    table-layout: fixed;
     list-style-type: none;
     margin: 0;
     position: relative;

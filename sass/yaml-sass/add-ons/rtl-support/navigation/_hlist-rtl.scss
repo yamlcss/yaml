@@ -28,7 +28,7 @@
 	* @valid      yes
 	*/
 
-	.#{$yaml-prefix}hlist {
+	.ym-hlist {
 		* { direction:ltr !important; }
 
 		a,
@@ -48,7 +48,7 @@
 		}
 	}
 
-	.#{$yaml-prefix}searchform {
+	.ym-searchform {
 		float:left;
 		display: inline;
 		line-height: 2em;

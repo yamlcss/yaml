@@ -1,41 +1,41 @@
 @media all {
   /* menu title */
-  .ym-vtitle {
+  vtitle {
     padding-left: 0px;
     padding-right: 10%;
   }
 
-  .ym-vlist {
+  vlist {
     text-align: right;
     /* Level 1 */
     /* Level 2 */
     /* Level 3 */
     /* Level 4 */
   }
-  .ym-vlist li {
+  vlist li {
     float: right;
   }
-  .ym-vlist li a,
-  .ym-vlist li strong,
-  .ym-vlist li span {
+  vlist li a,
+  vlist li strong,
+  vlist li span {
     padding-left: 0px;
     padding-right: 10%;
   }
-  .ym-vlist li ul li a,
-  .ym-vlist li ul li strong,
-  .ym-vlist li ul li span {
+  vlist li ul li a,
+  vlist li ul li strong,
+  vlist li ul li span {
     padding-left: 0px;
     padding-right: 20%;
   }
-  .ym-vlist li ul li ul li a,
-  .ym-vlist li ul li ul li strong,
-  .ym-vlist li ul li ul li span {
+  vlist li ul li ul li a,
+  vlist li ul li ul li strong,
+  vlist li ul li ul li span {
     padding-left: 0px;
     padding-right: 30%;
   }
-  .ym-vlist li ul li ul li ul li a,
-  .ym-vlist li ul li ul li ul li strong,
-  .ym-vlist li ul li ul li ul li span {
+  vlist li ul li ul li ul li a,
+  vlist li ul li ul li ul li strong,
+  vlist li ul li ul li ul li span {
     padding-left: 0px;
     padding-right: 40%;
   }

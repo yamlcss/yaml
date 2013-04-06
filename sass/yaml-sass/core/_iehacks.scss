@@ -125,7 +125,7 @@
 	* @valid     yes
 	*/
 
-	.#{$yaml-prefix}clearfix { zoom:1; }	/* hasLayout aktivieren */
+	.ym-clearfix { zoom:1; }	/* hasLayout aktivieren */
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -139,9 +139,9 @@
 	* @valid		 yes
 	*/
 
-	* html .#{$yaml-prefix}col1,
-	* html .#{$yaml-prefix}col2,
-	* html .#{$yaml-prefix}col3 { position:relative; }
+	* html .ym-col1,
+	* html .ym-col2,
+	* html .ym-col3 { position:relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -156,12 +156,12 @@
 	*/
 
 	body { height:1%; }
-	.#{$yaml-prefix}wrapper, .#{$yaml-prefix}wbox, #header, #nav, #main, #footer { zoom:1; }	/* IE6 & IE7	*/
-	* html .#{$yaml-prefix}wrapper, * html .#{$yaml-prefix}wbox { height:1%; hei\ght:auto; }	/* IE 5.x & IE6 | IE6 only */
+	.ym-wrapper, .ym-wbox, #header, #nav, #main, #footer { zoom:1; }	/* IE6 & IE7	*/
+	* html .ym-wrapper, * html .ym-wbox { height:1%; hei\ght:auto; }	/* IE 5.x & IE6 | IE6 only */
 	* html #header, * html #nav, * html #main, * html #footer { width:100%; wid\th:auto; }	/* IE 5.x & IE6 | IE6 only */
 
 	/* trigger hasLayout to force containing content */
-	.#{$yaml-prefix}gbox, .#{$yaml-prefix}gbox-left, .#{$yaml-prefix}gbox-right { height:1%; }
+	.ym-gbox, .ym-gbox-left, .ym-gbox-right { height:1%; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -230,11 +230,11 @@
 	* @valid     no
 	*/
 
-	.#{$yaml-prefix}form,
-	.#{$yaml-prefix}form div,
-	.#{$yaml-prefix}form div * { zoom:1; }
+	.ym-form,
+	.ym-form div,
+	.ym-form div * { zoom:1; }
 
-	.#{$yaml-prefix}form {
+	.ym-form {
 
 		input,
 		select,
@@ -244,43 +244,43 @@
 		}
 
 		// no display:table in IE6;
-		.#{$yaml-prefix}fbox-grid {
+		.ym-fbox-grid {
 			display: block;
 			overflow: hidden;
 			margin-right: -5px;
 
-			.#{$yaml-prefix}type-text input,
-			.#{$yaml-prefix}type-text textarea,
-			.#{$yaml-prefix}type-select select {
+			.ym-type-text input,
+			.ym-type-text textarea,
+			.ym-type-select select {
 				width: 96% !important;
 			}
 		}
 
 		// Force integer values to avoid float drops
-		.#{$yaml-prefix}g33 { display:inline; width:31% !important; }
-		.#{$yaml-prefix}g66 { display:inline; width:64% !important; }
-		.#{$yaml-prefix}g38 { display:inline; width:36% !important; }
-		.#{$yaml-prefix}g62 { display:inline; width:59% !important; }
+		.ym-g33 { display:inline; width:31% !important; }
+		.ym-g66 { display:inline; width:64% !important; }
+		.ym-g38 { display:inline; width:36% !important; }
+		.ym-g62 { display:inline; width:59% !important; }
 
 		// adjusted grid widths for box-modell: content-box
 		input, textarea, select {
-			&.#{$yaml-prefix}g20 { display:inline; width:16% !important; }
-			&.#{$yaml-prefix}g40 { display:inline; width:36% !important; }
-			&.#{$yaml-prefix}g60 { display:inline; width:56% !important; }
-			&.#{$yaml-prefix}g80 { display:inline; width:76% !important; }
-			&.#{$yaml-prefix}g25 { display:inline; width:21% !important; }
-			&.#{$yaml-prefix}g33 { display:inline; width:29.333% !important; }
-			&.#{$yaml-prefix}g50 { display:inline; width:46% !important; }
-			&.#{$yaml-prefix}g66 { display:inline; width:62.666% !important; }
-			&.#{$yaml-prefix}g75 { display:inline; width:71% !important; }
-			&.#{$yaml-prefix}g38 { display:inline; width:34.2% !important; }
-			&.#{$yaml-prefix}g62 { display:inline; width:57.8% !important; }
+			&.ym-g20 { display:inline; width:16% !important; }
+			&.ym-g40 { display:inline; width:36% !important; }
+			&.ym-g60 { display:inline; width:56% !important; }
+			&.ym-g80 { display:inline; width:76% !important; }
+			&.ym-g25 { display:inline; width:21% !important; }
+			&.ym-g33 { display:inline; width:29.333% !important; }
+			&.ym-g50 { display:inline; width:46% !important; }
+			&.ym-g66 { display:inline; width:62.666% !important; }
+			&.ym-g75 { display:inline; width:71% !important; }
+			&.ym-g38 { display:inline; width:34.2% !important; }
+			&.ym-g62 { display:inline; width:57.8% !important; }
 		}
 	}
 
 	// avoid a margin related bug in IE7 ...
-	.#{$yaml-prefix}columnar {
-		.#{$yaml-prefix}fbox-grid {
+	.ym-columnar {
+		.ym-fbox-grid {
 			margin-left: 0;
 			float: right;
 		}
@@ -305,7 +305,7 @@
 	* @valid     no
 	*/
 
-	html .#{$yaml-prefix}ie-clearing {
+	html .ym-ie-clearing {
 		/* (en) Only a small help for debugging */
 		/* (de) Nur eine kleine Hilfe zur Fehlersuche */
 		position:static;
@@ -326,8 +326,8 @@
 		margin:-2px 0 -1em 1px;
 	}
 
-	* html .#{$yaml-prefix}ie-clearing { margin:-2px 0 -1em 0; }
-	.#{$yaml-prefix}cbox { margin-bottom:-2px; }
+	* html .ym-ie-clearing { margin:-2px 0 -1em 0; }
+	.ym-cbox { margin-bottom:-2px; }
 
 	/* (en) avoid horizontal scrollbars in IE7 in borderless layouts because of negative margins */
 	/* (de) Vermeidung horizontaler Scrollbalken bei randabfallenden Layouts im IE7 */
@@ -336,7 +336,7 @@
 
 	/* (en) Bugfix:Essential for IE7 */
 	/* (de) Bugfix:Notwendig im IE7 */
-	.#{$yaml-prefix}col3 { position:relative; }
+	.ym-col3 { position:relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -366,30 +366,30 @@
 	* @css-for   IE 5.x/Win, IE6, IE7
 	* @valid     yes
 	*/
-	.#{$yaml-prefix}col1, .#{$yaml-prefix}col2 { display:inline; }
+	.ym-col1, .ym-col2 { display:inline; }
 
 	/* Fix for:"Linking to anchors in elements within the containing block" Problem in IE5.x & IE 6.0 */
-	.#{$yaml-prefix}grid { overflow:hidden; display:block; }
-	* html .#{$yaml-prefix}grid { overflow:visible; }
+	.ym-grid { overflow:hidden; display:block; }
+	* html .ym-grid { overflow:visible; }
 
-	.#{$yaml-prefix}gl,
-	.#{$yaml-prefix}gr { display: inline; }
+	.ym-gl,
+	.ym-gr { display: inline; }
 
 	/* transform CSS tables back into floats */
-	.#{$yaml-prefix}equalize .#{$yaml-prefix}gl {
+	.ym-equalize .ym-gl {
 		float:left; display:inline;
 		padding-bottom:32767px;
 		margin-bottom:-32767px;
 	}
 
-	.#{$yaml-prefix}equalize .#{$yaml-prefix}gr {
+	.ym-equalize .ym-gr {
 		float:right; margin-left:-5px; display:inline;
 		padding-bottom:32767px;
 		margin-bottom:-32767px;
 	}
 
-	.no-ie-padding .#{$yaml-prefix}gl,
-	.no-ie-padding .#{$yaml-prefix}gr {
+	.no-ie-padding .ym-gl,
+	.no-ie-padding .ym-gr {
 		padding-bottom:0;
 		margin-bottom:0;
 	}
@@ -406,21 +406,21 @@
 	* @valid     yes
 	*/
 
-	* html .#{$yaml-prefix}cbox-left,
-	* html .#{$yaml-prefix}cbox-right,
-	* html .#{$yaml-prefix}cbox { word-wrap:break-word; }
+	* html .ym-cbox-left,
+	* html .ym-cbox-right,
+	* html .ym-cbox { word-wrap:break-word; }
 
 	/* avoid growing widths */
-	* html .#{$yaml-prefix}gbox,
-	* html .#{$yaml-prefix}gbox-left,
-	* html .#{$yaml-prefix}gbox-right { word-wrap:break-word; o\verflow:hidden; }
+	* html .ym-gbox,
+	* html .ym-gbox-left,
+	* html .ym-gbox-right { word-wrap:break-word; o\verflow:hidden; }
 }
 
 @media print {
 
 	/**
-	* (en) Avoid unneeded page breaks of .#{$yaml-prefix}col3 content in print layout and containing floats.
-	* (de) Vermeiden von unnötigen Seitenumbrüchen beim Ausdruck der Spalte .#{$yaml-prefix}col3 und Einschluss von Floats.
+	* (en) Avoid unneeded page breaks of .ym-col3 content in print layout and containing floats.
+	* (de) Vermeiden von unnötigen Seitenumbrüchen beim Ausdruck der Spalte .ym-col3 und Einschluss von Floats.
 	*
 	* @bugfix
 	* @affected  IE7
@@ -428,8 +428,8 @@
 	* @valid     yes
 	*/
 
-	.#{$yaml-prefix}gbox,
-	.#{$yaml-prefix}gbox-left,
-	.#{$yaml-prefix}gbox-right,
-	.#{$yaml-prefix}col3 { height:1%; }
+	.ym-gbox,
+	.ym-gbox-left,
+	.ym-gbox-right,
+	.ym-col3 { height:1%; }
 }

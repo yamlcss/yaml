@@ -21,12 +21,12 @@
 	*
 	*/
 
-	.#{$yaml-prefix}form {
-		.#{$yaml-prefix}type-select select {
+	.ym-form {
+		.ym-type-select select {
 			@include ym-box-sizing(border-box);
 			width: 68%;
 		}
-		.#{$yaml-prefix}type-text {
+		.ym-type-text {
 			input,
 			textarea {
 				@include ym-box-sizing(border-box);
@@ -34,33 +34,33 @@
 			}
 		}
 
-		.#{$yaml-prefix}fbox-grid {
+		.ym-fbox-grid {
 			@include ym-box-sizing(border-box);
 			display: table;
 			width: 70%;
 		}
 	}
 
-	.#{$yaml-prefix}columnar label {
+	.ym-columnar label {
 		@include ym-box-sizing(border-box);
 	}
 
-	.#{$yaml-prefix}full {
-		.#{$yaml-prefix}type-text input,
-		.#{$yaml-prefix}type-text textarea,
-		.#{$yaml-prefix}type-select select {
+	.ym-full {
+		.ym-type-text input,
+		.ym-type-text textarea,
+		.ym-type-select select {
 				width:98%;
 		}
-		.#{$yaml-prefix}fbox-grid {
+		.ym-fbox-grid {
 			width: 100%;
 		}
 	}
 
-	.#{$yaml-prefix}form {
-		.#{$yaml-prefix}fbox-grid {
-			.#{$yaml-prefix}type-text input,
-			.#{$yaml-prefix}type-text textarea,
-			.#{$yaml-prefix}type-select select {
+	.ym-form {
+		.ym-fbox-grid {
+			.ym-type-text input,
+			.ym-type-text textarea,
+			.ym-type-select select {
 				width: 100%;
 			}
 		}
@@ -68,7 +68,7 @@
 }
 
 @media screen, projection {
-	.#{$yaml-prefix}form {
+	.ym-form {
 		background:#f4f4f4;
 		border:2px #fff solid;
 		margin: 1.5em 0 0 0;
@@ -92,33 +92,33 @@
 			color: #666;
 			line-height: 1.5;
 		}
-		.#{$yaml-prefix}label {
+		.ym-label {
 			color: #666;
 			padding-top: 0.25em;
 		}
 
-		.#{$yaml-prefix}fbox {
+		.ym-fbox {
 			padding: 0.3em 1em;
 			margin-bottom: 0.5em;
 		}
-		.#{$yaml-prefix}type-button {
+		.ym-type-button {
 			background: #ececec;
 			border-top: 1px #e0e0e0 solid;
 			padding:0 1em 1.5em 1em;
 			margin: 0;
 			text-align: left;
 		}
-		.#{$yaml-prefix}gbox {
+		.ym-gbox {
 			padding: 0 0.5em;
 			margin-right: 0;
 		}
-		.#{$yaml-prefix}fbox-heading {
+		.ym-fbox-heading {
 			font-size: 1em;
 			font-size: 100%;
 			color: #000;
 			margin: 1em 0 1em 1em;
 		}
-		.#{$yaml-prefix}form .#{$yaml-prefix}fbox-check:focus + label {
+		.ym-form .ym-fbox-check:focus + label {
 			color:#000;
 		}
 	}
@@ -133,13 +133,13 @@
 	/* styling standard form elements with 'almost' equal flexible width */
 	/* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
 
-	.#{$yaml-prefix}form {
-		.#{$yaml-prefix}type-text input,
-		.#{$yaml-prefix}type-text textarea {
+	.ym-form {
+		.ym-type-text input,
+		.ym-type-text textarea {
 			line-height: 1em;
 			padding: 4px 0.3em;
 		}
-		.#{$yaml-prefix}type-select select {
+		.ym-type-select select {
 			line-height: 1em;
 			padding: 3px 2px 3px 1px;
 		}
@@ -151,16 +151,16 @@
 			font-style:normal;
 			font-weight:bold;
 		}
-		.#{$yaml-prefix}type-text input,
-		.#{$yaml-prefix}type-text textarea,
-		.#{$yaml-prefix}type-select select {
+		.ym-type-text input,
+		.ym-type-text textarea,
+		.ym-type-select select {
 			border:1px solid #ddd;
 		}
-		.#{$yaml-prefix}message {
+		.ym-message {
 			color:#666;
 			margin-bottom:0.5em;
 		}
-		.#{$yaml-prefix}required {
+		.ym-required {
 			color:#800;
 			font-weight:bold;
 		}
@@ -168,7 +168,7 @@
 		input:valid, textarea:valid { background-color: #fff; }
 		input:invalid, textarea:invalid { background-color: #fdd; }
 
-		.#{$yaml-prefix}error {
+		.ym-error {
 			label {
 				color:#800;
 				font-weight:normal;
@@ -181,15 +181,15 @@
 			textarea:hover, textarea:focus {
 				border: 1px #800 solid !important;
 			}
-			.#{$yaml-prefix}message {
+			.ym-message {
 				color:#800;
 				font-weight: bold;
 				margin-top: 0;
 			}
 		}
-		.#{$yaml-prefix}type-text input:focus,  .#{$yaml-prefix}type-select select:focus, .#{$yaml-prefix}type-text textarea:focus,
-		.#{$yaml-prefix}type-text input:hover,  .#{$yaml-prefix}type-select select:hover, .#{$yaml-prefix}type-text textarea:hover,
-		.#{$yaml-prefix}type-text input:active, .#{$yaml-prefix}type-select select:active, .#{$yaml-prefix}type-text textarea:active {
+		.ym-type-text input:focus,  .ym-type-select select:focus, .ym-type-text textarea:focus,
+		.ym-type-text input:hover,  .ym-type-select select:hover, .ym-type-text textarea:hover,
+		.ym-type-text input:active, .ym-type-select select:active, .ym-type-text textarea:active {
 			border:1px #888 solid;
 			background:#fff;
 		}
@@ -200,11 +200,11 @@
 	* inspired from: Catalin Rosu (http://www.red-team-design.com/just-another-awesome-css3-buttons)
 	*/
 
-	.#{$yaml-prefix}button,
-	.#{$yaml-prefix}form button,
-	.#{$yaml-prefix}form input[type="button"],
-	.#{$yaml-prefix}form input[type="reset"],
-	.#{$yaml-prefix}form input[type="submit"] {
+	.ym-button,
+	.ym-form button,
+	.ym-form input[type="button"],
+	.ym-form input[type="reset"],
+	.ym-form input[type="submit"] {
 		display: inline-block;
 		white-space: nowrap;
 		background-color: #ccc;
@@ -255,20 +255,20 @@
 	}
 
 	/* Button size-scaling classes */
-	.#{$yaml-prefix}button {
-		&.#{$yaml-prefix}xlarge { font-size: 1.5em; } /* 21px */
-		&.#{$yaml-prefix}large { font-size: 1.2857em; } /* 18px */
-		&.#{$yaml-prefix}small { font-size: 0.8571em; } /* 12px */
-		&.#{$yaml-prefix}xsmall { font-size: 0.7143em; } /* 10px */
+	.ym-button {
+		&.ym-xlarge { font-size: 1.5em; } /* 21px */
+		&.ym-large { font-size: 1.2857em; } /* 18px */
+		&.ym-small { font-size: 0.8571em; } /* 12px */
+		&.ym-xsmall { font-size: 0.7143em; } /* 10px */
 	}
 
 	/* Button color scheme: primary */
 
-	.#{$yaml-prefix}button.#{$yaml-prefix}primary,
-	.#{$yaml-prefix}form button.#{$yaml-prefix}primary,
-	.#{$yaml-prefix}form input[type="button"].#{$yaml-prefix}primary,
-	.#{$yaml-prefix}form input[type="reset"].#{$yaml-prefix}primary,
-	.#{$yaml-prefix}form input[type="submit"].#{$yaml-prefix}primary {
+	.ym-button.ym-primary,
+	.ym-form button.ym-primary,
+	.ym-form input[type="button"].ym-primary,
+	.ym-form input[type="reset"].ym-primary,
+	.ym-form input[type="submit"].ym-primary {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
@@ -312,11 +312,11 @@
 
 	/* Button color scheme: success */
 
-	.#{$yaml-prefix}button.#{$yaml-prefix}success,
-	.#{$yaml-prefix}form button.#{$yaml-prefix}success,
-	.#{$yaml-prefix}form input[type="button"].#{$yaml-prefix}success,
-	.#{$yaml-prefix}form input[type="reset"].#{$yaml-prefix}success,
-	.#{$yaml-prefix}form input[type="submit"].#{$yaml-prefix}success {
+	.ym-button.ym-success,
+	.ym-form button.ym-success,
+	.ym-form input[type="button"].ym-success,
+	.ym-form input[type="reset"].ym-success,
+	.ym-form input[type="submit"].ym-success {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
@@ -360,11 +360,11 @@
 
 	/* Button color scheme: warning */
 
-	.#{$yaml-prefix}button.#{$yaml-prefix}warning,
-	.#{$yaml-prefix}form button.#{$yaml-prefix}warning,
-	.#{$yaml-prefix}form input[type="button"].#{$yaml-prefix}warning,
-	.#{$yaml-prefix}form input[type="reset"].#{$yaml-prefix}warning,
-	.#{$yaml-prefix}form input[type="submit"].#{$yaml-prefix}warning {
+	.ym-button.ym-warning,
+	.ym-form button.ym-warning,
+	.ym-form input[type="button"].ym-warning,
+	.ym-form input[type="reset"].ym-warning,
+	.ym-form input[type="submit"].ym-warning {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
@@ -408,11 +408,11 @@
 
 	/* Button color scheme: danger */
 
-	.#{$yaml-prefix}button.#{$yaml-prefix}danger,
-	.#{$yaml-prefix}form button.#{$yaml-prefix}danger,
-	.#{$yaml-prefix}form input[type="button"].#{$yaml-prefix}danger,
-	.#{$yaml-prefix}form input[type="reset"].#{$yaml-prefix}danger,
-	.#{$yaml-prefix}form input[type="submit"].#{$yaml-prefix}danger {
+	.ym-button.ym-danger,
+	.ym-form button.ym-danger,
+	.ym-form input[type="button"].ym-danger,
+	.ym-form input[type="reset"].ym-danger,
+	.ym-form input[type="submit"].ym-danger {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
@@ -455,8 +455,8 @@
 	}
 
 	/* pseudo elements don't work on input */
-	.#{$yaml-prefix}form button:before,
-	.#{$yaml-prefix}button:before {
+	.ym-form button:before,
+	.ym-button:before {
 		background: #ccc;
 		background: rgba(0,0,0,.1);
 		float: left;
@@ -471,44 +471,44 @@
 		pointer-events: none;
 	}
 
-	.#{$yaml-prefix}add:before { content: "\271A"; }
-	.#{$yaml-prefix}delete:before { content: "\2718"; }
-	.#{$yaml-prefix}close:before { content: "\2715"; }
-	.#{$yaml-prefix}edit:before { content: "\270E"; }
-	.#{$yaml-prefix}email:before { content: "\2709"; }
-	.#{$yaml-prefix}like:before { content: "\2764"; }
-	.#{$yaml-prefix}next:before { content: "\279C"; }
-	.#{$yaml-prefix}play:before { content: "\25B6"; }
-	.#{$yaml-prefix}save:before { content: "\2714"; }
-	.#{$yaml-prefix}sign:before { content: "\270D"; }
-	.#{$yaml-prefix}spark:before { content: "\2737"; }
-	.#{$yaml-prefix}support:before { content: "\2706"; }
-	.#{$yaml-prefix}star:before { content: "\2605"; }
+	.ym-add:before { content: "\271A"; }
+	.ym-delete:before { content: "\2718"; }
+	.ym-close:before { content: "\2715"; }
+	.ym-edit:before { content: "\270E"; }
+	.ym-email:before { content: "\2709"; }
+	.ym-like:before { content: "\2764"; }
+	.ym-next:before { content: "\279C"; }
+	.ym-play:before { content: "\25B6"; }
+	.ym-save:before { content: "\2714"; }
+	.ym-sign:before { content: "\270D"; }
+	.ym-spark:before { content: "\2737"; }
+	.ym-support:before { content: "\2706"; }
+	.ym-star:before { content: "\2605"; }
 
 	/* removes extra inner spacing in Firefox */
-	.#{$yaml-prefix}form button::-moz-focus-inner {
+	.ym-form button::-moz-focus-inner {
 		border: 0;
 		padding: 0;
 	}
 
 	/* If line-height can't be modified, then fix Firefox spacing with padding */
-	.#{$yaml-prefix}form input[type=button]::-moz-focus-inner,
-	.#{$yaml-prefix}form input[type=reset]::-moz-focus-inner,
-	.#{$yaml-prefix}form input[type=submit]::-moz-focus-inner {
+	.ym-form input[type=button]::-moz-focus-inner,
+	.ym-form input[type=reset]::-moz-focus-inner,
+	.ym-form input[type=submit]::-moz-focus-inner {
 		padding: .4em;
 	}
 
 	/* The disabled styles */
-	.#{$yaml-prefix}form button[disabled],
-	.#{$yaml-prefix}form button[disabled]:hover,
-	.#{$yaml-prefix}form input[type=button][disabled],
-	.#{$yaml-prefix}form input[type=button][disabled]:hover,
-	.#{$yaml-prefix}form input[type=reset][disabled],
-	.#{$yaml-prefix}form input[type=reset][disabled]:hover,
-	.#{$yaml-prefix}form input[type=submit][disabled],
-	.#{$yaml-prefix}form input[type=submit][disabled]:hover,
-	.#{$yaml-prefix}button.#{$yaml-prefix}disabled,
-	.#{$yaml-prefix}button.#{$yaml-prefix}disabled:hover {
+	.ym-form button[disabled],
+	.ym-form button[disabled]:hover,
+	.ym-form input[type=button][disabled],
+	.ym-form input[type=button][disabled]:hover,
+	.ym-form input[type=reset][disabled],
+	.ym-form input[type=reset][disabled]:hover,
+	.ym-form input[type=submit][disabled],
+	.ym-form input[type=submit][disabled]:hover,
+	.ym-button.ym-disabled,
+	.ym-button.ym-disabled:hover {
 		background: #eee;
 		color: #aaa !important;
 		border-color: #aaa;
@@ -521,8 +521,8 @@
 
 	/* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
 	* html {
-		.#{$yaml-prefix}button,
-		.#{$yaml-prefix}form button {
+		.ym-button,
+		.ym-form button {
 			display: inline-block;
 			white-space: nowrap;
 			background-color: #ccc;
@@ -537,27 +537,27 @@
 			text-decoration: none !important;
 		}
 
-		.#{$yaml-prefix}form button:focus,
-		.#{$yaml-prefix}button:focus {
+		.ym-form button:focus,
+		.ym-button:focus {
 			outline: 0;
 			background: #fafafa;
 		}
 
-		.#{$yaml-prefix}form button:hover,
-		.#{$yaml-prefix}button:hover {
+		.ym-form button:hover,
+		.ym-button:hover {
 			background-color: #ddd;
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
 		}
 
-		.#{$yaml-prefix}form button:active,
-		.#{$yaml-prefix}button:active {
+		.ym-form button:active,
+		.ym-button:active {
 			background-color: #bbb;
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
 			position: relative;
 			top: 1px;
 		}
-		.#{$yaml-prefix}button.#{$yaml-prefix}disabled,
-		.#{$yaml-prefix}button.#{$yaml-prefix}disabled:hover {
+		.ym-button.ym-disabled,
+		.ym-button.ym-disabled:hover {
 			background: #eee;
 			color: #aaa !important;
 			border-color: #aaa;

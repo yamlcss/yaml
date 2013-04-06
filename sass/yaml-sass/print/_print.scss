@@ -28,7 +28,7 @@
 	/* (en) Hide unneeded container of the screenlayout in print layout */
 	/* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
 	nav,
-	.#{$yaml-prefix}searchform {
+	.ym-searchform {
 		display:none;
 	}
 

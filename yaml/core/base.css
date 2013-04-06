@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  *  "Yet Another Multicolumn Layout" - YAML CSS Framework
  *  (en) YAML core stylesheet
@@ -106,12 +106,12 @@
   /**
   * @section Float Handling Module
   */
-  .ym-clearfix:before {
+  clearfix:before {
     content: "";
     display: table;
   }
 
-  .ym-clearfix:after {
+  clearfix:after {
     clear: both;
     content: ".";
     display: block;
@@ -120,19 +120,19 @@
     visibility: hidden;
   }
 
-  .ym-contain-dt {
+  contain-dt {
     display: table;
     table-layout: fixed;
     width: 100%;
   }
 
-  .ym-contain-oh {
+  contain-oh {
     display: block;
     overflow: hidden;
     width: 100%;
   }
 
-  .ym-contain-fl {
+  contain-fl {
     float: left;
     width: 100%;
   }
@@ -140,47 +140,47 @@
   /**
   * @section Column Module
   */
-  .ym-column {
+  column {
     display: table;
     table-layout: fixed;
     width: 100%;
   }
 
-  .ym-col1 {
+  col1 {
     float: left;
     width: 20%;
   }
 
-  .ym-col2 {
+  col2 {
     float: right;
     width: 20%;
   }
 
-  .ym-col3 {
+  col3 {
     width: auto;
     margin: 0 20%;
   }
 
-  .ym-cbox {
+  cbox {
     padding: 0 10px;
   }
 
-  .ym-cbox-left {
+  cbox-left {
     padding: 0 10px 0 0;
   }
 
-  .ym-cbox-right {
+  cbox-right {
     padding: 0 0 0 10px;
   }
 
-  .ym-ie-clearing {
+  ie-clearing {
     display: none;
   }
 
   /**
   * @section Grid Module
   */
-  .ym-grid {
+  grid {
     display: table;
     table-layout: fixed;
     width: 100%;
@@ -191,84 +191,84 @@
     margin-right: 0;
   }
 
-  .ym-gl {
+  gl {
     float: left;
     margin: 0;
   }
 
-  .ym-gr {
+  gr {
     float: right;
     margin: 0 0 0 -5px;
   }
 
-  .ym-g20 {
+  g20 {
     width: 20%;
   }
 
-  .ym-g40 {
+  g40 {
     width: 40%;
   }
 
-  .ym-g60 {
+  g60 {
     width: 60%;
   }
 
-  .ym-g80 {
+  g80 {
     width: 80%;
   }
 
-  .ym-g25 {
+  g25 {
     width: 25%;
   }
 
-  .ym-g33 {
+  g33 {
     width: 33.333%;
   }
 
-  .ym-g50 {
+  g50 {
     width: 50%;
   }
 
-  .ym-g66 {
+  g66 {
     width: 66.666%;
   }
 
-  .ym-g75 {
+  g75 {
     width: 75%;
   }
 
-  .ym-g38 {
+  g38 {
     width: 38.2%;
   }
 
-  .ym-g62 {
+  g62 {
     width: 61.8%;
   }
 
-  .ym-gbox {
+  gbox {
     padding: 0 10px;
   }
 
-  .ym-gbox-left {
+  gbox-left {
     padding: 0 10px 0 0;
   }
 
-  .ym-gbox-right {
+  gbox-right {
     padding: 0 0 0 10px;
   }
 
-  .ym-equalize {
+  equalize {
     overflow: hidden;
   }
 
-  .ym-equalize > [class*="ym-g"] {
+  equalize > [class*=g"] {
     display: table-cell;
     float: none;
     margin: 0;
     vertical-align: top;
   }
 
-  .ym-equalize > [class*="ym-g"] > [class*="ym-gbox"] {
+  equalize > [class*=g"] > [class*=gbox"] {
     padding-bottom: 10000px;
     margin-bottom: -10000px;
   }
@@ -276,45 +276,45 @@
   /**
   * @section Form Module
   */
-  .ym-form,
-  .ym-form fieldset {
+  form,
+  form fieldset {
     overflow: hidden;
   }
 
-  .ym-form div {
+  form div {
     position: relative;
   }
-  .ym-form label,
-  .ym-form .ym-label,
-  .ym-form .ym-message {
+  form label,
+  form label,
+  form message {
     position: relative;
     line-height: 1.5;
     display: block;
   }
-  .ym-form .ym-type-check label {
+  form type-check label {
     display: inline;
   }
-  .ym-form input,
-  .ym-form textarea {
+  form input,
+  form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"],
-  .ym-form select,
-  .ym-form label {
+  form input[type="checkbox"],
+  form input[type="radio"],
+  form select,
+  form label {
     cursor: pointer;
   }
-  .ym-form textarea {
+  form textarea {
     overflow: auto;
   }
-  .ym-form input[type=hidden] {
+  form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox:before {
+  form fbox:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox:after {
+  form fbox:after {
     clear: both;
     content: ".";
     display: block;
@@ -322,54 +322,54 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select,
-  .ym-form input,
-  .ym-form textarea {
+  form select,
+  form input,
+  form textarea {
     display: block;
     position: relative;
     width: 65%;
     padding-left: 1%;
     padding-right: 1%;
   }
-  .ym-form .ym-type-check input {
+  form type-check input {
     display: inline;
     width: auto;
   }
-  .ym-form .ym-type-button input {
+  form type-button input {
     display: inline;
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-type-check input:focus,
-  .ym-form .ym-type-check input:hover,
-  .ym-form .ym-type-check input:active {
+  form type-check input:focus,
+  form type-check input:hover,
+  form type-check input:active {
     border: 0 none;
   }
-  .ym-form .ym-fbox-grid {
+  form fbox-grid {
     overflow: hidden;
     width: 70%;
   }
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
+  form fbox-grid type-text input,
+  form fbox-grid type-text textarea,
+  form fbox-grid type-select select {
     width: 96%;
     margin-left: 0;
   }
-  .ym-form .ym-fbox-grid .ym-type-check input {
+  form fbox-grid type-check input {
     width: auto;
     margin-left: 0;
   }
-  .ym-form .ym-g20,
-  .ym-form .ym-g40,
-  .ym-form .ym-g60,
-  .ym-form .ym-g80,
-  .ym-form .ym-g25,
-  .ym-form .ym-g33,
-  .ym-form .ym-g50,
-  .ym-form .ym-g66,
-  .ym-form .ym-g75,
-  .ym-form .ym-g38,
-  .ym-form .ym-g62 {
+  form g20,
+  form g40,
+  form g60,
+  form g80,
+  form g25,
+  form g33,
+  form g50,
+  form g66,
+  form g75,
+  form g38,
+  form g62 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -377,134 +377,134 @@
     margin-left: 0 !important;
     margin-right: 2% !important;
   }
-  .ym-form .ym-g20 {
+  form g20 {
     width: 18% !important;
   }
-  .ym-form .ym-g40 {
+  form g40 {
     width: 38% !important;
   }
-  .ym-form .ym-g60 {
+  form g60 {
     width: 58% !important;
   }
-  .ym-form .ym-g80 {
+  form g80 {
     width: 78% !important;
   }
-  .ym-form .ym-g25 {
+  form g25 {
     width: 23% !important;
   }
-  .ym-form .ym-g33 {
+  form g33 {
     width: 31.333% !important;
   }
-  .ym-form .ym-g50 {
+  form g50 {
     width: 48% !important;
   }
-  .ym-form .ym-g66 {
+  form g66 {
     width: 64.666% !important;
   }
-  .ym-form .ym-g75 {
+  form g75 {
     width: 73% !important;
   }
-  .ym-form .ym-g38 {
+  form g38 {
     width: 36.2% !important;
   }
-  .ym-form .ym-g62 {
+  form g62 {
     width: 59.8% !important;
   }
 
-  .ym-full .ym-type-select select,
-  .ym-full .ym-type-text input,
-  .ym-full .ym-type-text textarea {
+  full type-select select,
+  full type-text input,
+  full type-text textarea {
     width: 94%;
     margin-right: -3px;
   }
-  .ym-full .ym-fbox-grid {
+  full fbox-grid {
     width: 100%;
   }
 
-  .ym-columnar .ym-label,
-  .ym-columnar .ym-type-text label,
-  .ym-columnar .ym-type-select label {
+  columnar label,
+  columnar type-text label,
+  columnar type-select label {
     display: inline;
     float: left;
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-type-select select,
-  .ym-columnar .ym-type-text input,
-  .ym-columnar .ym-type-text textarea {
+  columnar type-select select,
+  columnar type-text input,
+  columnar type-text textarea {
     float: left;
     margin-right: -3px;
   }
-  .ym-columnar .ym-type-check {
+  columnar type-check {
     position: relative;
   }
-  .ym-columnar .ym-type-check .ym-label {
+  columnar type-check label {
     line-height: 1.0;
   }
-  .ym-columnar .ym-type-check input,
-  .ym-columnar .ym-error .ym-message {
+  columnar type-check input,
+  columnar error message {
     margin-left: 30%;
   }
-  .ym-columnar .ym-fbox-grid {
+  columnar fbox-grid {
     margin-left: 30%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-text label,
-  .ym-columnar .ym-fbox-grid .ym-type-select label {
+  columnar fbox-grid type-text label,
+  columnar fbox-grid type-select label {
     display: block;
     float: none;
     width: auto;
     z-index: 1;
     margin-left: 0;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-check label,
-  .ym-columnar .ym-fbox-grid .ym-type-check input {
+  columnar fbox-grid type-check label,
+  columnar fbox-grid type-check input {
     margin-left: 0;
   }
-  .ym-columnar .ym-fbox-wrap {
+  columnar fbox-wrap {
     margin-left: 30%;
   }
-  .ym-columnar .ym-fbox-wrap label,
-  .ym-columnar .ym-fbox-wrap input {
+  columnar fbox-wrap label,
+  columnar fbox-wrap input {
     margin-left: 0;
   }
 
-  .ym-fbox-grid + .ym-fbox-grid {
+  fbox-grid + fbox-grid {
     margin-top: 0.5em;
   }
 
-  .ym-columnar fieldset .ym-type-button,
-  fieldset.ym-columnar .ym-type-button {
+  columnar fieldset type-button,
+  fieldsetcolumnar type-button {
     padding-left: 30%;
   }
 
-  .ym-type-select select {
+  type-select select {
     width: 67%;
   }
 
-  .ym-full .ym-type-select select {
+  full type-select select {
     width: 96%;
   }
 
   /**
   * @section Accessibility Module
   */
-  .ym-skip,
-  .ym-hideme,
-  .ym-print {
+  skip,
+  hideme,
+  print {
     position: absolute;
     top: -32768px;
     left: -32768px;
   }
 
-  .ym-skip:focus,
-  .ym-skip:active {
+  skip:focus,
+  skip:active {
     position: static;
     top: 0;
     left: 0;
   }
 
-  .ym-skiplinks {
+  skiplinks {
     position: absolute;
     top: 0px;
     left: -32768px;
@@ -514,8 +514,8 @@
     padding: 0;
     list-style-type: none;
   }
-  .ym-skiplinks .ym-skip:focus,
-  .ym-skiplinks .ym-skip:active {
+  skiplinks skip:focus,
+  skiplinks skip:active {
     left: 32768px;
     outline: 0 none;
     position: absolute;
@@ -529,18 +529,18 @@
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
   * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
-  .ym-grid > .ym-gl,
-  .ym-grid > .ym-gr {
+  grid > gl,
+  grid > gr {
     overflow: visible;
     display: table;
   }
 
-  .ym-print {
+  print {
     position: static;
     left: 0;
   }
 
-  .ym-noprint {
+  noprint {
     display: none !important;
   }
 }

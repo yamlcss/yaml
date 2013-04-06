@@ -13,22 +13,22 @@
 	// @css-for   all browsers
 	// @valid     yes
 
-		.#{$yaml-prefix}grid > .#{$yaml-prefix}gl,
-		.#{$yaml-prefix}grid > .#{$yaml-prefix}gr {
+		.ym-grid > .ym-gl,
+		.ym-grid > .ym-gr {
 			overflow:visible;
 			display:table;
 		}
 	}
-	// (en) make .#{$yaml-prefix}print class visible
-	// (de) .#{$yaml-prefix}print-Klasse sichtbar schalten
-	.#{$yaml-prefix}print {
+	// (en) make .ym-print class visible
+	// (de) .ym-print-Klasse sichtbar schalten
+	.ym-print {
 		position:static;
 		left:0;
 	}
 
 	// (en) generic class to hide elements for print
 	// (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden
-	.#{$yaml-prefix}noprint {
+	.ym-noprint {
 		display:none !important;
 	}
 }

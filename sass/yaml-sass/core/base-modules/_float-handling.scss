@@ -7,11 +7,11 @@
 
 	// (en) clearfix method for clearing floats
 	// (de) Clearfix-Methode zum Clearen der Float-Umgebungen
-	.#{$yaml-prefix}clearfix:before {
+	.ym-clearfix:before {
 		content:"";
 		display:table;
 	}
-	.#{$yaml-prefix}clearfix:after {
+	.ym-clearfix:after {
 		clear:both;
 		content:".";
 		display:block;
@@ -22,13 +22,13 @@
 
 	// (en) alternative solutions to contain floats
 	// (de) Alternative Methoden zum Einschließen von Float-Umgebungen
-	.#{$yaml-prefix}contain-dt {
+	.ym-contain-dt {
 		@include ym-contain(dt);
 	}
-	.#{$yaml-prefix}contain-oh {
+	.ym-contain-oh {
 		@include ym-contain(oh);
 	}
-	.#{$yaml-prefix}contain-fl {
+	.ym-contain-fl {
 		@include ym-contain(fl);
 	}
 }

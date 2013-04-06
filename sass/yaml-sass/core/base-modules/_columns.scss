@@ -11,19 +11,19 @@
 	// | 20%     | flexible  | 20%     |
 	// |-------------------------------|
 
-	.#{$yaml-prefix}column {
+	.ym-column {
 		@include ym-contain(dt);
 	}
 
-	.#{$yaml-prefix}col1 { float:left; width:$ym-column-width; }
-	.#{$yaml-prefix}col2 { float:right; width:$ym-column-width; }
-	.#{$yaml-prefix}col3 { width:auto; margin:0 $ym-column-width; }
+	.ym-col1 { float:left; width:$ym-column-width; }
+	.ym-col2 { float:right; width:$ym-column-width; }
+	.ym-col3 { width:auto; margin:0 $ym-column-width; }
 
-	.#{$yaml-prefix}cbox { padding: 0 $ym-cbox-padding }
-	.#{$yaml-prefix}cbox-left { padding: 0 $ym-cbox-padding 0 0 }
-	.#{$yaml-prefix}cbox-right { padding: 0 0 0 $ym-cbox-padding }
+	.ym-cbox { padding: 0 $ym-cbox-padding }
+	.ym-cbox-left { padding: 0 $ym-cbox-padding 0 0 }
+	.ym-cbox-right { padding: 0 0 0 $ym-cbox-padding }
 
 	// (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css
 	// (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet
-	.#{$yaml-prefix}ie-clearing { display:none; }
+	.ym-ie-clearing { display:none; }
 }

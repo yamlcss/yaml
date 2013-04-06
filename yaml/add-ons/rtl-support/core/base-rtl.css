@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 @media all {
   /**
   * @section browser normalisation
@@ -40,16 +40,16 @@
   * @css-for    all
   * @valid      yes
   */
-  .ym-skiplinks {
+  skiplinks {
     left: 32768px !important;
   }
-  .ym-skiplinks .ym-skip:focus, .ym-skiplinks .ym-skip:active {
+  skiplinks skip:focus, skiplinks skip:active {
     left: -32768px !important;
   }
 
-  .ym-skip,
-  .ym-hideme,
-  .ym-print {
+  skip,
+  hideme,
+  print {
     left: 32768px !important;
   }
 
@@ -60,7 +60,7 @@
   * (en) CSS-class for ltr-content (left to right) within a rtl website
   * (de) Eine CSS-Klasse für ltr-Inhalte (left to right) innerhalb einer rtl-Seite
   */
-  .ym-text-ltr {
+  text-ltr {
     direction: ltr;
     text-align: left;
   }

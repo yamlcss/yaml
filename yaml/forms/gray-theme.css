@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  * YAML form theme: "gray-theme"
  */
@@ -10,22 +10,22 @@
   * Styling for: <labels>, <input>, <textarea> and <select>
   *
   */
-  .ym-form .ym-type-select select {
+  form type-select select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 68%;
   }
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea {
+  form type-text input,
+  form type-text textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 68%;
   }
-  .ym-form .ym-fbox-grid {
+  form fbox-grid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -34,30 +34,30 @@
     width: 70%;
   }
 
-  .ym-columnar label {
+  columnar label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  .ym-full .ym-type-text input,
-  .ym-full .ym-type-text textarea,
-  .ym-full .ym-type-select select {
+  full type-text input,
+  full type-text textarea,
+  full type-select select {
     width: 98%;
   }
-  .ym-full .ym-fbox-grid {
+  full fbox-grid {
     width: 100%;
   }
 
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
+  form fbox-grid type-text input,
+  form fbox-grid type-text textarea,
+  form fbox-grid type-select select {
     width: 100%;
   }
 }
 @media screen, projection {
-  .ym-form {
+  form {
     background: #f4f4f4;
     border: 2px white solid;
     margin: 1.5em 0 0 0;
@@ -65,13 +65,13 @@
     -webkit-box-shadow: 0 0 4px #dddddd;
     box-shadow: 0 0 4px #dddddd;
   }
-  .ym-form fieldset {
+  form fieldset {
     position: static;
     background: transparent;
     margin: 0.75em 0 0.75em 0;
     padding: 0 0.5em;
   }
-  .ym-form legend {
+  form legend {
     background: transparent;
     color: #000;
     font-size: 1.2em;
@@ -79,36 +79,36 @@
     font-weight: bold;
     padding: 0 0.5em;
   }
-  .ym-form label {
+  form label {
     color: #666;
     line-height: 1.5;
   }
-  .ym-form .ym-label {
+  form label {
     color: #666;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox {
+  form fbox {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-type-button {
+  form type-button {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
     margin: 0;
     text-align: left;
   }
-  .ym-form .ym-gbox {
+  form gbox {
     padding: 0 0.5em;
     margin-right: 0;
   }
-  .ym-form .ym-fbox-heading {
+  form fbox-heading {
     font-size: 1em;
     font-size: 100%;
     color: #000;
     margin: 1em 0 1em 1em;
   }
-  .ym-form .ym-form .ym-fbox-check:focus + label {
+  form form fbox-check:focus + label {
     color: #000;
   }
 
@@ -120,63 +120,63 @@
   */
   /* styling standard form elements with 'almost' equal flexible width */
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea {
+  form type-text input,
+  form type-text textarea {
     line-height: 1em;
     padding: 4px 0.3em;
   }
-  .ym-form .ym-type-select select {
+  form type-select select {
     line-height: 1em;
     padding: 3px 2px 3px 1px;
   }
-  .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
+  form input, form textarea, form select, form optgroup {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-box-shadow: inset 0 0 4px #eeeeee;
     box-shadow: inset 0 0 4px #eeeeee;
   }
-  .ym-form optgroup {
+  form optgroup {
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea,
-  .ym-form .ym-type-select select {
+  form type-text input,
+  form type-text textarea,
+  form type-select select {
     border: 1px solid #dddddd;
   }
-  .ym-form .ym-message {
+  form message {
     color: #666;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-required {
+  form required {
     color: #800;
     font-weight: bold;
   }
-  .ym-form input:valid, .ym-form textarea:valid {
+  form input:valid, form textarea:valid {
     background-color: #fff;
   }
-  .ym-form input:invalid, .ym-form textarea:invalid {
+  form input:invalid, form textarea:invalid {
     background-color: #fdd;
   }
-  .ym-form .ym-error label {
+  form error label {
     color: #800;
     font-weight: normal;
   }
-  .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
+  form error input, form error select, form error textarea {
     border: 1px #880000 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
-  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
-  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+  form error input:hover, form error input:focus,
+  form error select:hover, form error select:focus,
+  form error textarea:hover, form error textarea:focus {
     border: 1px #880000 solid !important;
   }
-  .ym-form .ym-error .ym-message {
+  form error message {
     color: #800;
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form .ym-type-text input:focus, .ym-form .ym-type-select select:focus, .ym-form .ym-type-text textarea:focus,
-  .ym-form .ym-type-text input:hover, .ym-form .ym-type-select select:hover, .ym-form .ym-type-text textarea:hover,
-  .ym-form .ym-type-text input:active, .ym-form .ym-type-select select:active, .ym-form .ym-type-text textarea:active {
+  form type-text input:focus, form type-select select:focus, form type-text textarea:focus,
+  form type-text input:hover, form type-select select:hover, form type-text textarea:hover,
+  form type-text input:active, form type-select select:active, form type-text textarea:active {
     border: 1px #888888 solid;
     background: #fff;
   }
@@ -185,11 +185,11 @@
   * @section Buttons
   * inspired from: Catalin Rosu (http://www.red-team-design.com/just-another-awesome-css3-buttons)
   */
-  .ym-button,
-  .ym-form button,
-  .ym-form input[type="button"],
-  .ym-form input[type="reset"],
-  .ym-form input[type="submit"] {
+  button,
+  form button,
+  form input[type="button"],
+  form input[type="reset"],
+  form input[type="submit"] {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
@@ -213,11 +213,11 @@
     text-decoration: none !important;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   }
-  .ym-button:hover,
-  .ym-form button:hover,
-  .ym-form input[type="button"]:hover,
-  .ym-form input[type="reset"]:hover,
-  .ym-form input[type="submit"]:hover {
+  button:hover,
+  form button:hover,
+  form input[type="button"]:hover,
+  form input[type="reset"]:hover,
+  form input[type="submit"]:hover {
     background-color: #ddd;
     background-image: -webkit-linear-gradient(top, #fafafa, #dddddd);
     background-image: -moz-linear-gradient(top, #fafafa, #dddddd);
@@ -226,11 +226,11 @@
     background-image: linear-gradient(to bottom, #fafafa, #dddddd);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  .ym-button:active,
-  .ym-form button:active,
-  .ym-form input[type="button"]:active,
-  .ym-form input[type="reset"]:active,
-  .ym-form input[type="submit"]:active {
+  button:active,
+  form button:active,
+  form input[type="button"]:active,
+  form input[type="reset"]:active,
+  form input[type="submit"]:active {
     background-color: #bbb;
     background-image: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
     background-image: -moz-linear-gradient(top, #cccccc, #bbbbbb);
@@ -242,41 +242,41 @@
     position: relative;
     top: 1px;
   }
-  .ym-button:focus,
-  .ym-form button:focus,
-  .ym-form input[type="button"]:focus,
-  .ym-form input[type="reset"]:focus,
-  .ym-form input[type="submit"]:focus {
+  button:focus,
+  form button:focus,
+  form input[type="button"]:focus,
+  form input[type="reset"]:focus,
+  form input[type="submit"]:focus {
     outline: 0;
     background: #fafafa;
   }
 
   /* Button size-scaling classes */
-  .ym-button {
+  button {
     /* 21px */
     /* 18px */
     /* 12px */
     /* 10px */
   }
-  .ym-button.ym-xlarge {
+  buttonxlarge {
     font-size: 1.5em;
   }
-  .ym-button.ym-large {
+  buttonlarge {
     font-size: 1.2857em;
   }
-  .ym-button.ym-small {
+  buttonsmall {
     font-size: 0.8571em;
   }
-  .ym-button.ym-xsmall {
+  buttonxsmall {
     font-size: 0.7143em;
   }
 
   /* Button color scheme: primary */
-  .ym-button.ym-primary,
-  .ym-form button.ym-primary,
-  .ym-form input[type="button"].ym-primary,
-  .ym-form input[type="reset"].ym-primary,
-  .ym-form input[type="submit"].ym-primary {
+  buttonprimary,
+  form buttonprimary,
+  form input[type="button"]primary,
+  form input[type="reset"]primary,
+  form input[type="submit"]primary {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -291,11 +291,11 @@
     color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
-  .ym-button.ym-primary:hover,
-  .ym-form button.ym-primary:hover,
-  .ym-form input[type="button"].ym-primary:hover,
-  .ym-form input[type="reset"].ym-primary:hover,
-  .ym-form input[type="submit"].ym-primary:hover {
+  buttonprimary:hover,
+  form buttonprimary:hover,
+  form input[type="button"]primary:hover,
+  form input[type="reset"]primary:hover,
+  form input[type="submit"]primary:hover {
     background-color: #66d;
     background-image: -webkit-linear-gradient(top, #8888ff, #6666dd);
     background-image: -moz-linear-gradient(top, #8888ff, #6666dd);
@@ -304,11 +304,11 @@
     background-image: linear-gradient(to bottom, #8888ff, #6666dd);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ff', EndColorStr='#6666dd');
   }
-  .ym-button.ym-primary:active,
-  .ym-form button.ym-primary:active,
-  .ym-form input[type="button"].ym-primary:active,
-  .ym-form input[type="reset"].ym-primary:active,
-  .ym-form input[type="submit"].ym-primary:active {
+  buttonprimary:active,
+  form buttonprimary:active,
+  form input[type="button"]primary:active,
+  form input[type="reset"]primary:active,
+  form input[type="submit"]primary:active {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
     background-color: #66b;
     background-image: -webkit-linear-gradient(top, #8888cc, #6666aa);
@@ -318,21 +318,21 @@
     background-image: linear-gradient(to bottom, #8888cc, #6666aa);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888cc', EndColorStr='#6666aa');
   }
-  .ym-button.ym-primary:focus,
-  .ym-form button.ym-primary:focus,
-  .ym-form input[type="button"].ym-primary:focus,
-  .ym-form input[type="reset"].ym-primary:focus,
-  .ym-form input[type="submit"].ym-primary:focus {
+  buttonprimary:focus,
+  form buttonprimary:focus,
+  form input[type="button"]primary:focus,
+  form input[type="reset"]primary:focus,
+  form input[type="submit"]primary:focus {
     outline: 0;
     background: #88f;
   }
 
   /* Button color scheme: success */
-  .ym-button.ym-success,
-  .ym-form button.ym-success,
-  .ym-form input[type="button"].ym-success,
-  .ym-form input[type="reset"].ym-success,
-  .ym-form input[type="submit"].ym-success {
+  buttonsuccess,
+  form buttonsuccess,
+  form input[type="button"]success,
+  form input[type="reset"]success,
+  form input[type="submit"]success {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -347,11 +347,11 @@
     color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
-  .ym-button.ym-success:hover,
-  .ym-form button.ym-success:hover,
-  .ym-form input[type="button"].ym-success:hover,
-  .ym-form input[type="reset"].ym-success:hover,
-  .ym-form input[type="submit"].ym-success:hover {
+  buttonsuccess:hover,
+  form buttonsuccess:hover,
+  form input[type="button"]success:hover,
+  form input[type="reset"]success:hover,
+  form input[type="submit"]success:hover {
     background-color: #5a5;
     background-image: -webkit-linear-gradient(top, #66cc66, #55aa55);
     background-image: -moz-linear-gradient(top, #66cc66, #55aa55);
@@ -360,11 +360,11 @@
     background-image: linear-gradient(to bottom, #66cc66, #55aa55);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66cc66', EndColorStr='#55aa55');
   }
-  .ym-button.ym-success:active,
-  .ym-form button.ym-success:active,
-  .ym-form input[type="button"].ym-success:active,
-  .ym-form input[type="reset"].ym-success:active,
-  .ym-form input[type="submit"].ym-success:active {
+  buttonsuccess:active,
+  form buttonsuccess:active,
+  form input[type="button"]success:active,
+  form input[type="reset"]success:active,
+  form input[type="submit"]success:active {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
     background-color: #484;
     background-image: -webkit-linear-gradient(top, #66aa66, #448844);
@@ -374,21 +374,21 @@
     background-image: linear-gradient(to bottom, #66aa66, #448844);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aa66', EndColorStr='#448844');
   }
-  .ym-button.ym-success:focus,
-  .ym-form button.ym-success:focus,
-  .ym-form input[type="button"].ym-success:focus,
-  .ym-form input[type="reset"].ym-success:focus,
-  .ym-form input[type="submit"].ym-success:focus {
+  buttonsuccess:focus,
+  form buttonsuccess:focus,
+  form input[type="button"]success:focus,
+  form input[type="reset"]success:focus,
+  form input[type="submit"]success:focus {
     outline: 0;
     background: #6c6;
   }
 
   /* Button color scheme: warning */
-  .ym-button.ym-warning,
-  .ym-form button.ym-warning,
-  .ym-form input[type="button"].ym-warning,
-  .ym-form input[type="reset"].ym-warning,
-  .ym-form input[type="submit"].ym-warning {
+  buttonwarning,
+  form buttonwarning,
+  form input[type="button"]warning,
+  form input[type="reset"]warning,
+  form input[type="submit"]warning {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -403,11 +403,11 @@
     color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
-  .ym-button.ym-warning:hover,
-  .ym-form button.ym-warning:hover,
-  .ym-form input[type="button"].ym-warning:hover,
-  .ym-form input[type="reset"].ym-warning:hover,
-  .ym-form input[type="submit"].ym-warning:hover {
+  buttonwarning:hover,
+  form buttonwarning:hover,
+  form input[type="button"]warning:hover,
+  form input[type="reset"]warning:hover,
+  form input[type="submit"]warning:hover {
     background-color: #c83;
     background-image: -webkit-linear-gradient(top, #eebb55, #cc8833);
     background-image: -moz-linear-gradient(top, #eebb55, #cc8833);
@@ -416,11 +416,11 @@
     background-image: linear-gradient(to bottom, #eebb55, #cc8833);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eebb55', EndColorStr='#cc8833');
   }
-  .ym-button.ym-warning:active,
-  .ym-form button.ym-warning:active,
-  .ym-form input[type="button"].ym-warning:active,
-  .ym-form input[type="reset"].ym-warning:active,
-  .ym-form input[type="submit"].ym-warning:active {
+  buttonwarning:active,
+  form buttonwarning:active,
+  form input[type="button"]warning:active,
+  form input[type="reset"]warning:active,
+  form input[type="submit"]warning:active {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
     background-color: #a62;
     background-image: -webkit-linear-gradient(top, #cc9944, #aa6622);
@@ -430,21 +430,21 @@
     background-image: linear-gradient(to bottom, #cc9944, #aa6622);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc9944', EndColorStr='#aa6622');
   }
-  .ym-button.ym-warning:focus,
-  .ym-form button.ym-warning:focus,
-  .ym-form input[type="button"].ym-warning:focus,
-  .ym-form input[type="reset"].ym-warning:focus,
-  .ym-form input[type="submit"].ym-warning:focus {
+  buttonwarning:focus,
+  form buttonwarning:focus,
+  form input[type="button"]warning:focus,
+  form input[type="reset"]warning:focus,
+  form input[type="submit"]warning:focus {
     outline: 0;
     background: #da4;
   }
 
   /* Button color scheme: danger */
-  .ym-button.ym-danger,
-  .ym-form button.ym-danger,
-  .ym-form input[type="button"].ym-danger,
-  .ym-form input[type="reset"].ym-danger,
-  .ym-form input[type="submit"].ym-danger {
+  buttondanger,
+  form buttondanger,
+  form input[type="button"]danger,
+  form input[type="reset"]danger,
+  form input[type="submit"]danger {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -459,11 +459,11 @@
     color: white !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   }
-  .ym-button.ym-danger:hover,
-  .ym-form button.ym-danger:hover,
-  .ym-form input[type="button"].ym-danger:hover,
-  .ym-form input[type="reset"].ym-danger:hover,
-  .ym-form input[type="submit"].ym-danger:hover {
+  buttondanger:hover,
+  form buttondanger:hover,
+  form input[type="button"]danger:hover,
+  form input[type="reset"]danger:hover,
+  form input[type="submit"]danger:hover {
     background-color: #a55;
     background-image: -webkit-linear-gradient(top, #cc6666, #aa5555);
     background-image: -moz-linear-gradient(top, #cc6666, #aa5555);
@@ -472,11 +472,11 @@
     background-image: linear-gradient(to bottom, #cc6666, #aa5555);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc6666', EndColorStr='#aa5555');
   }
-  .ym-button.ym-danger:active,
-  .ym-form button.ym-danger:active,
-  .ym-form input[type="button"].ym-danger:active,
-  .ym-form input[type="reset"].ym-danger:active,
-  .ym-form input[type="submit"].ym-danger:active {
+  buttondanger:active,
+  form buttondanger:active,
+  form input[type="button"]danger:active,
+  form input[type="reset"]danger:active,
+  form input[type="submit"]danger:active {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
     background-color: #844;
     background-image: -webkit-linear-gradient(top, #aa5555, #884444);
@@ -486,18 +486,18 @@
     background-image: linear-gradient(to bottom, #aa5555, #884444);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#aa5555', EndColorStr='#884444');
   }
-  .ym-button.ym-danger:focus,
-  .ym-form button.ym-danger:focus,
-  .ym-form input[type="button"].ym-danger:focus,
-  .ym-form input[type="reset"].ym-danger:focus,
-  .ym-form input[type="submit"].ym-danger:focus {
+  buttondanger:focus,
+  form buttondanger:focus,
+  form input[type="button"]danger:focus,
+  form input[type="reset"]danger:focus,
+  form input[type="submit"]danger:focus {
     outline: 0;
     background: #c66;
   }
 
   /* pseudo elements don't work on input */
-  .ym-form button:before,
-  .ym-button:before {
+  form button:before,
+  button:before {
     background: #ccc;
     background: rgba(0, 0, 0, 0.1);
     float: left;
@@ -512,82 +512,82 @@
     pointer-events: none;
   }
 
-  .ym-add:before {
+  add:before {
     content: "\271A";
   }
 
-  .ym-delete:before {
+  delete:before {
     content: "\2718";
   }
 
-  .ym-close:before {
+  close:before {
     content: "\2715";
   }
 
-  .ym-edit:before {
+  edit:before {
     content: "\270E";
   }
 
-  .ym-email:before {
+  email:before {
     content: "\2709";
   }
 
-  .ym-like:before {
+  like:before {
     content: "\2764";
   }
 
-  .ym-next:before {
+  next:before {
     content: "\279C";
   }
 
-  .ym-play:before {
+  play:before {
     content: "\25B6";
   }
 
-  .ym-save:before {
+  save:before {
     content: "\2714";
   }
 
-  .ym-sign:before {
+  sign:before {
     content: "\270D";
   }
 
-  .ym-spark:before {
+  spark:before {
     content: "\2737";
   }
 
-  .ym-support:before {
+  support:before {
     content: "\2706";
   }
 
-  .ym-star:before {
+  star:before {
     content: "\2605";
   }
 
   /* removes extra inner spacing in Firefox */
-  .ym-form button::-moz-focus-inner {
+  form button::-moz-focus-inner {
     border: 0;
     padding: 0;
   }
 
   /* If line-height can't be modified, then fix Firefox spacing with padding */
-  .ym-form input[type=button]::-moz-focus-inner,
-  .ym-form input[type=reset]::-moz-focus-inner,
-  .ym-form input[type=submit]::-moz-focus-inner {
+  form input[type=button]::-moz-focus-inner,
+  form input[type=reset]::-moz-focus-inner,
+  form input[type=submit]::-moz-focus-inner {
     padding: .4em;
   }
 
   /* The disabled styles */
-  .ym-form button[disabled],
-  .ym-form button[disabled]:hover,
-  .ym-form input[type=button][disabled],
-  .ym-form input[type=button][disabled]:hover,
-  .ym-form input[type=reset][disabled],
-  .ym-form input[type=reset][disabled]:hover,
-  .ym-form input[type=submit][disabled],
-  .ym-form input[type=submit][disabled]:hover,
-  .ym-button.ym-disabled,
-  .ym-button.ym-disabled:hover {
+  form button[disabled],
+  form button[disabled]:hover,
+  form input[type=button][disabled],
+  form input[type=button][disabled]:hover,
+  form input[type=reset][disabled],
+  form input[type=reset][disabled]:hover,
+  form input[type=submit][disabled],
+  form input[type=submit][disabled]:hover,
+  buttondisabled,
+  buttondisabled:hover {
     background: #eee;
     color: #aaaaaa !important;
     border-color: #aaa;
@@ -599,8 +599,8 @@
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
-  * html .ym-button,
-  * html .ym-form button {
+  * html button,
+  * html form button {
     display: inline-block;
     white-space: nowrap;
     background-color: #ccc;
@@ -615,25 +615,25 @@
     /* removes extra side spacing in IE */
     text-decoration: none !important;
   }
-  * html .ym-form button:focus,
-  * html .ym-button:focus {
+  * html form button:focus,
+  * html button:focus {
     outline: 0;
     background: #fafafa;
   }
-  * html .ym-form button:hover,
-  * html .ym-button:hover {
+  * html form button:hover,
+  * html button:hover {
     background-color: #ddd;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
   }
-  * html .ym-form button:active,
-  * html .ym-button:active {
+  * html form button:active,
+  * html button:active {
     background-color: #bbb;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
     position: relative;
     top: 1px;
   }
-  * html .ym-button.ym-disabled,
-  * html .ym-button.ym-disabled:hover {
+  * html buttondisabled,
+  * html buttondisabled:hover {
     background: #eee;
     color: #aaaaaa !important;
     border-color: #aaa;

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) YAML core stylesheet - structure-independent bugfixes of IE/Win CSS-bugs
@@ -117,7 +117,7 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  .ym-clearfix {
+  clearfix {
     zoom: 1;
   }
 
@@ -132,9 +132,9 @@
   * @css-for	 IE 5.x/Win, IE6
   * @valid		 yes
   */
-  * html .ym-col1,
-  * html .ym-col2,
-  * html .ym-col3 {
+  * html col1,
+  * html col2,
+  * html col3 {
     position: relative;
   }
 
@@ -152,12 +152,12 @@
     height: 1%;
   }
 
-  .ym-wrapper, .ym-wbox, #header, #nav, #main, #footer {
+  wrapper, wbox, #header, #nav, #main, #footer {
     zoom: 1;
   }
 
   /* IE6 & IE7	*/
-  * html .ym-wrapper, * html .ym-wbox {
+  * html wrapper, * html wbox {
     height: 1%;
     hei\ght: auto;
   }
@@ -170,7 +170,7 @@
 
   /* IE 5.x & IE6 | IE6 only */
   /* trigger hasLayout to force containing content */
-  .ym-gbox, .ym-gbox-left, .ym-gbox-right {
+  gbox, gbox-left, gbox-right {
     height: 1%;
   }
 
@@ -243,90 +243,90 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     no
   */
-  .ym-form,
-  .ym-form div,
-  .ym-form div * {
+  form,
+  form div,
+  form div * {
     zoom: 1;
   }
 
-  .ym-form input,
-  .ym-form select,
-  .ym-form textarea {
+  form input,
+  form select,
+  form textarea {
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
-  .ym-form .ym-fbox-grid {
+  form fbox-grid {
     display: block;
     overflow: hidden;
     margin-right: -5px;
   }
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
+  form fbox-grid type-text input,
+  form fbox-grid type-text textarea,
+  form fbox-grid type-select select {
     width: 96% !important;
   }
-  .ym-form .ym-g33 {
+  form g33 {
     display: inline;
     width: 31% !important;
   }
-  .ym-form .ym-g66 {
+  form g66 {
     display: inline;
     width: 64% !important;
   }
-  .ym-form .ym-g38 {
+  form g38 {
     display: inline;
     width: 36% !important;
   }
-  .ym-form .ym-g62 {
+  form g62 {
     display: inline;
     width: 59% !important;
   }
-  .ym-form input.ym-g20, .ym-form textarea.ym-g20, .ym-form select.ym-g20 {
+  form inputg20, form textareag20, form selectg20 {
     display: inline;
     width: 16% !important;
   }
-  .ym-form input.ym-g40, .ym-form textarea.ym-g40, .ym-form select.ym-g40 {
+  form inputg40, form textareag40, form selectg40 {
     display: inline;
     width: 36% !important;
   }
-  .ym-form input.ym-g60, .ym-form textarea.ym-g60, .ym-form select.ym-g60 {
+  form inputg60, form textareag60, form selectg60 {
     display: inline;
     width: 56% !important;
   }
-  .ym-form input.ym-g80, .ym-form textarea.ym-g80, .ym-form select.ym-g80 {
+  form inputg80, form textareag80, form selectg80 {
     display: inline;
     width: 76% !important;
   }
-  .ym-form input.ym-g25, .ym-form textarea.ym-g25, .ym-form select.ym-g25 {
+  form inputg25, form textareag25, form selectg25 {
     display: inline;
     width: 21% !important;
   }
-  .ym-form input.ym-g33, .ym-form textarea.ym-g33, .ym-form select.ym-g33 {
+  form inputg33, form textareag33, form selectg33 {
     display: inline;
     width: 29.333% !important;
   }
-  .ym-form input.ym-g50, .ym-form textarea.ym-g50, .ym-form select.ym-g50 {
+  form inputg50, form textareag50, form selectg50 {
     display: inline;
     width: 46% !important;
   }
-  .ym-form input.ym-g66, .ym-form textarea.ym-g66, .ym-form select.ym-g66 {
+  form inputg66, form textareag66, form selectg66 {
     display: inline;
     width: 62.666% !important;
   }
-  .ym-form input.ym-g75, .ym-form textarea.ym-g75, .ym-form select.ym-g75 {
+  form inputg75, form textareag75, form selectg75 {
     display: inline;
     width: 71% !important;
   }
-  .ym-form input.ym-g38, .ym-form textarea.ym-g38, .ym-form select.ym-g38 {
+  form inputg38, form textareag38, form selectg38 {
     display: inline;
     width: 34.2% !important;
   }
-  .ym-form input.ym-g62, .ym-form textarea.ym-g62, .ym-form select.ym-g62 {
+  form inputg62, form textareag62, form selectg62 {
     display: inline;
     width: 57.8% !important;
   }
 
-  .ym-columnar .ym-fbox-grid {
+  columnar fbox-grid {
     margin-left: 0;
     float: right;
   }
@@ -348,7 +348,7 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     no
   */
-  html .ym-ie-clearing {
+  html ie-clearing {
     /* (en) Only a small help for debugging */
     /* (de) Nur eine kleine Hilfe zur Fehlersuche */
     position: static;
@@ -366,11 +366,11 @@
     margin: -2px 0 -1em 1px;
   }
 
-  * html .ym-ie-clearing {
+  * html ie-clearing {
     margin: -2px 0 -1em 0;
   }
 
-  .ym-cbox {
+  cbox {
     margin-bottom: -2px;
   }
 
@@ -386,7 +386,7 @@
 
   /* (en) Bugfix:Essential for IE7 */
   /* (de) Bugfix:Notwendig im IE7 */
-  .ym-col3 {
+  col3 {
     position: relative;
   }
 
@@ -414,34 +414,34 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  .ym-col1, .ym-col2 {
+  col1, col2 {
     display: inline;
   }
 
   /* Fix for:"Linking to anchors in elements within the containing block" Problem in IE5.x & IE 6.0 */
-  .ym-grid {
+  grid {
     overflow: hidden;
     display: block;
   }
 
-  * html .ym-grid {
+  * html grid {
     overflow: visible;
   }
 
-  .ym-gl,
-  .ym-gr {
+  gl,
+  gr {
     display: inline;
   }
 
   /* transform CSS tables back into floats */
-  .ym-equalize .ym-gl {
+  equalize gl {
     float: left;
     display: inline;
     padding-bottom: 32767px;
     margin-bottom: -32767px;
   }
 
-  .ym-equalize .ym-gr {
+  equalize gr {
     float: right;
     margin-left: -5px;
     display: inline;
@@ -449,8 +449,8 @@
     margin-bottom: -32767px;
   }
 
-  .no-ie-padding .ym-gl,
-  .no-ie-padding .ym-gr {
+  .no-ie-padding gl,
+  .no-ie-padding gr {
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -465,34 +465,34 @@
   * @css-for   IE 5.x/Win, IE6
   * @valid     yes
   */
-  * html .ym-cbox-left,
-  * html .ym-cbox-right,
-  * html .ym-cbox {
+  * html cbox-left,
+  * html cbox-right,
+  * html cbox {
     word-wrap: break-word;
   }
 
   /* avoid growing widths */
-  * html .ym-gbox,
-  * html .ym-gbox-left,
-  * html .ym-gbox-right {
+  * html gbox,
+  * html gbox-left,
+  * html gbox-right {
     word-wrap: break-word;
     o\verflow: hidden;
   }
 }
 @media print {
   /**
-  * (en) Avoid unneeded page breaks of .ym-col3 content in print layout and containing floats.
-  * (de) Vermeiden von unnötigen Seitenumbrüchen beim Ausdruck der Spalte .ym-col3 und Einschluss von Floats.
+  * (en) Avoid unneeded page breaks of col3 content in print layout and containing floats.
+  * (de) Vermeiden von unnötigen Seitenumbrüchen beim Ausdruck der Spalte col3 und Einschluss von Floats.
   *
   * @bugfix
   * @affected  IE7
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  .ym-gbox,
-  .ym-gbox-left,
-  .ym-gbox-right,
-  .ym-col3 {
+  gbox,
+  gbox-left,
+  gbox-right,
+  col3 {
     height: 1%;
   }
 }

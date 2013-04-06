@@ -19,12 +19,12 @@
 @media all {
 
 	/* menu title */
-	.#{$yaml-prefix}vtitle {
+	.ym-vtitle {
 		padding-left: 0px;
 		padding-right: 10%;
 	}
 
-	.#{$yaml-prefix}vlist {
+	.ym-vlist {
 		text-align: right;
 
 		li { float:right; }

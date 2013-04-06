@@ -22,12 +22,12 @@
 	}
 
 	/* Layout Module Configuration */
-	.#{$yaml-prefix}wrapper {
+	.ym-wrapper {
 		max-width: 80em;
 		margin: 0 auto;
 	}
 
-	.#{$yaml-prefix}wbox {
+	.ym-wbox {
 		padding: 1.5em;
 	}
 
@@ -51,7 +51,7 @@
 			color: #fff;
 		}
 
-		.#{$yaml-prefix}wbox {
+		.ym-wbox {
 			padding: 1.5em;
 		}
 	}
@@ -64,7 +64,7 @@
 		.info {
 			margin-bottom: 1.5em;
 		}
-		aside .#{$yaml-prefix}gbox-right {
+		aside .ym-gbox-right {
 			border-left: 1px #ddd solid;
 		}
 	}
@@ -77,21 +77,21 @@
 			margin: 0;
 		}
 
-		.#{$yaml-prefix}wbox {
+		.ym-wbox {
 			padding: 1.5em;
 		}
 	}
 
-	.#{$yaml-prefix}gbox { padding: 0 1.5em; }
-	.#{$yaml-prefix}gbox-left { padding: 0 1.5em 0 0; }
-	.#{$yaml-prefix}gbox-right { padding: 0 0 0 1.5em; }
+	.ym-gbox { padding: 0 1.5em; }
+	.ym-gbox-left { padding: 0 1.5em 0 0; }
+	.ym-gbox-right { padding: 0 0 0 1.5em; }
 
 	section.box { padding: 0 1.5em 1.5em 1.5em; }
 
 	/* skip links styling */
-	.#{$yaml-prefix}skiplinks {
-		a.#{$yaml-prefix}skip:focus,
-		a.#{$yaml-prefix}skip:active {
+	.ym-skiplinks {
+		a.ym-skip:focus,
+		a.ym-skip:active {
 			color:#fff;
 			background:#333;
 			border-bottom:1px #000 solid;
@@ -127,18 +127,18 @@
 		margin-top: 1.5em !important;
 	}
 
-	#main aside .#{$yaml-prefix}gbox-right {
+	#main aside .ym-gbox-right {
 		border: 0 none;
 	}
 
-	.#{$yaml-prefix}searchform {
+	.ym-searchform {
 		display:block;
 		float: none;
 		width: auto;
 		text-align: right;
 	}
 
-	.#{$yaml-prefix}searchform input[type="search"] {
+	.ym-searchform input[type="search"] {
 		width: 14%;
 	}
 }
@@ -151,7 +151,7 @@
 	}
 
 	header {
-		.#{$yaml-prefix}wbox {
+		.ym-wbox {
 			padding: 0.75em 10px;
 		}
 
@@ -162,24 +162,24 @@
 		}
 	}
 
-	footer .#{$yaml-prefix}wbox,
-	.#{$yaml-prefix}wbox,
-	.#{$yaml-prefix}searchform,
-	nav .#{$yaml-prefix}hlist ul {
+	footer .ym-wbox,
+	.ym-wbox,
+	.ym-searchform,
+	nav .ym-hlist ul {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 
-	.#{$yaml-prefix}searchform,
-	nav .#{$yaml-prefix}hlist ul,
-	nav .#{$yaml-prefix}hlist li {
+	.ym-searchform,
+	nav .ym-hlist ul,
+	nav .ym-hlist li {
 		display:block;
 		float: none;
 		width: auto;
 		text-align: left;
 	}
 
-	.#{$yaml-prefix}searchform input[type="search"] {
+	.ym-searchform input[type="search"] {
 		width: 75%;
 	}
 }
