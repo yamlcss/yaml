@@ -16,8 +16,9 @@
 ### Forms Module
 * changed standard width of form elements to 70%. Now widths are equal in default and columnar view mode.
 * added micro grid to forms module to allow complex multicolumnar forms. This micro grid uses the width-classes from YAML's layout grid module. 
-* added button types (primary, positive, warning, danger )
+* added button types (primary, positive, warning, danger)
 * added button sizes (xlarge,large, small, xsmall)
+* added three new custom buttons (close, sign, support)
 ### Print Module
 * removed forced linearisation for grids and columns module for print media
 ### Add-ons
