@@ -5,13 +5,13 @@
   }
 
   /* Layout Module Configuration & fallback for unsupported media queries */
-  wrapper {
+  .ym-wrapper {
     min-width: 760px;
     max-width: 80em;
     margin: 0 auto;
   }
 
-  wbox {
+  .ym-wbox {
     padding: 10px;
   }
 
@@ -41,20 +41,20 @@
   }
 
   /* Column-Set Configuration: 1-3 (sidebar right) */
-  column {
+  .ym-column {
     display: block;
     overflow: hidden;
     padding-right: 340px;
     width: auto;
   }
 
-  col1 {
+  .ym-col1 {
     /* content */
     float: left;
     width: 100%;
   }
 
-  col3 {
+  .ym-col3 {
     /* sidebar */
     position: relative;
     float: left;
@@ -63,24 +63,24 @@
     margin-right: -340px;
   }
 
-  col1 cbox {
+  .ym-col1 .ym-cbox {
     padding: 0 0.75em 0 1.5em;
   }
 
-  col3 cbox {
+  .ym-col3 .ym-cbox {
     padding: 0 20px 0 12px;
   }
 
-  gbox {
+  .ym-gbox {
     padding: 0 1.5em 0 0;
   }
 
   /* skip links styling */
-  skiplinks askip:focus,
-  skiplinks askip:active {
+  .ym-skiplinks a.ym-skip:focus,
+  .ym-skiplinks a.ym-skip:active {
     color: #fff;
     background: #333;
-    border-bottom: 1px black solid;
+    border-bottom: 1px #000 solid;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
@@ -88,13 +88,13 @@
 }
 /* reset fallback values in modern browsers */
 @media screen and (min-width: 0px) {
-  wrapper {
+  .ym-wrapper {
     min-width: 0px;
   }
 }
 @media screen and (max-width: 740px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
-  .linearize-level-1, .linearize-level-1 > [class*=c"], .linearize-level-1 > [class*=g"] {
+  .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
     display: block;
     float: none;
@@ -102,7 +102,7 @@
     margin: 0;
     width: 100% !important;
   }
-  .linearize-level-1 > [class*=c"] > [class*=cbox"], .linearize-level-1 > [class*=g"] > [class*=gbox"] {
+  .linearize-level-1 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
     /* reset defined gutter values */
     margin: 0;
     padding: 0;
@@ -110,11 +110,11 @@
     overflow: hidden;
   }
 
-  nav hlist ul {
+  nav .ym-hlist ul {
     padding-right: 10px;
   }
 
-  searchform {
+  .ym-searchform {
     display: block;
     float: none;
     width: auto;
@@ -122,12 +122,12 @@
     text-align: right;
   }
 
-  searchform input[type="search"] {
+  .ym-searchform input[type="search"] {
     width: 14%;
   }
 }
 @media screen and (max-width: 480px) {
-  wbox {
+  .ym-wbox {
     padding: 0;
   }
 
@@ -142,14 +142,14 @@
 
   footer,
   #main,
-  searchform,
-  nav hlist ul {
+  .ym-searchform,
+  nav .ym-hlist ul {
     padding-left: 10px;
     padding-right: 10px;
   }
 
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-2 */
-  .linearize-level-2, .linearize-level-2 > [class*=c"], .linearize-level-2 > [class*=g"] {
+  .linearize-level-2, .linearize-level-2 > [class*="ym-c"], .linearize-level-2 > [class*="ym-g"] {
     /* linearization for grids and columns module */
     display: block;
     float: none;
@@ -157,7 +157,7 @@
     margin: 0;
     width: 100% !important;
   }
-  .linearize-level-2 > [class*=c"] > [class*=cbox"], .linearize-level-2 > [class*=g"] > [class*=gbox"] {
+  .linearize-level-2 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-2 > [class*="ym-g"] > [class*="ym-gbox"] {
     /* reset defined gutter values */
     margin: 0;
     padding: 0;
@@ -165,16 +165,16 @@
     overflow: hidden;
   }
 
-  searchform,
-  nav hlist ul,
-  nav hlist li {
+  .ym-searchform,
+  nav .ym-hlist ul,
+  nav .ym-hlist li {
     display: block;
     float: none;
     width: auto;
     text-align: left;
   }
 
-  searchform input[type="search"] {
+  .ym-searchform input[type="search"] {
     width: 75%;
   }
 }

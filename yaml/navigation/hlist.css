@@ -1,27 +1,27 @@
 @media all {
-  hlist {
+  .ym-hlist {
     width: 100%;
     overflow: hidden;
     position: relative;
     line-height: 1em;
     background: #222;
   }
-  hlist ul {
+  .ym-hlist ul {
     margin: 0;
     padding: 0.5em 1.5em;
     display: inline;
     float: left;
   }
-  hlist ul li {
+  .ym-hlist ul li {
     display: inline;
     float: left;
     font-size: 1.0em;
     line-height: 1;
     list-style-type: none;
-    margin: 0 0.25em 0 0;
+    margin: 0 .25em 0 0;
     padding: 0;
   }
-  hlist ul li a, hlist ul li strong {
+  .ym-hlist ul li a, .ym-hlist ul li strong {
     background: transparent;
     color: #aaa;
     display: block;
@@ -33,7 +33,7 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     width: auto;
   }
-  hlist ul li a:focus, hlist ul li a:hover, hlist ul li a:active {
+  .ym-hlist ul li a:focus, .ym-hlist ul li a:hover, .ym-hlist ul li a:active {
     color: #ccc;
     background: #666;
     background: rgba(255, 255, 255, 0.25);
@@ -41,36 +41,36 @@
     text-decoration: none;
     outline: 0 none;
   }
-  hlist ul li.active {
+  .ym-hlist ul li.active {
     background: #666;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.2em;
     color: #fff;
   }
-  hlist ul li.active strong, hlist ul li.active a:focus, hlist ul li.active a:hover, hlist ul li.active a:active {
+  .ym-hlist ul li.active strong, .ym-hlist ul li.active a:focus, .ym-hlist ul li.active a:hover, .ym-hlist ul li.active a:active {
     background: transparent;
     color: #fff;
     text-decoration: none;
   }
 
-  searchform {
+  .ym-searchform {
     float: right;
     display: inline;
     line-height: 2;
     padding: 0.5em 1.5em;
   }
-  searchform searchfield {
+  .ym-searchform .ym-searchfield {
     background: #fff;
     line-height: 1;
     padding: 0.25em;
     width: 12em;
-    border: solid 1px #888888;
+    border: solid 1px #888;
     border: solid 1px rgba(255, 255, 255, 0.1);
     outline: none;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
   }
-  searchform searchbutton {
+  .ym-searchform .ym-searchbutton {
     color: #fff;
     cursor: pointer;
     display: inline-block;

@@ -1,7 +1,7 @@
 {
-  "name"                    : "YAML CSS Framework",
+  "name"                    : "yaml-css-framework",
   "version"                 : "4.1.0",
-  "yaml-prefix"             :  "ym-",
+  "yamlPrefix"              : "ym-",
   "devDependencies": {
     "grunt"                 : "~0.4.0",
     "grunt-contrib-clean"   : "~0.4.0",

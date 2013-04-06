@@ -1,13 +1,13 @@
-
+@charset "CP850";
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) YAML core stylesheet - structure-independent bugfixes of IE/Win CSS-bugs
- * (de) YAML Basis-Stylesheet - Strukturunabhängige Bugfixes von CSS-Bugs des IE/Win
+ * (de) YAML Basis-Stylesheet - Strukturunabh�ngige Bugfixes von CSS-Bugs des IE/Win
  */
 @media all {
   /**
   * (en) Debugging:When you see a green background, IE is getting this stylesheet
-  * (de) Fehlersuche:Hintergrund leuchtet grün, wenn das Stylesheet korrekt geladen wurde
+  * (de) Fehlersuche:Hintergrund leuchtet gr�n, wenn das Stylesheet korrekt geladen wurde
   *
   * @debug
   * @app-yaml-default disabled
@@ -24,7 +24,7 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) No need to force scrollbars in older IE's - it even makes problems in IE6 when set
-  * (de) Scrollbar-Fix wird in alten IE's nicht benötigt, zudem verursacht der Fix Probleme im IE6
+  * (de) Scrollbar-Fix wird in alten IE's nicht ben�tigt, zudem verursacht der Fix Probleme im IE6
   *
   * @workaround
   * @affected  IE6, IE7
@@ -37,7 +37,7 @@
 
   /**
   * (en) HTML5 - default media element styles
-  * (de) HTML5 - Standard Eigenschaften für Media-Elemente
+  * (de) HTML5 - Standard Eigenschaften f�r Media-Elemente
   */
   article, aside, details, figcaption, figure,
   footer, header, main, hgroup, nav, section {
@@ -88,7 +88,7 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) Stability fixes with 'position:relative'
-  * (de) Stabilitätsverbesserungen durch 'position:relative'
+  * (de) Stabilit�tsverbesserungen durch 'position:relative'
   *
   * Essential for correct scaling in IE7 (body). IE5 must get static positioned body instead.
   * Helpful to fix several possible problems in older IE versions (#main).
@@ -109,7 +109,7 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) Clearfix adjustents for containing floats in IE
-  * (de) Clearfix-Anpassung für diverse IE-Versionen
+  * (de) Clearfix-Anpassung f�r diverse IE-Versionen
   *
   * @workaround
   * @see http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
@@ -117,7 +117,7 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  clearfix {
+  .ym-clearfix {
     zoom: 1;
   }
 
@@ -125,16 +125,16 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) Bugfix for partially displayed column separators
-  * (de) Bugfix für unvollständige Darstellung der Spalteninhalte / Spaltentrenner
+  * (de) Bugfix f�r unvollst�ndige Darstellung der Spalteninhalte / Spaltentrenner
   *
   * @bugfix
   * @affected	 IE 5.x/Win, IE6
   * @css-for	 IE 5.x/Win, IE6
   * @valid		 yes
   */
-  * html col1,
-  * html col2,
-  * html col3 {
+  * html .ym-col1,
+  * html .ym-col2,
+  * html .ym-col3 {
     position: relative;
   }
 
@@ -152,12 +152,12 @@
     height: 1%;
   }
 
-  wrapper, wbox, #header, #nav, #main, #footer {
+  .ym-wrapper, .ym-wbox, #header, #nav, #main, #footer {
     zoom: 1;
   }
 
   /* IE6 & IE7	*/
-  * html wrapper, * html wbox {
+  * html .ym-wrapper, * html .ym-wbox {
     height: 1%;
     hei\ght: auto;
   }
@@ -170,7 +170,7 @@
 
   /* IE 5.x & IE6 | IE6 only */
   /* trigger hasLayout to force containing content */
-  gbox, gbox-left, gbox-right {
+  .ym-gbox, .ym-gbox-left, .ym-gbox-right {
     height: 1%;
   }
 
@@ -243,90 +243,90 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     no
   */
-  form,
-  form div,
-  form div * {
+  .ym-form,
+  .ym-form div,
+  .ym-form div * {
     zoom: 1;
   }
 
-  form input,
-  form select,
-  form textarea {
+  .ym-form input,
+  .ym-form select,
+  .ym-form textarea {
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
-  form fbox-grid {
+  .ym-form .ym-fbox-grid {
     display: block;
     overflow: hidden;
     margin-right: -5px;
   }
-  form fbox-grid type-text input,
-  form fbox-grid type-text textarea,
-  form fbox-grid type-select select {
+  .ym-form .ym-fbox-grid .ym-type-text input,
+  .ym-form .ym-fbox-grid .ym-type-text textarea,
+  .ym-form .ym-fbox-grid .ym-type-select select {
     width: 96% !important;
   }
-  form g33 {
+  .ym-form .ym-g33 {
     display: inline;
     width: 31% !important;
   }
-  form g66 {
+  .ym-form .ym-g66 {
     display: inline;
     width: 64% !important;
   }
-  form g38 {
+  .ym-form .ym-g38 {
     display: inline;
     width: 36% !important;
   }
-  form g62 {
+  .ym-form .ym-g62 {
     display: inline;
     width: 59% !important;
   }
-  form inputg20, form textareag20, form selectg20 {
+  .ym-form input.ym-g20, .ym-form textarea.ym-g20, .ym-form select.ym-g20 {
     display: inline;
     width: 16% !important;
   }
-  form inputg40, form textareag40, form selectg40 {
+  .ym-form input.ym-g40, .ym-form textarea.ym-g40, .ym-form select.ym-g40 {
     display: inline;
     width: 36% !important;
   }
-  form inputg60, form textareag60, form selectg60 {
+  .ym-form input.ym-g60, .ym-form textarea.ym-g60, .ym-form select.ym-g60 {
     display: inline;
     width: 56% !important;
   }
-  form inputg80, form textareag80, form selectg80 {
+  .ym-form input.ym-g80, .ym-form textarea.ym-g80, .ym-form select.ym-g80 {
     display: inline;
     width: 76% !important;
   }
-  form inputg25, form textareag25, form selectg25 {
+  .ym-form input.ym-g25, .ym-form textarea.ym-g25, .ym-form select.ym-g25 {
     display: inline;
     width: 21% !important;
   }
-  form inputg33, form textareag33, form selectg33 {
+  .ym-form input.ym-g33, .ym-form textarea.ym-g33, .ym-form select.ym-g33 {
     display: inline;
     width: 29.333% !important;
   }
-  form inputg50, form textareag50, form selectg50 {
+  .ym-form input.ym-g50, .ym-form textarea.ym-g50, .ym-form select.ym-g50 {
     display: inline;
     width: 46% !important;
   }
-  form inputg66, form textareag66, form selectg66 {
+  .ym-form input.ym-g66, .ym-form textarea.ym-g66, .ym-form select.ym-g66 {
     display: inline;
     width: 62.666% !important;
   }
-  form inputg75, form textareag75, form selectg75 {
+  .ym-form input.ym-g75, .ym-form textarea.ym-g75, .ym-form select.ym-g75 {
     display: inline;
     width: 71% !important;
   }
-  form inputg38, form textareag38, form selectg38 {
+  .ym-form input.ym-g38, .ym-form textarea.ym-g38, .ym-form select.ym-g38 {
     display: inline;
     width: 34.2% !important;
   }
-  form inputg62, form textareag62, form selectg62 {
+  .ym-form input.ym-g62, .ym-form textarea.ym-g62, .ym-form select.ym-g62 {
     display: inline;
     width: 57.8% !important;
   }
 
-  columnar fbox-grid {
+  .ym-columnar .ym-fbox-grid {
     margin-left: 0;
     float: right;
   }
@@ -338,17 +338,17 @@
   *		 longest and left column is the shortest one. For IE6 and IE7 a special workaround was developed
   *		 in YAML.
   *
-  * (de) Workaround für 'kollabierenden Margin an #col3' bei Verwendung der CSS-Eigenschaft clear
+  * (de) Workaround f�r 'kollabierenden Margin an #col3' bei Verwendung der CSS-Eigenschaft clear
   *		 Der linke Margin von #col3 kollabiert bei der Verwendung von clear:both im 1-3-2 (oder 2-3-1) Layout
-  *		 wenn gleichzeitig die linke Spalte die kürzeste und die rechte die längste ist. Im IE6 und IE7 lässt
-  *		 sich der Bug durch eine speziell für YAML entwickelten Workaround umgehen.
+  *		 wenn gleichzeitig die linke Spalte die k�rzeste und die rechte die l�ngste ist. Im IE6 und IE7 l�sst
+  *		 sich der Bug durch eine speziell f�r YAML entwickelten Workaround umgehen.
   *
   * @workaround
   * @affected  IE 5.x/Win, IE6, IE7
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     no
   */
-  html ie-clearing {
+  html .ym-ie-clearing {
     /* (en) Only a small help for debugging */
     /* (de) Nur eine kleine Hilfe zur Fehlersuche */
     position: static;
@@ -356,21 +356,21 @@
     /* (de) Container sichtbar machen im IE */
     display: block;
     /* (en) No fix possible in IE5.x, normal clearing used instead */
-    /* (de) Kein Fix im IE5.x möglich, daher normales Clearing */
+    /* (de) Kein Fix im IE5.x m�glich, daher normales Clearing */
     \clear: both;
     /* (en) forcing clearing-like behavior with a simple oversized container in IE6 & IE7*/
-    /* (de) IE-Clearing mit 100%-DIV für IE6 bzw. übergroßem Container im IE7 */
+    /* (de) IE-Clearing mit 100%-DIV f�r IE6 bzw. �bergro�em Container im IE7 */
     width: 100%;
     line-height: 0;
     font-size: 0px;
     margin: -2px 0 -1em 1px;
   }
 
-  * html ie-clearing {
+  * html .ym-ie-clearing {
     margin: -2px 0 -1em 0;
   }
 
-  cbox {
+  .ym-cbox {
     margin-bottom: -2px;
   }
 
@@ -386,7 +386,7 @@
 
   /* (en) Bugfix:Essential for IE7 */
   /* (de) Bugfix:Notwendig im IE7 */
-  col3 {
+  .ym-col3 {
     position: relative;
   }
 
@@ -404,7 +404,7 @@
 @media screen, projection {
   /**
   * (en) IE-Adjustments for content columns and subtemplates
-  * (de) IE-Anpassung für Spaltencontainer und Subtemplates
+  * (de) IE-Anpassung f�r Spaltencontainer und Subtemplates
   *
   * Doubled Float-Margin Bug
   * @see http://positioniseverything.net/explorer/doubled-margin.html
@@ -414,34 +414,34 @@
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  col1, col2 {
+  .ym-col1, .ym-col2 {
     display: inline;
   }
 
   /* Fix for:"Linking to anchors in elements within the containing block" Problem in IE5.x & IE 6.0 */
-  grid {
+  .ym-grid {
     overflow: hidden;
     display: block;
   }
 
-  * html grid {
+  * html .ym-grid {
     overflow: visible;
   }
 
-  gl,
-  gr {
+  .ym-gl,
+  .ym-gr {
     display: inline;
   }
 
   /* transform CSS tables back into floats */
-  equalize gl {
+  .ym-equalize .ym-gl {
     float: left;
     display: inline;
     padding-bottom: 32767px;
     margin-bottom: -32767px;
   }
 
-  equalize gr {
+  .ym-equalize .ym-gr {
     float: right;
     margin-left: -5px;
     display: inline;
@@ -449,8 +449,8 @@
     margin-bottom: -32767px;
   }
 
-  .no-ie-padding gl,
-  .no-ie-padding gr {
+  .no-ie-padding .ym-gl,
+  .no-ie-padding .ym-gr {
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -465,34 +465,34 @@
   * @css-for   IE 5.x/Win, IE6
   * @valid     yes
   */
-  * html cbox-left,
-  * html cbox-right,
-  * html cbox {
+  * html .ym-cbox-left,
+  * html .ym-cbox-right,
+  * html .ym-cbox {
     word-wrap: break-word;
   }
 
   /* avoid growing widths */
-  * html gbox,
-  * html gbox-left,
-  * html gbox-right {
+  * html .ym-gbox,
+  * html .ym-gbox-left,
+  * html .ym-gbox-right {
     word-wrap: break-word;
     o\verflow: hidden;
   }
 }
 @media print {
   /**
-  * (en) Avoid unneeded page breaks of col3 content in print layout and containing floats.
-  * (de) Vermeiden von unnötigen Seitenumbrüchen beim Ausdruck der Spalte col3 und Einschluss von Floats.
+  * (en) Avoid unneeded page breaks of .ym-col3 content in print layout and containing floats.
+  * (de) Vermeiden von unn�tigen Seitenumbr�chen beim Ausdruck der Spalte .ym-col3 und Einschluss von Floats.
   *
   * @bugfix
   * @affected  IE7
   * @css-for   IE 5.x/Win, IE6, IE7
   * @valid     yes
   */
-  gbox,
-  gbox-left,
-  gbox-right,
-  col3 {
+  .ym-gbox,
+  .ym-gbox-left,
+  .ym-gbox-right,
+  .ym-col3 {
     height: 1%;
   }
 }

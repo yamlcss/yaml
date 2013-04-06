@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+
 		// remove all files from yaml folder
 		clean: ['yaml'],
 
@@ -56,8 +58,8 @@ module.exports = function(grunt) {
 				},
 				options: {
 					replacements: [{
-						pattern     : /.ym-/ig,
-						replacement : ''
+						pattern     : /\.ym-/ig,
+						replacement : '\.<%= pkg.yamlPrefix %>'
 					}]
 				}
 			}

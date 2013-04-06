@@ -1,8 +1,8 @@
-
+@charset "CP850";
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * (en) Uniform design of standard content elements
- * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
+ * (de) Einheitliche Standardformatierungen f�r die wichtigten Inhalts-Elemente
  */
 @media all {
   /*
@@ -13,14 +13,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr��en auf Standardgr��e (16 Pixel) zur�cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr��e von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -40,11 +40,11 @@
     font-size: 87.5%;
     color: #444444;
     /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
+    /* (de) Automatische Schriftvergr��erung in mobilen Webkit-Browsern vermeiden */
     -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | �berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -216,7 +216,7 @@
   }
 
   acronym, abbr {
-    border-bottom: 1px #aaaaaa dotted;
+    border-bottom: 1px #aaa dotted;
     font-variant: small-caps;
     letter-spacing: .07em;
     cursor: help;
@@ -264,7 +264,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f�r Tab Focus - �ndern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -292,7 +292,7 @@
 
   .bordered {
     margin-top: 1.5em;
-    border: 2px #eeeeee solid;
+    border: 2px #eee solid;
     border: 2px white solid;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -388,7 +388,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f�r die Tabellenbreite und Gestaltungsvorschriften f�r Tabellen
   *
   * @section content-tables
   */
@@ -396,8 +396,8 @@
     width: 100%;
     border-collapse: collapse;
     color: #444444;
-    border-top: 1px #cccccc solid;
-    border-bottom: 1px #cccccc solid;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
     margin: 1.35714em 0 0 0;
   }
   table.narrow {
@@ -408,21 +408,21 @@
     line-height: 1.42857;
   }
   table.bordertable {
-    border: 1px #cccccc solid;
+    border: 1px #ccc solid;
   }
   table.bordertable thead th {
     background: #e0e0e0;
-    border-right: 1px #cccccc solid;
-    border-bottom: 1px #cccccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
   }
   table.bordertable tbody th[scope="row"] {
     background: #f0f0f0;
   }
   table.bordertable tbody th {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #ccc;
   }
   table.bordertable tbody td {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #ccc;
   }
 
   table caption {
@@ -448,7 +448,7 @@
   thead th {
     text-align: left;
     color: #000;
-    border-bottom: 2px black solid;
+    border-bottom: 2px #000 solid;
   }
 
   tbody {
@@ -456,12 +456,12 @@
   }
   tbody th {
     text-align: left;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
     text-align: left;
   }
   tbody td {
     text-align: left;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   tbody tr:hover th,
   tbody tr:hover td {

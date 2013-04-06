@@ -38,7 +38,7 @@
   }
   .jquery_tabs ul.tabs-list li.current a, .jquery_tabs ul.tabs-list li.current a:focus, .jquery_tabs ul.tabs-list li.current a:hover, .jquery_tabs ul.tabs-list li.current a:active {
     background: #fff;
-    border: 1px #cccccc solid;
+    border: 1px #ccc solid;
     border-radius: 0.2em 0.2em 0 0;
     color: #000;
     border-bottom: 0 none;
@@ -46,7 +46,7 @@
     text-decoration: none;
   }
   .jquery_tabs .content {
-    border-top: 1px #cccccc solid;
+    border-top: 1px #ccc solid;
     clear: both;
     padding: 0;
     position: relative;
@@ -77,8 +77,8 @@
     position: relative;
   }
   * html .jquery_tabs .tab-content {
-    border-bottom: 1px white solid;
-    border-top: 1px white solid;
+    border-bottom: 1px #fff solid;
+    border-top: 1px #fff solid;
   }
   * html .jquery_tabs .content {
     z-index: -1;

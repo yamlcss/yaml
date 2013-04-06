@@ -1,4 +1,4 @@
-
+@charset "CP850";
 @media all {
   /**
   * @section browser normalisation
@@ -33,23 +33,23 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) skip links cause large horizontal scrollbars in RTL mode in several browsers
-  * (de) skip links erzeugen große horziontale Scrollbalken in verschiedenen Browserin im RTL-Modus
+  * (de) skip links erzeugen gro�e horziontale Scrollbalken in verschiedenen Browserin im RTL-Modus
   *
   * @workaround
   * @affected   Firefox, Safari, IE 5.x - IE7
   * @css-for    all
   * @valid      yes
   */
-  skiplinks {
+  .ym-skiplinks {
     left: 32768px !important;
   }
-  skiplinks skip:focus, skiplinks skip:active {
+  .ym-skiplinks .ym-skip:focus, .ym-skiplinks .ym-skip:active {
     left: -32768px !important;
   }
 
-  skip,
-  hideme,
-  print {
+  .ym-skip,
+  .ym-hideme,
+  .ym-print {
     left: 32768px !important;
   }
 
@@ -58,9 +58,9 @@
   * @section miscellaneous
   *
   * (en) CSS-class for ltr-content (left to right) within a rtl website
-  * (de) Eine CSS-Klasse für ltr-Inhalte (left to right) innerhalb einer rtl-Seite
+  * (de) Eine CSS-Klasse f�r ltr-Inhalte (left to right) innerhalb einer rtl-Seite
   */
-  text-ltr {
+  .ym-text-ltr {
     direction: ltr;
     text-align: left;
   }

@@ -1,6 +1,6 @@
 @media all {
   /* title */
-  vtitle {
+  .ym-vtitle {
     font-weight: bold;
     font-size: 100%;
     width: 90%;
@@ -9,13 +9,13 @@
     margin: 0;
     color: #444;
     background-color: #fff;
-    border-top: 2px #dddddd solid;
+    border-top: 2px #ddd solid;
   }
-  vtitle + ul {
-    border-top: 4px #888888 solid;
+  .ym-vtitle + ul {
+    border-top: 4px #888 solid;
   }
 
-  vlist {
+  .ym-vlist {
     margin: 0 0 1.5em 0;
     list-style-type: none;
     background: transparent;
@@ -26,19 +26,19 @@
     /* Level 3 */
     /* Level 4 */
   }
-  vlist ul {
+  .ym-vlist ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow: hidden;
-    border-top: 2px #dddddd solid;
-    border-bottom: 2px #dddddd solid;
+    border-top: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
   }
-  vlist ul ul {
+  .ym-vlist ul ul {
     border: 0 none;
   }
-  vlist li {
+  .ym-vlist li {
     float: left;
     /* LTR */
     width: 100%;
@@ -46,103 +46,103 @@
     padding: 0;
     background-color: #fff;
   }
-  vlist a,
-  vlist strong,
-  vlist span {
+  .ym-vlist a,
+  .ym-vlist strong,
+  .ym-vlist span {
     display: block;
     padding: 3px 0px 3px 10%;
     text-decoration: none;
-    border-bottom: 1px #dddddd solid;
+    border-bottom: 1px #ddd solid;
   }
-  vlist a,
-  vlist a:visited {
+  .ym-vlist a,
+  .ym-vlist a:visited {
     color: #444;
   }
-  vlist li span {
+  .ym-vlist li span {
     display: block;
     font-weight: bold;
-    border-bottom: 1px #dddddd solid;
+    border-bottom: 1px #ddd solid;
   }
-  vlist li.active {
+  .ym-vlist li.active {
     color: #fff;
     background-color: #444;
   }
-  vlist li.active strong {
+  .ym-vlist li.active strong {
     font-weight: bold;
   }
-  vlist li {
+  .ym-vlist li {
     /* LTR */
   }
-  vlist li a,
-  vlist li strong,
-  vlist li span {
+  .ym-vlist li a,
+  .ym-vlist li strong,
+  .ym-vlist li span {
     width: 90%;
     padding-left: 10%;
   }
-  vlist li a:focus,
-  vlist li a:hover,
-  vlist li a:active {
+  .ym-vlist li a:focus,
+  .ym-vlist li a:hover,
+  .ym-vlist li a:active {
     background-color: #888;
     color: #fff;
     outline: 0 none;
   }
-  vlist li ul li {
+  .ym-vlist li ul li {
     /* LTR */
   }
-  vlist li ul li a,
-  vlist li ul li strong,
-  vlist li ul li span {
+  .ym-vlist li ul li a,
+  .ym-vlist li ul li strong,
+  .ym-vlist li ul li span {
     width: 80%;
     padding-left: 20%;
   }
-  vlist li ul li a,
-  vlist li ul li a:visited {
+  .ym-vlist li ul li a,
+  .ym-vlist li ul li a:visited {
     background-color: #f8f8f8;
     color: #333;
   }
-  vlist li ul li a:focus,
-  vlist li ul li a:hover,
-  vlist li ul li a:active {
+  .ym-vlist li ul li a:focus,
+  .ym-vlist li ul li a:hover,
+  .ym-vlist li ul li a:active {
     background-color: #888;
     color: #fff;
   }
-  vlist li ul li ul li {
+  .ym-vlist li ul li ul li {
     /* LTR */
   }
-  vlist li ul li ul li a,
-  vlist li ul li ul li strong,
-  vlist li ul li ul li span {
+  .ym-vlist li ul li ul li a,
+  .ym-vlist li ul li ul li strong,
+  .ym-vlist li ul li ul li span {
     width: 70%;
     padding-left: 30%;
   }
-  vlist li ul li ul li a,
-  vlist li ul li ul li a:visited {
+  .ym-vlist li ul li ul li a,
+  .ym-vlist li ul li ul li a:visited {
     background-color: #f0f0f0;
     color: #222;
   }
-  vlist li ul li ul li a:focus,
-  vlist li ul li ul li a:hover,
-  vlist li ul li ul li a:active {
+  .ym-vlist li ul li ul li a:focus,
+  .ym-vlist li ul li ul li a:hover,
+  .ym-vlist li ul li ul li a:active {
     background-color: #888;
     color: #fff;
   }
-  vlist li ul li ul li ul li {
+  .ym-vlist li ul li ul li ul li {
     /* LTR */
   }
-  vlist li ul li ul li ul li a,
-  vlist li ul li ul li ul li strong,
-  vlist li ul li ul li ul li span {
+  .ym-vlist li ul li ul li ul li a,
+  .ym-vlist li ul li ul li ul li strong,
+  .ym-vlist li ul li ul li ul li span {
     width: 60%;
     padding-left: 40%;
   }
-  vlist li ul li ul li ul li a,
-  vlist li ul li ul li ul li a:visited {
+  .ym-vlist li ul li ul li ul li a,
+  .ym-vlist li ul li ul li ul li a:visited {
     background-color: #e8e8e8;
     color: #111;
   }
-  vlist li ul li ul li ul li a:focus,
-  vlist li ul li ul li ul li a:hover,
-  vlist li ul li ul li ul li a:active {
+  .ym-vlist li ul li ul li ul li a:focus,
+  .ym-vlist li ul li ul li ul li a:hover,
+  .ym-vlist li ul li ul li ul li a:active {
     background-color: #888;
     color: #fff;
   }
