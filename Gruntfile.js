@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 				options: {
 					replacements: [{
 						pattern     : /\.ym-/ig,
-						replacement : '\.<%= pkg.yamlPrefix %>'
+						replacement : '.<%= pkg.yamlPrefix %>'
 					}]
 				}
 			}
