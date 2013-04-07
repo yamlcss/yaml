@@ -40,6 +40,40 @@ module.exports = function(grunt) {
 			}
 		},
 
+		jshint: {
+			options: {
+				curly: true,
+				eqeqeq: true,
+				immed: true,
+				latedef: true,
+				newcap: true,
+				noarg: true,
+				sub: true,
+				undef: true,
+				unused: true,
+				boss: true,
+				eqnull: true,
+				browser: true,
+				globals: {
+					jQuery: true
+				}
+			},
+			gruntfile: {
+				src: 'Gruntfile.js',
+				options: {
+					globals: {
+						module: true
+					}
+				}
+			},
+			yaml: [
+				'yaml/core/**/*.js'
+			],
+			addons: [
+				'yaml/add-ons/**/*.js'
+			]
+		},
+
 		'string-replace': {
 			stripCharset: {
 				files: {
@@ -102,6 +136,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-string-replace');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
