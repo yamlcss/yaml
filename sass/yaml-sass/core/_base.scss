@@ -14,7 +14,8 @@
 // @link            http://www.yaml.de
 // @package         yaml
 
-@import "yaml-sass/yaml_globals";
+@import "yaml-sass/yaml_globals",
+			"yaml-sass/mixins/yaml_mixins_core";
 
 @media all {
 	@import "base-modules/normalization",
