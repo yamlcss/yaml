@@ -12,7 +12,6 @@
   .ym-form .ym-type-select select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 68%;
   }
@@ -20,14 +19,12 @@
   .ym-form .ym-type-text textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
     width: 68%;
   }
   .ym-form .ym-fbox-grid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
     display: table;
     width: 70%;
@@ -36,7 +33,6 @@
   .ym-columnar label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
 

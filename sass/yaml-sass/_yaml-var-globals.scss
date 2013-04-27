@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////////////
+//
+// YAML Core
+//
+////////////////////////////////////////////////////////////////////
+
+// Disable/Enable Framework Usage globally
+// ---------------------------------------
+$use-yaml				: true !default;
+
+// Disable/Enable Core Modules
+// ---------------------------------------
+$ym-base-normalization	: true !default;
+$ym-base-floathandling	: true !default;
+$ym-base-columns		: true !default;
+$ym-base-grids			: true !default;
+$ym-base-forms			: true !default;
+$ym-base-accessibility	: true !default;
+$ym-base-print			: true !default;
+
+@if $use-yaml == false {
+	$ym-base-normalization	: false;
+	$ym-base-floathandling	: false;
+	$ym-base-columns		: false;
+	$ym-base-grids			: false;
+	$ym-base-forms			: false;
+	$ym-base-accessibility	: false;
+	$ym-base-print			: false;
+}
+
+// Config: Columns Module
+// ---------------------------------------
+$ym-column-width		: 20% !default;
+$ym-cbox-padding		: 10px !default;
+
+// Config: Grids Module
+// ---------------------------------------
+$ym-rounding-tolerance	: -5px !default;
+$ym-gbox-padding		: 10px !default;

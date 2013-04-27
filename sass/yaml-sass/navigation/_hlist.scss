@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import "yaml-sass/_yaml_globals";
-@import "yaml-sass/mixins/yaml_mixins_core";
+@import "yaml-sass/_yaml-var-globals";
+@import "yaml-sass/mixins/yaml-mixins-core";
 
 @media all {
 	.ym-hlist {

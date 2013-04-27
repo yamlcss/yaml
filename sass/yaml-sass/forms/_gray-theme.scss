@@ -9,8 +9,8 @@
 // * @package				 yaml
 // */
 
-@import "yaml-sass/yaml_globals";
-@import "yaml-sass/mixins/yaml_mixins_core";
+@import "yaml-sass/yaml-var-globals";
+@import "yaml-sass/mixins/yaml-mixins-core";
 
 @media screen and (min-width: 0px){
 	/**

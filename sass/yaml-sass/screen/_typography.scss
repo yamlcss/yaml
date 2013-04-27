@@ -10,8 +10,8 @@
  // * @package         yaml
  // */
 
-@import "yaml-sass/yaml_globals",
-		"yaml-sass/mixins/yaml_mixins_core";
+@import "yaml-sass/yaml-var-typography",
+		"yaml-sass/mixins/yaml-mixins-core";
 
 @media all {
 
