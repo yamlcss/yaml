@@ -290,15 +290,14 @@
     line-height: 1.5;
     display: block;
   }
-  .ym-form .ym-type-check label {
+  .ym-form .ym-fbox-check label {
     display: inline;
   }
   .ym-form input,
   .ym-form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"],
+  .ym-form .ym-fbox-check input,
   .ym-form select,
   .ym-form label {
     cursor: pointer;
@@ -309,11 +308,17 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox:before {
+  .ym-form .ym-fbox-text:before,
+  .ym-form .ym-fbox-select:before,
+  .ym-form .ym-fbox-check:before,
+  .ym-form .ym-fbox-button:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox:after {
+  .ym-form .ym-fbox-text:after,
+  .ym-form .ym-fbox-select:after,
+  .ym-form .ym-fbox-check:after,
+  .ym-form .ym-fbox-button:after {
     clear: both;
     content: ".";
     display: block;
@@ -321,42 +326,49 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select,
+  .ym-form .ym-fbox-check input:focus,
+  .ym-form .ym-fbox-check input:hover,
+  .ym-form .ym-fbox-check input:active {
+    border: 0 none;
+  }
   .ym-form input,
-  .ym-form textarea {
+  .ym-form textarea,
+  .ym-form select {
     display: block;
     position: relative;
-    width: 65%;
-    padding-left: 1%;
-    padding-right: 1%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 68%;
   }
-  .ym-form .ym-type-check input {
+  .ym-form .ym-fbox-grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 70%;
+  }
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 100%;
+  }
+  .ym-form label {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ym-form .ym-fbox-check input {
     display: inline;
     width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
   }
-  .ym-form .ym-type-button input {
+  .ym-form .ym-fbox-button input {
     display: inline;
     overflow: visible;
     width: auto;
-  }
-  .ym-form .ym-type-check input:focus,
-  .ym-form .ym-type-check input:hover,
-  .ym-form .ym-type-check input:active {
-    border: 0 none;
-  }
-  .ym-form .ym-fbox-grid {
-    overflow: hidden;
-    width: 70%;
-  }
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
-    width: 96%;
-    margin-left: 0;
-  }
-  .ym-form .ym-fbox-grid .ym-type-check input {
-    width: auto;
-    margin-left: 0;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -410,79 +422,73 @@
     width: 59.8% !important;
   }
 
-  .ym-full .ym-type-select select,
-  .ym-full .ym-type-text input,
-  .ym-full .ym-type-text textarea {
-    width: 94%;
-    margin-right: -3px;
+  .ym-full input,
+  .ym-full textarea,
+  .ym-full select {
+    width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-columnar .ym-label,
-  .ym-columnar .ym-type-text label,
-  .ym-columnar .ym-type-select label {
+  .ym-columnar input,
+  .ym-columnar textarea,
+  .ym-columnar select {
+    float: left;
+    margin-right: -3px;
+  }
+  .ym-columnar label,
+  .ym-columnar .ym-label {
     display: inline;
     float: left;
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-type-select select,
-  .ym-columnar .ym-type-text input,
-  .ym-columnar .ym-type-text textarea {
-    float: left;
-    margin-right: -3px;
-  }
-  .ym-columnar .ym-type-check {
-    position: relative;
-  }
-  .ym-columnar .ym-type-check .ym-label {
-    line-height: 1.0;
-  }
-  .ym-columnar .ym-type-check input,
-  .ym-columnar .ym-error .ym-message {
-    margin-left: 30%;
-  }
+  .ym-columnar .ym-fbox-wrap,
   .ym-columnar .ym-fbox-grid {
     margin-left: 30%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-text label,
-  .ym-columnar .ym-fbox-grid .ym-type-select label {
-    display: block;
+  .ym-columnar .ym-fbox-wrap label,
+  .ym-columnar .ym-fbox-grid label {
     float: none;
     width: auto;
     z-index: 1;
     margin-left: 0;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-check label,
-  .ym-columnar .ym-fbox-grid .ym-type-check input {
-    margin-left: 0;
+  .ym-columnar .ym-fbox-check {
+    position: relative;
   }
-  .ym-columnar .ym-fbox-wrap {
+  .ym-columnar .ym-fbox-check label,
+  .ym-columnar .ym-fbox-check .ym-label {
+    padding-top: 0;
+  }
+  .ym-columnar .ym-fbox-check .ym-fbox-wrap input,
+  .ym-columnar .ym-fbox-check .ym-fbox-grid input {
+    margin-left: 0;
+    position: relative;
+    top: 3px;
+  }
+  .ym-columnar .ym-fbox-button input {
+    float: none;
+    margin-right: 1em;
+  }
+  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
-  }
-  .ym-columnar .ym-fbox-wrap label,
-  .ym-columnar .ym-fbox-wrap input {
-    margin-left: 0;
   }
 
   .ym-fbox-grid + .ym-fbox-grid {
     margin-top: 0.5em;
   }
 
-  .ym-columnar fieldset .ym-type-button,
-  fieldset.ym-columnar .ym-type-button {
+  .ym-fbox-check .ym-fbox-grid input {
+    margin-left: 0;
+  }
+
+  .ym-columnar fieldset .ym-fbox-button,
+  fieldset.ym-columnar .ym-fbox-button {
     padding-left: 30%;
-  }
-
-  .ym-type-select select {
-    width: 67%;
-  }
-
-  .ym-full .ym-type-select select {
-    width: 96%;
   }
 
   /**

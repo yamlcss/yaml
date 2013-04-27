@@ -235,24 +235,35 @@
 	.ym-form div * { zoom:1; }
 
 	.ym-form {
-
+		// default form element width
 		input,
-		select,
 		textarea {
+			width:65%;
+			padding-left: 1% !important;
+			padding-right: 1% !important;
+		}
+		select {
+			width:67%;
 			padding-left: 1% !important;
 			padding-right: 1% !important;
 		}
 
-		// no display:table in IE6;
+		// default form wrapper width
 		.ym-fbox-grid {
 			display: block;
 			overflow: hidden;
 			margin-right: -5px;
 
-			.ym-type-text input,
-			.ym-type-text textarea,
-			.ym-type-select select {
-				width: 96% !important;
+			input,
+			textarea,
+			select {
+				width: 96%;
+			}
+		}
+
+		.ym-fbox-check {
+			input {
+				width: auto;
 			}
 		}
 
@@ -263,26 +274,43 @@
 		.ym-g62 { display:inline; width:59% !important; }
 
 		// adjusted grid widths for box-modell: content-box
-		input, textarea, select {
-			&.ym-g20 { display:inline; width:16% !important; }
-			&.ym-g40 { display:inline; width:36% !important; }
-			&.ym-g60 { display:inline; width:56% !important; }
-			&.ym-g80 { display:inline; width:76% !important; }
-			&.ym-g25 { display:inline; width:21% !important; }
-			&.ym-g33 { display:inline; width:29.333% !important; }
-			&.ym-g50 { display:inline; width:46% !important; }
-			&.ym-g66 { display:inline; width:62.666% !important; }
-			&.ym-g75 { display:inline; width:71% !important; }
-			&.ym-g38 { display:inline; width:34.2% !important; }
-			&.ym-g62 { display:inline; width:57.8% !important; }
+		.ym-fbox-text,
+		.ym-fbox-select {
+			input, textarea, select {
+				&.ym-g20 { display:inline; width:16% !important; }
+				&.ym-g40 { display:inline; width:36% !important; }
+				&.ym-g60 { display:inline; width:56% !important; }
+				&.ym-g80 { display:inline; width:76% !important; }
+				&.ym-g25 { display:inline; width:21% !important; }
+				&.ym-g33 { display:inline; width:29.333% !important; }
+				&.ym-g50 { display:inline; width:46% !important; }
+				&.ym-g66 { display:inline; width:62.666% !important; }
+				&.ym-g75 { display:inline; width:71% !important; }
+				&.ym-g38 { display:inline; width:34.2% !important; }
+				&.ym-g62 { display:inline; width:57.8% !important; }
+			}
+		}
+	}
+
+	.ym-full {
+		input,
+		textarea {
+			width:94%;
+			margin-right: -3px;
+		}
+
+		select {
+			width:96%;
+			margin-right: -3px;
 		}
 	}
 
 	// avoid a margin related bug in IE7 ...
 	.ym-columnar {
 		.ym-fbox-grid {
-			margin-left: 0;
 			float: right;
+			margin-left: -3px !important;
+			margin-right: 0 !important;
 		}
 	}
 

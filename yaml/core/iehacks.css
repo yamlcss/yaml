@@ -249,8 +249,13 @@
   }
 
   .ym-form input,
-  .ym-form select,
   .ym-form textarea {
+    width: 65%;
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+  }
+  .ym-form select {
+    width: 67%;
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
@@ -259,10 +264,13 @@
     overflow: hidden;
     margin-right: -5px;
   }
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
-    width: 96% !important;
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 96%;
+  }
+  .ym-form .ym-fbox-check input {
+    width: auto;
   }
   .ym-form .ym-g33 {
     display: inline;
@@ -280,54 +288,98 @@
     display: inline;
     width: 59% !important;
   }
-  .ym-form input.ym-g20, .ym-form textarea.ym-g20, .ym-form select.ym-g20 {
+  .ym-form .ym-fbox-text input.ym-g20, .ym-form .ym-fbox-text textarea.ym-g20, .ym-form .ym-fbox-text select.ym-g20,
+  .ym-form .ym-fbox-select input.ym-g20,
+  .ym-form .ym-fbox-select textarea.ym-g20,
+  .ym-form .ym-fbox-select select.ym-g20 {
     display: inline;
     width: 16% !important;
   }
-  .ym-form input.ym-g40, .ym-form textarea.ym-g40, .ym-form select.ym-g40 {
+  .ym-form .ym-fbox-text input.ym-g40, .ym-form .ym-fbox-text textarea.ym-g40, .ym-form .ym-fbox-text select.ym-g40,
+  .ym-form .ym-fbox-select input.ym-g40,
+  .ym-form .ym-fbox-select textarea.ym-g40,
+  .ym-form .ym-fbox-select select.ym-g40 {
     display: inline;
     width: 36% !important;
   }
-  .ym-form input.ym-g60, .ym-form textarea.ym-g60, .ym-form select.ym-g60 {
+  .ym-form .ym-fbox-text input.ym-g60, .ym-form .ym-fbox-text textarea.ym-g60, .ym-form .ym-fbox-text select.ym-g60,
+  .ym-form .ym-fbox-select input.ym-g60,
+  .ym-form .ym-fbox-select textarea.ym-g60,
+  .ym-form .ym-fbox-select select.ym-g60 {
     display: inline;
     width: 56% !important;
   }
-  .ym-form input.ym-g80, .ym-form textarea.ym-g80, .ym-form select.ym-g80 {
+  .ym-form .ym-fbox-text input.ym-g80, .ym-form .ym-fbox-text textarea.ym-g80, .ym-form .ym-fbox-text select.ym-g80,
+  .ym-form .ym-fbox-select input.ym-g80,
+  .ym-form .ym-fbox-select textarea.ym-g80,
+  .ym-form .ym-fbox-select select.ym-g80 {
     display: inline;
     width: 76% !important;
   }
-  .ym-form input.ym-g25, .ym-form textarea.ym-g25, .ym-form select.ym-g25 {
+  .ym-form .ym-fbox-text input.ym-g25, .ym-form .ym-fbox-text textarea.ym-g25, .ym-form .ym-fbox-text select.ym-g25,
+  .ym-form .ym-fbox-select input.ym-g25,
+  .ym-form .ym-fbox-select textarea.ym-g25,
+  .ym-form .ym-fbox-select select.ym-g25 {
     display: inline;
     width: 21% !important;
   }
-  .ym-form input.ym-g33, .ym-form textarea.ym-g33, .ym-form select.ym-g33 {
+  .ym-form .ym-fbox-text input.ym-g33, .ym-form .ym-fbox-text textarea.ym-g33, .ym-form .ym-fbox-text select.ym-g33,
+  .ym-form .ym-fbox-select input.ym-g33,
+  .ym-form .ym-fbox-select textarea.ym-g33,
+  .ym-form .ym-fbox-select select.ym-g33 {
     display: inline;
     width: 29.333% !important;
   }
-  .ym-form input.ym-g50, .ym-form textarea.ym-g50, .ym-form select.ym-g50 {
+  .ym-form .ym-fbox-text input.ym-g50, .ym-form .ym-fbox-text textarea.ym-g50, .ym-form .ym-fbox-text select.ym-g50,
+  .ym-form .ym-fbox-select input.ym-g50,
+  .ym-form .ym-fbox-select textarea.ym-g50,
+  .ym-form .ym-fbox-select select.ym-g50 {
     display: inline;
     width: 46% !important;
   }
-  .ym-form input.ym-g66, .ym-form textarea.ym-g66, .ym-form select.ym-g66 {
+  .ym-form .ym-fbox-text input.ym-g66, .ym-form .ym-fbox-text textarea.ym-g66, .ym-form .ym-fbox-text select.ym-g66,
+  .ym-form .ym-fbox-select input.ym-g66,
+  .ym-form .ym-fbox-select textarea.ym-g66,
+  .ym-form .ym-fbox-select select.ym-g66 {
     display: inline;
     width: 62.666% !important;
   }
-  .ym-form input.ym-g75, .ym-form textarea.ym-g75, .ym-form select.ym-g75 {
+  .ym-form .ym-fbox-text input.ym-g75, .ym-form .ym-fbox-text textarea.ym-g75, .ym-form .ym-fbox-text select.ym-g75,
+  .ym-form .ym-fbox-select input.ym-g75,
+  .ym-form .ym-fbox-select textarea.ym-g75,
+  .ym-form .ym-fbox-select select.ym-g75 {
     display: inline;
     width: 71% !important;
   }
-  .ym-form input.ym-g38, .ym-form textarea.ym-g38, .ym-form select.ym-g38 {
+  .ym-form .ym-fbox-text input.ym-g38, .ym-form .ym-fbox-text textarea.ym-g38, .ym-form .ym-fbox-text select.ym-g38,
+  .ym-form .ym-fbox-select input.ym-g38,
+  .ym-form .ym-fbox-select textarea.ym-g38,
+  .ym-form .ym-fbox-select select.ym-g38 {
     display: inline;
     width: 34.2% !important;
   }
-  .ym-form input.ym-g62, .ym-form textarea.ym-g62, .ym-form select.ym-g62 {
+  .ym-form .ym-fbox-text input.ym-g62, .ym-form .ym-fbox-text textarea.ym-g62, .ym-form .ym-fbox-text select.ym-g62,
+  .ym-form .ym-fbox-select input.ym-g62,
+  .ym-form .ym-fbox-select textarea.ym-g62,
+  .ym-form .ym-fbox-select select.ym-g62 {
     display: inline;
     width: 57.8% !important;
   }
 
+  .ym-full input,
+  .ym-full textarea {
+    width: 94%;
+    margin-right: -3px;
+  }
+  .ym-full select {
+    width: 96%;
+    margin-right: -3px;
+  }
+
   .ym-columnar .ym-fbox-grid {
-    margin-left: 0;
     float: right;
+    margin-left: -3px !important;
+    margin-right: 0 !important;
   }
 
   /*------------------------------------------------------------------------------------------------------*/

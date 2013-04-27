@@ -12,61 +12,6 @@
 @import "yaml-sass/yaml-var-globals";
 @import "yaml-sass/mixins/yaml-mixins-core";
 
-@media screen and (min-width: 0px){
-	/**
-	* @section general width settings for formular elements in modern browsers
-	*          switching to CSS3 box modell "border-box" for perfect flexible forms
-	*
-	* Styling for: <labels>, <input>, <textarea> and <select>
-	*
-	*/
-
-	.ym-form {
-		.ym-type-select select {
-			@include ym-box-sizing(border-box);
-			width: 68%;
-		}
-		.ym-type-text {
-			input,
-			textarea {
-				@include ym-box-sizing(border-box);
-				width:68%;
-			}
-		}
-
-		.ym-fbox-grid {
-			@include ym-box-sizing(border-box);
-			display: table;
-			width: 70%;
-		}
-	}
-
-	.ym-columnar label {
-		@include ym-box-sizing(border-box);
-	}
-
-	.ym-full {
-		.ym-type-text input,
-		.ym-type-text textarea,
-		.ym-type-select select {
-				width:98%;
-		}
-		.ym-fbox-grid {
-			width: 100%;
-		}
-	}
-
-	.ym-form {
-		.ym-fbox-grid {
-			.ym-type-text input,
-			.ym-type-text textarea,
-			.ym-type-select select {
-				width: 100%;
-			}
-		}
-	}
-}
-
 @media screen, projection {
 	.ym-form {
 		background:#f4f4f4;
@@ -74,12 +19,14 @@
 		margin: 1.5em 0 0 0;
 		padding: 0;
 		@include ym-box-shadow(0,0,4px,#ddd);
+
 		fieldset {
 			position:static;
 			background:transparent;
 			margin: 0.75em 0 0.75em 0;
 			padding: 0 0.5em;
 		}
+
 		legend {
 			background:transparent;
 			color:#000;
@@ -88,37 +35,43 @@
 			font-weight:bold;
 			padding:0 0.5em;
 		}
-		label {
-			color: #666;
-			line-height: 1.5;
-		}
+
+		label,
 		.ym-label {
 			color: #666;
+			color: #666;
+			line-height: 1.5;
 			padding-top: 0.25em;
 		}
-
-		.ym-fbox {
+		.ym-fbox-text,
+		.ym-fbox-select,
+		.ym-fbox-check,
+		.ym-fbox-button {
 			padding: 0.3em 1em;
 			margin-bottom: 0.5em;
 		}
-		.ym-type-button {
+
+		.ym-fbox-button {
 			background: #ececec;
 			border-top: 1px #e0e0e0 solid;
 			padding:0 1em 1.5em 1em;
 			margin: 0;
 			text-align: left;
 		}
+
 		.ym-gbox {
 			padding: 0 0.5em;
 			margin-right: 0;
 		}
+
 		.ym-fbox-heading {
 			font-size: 1em;
 			font-size: 100%;
 			color: #000;
 			margin: 1em 0 1em 1em;
 		}
-		.ym-form .ym-fbox-check:focus + label {
+
+		.ym-fbox-check:focus + label {
 			color:#000;
 		}
 	}
@@ -134,12 +87,13 @@
 	/* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
 
 	.ym-form {
-		.ym-type-text input,
-		.ym-type-text textarea {
+		.ym-fbox-text input,
+		.ym-fbox-text textarea {
 			line-height: 1em;
 			padding: 4px 0.3em;
 		}
-		.ym-type-select select {
+		.ym-fbox-text select,
+		.ym-fbox-select select {
 			line-height: 1em;
 			padding: 3px 2px 3px 1px;
 		}
@@ -151,9 +105,10 @@
 			font-style:normal;
 			font-weight:bold;
 		}
-		.ym-type-text input,
-		.ym-type-text textarea,
-		.ym-type-select select {
+		.ym-fbox-text input,
+		.ym-fbox-text textarea,
+		.ym-fbox-text select,
+		.ym-fbox-select select {
 			border:1px solid #ddd;
 		}
 		.ym-message {
@@ -187,9 +142,9 @@
 				margin-top: 0;
 			}
 		}
-		.ym-type-text input:focus,  .ym-type-select select:focus, .ym-type-text textarea:focus,
-		.ym-type-text input:hover,  .ym-type-select select:hover, .ym-type-text textarea:hover,
-		.ym-type-text input:active, .ym-type-select select:active, .ym-type-text textarea:active {
+		input:focus,  select:focus, textarea:focus,
+		input:hover,  select:hover, textarea:hover,
+		input:active, select:active, textarea:active {
 			border:1px #888 solid;
 			background:#fff;
 		}

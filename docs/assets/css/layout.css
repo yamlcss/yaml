@@ -293,15 +293,14 @@
     line-height: 1.5;
     display: block;
   }
-  .ym-form .ym-type-check label {
+  .ym-form .ym-fbox-check label {
     display: inline;
   }
   .ym-form input,
   .ym-form textarea {
     cursor: text;
   }
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"],
+  .ym-form .ym-fbox-check input,
   .ym-form select,
   .ym-form label {
     cursor: pointer;
@@ -312,11 +311,17 @@
   .ym-form input[type=hidden] {
     display: none !important;
   }
-  .ym-form .ym-fbox:before {
+  .ym-form .ym-fbox-text:before,
+  .ym-form .ym-fbox-select:before,
+  .ym-form .ym-fbox-check:before,
+  .ym-form .ym-fbox-button:before {
     content: "";
     display: table;
   }
-  .ym-form .ym-fbox:after {
+  .ym-form .ym-fbox-text:after,
+  .ym-form .ym-fbox-select:after,
+  .ym-form .ym-fbox-check:after,
+  .ym-form .ym-fbox-button:after {
     clear: both;
     content: ".";
     display: block;
@@ -324,42 +329,49 @@
     height: 0;
     visibility: hidden;
   }
-  .ym-form select,
+  .ym-form .ym-fbox-check input:focus,
+  .ym-form .ym-fbox-check input:hover,
+  .ym-form .ym-fbox-check input:active {
+    border: 0 none;
+  }
   .ym-form input,
-  .ym-form textarea {
+  .ym-form textarea,
+  .ym-form select {
     display: block;
     position: relative;
-    width: 65%;
-    padding-left: 1%;
-    padding-right: 1%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 68%;
   }
-  .ym-form .ym-type-check input {
+  .ym-form .ym-fbox-grid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    table-layout: fixed;
+    width: 70%;
+  }
+  .ym-form .ym-fbox-grid input,
+  .ym-form .ym-fbox-grid textarea,
+  .ym-form .ym-fbox-grid select {
+    width: 100%;
+  }
+  .ym-form label {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ym-form .ym-fbox-check input {
     display: inline;
     width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
   }
-  .ym-form .ym-type-button input {
+  .ym-form .ym-fbox-button input {
     display: inline;
     overflow: visible;
     width: auto;
-  }
-  .ym-form .ym-type-check input:focus,
-  .ym-form .ym-type-check input:hover,
-  .ym-form .ym-type-check input:active {
-    border: 0 none;
-  }
-  .ym-form .ym-fbox-grid {
-    overflow: hidden;
-    width: 70%;
-  }
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
-    width: 96%;
-    margin-left: 0;
-  }
-  .ym-form .ym-fbox-grid .ym-type-check input {
-    width: auto;
-    margin-left: 0;
   }
   .ym-form .ym-g20,
   .ym-form .ym-g40,
@@ -413,79 +425,73 @@
     width: 59.8% !important;
   }
 
-  .ym-full .ym-type-select select,
-  .ym-full .ym-type-text input,
-  .ym-full .ym-type-text textarea {
-    width: 94%;
-    margin-right: -3px;
+  .ym-full input,
+  .ym-full textarea,
+  .ym-full select {
+    width: 98%;
   }
   .ym-full .ym-fbox-grid {
     width: 100%;
   }
 
-  .ym-columnar .ym-label,
-  .ym-columnar .ym-type-text label,
-  .ym-columnar .ym-type-select label {
+  .ym-columnar input,
+  .ym-columnar textarea,
+  .ym-columnar select {
+    float: left;
+    margin-right: -3px;
+  }
+  .ym-columnar label,
+  .ym-columnar .ym-label {
     display: inline;
     float: left;
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-type-select select,
-  .ym-columnar .ym-type-text input,
-  .ym-columnar .ym-type-text textarea {
-    float: left;
-    margin-right: -3px;
-  }
-  .ym-columnar .ym-type-check {
-    position: relative;
-  }
-  .ym-columnar .ym-type-check .ym-label {
-    line-height: 1.0;
-  }
-  .ym-columnar .ym-type-check input,
-  .ym-columnar .ym-error .ym-message {
-    margin-left: 30%;
-  }
+  .ym-columnar .ym-fbox-wrap,
   .ym-columnar .ym-fbox-grid {
     margin-left: 30%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-text label,
-  .ym-columnar .ym-fbox-grid .ym-type-select label {
-    display: block;
+  .ym-columnar .ym-fbox-wrap label,
+  .ym-columnar .ym-fbox-grid label {
     float: none;
     width: auto;
     z-index: 1;
     margin-left: 0;
   }
-  .ym-columnar .ym-fbox-grid .ym-type-check label,
-  .ym-columnar .ym-fbox-grid .ym-type-check input {
-    margin-left: 0;
+  .ym-columnar .ym-fbox-check {
+    position: relative;
   }
-  .ym-columnar .ym-fbox-wrap {
+  .ym-columnar .ym-fbox-check label,
+  .ym-columnar .ym-fbox-check .ym-label {
+    padding-top: 0;
+  }
+  .ym-columnar .ym-fbox-check .ym-fbox-wrap input,
+  .ym-columnar .ym-fbox-check .ym-fbox-grid input {
+    margin-left: 0;
+    position: relative;
+    top: 3px;
+  }
+  .ym-columnar .ym-fbox-button input {
+    float: none;
+    margin-right: 1em;
+  }
+  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-error .ym-message {
     margin-left: 30%;
-  }
-  .ym-columnar .ym-fbox-wrap label,
-  .ym-columnar .ym-fbox-wrap input {
-    margin-left: 0;
   }
 
   .ym-fbox-grid + .ym-fbox-grid {
     margin-top: 0.5em;
   }
 
-  .ym-columnar fieldset .ym-type-button,
-  fieldset.ym-columnar .ym-type-button {
+  .ym-fbox-check .ym-fbox-grid input {
+    margin-left: 0;
+  }
+
+  .ym-columnar fieldset .ym-fbox-button,
+  fieldset.ym-columnar .ym-fbox-button {
     padding-left: 30%;
-  }
-
-  .ym-type-select select {
-    width: 67%;
-  }
-
-  .ym-full .ym-type-select select {
-    width: 96%;
   }
 
   /**
@@ -784,56 +790,6 @@
 /**
  * YAML form theme: "gray-theme"
  */
-@media screen and (min-width: 0px) {
-  /**
-  * @section general width settings for formular elements in modern browsers
-  *          switching to CSS3 box modell "border-box" for perfect flexible forms
-  *
-  * Styling for: <labels>, <input>, <textarea> and <select>
-  *
-  */
-  .ym-form .ym-type-select select {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 68%;
-  }
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 68%;
-  }
-  .ym-form .ym-fbox-grid {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: table;
-    width: 70%;
-  }
-
-  .ym-columnar label {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .ym-full .ym-type-text input,
-  .ym-full .ym-type-text textarea,
-  .ym-full .ym-type-select select {
-    width: 98%;
-  }
-  .ym-full .ym-fbox-grid {
-    width: 100%;
-  }
-
-  .ym-form .ym-fbox-grid .ym-type-text input,
-  .ym-form .ym-fbox-grid .ym-type-text textarea,
-  .ym-form .ym-fbox-grid .ym-type-select select {
-    width: 100%;
-  }
-}
 @media screen, projection {
   .ym-form {
     background: #f4f4f4;
@@ -857,19 +813,21 @@
     font-weight: bold;
     padding: 0 0.5em;
   }
-  .ym-form label {
-    color: #666;
-    line-height: 1.5;
-  }
+  .ym-form label,
   .ym-form .ym-label {
     color: #666;
+    color: #666;
+    line-height: 1.5;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox {
+  .ym-form .ym-fbox-text,
+  .ym-form .ym-fbox-select,
+  .ym-form .ym-fbox-check,
+  .ym-form .ym-fbox-button {
     padding: 0.3em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-type-button {
+  .ym-form .ym-fbox-button {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
@@ -886,7 +844,7 @@
     color: #000;
     margin: 1em 0 1em 1em;
   }
-  .ym-form .ym-form .ym-fbox-check:focus + label {
+  .ym-form .ym-fbox-check:focus + label {
     color: #000;
   }
 
@@ -898,12 +856,13 @@
   */
   /* styling standard form elements with 'almost' equal flexible width */
   /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea {
+  .ym-form .ym-fbox-text input,
+  .ym-form .ym-fbox-text textarea {
     line-height: 1em;
     padding: 4px 0.3em;
   }
-  .ym-form .ym-type-select select {
+  .ym-form .ym-fbox-text select,
+  .ym-form .ym-fbox-select select {
     line-height: 1em;
     padding: 3px 2px 3px 1px;
   }
@@ -916,9 +875,10 @@
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-type-text input,
-  .ym-form .ym-type-text textarea,
-  .ym-form .ym-type-select select {
+  .ym-form .ym-fbox-text input,
+  .ym-form .ym-fbox-text textarea,
+  .ym-form .ym-fbox-text select,
+  .ym-form .ym-fbox-select select {
     border: 1px solid #ddd;
   }
   .ym-form .ym-message {
@@ -952,9 +912,9 @@
     font-weight: bold;
     margin-top: 0;
   }
-  .ym-form .ym-type-text input:focus, .ym-form .ym-type-select select:focus, .ym-form .ym-type-text textarea:focus,
-  .ym-form .ym-type-text input:hover, .ym-form .ym-type-select select:hover, .ym-form .ym-type-text textarea:hover,
-  .ym-form .ym-type-text input:active, .ym-form .ym-type-select select:active, .ym-form .ym-type-text textarea:active {
+  .ym-form input:focus, .ym-form select:focus, .ym-form textarea:focus,
+  .ym-form input:hover, .ym-form select:hover, .ym-form textarea:hover,
+  .ym-form input:active, .ym-form select:active, .ym-form textarea:active {
     border: 1px #888 solid;
     background: #fff;
   }

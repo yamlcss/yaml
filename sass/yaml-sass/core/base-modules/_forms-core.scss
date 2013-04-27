@@ -31,35 +31,44 @@
 			display:block; //important for Safari
 		}
 
-		.ym-type-check label {
+		.ym-fbox-check label {
 			display:inline;
 		}
 
 		input,
 		textarea { cursor:text; }
 
-		input[type="checkbox"],
-		input[type="radio"],
+		.ym-fbox-check input,
 		select,
 		label {
 			cursor:pointer;
 		}
 
 		// small adjustments for Internet Explorer - all versions
-		textarea { overflow: auto; }
+		textarea {
+			overflow: auto;
+		}
 
 		// Hiding of hidden fields (otherwise ugly spaces in Firefox)
 		// Versteckte Felder wirklich verstecken (sonst ggf. häßliche Lücken im Firefox)
-		input[type=hidden] { display:none !important; }
+		input[type=hidden] {
+			display:none !important;
+		}
 
 		// styling containing DIV elements
 		// Gestaltung der kapselnden DIV-Elemente
-		.ym-fbox:before {
+		.ym-fbox-text:before,
+		.ym-fbox-select:before,
+		.ym-fbox-check:before,
+		.ym-fbox-button:before {
 			content:"";
 			display:table;
 		}
 
-		.ym-fbox:after {
+		.ym-fbox-text:after,
+		.ym-fbox-select:after,
+		.ym-fbox-check:after,
+		.ym-fbox-button:after {
 			clear:both;
 			content:".";
 			display:block;
@@ -68,54 +77,60 @@
 			visibility:hidden;
 		}
 
-		// styling standard form elements with 'almost' equal flexible width
-		// Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite
-		select,
-		input,
-		textarea {
-			display:block;
-			position:relative;
-			width:65%;
-			padding-left: 1%;
-			padding-right: 1%;
-		}
-
-		.ym-type-check input {
-			display: inline;
-			width: auto;
-		}
-
-		// Styling of buttons
-		// Gestaltung von Buttons
-		.ym-type-button input {
-			display: inline;
-			overflow:visible;  // Fixes IE7 auto-padding bug
-			width:auto;
-		}
-
 		// avoid jumping checkboxes & radiobuttons in IE8
-		.ym-type-check input:focus,
-		.ym-type-check input:hover,
-		.ym-type-check input:active {
+		.ym-fbox-check input:focus,
+		.ym-fbox-check input:hover,
+		.ym-fbox-check input:active {
 			border:0 none;
 		}
 
+		// styling standard form elements with 'almost' equal flexible width
+		// Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite
 
-		// micro-grid for form elements
-		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+		// default form element width
+		input,
+		textarea,
+		select {
+			display:block;
+			position:relative;
+			@include ym-box-sizing(border-box);
+			width:68%;
+		}
+
+		// default form wrapper width
 		.ym-fbox-grid {
-			overflow:hidden;
+			@include ym-box-sizing(border-box);
+			display: table;
+			table-layout: fixed;
 			width: 70%;
 
-			.ym-type-text input,
-			.ym-type-text textarea,
-			.ym-type-select select {
-				width: 96%;
-				margin-left: 0;
+			input,
+			textarea,
+			select {
+				width: 100%;
 			}
-			.ym-type-check input {
-				width:auto;
+		}
+
+		label {
+			@include ym-box-sizing(border-box);
+		}
+
+		// overrule width settings for inline form elements ...
+		.ym-fbox-check {
+			input {
+				display: inline;
+				width: auto;
 				margin-left: 0;
+				margin-right: 0.5ex;
+			}
+		}
+
+		// styling buttons
+		.ym-fbox-button {
+			input {
+				display: inline;
+				overflow:visible;  // Fixes IE7 auto-padding bug
+				width:auto;
 			}
 		}
 
@@ -131,9 +146,7 @@
 		.ym-g75,
 		.ym-g38,
 		.ym-g62 {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
+			@include ym-box-sizing(border-box);
 			float: left;
 			margin-left: 0 !important;
 			margin-right: 2% !important;
@@ -152,16 +165,12 @@
 		.ym-g62 { width:59.8% !important; }
 	}
 
-	// Indent Checkbox fields to match label-width
-	// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
 	.ym-full {
-		.ym-type-select select,
-		.ym-type-text input,
-		.ym-type-text textarea {
-			width:94%;
-			margin-right: -3px;
+		input,
+		textarea,
+		select {
+			width:98%;
 		}
-
 		.ym-fbox-grid {
 			width: 100%;
 		}
@@ -185,62 +194,65 @@
 	.ym-columnar {
 		// Columnar display
 		// Spalten-Darstellung
-		.ym-label,
-		.ym-type-text label,
-		.ym-type-select label {
+
+		input,
+		textarea,
+		select {
+			float:left;
+			margin-right: -3px;
+		}
+
+		label,
+		.ym-label {
 			display:inline;
 			float:left;
 			width:30%; // Can be fixed width too | Kann auch eine fixe Angabe sein
 			z-index: 1;
 		}
 
-		.ym-type-select select,
-		.ym-type-text input,
-		.ym-type-text textarea {
-			float:left;
-			margin-right: -3px;
-		}
-
-		.ym-type-check {
-			position:relative;
-			.ym-label {
-				line-height: 1.0;
-			}
-		}
-
-		// Indent Checkbox fields to match label-width
-		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
-		.ym-type-check input,
-		.ym-error .ym-message {
-			margin-left:30%;
-		}
-
+		.ym-fbox-wrap,
 		.ym-fbox-grid {
 			margin-left:30%;
 			margin-right: -3px;
 
-			.ym-type-text label,
-			.ym-type-select label {
-				display:block;
+			label {
 				float:none;
 				width:auto;
 				z-index: 1;
 				margin-left: 0;
 			}
+		}
 
-			.ym-type-check label,
-			.ym-type-check input {
-				margin-left: 0;
+		.ym-fbox-check {
+			position:relative;
+
+			label,
+			.ym-label {
+				padding-top: 0;
+			}
+
+			.ym-fbox-wrap,
+			.ym-fbox-grid {
+				input {
+					margin-left: 0;
+					position:relative;
+					top: 3px;
+				}
 			}
 		}
 
-		.ym-fbox-wrap {
-			margin-left: 30%;
-
-			label,
+		.ym-fbox-button {
 			input {
-				margin-left: 0;
+				float:none;
+				margin-right: 1em;
 			}
+		}
+
+		// Indent Checkbox fields to match label-width
+		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+		.ym-fbox-check input,
+		.ym-error .ym-message {
+			margin-left:30%;
 		}
 	}
 
@@ -248,13 +260,16 @@
 		margin-top: 0.5em;
 	}
 
-	// global and local columnar settings for button alignment
-	.ym-columnar fieldset .ym-type-button,
-	fieldset.ym-columnar .ym-type-button {
-		padding-left:30%;
+	// remove element padding, alignment via grid-wrapper
+	.ym-fbox-check {
+		.ym-fbox-grid input {
+			margin-left: 0;
+		}
 	}
 
-	// @section Form Construction Kit | Screen Adjustments
-	.ym-type-select select { width:67%; }
-	.ym-full .ym-type-select select { width:96%; }
+	// global and local columnar settings for button alignment
+	.ym-columnar fieldset .ym-fbox-button,
+	fieldset.ym-columnar .ym-fbox-button {
+		padding-left:30%;
+	}
 }
