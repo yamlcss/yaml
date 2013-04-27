@@ -18,7 +18,7 @@ The Sass port is built in a way that allows you to create a fully customized ver
 
 * `./sass/css/` (for your Sass projects)
 * `./sass/docs/assets/css/` (YAML Docs CSS - built with Sass)
-* `./sass/static-build/` (file wrapper for YAML builds)
+* `./sass/static-build/` (file wrapper for YAML builds, can be deleted if don't want to compile static YAML builds)
 * `./sass/yaml-sass/` (Sass port of YAML CSS Framework)
 
 Please keep in mind, that the /yaml-sass/ folder also contains several JavaScript files that are needed to create a complete YAML build.
