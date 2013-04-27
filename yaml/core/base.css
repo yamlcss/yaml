@@ -341,6 +341,10 @@
     box-sizing: border-box;
     width: 68%;
   }
+  .ym-form input[type="checkbox"],
+  .ym-form input[type="radio"] {
+    width: auto;
+  }
   .ym-form .ym-fbox-grid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -354,7 +358,19 @@
   .ym-form .ym-fbox-grid select {
     width: 100%;
   }
-  .ym-form label {
+  .ym-form .ym-fbox-grid input[type="checkbox"],
+  .ym-form .ym-fbox-grid input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
+  }
+  .ym-form .ym-fbox-grid label,
+  .ym-form .ym-fbox-grid .ym-label {
+    display: inline;
+  }
+  .ym-form label,
+  .ym-form .ym-label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

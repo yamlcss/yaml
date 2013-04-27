@@ -97,6 +97,11 @@
 			width:68%;
 		}
 
+		input[type="checkbox"],
+		input[type="radio"] {
+			width: auto;
+		}
+
 		// default form wrapper width
 		.ym-fbox-grid {
 			@include ym-box-sizing(border-box);
@@ -109,9 +114,23 @@
 			select {
 				width: 100%;
 			}
+
+			input[type="checkbox"],
+			input[type="radio"] {
+				display: inline;
+				width: auto;
+				margin-left: 0;
+				margin-right: 0.5ex;
+			}
+
+			label,
+			.ym-label {
+				display: inline;
+			}
 		}
 
-		label {
+		label,
+		.ym-label {
 			@include ym-box-sizing(border-box);
 		}
 

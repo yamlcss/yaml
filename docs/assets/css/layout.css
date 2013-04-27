@@ -344,6 +344,10 @@
     box-sizing: border-box;
     width: 68%;
   }
+  .ym-form input[type="checkbox"],
+  .ym-form input[type="radio"] {
+    width: auto;
+  }
   .ym-form .ym-fbox-grid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -357,7 +361,19 @@
   .ym-form .ym-fbox-grid select {
     width: 100%;
   }
-  .ym-form label {
+  .ym-form .ym-fbox-grid input[type="checkbox"],
+  .ym-form .ym-fbox-grid input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
+  }
+  .ym-form .ym-fbox-grid label,
+  .ym-form .ym-fbox-grid .ym-label {
+    display: inline;
+  }
+  .ym-form label,
+  .ym-form .ym-label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -866,7 +882,10 @@
     line-height: 1em;
     padding: 3px 2px 3px 1px;
   }
-  .ym-form input, .ym-form textarea, .ym-form select, .ym-form optgroup {
+  .ym-form input,
+  .ym-form textarea,
+  .ym-form select,
+  .ym-form optgroup {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-box-shadow: inset 0 0 4px #eeeeee;
     box-shadow: inset 0 0 4px #eeeeee;
@@ -880,6 +899,11 @@
   .ym-form .ym-fbox-text select,
   .ym-form .ym-fbox-select select {
     border: 1px solid #ddd;
+  }
+  .ym-form input[type="checkbox"],
+  .ym-form input[type="radio"] {
+    border: 0 none !important;
+    background: transparent !important;
   }
   .ym-form .ym-message {
     color: #666;

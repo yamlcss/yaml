@@ -97,7 +97,10 @@
 			line-height: 1em;
 			padding: 3px 2px 3px 1px;
 		}
-		input, textarea, select, optgroup {
+		input,
+		textarea,
+		select,
+		optgroup {
 			font-family:Arial, Helvetica, sans-serif;
 			@include ym-box-shadow(0,0,4px,#eee,inset);
 		}
@@ -105,12 +108,20 @@
 			font-style:normal;
 			font-weight:bold;
 		}
+
 		.ym-fbox-text input,
 		.ym-fbox-text textarea,
 		.ym-fbox-text select,
 		.ym-fbox-select select {
 			border:1px solid #ddd;
 		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			border: 0 none !important;
+			background: transparent !important;
+		}
+
 		.ym-message {
 			color:#666;
 			margin-bottom:0.5em;
@@ -142,6 +153,7 @@
 				margin-top: 0;
 			}
 		}
+
 		input:focus,  select:focus, textarea:focus,
 		input:hover,  select:hover, textarea:hover,
 		input:active, select:active, textarea:active {
