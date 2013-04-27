@@ -5,7 +5,7 @@
  *
  * english article: http://blog.ginader.de/archives/2009/02/07/jQuery-Accessible-Tabs-How-to-make-tabs-REALLY-accessible.php
  * german article: http://blog.ginader.de/archives/2009/02/07/jQuery-Accessible-Tabs-Wie-man-Tabs-WIRKLICH-zugaenglich-macht.php
- * 
+ *
  * code: http://github.com/ginader/Accessible-Tabs
  * please report issues at: http://github.com/ginader/Accessible-Tabs/issues
  *
@@ -48,12 +48,12 @@
                 wrapInnerNavLinks: '', // inner wrap for a-tags in tab navigation. See http://api.jquery.com/wrapInner/ for further informations
                 firstNavItemClass: 'first', // Classname of the first list item in the tab navigation
                 lastNavItemClass: 'last', // Classname of the last list item in the tab navigation
-                clearfixClass: 'ym-clearfix' // Name of the Class that is used to clear/contain floats
+                clearfixClass: 'clearfix' // Name of the Class that is used to clear/contain floats
             };
             var keyCodes = {
                 37 : -1, //LEFT
                 38 : -1, //UP
-                39 : +1, //RIGHT 
+                39 : +1, //RIGHT
                 40 : +1 //DOWN
             };
             var positions = {

@@ -141,5 +141,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['clean', 'copy', 'compass:css', 'compass:docs']);
-	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin']);
+	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin','jshint']);
 };
