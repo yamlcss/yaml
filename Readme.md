@@ -2,7 +2,7 @@
 
 YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly flexible, accessible and responsive websites. YAML is focussed on device independent screen design and provides bullet-proof modules for flexible layouts. This is a perfect starting point and the key to truly responsive design.
 
-- Version: 4.1
+- Version: 4.1.0
 - Website: <http://www.yaml.de>
 
 ## Quick Start
@@ -31,6 +31,7 @@ You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://grun
 * **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
 * **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
 * **build** `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
+* **build-utf8** like `grunt build` but don't removes @charset "utf8" from CSS files
 
 ## Docs
 Download or clone this project and open file `docs/index.html` in your browser.
