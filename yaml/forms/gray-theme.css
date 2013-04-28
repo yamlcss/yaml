@@ -1,5 +1,12 @@
 /**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
  * YAML form theme: "gray-theme"
+ *
+ * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
  */
 @media screen, projection {
   .ym-form {
@@ -66,7 +73,7 @@
   *
   */
   /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit ann�hend gleicher Breite */
+  /* Gestaltung der einzelnen Formularelemente mit ann├ñhend gleicher Breite */
   .ym-form .ym-fbox-text input,
   .ym-form .ym-fbox-text textarea {
     line-height: 1em;

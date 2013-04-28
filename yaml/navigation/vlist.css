@@ -1,3 +1,15 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Vertical list navigation "vlist"
+ * (de) Vertikale Navigationsliste "vlist"
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ */
 @media all {
   /* title */
   .ym-vtitle {
@@ -5,7 +17,6 @@
     font-size: 100%;
     width: 90%;
     padding: 3px 0px 3px 10%;
-    /* LTR */
     margin: 0;
     color: #444;
     background-color: #fff;
@@ -15,16 +26,12 @@
     border-top: 4px #888 solid;
   }
 
+  /* 4 navigation levels defined */
   .ym-vlist {
     margin: 0 0 1.5em 0;
     list-style-type: none;
     background: transparent;
     border: 0 none;
-    /* active list element */
-    /* Level 1 */
-    /* Level 2 */
-    /* Level 3 */
-    /* Level 4 */
   }
   .ym-vlist ul {
     list-style-type: none;
@@ -40,7 +47,6 @@
   }
   .ym-vlist li {
     float: left;
-    /* LTR */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -70,9 +76,6 @@
   .ym-vlist li.active strong {
     font-weight: bold;
   }
-  .ym-vlist li {
-    /* LTR */
-  }
   .ym-vlist li a,
   .ym-vlist li strong,
   .ym-vlist li span {
@@ -85,9 +88,6 @@
     background-color: #888;
     color: #fff;
     outline: 0 none;
-  }
-  .ym-vlist li ul li {
-    /* LTR */
   }
   .ym-vlist li ul li a,
   .ym-vlist li ul li strong,
@@ -106,9 +106,6 @@
     background-color: #888;
     color: #fff;
   }
-  .ym-vlist li ul li ul li {
-    /* LTR */
-  }
   .ym-vlist li ul li ul li a,
   .ym-vlist li ul li ul li strong,
   .ym-vlist li ul li ul li span {
@@ -125,9 +122,6 @@
   .ym-vlist li ul li ul li a:active {
     background-color: #888;
     color: #fff;
-  }
-  .ym-vlist li ul li ul li ul li {
-    /* LTR */
   }
   .ym-vlist li ul li ul li ul li a,
   .ym-vlist li ul li ul li ul li strong,

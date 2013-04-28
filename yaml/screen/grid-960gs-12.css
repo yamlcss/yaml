@@ -1,3 +1,14 @@
+/*
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * 960.gs port for YAML: 960px - 12 columns
+ *
+ * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ */
 .ym-wrapper {
   width: 960px;
   margin: 0 auto;

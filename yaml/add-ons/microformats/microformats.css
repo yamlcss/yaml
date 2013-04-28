@@ -1,5 +1,19 @@
-/* hCards + hCalendars */
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) YAML-Addon:Microformats Support
+ * (de) YAML-Addon:Unterstützung für Microformate
+ *
+ * @note            Many thanks to Michael Jendryschik (http://jendryschik.de/) for contribution
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+  */
 @media all {
+  /* hCards + hCalendars */
   .vcard,
   .vevent {
     line-height: 1.5em;

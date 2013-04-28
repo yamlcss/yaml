@@ -1,12 +1,10 @@
-@charset "utf-8";
-
 @import "yaml-sass/_yaml-var-globals";
 @import "yaml-sass/mixins/yaml-mixins-core";
 
 @media all {
 	.ym-hlist {
-		// (en) containing floats in IE
-		// (de) Einfassen der Floats im IE
+		/* (en) containing floats in IE */
+		/* (de) Einfassen der Floats im IE */
 		width:100%;
 		overflow:hidden;
 		position:relative;	//(en|de) Bugfix:IE - collapsing horizontal margins
@@ -66,7 +64,7 @@
 		}
 	}
 
-	// ------- search form --------
+	/* ------- search form -------- */
 	.ym-searchform {
 		float:right;
 		display: inline;

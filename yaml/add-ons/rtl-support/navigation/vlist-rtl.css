@@ -1,3 +1,17 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Vertical RTL list navigation "vlist"
+ * (de) Vertikale RTL-Navigationsliste "vlist"
+ *
+ * @note:           Many thanks to Alexander Hass (http://www.yaml-fuer-drupal.de/) for contribution
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ */
 @media all {
   /* menu title */
   .ym-vtitle {
@@ -5,12 +19,9 @@
     padding-right: 10%;
   }
 
+  /* 4 navigation kevels defined */
   .ym-vlist {
     text-align: right;
-    /* Level 1 */
-    /* Level 2 */
-    /* Level 3 */
-    /* Level 4 */
   }
   .ym-vlist li {
     float: right;

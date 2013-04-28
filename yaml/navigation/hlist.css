@@ -1,5 +1,19 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Horizontal list navigation "hlist"
+ * (de) Horizontale Navigationsliste "hlist"
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ */
 @media all {
   .ym-hlist {
+    /* (en) containing floats in IE */
+    /* (de) Einfassen der Floats im IE */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -53,6 +67,7 @@
     text-decoration: none;
   }
 
+  /* ------- search form -------- */
   .ym-searchform {
     float: right;
     display: inline;

@@ -1,15 +1,3 @@
-@charset "utf-8";
-//  "Yet Another Multicolumn Layout" - YAML CSS Framework
-//
-//  (en) Styles for Accessible-Tabs plugin for jQuery
-//  (de) Gestaltung des Acessible-Tabs Plugins für jQuery
-//
-//  @copyright       Copyright 2005-2013, Dirk Jesse
-//  @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
-//                   YAML-CDL (http://www.yaml.de/license.html)
-//  @link            http://www.yaml.de
-//  @package         yaml
-
 @media screen, projection {
 	.jquery_tabs {
 		margin:1.5em 0 0;
@@ -78,7 +66,7 @@
 		}
 	}
 
-	// hiding texts visually
+	/* hiding texts visually */
 	.jquery_tabs .tabhead {
 		position:absolute;
 		left:-32768px; // LTR
@@ -89,12 +77,13 @@
 		position:absolute;
 	}
 
-   // Avoid margin collapsing to enable correct sync of all tabs
-   //
-   // @workaround
-   // @affected all browsers
-   // @css-for all browsers
-   // @valid yes
+   /** Avoid margin collapsing to enable correct sync of all tabs
+    *
+    * @workaround
+    * @affected all browsers
+    * @css-for all browsers
+    * @valid yes
+	*/
 
 	.jquery_tabs .tab-content {
 		border-bottom: 	1px transparent solid;
@@ -102,12 +91,14 @@
 		*overflow:hidden;
 	}
 
-	// Containing floats adjustment and stability fixes for Internet Explorer
-	//
-	// @workaround
-	// @affected IE 5.x/Win, IE6, IE7
-	// @css-for IE 5.x/Win, IE6, IE7
-	// @valid no
+	/** Containing floats adjustment and stability fixes for Internet Explorer
+	 *
+	 * @workaround
+	 * @affected IE 5.x/Win, IE6, IE7
+	 * @css-for IE 5.x/Win, IE6, IE7
+	 * @valid no
+	 */
+
 	* html .jquery_tabs {
 		zoom:1;
 		width:auto;
@@ -128,7 +119,7 @@
 	.jquery_tabs * { zoom:1; }
 }
 
-// Make tabs printable
+/* Make tabs printable */
 @media print {
 	.jquery_tabs {
 		.tabs-list {

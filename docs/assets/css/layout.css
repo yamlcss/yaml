@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/* Google Font API */
 /* YAML Framework Components */
-/**
- *  "Yet Another Multicolumn Layout" - YAML CSS Framework
- *  (en) YAML core stylesheet
- *  (de) YAML Basis-Stylesheet
-*/
 @media all {
   /*
    *  @section Normalisation Module
@@ -575,7 +569,6 @@
     font-size: 100%;
     width: 90%;
     padding: 3px 0px 3px 10%;
-    /* LTR */
     margin: 0;
     color: #444;
     background-color: #fff;
@@ -585,16 +578,12 @@
     border-top: 4px #888 solid;
   }
 
+  /* 4 navigation levels defined */
   .ym-vlist {
     margin: 0 0 1.5em 0;
     list-style-type: none;
     background: transparent;
     border: 0 none;
-    /* active list element */
-    /* Level 1 */
-    /* Level 2 */
-    /* Level 3 */
-    /* Level 4 */
   }
   .ym-vlist ul {
     list-style-type: none;
@@ -610,7 +599,6 @@
   }
   .ym-vlist li {
     float: left;
-    /* LTR */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -640,9 +628,6 @@
   .ym-vlist li.active strong {
     font-weight: bold;
   }
-  .ym-vlist li {
-    /* LTR */
-  }
   .ym-vlist li a,
   .ym-vlist li strong,
   .ym-vlist li span {
@@ -655,9 +640,6 @@
     background-color: #888;
     color: #fff;
     outline: 0 none;
-  }
-  .ym-vlist li ul li {
-    /* LTR */
   }
   .ym-vlist li ul li a,
   .ym-vlist li ul li strong,
@@ -676,9 +658,6 @@
     background-color: #888;
     color: #fff;
   }
-  .ym-vlist li ul li ul li {
-    /* LTR */
-  }
   .ym-vlist li ul li ul li a,
   .ym-vlist li ul li ul li strong,
   .ym-vlist li ul li ul li span {
@@ -695,9 +674,6 @@
   .ym-vlist li ul li ul li a:active {
     background-color: #888;
     color: #fff;
-  }
-  .ym-vlist li ul li ul li ul li {
-    /* LTR */
   }
   .ym-vlist li ul li ul li ul li a,
   .ym-vlist li ul li ul li ul li strong,
@@ -719,6 +695,8 @@
 }
 @media all {
   .ym-hlist {
+    /* (en) containing floats in IE */
+    /* (de) Einfassen der Floats im IE */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -772,6 +750,7 @@
     text-decoration: none;
   }
 
+  /* ------- search form -------- */
   .ym-searchform {
     float: right;
     display: inline;
@@ -803,9 +782,6 @@
     background: rgba(255, 255, 255, 0.2);
   }
 }
-/**
- * YAML form theme: "gray-theme"
- */
 @media screen, projection {
   .ym-form {
     background: #f4f4f4;
@@ -871,7 +847,7 @@
   *
   */
   /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
+  /* Gestaltung der einzelnen Formularelemente mit ann├ñhend gleicher Breite */
   .ym-form .ym-fbox-text input,
   .ym-form .ym-fbox-text textarea {
     line-height: 1em;
@@ -1460,6 +1436,7 @@
     margin-bottom: -1px;
   }
 
+  /* hiding texts visually */
   .jquery_tabs .tabhead {
     position: absolute;
     left: -32768px;
@@ -1471,12 +1448,26 @@
     position: absolute;
   }
 
+   /** Avoid margin collapsing to enable correct sync of all tabs
+    *
+    * @workaround
+    * @affected all browsers
+    * @css-for all browsers
+    * @valid yes
+	*/
   .jquery_tabs .tab-content {
     border-bottom: 1px transparent solid;
     border-top: 1px transparent solid;
     *overflow: hidden;
   }
 
+  /** Containing floats adjustment and stability fixes for Internet Explorer
+   *
+   * @workaround
+   * @affected IE 5.x/Win, IE6, IE7
+   * @css-for IE 5.x/Win, IE6, IE7
+   * @valid no
+   */
   * html .jquery_tabs {
     zoom: 1;
     width: auto;
@@ -1499,6 +1490,7 @@
     zoom: 1;
   }
 }
+/* Make tabs printable */
 @media print {
   .jquery_tabs .tabs-list {
     display: none !important;
@@ -1508,8 +1500,8 @@
     display: block !important;
   }
 }
-/* hCards + hCalendars */
 @media all {
+  /* hCards + hCalendars */
   .vcard,
   .vevent {
     line-height: 1.5em;
@@ -1660,11 +1652,6 @@
     cursor: default;
   }
 }
-/**
- * "Yet Another Multicolumn Layout" - YAML CSS Framework
- * (en) Uniform design of standard content elements
- * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
- */
 @media all {
   /*
   * @section global typography settings
@@ -1674,14 +1661,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1701,11 +1688,11 @@
     font-size: 87.5%;
     color: #444444;
     /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
+    /* (de) Automatische Schriftvergr├Â├ƒerung in mobilen Webkit-Browsern vermeiden */
     -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -1754,9 +1741,9 @@
   }
 
   h6 {
-    font-weight: bold;
     /* font-size: 14px; */
     font-size: 100%;
+    font-weight: bold;
     line-height: 1.5;
     margin: 1.5em 0 0;
   }
@@ -1925,7 +1912,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -1945,10 +1932,9 @@
     height: auto;
   }
 
+  /* IE6 workaround - 2% space for possible borders */
   * html .flexible {
-    /* IE6 support */
     width: 98%;
-    /* 2% space for borders */
   }
 
   .bordered {
@@ -2049,7 +2035,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
   *
   * @section content-tables
   */
@@ -2134,14 +2120,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgr├Â├ƒen-Ma├ƒheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+  /* (de) F├╝r den Druck nicht ben├Âtigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -2149,7 +2135,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+  /* (de) Vermeidung von Seitenumbr├╝chen direkt nach einer ├£berschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }

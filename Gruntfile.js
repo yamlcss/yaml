@@ -81,12 +81,11 @@ module.exports = function(grunt) {
 				},
 				options: {
 					replacements: [{
-						pattern     : /@charset "utf-8";/ig,
+						pattern     : /@charset "utf-8";\cM\cJ/ig,
 						replacement : ''
 					},
-					// additional replacement pattern when working on Windows
 					{
-						pattern     : /@charset "cp850";\cM\cJ/ig,
+						pattern     : /@charset "utf-8";\cM/ig,
 						replacement : ''
 					}]
 				}
@@ -106,6 +105,9 @@ module.exports = function(grunt) {
 
 		cssmin: {
 			compress: {
+				options: {
+					banner: '/*! <%= pkg.name %> v<%= pkg.version %> (<%= grunt.template.today("yyyy-mm-dd") %>) */\n'
+				},
 				files: [{
 					expand : true,           // Enable dynamic expansion.
 					cwd    : 'yaml/',        // Src matches are relative to this path.
@@ -140,6 +142,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
+	// Default Task: Compile defined subfolders in sass/ ('static-build' excluded)
 	grunt.registerTask('default', ['clean', 'copy', 'compass:css', 'compass:docs']);
+
+	// Build YAML
 	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin','jshint']);
+	// Build YAML and don't remove @charset rules
+	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'cssmin','jshint']);
 };

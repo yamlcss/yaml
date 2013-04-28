@@ -1,3 +1,19 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * (en) YAML core RTL stylesheet
+ * (de) YAML Basis-RTL-Stylesheet
+ *
+ * Don't make any changes in this file!
+ * Your changes should be placed in any css-file in your own stylesheet folder.
+ *
+ * @note:           Many thanks to Alexander Hass (http://www.yaml-fuer-drupal.de/) for contribution
+ *
+ * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ */
 @media all {
   /**
   * @section browser normalisation
@@ -32,7 +48,7 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) skip links cause large horizontal scrollbars in RTL mode in several browsers
-  * (de) skip links erzeugen gro�e horziontale Scrollbalken in verschiedenen Browserin im RTL-Modus
+  * (de) skip links erzeugen große horziontale Scrollbalken in verschiedenen Browserin im RTL-Modus
   *
   * @workaround
   * @affected   Firefox, Safari, IE 5.x - IE7
@@ -57,7 +73,7 @@
   * @section miscellaneous
   *
   * (en) CSS-class for ltr-content (left to right) within a rtl website
-  * (de) Eine CSS-Klasse f�r ltr-Inhalte (left to right) innerhalb einer rtl-Seite
+  * (de) Eine CSS-Klasse für ltr-Inhalte (left to right) innerhalb einer rtl-Seite
   */
   .ym-text-ltr {
     direction: ltr;
