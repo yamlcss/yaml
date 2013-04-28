@@ -100,6 +100,17 @@ module.exports = function(grunt) {
 						replacement : '.<%= pkg.yamlPrefix %>'
 					}]
 				}
+			},
+			setVersion: {
+				files: {
+					'./': 'yaml/**/*.css'
+				},
+				options: {
+					replacements: [{
+						pattern     : /### version ###/ig,
+						replacement : '<%= pkg.version %>'
+					}]
+				}
 			}
 		},
 
@@ -148,5 +159,5 @@ module.exports = function(grunt) {
 	// Build YAML
 	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin','jshint']);
 	// Build YAML and don't remove @charset rules
-	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'cssmin','jshint']);
+	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'string-replace:setVersion', 'cssmin','jshint']);
 };
