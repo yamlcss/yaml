@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 						replacement : ''
 					},
 					{
-						pattern     : /@charset "utf-8";\cM/ig,
+						pattern     : /@charset "utf-8";\cJ/ig,
 						replacement : ''
 					}]
 				}
