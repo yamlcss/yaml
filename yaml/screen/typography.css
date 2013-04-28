@@ -4,7 +4,7 @@
  * (en) Uniform design of standard content elements
  * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
  *
- * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @copyright       © 2005-2013, Dirk Jesse
  * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
@@ -20,14 +20,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -47,11 +47,11 @@
     font-size: 87.5%;
     color: #444444;
     /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
+    /* (de) Automatische Schriftvergr├Â├ƒerung in mobilen Webkit-Browsern vermeiden */
     -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -271,7 +271,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -394,7 +394,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
   *
   * @section content-tables
   */

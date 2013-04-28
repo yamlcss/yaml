@@ -8,7 +8,7 @@
  *					http://www.communis.co.uk/blog/2009-06-02-skip-links-chrome-safari-and-added-wai-aria
  *                  Many thanks to Mathias Schäfer (http://molily.de/) for his code improvements
  *
- * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @copyright       © 2005-2013, Dirk Jesse
  * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de

@@ -7,7 +7,7 @@
  * Don't make any changes in this file!
  * Your changes should be placed in any css-file in your own stylesheet folder.
  *
- * @copyright       Copyright 2005-2013, Dirk Jesse
+ * @copyright       © 2005-2013, Dirk Jesse
  * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
@@ -559,7 +559,7 @@
   * @section print adjustments for core modules
   *
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {
