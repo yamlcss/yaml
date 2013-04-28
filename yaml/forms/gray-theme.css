@@ -606,4 +606,35 @@
     text-shadow: none;
     position: static;
   }
+  * html .ym-button {
+    /* Button size-scaling classes */
+    /* 21px */
+    /* 18px */
+    /* 12px */
+    /* 10px */
+  }
+  * html .ym-button.ym-primary {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
+  }
+  * html .ym-button.ym-success {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
+  }
+  * html .ym-button.ym-warning {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
+  }
+  * html .ym-button.ym-danger {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
+  }
+  * html .ym-button.ym-xlarge {
+    font-size: 1.5em;
+  }
+  * html .ym-button.ym-large {
+    font-size: 1.2857em;
+  }
+  * html .ym-button.ym-small {
+    font-size: 0.8571em;
+  }
+  * html .ym-button.ym-xsmall {
+    font-size: 0.7143em;
+  }
 }

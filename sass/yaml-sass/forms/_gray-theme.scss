@@ -517,5 +517,26 @@
 			text-shadow: none;
 			position: static;
 		}
+
+		.ym-button {
+			&.ym-primary {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
+			}
+			&.ym-success {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
+			}
+			&.ym-warning {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
+			}
+			&.ym-danger {
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
+			}
+
+			/* Button size-scaling classes */
+			&.ym-xlarge { font-size: 1.5em; } /* 21px */
+			&.ym-large { font-size: 1.2857em; } /* 18px */
+			&.ym-small { font-size: 0.8571em; } /* 12px */
+			&.ym-xsmall { font-size: 0.7143em; } /* 10px */
+		}
 	}
 }

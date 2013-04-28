@@ -261,12 +261,12 @@
 
   .ym-form input,
   .ym-form textarea {
-    width: 65%;
+    width: 63.5%;
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
   .ym-form select {
-    width: 67%;
+    width: 66%;
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
@@ -285,105 +285,119 @@
   }
   .ym-form .ym-g33 {
     display: inline;
-    width: 31% !important;
+    width: 30.333% !important;
   }
   .ym-form .ym-g66 {
     display: inline;
-    width: 64% !important;
+    width: 63.666% !important;
   }
   .ym-form .ym-g38 {
     display: inline;
-    width: 36% !important;
+    width: 35% !important;
   }
   .ym-form .ym-g62 {
     display: inline;
-    width: 59% !important;
+    width: 58% !important;
   }
   .ym-form .ym-fbox-text input.ym-g20, .ym-form .ym-fbox-text textarea.ym-g20, .ym-form .ym-fbox-text select.ym-g20,
   .ym-form .ym-fbox-select input.ym-g20,
   .ym-form .ym-fbox-select textarea.ym-g20,
   .ym-form .ym-fbox-select select.ym-g20 {
     display: inline;
-    width: 16% !important;
-  }
-  .ym-form .ym-fbox-text input.ym-g40, .ym-form .ym-fbox-text textarea.ym-g40, .ym-form .ym-fbox-text select.ym-g40,
-  .ym-form .ym-fbox-select input.ym-g40,
-  .ym-form .ym-fbox-select textarea.ym-g40,
-  .ym-form .ym-fbox-select select.ym-g40 {
-    display: inline;
-    width: 36% !important;
-  }
-  .ym-form .ym-fbox-text input.ym-g60, .ym-form .ym-fbox-text textarea.ym-g60, .ym-form .ym-fbox-text select.ym-g60,
-  .ym-form .ym-fbox-select input.ym-g60,
-  .ym-form .ym-fbox-select textarea.ym-g60,
-  .ym-form .ym-fbox-select select.ym-g60 {
-    display: inline;
-    width: 56% !important;
-  }
-  .ym-form .ym-fbox-text input.ym-g80, .ym-form .ym-fbox-text textarea.ym-g80, .ym-form .ym-fbox-text select.ym-g80,
-  .ym-form .ym-fbox-select input.ym-g80,
-  .ym-form .ym-fbox-select textarea.ym-g80,
-  .ym-form .ym-fbox-select select.ym-g80 {
-    display: inline;
-    width: 76% !important;
-  }
-  .ym-form .ym-fbox-text input.ym-g25, .ym-form .ym-fbox-text textarea.ym-g25, .ym-form .ym-fbox-text select.ym-g25,
-  .ym-form .ym-fbox-select input.ym-g25,
-  .ym-form .ym-fbox-select textarea.ym-g25,
-  .ym-form .ym-fbox-select select.ym-g25 {
-    display: inline;
-    width: 21% !important;
+    width: 15% !important;
   }
   .ym-form .ym-fbox-text input.ym-g33, .ym-form .ym-fbox-text textarea.ym-g33, .ym-form .ym-fbox-text select.ym-g33,
   .ym-form .ym-fbox-select input.ym-g33,
   .ym-form .ym-fbox-select textarea.ym-g33,
   .ym-form .ym-fbox-select select.ym-g33 {
     display: inline;
-    width: 29.333% !important;
+    width: 30.333% !important;
   }
-  .ym-form .ym-fbox-text input.ym-g50, .ym-form .ym-fbox-text textarea.ym-g50, .ym-form .ym-fbox-text select.ym-g50,
-  .ym-form .ym-fbox-select input.ym-g50,
-  .ym-form .ym-fbox-select textarea.ym-g50,
-  .ym-form .ym-fbox-select select.ym-g50 {
+  .ym-form .ym-fbox-text input.ym-g40, .ym-form .ym-fbox-text textarea.ym-g40, .ym-form .ym-fbox-text select.ym-g40,
+  .ym-form .ym-fbox-select input.ym-g40,
+  .ym-form .ym-fbox-select textarea.ym-g40,
+  .ym-form .ym-fbox-select select.ym-g40 {
     display: inline;
-    width: 46% !important;
+    width: 35% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g60, .ym-form .ym-fbox-text textarea.ym-g60, .ym-form .ym-fbox-text select.ym-g60,
+  .ym-form .ym-fbox-select input.ym-g60,
+  .ym-form .ym-fbox-select textarea.ym-g60,
+  .ym-form .ym-fbox-select select.ym-g60 {
+    display: inline;
+    width: 55% !important;
   }
   .ym-form .ym-fbox-text input.ym-g66, .ym-form .ym-fbox-text textarea.ym-g66, .ym-form .ym-fbox-text select.ym-g66,
   .ym-form .ym-fbox-select input.ym-g66,
   .ym-form .ym-fbox-select textarea.ym-g66,
   .ym-form .ym-fbox-select select.ym-g66 {
     display: inline;
-    width: 62.666% !important;
+    width: 63.666% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g80, .ym-form .ym-fbox-text textarea.ym-g80, .ym-form .ym-fbox-text select.ym-g80,
+  .ym-form .ym-fbox-select input.ym-g80,
+  .ym-form .ym-fbox-select textarea.ym-g80,
+  .ym-form .ym-fbox-select select.ym-g80 {
+    display: inline;
+    width: 75% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g25, .ym-form .ym-fbox-text textarea.ym-g25, .ym-form .ym-fbox-text select.ym-g25,
+  .ym-form .ym-fbox-select input.ym-g25,
+  .ym-form .ym-fbox-select textarea.ym-g25,
+  .ym-form .ym-fbox-select select.ym-g25 {
+    display: inline;
+    width: 20% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g33, .ym-form .ym-fbox-text textarea.ym-g33, .ym-form .ym-fbox-text select.ym-g33,
+  .ym-form .ym-fbox-select input.ym-g33,
+  .ym-form .ym-fbox-select textarea.ym-g33,
+  .ym-form .ym-fbox-select select.ym-g33 {
+    display: inline;
+    width: 28.333% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g50, .ym-form .ym-fbox-text textarea.ym-g50, .ym-form .ym-fbox-text select.ym-g50,
+  .ym-form .ym-fbox-select input.ym-g50,
+  .ym-form .ym-fbox-select textarea.ym-g50,
+  .ym-form .ym-fbox-select select.ym-g50 {
+    display: inline;
+    width: 45% !important;
+  }
+  .ym-form .ym-fbox-text input.ym-g66, .ym-form .ym-fbox-text textarea.ym-g66, .ym-form .ym-fbox-text select.ym-g66,
+  .ym-form .ym-fbox-select input.ym-g66,
+  .ym-form .ym-fbox-select textarea.ym-g66,
+  .ym-form .ym-fbox-select select.ym-g66 {
+    display: inline;
+    width: 61.666% !important;
   }
   .ym-form .ym-fbox-text input.ym-g75, .ym-form .ym-fbox-text textarea.ym-g75, .ym-form .ym-fbox-text select.ym-g75,
   .ym-form .ym-fbox-select input.ym-g75,
   .ym-form .ym-fbox-select textarea.ym-g75,
   .ym-form .ym-fbox-select select.ym-g75 {
     display: inline;
-    width: 71% !important;
+    width: 70% !important;
   }
   .ym-form .ym-fbox-text input.ym-g38, .ym-form .ym-fbox-text textarea.ym-g38, .ym-form .ym-fbox-text select.ym-g38,
   .ym-form .ym-fbox-select input.ym-g38,
   .ym-form .ym-fbox-select textarea.ym-g38,
   .ym-form .ym-fbox-select select.ym-g38 {
     display: inline;
-    width: 34.2% !important;
+    width: 33.2% !important;
   }
   .ym-form .ym-fbox-text input.ym-g62, .ym-form .ym-fbox-text textarea.ym-g62, .ym-form .ym-fbox-text select.ym-g62,
   .ym-form .ym-fbox-select input.ym-g62,
   .ym-form .ym-fbox-select textarea.ym-g62,
   .ym-form .ym-fbox-select select.ym-g62 {
     display: inline;
-    width: 57.8% !important;
+    width: 56.8% !important;
   }
 
   .ym-full input,
   .ym-full textarea {
-    width: 94%;
+    width: 92.5%;
     margin-right: -3px;
   }
   .ym-full select {
-    width: 96%;
+    width: 95%;
     margin-right: -3px;
   }
 
@@ -391,6 +405,16 @@
     float: right;
     margin-left: -3px !important;
     margin-right: 0 !important;
+  }
+
+  /* ie6 support helper class */
+  * html .ym-form .ym-ie-checkbox,
+  * html .ym-form .ym-ie-radio {
+    display: inline !important;
+    width: auto !important;
+    background: transparent !important;
+    border: 0 none  !important;
+    padding: 0 !important;
   }
 
   /*------------------------------------------------------------------------------------------------------*/
