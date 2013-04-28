@@ -2652,12 +2652,12 @@
   }
 
   .dummyscreen {
-    box-shadow: 0 0 3px #000;
-    border: 1px #666 solid;
-    border: 2px white solid;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border: 1px #888 solid;
     border-radius: 5px;
     line-height: 3em;
     margin: 1.5em 0 0;
+    zoom: 1;
   }
 
   .layout-a .ym-wrapper {

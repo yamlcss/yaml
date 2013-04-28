@@ -1320,7 +1320,8 @@ body &gt; header { min-width: 760px; }
 						</div>
 					</div>
 
-					<p>In display orders (1-3-2 and 2-3-1) the column module can simulate <em>equal height</em> column rulers. To use this feature, add class <code>.ym-clearfix</code> to content box (<code>.ym-cbox</code>) in element <code>.ym-col3</code>, put the DIV-element with the class <code>.ym-ie-clearing</code> (crossbrowser-support for IE6 and IE7) at the end of column <code>.ym-col3</code> and use the properties <code>border-left</code> and <code>border-right</code>  of the element<code>.ym-col3</code> to create the column rulers.</p>
+					<p>In display orders (1-3-2 and 2-3-1) the column module can simulate <em>equal height</em> column rulers. To use this feature, add class "<code>ym-clearfix</code>" to content box (<code>.ym-cbox</code>) in element <code>.ym-col3</code> and use the border-property of <code>.ym-col3</code> to create the rulers.</p>
+					<p class="box info"><strong>Support for old Internet Explorers (6 & 7):</strong> Insert an element with the CSS class "<code>ym-ie-clearing</code>" as last child of column <code>.ym-col3</code> to enable vertical stretching of <code>.ym-col3</code> in these old browsers.</p>
 
 					<div class="jquery_tabs">
 					<h5>Default Markup</h5>
@@ -1338,9 +1339,10 @@ body &gt; header { min-width: 760px; }
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;ym-col3&quot;&gt;
-    &lt;div class=&quot;ym-cbox ym-clearfix&quot;&gt;
+    &lt;div class=&quot;ym-cbox <strong>ym-clearfix</strong>&quot;&gt;
       ...
     &lt;/div&gt;
+    &lt;!-- .ym-ie-clearing only needed for IE6 &amp; 7 support --&gt;
     &lt;div class=&quot;ym-ie-clearing&quot;&gt;&amp;nbsp;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
@@ -1618,6 +1620,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 		<input type="submit" value="Submit" class="ym-primary" id="submit" name="submit" />
 		<input type="reset" value="Reset" class="ym-warning" id="reset" name="reset" />
 		<input type="button" value="Button" id="button1" name="button1" />
+		<button type="submit" class="save ym-save ym-success" id="submit2">Custom Button</button>
 	</div>
 </form>
 
@@ -1626,6 +1629,9 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
   &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
   &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
+
+  &lt;!-- custom buttons --&gt;
+  &lt;button type="submit" class="save ym-save ym-success" id="submit"&gt;Custom Button&lt;/button&gt;
 &lt;/div&gt;</pre>
 <p>Optional class <code>.ym-button</code> is needed to enable support for styled button in Internet Explorer 6.</p>
 
