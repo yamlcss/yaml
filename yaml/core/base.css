@@ -350,35 +350,11 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 68%;
+    width: 70%;
   }
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
     width: auto;
-  }
-  .ym-form .ym-fbox-grid {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: table;
-    table-layout: fixed;
-    width: 70%;
-  }
-  .ym-form .ym-fbox-grid input,
-  .ym-form .ym-fbox-grid textarea,
-  .ym-form .ym-fbox-grid select {
-    width: 100%;
-  }
-  .ym-form .ym-fbox-grid input[type="checkbox"],
-  .ym-form .ym-fbox-grid input[type="radio"] {
-    display: inline;
-    width: auto;
-    margin-left: 0;
-    margin-right: 0.5ex;
-  }
-  .ym-form .ym-fbox-grid label,
-  .ym-form .ym-fbox-grid .ym-label {
-    display: inline;
   }
   .ym-form label,
   .ym-form .ym-label {
@@ -397,64 +373,40 @@
     overflow: visible;
     width: auto;
   }
-  .ym-form .ym-g20,
-  .ym-form .ym-g40,
-  .ym-form .ym-g60,
-  .ym-form .ym-g80,
-  .ym-form .ym-g25,
-  .ym-form .ym-g33,
-  .ym-form .ym-g50,
-  .ym-form .ym-g66,
-  .ym-form .ym-g75,
-  .ym-form .ym-g38,
-  .ym-form .ym-g62 {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    margin-left: 0% !important;
-    margin-right: 2% !important;
+  .ym-form .ym-inline {
+    display: inline-block;
+    width: auto;
+    vertical-align: baseline;
   }
-  .ym-form .ym-g20 {
-    width: 18% !important;
+
+  .ym-fbox-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 70%;
   }
-  .ym-form .ym-g40 {
-    width: 38% !important;
+  .ym-fbox-wrap input,
+  .ym-fbox-wrap textarea,
+  .ym-fbox-wrap select {
+    width: 100%;
   }
-  .ym-form .ym-g60 {
-    width: 58% !important;
+  .ym-fbox-wrap input[type="checkbox"],
+  .ym-fbox-wrap input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
   }
-  .ym-form .ym-g80 {
-    width: 78% !important;
-  }
-  .ym-form .ym-g25 {
-    width: 23% !important;
-  }
-  .ym-form .ym-g33 {
-    width: 31.333% !important;
-  }
-  .ym-form .ym-g50 {
-    width: 48% !important;
-  }
-  .ym-form .ym-g66 {
-    width: 64.666% !important;
-  }
-  .ym-form .ym-g75 {
-    width: 73% !important;
-  }
-  .ym-form .ym-g38 {
-    width: 36.2% !important;
-  }
-  .ym-form .ym-g62 {
-    width: 59.8% !important;
+  .ym-fbox-wrap label,
+  .ym-fbox-wrap .ym-label {
+    display: inline;
   }
 
   .ym-full input,
   .ym-full textarea,
   .ym-full select {
-    width: 98%;
+    width: 100%;
   }
-  .ym-full .ym-fbox-grid {
+  .ym-full .ym-fbox-wrap {
     width: 100%;
   }
 
@@ -471,13 +423,11 @@
     width: 30%;
     z-index: 1;
   }
-  .ym-columnar .ym-fbox-wrap,
-  .ym-columnar .ym-fbox-grid {
+  .ym-columnar .ym-fbox-wrap {
     margin-left: 30%;
     margin-right: -3px;
   }
-  .ym-columnar .ym-fbox-wrap label,
-  .ym-columnar .ym-fbox-grid label {
+  .ym-columnar .ym-fbox-wrap label {
     float: none;
     width: auto;
     z-index: 1;
@@ -490,8 +440,7 @@
   .ym-columnar .ym-fbox-check .ym-label {
     padding-top: 0;
   }
-  .ym-columnar .ym-fbox-check .ym-fbox-wrap input,
-  .ym-columnar .ym-fbox-check .ym-fbox-grid input {
+  .ym-columnar .ym-fbox-check .ym-fbox-wrap input {
     margin-left: 0;
     position: relative;
     top: 3px;
@@ -505,11 +454,11 @@
     margin-left: 30%;
   }
 
-  .ym-fbox-grid + .ym-fbox-grid {
+  .ym-fbox-wrap + .ym-fbox-wrap {
     margin-top: 0.5em;
   }
 
-  .ym-fbox-check .ym-fbox-grid input {
+  .ym-fbox-check .ym-fbox-wrap input {
     margin-left: 0;
   }
 

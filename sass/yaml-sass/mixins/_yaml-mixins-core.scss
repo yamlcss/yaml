@@ -53,12 +53,12 @@
 		float: none;
 		padding: 0;
 		margin: 0;
-		width: 100% !important;
+		width: auto !important;
 	}
 
 	& > [class*="ym-c"] > [class*="ym-cbox"] {
 		/* reset defined gutter values */
-		margin: 0;
+		margin: 0 ;
 		padding: 0;
 		/* optional for containing floats */
 		overflow: hidden;
@@ -74,7 +74,7 @@
 		float: none;
 		padding: 0;
 		margin: 0;
-		width: 100% !important;
+		width: auto !important;
 	}
 
 	& > [class*="ym-c"] > [class*="ym-cbox"],
@@ -88,13 +88,6 @@
 }
 
 @mixin ym-linearize-forms {
-	// linearization form micro grid
-	& .ym-fbox-grid,
-	& .ym-fbox-grid [class*="ym-g"] {
-		width:100% !important;
-		margin:0 !important;
-	}
-
 	// linearization for form module
 	& [class*="ym-fbox"]:not([class*="ym-type-check"]) label,
 	& .ym-label,
@@ -105,8 +98,18 @@
 		display: block;
 		float: none;
 		position: static;
-		width:98% !important;
-		margin:0 !important;
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	// reset grids
+	& .ym-fbox-wrap,
+	& .ym-fbox-wrap [class*="ym-g"] {
+		display: block;
+		float: none;
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
 	}
 
 	// reset columnar settings

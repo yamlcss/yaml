@@ -228,27 +228,21 @@
 		// default form element width
 		input,
 		textarea {
-			width:63.5%;
+			width:68%;
 			padding-left: 1% !important;
 			padding-right: 1% !important;
 		}
 		select {
-			width:66%;
+			width:70%;
 			padding-left: 1% !important;
 			padding-right: 1% !important;
 		}
 
 		// default form wrapper width
-		.ym-fbox-grid {
+		.ym-fbox-wrap {
 			display: block;
 			overflow: hidden;
 			margin-right: -5px;
-
-			input,
-			textarea,
-			select {
-				width: 96%;
-			}
 		}
 
 		.ym-fbox-check {
@@ -256,53 +250,19 @@
 				width: auto;
 			}
 		}
-
-		// Force integer values to avoid float drops
-		.ym-g33 { display:inline; width:30.333% !important; }
-		.ym-g66 { display:inline; width:63.666% !important; }
-		.ym-g38 { display:inline; width:35% !important; }
-		.ym-g62 { display:inline; width:58% !important; }
-
-		// adjusted grid widths for box-modell: content-box
-		.ym-fbox-text,
-		.ym-fbox-select {
-			input, textarea, select {
-				&.ym-g20 { display:inline; width:15% !important; }
-				&.ym-g33 { display:inline; width:30.333% !important; }
-				&.ym-g40 { display:inline; width:35% !important; }
-				&.ym-g60 { display:inline; width:55% !important; }
-				&.ym-g66 { display:inline; width:63.666% !important; }
-				&.ym-g80 { display:inline; width:75% !important; }
-				&.ym-g25 { display:inline; width:20% !important; }
-				&.ym-g33 { display:inline; width:28.333% !important; }
-				&.ym-g50 { display:inline; width:45% !important; }
-				&.ym-g66 { display:inline; width:61.666% !important; }
-				&.ym-g75 { display:inline; width:70% !important; }
-				&.ym-g38 { display:inline; width:33.2% !important; }
-				&.ym-g62 { display:inline; width:56.8% !important; }
-			}
-		}
 	}
 
+	.ym-fbox-wrap,
 	.ym-full {
 		input,
 		textarea {
-			width:92.5%;
+			width:98%;
 			margin-right: -3px;
 		}
 
 		select {
-			width:95%;
+			width:100%;
 			margin-right: -3px;
-		}
-	}
-
-	// avoid a margin related bug in IE7 ...
-	.ym-columnar {
-		.ym-fbox-grid {
-			float: right;
-			margin-left: -3px !important;
-			margin-right: 0 !important;
 		}
 	}
 

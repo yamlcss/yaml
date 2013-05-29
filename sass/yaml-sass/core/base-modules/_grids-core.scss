@@ -13,8 +13,15 @@
 		margin-right:0;
 	}
 
-	.ym-gl { float:left; margin: 0; }
-	.ym-gr { float:right; margin: 0 0 0 $ym-rounding-tolerance; }
+	.ym-gl {
+		float:left;
+		margin: 0;
+	}
+
+	.ym-gr {
+		float:right;
+		margin: 0 0 0 $ym-rounding-tolerance;
+	}
 
 	.ym-g20 { width:20%; }
 	.ym-g40 { width:40%; }

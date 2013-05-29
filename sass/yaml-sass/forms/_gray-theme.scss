@@ -36,8 +36,7 @@
 		.ym-fbox-select,
 		.ym-fbox-check,
 		.ym-fbox-button {
-			// left & right padding vary because of 98% width of micro-grid
-			padding: 0.3em 0% 0 2%;
+			padding: 0.3em 1em 1em 1em;
 			margin-bottom: 0.5em;
 		}
 
@@ -49,21 +48,25 @@
 			text-align: left;
 		}
 
-		.ym-gbox {
-			padding: 0 0.5em;
-			margin-right: 0;
-		}
-
 		.ym-fbox-heading {
 			font-size: 1em;
 			font-size: 100%;
 			color: #000;
-			// left & right margin vary because of 98% width of micro-grid
-			margin: 1em 0% 1em 2%;
+			margin: 1em;
 		}
 
 		.ym-fbox-check:focus + label {
 			color:#000;
+		}
+
+		.ym-gbox-left {
+			padding: 0 4px 0 0;
+		}
+		.ym-gbox-right {
+			padding: 0 0 0 4px;
+		}
+		.ym-gbox {
+			padding: 0 2px 0 2px;
 		}
 	}
 

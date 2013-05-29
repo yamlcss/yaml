@@ -107,7 +107,7 @@
     float: none;
     padding: 0;
     margin: 0;
-    width: 100% !important;
+    width: auto !important;
   }
   .linearize-level-1 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
     /* reset defined gutter values */
@@ -145,7 +145,7 @@
     float: none;
     padding: 0;
     margin: 0;
-    width: 100% !important;
+    width: auto !important;
   }
   .linearize-level-2 > [class*="ym-c"] > [class*="ym-cbox"], .linearize-level-2 > [class*="ym-g"] > [class*="ym-gbox"] {
     /* reset defined gutter values */

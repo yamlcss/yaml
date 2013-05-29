@@ -94,39 +94,12 @@
 			display:block;
 			position:relative;
 			@include ym-box-sizing(border-box);
-			width:68%;
+			width:70%;
 		}
 
 		input[type="checkbox"],
 		input[type="radio"] {
 			width: auto;
-		}
-
-		// default form wrapper width
-		.ym-fbox-grid {
-			@include ym-box-sizing(border-box);
-			display: table;
-			table-layout: fixed;
-			width: 70%;
-
-			input,
-			textarea,
-			select {
-				width: 100%;
-			}
-
-			input[type="checkbox"],
-			input[type="radio"] {
-				display: inline;
-				width: auto;
-				margin-left: 0;
-				margin-right: 0.5ex;
-			}
-
-			label,
-			.ym-label {
-				display: inline;
-			}
 		}
 
 		label,
@@ -153,44 +126,46 @@
 			}
 		}
 
-		// redefine grid-classes for usage within forms module
-		.ym-g20,
-		.ym-g40,
-		.ym-g60,
-		.ym-g80,
-		.ym-g25,
-		.ym-g33,
-		.ym-g50,
-		.ym-g66,
-		.ym-g75,
-		.ym-g38,
-		.ym-g62 {
-			@include ym-box-sizing(border-box);
-			float: left;
-			margin-left: 0% !important;
-			margin-right: 2% !important;
+		.ym-inline {
+  			display: inline-block;
+  			width: auto;
+  			vertical-align: baseline;
+		}
+	}
+
+	// default form wrapper width
+	.ym-fbox-wrap {
+		display: table;
+		table-layout: fixed;
+		width: 70%;
+
+		input,
+		textarea,
+		select {
+			width: 100%;
 		}
 
-		.ym-g20 { width:18% !important; }
-		.ym-g40 { width:38% !important; }
-		.ym-g60 { width:58% !important; }
-		.ym-g80 { width:78% !important; }
-		.ym-g25 { width:23% !important; }
-		.ym-g33 { width:31.333% !important; }
-		.ym-g50 { width:48% !important; }
-		.ym-g66 { width:64.666% !important; }
-		.ym-g75 { width:73% !important; }
-		.ym-g38 { width:36.2% !important; }
-		.ym-g62 { width:59.8% !important; }
+		input[type="checkbox"],
+		input[type="radio"] {
+			display: inline;
+			width: auto;
+			margin-left: 0;
+			margin-right: 0.5ex;
+		}
+
+		label,
+		.ym-label {
+			display: inline;
+		}
 	}
 
 	.ym-full {
 		input,
 		textarea,
 		select {
-			width:98%;
+			width:100%;
 		}
-		.ym-fbox-grid {
+		.ym-fbox-wrap {
 			width: 100%;
 		}
 	}
@@ -229,8 +204,7 @@
 			z-index: 1;
 		}
 
-		.ym-fbox-wrap,
-		.ym-fbox-grid {
+		.ym-fbox-wrap {
 			margin-left:30%;
 			margin-right: -3px;
 
@@ -250,8 +224,7 @@
 				padding-top: 0;
 			}
 
-			.ym-fbox-wrap,
-			.ym-fbox-grid {
+			.ym-fbox-wrap {
 				input {
 					margin-left: 0;
 					position:relative;
@@ -275,13 +248,13 @@
 		}
 	}
 
-	.ym-fbox-grid + .ym-fbox-grid {
+	.ym-fbox-wrap + .ym-fbox-wrap {
 		margin-top: 0.5em;
 	}
 
 	// remove element padding, alignment via grid-wrapper
 	.ym-fbox-check {
-		.ym-fbox-grid input {
+		.ym-fbox-wrap input {
 			margin-left: 0;
 		}
 	}
