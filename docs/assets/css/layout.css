@@ -398,7 +398,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 0 !important;
+    margin-left: 0% !important;
     margin-right: 2% !important;
   }
   .ym-form .ym-g20 {
@@ -816,7 +816,7 @@
   .ym-form .ym-fbox-select,
   .ym-form .ym-fbox-check,
   .ym-form .ym-fbox-button {
-    padding: 0.3em 1em;
+    padding: 0.3em 0% 0 2%;
     margin-bottom: 0.5em;
   }
   .ym-form .ym-fbox-button {
@@ -834,7 +834,7 @@
     font-size: 1em;
     font-size: 100%;
     color: #000;
-    margin: 1em 0 1em 1em;
+    margin: 1em 0% 1em 2%;
   }
   .ym-form .ym-fbox-check:focus + label {
     color: #000;
@@ -3016,17 +3016,18 @@
     padding: 0;
   }
 
-  .linearize-form [class*="ym-type"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
+  .linearize-form .ym-fbox-grid, .linearize-form .ym-fbox-grid [class*="ym-g"] {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .linearize-form [class*="ym-fbox"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
     display: block;
     float: none;
-    position: static !important;
-    width: 100% !important;
+    position: static;
+    width: 98% !important;
+    margin: 0 !important;
   }
-  .linearize-form .ym-message, .linearize-form .ym-fbox-grid, .linearize-form .ym-fbox-check input {
+  .linearize-form .ym-message, .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
-  }
-  .linearize-form .ym-fbox-grid [class*="ym-g"] {
-    width: 100% !important;
-    margin: 0;
   }
 }

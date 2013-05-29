@@ -36,7 +36,8 @@
 		.ym-fbox-select,
 		.ym-fbox-check,
 		.ym-fbox-button {
-			padding: 0.3em 1em;
+			// left & right padding vary because of 98% width of micro-grid
+			padding: 0.3em 0% 0 2%;
 			margin-bottom: 0.5em;
 		}
 
@@ -57,7 +58,8 @@
 			font-size: 1em;
 			font-size: 100%;
 			color: #000;
-			margin: 1em 0 1em 1em;
+			// left & right margin vary because of 98% width of micro-grid
+			margin: 1em 0% 1em 2%;
 		}
 
 		.ym-fbox-check:focus + label {

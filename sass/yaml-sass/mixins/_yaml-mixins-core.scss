@@ -88,31 +88,31 @@
 }
 
 @mixin ym-linearize-forms {
+	// linearization form micro grid
+	& .ym-fbox-grid,
+	& .ym-fbox-grid [class*="ym-g"] {
+		width:100% !important;
+		margin:0 !important;
+	}
+
 	// linearization for form module
-	& [class*="ym-type"]:not([class*="ym-type-check"]) label,
+	& [class*="ym-fbox"]:not([class*="ym-type-check"]) label,
 	& .ym-label,
 	& .ym-message,
-	& .ym-fbox-grid,
 	& input[type="text"],
 	& textarea,
 	& select {
 		display: block;
 		float: none;
-		position: static !important;
-		width:100% !important;
+		position: static;
+		width:98% !important;
+		margin:0 !important;
 	}
 
 	// reset columnar settings
 	& .ym-message,
-	& .ym-fbox-grid,
 	& .ym-fbox-check input {
 		margin-left: 0 !important;
-	}
-
-	// linearization form micro grid
-	& .ym-fbox-grid [class*="ym-g"] {
-		width:100% !important;
-		margin:0;
 	}
 }
 

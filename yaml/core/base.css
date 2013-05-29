@@ -412,7 +412,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 0 !important;
+    margin-left: 0% !important;
     margin-right: 2% !important;
   }
   .ym-form .ym-g20 {
