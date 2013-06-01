@@ -89,10 +89,13 @@
 
 @mixin ym-linearize-forms {
 	// linearization for form module
-	& [class*="ym-fbox"]:not([class*="ym-type-check"]) label,
+	& label {
+		float:none;
+	}
+
 	& .ym-label,
 	& .ym-message,
-	& input[type="text"],
+	& .ym-fbox-text input,
 	& textarea,
 	& select {
 		display: block;
@@ -113,7 +116,6 @@
 	}
 
 	// reset columnar settings
-	& .ym-message,
 	& .ym-fbox-check input {
 		margin-left: 0 !important;
 	}

@@ -72,11 +72,7 @@
   /**
   * @section styling form elements
   *
-  * Styling for: Input, Textarea, Select ...
-  *
   */
-  /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
   .ym-form input,
   .ym-form textarea,
   .ym-form select {
@@ -107,8 +103,8 @@
   .ym-form .ym-fbox-check input,
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
-    border: 0 none;
-    background: transparent;
+    border: 0 none !important;
+    background: transparent !important;
   }
   .ym-form .ym-message {
     color: #666;

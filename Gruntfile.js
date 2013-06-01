@@ -111,6 +111,42 @@ module.exports = function(grunt) {
 						replacement : '<%= pkg.version %>'
 					}]
 				}
+			},
+			// needed for misconfigured Windows systems that don't force UTF8 output correctly ...
+			winUTF8fix: {
+				files: {
+					'./': 'yaml/**/*.css'
+				},
+				options: {
+					replacements: [{
+						pattern     : /├ñ/ig,
+						replacement : 'ä'
+					},
+					{
+						pattern     : /├ä/ig,
+						replacement : 'Ä'
+					},
+					{
+						pattern     : /├Â/ig,
+						replacement : 'ö'
+					},
+					{
+						pattern     : /├û/ig,
+						replacement : 'Ö'
+					},
+					{
+						pattern     : /├╝/ig,
+						replacement : 'ü'
+					},
+					{
+						pattern     : /├£/ig,
+						replacement : 'Ü'
+					},
+					{
+						pattern     : /├ƒ/ig,
+						replacement : 'ß'
+					}]
+				}
 			}
 		},
 
@@ -159,5 +195,5 @@ module.exports = function(grunt) {
 	// Build YAML
 	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin','jshint']);
 	// Build YAML and don't remove @charset rules
-	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'string-replace:setVersion', 'cssmin','jshint']);
+	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'string-replace:setVersion', 'string-replace:winUTF8fix', 'cssmin','jshint']);
 };

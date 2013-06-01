@@ -494,7 +494,7 @@
   * @section print adjustments for core modules
   *
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {
@@ -794,11 +794,7 @@
   /**
   * @section styling form elements
   *
-  * Styling for: Input, Textarea, Select ...
-  *
   */
-  /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
   .ym-form input,
   .ym-form textarea,
   .ym-form select {
@@ -829,8 +825,8 @@
   .ym-form .ym-fbox-check input,
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
-    border: 0 none;
-    background: transparent;
+    border: 0 none !important;
+    background: transparent !important;
   }
   .ym-form .ym-message {
     color: #666;
@@ -1639,14 +1635,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1666,11 +1662,11 @@
     font-size: 87.5%;
     color: #444444;
     /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
+    /* (de) Automatische Schriftvergr├Â├ƒerung in mobilen Webkit-Browsern vermeiden */
     -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -1890,7 +1886,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -2013,7 +2009,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
   *
   * @section content-tables
   */
@@ -2098,14 +2094,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgr├Â├ƒen-Ma├ƒheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+  /* (de) F├╝r den Druck nicht ben├Âtigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -2113,7 +2109,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+  /* (de) Vermeidung von Seitenumbr├╝chen direkt nach einer ├£berschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }
@@ -2963,7 +2959,10 @@
     padding: 0;
   }
 
-  .linearize-form [class*="ym-fbox"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
+  .linearize-form label {
+    float: none;
+  }
+  .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-text input, .linearize-form textarea, .linearize-form select {
     display: block;
     float: none;
     position: static;
@@ -2977,7 +2976,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  .linearize-form .ym-message, .linearize-form .ym-fbox-check input {
+  .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
   }
 }

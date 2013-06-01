@@ -1711,26 +1711,8 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				</div>
 				</div>
 
-				<h4>Extended Form Optins</h4>
+				<h4>Extended Form Options</h4>
 				<div class="jquery_tabs">
-
-				<div class="tab-content">
-				<h5>Inline Form Elements</h5>
-				<form class="ym-form">
-					<div class="ym-fbox ym-fbox-text">
-					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
-					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
-					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
-					</div>
-				</form>
-
-				<pre class="htmlCode">
-&lt;div class="ym-fbox ym-fbox-text"&gt;
-  &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
-  &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
-  &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
-&lt;/div&gt;</pre>
-				</div>
 
 				<div class="tab-content">
 				<h5>Grids Form Elements</h5>
@@ -1787,7 +1769,26 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 &lt;/div&gt;</pre>
 
 				</div>
+
+				<div class="tab-content">
+				<h5>Inline Form Elements</h5>
+				<form class="ym-form">
+					<div class="ym-fbox ym-fbox-text">
+					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
+					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
+					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
+					</div>
+				</form>
+
+				<pre class="htmlCode">
+&lt;div class="ym-fbox ym-fbox-text"&gt;
+  &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
+  &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
+  &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
+&lt;/div&gt;</pre>
 				</div>
+				</div>
+
 
 	  		</div>
   		</div>
@@ -2098,10 +2099,12 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 @media screen and ( max-width: 740px )  {
 
   /* linearize form elements */
-  .linearize-form [class*="ym-fbox"]:not([class*="ym-type-check"]) label,
+  .linearize-form label {
+    float: none;
+  }
   .linearize-form .ym-label,
   .linearize-form .ym-message,
-  .linearize-form input[type="text"],
+  .linearize-form .ym-fbox-text input,
   .linearize-form textarea,
   .linearize-form select {
     display: block;
@@ -2122,7 +2125,6 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   }
 
   /* reset columnar indention */
-  .linearize-form .ym-message,
   .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
   }
