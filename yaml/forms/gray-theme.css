@@ -9,7 +9,7 @@
  * @package         yaml
  * @version         4.1.0
  */
-@media screen, projection {
+@media screen {
   .ym-form {
     background: #f4f4f4;
     border: 2px #fff solid;
@@ -39,14 +39,11 @@
     line-height: 1.5;
     padding-top: 0.25em;
   }
-  .ym-form .ym-fbox-text,
-  .ym-form .ym-fbox-select,
-  .ym-form .ym-fbox-check,
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox {
     padding: 0.3em 1em 1em 1em;
     margin-bottom: 0.5em;
   }
-  .ym-form .ym-fbox-button {
+  .ym-form .ym-fbox-footer {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 0 1em 1.5em 1em;
@@ -79,39 +76,39 @@
   *
   */
   /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit ann├ñhend gleicher Breite */
-  .ym-form .ym-fbox-text input,
-  .ym-form .ym-fbox-text textarea {
-    line-height: 1em;
-    padding: 4px 0.3em;
-  }
-  .ym-form .ym-fbox-text select,
-  .ym-form .ym-fbox-select select {
-    line-height: 1em;
-    padding: 3px 2px 3px 1px;
-  }
+  /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
   .ym-form input,
   .ym-form textarea,
-  .ym-form select,
-  .ym-form optgroup {
+  .ym-form select {
+    border: 1px solid #ddd;
+    line-height: 1em;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-box-shadow: inset 0 0 4px #eeeeee;
     box-shadow: inset 0 0 4px #eeeeee;
   }
+  .ym-form input,
+  .ym-form textarea {
+    padding: 4px 0.3em;
+  }
+  .ym-form select {
+    padding: 3px 2px 3px 1px;
+  }
+  .ym-form input:focus, .ym-form select:focus, .ym-form textarea:focus,
+  .ym-form input:hover, .ym-form select:hover, .ym-form textarea:hover,
+  .ym-form input:active, .ym-form select:active, .ym-form textarea:active {
+    border: 1px #888 solid;
+    background: #fff;
+  }
   .ym-form optgroup {
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
   }
-  .ym-form .ym-fbox-text input,
-  .ym-form .ym-fbox-text textarea,
-  .ym-form .ym-fbox-text select,
-  .ym-form .ym-fbox-select select {
-    border: 1px solid #ddd;
-  }
+  .ym-form .ym-fbox-check input,
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
-    border: 0 none !important;
-    background: transparent !important;
+    border: 0 none;
+    background: transparent;
   }
   .ym-form .ym-message {
     color: #666;
@@ -121,10 +118,12 @@
     color: #800;
     font-weight: bold;
   }
-  .ym-form input:valid, .ym-form textarea:valid {
+  .ym-form input:valid,
+  .ym-form textarea:valid {
     background-color: #fff;
   }
-  .ym-form input:invalid, .ym-form textarea:invalid {
+  .ym-form input:invalid,
+  .ym-form textarea:invalid {
     background-color: #fdd;
   }
   .ym-form .ym-error label {
@@ -143,12 +142,6 @@
     color: #800;
     font-weight: bold;
     margin-top: 0;
-  }
-  .ym-form input:focus, .ym-form select:focus, .ym-form textarea:focus,
-  .ym-form input:hover, .ym-form select:hover, .ym-form textarea:hover,
-  .ym-form input:active, .ym-form select:active, .ym-form textarea:active {
-    border: 1px #888 solid;
-    background: #fff;
   }
 
   /**

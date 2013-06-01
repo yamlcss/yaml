@@ -316,9 +316,11 @@
   .ym-form textarea {
     overflow: auto;
   }
+  .ym-form input.hidden,
   .ym-form input[type=hidden] {
     display: none !important;
   }
+  .ym-form .ym-fbox:before,
   .ym-form .ym-fbox-text:before,
   .ym-form .ym-fbox-select:before,
   .ym-form .ym-fbox-check:before,
@@ -326,6 +328,7 @@
     content: "";
     display: table;
   }
+  .ym-form .ym-fbox:after,
   .ym-form .ym-fbox-text:after,
   .ym-form .ym-fbox-select:after,
   .ym-form .ym-fbox-check:after,
@@ -352,21 +355,20 @@
     box-sizing: border-box;
     width: 70%;
   }
+  .ym-form .ym-fbox-check input,
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
     width: auto;
+    display: inline;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0.5ex;
   }
   .ym-form label,
   .ym-form .ym-label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  .ym-form .ym-fbox-check input {
-    display: inline;
-    width: auto;
-    margin-left: 0;
-    margin-right: 0.5ex;
   }
   .ym-form .ym-fbox-button input {
     display: inline;
@@ -423,6 +425,10 @@
     width: 30%;
     z-index: 1;
   }
+  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-message {
+    margin-left: 30%;
+  }
   .ym-columnar .ym-fbox-wrap {
     margin-left: 30%;
     margin-right: -3px;
@@ -433,6 +439,10 @@
     z-index: 1;
     margin-left: 0;
   }
+  .ym-columnar .ym-fbox-wrap input {
+    margin-left: 0;
+    position: relative;
+  }
   .ym-columnar .ym-fbox-check {
     position: relative;
   }
@@ -440,26 +450,16 @@
   .ym-columnar .ym-fbox-check .ym-label {
     padding-top: 0;
   }
-  .ym-columnar .ym-fbox-check .ym-fbox-wrap input {
-    margin-left: 0;
-    position: relative;
+  .ym-columnar .ym-fbox-check input {
     top: 3px;
   }
   .ym-columnar .ym-fbox-button input {
     float: none;
     margin-right: 1em;
   }
-  .ym-columnar .ym-fbox-check input,
-  .ym-columnar .ym-error .ym-message {
-    margin-left: 30%;
-  }
 
   .ym-fbox-wrap + .ym-fbox-wrap {
     margin-top: 0.5em;
-  }
-
-  .ym-fbox-check .ym-fbox-wrap input {
-    margin-left: 0;
   }
 
   .ym-columnar fieldset .ym-fbox-button,
@@ -508,7 +508,7 @@
   * @section print adjustments for core modules
   *
   * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {

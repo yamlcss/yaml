@@ -275,13 +275,15 @@
 									<code>.ym-form</code><br>
 									<br>
 									<strong>row wrapper</strong><br>
+									<code>.ym-fbox</code><br>
+									<code>.ym-fbox-footer</code><br>
+									<code>.ym-fbox-wrap</code><br>
+									<br>
+									<strong>element wrapper</strong><br>
 									<code>.ym-fbox-text</code><br>
 									<code>.ym-fbox-select</code><br>
 									<code>.ym-fbox-check</code><br>
 									<code>.ym-fbox-button</code><br>
-									<br>
-									<strong>element wrapper</strong><br>
-									<code>.ym-fbox-wrap</code><br>
 									<br>
 									<strong>optional classes</strong><br>
 									<code>.ym-full</code><br>
@@ -726,8 +728,7 @@ body &gt; header { min-width: 760px; }
 								<div class="ym-grid">
 									<div class="ym-g33 ym-gl"><div class="ym-gbox">33.333 %</div></div>
 									<div class="ym-g33 ym-gl"><div class="ym-gbox">33.333 %</div></div>
-									<div class="ym-g33 ym-gr">
-										<div class="ym-gbox"> 33.333 %</div></div>
+									<div class="ym-g33 ym-gr"><div class="ym-gbox"> 33.333 %</div></div>
 								</div>
 							</div>
 						</div>
@@ -1452,35 +1453,59 @@ body &gt; header { min-width: 760px; }
 <h3>Standard Form Elements</h3>
 <p>The following tabs show some examples for standard form elements. Copy and paste to use them.</p>
 <div class="jquery_tabs">
+<h5>Row Types</h5>
+<div class="tab-content">
+
+<form class="ym-form">
+	<div class="ym-fbox">
+		<p>This is a standard row.</p>
+	</div>
+	<div class="ym-fbox-footer">
+		<p>This is the footer footer row.</p>
+	</div>
+</form>
+
+<pre class="htmlCode">
+&lt;form class="<strong>ym-form</strong>"&gt;
+  &lt;div class="<strong>ym-fbox</strong>"&gt;
+    &lt;p&gt;This is a standard row.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="<strong>ym-fbox-footer</strong>"&gt;
+    &lt;p&gt;This is the footter row.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+</div>
+
 <h5>Input Field</h5>
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-text">
+	<div class="ym-fbox ym-fbox-text">
 		<label for="form1">your label</label>
 		<input type="text" name="form1" id="form1" placeholder="enter a value"/>
 	</div>
 </form>
 
 <pre class="htmlCode">
-&lt;div class="<strong>ym-fbox-text</strong>"&gt;
+&lt;div class="<strong>ym-fbox ym-fbox-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" placeholder="enter a value" /&gt;
 &lt;/div&gt;
 </pre>
-	</div>
-	<h5>Textarea</h5>
+</div>
+<h5>Textarea</h5>
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-text">
+	<div class="ym-fbox ym-fbox-text">
 		<label for="form2">your label</label>
 		<textarea name="form2" id="form2" rows="5"></textarea>
 	</div>
 </form>
 
 <pre class="htmlCode">
-&lt;div class="<strong>ym-fbox-text</strong>"&gt;
+&lt;div class="<strong>ym-fbox ym-fbox-text</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;textarea name=&quot;your-id&quot; id=&quot;your-id&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
@@ -1490,7 +1515,7 @@ body &gt; header { min-width: 760px; }
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-select">
+	<div class="ym-fbox ym-fbox-select">
 		<label for="form3">Available Options</label>
 		<select name="form3" id="form3" size="1">
 			<option value="0" selected="selected" disabled="disabled">Please choose</option>
@@ -1509,7 +1534,7 @@ body &gt; header { min-width: 760px; }
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox-select</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox ym-fbox-select</strong>&quot;&gt;
   &lt;label for=&quot;your-id&quot;&gt;Available Options&lt;/label&gt;
   &lt;select name=&quot;your-id&quot; id=&quot;your-id&quot; size=&quot;1&quot;&gt;
     &lt;option value=&quot;0&quot; selected=&quot;selected&quot; disabled=&quot;disabled&quot;&gt;Please choose&lt;/option&gt;
@@ -1529,42 +1554,46 @@ body &gt; header { min-width: 760px; }
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-check">
+	<div class="ym-fbox ym-fbox-check">
 		<span class="ym-label">A single checkbox</span>
 		<input type="checkbox" name="your-id1" id="your-id1" />
 		<label for="your-id1">Your checkbox label</label>
 	</div>
 
-	<div class="ym-fbox-check">
+	<div class="ym-fbox">
 		<span class="ym-label">A set of checkboxes</span>
-		<div>
-			<input type="checkbox" name="your-id1" id="your-id1" />
-			<label for="your-id1">Your checkbox label</label>
-		</div>
-		<div>
-			<input type="checkbox" name="your-id2" id="your-id2" />
-			<label for="your-id2">Your checkbox label</label>
+		<div class="ym-fbox-wrap">
+			<div class="ym-fbox-check">
+				<input type="checkbox" name="your-id1" id="your-id1" />
+				<label for="your-id1">Your checkbox label</label>
+			</div>
+			<div class="ym-fbox-check">
+				<input type="checkbox" name="your-id2" id="your-id2" />
+				<label for="your-id2">Your checkbox label</label>
+			</div>
 		</div>
 	</div>
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox-check</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox ym-fbox-check</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;A single checkbox&lt;span&gt;
-  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
+  &lt;div class=&quot;ym-fbox-check&quot;&gt;
     &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
     &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;<strong>ym-fbox-check</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;A set of checkboxs&lt;span&gt;
-  &lt;div class=&quot;ym-fbox-wrap&quot;gt;
-    &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id2&quot; /&gt;
-    &lt;label for=&quot;your-id2&quot;&gt;Your checkbox label&lt;/label&gt;
-  &lt;/div&gt;
   &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id3&quot; /&gt;
-    &lt;label for=&quot;your-id3&quot;&gt;Your checkbox label&lt;/label&gt;
+    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id2&quot; /&gt;
+      &lt;label for=&quot;your-id2&quot;&gt;Your checkbox label&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id3&quot; /&gt;
+      &lt;label for=&quot;your-id3&quot;&gt;Your checkbox label&lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -1577,37 +1606,41 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-check">
+	<div class="ym-fbox">
 		<span class="ym-label">Custom Label</span>
-		<div>
-			<input type="radio" name="vote" value="Option 1" id="vote1" />
-			<label for="vote1">Option 1</label>
-		</div>
-		<div>
-			<input type="radio" name="vote" id="vote2" />
-			<label for="vote2">Option 2</label>
-		</div>
-		<div>
-			<input type="radio" name="vote" id="vote3" />
-			<label for="vote3">Option 3</label>
+		<div class="ym-fbox-wrap">
+			<div class="ym-fbox-check">
+				<input type="radio" name="vote" value="Option 1" id="vote1" />
+				<label for="vote1">Option 1</label>
+			</div>
+			<div class="ym-fbox-check">
+				<input type="radio" name="vote" id="vote2" />
+				<label for="vote2">Option 2</label>
+			</div>
+			<div class="ym-fbox-check">
+				<input type="radio" name="vote" id="vote3" />
+				<label for="vote3">Option 3</label>
+			</div>
 		</div>
 	</div>
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox-check</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;span&gt;
   &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id1&quot; /&gt;
-    &lt;label for=&quot;your-id1&quot;&gt;Your radio-button label&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id2&quot; /&gt;
-    &lt;label for=&quot;your-id2&quot;&gt;Your radio-button label&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id3&quot; /&gt;
-    &lt;label for=&quot;your-id3&quot;&gt;Your radio-button label&lt;/label&gt;
+    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id1&quot; /&gt;
+      &lt;label for=&quot;your-id1&quot;&gt;Your radio-button label&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id2&quot; /&gt;
+      &lt;label for=&quot;your-id2&quot;&gt;Your radio-button label&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id3&quot; /&gt;
+      &lt;label for=&quot;your-id3&quot;&gt;Your radio-button label&lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 	</div>
@@ -1615,7 +1648,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox-button">
+	<div class="ym-fbox ym-fbox-button">
 		<input type="submit" value="Submit" class="ym-primary" id="submit" name="submit" />
 		<input type="reset" value="Reset" class="ym-warning" id="reset" name="reset" />
 		<input type="button" value="Button" id="button1" name="button1" />
@@ -1643,7 +1676,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="tab-content">
 
 				<p>Required form fields can  be  visually emphasized by adding <code>.ym-required</code> element to the label. In any case, you should add  the ARIA attribute <em><code>aria-required=&quot;true&quot;</code></em> or <code><em>required=&quot;required&quot;</em></code> when using HTML5.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-text"&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox ym-fbox-text"&gt;
   &lt;label for="your-id">your label<strong>&lt;sup class=&quot;ym-required&quot;&gt;*&lt;/sup&gt;</strong>&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" size="20" required=&quot;required&quot;/&gt;
 &lt;/div&gt;		</pre>
@@ -1652,7 +1685,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<h5>Error Messages</h5>
 				<div class="tab-content">
 				<p>Use class <code>.ym-error</code> to highlight form fields with invalid form elements. By adding this class to the parent container, you have rich styling options. Optionally you can use <code>.ym-message </code>output messages that will be correctly aligned in all form styles.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-text <strong>ym-error</strong>"&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox <strong>ym-error</strong>"&gt;
   &lt;p class=&quot;<strong>ym-message</strong>&quot;&gt;Error: invalid value!&lt;/p&gt;
   ...
 &lt;/div&gt;</pre>
@@ -1667,10 +1700,13 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 
 				<h5>Extended Labels</h5>
 				<div class="tab-content">
-				<p>In radio button sets, the label elements are needed to label  individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox-check"&gt;
-  &lt;div&gt;<br>    &lt;span class=&quot;<strong>ym-label</strong>&quot;&gt;Custom Label&lt;/span&gt;<br>    &lt;input type=&quot;radio&quot; name=&quot;vote&quot; value=&quot;Option 1&quot; id=&quot;vote1&quot; /&gt;<br>    &lt;label for=&quot;vote1&quot;&gt;Option 1&lt;/label&gt;<br>  &lt;/div&gt;
-  ...
+				<p>In radio button sets, the label elements are needed to label individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
+				<pre class="htmlCode">
+&lt;div class="ym-fbox ym-fbox-check"&gt;
+  &lt;span class=&quot;<strong>ym-label</strong>&quot;&gt;Custom Label&lt;/span&gt;
+  &lt;div class="ym-fbox-wrap"&gt;
+    ...
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
 				</div>
 				</div>
@@ -1681,7 +1717,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="tab-content">
 				<h5>Inline Form Elements</h5>
 				<form class="ym-form">
-					<div class="ym-fbox-text">
+					<div class="ym-fbox ym-fbox-text">
 					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
 					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
 					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
@@ -1689,7 +1725,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				</form>
 
 				<pre class="htmlCode">
-&lt;div class="ym-fbox-text"&gt;
+&lt;div class="ym-fbox ym-fbox-text"&gt;
   &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
   &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
   &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
@@ -1701,22 +1737,22 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<p>To create multicolumnar forms, use the grid module to put multiple form elements in a row.</p>
 
 				<form class="ym-form">
-					<div class="ym-fbox-text">
+					<div class="ym-fbox">
 						<div class="ym-fbox-wrap ym-grid">
 							<div class="ym-g33 ym-gl">
-								<div class="ym-gbox-left">
+								<div class="ym-gbox-left ym-fbox-text">
 									<label for="plz">Postal Code</label>
 									<input type="text" name="plz" id="plz" size="20" />
 								</div>
 							</div>
 							<div class="ym-g33 ym-gl">
-								<div class="ym-gbox">
+								<div class="ym-gbox ym-fbox-text">
 									<label for="city">City</label>
 									<input type="text" name="city" id="city" size="20" />
 								</div>
 							</div>
 							<div class="ym-g33 ym-gr">
-								<div class="ym-gbox-right">
+								<div class="ym-gbox-right ym-fbox-text">
 									<label for="country">Country</label>
 									<select name="country" id="country"><option value="">entry</option></select>
 								</div>
@@ -1726,23 +1762,23 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				</form>
 
 				<pre class="htmlCode">
-&lt;div class=&quot;ym-fbox-text&quot;&gt;
+&lt;div class=&quot;ym-fbox&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;Wrapped From Elements and Labels&lt;/span&gt;
   &lt;div class=&quot;<strong>ym-fbox-wrap ym-grid</strong>&quot;&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gl</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-left</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-left ym-fbox-text</strong>&quot;&gt;
         &lt;label for=&quot;plz&quot; &gt;Postal Code&lt;/label&gt;
         &lt;input type=&quot;text&quot; name=&quot;plz&quot; id=&quot;plz&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gl</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-left</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-left ym-fbox-text</strong>&quot;&gt;
         &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
         &lt;input type=&quot;text&quot; name=&quot;city&quot; id=&quot;city&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gr</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-right</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-right ym-fbox-text</strong>&quot;&gt;
         &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
         &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;&lt;option value=&quot;&quot;&gt;entry&lt;/option&gt;&lt;/select&gt;
       &lt;/div&gt;
@@ -1763,12 +1799,12 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 					<div class="js-info box warning">JavaScript has to be enabled to demonstrate the available form layouts.</div>
 					<form id="formswitch" class="ym-form ym-full">
 						<h6 class="ym-fbox-heading">Live Preview: Choose Style</h6>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-fbox-check">
 							<div><input type="radio" name="dswitch" data-type="" id="slinear" checked="checked"/> <label for="slinear">Linear (default)</label></div>
 							<div><input type="radio" name="dswitch" data-type="ym-full" id="sfull"/> <label for="sfull">Full Width</label></div>
 							<div><input type="radio" name="dswitch" data-type="ym-columnar" id="sleft"/> <label for="sleft">Columnar</label></div>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-fbox-check">
 							<input type="checkbox" name="dlinear" data-type="linearize-form" id="dlinear" checked="checked"/>
 							<label for="dlinear">Enable Linearization (&lt; 740px)</label></div>
 					</form>
@@ -1784,7 +1820,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 					<form method="post" action="" id="demo-form1" class="ym-form linearize-form" role="application">
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
 
-						<div class="ym-fbox-select">
+						<div class="ym-fbox ym-fbox-select">
 							<label for="salutation">Salutation</label>
 							<select name="salutation" id="salutation" size="1" aria-required="true">
 								<option value="0" selected="selected" disabled="disabled">Please choose</option>
@@ -1793,214 +1829,214 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 								<option value="Mrs.">Mrs.</option>
 							</select>
 						</div>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox ym-fbox-text">
 							<label for="firstname">First name</label>
 							<input type="text" name="firstname" id="firstname" size="20" />
 						</div>
 						<h6 class="ym-fbox-heading">Error Handling and Required Fields</h6>
-						<div class="ym-fbox-text ym-error" role="alert" aria-live="assertive">
+						<div class="ym-fbox ym-fbox-text ym-error" role="alert" aria-live="assertive">
 							<p class="ym-message">Field &laquo;Last name&raquo; not properly filled.</p>
 							<label for="lastname">Last name <sup class="ym-required" title="This field is mandatory.">*</sup></label>
 							<input type="text" name="lastname" id="lastname" size="20"  aria-required="true"/>
 						</div>
 
 						<h6 class="ym-fbox-heading">Grid Form Elements</h6>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox">
 							<span class="ym-label">Inline Grid Elements</span>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g20 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g20" type="text" name="inline1" id="inline1" size="20" />
 									</div>
 								</div>
 								<div class="ym-g80 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select1" id="select1"><option value="">.ym-g80</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g25 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g25" type="text" name="inline2" id="inline2" size="20" />
 									</div>
 								</div>
 								<div class="ym-g75 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select2" id="select2"><option value="">.ym-g75</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g33" type="text" name="inline3" id="inline3" size="20" />
 									</div>
 								</div>
 								<div class="ym-g66 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select3" id="select3"><option value="">.ym-g66</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g38 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g38" type="text" name="inline4" id="inline4" size="20" />
 									</div>
 								</div>
 								<div class="ym-g62 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select4" id="select4"><option value="">.ym-g62</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g40 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g40" type="text" name="inline5" id="inline5" size="20" />
 									</div>
 								</div>
 								<div class="ym-g60 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select5" id="select5"><option value="">.ym-g60</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g50 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g50" type="text" name="inline6" id="inline6" size="20" />
 									</div>
 								</div>
 								<div class="ym-g50 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select6" id="select6"><option value="">.ym-g50</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g60 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g60" type="text" name="inline7" id="inline7" size="20" />
 									</div>
 								</div>
 								<div class="ym-g40 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select7" id="select7"><option value="">.ym-g40</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g62 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g62" type="text" name="inline8" id="inline8" size="20" />
 									</div>
 								</div>
 								<div class="ym-g38 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select8" id="select8"><option value="">.ym-g38</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g66 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g66" type="text" name="inline9" id="inline9" size="20" />
 									</div>
 								</div>
 								<div class="ym-g33 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select9" id="select9"><option value="">.ym-g33</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g75 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g75" type="text" name="inline10" id="inline10" size="20" />
 									</div>
 								</div>
 								<div class="ym-g25 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select10" id="select10"><option value="">.ym-g25</option></select>
 									</div>
 								</div>
 							</div>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g80 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<input value=".ym-g80" type="text" name="inline11" id="inline11" size="20" />
 									</div>
 								</div>
 								<div class="ym-g20 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="select11" id="select11"><option value="">.ym-g20</option></select>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox">
 							<span class="ym-label">Wrapped Elements and Labels</span>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-check">
 										<input type="checkbox" name="check1" id="check1" />
 										<label for="check1">Label</label>
 									</div>
 								</div>
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox">
+									<div class="ym-gbox ym-fbox-check">
 										<input type="checkbox" name="check2" id="check2" />
 										<label for="check2">Label</label>
 									</div>
 								</div>
 								<div class="ym-g33 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-check">
 										<input type="checkbox" name="check3" id="check3" />
 										<label for="check3">Label</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox">
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-text">
 										<label for="plz">Postal Code</label>
 										<input type="text" name="plz" id="plz" size="20" />
 									</div>
 								</div>
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox">
+									<div class="ym-gbox ym-fbox-text">
 										<label for="city">City</label>
 										<input type="text" name="city" id="city" size="20" />
 									</div>
 								</div>
 								<div class="ym-g33 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-text">
 										<label for="country">Country</label>
 										<select name="country" id="country"><option value="">entry</option></select>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox">
 							<span class="ym-label">Combined Usage</span>
 							<div class="ym-fbox-wrap ym-grid">
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox-left">
+									<div class="ym-gbox-left ym-fbox-check">
 										<input class="ym-ie-checkbox" type="checkbox" name="combi1" id="combi1" />
 										<label for="combi1">ym-g33</label>
 									</div>
 								</div>
 								<div class="ym-g33 ym-gl">
-									<div class="ym-gbox">
+									<div class="ym-gbox ym-fbox-text">
 										<input type="text" value="ym-g33" name="combi2" id="combi2" size="20" />
 									</div>
 								</div>
 								<div class="ym-g33 ym-gr">
-									<div class="ym-gbox-right">
+									<div class="ym-gbox-right ym-fbox-select">
 										<select name="combi3" id="combi3"><option value="">ym-g33</option></select>
 									</div>
 								</div>
@@ -2008,32 +2044,33 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 						</div>
 
 						<h6 class="ym-fbox-heading">Text Areas, Checkboxes, Radio Buttons</h6>
-						<div class="ym-fbox-text">
+						<div class="ym-fbox ym-fbox-text">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="7"></textarea>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox ym-fbox-check">
 							<input type="checkbox" name="newsletter" id="newsletter" />
 							<label for="newsletter">Sign me up for your newsletter</label>
 						</div>
-						<div class="ym-fbox-check">
+						<div class="ym-fbox">
 							<span class="ym-label">Custom Label</span>
 							<div class="ym-fbox-wrap">
-								<input type="radio" name="vote" value="Option 1" id="vote1" />
-								<label for="vote1">Option 1</label>
-							</div>
-							<div class="ym-fbox-wrap">
-								<input type="radio" name="vote" id="vote2" />
-								<label for="vote2">Option 2</label>
-							</div>
-							<div class="ym-fbox-wrap">
-								<input type="radio" name="vote" id="vote3" />
-								<label for="vote3">Option 3</label>
+								<div class="ym-fbox-check">
+									<input type="radio" name="vote" value="Option 1" id="vote1" />
+									<label for="vote1">Option 1</label>
+								</div>
+								<div class="ym-fbox-check">
+									<input type="radio" name="vote" id="vote2" />
+									<label for="vote2">Option 2</label>
+								</div>
+								<div class="ym-fbox-check">
+									<input type="radio" name="vote" id="vote3" />
+									<label for="vote3">Option 3</label>
+								</div>
 							</div>
 						</div>
-						<div class="ym-fbox-button">
+						<div class="ym-fbox-footer ym-fbox-button">
 							<button type="submit" class="save ym-save ym-success" id="submit" name="submit">Custom Button</button>
-
 							<input type="submit" value="Submit"  class="save ym-primary" id="submit" name="submit" />
 							<input type="reset" value="Reset" class="delete" id="reset" name="reset" />
 						</div>

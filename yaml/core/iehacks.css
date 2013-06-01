@@ -275,9 +275,6 @@
     overflow: hidden;
     margin-right: -5px;
   }
-  .ym-form .ym-fbox-check input {
-    width: auto;
-  }
 
   .ym-fbox-wrap input,
   .ym-fbox-wrap textarea,

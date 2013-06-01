@@ -1,7 +1,7 @@
 @import "yaml-sass/yaml-var-globals";
 @import "yaml-sass/mixins/yaml-mixins-core";
 
-@media screen, projection {
+@media screen {
 	.ym-form {
 		background:#f4f4f4;
 		border:2px #fff solid;
@@ -32,15 +32,13 @@
 			line-height: 1.5;
 			padding-top: 0.25em;
 		}
-		.ym-fbox-text,
-		.ym-fbox-select,
-		.ym-fbox-check,
-		.ym-fbox-button {
+
+		.ym-fbox {
 			padding: 0.3em 1em 1em 1em;
 			margin-bottom: 0.5em;
 		}
 
-		.ym-fbox-button {
+		.ym-fbox-footer {
 			background: #ececec;
 			border-top: 1px #e0e0e0 solid;
 			padding:0 1em 1.5em 1em;
@@ -81,39 +79,42 @@
 	/* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
 
 	.ym-form {
-		.ym-fbox-text input,
-		.ym-fbox-text textarea {
-			line-height: 1em;
-			padding: 4px 0.3em;
-		}
-		.ym-fbox-text select,
-		.ym-fbox-select select {
-			line-height: 1em;
-			padding: 3px 2px 3px 1px;
-		}
 		input,
 		textarea,
-		select,
-		optgroup {
+		select {
+			border:1px solid #ddd;
+			line-height: 1em;
 			font-family:Arial, Helvetica, sans-serif;
 			@include ym-box-shadow(0,0,4px,#eee,inset);
 		}
+
+		input,
+		textarea {
+			padding: 4px 0.3em;
+		}
+
+		select {
+			padding: 3px 2px 3px 1px;
+		}
+
+		input:focus, select:focus, textarea:focus,
+		input:hover, select:hover, textarea:hover,
+		input:active, select:active, textarea:active {
+			border:1px #888 solid;
+			background:#fff;
+		}
+
 		optgroup {
+			font-family:Arial, Helvetica, sans-serif;
 			font-style:normal;
 			font-weight:bold;
 		}
 
-		.ym-fbox-text input,
-		.ym-fbox-text textarea,
-		.ym-fbox-text select,
-		.ym-fbox-select select {
-			border:1px solid #ddd;
-		}
-
+		.ym-fbox-check input,
 		input[type="checkbox"],
 		input[type="radio"] {
-			border: 0 none !important;
-			background: transparent !important;
+			border: 0 none;
+			background: transparent;
 		}
 
 		.ym-message {
@@ -124,9 +125,12 @@
 			color:#800;
 			font-weight:bold;
 		}
+
 		// valid & invalid state
-		input:valid, textarea:valid { background-color: #fff; }
-		input:invalid, textarea:invalid { background-color: #fdd; }
+		input:valid,
+		textarea:valid { background-color: #fff; }
+		input:invalid,
+		textarea:invalid { background-color: #fdd; }
 
 		.ym-error {
 			label {
@@ -146,13 +150,6 @@
 				font-weight: bold;
 				margin-top: 0;
 			}
-		}
-
-		input:focus,  select:focus, textarea:focus,
-		input:hover,  select:hover, textarea:hover,
-		input:active, select:active, textarea:active {
-			border:1px #888 solid;
-			background:#fff;
 		}
 	}
 
