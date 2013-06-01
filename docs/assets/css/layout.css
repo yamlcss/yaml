@@ -757,7 +757,6 @@
   .ym-form label,
   .ym-form .ym-label {
     color: #666;
-    color: #666;
     line-height: 1.5;
     padding-top: 0.25em;
   }
@@ -873,13 +872,12 @@
   .ym-form input[type="submit"] {
     display: inline-block;
     white-space: nowrap;
-    background-color: #ccc;
-    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+    background: -webkit-linear-gradient(top, #1e5799, #7db9e8);
+    background: -moz-linear-gradient(top, #1e5799, #7db9e8);
+    background: linear-gradient("to bottom", #1e5799, #7db9e8);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#1e5799', endColorstr='#7db9e8');
+    zoom: 1;
     border: 1px solid #777;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -899,27 +897,26 @@
   .ym-form input[type="button"]:hover,
   .ym-form input[type="reset"]:hover,
   .ym-form input[type="submit"]:hover {
-    background-color: #ddd;
-    background-image: -webkit-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -moz-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -ms-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -o-linear-gradient(top, #fafafa, #dddddd);
-    background-image: linear-gradient(to bottom, #fafafa, #dddddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #dddddd));
+    background: -webkit-linear-gradient(top, #fafafa, #dddddd);
+    background: -moz-linear-gradient(top, #fafafa, #dddddd);
+    background: linear-gradient("to bottom", #fafafa, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#fafafa', endColorstr='#dddddd');
+    zoom: 1;
   }
   .ym-button:active,
   .ym-form button:active,
   .ym-form input[type="button"]:active,
   .ym-form input[type="reset"]:active,
   .ym-form input[type="submit"]:active {
-    background-color: #bbb;
-    background-image: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -moz-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -ms-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -o-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: linear-gradient(to bottom, #cccccc, #bbbbbb);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #bbbbbb));
+    background: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
+    background: -moz-linear-gradient(top, #cccccc, #bbbbbb);
+    background: linear-gradient("to bottom", #cccccc, #bbbbbb);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cccccc', endColorstr='#bbbbbb');
+    zoom: 1;
     position: relative;
     top: 1px;
   }
@@ -959,15 +956,13 @@
   .ym-form input[type="reset"].ym-primary,
   .ym-form input[type="submit"].ym-primary {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #66c;
-    background-image: -webkit-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -moz-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -ms-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -o-linear-gradient(top, #8888ee, #6666cc);
-    background-image: linear-gradient(to bottom, #8888ee, #6666cc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ee), color-stop(100%, #6666cc));
+    background: -webkit-linear-gradient(top, #8888ee, #6666cc);
+    background: -moz-linear-gradient(top, #8888ee, #6666cc);
+    background: linear-gradient("to bottom", #8888ee, #6666cc);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888ee', endColorstr='#6666cc');
+    zoom: 1;
     border: 1px solid #007;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -977,27 +972,26 @@
   .ym-form input[type="button"].ym-primary:hover,
   .ym-form input[type="reset"].ym-primary:hover,
   .ym-form input[type="submit"].ym-primary:hover {
-    background-color: #66d;
-    background-image: -webkit-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -moz-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -ms-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -o-linear-gradient(top, #8888ff, #6666dd);
-    background-image: linear-gradient(to bottom, #8888ff, #6666dd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ff', EndColorStr='#6666dd');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ff), color-stop(100%, #6666dd));
+    background: -webkit-linear-gradient(top, #8888ff, #6666dd);
+    background: -moz-linear-gradient(top, #8888ff, #6666dd);
+    background: linear-gradient("to bottom", #8888ff, #6666dd);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888ff', endColorstr='#6666dd');
+    zoom: 1;
   }
   .ym-button.ym-primary:active,
   .ym-form button.ym-primary:active,
   .ym-form input[type="button"].ym-primary:active,
   .ym-form input[type="reset"].ym-primary:active,
   .ym-form input[type="submit"].ym-primary:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #66b;
-    background-image: -webkit-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -moz-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -ms-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -o-linear-gradient(top, #8888cc, #6666aa);
-    background-image: linear-gradient(to bottom, #8888cc, #6666aa);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888cc', EndColorStr='#6666aa');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888cc), color-stop(100%, #6666aa));
+    background: -webkit-linear-gradient(top, #8888cc, #6666aa);
+    background: -moz-linear-gradient(top, #8888cc, #6666aa);
+    background: linear-gradient("to bottom", #8888cc, #6666aa);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888cc', endColorstr='#6666aa');
+    zoom: 1;
   }
   .ym-button.ym-primary:focus,
   .ym-form button.ym-primary:focus,
@@ -1015,15 +1009,13 @@
   .ym-form input[type="reset"].ym-success,
   .ym-form input[type="submit"].ym-success {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #494;
-    background-image: -webkit-linear-gradient(top, #66bb66, #449944);
-    background-image: -moz-linear-gradient(top, #66bb66, #449944);
-    background-image: -ms-linear-gradient(top, #66bb66, #449944);
-    background-image: -o-linear-gradient(top, #66bb66, #449944);
-    background-image: linear-gradient(to bottom, #66bb66, #449944);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66bb66), color-stop(100%, #449944));
+    background: -webkit-linear-gradient(top, #66bb66, #449944);
+    background: -moz-linear-gradient(top, #66bb66, #449944);
+    background: linear-gradient("to bottom", #66bb66, #449944);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66bb66', endColorstr='#449944');
+    zoom: 1;
     border: 1px solid #070;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1033,27 +1025,26 @@
   .ym-form input[type="button"].ym-success:hover,
   .ym-form input[type="reset"].ym-success:hover,
   .ym-form input[type="submit"].ym-success:hover {
-    background-color: #5a5;
-    background-image: -webkit-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -moz-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -ms-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -o-linear-gradient(top, #66cc66, #55aa55);
-    background-image: linear-gradient(to bottom, #66cc66, #55aa55);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66cc66', EndColorStr='#55aa55');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66cc66), color-stop(100%, #55aa55));
+    background: -webkit-linear-gradient(top, #66cc66, #55aa55);
+    background: -moz-linear-gradient(top, #66cc66, #55aa55);
+    background: linear-gradient("to bottom", #66cc66, #55aa55);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66cc66', endColorstr='#55aa55');
+    zoom: 1;
   }
   .ym-button.ym-success:active,
   .ym-form button.ym-success:active,
   .ym-form input[type="button"].ym-success:active,
   .ym-form input[type="reset"].ym-success:active,
   .ym-form input[type="submit"].ym-success:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #484;
-    background-image: -webkit-linear-gradient(top, #66aa66, #448844);
-    background-image: -moz-linear-gradient(top, #66aa66, #448844);
-    background-image: -ms-linear-gradient(top, #66aa66, #448844);
-    background-image: -o-linear-gradient(top, #66aa66, #448844);
-    background-image: linear-gradient(to bottom, #66aa66, #448844);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aa66', EndColorStr='#448844');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66aa66), color-stop(100%, #448844));
+    background: -webkit-linear-gradient(top, #66aa66, #448844);
+    background: -moz-linear-gradient(top, #66aa66, #448844);
+    background: linear-gradient("to bottom", #66aa66, #448844);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66aa66', endColorstr='#448844');
+    zoom: 1;
   }
   .ym-button.ym-success:focus,
   .ym-form button.ym-success:focus,
@@ -1071,15 +1062,13 @@
   .ym-form input[type="reset"].ym-warning,
   .ym-form input[type="submit"].ym-warning {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #b72;
-    background-image: -webkit-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -moz-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -ms-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -o-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: linear-gradient(to bottom, #ddaa44, #bb7722);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ddaa44), color-stop(100%, #bb7722));
+    background: -webkit-linear-gradient(top, #ddaa44, #bb7722);
+    background: -moz-linear-gradient(top, #ddaa44, #bb7722);
+    background: linear-gradient("to bottom", #ddaa44, #bb7722);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ddaa44', endColorstr='#bb7722');
+    zoom: 1;
     border: 1px solid #970;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1089,27 +1078,26 @@
   .ym-form input[type="button"].ym-warning:hover,
   .ym-form input[type="reset"].ym-warning:hover,
   .ym-form input[type="submit"].ym-warning:hover {
-    background-color: #c83;
-    background-image: -webkit-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -moz-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -ms-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -o-linear-gradient(top, #eebb55, #cc8833);
-    background-image: linear-gradient(to bottom, #eebb55, #cc8833);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eebb55', EndColorStr='#cc8833');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eebb55), color-stop(100%, #cc8833));
+    background: -webkit-linear-gradient(top, #eebb55, #cc8833);
+    background: -moz-linear-gradient(top, #eebb55, #cc8833);
+    background: linear-gradient("to bottom", #eebb55, #cc8833);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eebb55', endColorstr='#cc8833');
+    zoom: 1;
   }
   .ym-button.ym-warning:active,
   .ym-form button.ym-warning:active,
   .ym-form input[type="button"].ym-warning:active,
   .ym-form input[type="reset"].ym-warning:active,
   .ym-form input[type="submit"].ym-warning:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #a62;
-    background-image: -webkit-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -moz-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -ms-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -o-linear-gradient(top, #cc9944, #aa6622);
-    background-image: linear-gradient(to bottom, #cc9944, #aa6622);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc9944', EndColorStr='#aa6622');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc9944), color-stop(100%, #aa6622));
+    background: -webkit-linear-gradient(top, #cc9944, #aa6622);
+    background: -moz-linear-gradient(top, #cc9944, #aa6622);
+    background: linear-gradient("to bottom", #cc9944, #aa6622);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cc9944', endColorstr='#aa6622');
+    zoom: 1;
   }
   .ym-button.ym-warning:focus,
   .ym-form button.ym-warning:focus,
@@ -1127,15 +1115,13 @@
   .ym-form input[type="reset"].ym-danger,
   .ym-form input[type="submit"].ym-danger {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #944;
-    background-image: -webkit-linear-gradient(top, #bb6666, #994444);
-    background-image: -moz-linear-gradient(top, #bb6666, #994444);
-    background-image: -ms-linear-gradient(top, #bb6666, #994444);
-    background-image: -o-linear-gradient(top, #bb6666, #994444);
-    background-image: linear-gradient(to bottom, #bb6666, #994444);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bb6666), color-stop(100%, #994444));
+    background: -webkit-linear-gradient(top, #bb6666, #994444);
+    background: -moz-linear-gradient(top, #bb6666, #994444);
+    background: linear-gradient("to bottom", #bb6666, #994444);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#bb6666', endColorstr='#994444');
+    zoom: 1;
     border: 1px solid #700;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1145,27 +1131,26 @@
   .ym-form input[type="button"].ym-danger:hover,
   .ym-form input[type="reset"].ym-danger:hover,
   .ym-form input[type="submit"].ym-danger:hover {
-    background-color: #a55;
-    background-image: -webkit-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -moz-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -ms-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -o-linear-gradient(top, #cc6666, #aa5555);
-    background-image: linear-gradient(to bottom, #cc6666, #aa5555);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc6666', EndColorStr='#aa5555');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc6666), color-stop(100%, #aa5555));
+    background: -webkit-linear-gradient(top, #cc6666, #aa5555);
+    background: -moz-linear-gradient(top, #cc6666, #aa5555);
+    background: linear-gradient("to bottom", #cc6666, #aa5555);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cc6666', endColorstr='#aa5555');
+    zoom: 1;
   }
   .ym-button.ym-danger:active,
   .ym-form button.ym-danger:active,
   .ym-form input[type="button"].ym-danger:active,
   .ym-form input[type="reset"].ym-danger:active,
   .ym-form input[type="submit"].ym-danger:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #844;
-    background-image: -webkit-linear-gradient(top, #aa5555, #884444);
-    background-image: -moz-linear-gradient(top, #aa5555, #884444);
-    background-image: -ms-linear-gradient(top, #aa5555, #884444);
-    background-image: -o-linear-gradient(top, #aa5555, #884444);
-    background-image: linear-gradient(to bottom, #aa5555, #884444);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#aa5555', EndColorStr='#884444');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aa5555), color-stop(100%, #884444));
+    background: -webkit-linear-gradient(top, #aa5555, #884444);
+    background: -moz-linear-gradient(top, #aa5555, #884444);
+    background: linear-gradient("to bottom", #aa5555, #884444);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#aa5555', endColorstr='#884444');
+    zoom: 1;
   }
   .ym-button.ym-danger:focus,
   .ym-form button.ym-danger:focus,
