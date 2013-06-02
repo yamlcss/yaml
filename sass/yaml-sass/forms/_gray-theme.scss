@@ -1,5 +1,5 @@
-@import "yaml-sass/yaml-var-globals";
-@import "yaml-sass/mixins/yaml-mixins-core";
+@import "../yaml-var-globals";
+@import "../mixins/yaml-mixins-core";
 
 @media screen {
 	.ym-form {
@@ -163,7 +163,7 @@
 
 		border: 1px solid #777;
 		border-radius: .2em;
-		
+
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.15);
 				box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.15);
 		color: #333 !important;
@@ -206,7 +206,7 @@
 	.ym-form input[type="submit"].ym-primary {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
 				box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		
+
 		@include ym-linear-gradient("to bottom", #88e, #66c);
 
 		border: 1px solid #007;
@@ -246,7 +246,7 @@
 		}
 
 		&:active {
-			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);			
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
 			@include ym-linear-gradient("to bottom", #6a6, #484);
 		}
 

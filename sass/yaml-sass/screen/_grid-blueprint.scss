@@ -1,4 +1,4 @@
-@import "yaml-sass/_yaml-var-globals",
-		"yaml-sass/mixins/yaml-mixins-core";
+@import "../_yaml-var-globals",
+		"../mixins/yaml-mixins-core";
 
 @include ym-custom-grid("span", 24, 960px, 0, 10px);
