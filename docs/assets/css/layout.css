@@ -1,14 +1,18 @@
 @charset "UTF-8";
 /* YAML Framework Components */
 @media all {
-  /*
+  /**
    *  @section Normalisation Module
    */
+  /* (en) Global reset of paddings and margins for all HTML elements */
+  /* (de) Globales Zur├╝cksetzen der Innen- und Au├ƒenabst├ñnde f├╝r alle HTML-Elemente */
   * {
     margin: 0;
     padding: 0;
   }
 
+  /* (en) Correction:margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur:Das Zur├╝cksetzen der Abst├ñnde verursacht zu kleine Selectboxen. */
   option {
     padding-left: 0.4em;
   }
@@ -17,10 +21,23 @@
     padding: 1px;
   }
 
+  /*
+  * (en) Global fix of the Italics bugs in IE 5.x and IE 6
+  * (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
+  *
+  * @bugfix
+  * @affected   IE 5.x/Win, IE6
+  * @css-for    IE 5.x/Win, IE6
+  * @valid      yes
+  */
   * html body * {
     overflow: visible;
   }
 
+  /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+  /* (en) Standard values for colors and text alignment */
+  /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgr├Â├ƒen in ├ñlteren Opera Versionen */
+  /* (de) Vorgabe der Standardfarben und Textausrichtung */
   body {
     font-size: 100%;
     background: #fff;
@@ -28,42 +45,102 @@
     text-align: left;
   }
 
+  /* (en) avoid visible outlines on DIV containers in Webkit browsers */
+  /* (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern */
   div:target {
     outline: 0 none;
   }
 
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, main, nav, section {
+  /* (en) HTML 5 - adjusting visual formatting model to block level */
+  /* (de) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary {
     display: block;
   }
 
+  /* (en) HTML5 - default media element styles */
+  /* (de) HTML5 - Standard Eigenschaften f├╝r Media-Elemente */
   audio,
   canvas,
   video {
     display: inline-block;
   }
 
+  /* (en) HTML5 - don't show <audio> element if there aren't controls */
+  /* (de) HTML5 - <audio> ohne Kontrollelemente sollten nicht angezeigt werden */
   audio:not([controls]) {
     display: none;
   }
 
+  /* (en) HTML5 - add missing styling in IE & old FF for hidden attribute */
+  /* (de) HTML5 - Eigenschaften f├╝r das hidden-Attribut in ├ñlteren IEs und FF nachr├╝sten */
   [hidden] {
     display: none;
   }
 
-  input[type="search"] {
-    -webkit-appearance: textfield;
+  /* (en) Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+  /* (de) Verdindert die automatische Textanpassung bei Orientierungswechsel, ohne Zoom zu blockieren */
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
+  /* (en) set correct box-modell in IE8/9 plus remove padding */
+  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unn├Âtiges Padding */
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  /* (en) force consistant appearance of input[type="search"] elements in all browser */
+  /* (de) Einheitliches Erscheinungsbild f├╝r input[type="search"] Elemente erzwingen */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button,
   input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   }
 
-  fieldset, img {
+  /* (en) Correct overflow displayed oddly in IE 9. */
+  /* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9. */
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  /* (en) Address margin not present in IE 8/9 and Safari 5. */
+  /* (en) Erg├ñnzt fehlenden Margin in IE 8/9 und Safari 5. */
+  figure {
+    margin: 0;
+  }
+
+  /* (en) Clear borders for <fieldset> and <img> elements */
+  /* (de) Rahmen f├╝r <fieldset> und <img> Elemente l├Âschen */
+  fieldset,
+  img {
     border: 0 solid;
   }
 
-  ul, ol, dl {
+  /* (en) new standard values for lists, blockquote, cite and tables */
+  /* (de) Neue Standardwerte f├╝r Listen, Zitate und Tabellen */
+  ul,
+  ol,
+  dl {
     margin: 0 0 1em 1em;
   }
 
@@ -88,8 +165,10 @@
     quotes: none;
   }
 
-  blockquote:before, blockquote:after,
-  q:before, q:after {
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
     content: '';
     content: none;
   }
@@ -102,6 +181,8 @@
   /**
   * @section Float Handling Module
   */
+  /* (en) clearfix method for clearing floats */
+  /* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
   .ym-clearfix:before {
     content: "";
     display: table;
@@ -116,6 +197,8 @@
     visibility: hidden;
   }
 
+  /* (en) alternative solutions to contain floats */
+  /* (de) Alternative Methoden zum Einschlie├ƒen von Float-Umgebungen */
   .ym-contain-dt {
     display: table;
     table-layout: fixed;
@@ -135,6 +218,12 @@
 
   /**
   * @section Column Module
+  *
+  * default column config:
+  * |-------------------------------|
+  * | col1    | col3      | col2    |
+  * | 20%     | flexible  | 20%     |
+  * |-------------------------------|
   */
   .ym-column {
     display: table;
@@ -169,6 +258,8 @@
     padding: 0 0 0 10px;
   }
 
+  /* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
+  /* (de) IE-Clearing: Ben├Âtigt nur der Internet Explorer und ├╝ber iehacks.css zugeschaltet */
   .ym-ie-clearing {
     display: none;
   }
@@ -272,6 +363,20 @@
   /**
   * @section Form Module
   */
+  /** Vertical-Forms - technical base (standard)
+  *
+  * |-------------------------------|
+  * | form                          |
+  * |-------------------------------|
+  * |   label                       |
+  * |   input / select / textarea   |
+  * |-------------------------------|
+  * | /form                         |
+  * |-------------------------------|
+  *
+  * (en) Styling of forms where both label and input/select/textarea are styled with display:block;
+  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+  */
   .ym-form,
   .ym-form fieldset {
     overflow: hidden;
@@ -367,6 +472,7 @@
     vertical-align: baseline;
   }
 
+  /* default form wrapper width */
   .ym-fbox-wrap {
     display: table;
     table-layout: fixed;
@@ -398,6 +504,22 @@
     width: 100%;
   }
 
+  /**
+  *  Columnar forms display - technical base (optional)
+  *
+  *  |-------------------------------------------|
+  *  | form                                      |
+  *  |-------------------------------------------|
+  *  |                                           |
+  *  |   label   |   input / select / textarea   |
+  *  |                                           |
+  *  |-------------------------------------------|
+  *  | /form                                     |
+  *  |-------------------------------------------|
+  *
+  *  (en) Styling of forms where label floats left of form-elements
+  *  (de) Formulargestaltung, bei der die label-Elemente nach links flie├ƒen
+  */
   .ym-columnar input,
   .ym-columnar textarea,
   .ym-columnar select {
@@ -448,6 +570,7 @@
     margin-top: 0.5em;
   }
 
+  /* global and local columnar settings for button alignment */
   .ym-columnar fieldset .ym-fbox-button,
   fieldset.ym-columnar .ym-fbox-button {
     padding-left: 30%;
@@ -455,7 +578,12 @@
 
   /**
   * @section Accessibility Module
+  *
+  * (en) skip links and hidden content
+  * (de) Skip-Links und versteckte Inhalte
   */
+  /* (en) classes for invisible elements in the base layout */
+  /* (de) Klassen f├╝r unsichtbare Elemente im Basislayout */
   .ym-skip,
   .ym-hideme,
   .ym-print {
@@ -464,6 +592,8 @@
     left: -32768px;
   }
 
+  /* (en) make skip links visible when using tab navigation */
+  /* (de) Skip-Links f├╝r Tab-Navigation sichtbar schalten */
   .ym-skip:focus,
   .ym-skip:active {
     position: static;
@@ -471,6 +601,7 @@
     left: 0;
   }
 
+  /* skiplinks:technical setup */
   .ym-skiplinks {
     position: absolute;
     top: 0px;
@@ -493,8 +624,14 @@
   /**
   * @section print adjustments for core modules
   *
-  * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing f├╝r die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
+  * (de) Floats in Grids einschlie├ƒen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  *
+  * @bugfix
+  * @since     3.0
+  * @affected  FF2.0, FF3.0, IE7
+  * @css-for   all browsers
+  * @valid     yes
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {
@@ -502,11 +639,15 @@
     display: table;
   }
 
+  /* (en) make .ym-print class visible */
+  /* (de) .ym-print-Klasse sichtbar schalten */
   .ym-print {
     position: static;
     left: 0;
   }
 
+  /* (en) generic class to hide elements for print */
+  /* (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden */
   .ym-noprint {
     display: none !important;
   }
@@ -872,11 +1013,11 @@
   .ym-form input[type="submit"] {
     display: inline-block;
     white-space: nowrap;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
-    background: -webkit-linear-gradient(top, #1e5799, #7db9e8);
-    background: -moz-linear-gradient(top, #1e5799, #7db9e8);
-    background: linear-gradient("to bottom", #1e5799, #7db9e8);
-    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#1e5799', endColorstr='#7db9e8');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background: linear-gradient("to bottom", #eeeeee, #cccccc);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eeeeee', endColorstr='#cccccc');
     zoom: 1;
     border: 1px solid #777;
     border-radius: .2em;
@@ -1641,14 +1782,11 @@
     font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
   }
 
+  /* font-size: 14px; */
   body {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
-    /* font-size: 14px; */
     font-size: 87.5%;
     color: #444444;
-    /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergr├Â├ƒerung in mobilen Webkit-Browsern vermeiden */
-    -webkit-text-size-adjust: 100%;
   }
 
   /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/

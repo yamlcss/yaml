@@ -150,11 +150,11 @@
   .ym-form input[type="submit"] {
     display: inline-block;
     white-space: nowrap;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
-    background: -webkit-linear-gradient(top, #1e5799, #7db9e8);
-    background: -moz-linear-gradient(top, #1e5799, #7db9e8);
-    background: linear-gradient("to bottom", #1e5799, #7db9e8);
-    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#1e5799', endColorstr='#7db9e8');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background: linear-gradient("to bottom", #eeeeee, #cccccc);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eeeeee', endColorstr='#cccccc');
     zoom: 1;
     border: 1px solid #777;
     border-radius: .2em;

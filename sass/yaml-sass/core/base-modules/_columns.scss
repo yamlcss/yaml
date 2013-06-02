@@ -1,13 +1,13 @@
 @if $ym-base-columns == true {
 	/**
 	* @section Column Module
+	*
+	* default column config:
+	* |-------------------------------|
+	* | col1    | col3      | col2    |
+	* | 20%     | flexible  | 20%     |
+	* |-------------------------------|
 	*/
-
-	// default column config:
-	// |-------------------------------|
-	// | col1    | col3      | col2    |
-	// | 20%     | flexible  | 20%     |
-	// |-------------------------------|
 
 	.ym-column {
 		@include ym-contain(dt);
@@ -21,7 +21,7 @@
 	.ym-cbox-left { padding: 0 $ym-cbox-padding 0 0 }
 	.ym-cbox-right { padding: 0 0 0 $ym-cbox-padding }
 
-	// (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css
-	// (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet
+	/* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
+	/* (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
 	.ym-ie-clearing { display:none; }
 }

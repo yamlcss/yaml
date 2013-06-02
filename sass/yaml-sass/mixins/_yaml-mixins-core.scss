@@ -36,7 +36,7 @@
 
 // As there is a default direction there is no use for a fourth if-case.
 
-@mixin ym-linear-gradient($direction: "to bottom", $start-color: #1e5799, $end-color: #7db9e8, $output: both) {
+@mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both) {
 	$old-direction: top;
 	$very-old-direction:"left top, left bottom";
 	$ie-direction: 0;

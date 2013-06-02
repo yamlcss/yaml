@@ -41,14 +41,11 @@
     font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
   }
 
+  /* font-size: 14px; */
   body {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
-    /* font-size: 14px; */
     font-size: 87.5%;
     color: #444444;
-    /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
-    -webkit-text-size-adjust: 100%;
   }
 
   /*--- Headings | Überschriften ------------------------------------------------------------------------*/

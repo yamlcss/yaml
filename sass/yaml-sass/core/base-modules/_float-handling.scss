@@ -3,8 +3,8 @@
 	* @section Float Handling Module
 	*/
 
-	// (en) clearfix method for clearing floats
-	// (de) Clearfix-Methode zum Clearen der Float-Umgebungen
+	/* (en) clearfix method for clearing floats */
+	/* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
 	.ym-clearfix:before {
 		content:"";
 		display:table;
@@ -18,8 +18,8 @@
 		visibility:hidden;
 	}
 
-	// (en) alternative solutions to contain floats
-	// (de) Alternative Methoden zum Einschließen von Float-Umgebungen
+	/* (en) alternative solutions to contain floats */
+	/* (de) Alternative Methoden zum Einschließen von Float-Umgebungen */
 	.ym-contain-dt {
 		@include ym-contain(dt);
 	}
