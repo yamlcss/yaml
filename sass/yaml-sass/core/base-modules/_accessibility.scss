@@ -1,13 +1,14 @@
 @if $ym-base-accessibility == true {
 	/**
 	* @section Accessibility Module
+	*
+	* (en) skip links and hidden content
+	* (de) Skip-Links und versteckte Inhalte
 	*/
-	// (en) skip links and hidden content
-	// (de) Skip-Links und versteckte Inhalte
 
 
-	// (en) classes for invisible elements in the base layout
-	// (de) Klassen für unsichtbare Elemente im Basislayout
+	/* (en) classes for invisible elements in the base layout */
+	/* (de) Klassen für unsichtbare Elemente im Basislayout */
 	.ym-skip,
 	.ym-hideme,
 	.ym-print {
@@ -16,8 +17,8 @@
 		left:-32768px; // LTR
 	}
 
-	// (en) make skip links visible when using tab navigation
-	// (de) Skip-Links für Tab-Navigation sichtbar schalten
+	/* (en) make skip links visible when using tab navigation */
+	/* (de) Skip-Links für Tab-Navigation sichtbar schalten */
 	.ym-skip:focus,
 	.ym-skip:active {
 		position:static;
@@ -25,7 +26,7 @@
 		left:0;
 	}
 
-	// skiplinks:technical setup
+	/* skiplinks:technical setup */
 	.ym-skiplinks {
 		position:absolute;
 		top:0px;

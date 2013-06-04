@@ -1,5 +1,5 @@
-@import "yaml-sass/yaml-var-globals";
-@import "yaml-sass/mixins/yaml-mixins-core";
+@import "../yaml-var-globals";
+@import "../mixins/yaml-mixins-core";
 
 @media screen {
 	.ym-form {
@@ -27,7 +27,6 @@
 
 		label,
 		.ym-label {
-			color: #666;
 			color: #666;
 			line-height: 1.5;
 			padding-top: 0.25em;
@@ -71,12 +70,7 @@
 	/**
 	* @section styling form elements
 	*
-	* Styling for: Input, Textarea, Select ...
-	*
 	*/
-
-	/* styling standard form elements with 'almost' equal flexible width */
-	/* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
 
 	.ym-form {
 		input,
@@ -113,8 +107,8 @@
 		.ym-fbox-check input,
 		input[type="checkbox"],
 		input[type="radio"] {
-			border: 0 none;
-			background: transparent;
+			border: 0 none !important;
+			background: transparent !important;
 		}
 
 		.ym-message {
@@ -165,17 +159,13 @@
 	.ym-form input[type="submit"] {
 		display: inline-block;
 		white-space: nowrap;
-		background-color: #ccc;
-		background-image: -webkit-linear-gradient(top, #eee, #ccc);
-		background-image: -moz-linear-gradient(top, #eee, #ccc);
-		background-image: -ms-linear-gradient(top, #eee, #ccc);
-		background-image: -o-linear-gradient(top, #eee, #ccc);
-		background-image: linear-gradient(to bottom, #eee, #ccc);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+		@include ym-linear-gradient();
+
 		border: 1px solid #777;
 		border-radius: .2em;
+
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.15);
-		box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.15);
+				box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.15);
 		color: #333 !important;
 		cursor: pointer;
 		font: normal 1em/2em Arial, Helvetica;
@@ -186,23 +176,11 @@
 		text-shadow: 0 1px 0 rgba(255,255,255,.8);
 
 		&:hover{
-			background-color: #ddd;
-			background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
-			background-image: -moz-linear-gradient(top, #fafafa, #ddd);
-			background-image: -ms-linear-gradient(top, #fafafa, #ddd);
-			background-image: -o-linear-gradient(top, #fafafa, #ddd);
-			background-image: linear-gradient(to bottom, #fafafa, #ddd);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+			@include ym-linear-gradient("to bottom", #fafafa, #ddd);
 		}
 		&:active {
-			background-color: #bbb;
-			background-image: -webkit-linear-gradient(top, #ccc, #bbb);
-			background-image: -moz-linear-gradient(top, #ccc, #bbb);
-			background-image: -ms-linear-gradient(top, #ccc, #bbb);
-			background-image: -o-linear-gradient(top, #ccc, #bbb);
-			background-image: linear-gradient(to bottom, #ccc, #bbb);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
-			box-shadow: 2px 2px 3px rgba(0,0,0,.2) inset;
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
+			@include ym-linear-gradient("to bottom", #ccc, #bbb);
 			position: relative;
 			top: 1px;
 		}
@@ -227,38 +205,21 @@
 	.ym-form input[type="reset"].ym-primary,
 	.ym-form input[type="submit"].ym-primary {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		background-color: #66c;
-		background-image: -webkit-linear-gradient(top, #88e, #66c);
-		background-image: -moz-linear-gradient(top, #88e, #66c);
-		background-image: -ms-linear-gradient(top, #88e, #66c);
-		background-image: -o-linear-gradient(top, #88e, #66c);
-		background-image: linear-gradient(to bottom, #88e, #66c);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
+				box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
+
+		@include ym-linear-gradient("to bottom", #88e, #66c);
+
 		border: 1px solid #007;
 		color: #fff !important;
 		text-shadow: 0 1px 0 rgba(0,0,0,.8);
 
 		&:hover {
-			background-color: #66d;
-			background-image: -webkit-linear-gradient(top, #88f, #66d);
-			background-image: -moz-linear-gradient(top, #88f, #66d);
-			background-image: -ms-linear-gradient(top, #88f, #66d);
-			background-image: -o-linear-gradient(top, #88f, #66d);
-			background-image: linear-gradient(to bottom, #88f, #66d);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ff', EndColorStr='#6666dd');
+			@include ym-linear-gradient("to bottom", #88f, #66d);
 		}
 
 		&:active {
-			box-shadow: 2px 2px 3px rgba(0,0,0,.2) inset;
-			background-color: #66b;
-			background-image: -webkit-linear-gradient(top, #88c, #66a);
-			background-image: -moz-linear-gradient(top, #88c, #66a);
-			background-image: -ms-linear-gradient(top, #88c, #66a);
-			background-image: -o-linear-gradient(top, #88c, #66a);
-			background-image: linear-gradient(to bottom, #88c, #66a);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888cc', EndColorStr='#6666aa');
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
+			@include ym-linear-gradient("to bottom", #88c, #66a);
 		}
 
 		&:focus {
@@ -274,38 +235,19 @@
 	.ym-form input[type="reset"].ym-success,
 	.ym-form input[type="submit"].ym-success {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		background-color: #494;
-		background-image: -webkit-linear-gradient(top, #6b6, #494);
-		background-image: -moz-linear-gradient(top, #6b6, #494);
-		background-image: -ms-linear-gradient(top, #6b6, #494);
-		background-image: -o-linear-gradient(top, #6b6, #494);
-		background-image: linear-gradient(to bottom, #6b6, #494);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
+				box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
+		@include ym-linear-gradient("to bottom", #6b6, #494);
 		border: 1px solid #070;
 		color: #fff !important;
 		text-shadow: 0 1px 0 rgba(0,0,0,.8);
 
 		&:hover {
-			background-color: #5a5;
-			background-image: -webkit-linear-gradient(top, #6c6, #5a5);
-			background-image: -moz-linear-gradient(top, #6c6, #5a5);
-			background-image: -ms-linear-gradient(top, #6c6, #5a5);
-			background-image: -o-linear-gradient(top, #6c6, #5a5);
-			background-image: linear-gradient(to bottom, #6c6, #5a5);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66cc66', EndColorStr='#55aa55');
+			@include ym-linear-gradient("to bottom", #6c6, #5a5);
 		}
 
 		&:active {
-			box-shadow: 2px 2px 3px rgba(0,0,0,.2) inset;
-			background-color: #484;
-			background-image: -webkit-linear-gradient(top, #6a6, #484);
-			background-image: -moz-linear-gradient(top, #6a6, #484);
-			background-image: -ms-linear-gradient(top, #6a6, #484);
-			background-image: -o-linear-gradient(top, #6a6, #484);
-			background-image: linear-gradient(to bottom, #6a6, #484);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aa66', EndColorStr='#448844');
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
+			@include ym-linear-gradient("to bottom", #6a6, #484);
 		}
 
 		&:focus {
@@ -321,38 +263,19 @@
 	.ym-form input[type="reset"].ym-warning,
 	.ym-form input[type="submit"].ym-warning {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		background-color: #b72;
-		background-image: -webkit-linear-gradient(top, #da4, #b72);
-		background-image: -moz-linear-gradient(top, #da4, #b72);
-		background-image: -ms-linear-gradient(top, #da4, #b72);
-		background-image: -o-linear-gradient(top, #da4, #b72);
-		background-image: linear-gradient(to bottom, #da4, #b72);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
+				box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
+		@include ym-linear-gradient("to bottom", #da4, #b72);
 		border: 1px solid #970;
 		color: #fff !important;
 		text-shadow: 0 1px 0 rgba(0,0,0,.8);
 
 		&:hover {
-			background-color: #c83;
-			background-image: -webkit-linear-gradient(top, #eb5, #c83);
-			background-image: -moz-linear-gradient(top, #eb5, #c83);
-			background-image: -ms-linear-gradient(top, #eb5, #c83);
-			background-image: -o-linear-gradient(top, #eb5, #c83);
-			background-image: linear-gradient(to bottom, #eb5, #c83);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eebb55', EndColorStr='#cc8833');
+			@include ym-linear-gradient("to bottom", #eb5, #c83);
 		}
 
 		&:active {
-			box-shadow: 2px 2px 3px rgba(0,0,0,.2) inset;
-			background-color: #a62;
-			background-image: -webkit-linear-gradient(top, #c94, #a62);
-			background-image: -moz-linear-gradient(top, #c94, #a62);
-			background-image: -ms-linear-gradient(top, #c94, #a62);
-			background-image: -o-linear-gradient(top, #c94, #a62);
-			background-image: linear-gradient(to bottom, #c94, #a62);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc9944', EndColorStr='#aa6622');
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
+			@include ym-linear-gradient("to bottom", #c94, #a62);
 		}
 
 		&:focus {
@@ -368,38 +291,19 @@
 	.ym-form input[type="reset"].ym-danger,
 	.ym-form input[type="submit"].ym-danger {
 		-webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
-		background-color: #944;
-		background-image: -webkit-linear-gradient(top, #b66, #944);
-		background-image: -moz-linear-gradient(top, #b66, #944);
-		background-image: -ms-linear-gradient(top, #b66, #944);
-		background-image: -o-linear-gradient(top, #b66, #944);
-		background-image: linear-gradient(to bottom, #b66, #944);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
+				box-shadow: 0 0 1px 1px rgba(255,255,255,.3) inset, 0 1px 0 rgba(0,0,0,.15);
+		@include ym-linear-gradient("to bottom", #b66, #944);
 		border: 1px solid #700;
 		color: #fff !important;
 		text-shadow: 0 1px 0 rgba(0,0,0,.8);
 
 		&:hover {
-			background-color: #a55;
-			background-image: -webkit-linear-gradient(top, #c66, #a55);
-			background-image: -moz-linear-gradient(top, #c66, #a55);
-			background-image: -ms-linear-gradient(top, #c66, #a55);
-			background-image: -o-linear-gradient(top, #c66, #a55);
-			background-image: linear-gradient(to bottom, #c66, #a55);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc6666', EndColorStr='#aa5555');
+			@include ym-linear-gradient("to bottom", #c66, #a55);
 		}
 
 		&:active {
-			box-shadow: 2px 2px 3px rgba(0,0,0,.2) inset;
-			background-color: #844;
-			background-image: -webkit-linear-gradient(top, #a55, #844);
-			background-image: -moz-linear-gradient(top, #a55, #844);
-			background-image: -ms-linear-gradient(top, #a55, #844);
-			background-image: -o-linear-gradient(top, #a55, #844);
-			background-image: linear-gradient(to bottom, #a55, #844);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#aa5555', EndColorStr='#884444');
+			@include ym-box-shadow(2px, 2px, 3px, rgba(0,0,0,0.2), inset);
+			@include ym-linear-gradient("to bottom", #a55, #844);
 		}
 
 		&:focus {
@@ -420,7 +324,7 @@
 		margin: 0 1em 0 -1em;
 		padding: 0 .2em;
 		-webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
-		box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+				box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
 		border-radius: .15em 0 0 .15em;
 		pointer-events: none;
 	}
@@ -470,7 +374,7 @@
 		text-shadow: none;
 		position: static;
 		-webkit-box-shadow: none;
-		box-shadow: none;
+				box-shadow: none;
 	}
 
 	/* ie6 support styles - redefined buttons, because of missing support for attribute selectors */

@@ -1,5 +1,5 @@
-@import "yaml-sass/yaml-var-typography",
-		"yaml-sass/mixins/yaml-mixins-core";
+@import "../yaml-var-typography",
+		"../mixins/yaml-mixins-core";
 
 @media all {
 
@@ -32,15 +32,11 @@
 		font-family: $ym-font-monospace;
 	}
 
+	/*! font-size: #{$ym-base-font-size}px; */
 	body {
 		font-family: $ym-font-serif;
-		/*! font-size: #{$ym-base-font-size}px; */
 		font-size: $ym-base-font-size / $ym-default-font-size * 100%;
 		color: $ym-text-color;
-
-		/* (en) Prevent auto-scaling of text in mobile webkit browsers */
-		/* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
-		-webkit-text-size-adjust:100%;
 	}
 
 	/*--- Headings | Überschriften ------------------------------------------------------------------------*/

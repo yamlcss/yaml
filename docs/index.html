@@ -1648,7 +1648,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 <div class="tab-content">
 
 <form class="ym-form">
-	<div class="ym-fbox ym-fbox-button">
+	<div class="ym-fbox-footer ym-fbox-button">
 		<input type="submit" value="Submit" class="ym-primary" id="submit" name="submit" />
 		<input type="reset" value="Reset" class="ym-warning" id="reset" name="reset" />
 		<input type="button" value="Button" id="button1" name="button1" />
@@ -1657,7 +1657,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox-button</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox-footer ym-fbox-button</strong>&quot;&gt;
   &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
   &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
   &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
@@ -1711,26 +1711,8 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				</div>
 				</div>
 
-				<h4>Extended Form Optins</h4>
+				<h4>Extended Form Options</h4>
 				<div class="jquery_tabs">
-
-				<div class="tab-content">
-				<h5>Inline Form Elements</h5>
-				<form class="ym-form">
-					<div class="ym-fbox ym-fbox-text">
-					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
-					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
-					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
-					</div>
-				</form>
-
-				<pre class="htmlCode">
-&lt;div class="ym-fbox ym-fbox-text"&gt;
-  &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
-  &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
-  &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
-&lt;/div&gt;</pre>
-				</div>
 
 				<div class="tab-content">
 				<h5>Grids Form Elements</h5>
@@ -1787,7 +1769,26 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 &lt;/div&gt;</pre>
 
 				</div>
+
+				<div class="tab-content">
+				<h5>Inline Form Elements</h5>
+				<form class="ym-form">
+					<div class="ym-fbox ym-fbox-text">
+					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
+					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
+					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
+					</div>
+				</form>
+
+				<pre class="htmlCode">
+&lt;div class="ym-fbox ym-fbox-text"&gt;
+  &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
+  &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
+  &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
+&lt;/div&gt;</pre>
 				</div>
+				</div>
+
 
 	  		</div>
   		</div>
@@ -2098,10 +2099,12 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 @media screen and ( max-width: 740px )  {
 
   /* linearize form elements */
-  .linearize-form [class*="ym-fbox"]:not([class*="ym-type-check"]) label,
+  .linearize-form label {
+    float: none;
+  }
   .linearize-form .ym-label,
   .linearize-form .ym-message,
-  .linearize-form input[type="text"],
+  .linearize-form .ym-fbox-text input,
   .linearize-form textarea,
   .linearize-form select {
     display: block;
@@ -2122,7 +2125,6 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   }
 
   /* reset columnar indention */
-  .linearize-form .ym-message,
   .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
   }
@@ -2559,7 +2561,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   max-width: 100%;
 }
 /* IE6 support - 2% space for borders */
-* html .flexible { width: 100%; }</pre>
+* html .flexible { width: 98%; }</pre>
 								<p> By adding the CSS class <code>.flexible</code> to an image or video, you can allow the browser to downscale this element to fit the size of its parent element. It will not be upscaled in modern browsers (in old IE6 & 7 it will as part of the provided work-around.)</p>
 							</div>
 						</div>
@@ -3635,7 +3637,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 			<div class="ym-grid linearize-level-2">
 				<div class="ym-g66 ym-gl">
 					<div class="ym-gbox-left">
-						<p>© 2005 &ndash; 2012 by Dirk Jesse, <a href="http://www.highresolution.info">Highresolution.info</a><br>
+						<p>© 2005 &ndash; 2013 by Dirk Jesse, <a href="http://www.highresolution.info">Highresolution.info</a><br>
 			Code and Documentation licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
 						<p><a href="../imprint.html">Imprint</a> | <a href="http://shop.yaml.de">YAML-Shop</a> administrated by <a href="http://www.itratos.de">Itratos</a></p>
 					</div>

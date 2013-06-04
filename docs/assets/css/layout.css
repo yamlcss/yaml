@@ -1,14 +1,18 @@
 @charset "UTF-8";
 /* YAML Framework Components */
 @media all {
-  /*
+  /**
    *  @section Normalisation Module
    */
+  /* (en) Global reset of paddings and margins for all HTML elements */
+  /* (de) Globales Zur├╝cksetzen der Innen- und Au├ƒenabst├ñnde f├╝r alle HTML-Elemente */
   * {
     margin: 0;
     padding: 0;
   }
 
+  /* (en) Correction:margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur:Das Zur├╝cksetzen der Abst├ñnde verursacht zu kleine Selectboxen. */
   option {
     padding-left: 0.4em;
   }
@@ -17,10 +21,23 @@
     padding: 1px;
   }
 
+  /*
+  * (en) Global fix of the Italics bugs in IE 5.x and IE 6
+  * (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
+  *
+  * @bugfix
+  * @affected   IE 5.x/Win, IE6
+  * @css-for    IE 5.x/Win, IE6
+  * @valid      yes
+  */
   * html body * {
     overflow: visible;
   }
 
+  /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+  /* (en) Standard values for colors and text alignment */
+  /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgr├Â├ƒen in ├ñlteren Opera Versionen */
+  /* (de) Vorgabe der Standardfarben und Textausrichtung */
   body {
     font-size: 100%;
     background: #fff;
@@ -28,42 +45,102 @@
     text-align: left;
   }
 
+  /* (en) avoid visible outlines on DIV containers in Webkit browsers */
+  /* (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern */
   div:target {
     outline: 0 none;
   }
 
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, main, nav, section {
+  /* (en) HTML 5 - adjusting visual formatting model to block level */
+  /* (de) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary {
     display: block;
   }
 
+  /* (en) HTML5 - default media element styles */
+  /* (de) HTML5 - Standard Eigenschaften f├╝r Media-Elemente */
   audio,
   canvas,
   video {
     display: inline-block;
   }
 
+  /* (en) HTML5 - don't show <audio> element if there aren't controls */
+  /* (de) HTML5 - <audio> ohne Kontrollelemente sollten nicht angezeigt werden */
   audio:not([controls]) {
     display: none;
   }
 
+  /* (en) HTML5 - add missing styling in IE & old FF for hidden attribute */
+  /* (de) HTML5 - Eigenschaften f├╝r das hidden-Attribut in ├ñlteren IEs und FF nachr├╝sten */
   [hidden] {
     display: none;
   }
 
-  input[type="search"] {
-    -webkit-appearance: textfield;
+  /* (en) Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+  /* (de) Verdindert die automatische Textanpassung bei Orientierungswechsel, ohne Zoom zu blockieren */
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
+  /* (en) set correct box-modell in IE8/9 plus remove padding */
+  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unn├Âtiges Padding */
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  /* (en) force consistant appearance of input[type="search"] elements in all browser */
+  /* (de) Einheitliches Erscheinungsbild f├╝r input[type="search"] Elemente erzwingen */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button,
   input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
   }
 
-  fieldset, img {
+  /* (en) Correct overflow displayed oddly in IE 9. */
+  /* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9. */
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  /* (en) Address margin not present in IE 8/9 and Safari 5. */
+  /* (en) Erg├ñnzt fehlenden Margin in IE 8/9 und Safari 5. */
+  figure {
+    margin: 0;
+  }
+
+  /* (en) Clear borders for <fieldset> and <img> elements */
+  /* (de) Rahmen f├╝r <fieldset> und <img> Elemente l├Âschen */
+  fieldset,
+  img {
     border: 0 solid;
   }
 
-  ul, ol, dl {
+  /* (en) new standard values for lists, blockquote, cite and tables */
+  /* (de) Neue Standardwerte f├╝r Listen, Zitate und Tabellen */
+  ul,
+  ol,
+  dl {
     margin: 0 0 1em 1em;
   }
 
@@ -88,8 +165,10 @@
     quotes: none;
   }
 
-  blockquote:before, blockquote:after,
-  q:before, q:after {
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
     content: '';
     content: none;
   }
@@ -102,6 +181,8 @@
   /**
   * @section Float Handling Module
   */
+  /* (en) clearfix method for clearing floats */
+  /* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
   .ym-clearfix:before {
     content: "";
     display: table;
@@ -116,6 +197,8 @@
     visibility: hidden;
   }
 
+  /* (en) alternative solutions to contain floats */
+  /* (de) Alternative Methoden zum Einschlie├ƒen von Float-Umgebungen */
   .ym-contain-dt {
     display: table;
     table-layout: fixed;
@@ -135,6 +218,12 @@
 
   /**
   * @section Column Module
+  *
+  * default column config:
+  * |-------------------------------|
+  * | col1    | col3      | col2    |
+  * | 20%     | flexible  | 20%     |
+  * |-------------------------------|
   */
   .ym-column {
     display: table;
@@ -169,6 +258,8 @@
     padding: 0 0 0 10px;
   }
 
+  /* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
+  /* (de) IE-Clearing: Ben├Âtigt nur der Internet Explorer und ├╝ber iehacks.css zugeschaltet */
   .ym-ie-clearing {
     display: none;
   }
@@ -272,6 +363,20 @@
   /**
   * @section Form Module
   */
+  /** Vertical-Forms - technical base (standard)
+  *
+  * |-------------------------------|
+  * | form                          |
+  * |-------------------------------|
+  * |   label                       |
+  * |   input / select / textarea   |
+  * |-------------------------------|
+  * | /form                         |
+  * |-------------------------------|
+  *
+  * (en) Styling of forms where both label and input/select/textarea are styled with display:block;
+  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+  */
   .ym-form,
   .ym-form fieldset {
     overflow: hidden;
@@ -367,6 +472,7 @@
     vertical-align: baseline;
   }
 
+  /* default form wrapper width */
   .ym-fbox-wrap {
     display: table;
     table-layout: fixed;
@@ -398,6 +504,22 @@
     width: 100%;
   }
 
+  /**
+  *  Columnar forms display - technical base (optional)
+  *
+  *  |-------------------------------------------|
+  *  | form                                      |
+  *  |-------------------------------------------|
+  *  |                                           |
+  *  |   label   |   input / select / textarea   |
+  *  |                                           |
+  *  |-------------------------------------------|
+  *  | /form                                     |
+  *  |-------------------------------------------|
+  *
+  *  (en) Styling of forms where label floats left of form-elements
+  *  (de) Formulargestaltung, bei der die label-Elemente nach links flie├ƒen
+  */
   .ym-columnar input,
   .ym-columnar textarea,
   .ym-columnar select {
@@ -448,6 +570,7 @@
     margin-top: 0.5em;
   }
 
+  /* global and local columnar settings for button alignment */
   .ym-columnar fieldset .ym-fbox-button,
   fieldset.ym-columnar .ym-fbox-button {
     padding-left: 30%;
@@ -455,7 +578,12 @@
 
   /**
   * @section Accessibility Module
+  *
+  * (en) skip links and hidden content
+  * (de) Skip-Links und versteckte Inhalte
   */
+  /* (en) classes for invisible elements in the base layout */
+  /* (de) Klassen f├╝r unsichtbare Elemente im Basislayout */
   .ym-skip,
   .ym-hideme,
   .ym-print {
@@ -464,6 +592,8 @@
     left: -32768px;
   }
 
+  /* (en) make skip links visible when using tab navigation */
+  /* (de) Skip-Links f├╝r Tab-Navigation sichtbar schalten */
   .ym-skip:focus,
   .ym-skip:active {
     position: static;
@@ -471,6 +601,7 @@
     left: 0;
   }
 
+  /* skiplinks:technical setup */
   .ym-skiplinks {
     position: absolute;
     top: 0px;
@@ -493,8 +624,14 @@
   /**
   * @section print adjustments for core modules
   *
-  * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
-  * (de) Float Clearing für die Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
+  * (de) Floats in Grids einschlie├ƒen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  *
+  * @bugfix
+  * @since     3.0
+  * @affected  FF2.0, FF3.0, IE7
+  * @css-for   all browsers
+  * @valid     yes
   */
   .ym-grid > .ym-gl,
   .ym-grid > .ym-gr {
@@ -502,11 +639,15 @@
     display: table;
   }
 
+  /* (en) make .ym-print class visible */
+  /* (de) .ym-print-Klasse sichtbar schalten */
   .ym-print {
     position: static;
     left: 0;
   }
 
+  /* (en) generic class to hide elements for print */
+  /* (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden */
   .ym-noprint {
     display: none !important;
   }
@@ -757,7 +898,6 @@
   .ym-form label,
   .ym-form .ym-label {
     color: #666;
-    color: #666;
     line-height: 1.5;
     padding-top: 0.25em;
   }
@@ -794,11 +934,7 @@
   /**
   * @section styling form elements
   *
-  * Styling for: Input, Textarea, Select ...
-  *
   */
-  /* styling standard form elements with 'almost' equal flexible width */
-  /* Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
   .ym-form input,
   .ym-form textarea,
   .ym-form select {
@@ -829,8 +965,8 @@
   .ym-form .ym-fbox-check input,
   .ym-form input[type="checkbox"],
   .ym-form input[type="radio"] {
-    border: 0 none;
-    background: transparent;
+    border: 0 none !important;
+    background: transparent !important;
   }
   .ym-form .ym-message {
     color: #666;
@@ -877,13 +1013,12 @@
   .ym-form input[type="submit"] {
     display: inline-block;
     white-space: nowrap;
-    background-color: #ccc;
-    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
-    background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background: linear-gradient("to bottom", #eeeeee, #cccccc);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eeeeee', endColorstr='#cccccc');
+    zoom: 1;
     border: 1px solid #777;
     border-radius: .2em;
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
@@ -903,27 +1038,26 @@
   .ym-form input[type="button"]:hover,
   .ym-form input[type="reset"]:hover,
   .ym-form input[type="submit"]:hover {
-    background-color: #ddd;
-    background-image: -webkit-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -moz-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -ms-linear-gradient(top, #fafafa, #dddddd);
-    background-image: -o-linear-gradient(top, #fafafa, #dddddd);
-    background-image: linear-gradient(to bottom, #fafafa, #dddddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #dddddd));
+    background: -webkit-linear-gradient(top, #fafafa, #dddddd);
+    background: -moz-linear-gradient(top, #fafafa, #dddddd);
+    background: linear-gradient("to bottom", #fafafa, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#fafafa', endColorstr='#dddddd');
+    zoom: 1;
   }
   .ym-button:active,
   .ym-form button:active,
   .ym-form input[type="button"]:active,
   .ym-form input[type="reset"]:active,
   .ym-form input[type="submit"]:active {
-    background-color: #bbb;
-    background-image: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -moz-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -ms-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: -o-linear-gradient(top, #cccccc, #bbbbbb);
-    background-image: linear-gradient(to bottom, #cccccc, #bbbbbb);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cccccc', EndColorStr='#bbbbbb');
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #bbbbbb));
+    background: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
+    background: -moz-linear-gradient(top, #cccccc, #bbbbbb);
+    background: linear-gradient("to bottom", #cccccc, #bbbbbb);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cccccc', endColorstr='#bbbbbb');
+    zoom: 1;
     position: relative;
     top: 1px;
   }
@@ -963,15 +1097,13 @@
   .ym-form input[type="reset"].ym-primary,
   .ym-form input[type="submit"].ym-primary {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #66c;
-    background-image: -webkit-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -moz-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -ms-linear-gradient(top, #8888ee, #6666cc);
-    background-image: -o-linear-gradient(top, #8888ee, #6666cc);
-    background-image: linear-gradient(to bottom, #8888ee, #6666cc);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ee', EndColorStr='#6666cc');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ee), color-stop(100%, #6666cc));
+    background: -webkit-linear-gradient(top, #8888ee, #6666cc);
+    background: -moz-linear-gradient(top, #8888ee, #6666cc);
+    background: linear-gradient("to bottom", #8888ee, #6666cc);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888ee', endColorstr='#6666cc');
+    zoom: 1;
     border: 1px solid #007;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -981,27 +1113,26 @@
   .ym-form input[type="button"].ym-primary:hover,
   .ym-form input[type="reset"].ym-primary:hover,
   .ym-form input[type="submit"].ym-primary:hover {
-    background-color: #66d;
-    background-image: -webkit-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -moz-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -ms-linear-gradient(top, #8888ff, #6666dd);
-    background-image: -o-linear-gradient(top, #8888ff, #6666dd);
-    background-image: linear-gradient(to bottom, #8888ff, #6666dd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888ff', EndColorStr='#6666dd');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ff), color-stop(100%, #6666dd));
+    background: -webkit-linear-gradient(top, #8888ff, #6666dd);
+    background: -moz-linear-gradient(top, #8888ff, #6666dd);
+    background: linear-gradient("to bottom", #8888ff, #6666dd);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888ff', endColorstr='#6666dd');
+    zoom: 1;
   }
   .ym-button.ym-primary:active,
   .ym-form button.ym-primary:active,
   .ym-form input[type="button"].ym-primary:active,
   .ym-form input[type="reset"].ym-primary:active,
   .ym-form input[type="submit"].ym-primary:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #66b;
-    background-image: -webkit-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -moz-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -ms-linear-gradient(top, #8888cc, #6666aa);
-    background-image: -o-linear-gradient(top, #8888cc, #6666aa);
-    background-image: linear-gradient(to bottom, #8888cc, #6666aa);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#8888cc', EndColorStr='#6666aa');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888cc), color-stop(100%, #6666aa));
+    background: -webkit-linear-gradient(top, #8888cc, #6666aa);
+    background: -moz-linear-gradient(top, #8888cc, #6666aa);
+    background: linear-gradient("to bottom", #8888cc, #6666aa);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#8888cc', endColorstr='#6666aa');
+    zoom: 1;
   }
   .ym-button.ym-primary:focus,
   .ym-form button.ym-primary:focus,
@@ -1019,15 +1150,13 @@
   .ym-form input[type="reset"].ym-success,
   .ym-form input[type="submit"].ym-success {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #494;
-    background-image: -webkit-linear-gradient(top, #66bb66, #449944);
-    background-image: -moz-linear-gradient(top, #66bb66, #449944);
-    background-image: -ms-linear-gradient(top, #66bb66, #449944);
-    background-image: -o-linear-gradient(top, #66bb66, #449944);
-    background-image: linear-gradient(to bottom, #66bb66, #449944);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66bb66', EndColorStr='#449944');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66bb66), color-stop(100%, #449944));
+    background: -webkit-linear-gradient(top, #66bb66, #449944);
+    background: -moz-linear-gradient(top, #66bb66, #449944);
+    background: linear-gradient("to bottom", #66bb66, #449944);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66bb66', endColorstr='#449944');
+    zoom: 1;
     border: 1px solid #070;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1037,27 +1166,26 @@
   .ym-form input[type="button"].ym-success:hover,
   .ym-form input[type="reset"].ym-success:hover,
   .ym-form input[type="submit"].ym-success:hover {
-    background-color: #5a5;
-    background-image: -webkit-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -moz-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -ms-linear-gradient(top, #66cc66, #55aa55);
-    background-image: -o-linear-gradient(top, #66cc66, #55aa55);
-    background-image: linear-gradient(to bottom, #66cc66, #55aa55);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66cc66', EndColorStr='#55aa55');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66cc66), color-stop(100%, #55aa55));
+    background: -webkit-linear-gradient(top, #66cc66, #55aa55);
+    background: -moz-linear-gradient(top, #66cc66, #55aa55);
+    background: linear-gradient("to bottom", #66cc66, #55aa55);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66cc66', endColorstr='#55aa55');
+    zoom: 1;
   }
   .ym-button.ym-success:active,
   .ym-form button.ym-success:active,
   .ym-form input[type="button"].ym-success:active,
   .ym-form input[type="reset"].ym-success:active,
   .ym-form input[type="submit"].ym-success:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #484;
-    background-image: -webkit-linear-gradient(top, #66aa66, #448844);
-    background-image: -moz-linear-gradient(top, #66aa66, #448844);
-    background-image: -ms-linear-gradient(top, #66aa66, #448844);
-    background-image: -o-linear-gradient(top, #66aa66, #448844);
-    background-image: linear-gradient(to bottom, #66aa66, #448844);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#66aa66', EndColorStr='#448844');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66aa66), color-stop(100%, #448844));
+    background: -webkit-linear-gradient(top, #66aa66, #448844);
+    background: -moz-linear-gradient(top, #66aa66, #448844);
+    background: linear-gradient("to bottom", #66aa66, #448844);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#66aa66', endColorstr='#448844');
+    zoom: 1;
   }
   .ym-button.ym-success:focus,
   .ym-form button.ym-success:focus,
@@ -1075,15 +1203,13 @@
   .ym-form input[type="reset"].ym-warning,
   .ym-form input[type="submit"].ym-warning {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #b72;
-    background-image: -webkit-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -moz-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -ms-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: -o-linear-gradient(top, #ddaa44, #bb7722);
-    background-image: linear-gradient(to bottom, #ddaa44, #bb7722);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ddaa44', EndColorStr='#BB7722');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ddaa44), color-stop(100%, #bb7722));
+    background: -webkit-linear-gradient(top, #ddaa44, #bb7722);
+    background: -moz-linear-gradient(top, #ddaa44, #bb7722);
+    background: linear-gradient("to bottom", #ddaa44, #bb7722);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ddaa44', endColorstr='#bb7722');
+    zoom: 1;
     border: 1px solid #970;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1093,27 +1219,26 @@
   .ym-form input[type="button"].ym-warning:hover,
   .ym-form input[type="reset"].ym-warning:hover,
   .ym-form input[type="submit"].ym-warning:hover {
-    background-color: #c83;
-    background-image: -webkit-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -moz-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -ms-linear-gradient(top, #eebb55, #cc8833);
-    background-image: -o-linear-gradient(top, #eebb55, #cc8833);
-    background-image: linear-gradient(to bottom, #eebb55, #cc8833);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eebb55', EndColorStr='#cc8833');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eebb55), color-stop(100%, #cc8833));
+    background: -webkit-linear-gradient(top, #eebb55, #cc8833);
+    background: -moz-linear-gradient(top, #eebb55, #cc8833);
+    background: linear-gradient("to bottom", #eebb55, #cc8833);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eebb55', endColorstr='#cc8833');
+    zoom: 1;
   }
   .ym-button.ym-warning:active,
   .ym-form button.ym-warning:active,
   .ym-form input[type="button"].ym-warning:active,
   .ym-form input[type="reset"].ym-warning:active,
   .ym-form input[type="submit"].ym-warning:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #a62;
-    background-image: -webkit-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -moz-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -ms-linear-gradient(top, #cc9944, #aa6622);
-    background-image: -o-linear-gradient(top, #cc9944, #aa6622);
-    background-image: linear-gradient(to bottom, #cc9944, #aa6622);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc9944', EndColorStr='#aa6622');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc9944), color-stop(100%, #aa6622));
+    background: -webkit-linear-gradient(top, #cc9944, #aa6622);
+    background: -moz-linear-gradient(top, #cc9944, #aa6622);
+    background: linear-gradient("to bottom", #cc9944, #aa6622);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cc9944', endColorstr='#aa6622');
+    zoom: 1;
   }
   .ym-button.ym-warning:focus,
   .ym-form button.ym-warning:focus,
@@ -1131,15 +1256,13 @@
   .ym-form input[type="reset"].ym-danger,
   .ym-form input[type="submit"].ym-danger {
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
-    background-color: #944;
-    background-image: -webkit-linear-gradient(top, #bb6666, #994444);
-    background-image: -moz-linear-gradient(top, #bb6666, #994444);
-    background-image: -ms-linear-gradient(top, #bb6666, #994444);
-    background-image: -o-linear-gradient(top, #bb6666, #994444);
-    background-image: linear-gradient(to bottom, #bb6666, #994444);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#bb6666', EndColorStr='#994444');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bb6666), color-stop(100%, #994444));
+    background: -webkit-linear-gradient(top, #bb6666, #994444);
+    background: -moz-linear-gradient(top, #bb6666, #994444);
+    background: linear-gradient("to bottom", #bb6666, #994444);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#bb6666', endColorstr='#994444');
+    zoom: 1;
     border: 1px solid #700;
     color: #fff !important;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
@@ -1149,27 +1272,26 @@
   .ym-form input[type="button"].ym-danger:hover,
   .ym-form input[type="reset"].ym-danger:hover,
   .ym-form input[type="submit"].ym-danger:hover {
-    background-color: #a55;
-    background-image: -webkit-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -moz-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -ms-linear-gradient(top, #cc6666, #aa5555);
-    background-image: -o-linear-gradient(top, #cc6666, #aa5555);
-    background-image: linear-gradient(to bottom, #cc6666, #aa5555);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc6666', EndColorStr='#aa5555');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc6666), color-stop(100%, #aa5555));
+    background: -webkit-linear-gradient(top, #cc6666, #aa5555);
+    background: -moz-linear-gradient(top, #cc6666, #aa5555);
+    background: linear-gradient("to bottom", #cc6666, #aa5555);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#cc6666', endColorstr='#aa5555');
+    zoom: 1;
   }
   .ym-button.ym-danger:active,
   .ym-form button.ym-danger:active,
   .ym-form input[type="button"].ym-danger:active,
   .ym-form input[type="reset"].ym-danger:active,
   .ym-form input[type="submit"].ym-danger:active {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) inset;
-    background-color: #844;
-    background-image: -webkit-linear-gradient(top, #aa5555, #884444);
-    background-image: -moz-linear-gradient(top, #aa5555, #884444);
-    background-image: -ms-linear-gradient(top, #aa5555, #884444);
-    background-image: -o-linear-gradient(top, #aa5555, #884444);
-    background-image: linear-gradient(to bottom, #aa5555, #884444);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#aa5555', EndColorStr='#884444');
+    -webkit-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aa5555), color-stop(100%, #884444));
+    background: -webkit-linear-gradient(top, #aa5555, #884444);
+    background: -moz-linear-gradient(top, #aa5555, #884444);
+    background: linear-gradient("to bottom", #aa5555, #884444);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#aa5555', endColorstr='#884444');
+    zoom: 1;
   }
   .ym-button.ym-danger:focus,
   .ym-form button.ym-danger:focus,
@@ -1640,14 +1762,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1661,17 +1783,14 @@
     font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
   }
 
+  /* font-size: 14px; */
   body {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
-    /* font-size: 14px; */
     font-size: 87.5%;
     color: #444444;
-    /* (en) Prevent auto-scaling of text in mobile webkit browsers */
-    /* (de) Automatische Schriftvergrößerung in mobilen Webkit-Browsern vermeiden */
-    -webkit-text-size-adjust: 100%;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -1891,7 +2010,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -2014,7 +2133,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
   *
   * @section content-tables
   */
@@ -2099,14 +2218,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgr├Â├ƒen-Ma├ƒheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+  /* (de) F├╝r den Druck nicht ben├Âtigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -2114,7 +2233,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+  /* (de) Vermeidung von Seitenumbr├╝chen direkt nach einer ├£berschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }
@@ -2968,7 +3087,10 @@
     padding: 0;
   }
 
-  .linearize-form [class*="ym-fbox"]:not([class*="ym-type-check"]) label, .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form input[type="text"], .linearize-form textarea, .linearize-form select {
+  .linearize-form label {
+    float: none;
+  }
+  .linearize-form .ym-label, .linearize-form .ym-message, .linearize-form .ym-fbox-text input, .linearize-form textarea, .linearize-form select {
     display: block;
     float: none;
     position: static;
@@ -2982,7 +3104,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  .linearize-form .ym-message, .linearize-form .ym-fbox-check input {
+  .linearize-form .ym-fbox-check input {
     margin-left: 0 !important;
   }
 }

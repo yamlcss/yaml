@@ -3,7 +3,7 @@
 // (en) YAML core stylesheet - structure-independent bugfixes of IE/Win CSS-bugs
 // (de) YAML Basis-Stylesheet - Strukturunabhängige Bugfixes von CSS-Bugs des IE/Win
 
-@import "yaml-sass/_yaml-var-globals";
+@import "../_yaml-var-globals";
 
 @media all {
 
@@ -262,13 +262,18 @@
 
 	/* ie6 support helper class */
 	* html .ym-form {
-		.ym-ie-checkbox,
-		.ym-ie-radio {
+		.ym-fbox-check input {
 			display: inline !important;
 			width: auto !important;
 			background: transparent !important;
 			border: 0 none  !important;
 			padding: 0 !important;
+		}
+
+		.ym-fbox-wrap {
+			.ym-fbox-check input {
+				margin-left: 0;
+			}
 		}
 	}
 
