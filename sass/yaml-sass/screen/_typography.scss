@@ -61,35 +61,35 @@
 		/*! font-size: #{$ym-base-font-size * $ym-h1-font-scale}px; */
 		font-size: $ym-h1-font-scale * 100%;
 		line-height: 2 * $line-height / $ym-h1-font-scale;
-		margin: $line-height / $ym-h1-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h1-font-scale*1em 0;
 	}
 
 	h2 {
 		/*! font-size: #{$ym-base-font-size * $ym-h2-font-scale}px; */
 		font-size: $ym-h2-font-scale * 100%;
 		line-height: 2 * $line-height / $ym-h2-font-scale;
-		margin: $line-height / $ym-h2-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h2-font-scale*1em 0;
 	}
 
 	h3 {
 		/*! font-size: #{$ym-base-font-size * $ym-h3-font-scale}px; */
 		font-size: $ym-h3-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-h3-font-scale;
-		margin: $line-height / $ym-h3-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h3-font-scale*1em 0;
 	}
 
 	h4 {
 		/*! font-size: #{$ym-base-font-size * $ym-h4-font-scale}px; */
 		font-size: $ym-h4-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-h4-font-scale;
-		margin: $line-height / $ym-h4-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h4-font-scale*1em 0;
 	}
 
 	h5 {
 		/*! font-size: #{$ym-base-font-size * $ym-h5-font-scale}px; */
 		font-size: $ym-h5-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-h5-font-scale;
-		margin: $line-height / $ym-h5-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h5-font-scale*1em 0;
 	}
 
 	h6 {
@@ -97,7 +97,7 @@
 		font-size: $ym-h6-font-scale * 100%;
 		font-weight: bold;
 		line-height: 1 * $line-height / $ym-h6-font-scale;
-		margin: $line-height / $ym-h6-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-h6-font-scale*1em 0;
 	}
 
 	/* --- Lists | Listen  -------------------------------------------------------------------------------- */
@@ -107,7 +107,7 @@
 	dl {
 		font-size: $ym-text-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-text-font-scale;
-		margin: $line-height / $ym-text-font-scale*1em 0 1em;
+		margin: 0 0 $line-height / $ym-text-font-scale*1em 0;
 	}
 
 	ul {
@@ -136,7 +136,7 @@
 	li {
 		font-size: $ym-text-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-text-font-scale;
-		margin-left:0.8em;
+		margin-left: 0.8em;
 	}
 
 	dt { font-weight:bold; }
@@ -148,7 +148,7 @@
 	p {
 		font-size: $ym-text-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-text-font-scale;
-		margin: $line-height / $ym-text-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-text-font-scale*1em 0;
 	}
 
 	blockquote, cite, q {
@@ -190,7 +190,7 @@
 	pre {
 		font-size: $ym-text-font-scale * 100%;
 		line-height: 1 * $line-height / $ym-text-font-scale;
-		margin: $line-height / $ym-text-font-scale*1em 0 0;
+		margin: 0 0 $line-height / $ym-text-font-scale*1em 0;
 		white-space: pre;
 		white-space: pre-wrap;
 		word-wrap: break-word;
@@ -263,7 +263,7 @@
 	}
 
 	.flexible {
-		margin-top: $line-height*1em;
+		margin-bottom: $line-height*1em;
 		max-width: 100%;
 		height: auto;
 	}
@@ -274,7 +274,7 @@
 	}
 
 	.bordered {
-		margin-top: $line-height*1em;
+		margin-bottom: $line-height*1em;
 		border: 2px #eee solid;
 		border: 2px rgba(255,255,255,1) solid;
 		@include ym-box-shadow(0,0,3px,rgba(0,0,0,.25));
@@ -308,10 +308,10 @@
 		color: #444;
 		color: rgba(0,0,0,.8);
 		padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em;
-		margin: $line-height*1em 0 0 0;
+		margin: 0 0 $line-height*1em 0;
 
-		& > *:first-child {
-			margin-top: 0;
+		& > *:last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -349,19 +349,19 @@
 	.float-left {
 		float:left;
 		display:inline;
-		margin: $line-height*1em 1em 0 0;
+		margin: 0 1em $line-height*1em 0;
 	}
 
 	.float-right {
 		float:right;
 		display:inline;
-		margin: $line-height*1em 0 0 1em;
+		margin: 0 0 $line-height*1em 1em;
 	}
 
 	.center {
 		display:block;
 		text-align:center;
-		margin: $line-height*1em auto 0 auto;
+		margin: 0 auto $line-height*1em auto;
 	}
 
 	/**
@@ -381,10 +381,10 @@
 		color:$ym-text-color;
 		border-top: 1px #ccc solid;
 		border-bottom: 1px #ccc solid;
-		margin: ($ym-base-line-height - 2 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
+		margin: 0 0 ($ym-base-line-height - 2 ) / $ym-base-line-height * $line-height * 1em 0;
 
 		&.narrow {
-			margin: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em 0 0 0;
+			margin: 0 0 ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em 0;
 
 			th, td {
 				padding: 0 0.5em;

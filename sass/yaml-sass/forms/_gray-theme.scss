@@ -5,8 +5,8 @@
 	.ym-form {
 		background:#f4f4f4;
 		border:2px #fff solid;
-		margin: 1.5em 0 0 0;
-		padding: 0;
+		margin: 0 0 1.5em 0;
+		padding: 1em 0 0 0;
 		@include ym-box-shadow(0,0,4px,#ddd);
 
 		fieldset {
@@ -34,14 +34,14 @@
 		}
 
 		.ym-fbox {
-			padding: 0.3em 1em 1em 1em;
+			padding: 1em;
 			margin-bottom: 0.5em;
 		}
 
 		.ym-fbox-footer {
 			background: #ececec;
 			border-top: 1px #e0e0e0 solid;
-			padding:0 1em 1.5em 1em;
+			padding: 1.5em 1em;
 			margin: 0;
 			text-align: left;
 		}
@@ -119,11 +119,11 @@
 
 		.ym-message {
 			color:#666;
-			margin-bottom:0.5em;
+			margin-bottom: 0.5em;
 		}
 		.ym-required {
 			color:#800;
-			font-weight:bold;
+			font-weight: bold;
 		}
 
 		// valid & invalid state
@@ -134,8 +134,8 @@
 
 		.ym-error {
 			label {
-				color:#800;
-				font-weight:normal;
+				color: #800;
+				font-weight: normal;
 			}
 			input, select, textarea {
 				border: 1px #800 solid;
@@ -146,7 +146,7 @@
 				border: 1px #800 solid !important;
 			}
 			.ym-message {
-				color:#800;
+				color: #800;
 				font-weight: bold;
 				margin-top: 0;
 			}
@@ -179,7 +179,7 @@
 		color: #333 !important;
 		cursor: pointer;
 		font: normal 1em/2em Arial, Helvetica;
-		margin: 1.5em 0.75em 0 0;
+		margin: 0 0.75em 0 0;
 		padding: 0 1.5em;
 		overflow: visible; /* removes extra side spacing in IE */
 		text-decoration: none !important;

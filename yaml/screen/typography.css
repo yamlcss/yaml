@@ -68,35 +68,35 @@
     /* font-size: 48px; */
     font-size: 342.85714%;
     line-height: 0.875;
-    margin: 0.4375em 0 0;
+    margin: 0 0 0.4375em 0;
   }
 
   h2 {
     /* font-size: 32px; */
     font-size: 228.57143%;
     line-height: 1.3125;
-    margin: 0.65625em 0 0;
+    margin: 0 0 0.65625em 0;
   }
 
   h3 {
     /* font-size: 24px; */
     font-size: 171.42857%;
     line-height: 0.875;
-    margin: 0.875em 0 0;
+    margin: 0 0 0.875em 0;
   }
 
   h4 {
     /* font-size: 21px; */
     font-size: 150%;
     line-height: 1;
-    margin: 1em 0 0;
+    margin: 0 0 1em 0;
   }
 
   h5 {
     /* font-size: 18px; */
     font-size: 128.57143%;
     line-height: 1.16667;
-    margin: 1.16667em 0 0;
+    margin: 0 0 1.16667em 0;
   }
 
   h6 {
@@ -104,7 +104,7 @@
     font-size: 100%;
     font-weight: bold;
     line-height: 1.5;
-    margin: 1.5em 0 0;
+    margin: 0 0 1.5em 0;
   }
 
   /* --- Lists | Listen  -------------------------------------------------------------------------------- */
@@ -113,7 +113,7 @@
   dl {
     font-size: 100%;
     line-height: 1.5;
-    margin: 1.5em 0 1em;
+    margin: 0 0 1.5em 0;
   }
 
   ul {
@@ -157,7 +157,7 @@
   p {
     font-size: 100%;
     line-height: 1.5;
-    margin: 1.5em 0 0;
+    margin: 0 0 1.5em 0;
   }
 
   blockquote, cite, q {
@@ -203,7 +203,7 @@
   pre {
     font-size: 100%;
     line-height: 1.5;
-    margin: 1.5em 0 0;
+    margin: 0 0 1.5em 0;
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -286,7 +286,7 @@
   }
 
   .flexible {
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     max-width: 100%;
     height: auto;
   }
@@ -297,7 +297,7 @@
   }
 
   .bordered {
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     border: 2px #eee solid;
     border: 2px white solid;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
@@ -333,10 +333,10 @@
     color: #444;
     color: rgba(0, 0, 0, 0.8);
     padding: 1.42857em;
-    margin: 1.5em 0 0 0;
+    margin: 0 0 1.5em 0;
   }
-  .box > *:first-child {
-    margin-top: 0;
+  .box > *:last-child {
+    margin-bottom: 0;
   }
 
   .label {
@@ -373,19 +373,19 @@
   .float-left {
     float: left;
     display: inline;
-    margin: 1.5em 1em 0 0;
+    margin: 0 1em 1.5em 0;
   }
 
   .float-right {
     float: right;
     display: inline;
-    margin: 1.5em 0 0 1em;
+    margin: 0 0 1.5em 1em;
   }
 
   .center {
     display: block;
     text-align: center;
-    margin: 1.5em auto 0 auto;
+    margin: 0 auto 1.5em auto;
   }
 
   /**
@@ -404,10 +404,10 @@
     color: #444444;
     border-top: 1px #ccc solid;
     border-bottom: 1px #ccc solid;
-    margin: 1.35714em 0 0 0;
+    margin: 0 0 1.35714em 0;
   }
   table.narrow {
-    margin: 1.42857em 0 0 0;
+    margin: 0 0 1.42857em 0;
   }
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
