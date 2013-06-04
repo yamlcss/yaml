@@ -428,7 +428,7 @@
 	}
 
 	.flexible {
-		margin-top: 1.5em;
+		margin-bottom: 1.5em;
 	}
 
 	/*--- TYPOGRAPHY -----------------------------------------------------*/
@@ -624,6 +624,11 @@
 
 	p .ym-button {
 		margin-bottom: 1.5em;
+	}
+
+	h3 + .label,
+	h4 + .label {
+		margin-top: -3.6em;
 	}
 
 	/**

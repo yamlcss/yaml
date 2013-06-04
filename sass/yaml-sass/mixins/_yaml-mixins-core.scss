@@ -13,12 +13,12 @@
 @mixin ym-box-shadow($x: 1px, $y: 1px, $blur: 5px, $color: rgba(0,0,0,.5), $inset: false) {
 
 	@if $inset{
-    -webkit-box-shadow: $inset $x $y $blur $color;
-    		box-shadow: $inset $x $y $blur $color;
+	-webkit-box-shadow: $inset $x $y $blur $color;
+			box-shadow: $inset $x $y $blur $color;
 	}
 	@else {
-    -webkit-box-shadow: $x $y $blur $color;
-    		box-shadow: $x $y $blur $color;
+	-webkit-box-shadow: $x $y $blur $color;
+			box-shadow: $x $y $blur $color;
 	}
 }
 
@@ -45,7 +45,7 @@
 		$very-old-direction: "left top, right top";
 		$old-direction: left;
 		$ie-direction: 1;
-    }
+	}
 
 	@if $output != "oldie" {
 		background: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
@@ -55,7 +55,9 @@
 	}
 
 	@if $output != "css3" {
-		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=#{$ie-direction}, startColorstr='#{$start-color}', endColorstr='#{$end-color}');
+		$iecolor1: ie-hex-str($start-color);
+		$iecolor2: ie-hex-str($end-color);
+		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=#{$ie-direction}, startColorstr='#{$iecolor1}', endColorstr='#{$iecolor2}');
 		zoom: 1;
 	}
 }
