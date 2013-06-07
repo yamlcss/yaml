@@ -1487,7 +1487,7 @@ body &gt; header { min-width: 760px; }
 </form>
 
 <pre class="htmlCode">
-&lt;div class="<strong>ym-fbox ym-fbox-text</strong>"&gt;
+&lt;div class="<strong>ym-fbox</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" placeholder="enter a value" /&gt;
 &lt;/div&gt;
@@ -1504,7 +1504,7 @@ body &gt; header { min-width: 760px; }
 </form>
 
 <pre class="htmlCode">
-&lt;div class="<strong>ym-fbox ym-fbox-text</strong>"&gt;
+&lt;div class="<strong>ym-fbox</strong>"&gt;
   &lt;label for="your-id">your label&lt;/label&gt;
   &lt;textarea name=&quot;your-id&quot; id=&quot;your-id&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
@@ -1533,7 +1533,7 @@ body &gt; header { min-width: 760px; }
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox ym-fbox-select</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
   &lt;label for=&quot;your-id&quot;&gt;Available Options&lt;/label&gt;
   &lt;select name=&quot;your-id&quot; id=&quot;your-id&quot; size=&quot;1&quot;&gt;
     &lt;option value=&quot;0&quot; selected=&quot;selected&quot; disabled=&quot;disabled&quot;&gt;Please choose&lt;/option&gt;
@@ -1547,7 +1547,8 @@ body &gt; header { min-width: 760px; }
       &lt;option value=&quot;value #5&quot;&gt;Option 5&lt;/option&gt;
     &lt;/optgroup&gt;
   &lt;/select&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</pre>
 	</div>
 	<h5>Checkbox</h5>
 <div class="tab-content">
@@ -1575,21 +1576,19 @@ body &gt; header { min-width: 760px; }
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox ym-fbox-check</strong>&quot;&gt;
-  &lt;span class=&quot;ym-label&quot;&gt;A single checkbox&lt;span&gt;
-  &lt;div class=&quot;ym-fbox-check&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
-    &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
+  &lt;!-- a single checkbox --&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
+  &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
-  &lt;span class=&quot;ym-label&quot;&gt;A set of checkboxs&lt;span&gt;
+  &lt;!-- A set of checkboxes --&gt;
   &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+    &lt;div&gt;
       &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id2&quot; /&gt;
       &lt;label for=&quot;your-id2&quot;&gt;Your checkbox label&lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+    &lt;div&gt;
       &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id3&quot; /&gt;
       &lt;label for=&quot;your-id3&quot;&gt;Your checkbox label&lt;/label&gt;
     &lt;/div&gt;
@@ -1628,15 +1627,15 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 &lt;div class=&quot;<strong>ym-fbox</strong>&quot;&gt;
   &lt;span class=&quot;ym-label&quot;&gt;Custom Label&lt;span&gt;
   &lt;div class=&quot;ym-fbox-wrap&quot;&gt;
-    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+    &lt;div&gt;
       &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id1&quot; /&gt;
       &lt;label for=&quot;your-id1&quot;&gt;Your radio-button label&lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+    &lt;div&gt;
       &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id2&quot; /&gt;
       &lt;label for=&quot;your-id2&quot;&gt;Your radio-button label&lt;/label&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;ym-fbox-check&quot;&gt;
+    &lt;div&gt;
       &lt;input type=&quot;radio&quot; name=&quot;vote&quot; id=&quot;your-id3&quot; /&gt;
       &lt;label for=&quot;your-id3&quot;&gt;Your radio-button label&lt;/label&gt;
     &lt;/div&gt;
@@ -1656,7 +1655,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 </form>
 
 <pre class="htmlCode">
-&lt;div class=&quot;<strong>ym-fbox-footer ym-fbox-button</strong>&quot;&gt;
+&lt;div class=&quot;<strong>ym-fbox-footer</strong>&quot;&gt;
   &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
   &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
   &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
@@ -1668,6 +1667,60 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 
 		</div>
 </div>
+
+				<h4>IE6 Support</h4>
+				<p>The Internet Explorer 6 is the oldest browser, that is supported by YAML 4. This browser doesn't support <a href="http://www.w3.org/TR/CSS2/selector.html#attribute-selectors">attribute selectors</a>
+					that are used to address special input element types, e.g. <code>input[type="checkbox"]</code>. In order to solve this
+					problem, YAML provides a set of helper classes that can be used to style form elements in IE6.</p>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">helper class</th>
+							<th scope="col">Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="nowrap"><code>.ym-fbox-text</code></td>
+							<td>
+								<p>Use this class on a parent element of an &lt;input&gt; element that represents a text input (<code>input[type="text"]</code>) or &lt;textarea&gt;.</p>
+<pre class="htmlCode">
+&lt;div class="ym-fbox <strong>ym-fbox-text</strong>"&gt;
+  &lt;label for="your-id">your label&lt;/label&gt;
+  &lt;input type="text" name="your-id" id="your-id" placeholder="enter a value" /&gt;
+&lt;/div&gt;
+</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class="nowrap"><code>.ym-fbox-select</code></td>
+							<td>
+								<p>Use this class on a parent element of an &lt;select&gt;.</p>
+<pre class="htmlCode">
+&lt;div class=&quot;ym-fbox <strong>ym-fbox-select</strong>&quot;&gt;
+  &lt;label for=&quot;your-id&quot;&gt;Available Options&lt;/label&gt;
+  &lt;select name=&quot;your-id&quot; id=&quot;your-id&quot; size=&quot;1&quot;&gt;
+    ...
+  &lt;/select&gt;
+&lt;/div&gt;
+</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class="nowrap"><code>.ym-fbox-check</code></td>
+							<td>
+								<p>Use this class on a parent element of an &lt;input&gt; element that represents a checkbox (<code>input[type="checkbox"]</code>) or radio button (<code>input[type="radio"]</code>)</p>
+<pre class="htmlCode">
+&lt;div class=&quot;ym-fbox <strong>ym-fbox-check</strong>&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
+  &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
 				<h4>Form Configuration</h4>
 				<div class="jquery_tabs">
 
@@ -1675,7 +1728,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="tab-content">
 
 				<p>Required form fields can  be  visually emphasized by adding <code>.ym-required</code> element to the label. In any case, you should add  the ARIA attribute <em><code>aria-required=&quot;true&quot;</code></em> or <code><em>required=&quot;required&quot;</em></code> when using HTML5.</p>
-				<pre class="htmlCode">&lt;div class="ym-fbox ym-fbox-text"&gt;
+				<pre class="htmlCode">&lt;div class="ym-fbox"&gt;
   &lt;label for="your-id">your label<strong>&lt;sup class=&quot;ym-required&quot;&gt;*&lt;/sup&gt;</strong>&lt;/label&gt;
   &lt;input type="text" name="your-id" id="your-id" size="20" required=&quot;required&quot;/&gt;
 &lt;/div&gt;		</pre>
@@ -1701,7 +1754,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="tab-content">
 				<p>In radio button sets, the label elements are needed to label individual opions. For a more consitent appearance of forms, you can define an additional label-like name, using <code>.ym-label</code> before the button set, that will be correctly aligned in all form styles.</p>
 				<pre class="htmlCode">
-&lt;div class="ym-fbox ym-fbox-check"&gt;
+&lt;div class="ym-fbox"&gt;
   &lt;span class=&quot;<strong>ym-label</strong>&quot;&gt;Custom Label&lt;/span&gt;
   &lt;div class="ym-fbox-wrap"&gt;
     ...
@@ -1747,19 +1800,19 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   &lt;span class=&quot;ym-label&quot;&gt;Wrapped From Elements and Labels&lt;/span&gt;
   &lt;div class=&quot;<strong>ym-fbox-wrap ym-grid</strong>&quot;&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gl</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-left ym-fbox-text</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-left</strong>&quot;&gt;
         &lt;label for=&quot;plz&quot; &gt;Postal Code&lt;/label&gt;
         &lt;input type=&quot;text&quot; name=&quot;plz&quot; id=&quot;plz&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gl</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-left ym-fbox-text</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-left</strong>&quot;&gt;
         &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
         &lt;input type=&quot;text&quot; name=&quot;city&quot; id=&quot;city&quot; /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;<strong>ym-g33 ym-gr</strong>&quot;&gt;
-      &lt;div class=&quot;<strong>ym-gbox-right ym-fbox-text</strong>&quot;&gt;
+      &lt;div class=&quot;<strong>ym-gbox-right</strong>&quot;&gt;
         &lt;label for=&quot;country&quot;&gt;Country&lt;/label&gt;
         &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;&lt;option value=&quot;&quot;&gt;entry&lt;/option&gt;&lt;/select&gt;
       &lt;/div&gt;
@@ -1780,7 +1833,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				</form>
 
 				<pre class="htmlCode">
-&lt;div class="ym-fbox ym-fbox-text"&gt;
+&lt;div class="ym-fbox"&gt;
   &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
   &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
   &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;

@@ -414,6 +414,8 @@
     cursor: text;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"],
   .ym-form select,
   .ym-form label {
     cursor: pointer;
@@ -461,8 +463,8 @@
     width: 70%;
   }
   .ym-form .ym-fbox-check input,
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"] {
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"] {
     width: auto;
     display: inline;
     width: auto;
@@ -497,8 +499,8 @@
   .ym-fbox-wrap select {
     width: 100%;
   }
-  .ym-fbox-wrap input[type="checkbox"],
-  .ym-fbox-wrap input[type="radio"] {
+  .ym-fbox-wrap input[type="radio"],
+  .ym-fbox-wrap input[type="checkbox"] {
     display: inline;
     width: auto;
     margin-left: 0;

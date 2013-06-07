@@ -51,6 +51,7 @@
 		background: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
 		background:  -webkit-linear-gradient($old-direction, $start-color,$end-color);
 		background: 	-moz-linear-gradient($old-direction, $start-color,$end-color);
+		background: 	 -ms-linear-gradient($old-direction, $start-color,$end-color);
 		background:    		 linear-gradient($direction, $start-color,$end-color);
 	}
 

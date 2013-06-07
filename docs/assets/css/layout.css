@@ -5,14 +5,14 @@
    *  @section Normalisation Module
    */
   /* (en) Global reset of paddings and margins for all HTML elements */
-  /* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
+  /* (de) Globales Zur├╝cksetzen der Innen- und Au├ƒenabst├ñnde f├╝r alle HTML-Elemente */
   * {
     margin: 0;
     padding: 0;
   }
 
   /* (en) Correction:margin/padding reset caused too small select boxes. */
-  /* (de) Korrektur:Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
+  /* (de) Korrektur:Das Zur├╝cksetzen der Abst├ñnde verursacht zu kleine Selectboxen. */
   option {
     padding-left: 0.4em;
   }
@@ -36,7 +36,7 @@
 
   /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
   /* (en) Standard values for colors and text alignment */
-  /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen */
+  /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgr├Â├ƒen in ├ñlteren Opera Versionen */
   /* (de) Vorgabe der Standardfarben und Textausrichtung */
   body {
     font-size: 100%;
@@ -69,7 +69,7 @@
   }
 
   /* (en) HTML5 - default media element styles */
-  /* (de) HTML5 - Standard Eigenschaften für Media-Elemente */
+  /* (de) HTML5 - Standard Eigenschaften f├╝r Media-Elemente */
   audio,
   canvas,
   video {
@@ -83,7 +83,7 @@
   }
 
   /* (en) HTML5 - add missing styling in IE & old FF for hidden attribute */
-  /* (de) HTML5 - Eigenschaften für das hidden-Attribut in älteren IEs und FF nachrüsten */
+  /* (de) HTML5 - Eigenschaften f├╝r das hidden-Attribut in ├ñlteren IEs und FF nachr├╝sten */
   [hidden] {
     display: none;
   }
@@ -96,7 +96,7 @@
   }
 
   /* (en) set correct box-modell in IE8/9 plus remove padding */
-  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unnötiges Padding */
+  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unn├Âtiges Padding */
   input[type="checkbox"],
   input[type="radio"] {
     box-sizing: border-box;
@@ -104,7 +104,7 @@
   }
 
   /* (en) force consistant appearance of input[type="search"] elements in all browser */
-  /* (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen */
+  /* (de) Einheitliches Erscheinungsbild f├╝r input[type="search"] Elemente erzwingen */
   input[type="search"] {
     -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
@@ -124,20 +124,20 @@
   }
 
   /* (en) Address margin not present in IE 8/9 and Safari 5. */
-  /* (en) Ergänzt fehlenden Margin in IE 8/9 und Safari 5. */
+  /* (en) Erg├ñnzt fehlenden Margin in IE 8/9 und Safari 5. */
   figure {
     margin: 0;
   }
 
   /* (en) Clear borders for <fieldset> and <img> elements */
-  /* (de) Rahmen für <fieldset> und <img> Elemente löschen */
+  /* (de) Rahmen f├╝r <fieldset> und <img> Elemente l├Âschen */
   fieldset,
   img {
     border: 0 solid;
   }
 
   /* (en) new standard values for lists, blockquote, cite and tables */
-  /* (de) Neue Standardwerte für Listen, Zitate und Tabellen */
+  /* (de) Neue Standardwerte f├╝r Listen, Zitate und Tabellen */
   ul,
   ol,
   dl {
@@ -198,7 +198,7 @@
   }
 
   /* (en) alternative solutions to contain floats */
-  /* (de) Alternative Methoden zum Einschließen von Float-Umgebungen */
+  /* (de) Alternative Methoden zum Einschlie├ƒen von Float-Umgebungen */
   .ym-contain-dt {
     display: table;
     table-layout: fixed;
@@ -259,7 +259,7 @@
   }
 
   /* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
-  /* (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
+  /* (de) IE-Clearing: Ben├Âtigt nur der Internet Explorer und ├╝ber iehacks.css zugeschaltet */
   .ym-ie-clearing {
     display: none;
   }
@@ -400,6 +400,8 @@
     cursor: text;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"],
   .ym-form select,
   .ym-form label {
     cursor: pointer;
@@ -447,8 +449,8 @@
     width: 70%;
   }
   .ym-form .ym-fbox-check input,
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"] {
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"] {
     width: auto;
     display: inline;
     width: auto;
@@ -483,8 +485,8 @@
   .ym-fbox-wrap select {
     width: 100%;
   }
-  .ym-fbox-wrap input[type="checkbox"],
-  .ym-fbox-wrap input[type="radio"] {
+  .ym-fbox-wrap input[type="radio"],
+  .ym-fbox-wrap input[type="checkbox"] {
     display: inline;
     width: auto;
     margin-left: 0;
@@ -518,7 +520,7 @@
   *  |-------------------------------------------|
   *
   *  (en) Styling of forms where label floats left of form-elements
-  *  (de) Formulargestaltung, bei der die label-Elemente nach links fließen
+  *  (de) Formulargestaltung, bei der die label-Elemente nach links flie├ƒen
   */
   .ym-columnar input,
   .ym-columnar textarea,
@@ -583,7 +585,7 @@
   * (de) Skip-Links und versteckte Inhalte
   */
   /* (en) classes for invisible elements in the base layout */
-  /* (de) Klassen für unsichtbare Elemente im Basislayout */
+  /* (de) Klassen f├╝r unsichtbare Elemente im Basislayout */
   .ym-skip,
   .ym-hideme,
   .ym-print {
@@ -593,7 +595,7 @@
   }
 
   /* (en) make skip links visible when using tab navigation */
-  /* (de) Skip-Links für Tab-Navigation sichtbar schalten */
+  /* (de) Skip-Links f├╝r Tab-Navigation sichtbar schalten */
   .ym-skip:focus,
   .ym-skip:active {
     position: static;
@@ -625,7 +627,7 @@
   * @section print adjustments for core modules
   *
   * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
-  * (de) Floats in Grids einschließen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Floats in Grids einschlie├ƒen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   *
   * @bugfix
   * @since     3.0
@@ -877,7 +879,6 @@
     background: #f4f4f4;
     border: 2px #fff solid;
     margin: 0 0 1.5em 0;
-    padding: 1em 0 0 0;
     -webkit-box-shadow: 0 0 4px #dddddd;
     box-shadow: 0 0 4px #dddddd;
   }
@@ -903,7 +904,10 @@
   }
   .ym-form .ym-fbox {
     padding: 0 1em;
-    margin-bottom: 0.5em;
+    margin: 1em 0;
+  }
+  .ym-form .ym-fbox + .ym-fbox {
+    margin: 0.5em 0;
   }
   .ym-form .ym-fbox-footer {
     background: #ececec;
@@ -912,11 +916,15 @@
     margin: 0;
     text-align: left;
   }
+  .ym-form .ym-fbox :last-child,
+  .ym-form .ym-fbox-footer :last-child {
+    margin-bottom: 0;
+  }
   .ym-form .ym-fbox-heading {
     font-size: 1em;
     font-size: 100%;
     color: #000;
-    margin: 0 1em 1em 1em;
+    margin: 1em;
   }
   .ym-form .ym-fbox-check:focus + label {
     color: #000;
@@ -951,9 +959,15 @@
   .ym-form select {
     padding: 3px 2px 3px 1px;
   }
-  .ym-form input:focus, .ym-form select:focus, .ym-form textarea:focus,
-  .ym-form input:hover, .ym-form select:hover, .ym-form textarea:hover,
-  .ym-form input:active, .ym-form select:active, .ym-form textarea:active {
+  .ym-form input:focus,
+  .ym-form select:focus,
+  .ym-form textarea:focus,
+  .ym-form input:hover,
+  .ym-form select:hover,
+  .ym-form textarea:hover,
+  .ym-form input:active,
+  .ym-form select:active,
+  .ym-form textarea:active {
     border: 1px #888 solid;
     background: #fff;
   }
@@ -963,8 +977,8 @@
     font-weight: bold;
   }
   .ym-form .ym-fbox-check input,
-  .ym-form input[type="checkbox"],
-  .ym-form input[type="radio"] {
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"] {
     border: 0 none !important;
     background: transparent !important;
   }
@@ -991,9 +1005,12 @@
   .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
     border: 1px #800 solid;
   }
-  .ym-form .ym-error input:hover, .ym-form .ym-error input:focus,
-  .ym-form .ym-error select:hover, .ym-form .ym-error select:focus,
-  .ym-form .ym-error textarea:hover, .ym-form .ym-error textarea:focus {
+  .ym-form .ym-error input:hover,
+  .ym-form .ym-error input:focus,
+  .ym-form .ym-error select:hover,
+  .ym-form .ym-error select:focus,
+  .ym-form .ym-error textarea:hover,
+  .ym-form .ym-error textarea:focus {
     border: 1px #800 solid !important;
   }
   .ym-form .ym-error .ym-message {
@@ -1016,6 +1033,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
     background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
     background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background: -ms-linear-gradient(top, #eeeeee, #cccccc);
     background: linear-gradient("to bottom", #eeeeee, #cccccc);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC');
     zoom: 1;
@@ -1041,6 +1059,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #dddddd));
     background: -webkit-linear-gradient(top, #fafafa, #dddddd);
     background: -moz-linear-gradient(top, #fafafa, #dddddd);
+    background: -ms-linear-gradient(top, #fafafa, #dddddd);
     background: linear-gradient("to bottom", #fafafa, #dddddd);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFFAFAFA', endColorstr='#FFDDDDDD');
     zoom: 1;
@@ -1055,6 +1074,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #bbbbbb));
     background: -webkit-linear-gradient(top, #cccccc, #bbbbbb);
     background: -moz-linear-gradient(top, #cccccc, #bbbbbb);
+    background: -ms-linear-gradient(top, #cccccc, #bbbbbb);
     background: linear-gradient("to bottom", #cccccc, #bbbbbb);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFCCCCCC', endColorstr='#FFBBBBBB');
     zoom: 1;
@@ -1101,6 +1121,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ee), color-stop(100%, #6666cc));
     background: -webkit-linear-gradient(top, #8888ee, #6666cc);
     background: -moz-linear-gradient(top, #8888ee, #6666cc);
+    background: -ms-linear-gradient(top, #8888ee, #6666cc);
     background: linear-gradient("to bottom", #8888ee, #6666cc);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF8888EE', endColorstr='#FF6666CC');
     zoom: 1;
@@ -1116,6 +1137,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888ff), color-stop(100%, #6666dd));
     background: -webkit-linear-gradient(top, #8888ff, #6666dd);
     background: -moz-linear-gradient(top, #8888ff, #6666dd);
+    background: -ms-linear-gradient(top, #8888ff, #6666dd);
     background: linear-gradient("to bottom", #8888ff, #6666dd);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF8888FF', endColorstr='#FF6666DD');
     zoom: 1;
@@ -1130,6 +1152,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8888cc), color-stop(100%, #6666aa));
     background: -webkit-linear-gradient(top, #8888cc, #6666aa);
     background: -moz-linear-gradient(top, #8888cc, #6666aa);
+    background: -ms-linear-gradient(top, #8888cc, #6666aa);
     background: linear-gradient("to bottom", #8888cc, #6666aa);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF8888CC', endColorstr='#FF6666AA');
     zoom: 1;
@@ -1154,6 +1177,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66bb66), color-stop(100%, #449944));
     background: -webkit-linear-gradient(top, #66bb66, #449944);
     background: -moz-linear-gradient(top, #66bb66, #449944);
+    background: -ms-linear-gradient(top, #66bb66, #449944);
     background: linear-gradient("to bottom", #66bb66, #449944);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF66BB66', endColorstr='#FF449944');
     zoom: 1;
@@ -1169,6 +1193,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66cc66), color-stop(100%, #55aa55));
     background: -webkit-linear-gradient(top, #66cc66, #55aa55);
     background: -moz-linear-gradient(top, #66cc66, #55aa55);
+    background: -ms-linear-gradient(top, #66cc66, #55aa55);
     background: linear-gradient("to bottom", #66cc66, #55aa55);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF66CC66', endColorstr='#FF55AA55');
     zoom: 1;
@@ -1183,6 +1208,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66aa66), color-stop(100%, #448844));
     background: -webkit-linear-gradient(top, #66aa66, #448844);
     background: -moz-linear-gradient(top, #66aa66, #448844);
+    background: -ms-linear-gradient(top, #66aa66, #448844);
     background: linear-gradient("to bottom", #66aa66, #448844);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FF66AA66', endColorstr='#FF448844');
     zoom: 1;
@@ -1207,6 +1233,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ddaa44), color-stop(100%, #bb7722));
     background: -webkit-linear-gradient(top, #ddaa44, #bb7722);
     background: -moz-linear-gradient(top, #ddaa44, #bb7722);
+    background: -ms-linear-gradient(top, #ddaa44, #bb7722);
     background: linear-gradient("to bottom", #ddaa44, #bb7722);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFDDAA44', endColorstr='#FFBB7722');
     zoom: 1;
@@ -1222,6 +1249,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eebb55), color-stop(100%, #cc8833));
     background: -webkit-linear-gradient(top, #eebb55, #cc8833);
     background: -moz-linear-gradient(top, #eebb55, #cc8833);
+    background: -ms-linear-gradient(top, #eebb55, #cc8833);
     background: linear-gradient("to bottom", #eebb55, #cc8833);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFEEBB55', endColorstr='#FFCC8833');
     zoom: 1;
@@ -1236,6 +1264,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc9944), color-stop(100%, #aa6622));
     background: -webkit-linear-gradient(top, #cc9944, #aa6622);
     background: -moz-linear-gradient(top, #cc9944, #aa6622);
+    background: -ms-linear-gradient(top, #cc9944, #aa6622);
     background: linear-gradient("to bottom", #cc9944, #aa6622);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFCC9944', endColorstr='#FFAA6622');
     zoom: 1;
@@ -1260,6 +1289,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bb6666), color-stop(100%, #994444));
     background: -webkit-linear-gradient(top, #bb6666, #994444);
     background: -moz-linear-gradient(top, #bb6666, #994444);
+    background: -ms-linear-gradient(top, #bb6666, #994444);
     background: linear-gradient("to bottom", #bb6666, #994444);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFBB6666', endColorstr='#FF994444');
     zoom: 1;
@@ -1275,6 +1305,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cc6666), color-stop(100%, #aa5555));
     background: -webkit-linear-gradient(top, #cc6666, #aa5555);
     background: -moz-linear-gradient(top, #cc6666, #aa5555);
+    background: -ms-linear-gradient(top, #cc6666, #aa5555);
     background: linear-gradient("to bottom", #cc6666, #aa5555);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFCC6666', endColorstr='#FFAA5555');
     zoom: 1;
@@ -1289,6 +1320,7 @@
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aa5555), color-stop(100%, #884444));
     background: -webkit-linear-gradient(top, #aa5555, #884444);
     background: -moz-linear-gradient(top, #aa5555, #884444);
+    background: -ms-linear-gradient(top, #aa5555, #884444);
     background: linear-gradient("to bottom", #aa5555, #884444);
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#FFAA5555', endColorstr='#FF884444');
     zoom: 1;
@@ -1762,14 +1794,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1790,7 +1822,7 @@
     color: #444444;
   }
 
-  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -2010,7 +2042,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -2133,7 +2165,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
   *
   * @section content-tables
   */
@@ -2218,14 +2250,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgr├Â├ƒen-Ma├ƒheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+  /* (de) F├╝r den Druck nicht ben├Âtigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -2233,7 +2265,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+  /* (de) Vermeidung von Seitenumbr├╝chen direkt nach einer ├£berschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }

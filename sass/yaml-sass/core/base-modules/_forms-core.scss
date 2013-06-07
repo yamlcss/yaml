@@ -40,6 +40,8 @@
 		textarea { cursor:text; }
 
 		.ym-fbox-check input,
+		input[type="radio"],
+		input[type="checkbox"],
 		select,
 		label {
 			cursor:pointer;
@@ -103,8 +105,8 @@
 
 		// overrule width settings for inline form elements ...
 		.ym-fbox-check input,
-		input[type="checkbox"],
-		input[type="radio"] {
+		input[type="radio"],
+		input[type="checkbox"] {
 			width: auto;
 			display: inline;
 			width: auto;
@@ -145,8 +147,8 @@
 			width: 100%;
 		}
 
-		input[type="checkbox"],
-		input[type="radio"] {
+		input[type="radio"],
+		input[type="checkbox"] {
 			display: inline;
 			width: auto;
 			margin-left: 0;

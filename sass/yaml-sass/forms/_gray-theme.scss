@@ -6,7 +6,6 @@
 		background:#f4f4f4;
 		border:2px #fff solid;
 		margin: 0 0 1.5em 0;
-		padding: 1em 0 0 0;
 		@include ym-box-shadow(0,0,4px,#ddd);
 
 		fieldset {
@@ -34,7 +33,10 @@
 
 		.ym-fbox {
 			padding: 0 1em;
-			margin-bottom: 0.5em;
+			margin: 1em 0;
+		}
+		.ym-fbox + .ym-fbox {
+			margin: 0.5em 0;
 		}
 
 		.ym-fbox-footer {
@@ -45,11 +47,16 @@
 			text-align: left;
 		}
 
+		.ym-fbox :last-child,
+		.ym-fbox-footer :last-child {
+			margin-bottom: 0;
+		}
+
 		.ym-fbox-heading {
 			font-size: 1em;
 			font-size: 100%;
 			color: #000;
-			margin: 0 1em 1em 1em;
+			margin: 1em;
 		}
 
 		.ym-fbox-check:focus + label {
@@ -91,9 +98,15 @@
 			padding: 3px 2px 3px 1px;
 		}
 
-		input:focus, select:focus, textarea:focus,
-		input:hover, select:hover, textarea:hover,
-		input:active, select:active, textarea:active {
+		input:focus,
+		select:focus,
+		textarea:focus,
+		input:hover,
+		select:hover,
+		textarea:hover,
+		input:active,
+		select:active,
+		textarea:active {
 			border:1px #888 solid;
 			background:#fff;
 		}
@@ -105,8 +118,8 @@
 		}
 
 		.ym-fbox-check input,
-		input[type="checkbox"],
-		input[type="radio"] {
+		input[type="radio"],
+		input[type="checkbox"] {
 			border: 0 none !important;
 			background: transparent !important;
 		}
@@ -134,9 +147,12 @@
 			input, select, textarea {
 				border: 1px #800 solid;
 			}
-			input:hover, input:focus,
-			select:hover, select:focus,
-			textarea:hover, textarea:focus {
+			input:hover,
+			input:focus,
+			select:hover,
+			select:focus,
+			textarea:hover,
+			textarea:focus {
 				border: 1px #800 solid !important;
 			}
 			.ym-message {
