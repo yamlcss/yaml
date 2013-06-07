@@ -410,6 +410,9 @@
     padding: 0 0.5em;
     line-height: 1.42857;
   }
+  table.fixed {
+    table-layout: fixed;
+  }
   table.bordertable {
     border: 1px #ccc solid;
   }

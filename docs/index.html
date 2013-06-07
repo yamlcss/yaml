@@ -1672,11 +1672,11 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<p>The Internet Explorer 6 is the oldest browser, that is supported by YAML 4. This browser doesn't support <a href="http://www.w3.org/TR/CSS2/selector.html#attribute-selectors">attribute selectors</a>
 					that are used to address special input element types, e.g. <code>input[type="checkbox"]</code>. In order to solve this
 					problem, YAML provides a set of helper classes that can be used to style form elements in IE6.</p>
-				<table>
+				<table class="fixed">
 					<thead>
 						<tr>
-							<th scope="col">helper class</th>
-							<th scope="col">Description</th>
+							<th class="ym-g25" scope="col">helper class</th>
+							<th class="ym-g75" scope="col">Description</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -1714,6 +1714,18 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 &lt;div class=&quot;ym-fbox <strong>ym-fbox-check</strong>&quot;&gt;
   &lt;input type=&quot;checkbox&quot; name=&quot;your-id&quot; id=&quot;your-id1&quot; /&gt;
   &lt;label for=&quot;your-id1&quot;&gt;Your checkbox label&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+							</td>
+						</tr>
+						<tr>
+							<td class="nowrap"><code>.ym-fbox-button</code></td>
+							<td>
+								<p>Use this class on a parent element of an &lt;input&gt; element that represents a custom button (<code>input[type="button"]</code>) or submit button (<code>input[type="submit"]</code>)</p>
+<pre class="htmlCode">
+&lt;div class=&quot;ym-fbox-footer <strong>ym-fbox-button</strong>&quot;&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
+  &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
 &lt;/div&gt;
 </pre>
 							</td>
@@ -3032,15 +3044,17 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 					<h5>Contact example (hCard)</h5>
 					<div class="jquery_tabs">
 						<h5>Draft Preview</h5>
-						<div class="vcard tab-content"> <a class="fn org url" href="http://www.commerce.net/">CommerceNet</a>
-							<div class="adr"> <span class="type">Work</span>:
-								<div class="street-address">169 University Avenue</div>
-								<span class="locality">Palo Alto</span>, <abbr class="region" title="California">CA</abbr> <span class="postal-code">94301</span>
-								<div class="country-name">USA</div>
+						<div class="tab-content">
+							<div class="vcard"> <a class="fn org url" href="http://www.commerce.net/">CommerceNet</a>
+								<div class="adr"> <span class="type">Work</span>:
+									<div class="street-address">169 University Avenue</div>
+									<span class="locality">Palo Alto</span>, <abbr class="region" title="California">CA</abbr> <span class="postal-code">94301</span>
+									<div class="country-name">USA</div>
+								</div>
+								<div class="tel"> <span class="type">Tel (work):</span> +1-650-289-4040 </div>
+								<div class="tel"> <span class="type">Fax:</span> +1-650-289-4041 </div>
+								<div>E-Mail: <span class="email">info@commerce.net</span> </div>
 							</div>
-							<div class="tel"> <span class="type">Tel (work):</span> +1-650-289-4040 </div>
-							<div class="tel"> <span class="type">Fax:</span> +1-650-289-4041 </div>
-							<div>E-Mail: <span class="email">info@commerce.net</span> </div>
 						</div>
 						<h5>Default Markup</h5>
 						<div class="tab-content">

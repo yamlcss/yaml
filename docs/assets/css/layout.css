@@ -1514,7 +1514,7 @@
 }
 @media screen, projection {
   .jquery_tabs {
-    margin: 1.5em 0 0;
+    margin: 0 0 1.5em 0;
   }
   .jquery_tabs ul.tabs-list {
     font-size: 1em;
@@ -1643,7 +1643,7 @@
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    margin: 1.5em 0 0 0 !important;
+    margin: 0 0 1.5em 0 !important;
     /* small IE-Fix for background images */
     zoom: 1;
   }
@@ -2183,6 +2183,9 @@
   table.narrow th, table.narrow td {
     padding: 0 0.5em;
     line-height: 1.42857;
+  }
+  table.fixed {
+    table-layout: fixed;
   }
   table.bordertable {
     border: 1px #ccc solid;

@@ -388,6 +388,10 @@
 			}
 		}
 
+		&.fixed {
+			table-layout: fixed;
+		}
+
 		&.bordertable {
 			border:1px #ccc solid;
 
