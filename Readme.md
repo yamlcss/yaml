@@ -28,7 +28,7 @@ Please keep in mind, that the /yaml-sass/ folder also contains several JavaScrip
 
 ### Create Custom YAML Builds
 
-You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of this project to resolve and install all Grunt dependencies.
+You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of this project to resolve and install all Grunt dependencies.
 
 The following tasks are provided:
 
