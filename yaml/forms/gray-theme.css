@@ -137,7 +137,9 @@
     color: #800;
     font-weight: normal;
   }
-  .ym-form .ym-error input, .ym-form .ym-error select, .ym-form .ym-error textarea {
+  .ym-form .ym-error input,
+  .ym-form .ym-error select,
+  .ym-form .ym-error textarea {
     border: 1px #800 solid;
   }
   .ym-form .ym-error input:hover,
