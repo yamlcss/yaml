@@ -7,8 +7,8 @@
 	/* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
 	* { margin:0; padding:0; }
 
-	/* (en) Correction:margin/padding reset caused too small select boxes. */
-	/* (de) Korrektur:Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
+	/* (en) Correction: margin/padding reset caused too small select boxes. */
+	/* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
 	option { padding-left:0.4em; } // LTR
 	select { padding:1px; }
 
@@ -24,11 +24,13 @@
 
 	* html body * { overflow:visible; }
 
-	/* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
-	/* (en) Standard values for colors and text alignment */
-
-	/* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen */
-	/* (de) Vorgabe der Standardfarben und Textausrichtung */
+	/*
+	* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
+	*      Standard values for colors and text alignment
+	*
+	* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen
+	*      Vorgabe der Standardfarben und Textausrichtung
+	*/
 	body {
 		font-size:100%;
 
@@ -37,12 +39,20 @@
 		text-align:left; // LTR
 	}
 
-	/* (en) avoid visible outlines on DIV containers in Webkit browsers */
+	/* (en) avoid visible outlines on DIV and h[x] elements in Webkit browsers */
 	/* (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern */
-	div:target { outline:0 none; }
+	div:target,
+	h1:target,
+	h2:target,
+	h3:target,
+	h4:target,
+	h5:target,
+	h6:target {
+		outline:0 none;
+	}
 
-	/* (en) HTML 5 - adjusting visual formatting model to block level */
-	/* (de) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente */
+	/* (en) HTML5 - adjusting visual formatting model to block level */
+	/* (de) HTML5 - Elements werden als Blockelemente definiert */
 	article,
 	aside,
 	details,
@@ -107,14 +117,14 @@
 		-webkit-appearance: none;
 	}
 
-	/* (en) Correct overflow displayed oddly in IE 9. */
-	/* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9. */
+	/* (en) Correct overflow displayed oddly in IE 9 */
+	/* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9 */
 	svg:not(:root) {
 	    overflow: hidden;
 	}
 
-	/* (en) Address margin not present in IE 8/9 and Safari 5. */
-	/* (en) Ergänzt fehlenden Margin in IE 8/9 und Safari 5. */
+	/* (en) Address margin not present in IE 8/9 and Safari 5 */
+	/* (en) Ergänzt fehlenden Margin in IE 8/9 und Safari 5 */
 	figure {
 		margin: 0;
 	}

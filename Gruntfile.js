@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 		'string-replace': {
 			stripCharset: {
 				files: {
-					'./': 'yaml/**/*.css'
+					'./': ['yaml/**/*.css','docs/assets/**/*.css']
 				},
 				options: {
 					replacements: [{
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
 			},
 			setVersion: {
 				files: {
-					'./': 'yaml/**/*.css'
+					'./': ['yaml/**/*.css','docs/assets/**/*.css']
 				},
 				options: {
 					replacements: [{
@@ -115,7 +115,7 @@ module.exports = function(grunt) {
 			// needed for misconfigured Windows systems that don't force UTF8 output correctly ...
 			winUTF8fix: {
 				files: {
-					'./': 'yaml/**/*.css'
+					'./': ['yaml/**/*.css','docs/assets/**/*.css']
 				},
 				options: {
 					replacements: [{

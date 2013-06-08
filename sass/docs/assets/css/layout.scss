@@ -1,9 +1,20 @@
 @charset "utf-8";
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * docs styles - dynamicly build using Sass
+ *
+ * @copyright       © 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         ### version ###
+ */
 
 /* YAML Framework Components */
 @import "yaml-sass/yaml-var-globals",
 		"yaml-sass/mixins/yaml-mixins-core",
-
 		"yaml-sass/core/base",
 		"yaml-sass/navigation/vlist",
 		"yaml-sass/navigation/hlist",

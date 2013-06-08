@@ -1,18 +1,29 @@
-@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * docs styles - dynamicly build using Sass
+ *
+ * @copyright       © 2005-2013, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         4.1.0
+ */
 /* YAML Framework Components */
 @media all {
   /**
    *  @section Normalisation Module
    */
   /* (en) Global reset of paddings and margins for all HTML elements */
-  /* (de) Globales Zur├╝cksetzen der Innen- und Au├ƒenabst├ñnde f├╝r alle HTML-Elemente */
+  /* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
   * {
     margin: 0;
     padding: 0;
   }
 
-  /* (en) Correction:margin/padding reset caused too small select boxes. */
-  /* (de) Korrektur:Das Zur├╝cksetzen der Abst├ñnde verursacht zu kleine Selectboxen. */
+  /* (en) Correction: margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
   option {
     padding-left: 0.4em;
   }
@@ -34,10 +45,13 @@
     overflow: visible;
   }
 
-  /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
-  /* (en) Standard values for colors and text alignment */
-  /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgr├Â├ƒen in ├ñlteren Opera Versionen */
-  /* (de) Vorgabe der Standardfarben und Textausrichtung */
+  /*
+  * (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
+  *      Standard values for colors and text alignment
+  *
+  * (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen
+  *      Vorgabe der Standardfarben und Textausrichtung
+  */
   body {
     font-size: 100%;
     background: #fff;
@@ -45,14 +59,20 @@
     text-align: left;
   }
 
-  /* (en) avoid visible outlines on DIV containers in Webkit browsers */
+  /* (en) avoid visible outlines on DIV and h[x] elements in Webkit browsers */
   /* (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern */
-  div:target {
+  div:target,
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target,
+  h5:target,
+  h6:target {
     outline: 0 none;
   }
 
-  /* (en) HTML 5 - adjusting visual formatting model to block level */
-  /* (de) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente */
+  /* (en) HTML5 - adjusting visual formatting model to block level */
+  /* (de) HTML5 - Elements werden als Blockelemente definiert */
   article,
   aside,
   details,
@@ -69,7 +89,7 @@
   }
 
   /* (en) HTML5 - default media element styles */
-  /* (de) HTML5 - Standard Eigenschaften f├╝r Media-Elemente */
+  /* (de) HTML5 - Standard Eigenschaften für Media-Elemente */
   audio,
   canvas,
   video {
@@ -83,7 +103,7 @@
   }
 
   /* (en) HTML5 - add missing styling in IE & old FF for hidden attribute */
-  /* (de) HTML5 - Eigenschaften f├╝r das hidden-Attribut in ├ñlteren IEs und FF nachr├╝sten */
+  /* (de) HTML5 - Eigenschaften für das hidden-Attribut in älteren IEs und FF nachrüsten */
   [hidden] {
     display: none;
   }
@@ -96,7 +116,7 @@
   }
 
   /* (en) set correct box-modell in IE8/9 plus remove padding */
-  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unn├Âtiges Padding */
+  /* (de) Setze das richtige Box-Modell im IE8/9 und entferne unnötiges Padding */
   input[type="checkbox"],
   input[type="radio"] {
     box-sizing: border-box;
@@ -104,7 +124,7 @@
   }
 
   /* (en) force consistant appearance of input[type="search"] elements in all browser */
-  /* (de) Einheitliches Erscheinungsbild f├╝r input[type="search"] Elemente erzwingen */
+  /* (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen */
   input[type="search"] {
     -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
@@ -117,27 +137,27 @@
     -webkit-appearance: none;
   }
 
-  /* (en) Correct overflow displayed oddly in IE 9. */
-  /* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9. */
+  /* (en) Correct overflow displayed oddly in IE 9 */
+  /* (de) Korrigiert fehlerhafte overflow Voreinstellung des IE 9 */
   svg:not(:root) {
     overflow: hidden;
   }
 
-  /* (en) Address margin not present in IE 8/9 and Safari 5. */
-  /* (en) Erg├ñnzt fehlenden Margin in IE 8/9 und Safari 5. */
+  /* (en) Address margin not present in IE 8/9 and Safari 5 */
+  /* (en) Ergänzt fehlenden Margin in IE 8/9 und Safari 5 */
   figure {
     margin: 0;
   }
 
   /* (en) Clear borders for <fieldset> and <img> elements */
-  /* (de) Rahmen f├╝r <fieldset> und <img> Elemente l├Âschen */
+  /* (de) Rahmen für <fieldset> und <img> Elemente löschen */
   fieldset,
   img {
     border: 0 solid;
   }
 
   /* (en) new standard values for lists, blockquote, cite and tables */
-  /* (de) Neue Standardwerte f├╝r Listen, Zitate und Tabellen */
+  /* (de) Neue Standardwerte für Listen, Zitate und Tabellen */
   ul,
   ol,
   dl {
@@ -198,7 +218,7 @@
   }
 
   /* (en) alternative solutions to contain floats */
-  /* (de) Alternative Methoden zum Einschlie├ƒen von Float-Umgebungen */
+  /* (de) Alternative Methoden zum Einschließen von Float-Umgebungen */
   .ym-contain-dt {
     display: table;
     table-layout: fixed;
@@ -259,7 +279,7 @@
   }
 
   /* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
-  /* (de) IE-Clearing: Ben├Âtigt nur der Internet Explorer und ├╝ber iehacks.css zugeschaltet */
+  /* (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
   .ym-ie-clearing {
     display: none;
   }
@@ -520,7 +540,7 @@
   *  |-------------------------------------------|
   *
   *  (en) Styling of forms where label floats left of form-elements
-  *  (de) Formulargestaltung, bei der die label-Elemente nach links flie├ƒen
+  *  (de) Formulargestaltung, bei der die label-Elemente nach links fließen
   */
   .ym-columnar input,
   .ym-columnar textarea,
@@ -585,7 +605,7 @@
   * (de) Skip-Links und versteckte Inhalte
   */
   /* (en) classes for invisible elements in the base layout */
-  /* (de) Klassen f├╝r unsichtbare Elemente im Basislayout */
+  /* (de) Klassen für unsichtbare Elemente im Basislayout */
   .ym-skip,
   .ym-hideme,
   .ym-print {
@@ -595,7 +615,7 @@
   }
 
   /* (en) make skip links visible when using tab navigation */
-  /* (de) Skip-Links f├╝r Tab-Navigation sichtbar schalten */
+  /* (de) Skip-Links für Tab-Navigation sichtbar schalten */
   .ym-skip:focus,
   .ym-skip:active {
     position: static;
@@ -627,7 +647,7 @@
   * @section print adjustments for core modules
   *
   * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
-  * (de) Floats in Grids einschlie├ƒen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (de) Floats in Grids einschließen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
   *
   * @bugfix
   * @since     3.0
@@ -1794,14 +1814,14 @@
   * basefont-size:  14px (87.5%)
   * line-height  :  21px (factor: 1.5) */
   /* (en) reset font size for all elements to standard (16 Pixel) */
-  /* (de) Alle Schriftgr├Â├ƒen auf Standardgr├Â├ƒe (16 Pixel) zur├╝cksetzen */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
   html * {
     font-size: 100%;
   }
 
   /**
   * (en) reset monospaced elements to font size 16px in all browsers
-  * (de) Schriftgr├Â├ƒe von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
   *
   * @see: http://webkit.org/blog/67/strange-medium/
   */
@@ -1822,7 +1842,7 @@
     color: #444444;
   }
 
-  /*--- Headings | ├£berschriften ------------------------------------------------------------------------*/
+  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
   h1,
   h2,
   h3,
@@ -2042,7 +2062,7 @@
   }
 
   /* (en) maximum constrast for tab focus - change with great care */
-  /* (en) Maximaler Kontrast f├╝r Tab Focus - ├ändern Sie diese Regel mit Bedacht */
+  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
   a:hover,
   a:focus {
     background-color: #4d87c7;
@@ -2165,7 +2185,7 @@
   * Tables | Tabellen
   *
   * (en) Generic classes for table-width and design definition
-  * (de) Generische Klassen f├╝r die Tabellenbreite und Gestaltungsvorschriften f├╝r Tabellen
+  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
   *
   * @section content-tables
   */
@@ -2253,14 +2273,14 @@
   * @section basic layout preparation
   */
   /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
-  /* (de) Wechsel der der Schriftgr├Â├ƒen-Ma├ƒheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+  /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
   body {
     font-size: 10pt;
     padding: 0 5px;
   }
 
   /* (en) Hide unneeded container of the screenlayout in print layout */
-  /* (de) F├╝r den Druck nicht ben├Âtigte Container des Layouts abschalten */
+  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
   nav,
   .ym-searchform {
     display: none;
@@ -2268,7 +2288,7 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
-  /* (de) Vermeidung von Seitenumbr├╝chen direkt nach einer ├£berschrift */
+  /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
   }
