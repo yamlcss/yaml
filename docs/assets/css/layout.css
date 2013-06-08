@@ -842,7 +842,9 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     width: auto;
   }
-  .ym-hlist ul li a:focus, .ym-hlist ul li a:hover, .ym-hlist ul li a:active {
+  .ym-hlist ul li a:focus,
+  .ym-hlist ul li a:hover,
+  .ym-hlist ul li a:active {
     color: #ccc;
     background: #666;
     background: rgba(255, 255, 255, 0.25);
@@ -856,7 +858,10 @@
     border-radius: 0.2em;
     color: #fff;
   }
-  .ym-hlist ul li.active strong, .ym-hlist ul li.active a:focus, .ym-hlist ul li.active a:hover, .ym-hlist ul li.active a:active {
+  .ym-hlist ul li.active strong,
+  .ym-hlist ul li.active a:focus,
+  .ym-hlist ul li.active a:hover,
+  .ym-hlist ul li.active a:active {
     background: transparent;
     color: #fff;
     text-decoration: none;
@@ -1572,7 +1577,10 @@
     outline: 0 none;
     text-decoration: none;
   }
-  .jquery_tabs ul.tabs-list li.current a, .jquery_tabs ul.tabs-list li.current a:focus, .jquery_tabs ul.tabs-list li.current a:hover, .jquery_tabs ul.tabs-list li.current a:active {
+  .jquery_tabs ul.tabs-list li.current a,
+  .jquery_tabs ul.tabs-list li.current a:focus,
+  .jquery_tabs ul.tabs-list li.current a:hover,
+  .jquery_tabs ul.tabs-list li.current a:active {
     background: #fff;
     border: 1px #ccc solid;
     border-radius: 0.2em 0.2em 0 0;
@@ -1953,7 +1961,9 @@
     margin: 0 0 1.5em 0;
   }
 
-  blockquote, cite, q {
+  blockquote,
+  cite,
+  q {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
     font-style: italic;
   }
@@ -1964,11 +1974,13 @@
     margin: 1.5em 0 0 1.5em;
   }
 
-  strong, b {
+  strong,
+  b {
     font-weight: bold;
   }
 
-  em, i {
+  em,
+  i {
     font-style: italic;
   }
 
@@ -2002,20 +2014,26 @@
     word-wrap: break-word;
   }
 
-  pre, code {
+  pre,
+  code {
     color: #880000;
   }
 
-  kbd, samp, var, tt {
+  kbd,
+  samp,
+  var,
+  tt {
     color: #666666;
     font-weight: bold;
   }
 
-  var, dfn {
+  var,
+  dfn {
     font-style: italic;
   }
 
-  acronym, abbr {
+  acronym,
+  abbr {
     border-bottom: 1px #aaa dotted;
     font-variant: small-caps;
     letter-spacing: .07em;
@@ -2139,7 +2157,6 @@
     vertical-align: middle;
     letter-spacing: normal;
     white-space: nowrap;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     background: #06C;
     color: #fff;
@@ -2202,7 +2219,8 @@
   table.narrow {
     margin: 0 0 1.42857em 0;
   }
-  table.narrow th, table.narrow td {
+  table.narrow th,
+  table.narrow td {
     padding: 0 0.5em;
     line-height: 1.42857;
   }
@@ -2227,11 +2245,12 @@
     border-right: 1px solid #ccc;
   }
 
-  table caption {
+  caption {
     font-variant: small-caps;
   }
 
-  th, td {
+  th,
+  td {
     line-height: 1.5em;
     vertical-align: top;
     padding: 0.71429em 0.5em;
@@ -2259,7 +2278,6 @@
   tbody th {
     text-align: left;
     border-top: 1px solid #ccc;
-    text-align: left;
   }
   tbody td {
     text-align: left;
@@ -2291,7 +2309,12 @@
   /*------------------------------------------------------------------------------------------------------*/
   /* (en) Avoid page breaks right after headings */
   /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     page-break-after: avoid;
   }
 }

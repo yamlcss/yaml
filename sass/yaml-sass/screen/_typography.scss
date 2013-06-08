@@ -13,6 +13,7 @@
 
 	/* (en) reset font size for all elements to standard (16 Pixel) */
 	/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+
 	html * { font-size:100%; }
 
 	/**
@@ -50,7 +51,7 @@
 		font-family: $ym-font-sans;
 		font-weight: 400;
 		color: $ym-headings-color;
-		margin:0;
+		margin: 0;
 	}
 
 	h1 {
@@ -135,9 +136,13 @@
 		margin-left: 0.8em;
 	}
 
-	dt { font-weight:bold; }
+	dt {
+		font-weight:bold;
+	}
 
-	dd { margin: 0 0 $line-height*1em 0.8em; }
+	dd {
+		margin: 0 0 $line-height*1em 0.8em;
+	}
 
 	/* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
 
@@ -147,20 +152,28 @@
 		margin: 0 0 $line-height / $ym-text-font-scale*1em 0;
 	}
 
-	blockquote, cite, q {
+	blockquote,
+	cite,
+	q {
 		font-family: $ym-font-serif;
-		font-style:italic;
+		font-style: italic;
 	}
 
 	blockquote {
-		background:$ym-blockquote-bg-color;
-		color:$ym-blockquote-text-color;
+		background: $ym-blockquote-bg-color;
+		color: $ym-blockquote-text-color;
 		margin: $line-height * 1em 0 0 1.5em;
 	}
 
-	strong, b { font-weight:bold; }
+	strong,
+	b {
+		font-weight: bold;
+	}
 
-	em, i { font-style:italic; }
+	em,
+	i {
+		font-style: italic;
+	}
 
 	big {
 		/*! font-size: #{$ym-base-font-size * $ym-text-big-font-scale}px; */
@@ -191,20 +204,30 @@
 		white-space: pre-wrap;
 		word-wrap: break-word;
 	}
-	pre, code { color:$ym-pre-text-color; }
-
-	kbd, samp, var, tt {
-		color:$ym-kbd-text-color;
-		font-weight:bold;
+	pre,
+	code {
+		color: $ym-pre-text-color;
 	}
 
-	var, dfn { font-style:italic; }
+	kbd,
+	samp,
+	var,
+	tt {
+		color: $ym-kbd-text-color;
+		font-weight: bold;
+	}
 
-	acronym, abbr {
-		border-bottom:1px #aaa dotted;
-		font-variant:small-caps;
-		letter-spacing:.07em;
-		cursor:help;
+	var,
+	dfn {
+		font-style: italic;
+	}
+
+	acronym,
+	abbr {
+		border-bottom: 1px #aaa dotted;
+		font-variant: small-caps;
+		letter-spacing: .07em;
+		cursor: help;
 	}
 
 	sub,
@@ -224,20 +247,20 @@
 	}
 
 	hr {
-		color:#fff;
-		background:transparent;
+		color: #fff;
+		background: transparent;
 		margin: 0 0 $line-height / 2 * 1em 0;
-		padding:0 0 (($ym-base-line-height / 2 - 1 ) / ($ym-base-line-height / 2 )) / 2 * $line-height * 1em 0;
+		padding: 0 0 (($ym-base-line-height / 2 - 1 ) / ($ym-base-line-height / 2 )) / 2 * $line-height * 1em 0;
 		border: 0;
-		border-bottom:1px $ym-hr-color solid;
+		border-bottom: 1px $ym-hr-color solid;
 	}
 
 	/*--- Links ----------------------------------------------------------------------------------------- */
 
 	a {
-		color:$ym-link-text-color;
-		background:$ym-link-bg-color;
-		text-decoration:none;
+		color: $ym-link-text-color;
+		background: $ym-link-bg-color;
+		text-decoration: none;
 	}
 
 	a:active { outline: none; }
@@ -247,8 +270,8 @@
 	a:hover,
 	a:focus {
 		background-color: $ym-link-focus-bg-color;
-		color:$ym-link-focus-text-color;
-		text-decoration:none;
+		color: $ym-link-focus-text-color;
+		text-decoration: none;
 	}
 
 	/* --- images ------------------ */
@@ -287,11 +310,11 @@
 	* @section content-generic-classes
 	*/
 	.highlight {
-		color:$ym-highlight-text-color;
+		color: $ym-highlight-text-color;
 	}
 
 	.dimmed {
-		color:$ym-dimmed-text-color;
+		color: $ym-dimmed-text-color;
 	}
 
 	.box {
@@ -303,7 +326,7 @@
 		@include ym-box-shadow(1px,1px,3px,rgba(0,0,0,.2),inset);
 		color: #444;
 		color: rgba(0,0,0,.8);
-		padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em;
+		padding: ($ym-base-line-height - 1) / $ym-base-line-height * $line-height * 1em;
 		margin: 0 0 $line-height*1em 0;
 
 		& > *:last-child {
@@ -315,10 +338,9 @@
 		font-family: Verdana, Geneva, sans-serif;
 		padding: 1px 6px 2px;
 		display: inline-block;
-		vertical-align:middle;
+		vertical-align: middle;
 		letter-spacing: normal;
-		white-space:nowrap;
-		-webkit-border-radius: 3px;
+		white-space: nowrap;
 		border-radius: 3px;
 		background: #06C;
 		color: #fff;
@@ -327,36 +349,36 @@
 	}
 
 	.info {
-		background:$ym-highlight-info-color;
+		background: $ym-highlight-info-color;
 	}
 
 	.success {
-		background:$ym-highlight-success-color;
+		background: $ym-highlight-success-color;
 	}
 
 	.warning {
-		background:$ym-highlight-warning-color;
+		background: $ym-highlight-warning-color;
 	}
 
 	.error {
-		background:$ym-highlight-error-color;
+		background: $ym-highlight-error-color;
 	}
 
 	.float-left {
-		float:left;
-		display:inline;
+		float: left;
+		display: inline;
 		margin: 0 1em $line-height*1em 0;
 	}
 
 	.float-right {
-		float:right;
-		display:inline;
+		float: right;
+		display: inline;
 		margin: 0 0 $line-height*1em 1em;
 	}
 
 	.center {
-		display:block;
-		text-align:center;
+		display: block;
+		text-align: center;
 		margin: 0 auto $line-height*1em auto;
 	}
 
@@ -372,9 +394,9 @@
 	*/
 
 	table {
-		width:100%;
-		border-collapse:collapse;
-		color:$ym-text-color;
+		width: 100%;
+		border-collapse: collapse;
+		color: $ym-text-color;
 		border-top: 1px #ccc solid;
 		border-bottom: 1px #ccc solid;
 		margin: 0 0 ($ym-base-line-height - 2 ) / $ym-base-line-height * $line-height * 1em 0;
@@ -382,7 +404,8 @@
 		&.narrow {
 			margin: 0 0 ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height * 1em 0;
 
-			th, td {
+			th,
+			td {
 				padding: 0 0.5em;
 				line-height: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height;
 			}
@@ -393,33 +416,34 @@
 		}
 
 		&.bordertable {
-			border:1px #ccc solid;
+			border: 1px #ccc solid;
 
 			thead th {
-				background:#e0e0e0;
-				border-right:1px #ccc solid;
-				border-bottom:1px #ccc solid;
+				background: #e0e0e0;
+				border-right: 1px #ccc solid;
+				border-bottom: 1px #ccc solid;
 			}
 
 			tbody {
 				th[scope="row"] {
-					background:#f0f0f0;
+					background: #f0f0f0;
 				}
 				th {
-					border-right:1px solid #ccc;
+					border-right: 1px solid #ccc;
 				}
 				td {
-					border-right:1px solid #ccc;
+					border-right: 1px solid #ccc;
 				}
 			}
 		}
 	}
 
-	table caption {
+	caption {
 		font-variant:small-caps;
 	}
 
-	th, td {
+	th,
+	td {
 		line-height: $line-height * 1em;
 		vertical-align: top;
 		padding: ($ym-base-line-height - 1 ) / $ym-base-line-height * $line-height / 2 * 1em 0.5em;
@@ -437,20 +461,19 @@
 
 	thead th {
 		text-align: left;
-		color:#000;
-		border-bottom:2px #000 solid;
+		color: #000;
+		border-bottom: 2px #000 solid;
 	}
 
 	tbody {
 		th {
 			text-align: left;
-			border-top:1px solid #ccc;
-			text-align:left;
+			border-top: 1px solid #ccc;
 		}
 
 		td {
 			text-align: left;
-			border-top:1px solid #ccc;
+			border-top: 1px solid #ccc;
 		}
 
 		/* highlight row on mouse over */

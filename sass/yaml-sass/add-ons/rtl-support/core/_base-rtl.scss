@@ -14,14 +14,18 @@
 		direction: rtl;
 	}
 
-	ul, ol, dl { margin: 0 1em 1em 0; }
+	ul,
+	ol,
+	dl { margin: 0 1em 1em 0; }
+
 	li {
 		margin-left: 0;
 		margin-right: 0.8em;
 	}
 
 	dd { margin: 0 0.8em 1em 0; }
-	blockquote, cite { margin: 0 0.8em 1em 0; }
+	blockquote,
+	cite { margin: 0 0.8em 1em 0; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 

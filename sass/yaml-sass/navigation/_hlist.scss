@@ -39,7 +39,9 @@
 					width:auto;
 				}
 
-				a:focus, a:hover, a:active  {
+				a:focus,
+				a:hover,
+				a:active  {
 					color: #ccc;
 					background:#666;
 					background: rgba(255,255,255,.25);
@@ -54,7 +56,10 @@
 					border-radius: 0.2em;
 					color: #fff;
 
-					strong,	a:focus, a:hover, a:active {
+					strong,
+					a:focus,
+					a:hover,
+					a:active {
 						background:transparent;
 						color:#fff;
 						text-decoration:none;

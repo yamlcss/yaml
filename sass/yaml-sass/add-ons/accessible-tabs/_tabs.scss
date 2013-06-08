@@ -29,7 +29,9 @@
 					font-weight:normal;
 					margin:0;
 
-					&:focus, &:hover, &:active {
+					&:focus,
+					&:hover,
+					&:active {
 						background:#eee;
 						border-radius: 0.2em 0.2em 0 0;
 						color:#000;
@@ -41,7 +43,10 @@
 				}
 
 				&.current {
-					a,a:focus, a:hover, a:active {
+					a,
+					a:focus,
+					a:hover,
+					a:active {
 						background:#fff;
 						border:1px #ccc solid;
 						border-radius:0.2em 0.2em 0 0;

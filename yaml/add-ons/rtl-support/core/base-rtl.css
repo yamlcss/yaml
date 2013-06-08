@@ -29,7 +29,9 @@
     direction: rtl;
   }
 
-  ul, ol, dl {
+  ul,
+  ol,
+  dl {
     margin: 0 1em 1em 0;
   }
 
@@ -42,7 +44,8 @@
     margin: 0 0.8em 1em 0;
   }
 
-  blockquote, cite {
+  blockquote,
+  cite {
     margin: 0 0.8em 1em 0;
   }
 

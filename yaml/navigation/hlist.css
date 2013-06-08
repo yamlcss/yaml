@@ -48,7 +48,9 @@
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     width: auto;
   }
-  .ym-hlist ul li a:focus, .ym-hlist ul li a:hover, .ym-hlist ul li a:active {
+  .ym-hlist ul li a:focus,
+  .ym-hlist ul li a:hover,
+  .ym-hlist ul li a:active {
     color: #ccc;
     background: #666;
     background: rgba(255, 255, 255, 0.25);
@@ -62,7 +64,10 @@
     border-radius: 0.2em;
     color: #fff;
   }
-  .ym-hlist ul li.active strong, .ym-hlist ul li.active a:focus, .ym-hlist ul li.active a:hover, .ym-hlist ul li.active a:active {
+  .ym-hlist ul li.active strong,
+  .ym-hlist ul li.active a:focus,
+  .ym-hlist ul li.active a:hover,
+  .ym-hlist ul li.active a:active {
     background: transparent;
     color: #fff;
     text-decoration: none;
