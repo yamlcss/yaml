@@ -6,12 +6,14 @@ YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly fle
 - Website: <http://www.yaml.de>
 
 ## Quick Start
+### Using the CSS port
+Download the project and take a look at the provided examples in the `demos/` folder.
 
 ### Using the Sass Port
 You need to have [Ruby](http://www.ruby-lang.org/en/downloads/), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed.
 
-* **compile once** `compass compile` starts a single run to compile sass/scss files to CSS.
-* **edit** `compass watch` starts the watcher that recompiles your sass/scss files on every change.
+* `compass compile` starts a single compass run to compile sass/scss files to CSS.
+* `compass watch` starts the compass watcher that recompiles your sass/scss files on every change.
 
 #### Folder Structure
 The Sass port is built in a way that allows you to create a fully customized version of YAML's framework files.
@@ -26,12 +28,14 @@ Please keep in mind, that the /yaml-sass/ folder also contains several JavaScrip
 
 ### Create Custom YAML Builds
 
-You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of yaml-sass.
+You need to have [Node.js](http://nodejs.org/download/), [Grunt-CLI](http://gruntjs.com/getting-started), [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/) installed. Run `npm install` once in the root directory of this project to resolve and install all Grunt dependencies.
 
-* **compile once** `grunt` starts a single run to compile sass/scss files to CSS.
-* **edit** `grunt watch` starts the watcher that recompiles your sass/scss files on every change.
-* **build** `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
-* **build (alternative)** `grunt build-utf8` same functionality like `grunt build` but don't removes @charset "utf8" from CSS files
+The following tasks are provided:
+
+* `grunt` starts a single compass run to compile sass/scss files to CSS.
+* `grunt watch` starts the compass watcher that recompiles your sass/scss files on every change.
+* `grunt build` compiles and optimizes all static YAML4 CSS files for release/production.
+* `grunt build-utf8` same functionality like `grunt build` but doesn't remove `@charset "utf8"` rule from CSS files
 
 ## Docs
 Download or clone this project and open file `docs/index.html` in your browser.
@@ -39,25 +43,22 @@ Download or clone this project and open file `docs/index.html` in your browser.
 ## Licenses
 ### YAML under Creative Commons License (CC-BY 2.0)
 
-The YAML framework is published under the Creative Commons Attribution 2.0 License (CC-BY 2.0), which permits
-both private and commercial use (<http://creativecommons.org/licenses/by/2.0/>).
+The YAML framework is published under the [Creative Commons Attribution 2.0 License (CC-BY 2.0)](http://creativecommons.org/licenses/by/2.0/), which permits
+both private and commercial use.
 
 *Condition: For the free use of the YAML framework, a backlink to the YAML homepage (<http://www.yaml.de>) in a
 suitable place (e.g.: footer of the website or in the imprint) is required.*
 
 In general it would be nice to get a short note when new YAML-based projects are released. If you are highly
-pleased with YAML, perhaps you would like to take a look at my Amazon wish list?
-<https://www.amazon.de/gp/registry/wishlist/108Q0YYJ49UC2/>
+pleased with YAML, perhaps you would like to take a look at my [Amazon wish](https://www.amazon.de/gp/registry/wishlist/108Q0YYJ49UC2/) list?
 
 ### YAML under Commercial Distribution License (YAML-CDL)
 
-If you are a commercial software developer and you want to release your software under a different license
-than CC-BY 2.0, you may purchase commercial licenses. By purchasing commercial licenses, we offer you the
-freedom to choose between the following license models.
+If you are a commercial software developer and you want to release your software under a license that doesn't fit to the [Creative Commons Attribution 2.0 License](http://creativecommons.org/licenses/by/2.0/), you may purchase a commercial license. We offer the following commercial license models:
 
-- Project Related License, 59.50 EUR (incl. 19% taxes)
-- General License, 119.00 EUR (incl. 19% taxes)
-- OEM License, 599.00 EUR per anno (incl. 19% taxes)
+- Project Related License
+- General License
+- OEM License
 
 Full license texts and contact information are available at: <http://www.yaml.de/license.html>
 
