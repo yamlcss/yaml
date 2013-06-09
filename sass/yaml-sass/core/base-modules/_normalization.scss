@@ -107,8 +107,8 @@
 	/* (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen */
 	input[type="search"] {
 	    -webkit-appearance: textfield;
-	    -moz-box-sizing: content-box;
 	    -webkit-box-sizing: content-box;
+	    -moz-box-sizing: content-box;
 	    box-sizing: content-box;
 	}
 

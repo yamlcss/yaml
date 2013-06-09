@@ -185,20 +185,20 @@
 }
 
 // CONTAINING FLOATS
-@mixin ym-contain($type: dt) {
+@mixin ym-contain($type: "dt") {
 
-	@if $type == oh {
+	@if $type == "oh" {
 		display: block;
 		overflow: hidden;
 		width: 100%;
 	}
 
-	@if $type == fl {
+	@if $type == "fl" {
 		float: left;
 		width: 100%;
 	}
 
-	@if $type == dt {
+	@if $type == "dt" {
 		display: table;
 		table-layout: fixed;
 		width: 100%;

@@ -127,8 +127,8 @@
   /* (de) Einheitliches Erscheinungsbild für input[type="search"] Elemente erzwingen */
   input[type="search"] {
     -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
     box-sizing: content-box;
   }
 
@@ -455,7 +455,13 @@
   }
   .ym-form .ym-fbox-check input:focus,
   .ym-form .ym-fbox-check input:hover,
-  .ym-form .ym-fbox-check input:active {
+  .ym-form .ym-fbox-check input:active,
+  .ym-form input[type="radio"]:focus,
+  .ym-form input[type="radio"]:hover,
+  .ym-form input[type="radio"]:active,
+  .ym-form input[type="checkbox"]:focus,
+  .ym-form input[type="checkbox"]:hover,
+  .ym-form input[type="checkbox"]:active {
     border: 0 none;
   }
   .ym-form input,
@@ -659,6 +665,7 @@
   .ym-grid > .ym-gr {
     overflow: visible;
     display: table;
+    table-layout: fixed;
   }
 
   /* (en) make .ym-print class visible */

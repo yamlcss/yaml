@@ -86,7 +86,13 @@
 		// avoid jumping checkboxes & radiobuttons in IE8
 		.ym-fbox-check input:focus,
 		.ym-fbox-check input:hover,
-		.ym-fbox-check input:active {
+		.ym-fbox-check input:active,
+		input[type="radio"]:focus,
+		input[type="radio"]:hover,
+		input[type="radio"]:active,
+		input[type="checkbox"]:focus,
+		input[type="checkbox"]:hover,
+		input[type="checkbox"]:active {
 			border:0 none;
 		}
 

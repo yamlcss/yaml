@@ -1,49 +1,66 @@
 # Version 4.1
-* Many thanks to the following contributors without whom this new version wouldn't exist:
-  * Jens Grochtdreis (@Flocke)
+A big thanks goes to the following contributors for their help on this version:
+
+  * Jens Grochtdreis (@flocke)
   * Michael Schulze (@michsch)
   * Frederik Hemberger (@fhemberger)
 
 ## General
-* Switched development code base from static CSS to Sass + Compass. YAML can now be used as static CSS framework (as in the past) or as a highly configurable Sass/Compass module.
-* Added Grunt support to create custom YAML builds, including namespace configuration
+* Moved development from private SVN to public Github repository 
+* Switched development code base from static CSS to Sass + Compass.
+* YAML can now be used as static CSS framework (as in the past) or as a highly configurable Sass/Compass module.
+* Added Grunt support to create custom YAML builds, including namespace configuration 
 
 ## Code Changes
-### Normalisation Module
-* added &lt;main&gt; element to normalisation module
+### Normalization Module
+* added &lt;main&gt; element to normalization module
+* added overflow correction for &lt;svg&gt; elements in IE 9
+* added h[x]:target rules to remove outline in Webkit browsers
+
 ### Column Module
-* fixed a bug where responsive images were always scaled to full size
+* fixed a bug where responsive images were always scaled to full size by adding `table-layout:fixed` to column wrapper
+
 ### Forms Module
-* changed standard width of form elements to 70%. Now widths are equal in default and columnar view mode.
-* added micro grid to forms module to allow complex multicolumnar forms. This micro grid uses the width-classes from YAML's layout grid module. 
-* added button types (primary, positive, warning, danger)
-* added button sizes (xlarge,large, small, xsmall)
-* added three new custom buttons (close, sign, support)
+* simplified markup: type classes `.ym-fbox[-text|select|check|button]` are now optional and only needed for IE 6 support.
+* form elements now use `box-sizing:border-box` as default in all browsers down to IE 8.
+* reduced specificity for form elements to allow easier override styles.
+* changed standard width of form elements to 70%. Now element widths are equal in default and columnar view mode.
+* added class `.ym-fbox-wrapper` as a wrapper to align multiple form elements in a row.
+* added class `.ym-fbox` for styling form rows.
+* added class `.ym-fbox-footer` as special form row, intended as a footer that holds all buttons.
+* added custom button types (primary, positive, warning, danger)
+* added custom button sizes (xlarge, large, small, xsmall)
+* added 3 new custom buttons (close, sign, support)
+
+### Typography Module
+* Changed the margin direction for vertical rhythm from `margin-top` to `margin-bottom`
+
 ### Print Module
-* removed forced linearisation for grids and columns module for print media
+* removed forced linearization for grids and columns module for print media
+
 ### Add-ons
 * Accessible Tabs jQuery plugin
  * Update to version 1.9.7  (jQuery 1.9.x support)
- * tabs.css - added print styles to enable printing of tab content
+ * tabs.css - added print styles to enable printing of tabbed content
 * SyncHeight jQuery plugin
   * Update to version 1.5 (jQuery 1.9.x support) 
 * Microformats
-  * added Base64 encoded inline images to reduce HTTP requests in modern browsers
+  * added Base64 encoded inline images to reduce HTTP requests in modern browsers, fallback for old IE's included
 
 ### Other Changes
 * added HTML5shiv to project and updated all references in HTML files
 
 # Version 4.0.2
-## Bugfixes
+## Bug Fixes
 * tabs.css: fixed a float-dropping bug of generated tabs in Chrome 22
 * vlist-rtl.css: fixed a bug where first level selectors didn't overwrite ltr-settings
-* docs: Fixed a IE7 rendering-bug in column configuration snippet "2cols - sidebar left"
+* docs: Fixed a IE 7 rendering-bug in column configuration snippet "2cols - sidebar left"
 * docs: Added an info-message about the behavior of responsive media elements in environments wrapped with display:table 
 * gray-theme.css: bugfix for missing icons in custom buttons on HTC devices with Android 2.2
 
 # Version 4.0.1
 
-## Bugfixes
+## Bug Fixes
 * base.css: added two missing commas in CSS selectors
 * microformats.css: removed shorthand value from backround-image property
 * typography.css: added height:auto to .flexible to avoid scaling problems
@@ -79,7 +96,7 @@ Since version 3.2 YAML offers a form toolkit for flexible forms. This toolkit ha
 YAML offers several different layout modules, such as grids, columns, navigation bars, form elements, typography, etc. All default styles are matched to each other in order to provide a clean gray-scaled base for rapid prototyping.
 
 # Version 3.3.1
-## Bugfixes
+## Bug Fixes
 * Bugfix:  yaml-focusfix.js - fixed a small bug in classname detection
 * Bugfix:  base.css & base-rtl.css - skiplink CSS produced a huge horizontal scrollbar in FF4
 * Bugfix:  markup.html - corrected wrong filename to include "yaml-focusfix.js"
@@ -227,5 +244,5 @@ YAML offers several different layout modules, such as grids, columns, navigation
 * rearanged user draft print-stylesheets
 * added class .noprint
 
-### other Bugfixes
+### other Bug Fixes
 * nav_shiny_buttons: collapsing horizontal margins fixed
