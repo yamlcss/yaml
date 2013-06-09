@@ -21,13 +21,14 @@ A big thanks goes to the following contributors for their help on this version:
 * fixed a bug where responsive images were always scaled to full size by adding `table-layout:fixed` to column wrapper
 
 ### Forms Module
-* simplified markup: type classes `.ym-fbox[-text|select|check|button]` are now optional and only needed for IE 6 support.
+* simplified markup: type classes `.ym-fbox-[text|select|check|button]` are now optional and only needed for IE 6 support.
 * form elements now use `box-sizing:border-box` as default in all browsers down to IE 8.
 * reduced specificity for form elements to allow easier override styles.
 * changed standard width of form elements to 70%. Now element widths are equal in default and columnar view mode.
-* added class `.ym-fbox-wrapper` as a wrapper to align multiple form elements in a row.
 * added class `.ym-fbox` for styling form rows.
 * added class `.ym-fbox-footer` as special form row, intended as a footer that holds all buttons.
+* added class `.ym-fbox-wrap` as a wrapper to align multiple form elements in a row.
+* added class `.ym-inline` to enable the usage of individual inline form elements.
 * added custom button types (primary, positive, warning, danger)
 * added custom button sizes (xlarge, large, small, xsmall)
 * added 3 new custom buttons (close, sign, support)

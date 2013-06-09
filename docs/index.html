@@ -269,41 +269,43 @@ yaml/
 								</tr>
 								<tr>
 									<td class="nowrap">Form</td>
-									<td class="nowrap"><p><strong>parent class</strong><br>
-										<code>.ym-form</code><br>
-										<br>
-										<strong>row wrapper</strong><br>
-										<code>.ym-fbox</code><br>
-										<code>.ym-fbox-footer</code><br>
-										<code>.ym-fbox-wrap</code><br>
-										<br>
-										<strong>element wrapper</strong><br>
-										<code>.ym-fbox-text</code><br>
-										<code>.ym-fbox-select</code><br>
-										<code>.ym-fbox-check</code><br>
-										<code>.ym-fbox-button</code><br>
-										<br>
-										<strong>optional classes</strong><br>
-										<code>.ym-full</code><br>
-										<code>.ym-columnar<br>
-											.ym-required
+									<td class="nowrap">
+										<p>
+											<strong>parent class</strong><br>
+											<code>.ym-form</code><br>
 											<br>
-											.ym-error<br>
-											.ym-message<br>
-											.ym-label</code></p>
-										<p><strong>button classes<br>
-											</strong><code>.ym-button<br>
-											.ym-small<br>
-											.ym-xsmall<br>
-											.ym-large<br>
-											.ym-xlarge<br>
-											.ym-primary<br>
-											.ym-success
+											<strong>row wrapper</strong><br>
+											<code>.ym-fbox</code><br>
+											<code>.ym-fbox-footer</code><br>
+											<code>.ym-fbox-wrap</code><br>
 											<br>
-											.ym-warning<br>
-											.ym-danger
-											</code><br>
-										</p></td>
+											<strong>IE6 helper classes</strong><br>
+											<code>.ym-fbox-text</code><br>
+											<code>.ym-fbox-select</code><br>
+											<code>.ym-fbox-check</code><br>
+											<code>.ym-fbox-button</code><br>
+											<br>
+											<strong>optional classes</strong><br>
+											<code>.ym-full</code><br>
+											<code>.ym-columnar</code><br>
+											<code>.ym-inline</code><br>
+											<code>.ym-required</code><br>
+											<code>.ym-error</code><br>
+											<code>.ym-message</code><br>
+											<code>.ym-label</code>
+										</p>
+										<p><strong>button classes</strong><br>
+											<code>.ym-button</code><br>
+											<code>.ym-small</code><br>
+											<code>.ym-xsmall</code><br>
+											<code>.ym-large</code><br>
+											<code>.ym-xlarge</code><br>
+											<code>.ym-primary</code><br>
+											<code>.ym-success</code><br>
+											<code>.ym-warning</code><br>
+											<code>.ym-danger</code><br>
+										</p>
+									</td>
 									<td>The form module provides the standard building blocks for designing robust flexible forms and offers three positioning options for arrangement of labels and form elements. YAML strictly separates structural form design (base.css) from visual styling of the form, to enable easy theming.</td>
 								</tr>
 								<tr>
@@ -758,7 +760,13 @@ body &gt; header { min-width: 760px; }
 &lt;/div&gt;
 </pre>
 					<h3>Advanced Grid Features</h3>
-					<h4>Custom Grids <span class="label">yaml/screen/grid-960-12.css</span> <span class="label">yaml/screen/grid-960-16.css</span></h4>
+					<h4>Custom Grids
+					<span>
+						<span class="label">yaml/screen/grid-960-12.css</span>
+						<span class="label">yaml/screen/grid-960-16.css</span>
+						<span class="label">yaml/screen/blueprint.css</span>
+						<span class="label">yaml/screen/fluid-12-col.css</span>
+					</span></h4>
 					<p>YAMLs grid module provides a logical subdivision of widths (1/2, 1/3, 1/4, 1/5 and Golden Ratio) but it can easily be extended. Custom grid configurations, e.g. a fixed grid, can be created with only a few lines of CSS. Here is an example for a simple <a href="http://960.gs/">960.gs</a> port (without pull and push classes):</p>
 					<div class="ym-grid linearize-level-2">
 						<div class="ym-g50 ym-gl">
@@ -1885,7 +1893,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="ym-gbox-right">
 
 					<h4>Form Example</h4>
-					<form method="post" id="demo-form1" class="ym-form linearize-form" role="application">
+					<form method="post" id="demo-form1" class="ym-form linearize-form">
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
 
 						<div class="ym-fbox ym-fbox-select">
@@ -3612,18 +3620,78 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 									</td>
 								</tr>
 								<tr>
+									<td>ym-box-shadow()</td>
+									<td>
+<pre class="cssCode">
+.container {
+  @include ym-box-shadow($x, $y, $blur, $color, $inset);
+}</pre>
+										<table class="bordertable">
+											<thead>
+												<tr>
+													<th>Argument</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>$x</th>
+													<td>shadow offset in x-direction</td>
+												</tr>
+												<tr>
+													<th>$y</th>
+													<td>shadow offset in y-direction</td>
+												</tr>
+												<tr>
+													<th>$blur</th>
+													<td>blur value</td>
+												</tr>
+												<tr>
+													<th>$color</th>
+													<td>valid rgb, hsl or hex value</td>
+												</tr>
+												<tr>
+													<th>$inset (default: false)</th>
+													<td>set to <code>true</code> to create an inset shadow</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+
+								<tr>
 									<td>ym-linear-gradient()</td>
-									<td><p>Set the prefered box modell</p>
+									<td><p>Create linear gradients using CSS3.</p>
 <pre class="cssCode">
 .container {
   @include ym-linear-gradient(direction, start-color, end-color [, config]);
 }</pre>
-										<dl>
-											<dt>direction<dt><dd>Set gradient direction: allowed values are <code>"to bottom"</code> and <code>"to right"</code>.</dd>
-											<dt>start-color<dt><dd>Valid rgb, hsl or hex value (default: <code>#eee</code>)</dd>
-											<dt>end-color<dt><dd>Valid rgb, hsl or hex value (default: <code>#ccc</code>)</dd>
-											<dt>config (optional)<dt><dd>Use "css3" to output values for modern browsers only or use "oldie" to output IE6-8 compatible filter property only</dd>
-										</dl>
+										<table class="bordertable">
+											<thead>
+												<tr>
+													<th>Argument</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>direction</th>
+													<td>Set gradient direction: allowed values are <code>"to bottom"</code> and <code>"to right"</code>.</td>
+												</tr>
+												<tr>
+													<th>start-color</th>
+													<td>Valid rgb, hsl or hex value (default: <code>#eee</code>)</td>
+												</tr>
+												<tr>
+													<th>end-color</th>
+													<td>Valid rgb, hsl or hex value (default: <code>#ccc</code>)</td>
+												</tr>
+												<tr>
+													<th>config (optional)</th>
+													<td>Use "css3" to output values for modern browsers only or use "oldie" to output IE6-8 compatible filter property only</td>
+												</tr>
+											</tbody>
+										</table>
 									</td>
 								</tr>
 							</tbody>

@@ -13,7 +13,7 @@
 
 	/* Basic Element Styling */
 	div.ym-gbox {
-		margin-top: 21px;	/* 1.5em - px value to reduce rounding errors in IE */
+		margin-bottom: 21px;	/* 1.5em - px value to reduce rounding errors in IE */
 		line-height: 19px;  /* 1.3571em - px value to reduce rounding errors in IE */
 		background: rgb(240,220,220);
 		background: rgba(128,0,0,.1);

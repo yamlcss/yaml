@@ -13,8 +13,8 @@
 @mixin ym-box-shadow($x: 1px, $y: 1px, $blur: 5px, $color: rgba(0,0,0,.5), $inset: false) {
 
 	@if $inset{
-	-webkit-box-shadow: $inset $x $y $blur $color;
-			box-shadow: $inset $x $y $blur $color;
+	-webkit-box-shadow: inset $x $y $blur $color;
+			box-shadow: inset $x $y $blur $color;
 	}
 	@else {
 	-webkit-box-shadow: $x $y $blur $color;
