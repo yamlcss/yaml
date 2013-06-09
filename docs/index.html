@@ -3592,10 +3592,38 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   @include ym-contain([dt|oh|fl]);
 }</pre>
 <ul>
-	<li>dt - float containing using CSS property "display:table"</li>
-	<li>oh - float containing using CSS property "overflow:hidden"</li>
-	<li>fl - float containing using CSS property "float:left"</li>
+	<li><strong>dt</strong>: float containing using CSS property "display:table"</li>
+	<li><strong>oh</strong>: float containing using CSS property "overflow:hidden"</li>
+	<li><strong>fl</strong>: float containing using CSS property "float:left"</li>
 </ul>
+									</td>
+								</tr>
+								<tr>
+									<td>ym-box-sizing()</td>
+									<td><p>Set the prefered box modell</p>
+<pre class="cssCode">
+.container {
+  @include ym-box-sizing([content-box|border-box]);
+}</pre>
+										<ul>
+											<li><strong>content-box</strong> - classic CSS2 box modell (width, padding and border add up to element width)</li>
+											<li><strong>border-box</strong> - alternate CSS3 box modell (padding and border values don't add to element width)</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>ym-linear-gradient()</td>
+									<td><p>Set the prefered box modell</p>
+<pre class="cssCode">
+.container {
+  @include ym-linear-gradient(direction, start-color, end-color [, config]);
+}</pre>
+										<dl>
+											<dt>direction<dt><dd>Set gradient direction: allowed values are <code>"to bottom"</code> and <code>"to right"</code>.</dd>
+											<dt>start-color<dt><dd>Valid rgb, hsl or hex value (default: <code>#eee</code>)</dd>
+											<dt>end-color<dt><dd>Valid rgb, hsl or hex value (default: <code>#ccc</code>)</dd>
+											<dt>config (optional)<dt><dd>Use "css3" to output values for modern browsers only or use "oldie" to output IE6-8 compatible filter property only</dd>
+										</dl>
 									</td>
 								</tr>
 							</tbody>
