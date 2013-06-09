@@ -32,8 +32,8 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Google Analytics -->	<script type="text/javascript">
-
+	<!-- Google Analytics -->
+	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-1851047-1']);
 	  _gaq.push(['_setDomainName', 'yaml.de']);
@@ -45,7 +45,6 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-
 	</script>
 </head>
 <body id="yaml-top" class="doc">
@@ -62,10 +61,8 @@
 <header role="banner">
 	<div class="ym-wrapper">
 		<div class="ym-wbox">
-			<hgroup>
-				<h1><span>YAML</span> 4</h1>
-				<h2>CSS Framework</h2>
-			</hgroup>
+			<h1><span>YAML</span> 4</h1>
+			<h2>CSS Framework</h2>
 			<p>A modular CSS framework for truly <em>flexible</em>, <em>accessible</em> and <em>responsive</em> websites</p>
 		</div>
 	</div>
@@ -171,7 +168,8 @@
 							the following file stucture. This folder contains all components of the framework and
 							should stay unchanged for easy updating.</p>
 						<p>If you want to modify any file, put a copy in your local CSS folder and reference it from there</p>
-<pre class="box info"><small>yaml/
+<pre class="box info"><small>
+yaml/
   ├── add-ons/
   │   ├── accessible-tabs/
   │   │   ├── jquery.tabs.js
@@ -214,149 +212,149 @@
 						<span class="label">yaml/core/base.css</span>
 						<p>The stylesheet <em>base.css</em> in the folder <em>yaml/core/</em> is the first and most important core-file of the YAML framework. It lays the foundation (browser normalisation, layout-modules eg. grids, forms etc.). This stylesheet is required for every YAML-based layout and should not be changed!</p>
 
-					<h5>List of Core Modules</h5>
-					<table>
-						<thead>
-							<tr>
-								<th class="nowrap">Module</th>
-								<th class="nowrap">Classes</th>
-								<th>Short Description</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="nowrap"> Normalisation</td>
-								<td class="nowrap">-</td>
-								<td>This module provides a reliable foundation for development by crossbrowser-normalizing the visual style for the most important elements.  YAML offers an optional typography module  containing default styles for all typical semantic HTML elements with an em-based (proportional to base font-size) vertical rhythm.</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Layout</td>
-								<td class="nowrap"><strong>parent class</strong><br>
-									<code>.ym-wrapper</code><br>
-									<br>
-									<strong>optional class</strong><br>
-									<code>.ym-wbox</code></td>
-								<td>The layout module defines a layout-wrapper and  default values for minimum and maximum width.</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Grid</td>
-								<td class="nowrap"><strong>parent class</strong><br>
-									<code>.ym-grid</code><br>
-									<br>
-									<strong>child classes</strong><br>
-									<code>.ym-gl</code><br>
-									<code>.ym-gr</code><br>
-									<code>.ym-g[xx]</code><br>
-									<br>
-									<strong>optional classes</strong><br>
-									<code>.ym-equalize</code><br>
-									<code>.ym-gbox</code><br>
-									<code>.ym-gbox-left</code><br>
-									<code>.ym-gbox-right</code></td>
-								<td>The grid module provides flexible, nestable grids. Standard column widths are based on percentages. Optionally, all columns within a grid row can have  equal height. Grid sizes can be extended/customized with user-defined CSS classes.</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Column</td>
-								<td class="nowrap"><strong>parent class</strong><br>
-									<code>.ym-column</code><br>
-									<br>
-									<strong>child classes</strong><br>
-									<code>.ym-col[1|2|3]</code><br>
-									<br>
-									<strong>optional classes</strong><br>
-									<code>.ym-cbox</code><br>
-									<code>.ym-cbox-left</code><br>
-									<code>.ym-cbox-right</code></td>
-								<td>The column module  divides a content area  horizontally into a set of 2 or 3 columns whose widths can be defined in arbitrary units [px, em, %]. Column order can be defined via CSS by the user.</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Form</td>
-								<td class="nowrap"><p><strong>parent class</strong><br>
-									<code>.ym-form</code><br>
-									<br>
-									<strong>row wrapper</strong><br>
-									<code>.ym-fbox</code><br>
-									<code>.ym-fbox-footer</code><br>
-									<code>.ym-fbox-wrap</code><br>
-									<br>
-									<strong>element wrapper</strong><br>
-									<code>.ym-fbox-text</code><br>
-									<code>.ym-fbox-select</code><br>
-									<code>.ym-fbox-check</code><br>
-									<code>.ym-fbox-button</code><br>
-									<br>
-									<strong>optional classes</strong><br>
-									<code>.ym-full</code><br>
-									<code>.ym-columnar<br>
-										.ym-required
+						<h5>List of Core Modules</h5>
+						<table>
+							<thead>
+								<tr>
+									<th class="nowrap">Module</th>
+									<th class="nowrap">Classes</th>
+									<th>Short Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="nowrap"> Normalisation</td>
+									<td class="nowrap">-</td>
+									<td>This module provides a reliable foundation for development by crossbrowser-normalizing the visual style for the most important elements.  YAML offers an optional typography module  containing default styles for all typical semantic HTML elements with an em-based (proportional to base font-size) vertical rhythm.</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Layout</td>
+									<td class="nowrap"><strong>parent class</strong><br>
+										<code>.ym-wrapper</code><br>
 										<br>
-										.ym-error<br>
-										.ym-message<br>
-										.ym-label</code></p>
-									<p><strong>button classes<br>
-										</strong><code>.ym-button<br>
-										.ym-small<br>
-										.ym-xsmall<br>
-										.ym-large<br>
-										.ym-xlarge<br>
-										.ym-primary<br>
-										.ym-success
+										<strong>optional class</strong><br>
+										<code>.ym-wbox</code></td>
+									<td>The layout module defines a layout-wrapper and  default values for minimum and maximum width.</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Grid</td>
+									<td class="nowrap"><strong>parent class</strong><br>
+										<code>.ym-grid</code><br>
 										<br>
-										.ym-warning<br>
-										.ym-danger
-										</code><br>
-									</p></td>
-								<td>The form module provides the standard building blocks for designing robust flexible forms and offers three positioning options for arrangement of labels and form elements. YAML strictly separates structural form design (base.css) from visual styling of the form, to enable easy theming.</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Float Handling</td>
-								<td class="nowrap"><strong>float clearing</strong><br>
-									<code>.ym-clearfix</code><br>
-									<br>
-									<strong>float containing</strong><br>
-									<code>.ym-contain-dt</code><br>
-									<code>.ym-contain-oh</code><br>
-									<code>.ym-contain-fl</code></td>
-								<td>This module offers several classes to handle floated objects within the layout. The <code>.ym-clearfix</code> class enables markup-free clearing of floats. The other predefined classes can be used to contain floated elements (or to handle unknown content in general, e.g. user generated content).</td>
-							</tr>
-							<tr>
-								<td class="nowrap">Accessibility</td>
-								<td class="nowrap"><p><strong>parent class</strong><br>
-									<code>.ym-skiplinks</code><br>
-									<br>
-									<strong>child class</strong><br>
-									<code>.ym-skip</code><br>
-									<br>
-									<strong>optional classes</strong><br>
-									<code>.ym-hideme</code><br>
-									<code>.ym-print<br>
-									.ym-noprint</code></p></td>
-								<td>The accessibility module provides a robust, layout-independent implementation for skip links. Furthermore it contains CSS classes to make content accessible for screen readers but hide them in visual media or make them visible only in the printed output.</td>
-							</tr>
-						</tbody>
-					</table>
+										<strong>child classes</strong><br>
+										<code>.ym-gl</code><br>
+										<code>.ym-gr</code><br>
+										<code>.ym-g[xx]</code><br>
+										<br>
+										<strong>optional classes</strong><br>
+										<code>.ym-equalize</code><br>
+										<code>.ym-gbox</code><br>
+										<code>.ym-gbox-left</code><br>
+										<code>.ym-gbox-right</code></td>
+									<td>The grid module provides flexible, nestable grids. Standard column widths are based on percentages. Optionally, all columns within a grid row can have  equal height. Grid sizes can be extended/customized with user-defined CSS classes.</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Column</td>
+									<td class="nowrap"><strong>parent class</strong><br>
+										<code>.ym-column</code><br>
+										<br>
+										<strong>child classes</strong><br>
+										<code>.ym-col[1|2|3]</code><br>
+										<br>
+										<strong>optional classes</strong><br>
+										<code>.ym-cbox</code><br>
+										<code>.ym-cbox-left</code><br>
+										<code>.ym-cbox-right</code></td>
+									<td>The column module  divides a content area  horizontally into a set of 2 or 3 columns whose widths can be defined in arbitrary units [px, em, %]. Column order can be defined via CSS by the user.</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Form</td>
+									<td class="nowrap"><p><strong>parent class</strong><br>
+										<code>.ym-form</code><br>
+										<br>
+										<strong>row wrapper</strong><br>
+										<code>.ym-fbox</code><br>
+										<code>.ym-fbox-footer</code><br>
+										<code>.ym-fbox-wrap</code><br>
+										<br>
+										<strong>element wrapper</strong><br>
+										<code>.ym-fbox-text</code><br>
+										<code>.ym-fbox-select</code><br>
+										<code>.ym-fbox-check</code><br>
+										<code>.ym-fbox-button</code><br>
+										<br>
+										<strong>optional classes</strong><br>
+										<code>.ym-full</code><br>
+										<code>.ym-columnar<br>
+											.ym-required
+											<br>
+											.ym-error<br>
+											.ym-message<br>
+											.ym-label</code></p>
+										<p><strong>button classes<br>
+											</strong><code>.ym-button<br>
+											.ym-small<br>
+											.ym-xsmall<br>
+											.ym-large<br>
+											.ym-xlarge<br>
+											.ym-primary<br>
+											.ym-success
+											<br>
+											.ym-warning<br>
+											.ym-danger
+											</code><br>
+										</p></td>
+									<td>The form module provides the standard building blocks for designing robust flexible forms and offers three positioning options for arrangement of labels and form elements. YAML strictly separates structural form design (base.css) from visual styling of the form, to enable easy theming.</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Float Handling</td>
+									<td class="nowrap"><strong>float clearing</strong><br>
+										<code>.ym-clearfix</code><br>
+										<br>
+										<strong>float containing</strong><br>
+										<code>.ym-contain-dt</code><br>
+										<code>.ym-contain-oh</code><br>
+										<code>.ym-contain-fl</code></td>
+									<td>This module offers several classes to handle floated objects within the layout. The <code>.ym-clearfix</code> class enables markup-free clearing of floats. The other predefined classes can be used to contain floated elements (or to handle unknown content in general, e.g. user generated content).</td>
+								</tr>
+								<tr>
+									<td class="nowrap">Accessibility</td>
+									<td class="nowrap"><p><strong>parent class</strong><br>
+										<code>.ym-skiplinks</code><br>
+										<br>
+										<strong>child class</strong><br>
+										<code>.ym-skip</code><br>
+										<br>
+										<strong>optional classes</strong><br>
+										<code>.ym-hideme</code><br>
+										<code>.ym-print<br>
+										.ym-noprint</code></p></td>
+									<td>The accessibility module provides a robust, layout-independent implementation for skip links. Furthermore it contains CSS classes to make content accessible for screen readers but hide them in visual media or make them visible only in the printed output.</td>
+								</tr>
+							</tbody>
+						</table>
 
-					<h4>Part 2: Support for old Internet Explorer versions "iehacks.css"</h4>
-					<span class="label">yaml/core/iehacks.css</span>
-					<p>The stylesheet <em>iehacks.css</em> from the <em>yaml/core/</em> folder is the second core component of the YAML framework. It contains all the structure- and layout-independent bugfixes for Internet Explorer (versions 5.x/Win - 7.0/Win). This bugfix-collection is essential for the robust and error-free presentation of YAML-based layouts in old Internet Explorer.</p>
-					<p>This stylesheet is optional but required for legacy support of old Internet Exlorer versions prior IE 8 and should remain unchanged! Many bugfixes exploit IE's numerous parser bugs - particularly those in older IE versions. The resulting CSS code is therefore not always valid and should thus only be made accessible to IE. This is possible with the use of <em>Conditional Comments</em> in the <code>&lt;head&gt;</code> of the document. The Conditional Comment has to be included below all regular stylesheets.</p>
-					<p>List of IE 6,7 bugsfixes provided by <em>iehacks.css</em>:</p>
-					<ul>
-						<li>fixes italics bug</li>
-						<li>fixes disappearing list-background bug</li>
-						<li>fixes list-numbering bug</li>
-						<li>fixes guillotine bug (IE6, in most cases)</li>
-						<li>fixes doubled float-margin bug (for YAML's structural elements)</li>
-						<li>workaround for expanding box problem </li>
-						<li>removes additional paddings in buttons</li>
-						<li>triggers hasLayout for HTML5 elements and YAML's structural elements</li>
-						<li>activates bicubic interpolation for image scaling</li>
-						<li>several stability fixes for YAMLs layout modules</li>
-					</ul>
+						<h4>Part 2: Support for old Internet Explorer versions "iehacks.css"</h4>
+						<span class="label">yaml/core/iehacks.css</span>
+						<p>The stylesheet <em>iehacks.css</em> from the <em>yaml/core/</em> folder is the second core component of the YAML framework. It contains all the structure- and layout-independent bugfixes for Internet Explorer (versions 5.x/Win - 7.0/Win). This bugfix-collection is essential for the robust and error-free presentation of YAML-based layouts in old Internet Explorer.</p>
+						<p>This stylesheet is optional but required for legacy support of old Internet Exlorer versions prior IE 8 and should remain unchanged! Many bugfixes exploit IE's numerous parser bugs - particularly those in older IE versions. The resulting CSS code is therefore not always valid and should thus only be made accessible to IE. This is possible with the use of <em>Conditional Comments</em> in the <code>&lt;head&gt;</code> of the document. The Conditional Comment has to be included below all regular stylesheets.</p>
+						<p>List of IE 6,7 bugsfixes provided by <em>iehacks.css</em>:</p>
+						<ul>
+							<li>fixes italics bug</li>
+							<li>fixes disappearing list-background bug</li>
+							<li>fixes list-numbering bug</li>
+							<li>fixes guillotine bug (IE6, in most cases)</li>
+							<li>fixes doubled float-margin bug (for YAML's structural elements)</li>
+							<li>workaround for expanding box problem </li>
+							<li>removes additional paddings in buttons</li>
+							<li>triggers hasLayout for HTML5 elements and YAML's structural elements</li>
+							<li>activates bicubic interpolation for image scaling</li>
+							<li>several stability fixes for YAMLs layout modules</li>
+						</ul>
 
-					<h3>Basic HTML/CSS Template</h3>
-					<p>Here's a template of an empty HTML5 file containing the integration of YAML's core stylesheets:</p>
-					<pre class="htmlCode">&lt;!doctype html&gt;
+						<h3>Basic HTML/CSS Template</h3>
+						<p>Here's a template of an empty HTML5 file containing the integration of YAML's core stylesheets:</p>
+						<pre class="htmlCode">&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8"/&gt;
@@ -374,15 +372,16 @@
   ...
 &lt;/body&gt;
 &lt;/html&gt;</pre>
-					<p>For both core-files, minified file versions are provided. <em>base.min.css</em> weights only 4.6 kB and <em>iehacks.min.css</em> has a  filesize of 2.1 kB. Use them for your production code. For   development  and  a deeper understanding of the framework use the non-minified, commented file versions. </p>
-					<p class="box info">						Of course, you can build your layouts on XHTML 1.0 or HTML 4 Strict. YAML only requires  the browser to be in Standard Mode. In Quirks Mode,  YAML can't provide IE6 and 7 support.</p>
-<h4>Central Stylesheets for Improved Development Workflow</h4>
-					<p>For prototyping and working with several, reusable stylesheets, YAML uses central stylesheets that import all other stylesheets. This reduces HTML changes (think of Content Management Systems) to a minimum during development.</p>
-					<pre class="htmlCode">&lt;head&gt;<br />  ...<br />  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/central.css&quot; type=&quot;text/css&quot;/&gt;
-  &lt;!--[if lte IE 7]&gt;<br />  &lt;link rel=&quot;stylesheet&quot; href=&quot;yaml/core/iehacks.min.css&quot; type=&quot;text/css&quot;/&gt;<br />  &lt;![endif]--&gt;
-&lt;/head&gt;</pre>
-					<p>Here's an example for how such a central stylesheet could look like:</p>
-					<pre class="cssCode">/* Google Font API */
+						<p>For both core-files, minified file versions are provided. <em>base.min.css</em> weights only 4.6 kB and <em>iehacks.min.css</em> has a  filesize of 2.1 kB. Use them for your production code. For   development  and  a deeper understanding of the framework use the non-minified, commented file versions. </p>
+						<p class="box info">						Of course, you can build your layouts on XHTML 1.0 or HTML 4 Strict. YAML only requires  the browser to be in Standard Mode. In Quirks Mode,  YAML can't provide IE6 and 7 support.</p>
+	<h4>Central Stylesheets for Improved Development Workflow</h4>
+						<p>For prototyping and working with several, reusable stylesheets, YAML uses central stylesheets that import all other stylesheets. This reduces HTML changes (think of Content Management Systems) to a minimum during development.</p>
+						<pre class="htmlCode">&lt;head&gt;<br />  ...<br />  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/central.css&quot; type=&quot;text/css&quot;/&gt;
+	  &lt;!--[if lte IE 7]&gt;<br />  &lt;link rel=&quot;stylesheet&quot; href=&quot;yaml/core/iehacks.min.css&quot; type=&quot;text/css&quot;/&gt;<br />  &lt;![endif]--&gt;
+	&lt;/head&gt;</pre>
+						<p>Here's an example for how such a central stylesheet could look like:</p>
+						<pre class="cssCode">
+/* Google Font API */
 @import url(&quot;http://fonts.googleapis.com/css?family=Droid+Serif&quot;);
 @import url(&quot;http://fonts.googleapis.com/css?family=Droid+Sans:700&quot;);
 
@@ -397,7 +396,8 @@
 @import url(&quot;typography.css&quot;);
 
 /* import print layout */
-@import url(&quot;print.css&quot;);</pre>
+@import url(&quot;print.css&quot;);
+						</pre>
 					 <p>For production use, all stylesheets should ideally be concatenated and minified to reduce HTML requests and bandwidth of course.</p>
 				</div>
 			</div>
@@ -491,7 +491,8 @@
 										</div>
 									</div>
 								</div>
-								<p>The layout is subdivided into several vertical aligned sections, covering the full width of the viewport. The content area is aligned or centered within these sections.</p>
+								<p>The layout is subdivided into several vertical aligned sections, covering the full width of the viewport.
+								The content area is aligned or centered within these sections.</p>
 								<h4>Default Markup</h4>
 <pre class="htmlCode">
 &lt;body&gt;
@@ -511,7 +512,10 @@
 					<div class="jquery_tabs">
 						<h5>PAGE Layout</h5>
 						<div class="tab-content">
-<p>Values for <code><em>width</em></code>, <code><em>min-width</em></code> and <code><em>max-width</em></code> are defined for the <code>.ym-wrapper</code> element, as the outmost layout element. Any white space to the boundaries of the layout can be defined for <code>.ym-wbox</code>, using <code><em>margin</em></code>, <code><em>padding</em></code> or <code><em>borders</em></code>.</p>
+							<p>Values for <code><em>width</em></code>, <code><em>min-width</em></code> and <code><em>max-width</em></code> are
+							defined for the <code>.ym-wrapper</code> element, as the outmost layout element. Any white space to the boundaries
+							of the layout can be defined for <code>.ym-wbox</code>, using <code><em>margin</em></code>,
+							<code><em>padding</em></code> or <code><em>borders</em></code>.</p>
 <pre class="cssCode">
 .ym-wrapper {
   min-width: 760px;
@@ -522,7 +526,12 @@
 						</div>
 						<h5>FULLPAGE Layout</h5>
 						<div class="tab-content">
-							<p>The value for <code><em>min-width</em></code> should be defined for the outmost layout element (here: <code>&lt;header&gt;</code>). All other width values (<code><em>width</em></code> and <code><em>max-width</em></code>) have to be defined for the <code>.ym-wrapper</code> element. White space surrounding the layout can be defined for <code>.ym-wbox</code>, using <code><em>margin</em></code>, <code><em>padding</em></code> or <code><em>border</em></code>.</p>
+							<p>The value for <code><em>min-width</em></code> should be defined for the outmost layout element
+								(here: <code>&lt;header&gt;</code>). All other width values (<code><em>width</em></code> and
+								<code><em>max-width</em></code>) have to be defined for the <code>.ym-wrapper</code> element.
+								White space surrounding the layout can be defined for <code>.ym-wbox</code>, using
+								<code><em>margin</em></code>, <code><em>padding</em></code> or <code><em>border</em></code>.
+							</p>
 <pre class="cssCode">
 body &gt; header { min-width: 760px; }
 
@@ -554,34 +563,28 @@ body &gt; header { min-width: 760px; }
 					<h3>Default Grid Configuration</h3>
 					<div class="grid-demo1">
 						<div class="ym-grid">
-							<div class="ym-g20 ym-gl">
-								<div class="ym-gbox"> 20 %</div></div>
+							<div class="ym-g20 ym-gl"><div class="ym-gbox">20 %</div></div>
 							<div class="ym-g20 ym-gl"><div class="ym-gbox">20 %</div></div>
 							<div class="ym-g20 ym-gl"><div class="ym-gbox">20 %</div></div>
 							<div class="ym-g20 ym-gl"><div class="ym-gbox">20 %</div></div>
 							<div class="ym-g20 ym-gr"><div class="ym-gbox">20 %</div></div>
 						</div>
 						<div class="ym-grid">
-							<div class="ym-g25 ym-gl">
-								<div class="ym-gbox">25 %</div></div>
+							<div class="ym-g25 ym-gl"><div class="ym-gbox">25 %</div></div>
 							<div class="ym-g25 ym-gl"><div class="ym-gbox">25 %</div></div>
 							<div class="ym-g25 ym-gl"><div class="ym-gbox">25 %</div></div>
 							<div class="ym-g25 ym-gr"><div class="ym-gbox">25 %</div></div>
 						</div>
 						<div class="ym-grid">
-							<div class="ym-g33 ym-gl">
-								<div class="ym-gbox"> 33.333 % </div></div>
+							<div class="ym-g33 ym-gl"><div class="ym-gbox">33.333 %</div></div>
 							<div class="ym-g33 ym-gl"><div class="ym-gbox">33.333 %</div></div>
 							<div class="ym-g33 ym-gr"><div class="ym-gbox">33.333 %</div></div>
 						</div>
 						<div class="ym-grid">
-							<div class="ym-g50 ym-gl">
-								<div class="ym-gbox"> 50 %</div></div>
+							<div class="ym-g50 ym-gl"><div class="ym-gbox">50 %</div></div>
 							<div class="ym-g50 ym-gr"><div class="ym-gbox">50 %</div></div>
 						</div>
-						<div class="ym-grid">
-							<div class="ym-gbox"> Full Width </div>
-						</div>
+						<div class="ym-grid"><div class="ym-gbox">Full Width</div></div>
 					</div>
 
 					<h4>Predefined Split-Values</h4>
@@ -692,7 +695,7 @@ body &gt; header { min-width: 760px; }
 							</div>
 						</div>
 					</div>
-					</div>
+				</div>
 
 					<h4>Default Markup</h4>
 					<p>Grids are wrapped by an element with the <code>.ym-grid</code> class.  The grid module is based on floats. Standard float direction is left, using CSS class <code>.ym-gl</code>. At the end of each row, rounding errors will be corrected by changing the float direction for the last column to right (<code>.ym-gr</code>). </p>
@@ -760,8 +763,8 @@ body &gt; header { min-width: 760px; }
 					<div class="ym-grid linearize-level-2">
 						<div class="ym-g50 ym-gl">
 							<div class="ym-gbox-left">
-<h5>Custom Grid Configuration</h5>
-<pre class="cssCode">
+								<h5>Custom Grid Configuration</h5>
+									<pre class="cssCode">
 /* Simple 960.gs port for YAML 4 */
 .ym-g960-1 { width: 80px; }
 .ym-g960-2 { width: 160px; }
@@ -786,7 +789,7 @@ body &gt; header { min-width: 760px; }
 						<div class="ym-g50 ym-gr">
 							<div class="ym-gbox-right">
 								<h5>Custom Grid Markup</h5>
-					<pre class="htmlCode">
+									<pre class="htmlCode">
 &lt;div class=&quot;ym-grid&quot;&gt;
   &lt;div class=&quot;ym-g960-6 ym-gl&quot;&gt;
     &lt;div class=&quot;ym-gbox&quot;&gt;
@@ -1564,12 +1567,12 @@ body &gt; header { min-width: 760px; }
 		<span class="ym-label">A set of checkboxes</span>
 		<div class="ym-fbox-wrap">
 			<div class="ym-fbox-check">
-				<input type="checkbox" name="your-id1" id="your-id1" />
-				<label for="your-id1">Your checkbox label</label>
-			</div>
-			<div class="ym-fbox-check">
 				<input type="checkbox" name="your-id2" id="your-id2" />
 				<label for="your-id2">Your checkbox label</label>
+			</div>
+			<div class="ym-fbox-check">
+				<input type="checkbox" name="your-id3" id="your-id3" />
+				<label for="your-id3">Your checkbox label</label>
 			</div>
 		</div>
 	</div>
@@ -1608,16 +1611,16 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 		<span class="ym-label">Custom Label</span>
 		<div class="ym-fbox-wrap">
 			<div class="ym-fbox-check">
-				<input type="radio" name="vote" value="Option 1" id="vote1" />
-				<label for="vote1">Option 1</label>
+				<input type="radio" name="vote" value="Option 1" id="vote4" />
+				<label for="vote4">Option 1</label>
 			</div>
 			<div class="ym-fbox-check">
-				<input type="radio" name="vote" id="vote2" />
-				<label for="vote2">Option 2</label>
+				<input type="radio" name="vote" id="vote5" />
+				<label for="vote5">Option 2</label>
 			</div>
 			<div class="ym-fbox-check">
-				<input type="radio" name="vote" id="vote3" />
-				<label for="vote3">Option 3</label>
+				<input type="radio" name="vote" id="vote6" />
+				<label for="vote6">Option 3</label>
 			</div>
 		</div>
 	</div>
@@ -1647,18 +1650,18 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 
 <form class="ym-form">
 	<div class="ym-fbox-footer ym-fbox-button">
-		<input type="submit" value="Submit" class="ym-primary" id="submit" name="submit" />
-		<input type="reset" value="Reset" class="ym-warning" id="reset" name="reset" />
-		<input type="button" value="Button" id="button1" name="button1" />
-		<button type="submit" class="save ym-save ym-success" id="submit2">Custom Button</button>
+		<input type="submit" value="Submit" class="ym-primary" id="exp-submit"/>
+		<input type="reset" value="Reset" class="ym-warning" id="reset"/>
+		<input type="button" value="Button" id="button1"/>
+		<button type="submit" class="save ym-save ym-success" id="custom-submit">Custom Button</button>
 	</div>
 </form>
 
 <pre class="htmlCode">
 &lt;div class=&quot;<strong>ym-fbox-footer</strong>&quot;&gt;
-  &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot; name=&quot;submit&quot; /&gt;
-  &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot; name=&quot;reset&quot; /&gt;
-  &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot; name=&quot;button1&quot; /&gt;
+  &lt;input type=&quot;submit&quot; class=&quot;ym-button ym-primary&quot; value=&quot;submit&quot; id=&quot;submit&quot;/&gt;
+  &lt;input type=&quot;reset&quot; class=&quot;ym-button ym-warning&quot; value=&quot;reset&quot; id=&quot;reset&quot;/&gt;
+  &lt;input type=&quot;button&quot; class=&quot;ym-button&quot; value=&quot;button&quot; id=&quot;button1&quot;/&gt;
 
   &lt;!-- custom buttons --&gt;
   &lt;button type="submit" class="save ym-save ym-success" id="submit"&gt;Custom Button&lt;/button&gt;
@@ -1787,20 +1790,20 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 						<div class="ym-fbox-wrap ym-grid">
 							<div class="ym-g33 ym-gl">
 								<div class="ym-gbox-left ym-fbox-text">
-									<label for="plz">Postal Code</label>
-									<input type="text" name="plz" id="plz" size="20" />
+									<label for="exp-plz">Postal Code</label>
+									<input type="text" name="plz" id="exp-plz" size="20" />
 								</div>
 							</div>
 							<div class="ym-g33 ym-gl">
 								<div class="ym-gbox ym-fbox-text">
-									<label for="city">City</label>
-									<input type="text" name="city" id="city" size="20" />
+									<label for="exp-city">City</label>
+									<input type="text" name="city" id="exp-city" size="20" />
 								</div>
 							</div>
 							<div class="ym-g33 ym-gr">
 								<div class="ym-gbox-right ym-fbox-text">
-									<label for="country">Country</label>
-									<select name="country" id="country"><option value="">entry</option></select>
+									<label for="exp-country">Country</label>
+									<select name="country" id="exp-country"><option value="">entry</option></select>
 								</div>
 							</div>
 						</div>
@@ -1882,7 +1885,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="ym-gbox-right">
 
 					<h4>Form Example</h4>
-					<form method="post" action="" id="demo-form1" class="ym-form linearize-form" role="application">
+					<form method="post" id="demo-form1" class="ym-form linearize-form" role="application">
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
 
 						<div class="ym-fbox ym-fbox-select">
@@ -2135,9 +2138,9 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 							</div>
 						</div>
 						<div class="ym-fbox-footer ym-fbox-button">
-							<button type="submit" class="save ym-save ym-success" id="submit" name="submit">Custom Button</button>
-							<input type="submit" value="Submit"  class="save ym-primary" id="submit" name="submit" />
-							<input type="reset" value="Reset" class="delete" id="reset" name="reset" />
+							<button type="submit" class="save ym-save ym-success" id="custom">Custom Button</button>
+							<input type="submit" value="Submit"  class="save ym-primary" id="submit"/>
+							<input type="reset" value="Reset" class="delete" id="exp-reset"/>
 						</div>
 					</form>
 
@@ -2478,7 +2481,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 								<li><a href="#yaml-navigation">Link</a></li>
 								<li><a href="#yaml-navigation">Link</a></li>
 							</ul>
-							<form class="ym-searchform" action="">
+							<form class="ym-searchform">
 								<input class="ym-searchfield" type="text" placeholder="Search..." />
 								<input class="ym-searchbutton" type="submit" value="Search" />
 							</form>
@@ -3693,10 +3696,10 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 					</div>
 				</div>
 			</div>
-</div>
+		</div>
 	</div>
 </div>
-
+</div>
 <footer role="contentinfo">
 	<div class="ym-wrapper">
 		<div class="ym-wbox">
