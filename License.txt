@@ -1,7 +1,7 @@
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
- * Licence Information
+ * License Information
  *
  * @copyright       Copyright 2005-2013, Dirk Jesse
  * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
