@@ -22,7 +22,7 @@
 	body {
 		& > header,
 		& > nav,
-		& > #main,
+		& > main,
 		& > footer {
 			min-width: 760px;
 		}
@@ -47,7 +47,7 @@
 		background: #222222;
 	}
 
-	#main {
+	main {
 		.info {
 			margin-bottom: 1.5em;
 		}
@@ -73,8 +73,6 @@
 	.ym-gbox-left { padding: 0 1.5em 0 0; }
 	.ym-gbox-right { padding: 0 0 0 1.5em; }
 
-	section.box { padding: 0 1.5em 1.5em 1.5em; }
-
 	/* skip links styling */
 	.ym-skiplinks {
 		a.ym-skip:focus,
@@ -95,7 +93,7 @@
 	body {
 		& > header,
 		& > nav,
-		& > #main,
+		& > main,
 		& > footer {
 			min-width: 0;
 		}
@@ -112,9 +110,10 @@
 	.secondary {
 		border-top: 1px #888 solid;
 		margin-top: 1.5em !important;
+		padding-top: 1.5em !important;
 	}
 
-	#main aside .ym-gbox-right {
+	main aside .ym-gbox-right {
 		border: 0 none;
 	}
 

@@ -33,8 +33,12 @@
 		background: #222222;
 	}
 
+	main {
+		padding: 1.5em 0 0 0;
+	}
+
 	footer {
-		margin: 1.5em 0 0 0;
+		margin: 0;
 		background: #eee;
 		color: #444;
 		padding: 1.5em;
@@ -134,7 +138,7 @@
 	}
 
 	footer,
-	#main,
+	main,
 	.ym-searchform,
 	nav .ym-hlist ul {
 		padding-left: 10px;

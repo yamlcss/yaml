@@ -27,7 +27,7 @@
   }
 
   /* fallback for missing media queries support*/
-  body > header, body > nav, body > #main, body > footer {
+  body > header, body > nav, body > main, body > footer {
     min-width: 760px;
   }
 
@@ -48,10 +48,10 @@
     background: #222222;
   }
 
-  #main .info {
+  main .info {
     margin-bottom: 1.5em;
   }
-  #main aside .ym-gbox-right {
+  main aside .ym-gbox-right {
     border-left: 1px #ddd solid;
   }
 
@@ -78,10 +78,6 @@
     padding: 0 0 0 1.5em;
   }
 
-  section.box {
-    padding: 0 1.5em 1.5em 1.5em;
-  }
-
   /* skip links styling */
   .ym-skiplinks a.ym-skip:focus,
   .ym-skiplinks a.ym-skip:active {
@@ -95,7 +91,7 @@
 }
 /* reset fallback values in modern browsers */
 @media screen and (min-width: 0px) {
-  body > header, body > nav, body > #main, body > footer {
+  body > header, body > nav, body > main, body > footer {
     min-width: 0;
   }
 }
@@ -120,9 +116,10 @@
   .secondary {
     border-top: 1px #888 solid;
     margin-top: 1.5em !important;
+    padding-top: 1.5em !important;
   }
 
-  #main aside .ym-gbox-right {
+  main aside .ym-gbox-right {
     border: 0 none;
   }
 

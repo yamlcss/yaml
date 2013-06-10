@@ -9,7 +9,7 @@ A big thanks goes to the following contributors for their help on this version:
 * Moved development from private SVN to public Github repository 
 * Switched development code base from static CSS to Sass + Compass.
 * YAML can now be used as static CSS framework (as in the past) or as a highly configurable Sass/Compass module.
-* Added Grunt support to create custom YAML builds, including namespace configuration 
+* Added Grunt support to create custom YAML builds, including namespace configuration
 
 ## Code Changes
 ### Normalization Module
@@ -48,8 +48,12 @@ A big thanks goes to the following contributors for their help on this version:
 * Microformats
   * added Base64 encoded inline images to reduce HTTP requests in modern browsers, fallback for old IE's included
 
+### Demos
+* Updated all layout demos to use the HTML5 &lt;main&gt; element
+
 ### Other Changes
 * added HTML5shiv to project and updated all references in HTML files
+* updated jQuery to v1.10.1 and added jQuery Migration Plugin v1.2.1 to project
 
 # Version 4.0.2
 ## Bug Fixes

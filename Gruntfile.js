@@ -161,6 +161,13 @@ module.exports = function(grunt) {
 					src    : ['core/*.css','add-ons/rtl-support/core/*.css'],   // Actual pattern(s) to match.
 					dest   : 'yaml/',        // Destination path prefix.
 					ext    : '.min.css'      // Dest filepaths will have this extension.
+				},
+				{
+					expand : true,           // Enable dynamic expansion.
+					cwd    : 'docs/',        // Src matches are relative to this path.
+					src    : ['assets/css/*.css'],   // Actual pattern(s) to match.
+					dest   : 'docs/',        // Destination path prefix.
+					ext    : '.min.css'      // Dest filepaths will have this extension.
 				}]
 			}
 		},
