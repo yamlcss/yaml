@@ -167,7 +167,7 @@ module.exports = function(grunt) {
 					cwd    : 'docs/',        // Src matches are relative to this path.
 					src    : ['assets/css/*.css'],   // Actual pattern(s) to match.
 					dest   : 'docs/',        // Destination path prefix.
-					ext    : '.min.css'      // Dest filepaths will have this extension.
+					ext    : '-min.css'      // Dest filepaths will have this extension.
 				}]
 			}
 		},
