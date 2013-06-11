@@ -1,4 +1,4 @@
-# Version 4.1
+# Version 4.1.0
 A big thanks goes to the following contributors for their help on this version:
 
   * Jens Grochtdreis (@flocke)
@@ -6,7 +6,7 @@ A big thanks goes to the following contributors for their help on this version:
   * Frederik Hemberger (@fhemberger)
 
 ## General
-* Moved development from private SVN to public Github repository 
+* Moved development from private SVN to public Github repository
 * Switched development code base from static CSS to Sass + Compass.
 * YAML can now be used as static CSS framework (as in the past) or as a highly configurable Sass/Compass module.
 * Added Grunt support to create custom YAML builds, including namespace configuration
@@ -44,7 +44,7 @@ A big thanks goes to the following contributors for their help on this version:
  * Update to version 1.9.7  (jQuery 1.9.x support)
  * tabs.css - added print styles to enable printing of tabbed content
 * SyncHeight jQuery plugin
-  * Update to version 1.5 (jQuery 1.9.x support) 
+  * Update to version 1.5 (jQuery 1.9.x support)
 * Microformats
   * added Base64 encoded inline images to reduce HTTP requests in modern browsers, fallback for old IE's included
 
@@ -60,7 +60,7 @@ A big thanks goes to the following contributors for their help on this version:
 * tabs.css: fixed a float-dropping bug of generated tabs in Chrome 22
 * vlist-rtl.css: fixed a bug where first level selectors didn't overwrite ltr-settings
 * docs: Fixed a IE 7 rendering-bug in column configuration snippet "2cols - sidebar left"
-* docs: Added an info-message about the behavior of responsive media elements in environments wrapped with display:table 
+* docs: Added an info-message about the behavior of responsive media elements in environments wrapped with display:table
 * gray-theme.css: bugfix for missing icons in custom buttons on HTC devices with Android 2.2
 
 # Version 4.0.1
