@@ -3199,20 +3199,20 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 	  		</div>
   		</div>
 
-		<h2 id="yaml-sass" tabindex="-1">Sass</h2>
+		<h2 id="yaml-sass" tabindex="-1">Sass <span class="label">sass/yaml-sass/</span></h2>
 		<div class="ym-grid linearize-level-1">
 				<div class="ym-g25 ym-gl">
 					<div class="ym-gbox-left">
 						<h3>Github</h3>
-						<p>YAML4 is available on Github. Get the latest version at:
-							<a href="https://github.com/djesse/yaml4-sass">yaml4-sass</a>.
+						<p>YAML4 is available on <a href="https://github.com/yamlcss/yaml">Github</a>.
+							.
 						</p>
 					</div>
 				</div>
 				<div class="ym-g75 ym-gr">
 					<div class="ym-gbox-right">
 						<h3>Introduction</h3>
-						<p><em>yaml4-sass</em> is the official Sass port of YAML. Its project structure almost is identical to the <em>static</em> version of YAML. All CSS files in the <em>yaml-sass</em> folder, as well as the css files for the YAML docs are created dynamically with Sass.</p>
+						<p>YAML is completely developed using <a href="http://sass-lang.com/">Sass</a> and provides a static CSS version of the framework as well as a highly customizeable Sass port. The project structure of the Sass port is almost is identical to the <em>static</em> version of YAML. All CSS files in the <em>yaml-sass</em> folder, as well as the css files for the YAML docs are created dynamically with Sass.</p>
 						<p>Therefore you can easily include YAML in your Sass project as well as create a custom <em>static</em> builds of YAML for a standard CSS project.</p>
 					</div>
 				</div>
@@ -3221,7 +3221,8 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="ym-g25 ym-gl">
 					<div class="ym-gbox-left">
 						<h3>YAML Configuration</h3>
-						<span class="label">sass/yaml/_yaml-var-globals.scss</span> </div>
+						<span class="label">sass/yaml-sass/_yaml-var-globals.scss</span>
+					</div>
 				</div>
 				<div class="ym-g75 ym-gr">
 					<div class="ym-gbox-right">
@@ -3351,7 +3352,7 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="ym-g25 ym-gl">
 					<div class="ym-gbox-left">
 						<h3>Typography Settings</h3>
-						<span class="label">sass/yaml/_yaml-var-typography.scss</span> </div>
+						<span class="label">sass/yaml-sass/_yaml-var-typography.scss</span> </div>
 				</div>
 				<div class="ym-g75 ym-gr">
 					<div class="ym-gbox-right">
@@ -3561,16 +3562,17 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<div class="ym-g25 ym-gl">
 					<div class="ym-gbox-left">
 						<h3>YAML Mixins</h3>
-						<span class="label">sass/mixins/_yaml-mixins-core.scss</span> </div>
+					</div>
 				</div>
 				<div class="ym-g75 ym-gr">
 					<div class="ym-gbox-right">
 						<h3>Introduction</h3>
-						<p>YAML Mixins contains a collection of reusable and configurable code-snippets (called mixins). To use them within
+						<span class="label">sass/yaml-sass/mixins/_yaml-mixins-core.scss</span>
+						<p>The YAML mixins collection contains several reusable and configurable code-snippets (called mixins). To use them within
 							your Sass project, you have to include the mixin collection into your scss files.
 						<p>
 						<pre class="cssCode">
-@import "yaml/mixins/yaml_mixins_core";
+@import "./mixins/yaml_mixins_core";
 ...
 </pre>
 						<!-- Inhalt linker Block -->
