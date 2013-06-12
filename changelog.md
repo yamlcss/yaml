@@ -3,7 +3,7 @@ A big thanks goes to the following contributors for their help on this version:
 
   * Jens Grochtdreis (@flocke)
   * Michael Schulze (@michsch)
-  * Frederik Hemberger (@fhemberger)
+  * Frederic Hemberger (@fhemberger)
 
 ## General
 * Moved development from private SVN to public Github repository
