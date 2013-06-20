@@ -1,0 +1,29 @@
+@import "../../../yaml-var-globals";
+
+@media screen {
+	.ym-form {
+		select {
+			padding: 3px 1px 3px 2px;
+		}
+	}
+
+	/* adjust buttons */
+	.ym-button,
+	.ym-form button,
+	.ym-form input[type="button"],
+	.ym-form input[type="reset"],
+	.ym-form input[type="submit"] {
+		margin: 0 0 0 0.75em;
+	}
+	.ym-form button:before,
+	.ym-button:before {
+		float: right;
+		margin: 0 -1em 0 1em;
+	}
+
+	/* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
+	* html .ym-button,
+	* html .ym-form button {
+		margin: 1.5em 0 0 0.75em;
+	}
+}

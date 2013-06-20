@@ -2,22 +2,6 @@
 
 @media all {
 
-	/* title */
-	.ym-vtitle {
-		font-weight:bold;
-		font-size:100%;
-		width:90%;
-		padding:3px 0px 3px 10%; // LTR
-		margin:0;
-		color:#444;
-		background-color:#fff;
-		border-top:2px #ddd solid;
-
-		& + ul {
-			border-top:4px #888 solid;
-		}
-	}
-
 	/* 4 navigation levels defined */
 	.ym-vlist {
 		margin:0 0 1.5em 0;
@@ -124,6 +108,22 @@
 			a:focus,
 			a:hover,
 			a:active { background-color:#888; color:#fff; }
+		}
+	}
+
+	/* title */
+	.ym-vtitle {
+		font-weight:bold;
+		font-size:100%;
+		width:90%;
+		padding:3px 0px 3px 10%; // LTR
+		margin:0;
+		color:#444;
+		background-color:#fff;
+		border-top:2px #ddd solid;
+
+		& + ul {
+			border-top:4px #888 solid;
 		}
 	}
 }

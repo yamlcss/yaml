@@ -12,7 +12,7 @@
 @import "yaml-sass/yaml-var-globals";
 @import "yaml-sass/mixins/yaml-mixins-core";
 
-@media screen, projection {
+@media screen {
 
 	/**
 	* (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera
@@ -770,5 +770,13 @@
 
 	.linearize-form  {
 		@include ym-linearize-forms();
+	}
+
+	.ym-button,
+	.ym-form button,
+	.ym-form input[type="button"],
+	.ym-form input[type="reset"],
+	.ym-form input[type="submit"] {
+		margin-bottom: 0.25em;
 	}
 }

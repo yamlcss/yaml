@@ -27,6 +27,71 @@
 	blockquote,
 	cite { margin: 0 0.8em 1em 0; }
 
+
+
+	/* set text flow */
+	.ym-form {
+		direction:rtl;
+
+		* {
+			text-align: right;
+		}
+
+		input,
+		textarea {
+			display: inline-block;
+		}
+
+		select {
+			display: inline-block;
+		}
+	}
+
+	/*------------------------------------------------------------------------------------------------------*/
+
+	/**
+	* (en) rtl adjustments for forms module
+	* (de) RTL-Anpassungen für das Formular Modul
+	*
+	*/
+
+	.ym-columnar {
+		// Columnar display
+		// Spalten-Darstellung
+		input,
+		textarea,
+		select {
+			float:right;
+			margin-right: 0;
+			margin-left: -3px;
+		}
+
+		label,
+		.ym-label {
+			display:inline;
+			float:right;
+		}
+
+		// Indent Checkbox fields to match label-width
+		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
+		.ym-fbox-check input,
+		.ym-message {
+			margin-left: 0;
+			margin-right: 30%;
+		}
+
+		// reset indention for wrapped form elements ...
+		.ym-fbox-wrap {
+			margin-left: 0;
+			margin-right: 30%;
+			margin-left: -3px;
+
+			input {
+				margin-right: 0;
+			}
+		}
+	}
+
 	/*------------------------------------------------------------------------------------------------------*/
 
 	/**

@@ -136,14 +136,15 @@
 
 	& .ym-label,
 	& .ym-message,
-	& .ym-fbox-text input,
+	& input,
+	& button,
 	& textarea,
 	& select {
 		display: block;
 		float: none;
 		position: static;
 		width: 100% !important;
-		margin: 0 !important;
+		margin-left: 0 !important;
 	}
 
 	// reset grids
@@ -157,8 +158,11 @@
 	}
 
 	// reset columnar settings
-	& .ym-fbox-check input {
+	& input[type="checkbox"],
+	& input[type="radio"] {
 		margin-left: 0 !important;
+		width: auto !important;
+		display: inline;
 	}
 }
 

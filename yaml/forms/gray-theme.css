@@ -39,17 +39,19 @@
   }
   .ym-form .ym-fbox {
     padding: 0 1em;
-    margin: 1em 0;
-  }
-  .ym-form .ym-fbox + .ym-fbox {
-    margin: 0.5em 0;
+    margin: 1em 0 0.5em 0;
   }
   .ym-form .ym-fbox-footer {
     background: #ececec;
     border-top: 1px #e0e0e0 solid;
     padding: 1.5em 1em;
     margin: 0;
-    text-align: left;
+  }
+  .ym-form .ym-fbox + .ym-fbox {
+    margin: 0.5em 0;
+  }
+  .ym-form .ym-fbox + .ym-fbox-footer {
+    margin: 1em 0 0 0;
   }
   .ym-form .ym-fbox :last-child,
   .ym-form .ym-fbox-footer :last-child {
@@ -518,6 +520,10 @@
 
   .ym-play:before {
     content: "\25B6";
+  }
+
+  .ym-reply:before {
+    content: "\27A5";
   }
 
   .ym-save:before {

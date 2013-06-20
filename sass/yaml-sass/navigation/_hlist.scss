@@ -88,6 +88,10 @@
 		}
 
 		.ym-searchbutton {
+			-webkit-appearance: none;
+			background: #5f5f5f;
+			background: rgba(255,255,255,.2);
+			border-radius: .2em;
 			color: #fff;
 			cursor: pointer;
 			display: inline-block;
@@ -96,9 +100,6 @@
 			padding: 0.25em;
 			border: solid 1px transparent;
 			text-shadow: 0 1px 1px rgba(0,0,0,.5);
-			border-radius: .2em;
-			background: #5f5f5f;
-			background: rgba(255,255,255,.2);
 		}
 	}
 }

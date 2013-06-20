@@ -49,6 +49,53 @@
     margin: 0 0.8em 1em 0;
   }
 
+  /* set text flow */
+  .ym-form {
+    direction: rtl;
+  }
+  .ym-form * {
+    text-align: right;
+  }
+  .ym-form input,
+  .ym-form textarea {
+    display: inline-block;
+  }
+  .ym-form select {
+    display: inline-block;
+  }
+
+  /*------------------------------------------------------------------------------------------------------*/
+  /**
+  * (en) rtl adjustments for forms module
+  * (de) RTL-Anpassungen für das Formular Modul
+  *
+  */
+  .ym-columnar input,
+  .ym-columnar textarea,
+  .ym-columnar select {
+    float: right;
+    margin-right: 0;
+    margin-left: -3px;
+  }
+  .ym-columnar label,
+  .ym-columnar .ym-label {
+    display: inline;
+    float: right;
+  }
+  .ym-columnar .ym-fbox-check input,
+  .ym-columnar .ym-message {
+    margin-left: 0;
+    margin-right: 30%;
+  }
+  .ym-columnar .ym-fbox-wrap {
+    margin-left: 0;
+    margin-right: 30%;
+    margin-left: -3px;
+  }
+  .ym-columnar .ym-fbox-wrap input {
+    margin-right: 0;
+  }
+
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) skip links cause large horizontal scrollbars in RTL mode in several browsers

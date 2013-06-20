@@ -12,21 +12,6 @@
  * @version         4.1.0
  */
 @media all {
-  /* title */
-  .ym-vtitle {
-    font-weight: bold;
-    font-size: 100%;
-    width: 90%;
-    padding: 3px 0px 3px 10%;
-    margin: 0;
-    color: #444;
-    background-color: #fff;
-    border-top: 2px #ddd solid;
-  }
-  .ym-vtitle + ul {
-    border-top: 4px #888 solid;
-  }
-
   /* 4 navigation levels defined */
   .ym-vlist {
     margin: 0 0 1.5em 0;
@@ -140,5 +125,20 @@
   .ym-vlist li ul li ul li ul li a:active {
     background-color: #888;
     color: #fff;
+  }
+
+  /* title */
+  .ym-vtitle {
+    font-weight: bold;
+    font-size: 100%;
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    margin: 0;
+    color: #444;
+    background-color: #fff;
+    border-top: 2px #ddd solid;
+  }
+  .ym-vtitle + ul {
+    border-top: 4px #888 solid;
   }
 }
