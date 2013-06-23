@@ -13,8 +13,10 @@
 	*/
 
 	.ym-hlist {
+		/* changee direction for parent element as workaround for IE7 */
 		* { direction:ltr !important; }
 
+		/* change back direction to RTL for child elements */
 		a,
 		strong { direction:rtl !important; }
 
@@ -32,7 +34,9 @@
 		}
 	}
 
+	/* change back direction to RTL for child elements */
 	.ym-searchform {
+		direction:rtl !important;
 		float:left;
 	}
 }
