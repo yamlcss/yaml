@@ -108,7 +108,7 @@
     min-width: 0px;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 760px) {
   /* Linearisation for Grid- and Column-Module, based on CSS class .linearize-level-1 */
   .linearize-level-1, .linearize-level-1 > [class*="ym-c"], .linearize-level-1 > [class*="ym-g"] {
     /* linearization for grids and columns module */
