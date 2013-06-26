@@ -2177,16 +2177,18 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   .linearize-form label {
     float: none;
   }
+
   .linearize-form .ym-label,
   .linearize-form .ym-message,
-  .linearize-form .ym-fbox-text input,
+  .linearize-form input,
+  .linearize-form button,
   .linearize-form textarea,
   .linearize-form select {
     display: block;
     float: none;
     position: static;
     width: 100% !important;
-    margin: 0 !important;
+    margin-left: 0 !important;
   }
 
   /* linearize grids */
@@ -2199,9 +2201,13 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
     padding: 0 !important;
   }
 
-  /* reset columnar indention */
-  .linearize-form .ym-fbox-check input {
+  /* restore special form elements */
+  .linearize-form input[type="checkbox"],
+  .linearize-form input[type="radio"],
+  .linearize-form input[type="image"] {
     margin-left: 0 !important;
+    width: auto !important;
+    display: inline;
   }
 }</pre>
 <p class="cssCode">Add the class <code>.linearize-form</code> to any form, you want to be linearized. <span class="htmlCode">You should combine these settings with the linarization of your grid or column layout.</span></p>

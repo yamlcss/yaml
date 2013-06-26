@@ -29,6 +29,7 @@
   .ym-button:before {
     float: right;
     margin: 0 -1em 0 1em;
+    border-radius: .15em .15em 0 0;
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */
