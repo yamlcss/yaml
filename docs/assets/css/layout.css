@@ -3203,7 +3203,7 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-  .linearize-form input[type="checkbox"], .linearize-form input[type="radio"] {
+  .linearize-form input[type="checkbox"], .linearize-form input[type="radio"], .linearize-form input[type="image"] {
     margin-left: 0 !important;
     width: auto !important;
     display: inline;
