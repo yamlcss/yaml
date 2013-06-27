@@ -1,10 +1,10 @@
 {
-  "name"                    : "yaml-css",
+  "name"                    : "yamlcss",
   "description"             : "A modular CSS framework for truly flexible, accessible and responsive websites",
   "url"                     : "http://www.yaml.de",
   "author"                  : "Dirk Jesse <office@highresolution.info>",
 
-  "version"                 : "4.1.0",
+  "version"                 : "4.1.1",
   "yamlPrefix"              : "ym-",
 
   "devDependencies": {

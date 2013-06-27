@@ -1,4 +1,34 @@
-# Version 4.1.0
+# Version 4.1.1  (13-06-27)
+This is the fist maintenance release for YAML 4.1.x path
+
+## General
+* added RTL support for form theme: gray-theme.css
+
+## Bug Fixes
+### Forms Module
+* fixed a wrong margins between .ym-fbox siblings - #6
+* fixed missing button adjustments in form linearization - #9
+* fixed button style for search button in hlist navigation on iOS - #10
+
+### Navigation Module
+* fixed border for navigation title in vlist - #8
+
+### Misc
+* fixed several typos in CSS comments
+* deleted some irrelevant styles from rtl-files - #15
+
+## Code Changes
+### Forms Module
+* added new custom button class .ym-reply - #7
+* added rtl-support for forms: yaml/add-ons/rtl-support/forms/gray-theme-rtl.css - #11, #12
+
+### Add-ons
+* reduced file size of microformats icons and base64 inline images
+
+### Demos
+* unified HTML structure for the seach field in RTL demo: rtl-support.html #16
+
+# Version 4.1.0 (13-06-11)
 A big thanks goes to the following contributors for their help on this version:
 
   * Jens Grochtdreis (@flocke)
