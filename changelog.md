@@ -5,10 +5,15 @@ This is the fist maintenance release for YAML 4.1.x path
 * added RTL support for form theme: gray-theme.css
 
 ## Bug Fixes
+### Normalization Module
+* removed &lt;hgroup&gt; element from normalization module (removed from the HTML5 specs)
+
 ### Forms Module
 * fixed a wrong margins between .ym-fbox siblings - #6
 * fixed missing button adjustments in form linearization - #9
 * fixed button style for search button in hlist navigation on iOS - #10
+* fixed a problem with .ym-inline elements in columnar mode, issue #20
+* fixed a problem with .ym-message in columnar mode, issue #21
 
 ### Navigation Module
 * fixed border for navigation title in vlist - #8

@@ -80,7 +80,6 @@
   figure,
   footer,
   header,
-  hgroup,
   main,
   nav,
   section,
@@ -570,6 +569,9 @@
   .ym-columnar .ym-fbox-wrap {
     margin-left: 30%;
     margin-right: -3px;
+  }
+  .ym-columnar .ym-fbox-wrap .ym-message {
+    margin-left: 0%;
   }
   .ym-columnar .ym-fbox-wrap label {
     float: none;

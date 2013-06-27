@@ -50,7 +50,7 @@
   * (de) HTML5 - Standard Eigenschaften für Media-Elemente
   */
   article, aside, details, figcaption, figure,
-  footer, header, main, hgroup, nav, section {
+  footer, header, main, nav, section {
     zoom: 1;
   }
 
