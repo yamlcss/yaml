@@ -136,6 +136,8 @@
 
 		.ym-inline {
   			display: inline-block;
+  			float: none; // reset columnar floating ...
+  			margin-right: 0; // reset rounding tolerance ...
   			width: auto;
   			vertical-align: baseline;
 		}

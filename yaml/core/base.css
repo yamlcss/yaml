@@ -499,6 +499,8 @@
   }
   .ym-form .ym-inline {
     display: inline-block;
+    float: none;
+    margin-right: 0;
     width: auto;
     vertical-align: baseline;
   }
