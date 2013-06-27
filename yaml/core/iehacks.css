@@ -294,7 +294,7 @@
     display: inline !important;
     width: auto !important;
     background: transparent !important;
-    border: 0 none  !important;
+    border: 0 none !important;
     padding: 0 !important;
   }
   * html .ym-form .ym-fbox-wrap .ym-fbox-check input {
