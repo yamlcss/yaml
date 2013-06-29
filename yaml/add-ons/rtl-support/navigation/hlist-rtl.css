@@ -23,10 +23,6 @@
   * @css-for    IE 5.x/Win, IE6, IE7
   * @valid      yes
   */
-  .ym-hlist {
-    /* changee direction for parent element as workaround for IE7 */
-    /* change back direction to RTL for child elements */
-  }
   .ym-hlist * {
     direction: ltr !important;
   }

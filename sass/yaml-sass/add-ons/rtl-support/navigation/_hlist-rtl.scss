@@ -13,10 +13,10 @@
 	*/
 
 	.ym-hlist {
-		/* changee direction for parent element as workaround for IE7 */
+		// changee direction for parent element as workaround for IE7
 		* { direction:ltr !important; }
 
-		/* change back direction to RTL for child elements */
+		// change back direction to RTL for child elements
 		a,
 		strong { direction:rtl !important; }
 
