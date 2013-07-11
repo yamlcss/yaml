@@ -36,7 +36,7 @@
 
 // As there is a default direction there is no use for a fourth if-case.
 
-@mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both) {
+@mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both, $fallback: $start-color) {
 	$old-direction: top;
 	$very-old-direction:"left top, left bottom";
 	$ie-direction: 0;
@@ -48,14 +48,15 @@
 	}
 
 	@if $output != "oldie" {
-		background: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
-		background:  -webkit-linear-gradient($old-direction, $start-color,$end-color);
-		background: 	-moz-linear-gradient($old-direction, $start-color,$end-color);
-		background: 	 -ms-linear-gradient($old-direction, $start-color,$end-color);
-		background:    		 linear-gradient($direction, $start-color,$end-color);
+		background-image: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
+		background-image:  -webkit-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: 	-moz-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: 	 -ms-linear-gradient($old-direction, $start-color,$end-color);
+		background-image:    		 unquote("linear-gradient(#{$direction}, #{$start-color},#{$end-color})");
 	}
 
 	@if $output != "css3" {
+		background-color: $fallback;
 		$iecolor1: ie-hex-str($start-color);
 		$iecolor2: ie-hex-str($end-color);
 		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=#{$ie-direction}, startColorstr='#{$iecolor1}', endColorstr='#{$iecolor2}');
