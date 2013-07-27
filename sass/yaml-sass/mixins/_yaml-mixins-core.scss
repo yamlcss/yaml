@@ -34,6 +34,8 @@
 	// oldie  ==> only IE-filters for oldIE (versions before 9)
 	// both   ==> both CSS3 and oldIE versions are printed
 
+// $fallback ==> fallback color code for browsers that don't support gradients (oldIE)
+
 // As there is a default direction there is no use for a fourth if-case.
 
 @mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both, $fallback: $start-color) {

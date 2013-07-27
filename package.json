@@ -4,7 +4,7 @@
   "url"                     : "http://www.yaml.de",
   "author"                  : "Dirk Jesse <office@highresolution.info>",
 
-  "version"                 : "4.1.1",
+  "version"                 : "4.1.2",
   "yamlPrefix"              : "ym-",
 
   "devDependencies": {
