@@ -1,5 +1,23 @@
+# Version 4.1.2  (13-07-28)
+This is the second maintenance release for YAML 4.1.x path. Thanks to Alexander Haß and MDMueller for their contributions.
+
+## Bug Fixes
+### Forms Module
+* added support for input[type="image"] elements to forms module (issue #28)
+* rearranged form styles for RTL support to avoid specificity conflicts
+* corrected several small problems in RTL mode in forms module, especially in columnar view. (issue #30)
+### Sass
+* several improvements were made to the gradient generator, including a fallback for oldIE browsers.
+
+### Navigation Module
+* removed round corners of search field in hlist navigation on iOS (issue #31)
+
+## Code Changes
+### Forms Module
+* added "clear:both" for .ym-message class to avoid conflicts when messages are placed behind the form field in the markup. (issue #35)
+
 # Version 4.1.1  (13-06-27)
-This is the fist maintenance release for YAML 4.1.x path
+This is the first maintenance release for YAML 4.1.x path
 
 ## General
 * added RTL support for form theme: gray-theme.css
