@@ -2,7 +2,7 @@
 
 YAML (*Yet Another Multicolumn Layout*) is a modular CSS framework for truly flexible, accessible and responsive websites. YAML is focussed on device independent screen design and provides bullet-proof modules for flexible layouts. This is a perfect starting point and the key to truly responsive design.
 
-- Latest version: 4.1.1
+- Latest version: 4.1.2
 - Website: <http://www.yaml.de>
 
 ## Quick Start
