@@ -63,6 +63,21 @@
   .ym-form select {
     display: inline-block;
   }
+  .ym-form .ym-fbox-check input,
+  .ym-form input[type="radio"],
+  .ym-form input[type="checkbox"] {
+    margin-left: 0.5ex;
+    margin-right: 0;
+  }
+  .ym-form .ym-inline {
+    margin-left: 0;
+  }
+
+  .ym-fbox-wrap input[type="radio"],
+  .ym-fbox-wrap input[type="checkbox"] {
+    margin-left: 0.5ex;
+    margin-right: 0;
+  }
 
   /*------------------------------------------------------------------------------------------------------*/
   /**
@@ -82,6 +97,9 @@
     display: inline;
     float: right;
   }
+  .ym-columnar input + label {
+    margin-right: 0.5ex;
+  }
   .ym-columnar .ym-fbox-check input,
   .ym-columnar .ym-message {
     margin-left: 0;
@@ -92,7 +110,23 @@
     margin-right: 30%;
     margin-left: -3px;
   }
+  .ym-columnar .ym-fbox-wrap .ym-message {
+    margin-right: 0%;
+  }
+  .ym-columnar .ym-fbox-wrap label {
+    margin-right: 0;
+  }
   .ym-columnar .ym-fbox-wrap input {
+    margin-right: 0;
+  }
+  .ym-columnar .ym-fbox-wrap input[type="radio"],
+  .ym-columnar .ym-fbox-wrap input[type="checkbox"] {
+    margin-left: 0.5ex;
+    margin-right: 0;
+  }
+  .ym-columnar .ym-fbox-button input {
+    float: none;
+    margin-left: 1em;
     margin-right: 0;
   }
 

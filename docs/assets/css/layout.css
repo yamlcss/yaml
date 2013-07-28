@@ -422,6 +422,7 @@
     cursor: text;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="image"],
   .ym-form input[type="radio"],
   .ym-form input[type="checkbox"],
   .ym-form select,
@@ -483,6 +484,15 @@
     margin-left: 0;
     margin-right: 0.5ex;
     width: auto;
+    height: auto;
+  }
+  .ym-form input[type="image"] {
+    border: 0;
+    display: inline;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
   .ym-form label,
   .ym-form .ym-label {
@@ -513,6 +523,9 @@
   .ym-fbox-wrap textarea,
   .ym-fbox-wrap select {
     width: 100%;
+  }
+  .ym-fbox-wrap input[type="image"] {
+    width: auto;
   }
   .ym-fbox-wrap input[type="radio"],
   .ym-fbox-wrap input[type="checkbox"] {
@@ -1022,6 +1035,7 @@
     font-weight: bold;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="image"],
   .ym-form input[type="radio"],
   .ym-form input[type="checkbox"] {
     border: 0 none !important;

@@ -117,6 +117,7 @@
     font-weight: bold;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="image"],
   .ym-form input[type="radio"],
   .ym-form input[type="checkbox"] {
     border: 0 none !important;

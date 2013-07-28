@@ -45,6 +45,26 @@
 		select {
 			display: inline-block;
 		}
+
+		// overrule width settings for inline form elements ...
+		.ym-fbox-check input,
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin-left: 0.5ex;
+			margin-right: 0;
+		}
+
+		.ym-inline {
+			margin-left: 0; // reset rounding tolerance ...
+		}
+	}
+
+	.ym-fbox-wrap {
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin-left: 0.5ex;
+			margin-right: 0;
+		}
 	}
 
 	/*------------------------------------------------------------------------------------------------------*/
@@ -72,6 +92,10 @@
 			float:right;
 		}
 
+		input+label {
+			margin-right: 0.5ex;
+		}
+
 		// Indent Checkbox fields to match label-width
 		// Checkboxen um den gleichen Wert einrücken, wie die Breite der labels
 		.ym-fbox-check input,
@@ -86,7 +110,29 @@
 			margin-right: 30%;
 			margin-left: -3px;
 
+			.ym-message {
+				margin-right: 0%;
+			}
+
+			label {
+				margin-right: 0;
+			}
+
 			input {
+				margin-right: 0;
+			}
+
+			input[type="radio"],
+			input[type="checkbox"] {
+				margin-left: 0.5ex;
+				margin-right: 0;
+			}
+		}
+
+		.ym-fbox-button {
+			input {
+				float:none;
+				margin-left: 1em;
 				margin-right: 0;
 			}
 		}

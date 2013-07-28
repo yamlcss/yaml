@@ -5,60 +5,6 @@
 		select {
 			padding: 3px 1px 3px 2px;
 		}
-
-		// overrule width settings for inline form elements ...
-		.ym-fbox-check input,
-		input[type="radio"],
-		input[type="checkbox"] {
-			margin-left: 0.5ex;
-			margin-right: 0;
-		}
-
-		.ym-inline {
-			margin-left: 0; // reset rounding tolerance ...
-		}
-	}
-
-	.ym-fbox-wrap {
-		input[type="radio"],
-		input[type="checkbox"] {
-			margin-left: 0.5ex;
-			margin-right: 0;
-		}
-	}
-
-	.ym-columnar {
-		.ym-fbox-check input,
-		.ym-message {
-			margin-right:30%;
-		}
-
-		// reset indention for wrapped form elements ...
-		.ym-fbox-wrap {
-			margin-right: 30%;
-			margin-left: -3px;
-
-			.ym-message {
-				margin-right: 0%;
-			}
-
-			label {
-				margin-right: 0;
-			}
-
-			input {
-				margin-right: 0;
-			}
-		}
-
-		.ym-fbox-button {
-			input {
-				float:none;
-				margin-left: 1em;
-				margin-right: 0;
-			}
-		}
-
 	}
 
 	/* adjust buttons */

@@ -44,6 +44,7 @@
 		textarea { cursor:text; }
 
 		.ym-fbox-check input,
+		input[type="image"],
 		input[type="radio"],
 		input[type="checkbox"],
 		select,
@@ -121,6 +122,16 @@
 			margin-left: 0;
 			margin-right: 0.5ex;
 			width: auto;
+			height: auto;
+		}
+
+		input[type="image"] {
+			border: 0;
+			display: inline;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			width: auto;
 		}
 
 		label,
@@ -156,6 +167,10 @@
 		textarea,
 		select {
 			width: 100%;
+		}
+
+		input[type="image"] {
+			width: auto;
 		}
 
 		input[type="radio"],
