@@ -196,4 +196,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('build',  ['clean', 'copy', 'compass', 'string-replace', 'cssmin','jshint']);
 	// Build YAML and don't remove @charset rules
 	grunt.registerTask('build-utf8',  ['clean', 'copy', 'compass', 'string-replace:setNamespace', 'string-replace:setVersion', 'string-replace:winUTF8fix', 'cssmin','jshint']);
+	// Travis CI Task for testing
+	grunt.registerTask('travis', ['build']);
 };
