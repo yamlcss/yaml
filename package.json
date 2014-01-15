@@ -7,6 +7,10 @@
   "version"                 : "4.1.2",
   "yamlPrefix"              : "ym-",
 
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+
   "devDependencies": {
     "grunt"                 : "~0.4.0",
     "grunt-contrib-clean"   : "~0.4.0",
