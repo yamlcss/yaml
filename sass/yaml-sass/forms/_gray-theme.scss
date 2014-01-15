@@ -3,25 +3,25 @@
 
 @media screen {
 	.ym-form {
-		background:#f4f4f4;
-		border:2px #fff solid;
+		background: #f4f4f4;
+		border: 2px #fff solid;
 		margin: 0 0 1.5em 0;
 		@include ym-box-shadow(0,0,4px,#ddd);
 
 		fieldset {
-			position:static;
-			background:transparent;
+			position: static;
+			background: transparent;
 			margin: 0.75em 0 0.75em 0;
 			padding: 0 0.5em;
 		}
 
 		legend {
-			background:transparent;
-			color:#000;
-			font-size:1.2em;
-			line-height:1.25em;
-			font-weight:bold;
-			padding:0 0.5em;
+			background: transparent;
+			color: #000;
+			font-size: 1.2em;
+			line-height: 1.25em;
+			font-weight: bold;
+			padding: 0 0.5em;
 		}
 
 		label,
@@ -68,7 +68,7 @@
 		}
 
 		.ym-fbox-check:focus + label {
-			color:#000;
+			color: #000;
 		}
 
 		.ym-gbox-left {
@@ -91,9 +91,9 @@
 		input,
 		textarea,
 		select {
-			border:1px solid #ddd;
+			border: 1px solid #ddd;
 			line-height: 1em;
-			font-family:Arial, Helvetica, sans-serif;
+			font-family: Arial, Helvetica, sans-serif;
 			@include ym-box-shadow(0,0,4px,#eee,inset);
 		}
 
@@ -115,14 +115,14 @@
 		input:active,
 		select:active,
 		textarea:active {
-			border:1px #888 solid;
-			background:#fff;
+			border: 1px #888 solid;
+			background: #fff;
 		}
 
 		optgroup {
-			font-family:Arial, Helvetica, sans-serif;
-			font-style:normal;
-			font-weight:bold;
+			font-family: Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: bold;
 		}
 
 		.ym-fbox-check input,
@@ -134,11 +134,11 @@
 		}
 
 		.ym-message {
-			color:#666;
+			color: #666;
 			margin-bottom: 0.5em;
 		}
 		.ym-required {
-			color:#800;
+			color: #800;
 			font-weight: bold;
 		}
 

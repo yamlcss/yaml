@@ -12,37 +12,37 @@
 	.ym-skip,
 	.ym-hideme,
 	.ym-print {
-		position:absolute;
-		top:-32768px;
-		left:-32768px; // LTR
+		position: absolute;
+		top: -32768px;
+		left: -32768px; // LTR
 	}
 
 	/* (en) make skip links visible when using tab navigation */
 	/* (de) Skip-Links für Tab-Navigation sichtbar schalten */
 	.ym-skip:focus,
 	.ym-skip:active {
-		position:static;
-		top:0;
-		left:0;
+		position: static;
+		top: 0;
+		left: 0;
 	}
 
 	/* skiplinks:technical setup */
 	.ym-skiplinks {
-		position:absolute;
-		top:0px;
-		left:-32768px;
-		z-index:1000;
-		width:100%;
-		margin:0;
-		padding:0;
-		list-style-type:none;
+		position: absolute;
+		top: 0px;
+		left: -32768px;
+		z-index: 1000;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
 
 		.ym-skip:focus,
 		.ym-skip:active {
-			left:32768px;
-			outline:0 none;
-			position:absolute;
-			width:100%;
+			left: 32768px;
+			outline: 0 none;
+			position: absolute;
+			width: 100%;
 		}
 	}
 }

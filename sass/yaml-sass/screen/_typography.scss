@@ -14,7 +14,7 @@
 	/* (en) reset font size for all elements to standard (16 Pixel) */
 	/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
 
-	html * { font-size:100%; }
+	html * { font-size: 100%; }
 
 	/**
 	* (en) reset monospaced elements to font size 16px in all browsers
@@ -108,26 +108,26 @@
 	}
 
 	ul {
-		list-style-type:disc;
+		list-style-type: disc;
 	}
 
 	ol {
-		list-style-type:decimal;
+		list-style-type: decimal;
 	}
 
 	ul ul {
-		list-style-type:circle;
-		margin-top:0;
+		list-style-type: circle;
+		margin-top: 0;
 	}
 
 	ol ol {
-		list-style-type:lower-latin;
-		margin-top:0;
+		list-style-type: lower-latin;
+		margin-top: 0;
 	}
 
 	ol ul {
-		list-style-type:circle;
-		margin-top:0;
+		list-style-type: circle;
+		margin-top: 0;
 	}
 
 	li {
@@ -137,7 +137,7 @@
 	}
 
 	dt {
-		font-weight:bold;
+		font-weight: bold;
 	}
 
 	dd {
@@ -439,7 +439,7 @@
 	}
 
 	caption {
-		font-variant:small-caps;
+		font-variant: small-caps;
 	}
 
 	th,
@@ -479,7 +479,7 @@
 		/* highlight row on mouse over */
 		tr:hover th,
 		tr:hover td {
-			background:#f8f8f8;
+			background: #f8f8f8;
 		}
 	}
 }

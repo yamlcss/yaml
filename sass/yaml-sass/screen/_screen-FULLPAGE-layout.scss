@@ -77,12 +77,12 @@
 	.ym-skiplinks {
 		a.ym-skip:focus,
 		a.ym-skip:active {
-			color:#fff;
-			background:#333;
-			border-bottom:1px #000 solid;
-			padding:10px 0;
+			color: #fff;
+			background: #333;
+			border-bottom: 1px #000 solid;
+			padding: 10px 0;
 			text-align: center;
-			text-decoration:none;
+			text-decoration: none;
 		}
 	}
 }
@@ -118,7 +118,7 @@
 	}
 
 	.ym-searchform {
-		display:block;
+		display: block;
 		float: none;
 		width: auto;
 		text-align: right;
@@ -159,7 +159,7 @@
 	.ym-searchform,
 	nav .ym-hlist ul,
 	nav .ym-hlist li {
-		display:block;
+		display: block;
 		float: none;
 		width: auto;
 		text-align: left;
