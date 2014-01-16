@@ -231,18 +231,18 @@
 		margin-left: $margin-left;
 		margin-right: $margin-right;
 	}
-	[class*="ym-push-"],
-	[class*="ym-pull-"] { position:relative; }
+//  [class*="ym-push-"],
+//  [class*="ym-pull-"] { position:relative; }
 
 	@for $i from 1 through $columns {
 		.ym-#{$prefix}-#{$i} { width: $column_width * $i; }
 	}
 
 	@for $i from 1 through $columns - 1 {
-		.ym-push-#{$i} { left: $column_width * $i; }
+		.ym-push-#{$i} { left: $column_width * $i; position: relative; }
 	}
 
 	@for $i from 1 through $columns - 1 {
-		.ym-pull-#{$i} { left: -$column_width * $i; }
+		.ym-pull-#{$i} { left: -$column_width * $i; position: relative; }
 	}
 }
