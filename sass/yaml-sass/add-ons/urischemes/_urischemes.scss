@@ -1,0 +1,20 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * YAML-Addon:URI Schemes
+ */
+@media all {
+	
+	a[href^="tel:"]:BEFORE {
+		content: "☎ ";
+	}
+
+	a[href^="bitcoin:"]:BEFORE {
+		content: "B⃦ ";
+	}
+
+	a[href^="mailto:"]:BEFORE {
+		content: "✉ ";
+	}
+
+}

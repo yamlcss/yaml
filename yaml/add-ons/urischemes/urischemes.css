@@ -1,20 +1,15 @@
+@charset "UTF-8";
 /**
  * "Yet Another Multicolumn Layout" - YAML CSS Framework
  *
  * YAML-Addon:URI Schemes
  */
 @media all {
-	
-	a[href^="tel:"]:BEFORE {
-		content: "☎ ";
-	}
+  a[href^="tel:"]:BEFORE {
+    content: "☎ "; }
 
-	a[href^="bitcoin:"]:BEFORE {
-		content: "B⃦ ";
-	}
+  a[href^="bitcoin:"]:BEFORE {
+    content: "B⃦ "; }
 
-	a[href^="mailto:"]:BEFORE {
-		content: "✉ ";
-	}
-
-}
+  a[href^="mailto:"]:BEFORE {
+    content: "✉ "; } }
