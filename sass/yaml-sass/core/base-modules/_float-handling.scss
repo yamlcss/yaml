@@ -6,16 +6,16 @@
 	/* (en) clearfix method for clearing floats */
 	/* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
 	.ym-clearfix:before {
-		content:"";
-		display:table;
+		content: "";
+		display: table;
 	}
 	.ym-clearfix:after {
-		clear:both;
-		content:".";
-		display:block;
-		font-size:0;
-		height:0;
-		visibility:hidden;
+		clear: both;
+		content: ".";
+		display: block;
+		font-size: 0;
+		height: 0;
+		visibility: hidden;
 	}
 
 	/* (en) alternative solutions to contain floats */

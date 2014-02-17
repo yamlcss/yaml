@@ -15,7 +15,7 @@
 	* @app-yaml-default disabled
 	*/
 
-	/* body { background:#0f0; background-image:none; }	 */
+	/* body { background: #0f0; background-image: none; }	 */
 
 	/**
 	* Correct inline positioning for unknown HTML5 elements in IE 6 & 7
@@ -38,7 +38,7 @@
 	* @valid     no
 	*/
 
-	body { o\verflow:visible; }
+	body { o\verflow: visible; }
 
 	/**
 	* (en) HTML5 - default media element styles
@@ -47,7 +47,7 @@
 
 	article,aside,details,figcaption,figure,
 	footer,header,main,nav,section {
-		zoom:1;
+		zoom: 1;
 	}
 
 	audio,
@@ -79,16 +79,16 @@
 	*/
 
 	* html iframe,
-	* html frame { overflow:auto; }
+	* html frame { overflow: auto; }
 	* html input,
-	* html frameset { overflow:hidden; }
-	* html textarea { overflow:scroll; overflow-x:hidden; }
+	* html frameset { overflow: hidden; }
+	* html textarea { overflow: scroll; overflow-x: hidden; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
 	/**
-	* (en) Stability fixes with 'position:relative'
-	* (de) Stabilitätsverbesserungen durch 'position:relative'
+	* (en) Stability fixes with 'position: relative'
+	* (de) Stabilitätsverbesserungen durch 'position: relative'
 	*
 	* Essential for correct scaling in IE7 (body). IE5 must get static positioned body instead.
 	* Helpful to fix several possible problems in older IE versions (#main).
@@ -99,8 +99,8 @@
 	* @valid		 yes
 	*/
 
-	body, #main { position:relative; }
-	* html body { position:static; }
+	body, #main { position: relative; }
+	* html body { position: static; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -115,7 +115,7 @@
 	* @valid     yes
 	*/
 
-	.ym-clearfix { zoom:1; }	/* hasLayout aktivieren */
+	.ym-clearfix { zoom: 1; }	/* hasLayout aktivieren */
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -131,7 +131,7 @@
 
 	* html .ym-col1,
 	* html .ym-col2,
-	* html .ym-col3 { position:relative; }
+	* html .ym-col3 { position: relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -145,13 +145,13 @@
 	* @valid     no
 	*/
 
-	body { height:1%; }
-	.ym-wrapper, .ym-wbox, #header, #nav, #main, #footer { zoom:1; }	/* IE6 & IE7	*/
-	* html .ym-wrapper, * html .ym-wbox { height:1%; hei\ght:auto; }	/* IE 5.x & IE6 | IE6 only */
-	* html #header, * html #nav, * html #main, * html #footer { width:100%; wid\th:auto; }	/* IE 5.x & IE6 | IE6 only */
+	body { height: 1%; }
+	.ym-wrapper, .ym-wbox, #header, #nav, #main, #footer { zoom: 1; }	/* IE6 & IE7	*/
+	* html .ym-wrapper, * html .ym-wbox { height: 1%; hei\ght: auto; }	/* IE 5.x & IE6 | IE6 only */
+	* html #header, * html #nav, * html #main, * html #footer { width: 100%; wid\th: auto; }	/* IE 5.x & IE6 | IE6 only */
 
 	/* trigger hasLayout to force containing content */
-	.ym-gbox, .ym-gbox-left, .ym-gbox-right { height:1%; }
+	.ym-gbox, .ym-gbox-left, .ym-gbox-right { height: 1%; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -165,7 +165,7 @@
 	* @valid     yes
 	*/
 
-	* html ul, * html ol, * html dl { position:relative; }
+	* html ul, * html ol, * html dl { position: relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -178,7 +178,7 @@
 	* @valid     yes
 	*/
 
-	body ol li { display:list-item; }
+	body ol li { display: list-item; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -207,7 +207,7 @@
 	button, input { *overflow: visible !important; }
 	table button, table input { *overflow: auto; }
 
-	fieldset, legend { position:relative; }
+	fieldset, legend { position: relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -222,18 +222,18 @@
 
 	.ym-form,
 	.ym-form div,
-	.ym-form div * { zoom:1; }
+	.ym-form div * { zoom: 1; }
 
 	.ym-form {
 		// default form element width
 		input,
 		textarea {
-			width:68%;
+			width: 68%;
 			padding-left: 1% !important;
 			padding-right: 1% !important;
 		}
 		select {
-			width:70%;
+			width: 70%;
 			padding-left: 1% !important;
 			padding-right: 1% !important;
 		}
@@ -250,12 +250,12 @@
 	.ym-full {
 		input,
 		textarea {
-			width:98%;
+			width: 98%;
 			margin-right: -3px;
 		}
 
 		select {
-			width:100%;
+			width: 100%;
 			margin-right: -3px;
 		}
 	}
@@ -281,12 +281,12 @@
 
 	/**
 	* (en) Workaround for 'collapsing margin at #col3' when using CSS-property clear
-	*		 Left margin of #col3 collapses when using clear:both in 1-3-2 (or 2-3-1) layout and right column is the
+	*		 Left margin of #col3 collapses when using clear: both in 1-3-2 (or 2-3-1) layout and right column is the
 	*		 longest and left column is the shortest one. For IE6 and IE7 a special workaround was developed
 	*		 in YAML.
 	*
 	* (de) Workaround für 'kollabierenden Margin an #col3' bei Verwendung der CSS-Eigenschaft clear
-	*		 Der linke Margin von #col3 kollabiert bei der Verwendung von clear:both im 1-3-2 (oder 2-3-1) Layout
+	*		 Der linke Margin von #col3 kollabiert bei der Verwendung von clear: both im 1-3-2 (oder 2-3-1) Layout
 	*		 wenn gleichzeitig die linke Spalte die kürzeste und die rechte die längste ist. Im IE6 und IE7 lässt
 	*		 sich der Bug durch eine speziell für YAML entwickelten Workaround umgehen.
 	*
@@ -299,35 +299,35 @@
 	html .ym-ie-clearing {
 		/* (en) Only a small help for debugging */
 		/* (de) Nur eine kleine Hilfe zur Fehlersuche */
-		position:static;
+		position: static;
 
 		/* (en) Make container visible in IE */
 		/* (de) Container sichtbar machen im IE */
-		display:block;
+		display: block;
 
 		/* (en) No fix possible in IE5.x, normal clearing used instead */
 		/* (de) Kein Fix im IE5.x möglich, daher normales Clearing */
-		\clear:both;
+		\clear: both;
 
 		/* (en) forcing clearing-like behavior with a simple oversized container in IE6 & IE7*/
 		/* (de) IE-Clearing mit 100%-DIV für IE6 bzw. übergroßem Container im IE7 */
-		width:100%;
+		width: 100%;
 		line-height: 0;
-		font-size:0px;
-		margin:-2px 0 -1em 1px;
+		font-size: 0px;
+		margin: -2px 0 -1em 1px;
 	}
 
-	* html .ym-ie-clearing { margin:-2px 0 -1em 0; }
-	.ym-cbox { margin-bottom:-2px; }
+	* html .ym-ie-clearing { margin: -2px 0 -1em 0; }
+	.ym-cbox { margin-bottom: -2px; }
 
 	/* (en) avoid horizontal scrollbars in IE7 in borderless layouts because of negative margins */
 	/* (de) Vermeidung horizontaler Scrollbalken bei randabfallenden Layouts im IE7 */
-	html { margin-right:1px; }
-	* html { margin-right:0; }
+	html { margin-right: 1px; }
+	* html { margin-right: 0; }
 
 	/* (en) Bugfix:Essential for IE7 */
 	/* (de) Bugfix:Notwendig im IE7 */
-	.ym-col3 { position:relative; }
+	.ym-col3 { position: relative; }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -357,32 +357,32 @@
 	* @css-for   IE 5.x/Win, IE6, IE7
 	* @valid     yes
 	*/
-	.ym-col1, .ym-col2 { display:inline; }
+	.ym-col1, .ym-col2 { display: inline; }
 
 	/* Fix for:"Linking to anchors in elements within the containing block" Problem in IE5.x & IE 6.0 */
-	.ym-grid { overflow:hidden; display:block; }
-	* html .ym-grid { overflow:visible; }
+	.ym-grid { overflow: hidden; display: block; }
+	* html .ym-grid { overflow: visible; }
 
 	.ym-gl,
 	.ym-gr { display: inline; }
 
 	/* transform CSS tables back into floats */
 	.ym-equalize .ym-gl {
-		float:left; display:inline;
-		padding-bottom:32767px;
-		margin-bottom:-32767px;
+		float: left; display: inline;
+		padding-bottom: 32767px;
+		margin-bottom: -32767px;
 	}
 
 	.ym-equalize .ym-gr {
-		float:right; margin-left:-5px; display:inline;
-		padding-bottom:32767px;
-		margin-bottom:-32767px;
+		float: right; margin-left: -5px; display: inline;
+		padding-bottom: 32767px;
+		margin-bottom: -32767px;
 	}
 
 	.no-ie-padding .ym-gl,
 	.no-ie-padding .ym-gr {
-		padding-bottom:0;
-		margin-bottom:0;
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	/*------------------------------------------------------------------------------------------------------*/
@@ -399,12 +399,12 @@
 
 	* html .ym-cbox-left,
 	* html .ym-cbox-right,
-	* html .ym-cbox { word-wrap:break-word; }
+	* html .ym-cbox { word-wrap: break-word; }
 
 	/* avoid growing widths */
 	* html .ym-gbox,
 	* html .ym-gbox-left,
-	* html .ym-gbox-right { word-wrap:break-word; o\verflow:hidden; }
+	* html .ym-gbox-right { word-wrap: break-word; o\verflow: hidden; }
 }
 
 @media print {
@@ -422,5 +422,5 @@
 	.ym-gbox,
 	.ym-gbox-left,
 	.ym-gbox-right,
-	.ym-col3 { height:1%; }
+	.ym-col3 { height: 1%; }
 }

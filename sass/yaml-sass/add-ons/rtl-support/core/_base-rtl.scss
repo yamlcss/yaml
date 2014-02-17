@@ -31,7 +31,7 @@
 
 	/* set text flow */
 	.ym-form {
-		direction:rtl;
+		direction: rtl;
 
 		* {
 			text-align: right;
@@ -81,15 +81,15 @@
 		input,
 		textarea,
 		select {
-			float:right;
+			float: right;
 			margin-right: 0;
 			margin-left: -3px;
 		}
 
 		label,
 		.ym-label {
-			display:inline;
-			float:right;
+			display: inline;
+			float: right;
 		}
 
 		input+label {
@@ -131,7 +131,7 @@
 
 		.ym-fbox-button {
 			input {
-				float:none;
+				float: none;
 				margin-left: 1em;
 				margin-right: 0;
 			}

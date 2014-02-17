@@ -4,9 +4,9 @@
 
 // BOX SIZING
 @mixin ym-box-sizing($type: border-box) {
-	-webkit-box-sizing:	$type;
-	-moz-box-sizing:	$type;
-	box-sizing:			$type;
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
 }
 
 // BOX SHADOW
@@ -40,7 +40,7 @@
 
 @mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both, $fallback: $start-color) {
 	$old-direction: top;
-	$very-old-direction:"left top, left bottom";
+	$very-old-direction: "left top, left bottom";
 	$ie-direction: 0;
 
 	@if $direction == "to right" {
@@ -51,10 +51,10 @@
 
 	@if $output != "oldie" {
 		background-image: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
-		background-image:  -webkit-linear-gradient($old-direction, $start-color,$end-color);
-		background-image: 	-moz-linear-gradient($old-direction, $start-color,$end-color);
-		background-image: 	 -ms-linear-gradient($old-direction, $start-color,$end-color);
-		background-image:    		 unquote("linear-gradient(#{$direction}, #{$start-color},#{$end-color})");
+		background-image: -webkit-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: -moz-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: -ms-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: unquote("linear-gradient(#{$direction}, #{$start-color},#{$end-color})");
 	}
 
 	@if $output != "css3" {
@@ -134,7 +134,7 @@
 @mixin ym-linearize-forms {
 	// linearization for form module
 	& label {
-		float:none;
+		float: none;
 	}
 
 	& .ym-label,
@@ -175,17 +175,17 @@
 //
 @mixin ym-clearfix {
 	&:before {
-		content:"";
-		display:table;
+		content: "";
+		display: table;
 	}
 
 	&:after {
-		clear:both;
-		content:".";
-		display:block;
-		font-size:0;
-		height:0;
-		visibility:hidden;
+		clear: both;
+		content: ".";
+		display: block;
+		font-size: 0;
+		height: 0;
+		visibility: hidden;
 	}
 
 	// IE < 8
@@ -232,7 +232,7 @@
 		margin-right: $margin-right;
 	}
 	[class*="ym-push-"],
-	[class*="ym-pull-"] { position:relative; }
+	[class*="ym-pull-"] { position: relative; }
 
 	@for $i from 1 through $columns {
 		.ym-#{$prefix}-#{$i} { width: $column_width * $i; }

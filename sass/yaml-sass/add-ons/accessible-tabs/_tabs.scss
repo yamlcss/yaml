@@ -1,22 +1,22 @@
 @media screen, projection {
 	.jquery_tabs {
-		margin:0 0 1.5em 0;
+		margin: 0 0 1.5em 0;
 
 		ul.tabs-list {
 			font-size: 1em;
-			display:table;
-			table-layout:fixed;
-			list-style-type:none;
+			display: table;
+			table-layout: fixed;
+			list-style-type: none;
 			margin: 0;
-			position:relative;
-			z-index:1;
+			position: relative;
+			z-index: 1;
 
 			li {
 				margin: 0 4px 0 0;
-				border:0 none;
-				display:inline;
-				float:left;
-				padding:0;
+				border: 0 none;
+				display: inline;
+				float: left;
+				padding: 0;
 
 				a {
 					font-size: 1em;
@@ -24,21 +24,21 @@
 					padding: 0.75em;
 					background: transparent;
 
-					display:block;
-					float:left;
-					font-weight:normal;
-					margin:0;
+					display: block;
+					float: left;
+					font-weight: normal;
+					margin: 0;
 
 					&:focus,
 					&:hover,
 					&:active {
-						background:#eee;
+						background: #eee;
 						border-radius: 0.2em 0.2em 0 0;
-						color:#000;
+						color: #000;
 
-						font-weight:normal;
+						font-weight: normal;
 						outline: 0 none;
-						text-decoration:none;
+						text-decoration: none;
 					}
 				}
 
@@ -47,14 +47,14 @@
 					a:focus,
 					a:hover,
 					a:active {
-						background:#fff;
-						border:1px #ccc solid;
-						border-radius:0.2em 0.2em 0 0;
-						color:#000;
+						background: #fff;
+						border: 1px #ccc solid;
+						border-radius: 0.2em 0.2em 0 0;
+						color: #000;
 
-						border-bottom:0 none;
-						font-weight:bold;
-						text-decoration:none;
+						border-bottom: 0 none;
+						font-weight: bold;
+						text-decoration: none;
 					}
 				}
 			}
@@ -63,23 +63,23 @@
 		.content {
 			border-top: 1px #ccc solid;
 
-			clear:both;
+			clear: both;
 			padding: 0;
-			position:relative;
-			top:-1px;
-			margin-bottom:-1px;
+			position: relative;
+			top: -1px;
+			margin-bottom: -1px;
 		}
 	}
 
 	/* hiding texts visually */
 	.jquery_tabs .tabhead {
-		position:absolute;
-		left:-32768px; // LTR
+		position: absolute;
+		left: -32768px; // LTR
 	}
 	.jquery_tabs .current-info,
 	.jquery_tabs .accessibletabsanchor {
-		left:-999em;
-		position:absolute;
+		left: -999em;
+		position: absolute;
 	}
 
    /** Avoid margin collapsing to enable correct sync of all tabs
@@ -94,7 +94,7 @@
 		border-bottom: 1px transparent solid;
 		border-top: 1px transparent solid;
 		padding-top: 1.5em;
-		*overflow:hidden;
+		*overflow: hidden;
 	}
 
 	/** Containing floats adjustment and stability fixes for Internet Explorer
@@ -106,9 +106,9 @@
 	 */
 
 	* html .jquery_tabs {
-		zoom:1;
-		width:auto;
-		position:relative;
+		zoom: 1;
+		width: auto;
+		position: relative;
 
 		// IE < 7 don't support transparent borders
 	 	.tab-content {
@@ -117,12 +117,12 @@
 		}
 
 		.content {
-			z-index:-1;
+			z-index: -1;
 		}
 	}
 
-	*+html .jquery_tabs { zoom:1; width:auto; }
-	.jquery_tabs * { zoom:1; }
+	*+html .jquery_tabs { zoom: 1; width: auto; }
+	.jquery_tabs * { zoom: 1; }
 }
 
 /* Make tabs printable */
