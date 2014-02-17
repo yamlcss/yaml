@@ -396,8 +396,8 @@
   * | /form                         |
   * |-------------------------------|
   *
-  * (en) Styling of forms where both label and input/select/textarea are styled with display:block;
-  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+  * (en) Styling of forms where both label and input/select/textarea are styled with display: block;
+  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display: block; gestaltet werden
   */
   .ym-form,
   .ym-form fieldset {
@@ -674,8 +674,8 @@
   /**
   * @section print adjustments for core modules
   *
-  * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
-  * (de) Floats in Grids einschließen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (en) float containment for grids. Uses display: table to avoid bugs in FF & IE
+  * (de) Floats in Grids einschließen. Verwendet display: table, um Darstellungsprobleme im FF & IE zu vermeiden
   *
   * @bugfix
   * @since     3.0

@@ -22,11 +22,6 @@
   margin-right: 10px;
 }
 
-[class*="ym-push-"],
-[class*="ym-pull-"] {
-  position: relative;
-}
-
 .ym-g960-1 {
   width: 60px;
 }
@@ -89,6 +84,10 @@
 
 .ym-g960-16 {
   width: 960px;
+}
+
+.ym-push-1, .ym-pull-1, .ym-push-2, .ym-pull-2, .ym-push-3, .ym-pull-3, .ym-push-4, .ym-pull-4, .ym-push-5, .ym-pull-5, .ym-push-6, .ym-pull-6, .ym-push-7, .ym-pull-7, .ym-push-8, .ym-pull-8, .ym-push-9, .ym-pull-9, .ym-push-10, .ym-pull-10, .ym-push-11, .ym-pull-11, .ym-push-12, .ym-pull-12, .ym-push-13, .ym-pull-13, .ym-push-14, .ym-pull-14, .ym-push-15, .ym-pull-15 {
+  position: relative;
 }
 
 .ym-push-1 {
