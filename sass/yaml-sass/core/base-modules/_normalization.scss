@@ -5,12 +5,19 @@
 
 	/* (en) Global reset of paddings and margins for all HTML elements */
 	/* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
-	* { margin: 0; padding: 0; }
+  * {
+    margin: 0; padding: 0;
+  }
 
 	/* (en) Correction: margin/padding reset caused too small select boxes. */
 	/* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
-	option { padding-left: 0.4em; } // LTR
-	select { padding: 1px; }
+  // LTR
+  option {
+    padding-left: 0.4em;
+  }
+  select {
+    padding: 1px;
+  }
 
 	/*
 	* (en) Global fix of the Italics bugs in IE 5.x and IE 6
@@ -22,7 +29,9 @@
 	* @valid      yes
 	*/
 
-	* html body * { overflow: visible; }
+  * html body * {
+    overflow: visible;
+  }
 
 	/*
 	* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
@@ -131,24 +140,39 @@
 	/* (en) Clear borders for <fieldset> and <img> elements */
 	/* (de) Rahmen für <fieldset> und <img> Elemente löschen */
 	fieldset,
-	img { border: 0 solid; }
+  img {
+    border: 0 solid;
+  }
 
 	/* (en) new standard values for lists, blockquote, cite and tables */
 	/* (de) Neue Standardwerte für Listen, Zitate und Tabellen */
+  // LTR
 	ul,
 	ol,
-	dl { margin: 0 0 1em 1em; } // LTR
+	dl {
+    margin: 0 0 1em 1em;
+  }
 
 	li {
 		line-height: 1.5em;
 		margin-left: 0.8em; // LTR
 	}
 
-	dt { font-weight: bold; }
-	dd { margin: 0 0 1em 0.8em; } // LTR
+  dt {
+    font-weight: bold;
+  }
+  // LTR
+  dd {
+    margin: 0 0 1em 0.8em;
+  }
 
-	blockquote { margin: 0 0 1em 0.8em; } // LTR
-	q { quotes: none; }
+  // LTR
+  blockquote {
+    margin: 0 0 1em 0.8em;
+  }
+  q {
+    quotes: none;
+  }
 
 	blockquote:before,
 	blockquote:after,

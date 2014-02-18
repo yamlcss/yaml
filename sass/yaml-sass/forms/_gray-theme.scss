@@ -144,9 +144,13 @@
 
 		// valid & invalid state
 		input:valid,
-		textarea:valid { background-color: #fff; }
+    textarea:valid {
+      background-color: #fff;
+    }
 		input:invalid,
-		textarea:invalid { background-color: #fdd; }
+    textarea:invalid {
+      background-color: #fdd;
+    }
 
 		.ym-error {
 			label {
@@ -219,10 +223,22 @@
 
 	/* Button size-scaling classes */
 	.ym-button {
-		&.ym-xlarge { font-size: 1.5em; } /* 21px */
-		&.ym-large { font-size: 1.2857em; } /* 18px */
-		&.ym-small { font-size: 0.8571em; } /* 12px */
-		&.ym-xsmall { font-size: 0.7143em; } /* 10px */
+    &.ym-xlarge {
+      /* 21px */
+      font-size: 1.5em;
+    }
+    &.ym-large {
+      /* 18px */
+      font-size: 1.2857em;
+    }
+    &.ym-small {
+      /* 12px */
+      font-size: 0.8571em;
+    }
+    &.ym-xsmall {
+      /* 10px */
+      font-size: 0.7143em;
+    }
 	}
 
 	/* Button color scheme: primary */
@@ -356,20 +372,48 @@
 		pointer-events: none;
 	}
 
-	.ym-add:before { content: "\271A"; }
-	.ym-delete:before { content: "\2718"; }
-	.ym-close:before { content: "\2715"; }
-	.ym-edit:before { content: "\270E"; }
-	.ym-email:before { content: "\2709"; }
-	.ym-like:before { content: "\2764"; }
-	.ym-next:before { content: "\279C"; }
-	.ym-play:before { content: "\25B6"; }
-	.ym-reply:before { content: "\27A5"; }
-	.ym-save:before { content: "\2714"; }
-	.ym-sign:before { content: "\270D"; }
-	.ym-spark:before { content: "\2737"; }
-	.ym-support:before { content: "\2706"; }
-	.ym-star:before { content: "\2605"; }
+  .ym-add:before {
+    content: "\271A";
+  }
+  .ym-delete:before {
+    content: "\2718";
+  }
+  .ym-close:before {
+    content: "\2715";
+  }
+  .ym-edit:before {
+    content: "\270E";
+  }
+  .ym-email:before {
+    content: "\2709";
+  }
+  .ym-like:before {
+    content: "\2764";
+  }
+  .ym-next:before {
+    content: "\279C";
+  }
+  .ym-play:before {
+    content: "\25B6";
+  }
+  .ym-reply:before {
+    content: "\27A5";
+  }
+  .ym-save:before {
+    content: "\2714";
+  }
+  .ym-sign:before {
+    content: "\270D";
+  }
+  .ym-spark:before {
+    content: "\2737";
+  }
+  .ym-support:before {
+    content: "\2706";
+  }
+  .ym-star:before {
+    content: "\2605";
+  }
 	/* removes extra inner spacing in Firefox */
 	.ym-form button::-moz-focus-inner {
 		border: 0;
@@ -466,10 +510,22 @@
 			}
 
 			/* Button size-scaling classes */
-			&.ym-xlarge { font-size: 1.5em; } /* 21px */
-			&.ym-large { font-size: 1.2857em; } /* 18px */
-			&.ym-small { font-size: 0.8571em; } /* 12px */
-			&.ym-xsmall { font-size: 0.7143em; } /* 10px */
+      &.ym-xlarge {
+        /* 21px */
+        font-size: 1.5em;
+      }
+      &.ym-large {
+        /* 18px */
+        font-size: 1.2857em;
+      }
+      &.ym-small {
+        /* 12px */
+        font-size: 0.8571em;
+      }
+      &.ym-xsmall {
+        /* 10px */
+        font-size: 0.7143em;
+      }
 		}
 	}
 }

@@ -62,52 +62,90 @@
 
 		// Level 1
 		li {
+      // LTR
 			a,
 			strong,
-			span { width: 90%; padding-left: 10%; } // LTR
+      span {
+        width: 90%;
+        padding-left: 10%;
+      }
 
 			a:focus,
 			a:hover,
-			a:active { background-color: #888; color: #fff; outline: 0 none; }
+      a:active {
+        background-color: #888;
+        color: #fff;
+        outline: 0 none;
+      }
 		}
 
 		// Level 2
 		li ul li  {
+      // LTR
 			a,
 			strong,
-			span { width: 80%; padding-left: 20%; } // LTR
+      span {
+        width: 80%;
+        padding-left: 20%;
+      }
 
 			a,
-			a:visited { background-color: #f8f8f8; color: #333; }
+      a:visited {
+        background-color: #f8f8f8;
+        color: #333;
+      }
 			a:focus,
 			a:hover,
-			a:active { background-color: #888; color: #fff; }
+      a:active {
+        background-color: #888;
+        color: #fff;
+      }
 		}
 
 		// Level 3
 		li ul li ul li {
+      // LTR
 			a,
 			strong,
-			span { width: 70%; padding-left: 30%; } // LTR
+      span {
+        width: 70%;
+        padding-left: 30%;
+      }
 
 			a,
-			a:visited{ background-color: #f0f0f0; color: #222; }
+      a:visited{
+        background-color: #f0f0f0;
+        color: #222;
+      }
 			a:focus,
 			a:hover,
-			a:active { background-color: #888; color: #fff; }
+      a:active {
+        background-color: #888;
+        color: #fff;
+      }
 		}
 
 		// Level 4
 		li ul li ul li ul li {
+      // LTR
 			a,
 			strong,
-			span { width: 60%; padding-left: 40%; } // LTR
+      span {
+        width: 60%;
+        padding-left: 40%;
+      }
 
 			a,
-			a:visited { background-color: #e8e8e8; color: #111; }
+      a:visited {
+        background-color: #e8e8e8;
+        color: #111;
+      }
 			a:focus,
 			a:hover,
-			a:active { background-color: #888; color: #fff; }
+      a:active {
+        background-color: #888;
+        color: #fff;
+      }
 		}
 	}
 

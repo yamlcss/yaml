@@ -7,7 +7,9 @@
 	* Changing direction of text flow, paddings & margins ...
 	*/
 
-	option { padding: 0 0.4em 0 0; }
+  option {
+    padding: 0 0.4em 0 0;
+  }
 
 	body {
 		text-align: right;
@@ -16,16 +18,22 @@
 
 	ul,
 	ol,
-	dl { margin: 0 1em 1em 0; }
+  dl {
+    margin: 0 1em 1em 0;
+  }
 
 	li {
 		margin-left: 0;
 		margin-right: 0.8em;
 	}
 
-	dd { margin: 0 0.8em 1em 0; }
+  dd {
+    margin: 0 0.8em 1em 0;
+  }
 	blockquote,
-	cite { margin: 0 0.8em 1em 0; }
+  cite {
+    margin: 0 0.8em 1em 0;
+  }
 
 
 
@@ -154,13 +162,17 @@
 		left: 32768px !important;
 		.ym-skip {
 			&:focus,
-			&:active{ left: -32768px !important; }
+      &:active{
+        left: -32768px !important;
+      }
 		}
 	}
 
 	.ym-skip,
 	.ym-hideme,
-	.ym-print { left: 32768px !important; }
+  .ym-print {
+    left: 32768px !important;
+  }
 	/*------------------------------------------------------------------------------------------------------*/
 
 	/**
