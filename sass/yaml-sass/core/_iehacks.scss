@@ -15,7 +15,9 @@
 	* @app-yaml-default disabled
 	*/
 
-	/* body { background: #0f0; background-image: none; }	 */
+  /* body {
+    background: #0f0; background-image: none;
+  } */
 
 	/**
 	* Correct inline positioning for unknown HTML5 elements in IE 6 & 7
@@ -38,7 +40,9 @@
 	* @valid     no
 	*/
 
-	body { o\verflow: visible; }
+  body {
+    o\verflow: visible;
+  }
 
 	/**
 	* (en) HTML5 - default media element styles
@@ -79,10 +83,17 @@
 	*/
 
 	* html iframe,
-	* html frame { overflow: auto; }
+  * html frame {
+    overflow: auto;
+  }
 	* html input,
-	* html frameset { overflow: hidden; }
-	* html textarea { overflow: scroll; overflow-x: hidden; }
+  * html frameset {
+    overflow: hidden;
+  }
+  * html textarea {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -99,8 +110,12 @@
 	* @valid		 yes
 	*/
 
-	body, #main { position: relative; }
-	* html body { position: static; }
+  body, #main {
+    position: relative;
+  }
+  * html body {
+    position: static;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -115,7 +130,10 @@
 	* @valid     yes
 	*/
 
-	.ym-clearfix { zoom: 1; }	/* hasLayout aktivieren */
+  /* hasLayout aktivieren */
+  .ym-clearfix {
+    zoom: 1;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -131,7 +149,9 @@
 
 	* html .ym-col1,
 	* html .ym-col2,
-	* html .ym-col3 { position: relative; }
+  * html .ym-col3 {
+    position: relative;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -145,13 +165,28 @@
 	* @valid     no
 	*/
 
-	body { height: 1%; }
-	.ym-wrapper, .ym-wbox, #header, #nav, #main, #footer { zoom: 1; }	/* IE6 & IE7	*/
-	* html .ym-wrapper, * html .ym-wbox { height: 1%; hei\ght: auto; }	/* IE 5.x & IE6 | IE6 only */
-	* html #header, * html #nav, * html #main, * html #footer { width: 100%; wid\th: auto; }	/* IE 5.x & IE6 | IE6 only */
+  body {
+    height: 1%;
+  }
+  /* IE6 & IE7 */
+  .ym-wrapper, .ym-wbox, #header, #nav, #main, #footer {
+    zoom: 1;
+  }
+  /* IE 5.x & IE6 | IE6 only */
+  * html .ym-wrapper, * html .ym-wbox {
+    height: 1%;
+    hei\ght: auto;
+  }
+  /* IE 5.x & IE6 | IE6 only */
+  * html #header, * html #nav, * html #main, * html #footer {
+    width: 100%;
+    wid\th: auto;
+  }
 
 	/* trigger hasLayout to force containing content */
-	.ym-gbox, .ym-gbox-left, .ym-gbox-right { height: 1%; }
+  .ym-gbox, .ym-gbox-left, .ym-gbox-right {
+    height: 1%;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -165,7 +200,9 @@
 	* @valid     yes
 	*/
 
-	* html ul, * html ol, * html dl { position: relative; }
+  * html ul, * html ol, * html dl {
+    position: relative;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -178,7 +215,9 @@
 	* @valid     yes
 	*/
 
-	body ol li { display: list-item; }
+  body ol li {
+    display: list-item;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -204,10 +243,16 @@
 	* @valid     no
 	*/
 
-	button, input { *overflow: visible !important; }
-	table button, table input { *overflow: auto; }
+  button, input {
+    *overflow: visible !important;
+  }
+  table button, table input {
+    *overflow: auto;
+  }
 
-	fieldset, legend { position: relative; }
+  fieldset, legend {
+    position: relative;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -222,7 +267,9 @@
 
 	.ym-form,
 	.ym-form div,
-	.ym-form div * { zoom: 1; }
+  .ym-form div * {
+    zoom: 1;
+  }
 
 	.ym-form {
 		// default form element width
@@ -317,17 +364,27 @@
 		margin: -2px 0 -1em 1px;
 	}
 
-	* html .ym-ie-clearing { margin: -2px 0 -1em 0; }
-	.ym-cbox { margin-bottom: -2px; }
+  * html .ym-ie-clearing {
+    margin: -2px 0 -1em 0;
+  }
+  .ym-cbox {
+    margin-bottom: -2px;
+  }
 
 	/* (en) avoid horizontal scrollbars in IE7 in borderless layouts because of negative margins */
 	/* (de) Vermeidung horizontaler Scrollbalken bei randabfallenden Layouts im IE7 */
-	html { margin-right: 1px; }
-	* html { margin-right: 0; }
+  html {
+    margin-right: 1px;
+  }
+  * html {
+    margin-right: 0;
+  }
 
 	/* (en) Bugfix:Essential for IE7 */
 	/* (de) Bugfix:Notwendig im IE7 */
-	.ym-col3 { position: relative; }
+  .ym-col3 {
+    position: relative;
+  }
 
 	/*------------------------------------------------------------------------------------------------------*/
 
@@ -357,14 +414,23 @@
 	* @css-for   IE 5.x/Win, IE6, IE7
 	* @valid     yes
 	*/
-	.ym-col1, .ym-col2 { display: inline; }
+  .ym-col1, .ym-col2 {
+    display: inline;
+  }
 
 	/* Fix for:"Linking to anchors in elements within the containing block" Problem in IE5.x & IE 6.0 */
-	.ym-grid { overflow: hidden; display: block; }
-	* html .ym-grid { overflow: visible; }
+  .ym-grid {
+    overflow: hidden;
+    display: block;
+  }
+  * html .ym-grid {
+    overflow: visible;
+  }
 
 	.ym-gl,
-	.ym-gr { display: inline; }
+  .ym-gr {
+    display: inline;
+  }
 
 	/* transform CSS tables back into floats */
 	.ym-equalize .ym-gl {
@@ -399,12 +465,17 @@
 
 	* html .ym-cbox-left,
 	* html .ym-cbox-right,
-	* html .ym-cbox { word-wrap: break-word; }
+  * html .ym-cbox {
+    word-wrap: break-word;
+  }
 
 	/* avoid growing widths */
 	* html .ym-gbox,
 	* html .ym-gbox-left,
-	* html .ym-gbox-right { word-wrap: break-word; o\verflow: hidden; }
+  * html .ym-gbox-right {
+    word-wrap: break-word;
+    o\verflow: hidden;
+  }
 }
 
 @media print {
@@ -422,5 +493,7 @@
 	.ym-gbox,
 	.ym-gbox-left,
 	.ym-gbox-right,
-	.ym-col3 { height: 1%; }
+  .ym-col3 {
+    height: 1%;
+  }
 }

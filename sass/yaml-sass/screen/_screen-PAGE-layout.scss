@@ -15,7 +15,9 @@
 		margin: 0 auto;
 	}
 
-	.ym-wbox { padding: 10px; }
+  .ym-wbox {
+    padding: 10px;
+  }
 
 	/* Basic Element Styling */
 	header {
@@ -71,10 +73,16 @@
 		margin-right: -340px;
 	}
 
-	.ym-col1 .ym-cbox { padding: 0 0.75em 0 1.5em; }
-	.ym-col3 .ym-cbox { padding: 0 20px 0 12px; }
+  .ym-col1 .ym-cbox {
+    padding: 0 0.75em 0 1.5em;
+  }
+  .ym-col3 .ym-cbox {
+    padding: 0 20px 0 12px;
+  }
 
-	.ym-gbox { padding: 0 1.5em 0 0; }
+  .ym-gbox {
+    padding: 0 1.5em 0 0;
+  }
 
 	/* skip links styling */
 	.ym-skiplinks {

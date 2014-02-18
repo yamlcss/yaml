@@ -19,10 +19,14 @@
 	*/
 
 	.ym-form,
-	.ym-form fieldset { overflow: hidden; }
+  .ym-form fieldset {
+    overflow: hidden;
+  }
 
 	.ym-form {
-		div { position: relative; }
+    div {
+      position: relative;
+    }
 
 		label,
 		.ym-label,
@@ -41,7 +45,9 @@
 		}
 
 		input,
-		textarea { cursor: text; }
+    textarea {
+      cursor: text;
+    }
 
 		.ym-fbox-check input,
 		input[type="image"],

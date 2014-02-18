@@ -14,11 +14,15 @@
 
 	.ym-hlist {
 		// changee direction for parent element as workaround for IE7
-		* { direction: ltr !important; }
+    * {
+      direction: ltr !important;
+    }
 
 		// change back direction to RTL for child elements
 		a,
-		strong { direction: rtl !important; }
+    strong {
+      direction: rtl !important;
+    }
 
 	  	ul {
 			position: relative;

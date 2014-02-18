@@ -121,8 +121,13 @@
 		}
 	}
 
-	*+html .jquery_tabs { zoom: 1; width: auto; }
-	.jquery_tabs * { zoom: 1; }
+  *+html .jquery_tabs {
+    zoom: 1;
+    width: auto;
+  }
+  .jquery_tabs * {
+    zoom: 1;
+  }
 }
 
 /* Make tabs printable */

@@ -23,23 +23,53 @@
 		margin: 0 0 0 $ym-rounding-tolerance;
 	}
 
-	.ym-g20 { width: 20%; }
-	.ym-g40 { width: 40%; }
-	.ym-g60 { width: 60%; }
-	.ym-g80 { width: 80%; }
-	.ym-g25 { width: 25%; }
-	.ym-g33 { width: 33.333%; }
-	.ym-g50 { width: 50%; }
-	.ym-g66 { width: 66.666%; }
-	.ym-g75 { width: 75%; }
-	.ym-g38 { width: 38.2%; }
-	.ym-g62 { width: 61.8%; }
+  .ym-g20 {
+    width: 20%;
+  }
+  .ym-g40 {
+    width: 40%;
+  }
+  .ym-g60 {
+    width: 60%;
+  }
+  .ym-g80 {
+    width: 80%;
+  }
+  .ym-g25 {
+    width: 25%;
+  }
+  .ym-g33 {
+    width: 33.333%;
+  }
+  .ym-g50 {
+    width: 50%;
+  }
+  .ym-g66 {
+    width: 66.666%;
+  }
+  .ym-g75 {
+    width: 75%;
+  }
+  .ym-g38 {
+    width: 38.2%;
+  }
+  .ym-g62 {
+    width: 61.8%;
+  }
 
-	.ym-gbox { padding: 0 $ym-gbox-padding }
-	.ym-gbox-left { padding: 0 $ym-gbox-padding 0 0 }
-	.ym-gbox-right { padding: 0 0 0 $ym-gbox-padding }
+  .ym-gbox {
+    padding: 0 $ym-gbox-padding
+  }
+  .ym-gbox-left {
+    padding: 0 $ym-gbox-padding 0 0
+  }
+  .ym-gbox-right {
+    padding: 0 0 0 $ym-gbox-padding
+  }
 
-	.ym-equalize { overflow: hidden; }
+  .ym-equalize {
+    overflow: hidden;
+  }
 
 	.ym-equalize > [class*="ym-g"] {
 		display: table-cell;
