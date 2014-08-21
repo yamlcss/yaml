@@ -58,7 +58,7 @@
     text-decoration: none;
     outline: 0 none;
   }
-  .ym-hlist ul li.active {
+  .ym-hlist ul li.active a {
     background: #666;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.2em;
