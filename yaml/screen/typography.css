@@ -12,7 +12,7 @@
  * @version         4.1.2
  */
 @media all {
-  /*
+  /*!
   * @section global typography settings
   *
   * vertical rhythm settings (based on em-unit)
@@ -41,7 +41,7 @@
     font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
   }
 
-  /* font-size: 14px; */
+  /*! font-size: 14px; */
   body {
     font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
     font-size: 87.5%;
@@ -62,42 +62,42 @@
   }
 
   h1 {
-    /* font-size: 48px; */
+    /*! font-size: 48px; */
     font-size: 342.85714%;
     line-height: 0.875;
     margin: 0 0 0.4375em 0;
   }
 
   h2 {
-    /* font-size: 32px; */
+    /*! font-size: 32px; */
     font-size: 228.57143%;
     line-height: 1.3125;
     margin: 0 0 0.65625em 0;
   }
 
   h3 {
-    /* font-size: 24px; */
+    /*! font-size: 24px; */
     font-size: 171.42857%;
     line-height: 0.875;
     margin: 0 0 0.875em 0;
   }
 
   h4 {
-    /* font-size: 21px; */
+    /*! font-size: 21px; */
     font-size: 150%;
     line-height: 1;
     margin: 0 0 1em 0;
   }
 
   h5 {
-    /* font-size: 18px; */
+    /*! font-size: 18px; */
     font-size: 128.57143%;
     line-height: 1.16667;
     margin: 0 0 1.16667em 0;
   }
 
   h6 {
-    /* font-size: 14px; */
+    /*! font-size: 14px; */
     font-size: 100%;
     font-weight: bold;
     line-height: 1.5;
@@ -181,13 +181,13 @@
   }
 
   big {
-    /* font-size: 16px; */
+    /*! font-size: 16px; */
     font-size: 114.28571%;
     line-height: 1.3125;
   }
 
   small {
-    /* font-size: 12px; */
+    /*! font-size: 12px; */
     font-size: 85.71429%;
     line-height: 1.75;
   }
