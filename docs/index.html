@@ -1849,22 +1849,20 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 				<h5>Inline Form Elements</h5>
 				<form class="ym-form">
 					<div class="ym-fbox ym-fbox-text">
-					  <label for="edit-captcha-response">Captcha Example<span class="form-required ym-required" title="This is a required field.">*</span></label>
-					  <span class="field-prefix">1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
+					  <label for="edit-captcha-response">Captcha Example<sup class="ym-required" title="This field is mandatory.">*</sup></label>
+					  <span>1 + 5 = </span> <input class="ym-inline" type="text" id="edit-captcha-response" name="captcha_response" value="" size="4" maxlength="2" autocomplete="off">
 					  <p class="ym-message">Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.</p>
 					</div>
 				</form>
 
 				<pre class="htmlCode">
 &lt;div class="ym-fbox"&gt;
-  &lt;label for="captcha"&gt;Captcha Example&lt;span class="form-required ym-required" title="This is a required field."&gt;*&lt;/span&gt;&lt;/label&gt;
-  &lt;span class="field-prefix"&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
+  &lt;label for="captcha"&gt;Captcha Example&lt;sup class="ym-required" title="This field is mandatory."&gt;*&lt;/sup&gt;&lt;/label&gt;
+  &lt;span&gt;1 + 5 = &lt;/span&gt; &lt;input class="ym-inline" type="text" id="captcha" name="captcha" value="" size="4" maxlength="2" autocomplete="off"&gt;
   &lt;p class="ym-message"&gt;Please solve this mathmatic equation and enter the result, e.g. Enter 4 when asked for 1+3.&lt;/p&gt;
 &lt;/div&gt;</pre>
 				</div>
 				</div>
-
-
 	  		</div>
   		</div>
 
@@ -1891,7 +1889,6 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 			</div>
 			<div class="ym-g75 ym-gr">
 				<div class="ym-gbox-right">
-
 					<h4>Form Example</h4>
 					<form method="post" id="demo-form1" class="ym-form linearize-form">
 						<h6 class="ym-fbox-heading">Text Fields and Simple Select Boxes</h6>
@@ -2118,7 +2115,12 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
 								</div>
 							</div>
 						</div>
-
+						<div class="ym-fbox">
+							<span class="ym-label">Inline Form Elements</span>
+							<div class="ym-fbox-wrap">
+								<p>This is an inline element <input type="text" class="ym-inline" value="" size="5" /> within a paragraph.</p>
+							</div>
+						</div>
 						<h6 class="ym-fbox-heading">Text Areas, Checkboxes, Radio Buttons</h6>
 						<div class="ym-fbox ym-fbox-text">
 							<label for="message">Message</label>
@@ -2177,16 +2179,18 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
   .linearize-form label {
     float: none;
   }
+
   .linearize-form .ym-label,
   .linearize-form .ym-message,
-  .linearize-form .ym-fbox-text input,
+  .linearize-form input,
+  .linearize-form button,
   .linearize-form textarea,
   .linearize-form select {
     display: block;
     float: none;
     position: static;
     width: 100% !important;
-    margin: 0 !important;
+    margin-left: 0 !important;
   }
 
   /* linearize grids */
@@ -2199,9 +2203,13 @@ YAML provides CSS class <code>.ym-fbox-wrap</code> for this use case as a univer
     padding: 0 !important;
   }
 
-  /* reset columnar indention */
-  .linearize-form .ym-fbox-check input {
+  /* restore special form elements */
+  .linearize-form input[type="checkbox"],
+  .linearize-form input[type="radio"],
+  .linearize-form input[type="image"] {
     margin-left: 0 !important;
+    width: auto !important;
+    display: inline;
   }
 }</pre>
 <p class="cssCode">Add the class <code>.linearize-form</code> to any form, you want to be linearized. <span class="htmlCode">You should combine these settings with the linarization of your grid or column layout.</span></p>

@@ -12,7 +12,7 @@
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
  * @package         yaml
- * @version         4.1.0
+ * @version         4.1.2
  */
 @media all {
   /**
@@ -83,7 +83,6 @@
   figure,
   footer,
   header,
-  hgroup,
   main,
   nav,
   section,
@@ -397,8 +396,8 @@
   * | /form                         |
   * |-------------------------------|
   *
-  * (en) Styling of forms where both label and input/select/textarea are styled with display:block;
-  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+  * (en) Styling of forms where both label and input/select/textarea are styled with display: block;
+  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display: block; gestaltet werden
   */
   .ym-form,
   .ym-form fieldset {
@@ -415,6 +414,9 @@
     line-height: 1.5;
     display: block;
   }
+  .ym-form .ym-message {
+    clear: both;
+  }
   .ym-form .ym-fbox-check label {
     display: inline;
   }
@@ -423,6 +425,7 @@
     cursor: text;
   }
   .ym-form .ym-fbox-check input,
+  .ym-form input[type="image"],
   .ym-form input[type="radio"],
   .ym-form input[type="checkbox"],
   .ym-form select,
@@ -480,11 +483,19 @@
   .ym-form .ym-fbox-check input,
   .ym-form input[type="radio"],
   .ym-form input[type="checkbox"] {
-    width: auto;
     display: inline;
-    width: auto;
     margin-left: 0;
     margin-right: 0.5ex;
+    width: auto;
+    height: auto;
+  }
+  .ym-form input[type="image"] {
+    border: 0;
+    display: inline;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
   .ym-form label,
   .ym-form .ym-label {
@@ -499,6 +510,8 @@
   }
   .ym-form .ym-inline {
     display: inline-block;
+    float: none;
+    margin-right: 0;
     width: auto;
     vertical-align: baseline;
   }
@@ -513,6 +526,9 @@
   .ym-fbox-wrap textarea,
   .ym-fbox-wrap select {
     width: 100%;
+  }
+  .ym-fbox-wrap input[type="image"] {
+    width: auto;
   }
   .ym-fbox-wrap input[type="radio"],
   .ym-fbox-wrap input[type="checkbox"] {
@@ -571,6 +587,9 @@
   .ym-columnar .ym-fbox-wrap {
     margin-left: 30%;
     margin-right: -3px;
+  }
+  .ym-columnar .ym-fbox-wrap .ym-message {
+    margin-left: 0%;
   }
   .ym-columnar .ym-fbox-wrap label {
     float: none;
@@ -655,8 +674,8 @@
   /**
   * @section print adjustments for core modules
   *
-  * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
-  * (de) Floats in Grids einschließen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  * (en) float containment for grids. Uses display: table to avoid bugs in FF & IE
+  * (de) Floats in Grids einschließen. Verwendet display: table, um Darstellungsprobleme im FF & IE zu vermeiden
   *
   * @bugfix
   * @since     3.0

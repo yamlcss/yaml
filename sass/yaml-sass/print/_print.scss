@@ -6,7 +6,7 @@
 	* @section basic layout preparation
 	*/
 
-	/* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
+	/* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers */
 	/* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
 	body {
 		font-size: $ym-print-fontsize;
@@ -17,7 +17,7 @@
 	/* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
 	nav,
 	.ym-searchform {
-		display:none;
+		display: none;
 	}
 
 	/*------------------------------------------------------------------------------------------------------*/
@@ -30,7 +30,7 @@
 	h4,
 	h5,
 	h6 {
-		page-break-after:avoid;
+		page-break-after: avoid;
 	}
 
 	@if $ym-print-abbreviation == true {
@@ -41,7 +41,7 @@
 
 		abbr[title]:after,
 		acronym[title]:after {
-			content:'(' attr(title) ')';
+			content: '(' attr(title) ')';
 		}
 	}
 
@@ -52,10 +52,10 @@
 	/* (de) optionale Ausgabe der URLs von Hyperlinks */
 
 		a[href]:after {
-			content:" <URL:"attr(href)">";
-			color:#444;
-			background:inherit;
-			font-style:italic;
+			content: " <URL:"attr(href)">";
+			color: #444;
+			background: inherit;
+			font-style: italic;
 		}
 	}
 }

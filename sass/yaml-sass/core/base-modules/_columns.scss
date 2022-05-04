@@ -13,9 +13,9 @@
 		@include ym-contain(dt);
 	}
 
-	.ym-col1 { float:left; width:$ym-column-width; }
-	.ym-col2 { float:right; width:$ym-column-width; }
-	.ym-col3 { width:auto; margin:0 $ym-column-width; }
+	.ym-col1 { float: left; width: $ym-column-width; }
+	.ym-col2 { float: right; width: $ym-column-width; }
+	.ym-col3 { width: auto; margin: 0 $ym-column-width; }
 
 	.ym-cbox { padding: 0 $ym-cbox-padding }
 	.ym-cbox-left { padding: 0 $ym-cbox-padding 0 0 }
@@ -23,5 +23,5 @@
 
 	/* (en) IE-Clearing: Only used in Internet Explorer, switched on in iehacks.css */
 	/* (de) IE-Clearing: Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
-	.ym-ie-clearing { display:none; }
+	.ym-ie-clearing { display: none; }
 }

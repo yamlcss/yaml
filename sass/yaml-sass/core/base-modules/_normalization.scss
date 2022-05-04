@@ -5,12 +5,12 @@
 
 	/* (en) Global reset of paddings and margins for all HTML elements */
 	/* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
-	* { margin:0; padding:0; }
+	* { margin: 0; padding: 0; }
 
 	/* (en) Correction: margin/padding reset caused too small select boxes. */
 	/* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
-	option { padding-left:0.4em; } // LTR
-	select { padding:1px; }
+	option { padding-left: 0.4em; } // LTR
+	select { padding: 1px; }
 
 	/*
 	* (en) Global fix of the Italics bugs in IE 5.x and IE 6
@@ -22,7 +22,7 @@
 	* @valid      yes
 	*/
 
-	* html body * { overflow:visible; }
+	* html body * { overflow: visible; }
 
 	/*
 	* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser
@@ -32,11 +32,11 @@
 	*      Vorgabe der Standardfarben und Textausrichtung
 	*/
 	body {
-		font-size:100%;
+		font-size: 100%;
 
-		background:#fff;
-		color:#000;
-		text-align:left; // LTR
+		background: #fff;
+		color: #000;
+		text-align: left; // LTR
 	}
 
 	/* (en) avoid visible outlines on DIV and h[x] elements in Webkit browsers */
@@ -60,7 +60,6 @@
 	figure,
 	footer,
 	header,
-	hgroup,
 	main,
 	nav,
 	section,
@@ -132,23 +131,23 @@
 	/* (en) Clear borders for <fieldset> and <img> elements */
 	/* (de) Rahmen für <fieldset> und <img> Elemente löschen */
 	fieldset,
-	img { border:0 solid; }
+	img { border: 0 solid; }
 
 	/* (en) new standard values for lists, blockquote, cite and tables */
 	/* (de) Neue Standardwerte für Listen, Zitate und Tabellen */
 	ul,
 	ol,
-	dl { margin:0 0 1em 1em; } // LTR
+	dl { margin: 0 0 1em 1em; } // LTR
 
 	li {
-		line-height:1.5em;
-		margin-left:0.8em; // LTR
+		line-height: 1.5em;
+		margin-left: 0.8em; // LTR
 	}
 
-	dt { font-weight:bold; }
-	dd { margin:0 0 1em 0.8em; } // LTR
+	dt { font-weight: bold; }
+	dd { margin: 0 0 1em 0.8em; } // LTR
 
-	blockquote { margin:0 0 1em 0.8em; } // LTR
+	blockquote { margin: 0 0 1em 0.8em; } // LTR
 	q { quotes: none; }
 
 	blockquote:before,
@@ -156,7 +155,7 @@
 	q:before,
 	q:after {
 		content: '';
-		content:none;
+		content: none;
 	}
 
 	table {

@@ -11,7 +11,7 @@
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
  * @package         yaml
- * @version         4.1.0
+ * @version         4.1.2
  * @appdef yaml
  */
 @media all {
@@ -22,7 +22,7 @@
   * @debug
   * @app-yaml-default disabled
   */
-  /* body { background:#0f0; background-image:none; }	 */
+  /* body { background: #0f0; background-image: none; }	 */
   /**
   * Correct inline positioning for unknown HTML5 elements in IE 6 & 7
   *
@@ -50,7 +50,7 @@
   * (de) HTML5 - Standard Eigenschaften für Media-Elemente
   */
   article, aside, details, figcaption, figure,
-  footer, header, main, hgroup, nav, section {
+  footer, header, main, nav, section {
     zoom: 1;
   }
 
@@ -97,8 +97,8 @@
 
   /*------------------------------------------------------------------------------------------------------*/
   /**
-  * (en) Stability fixes with 'position:relative'
-  * (de) Stabilitätsverbesserungen durch 'position:relative'
+  * (en) Stability fixes with 'position: relative'
+  * (de) Stabilitätsverbesserungen durch 'position: relative'
   *
   * Essential for correct scaling in IE7 (body). IE5 must get static positioned body instead.
   * Helpful to fix several possible problems in older IE versions (#main).
@@ -294,7 +294,7 @@
     display: inline !important;
     width: auto !important;
     background: transparent !important;
-    border: 0 none  !important;
+    border: 0 none !important;
     padding: 0 !important;
   }
   * html .ym-form .ym-fbox-wrap .ym-fbox-check input {
@@ -304,12 +304,12 @@
   /*------------------------------------------------------------------------------------------------------*/
   /**
   * (en) Workaround for 'collapsing margin at #col3' when using CSS-property clear
-  *		 Left margin of #col3 collapses when using clear:both in 1-3-2 (or 2-3-1) layout and right column is the
+  *		 Left margin of #col3 collapses when using clear: both in 1-3-2 (or 2-3-1) layout and right column is the
   *		 longest and left column is the shortest one. For IE6 and IE7 a special workaround was developed
   *		 in YAML.
   *
   * (de) Workaround für 'kollabierenden Margin an #col3' bei Verwendung der CSS-Eigenschaft clear
-  *		 Der linke Margin von #col3 kollabiert bei der Verwendung von clear:both im 1-3-2 (oder 2-3-1) Layout
+  *		 Der linke Margin von #col3 kollabiert bei der Verwendung von clear: both im 1-3-2 (oder 2-3-1) Layout
   *		 wenn gleichzeitig die linke Spalte die kürzeste und die rechte die längste ist. Im IE6 und IE7 lässt
   *		 sich der Bug durch eine speziell für YAML entwickelten Workaround umgehen.
   *

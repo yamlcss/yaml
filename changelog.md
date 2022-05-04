@@ -1,4 +1,58 @@
-# Version 4.1.0
+# Version 4.1.2  (13-07-28)
+This is the second maintenance release for YAML 4.1.x path. Thanks to Alexander Haß and MDMueller for their contributions.
+
+## Bug Fixes
+### Forms Module
+* added support for input[type="image"] elements to forms module (issue #28)
+* rearranged form styles for RTL support to avoid specificity conflicts
+* corrected several small problems in RTL mode in forms module, especially in columnar view. (issue #30)
+
+### Navigation Module
+* removed round corners of search field in hlist navigation on iOS (issue #31)
+
+## Code Changes
+### Forms Module
+* added "clear:both" for .ym-message class to avoid conflicts when messages are placed behind the form field in the markup. (issue #35)
+
+### Sass
+* several improvements were made to the gradient generator, including a fallback for oldIE browsers.
+
+# Version 4.1.1  (13-06-27)
+This is the first maintenance release for YAML 4.1.x path
+
+## General
+* added RTL support for form theme: gray-theme.css
+
+## Bug Fixes
+### Normalization Module
+* removed &lt;hgroup&gt; element from normalization module (removed from the HTML5 specs)
+
+### Forms Module
+* fixed a wrong margins between .ym-fbox siblings - #6
+* fixed missing button adjustments in form linearization - #9
+* fixed button style for search button in hlist navigation on iOS - #10
+* fixed a problem with .ym-inline elements in columnar mode, issue #20
+* fixed a problem with .ym-message in columnar mode, issue #21
+
+### Navigation Module
+* fixed border for navigation title in vlist - #8
+
+### Misc
+* fixed several typos in CSS comments
+* deleted some irrelevant styles from rtl-files - #15
+
+## Code Changes
+### Forms Module
+* added new custom button class .ym-reply - #7
+* added rtl-support for forms: yaml/add-ons/rtl-support/forms/gray-theme-rtl.css - #11, #12
+
+### Add-ons
+* reduced file size of microformats icons and base64 inline images
+
+### Demos
+* unified HTML structure for the seach field in RTL demo: rtl-support.html #16
+
+# Version 4.1.0 (13-06-11)
 A big thanks goes to the following contributors for their help on this version:
 
   * Jens Grochtdreis (@flocke)

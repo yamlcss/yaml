@@ -9,7 +9,7 @@
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
  * @package         yaml
- * @version         4.1.0
+ * @version         4.1.2
  */
 @media screen {
   .ym-form select {
@@ -29,6 +29,11 @@
   .ym-button:before {
     float: right;
     margin: 0 -1em 0 1em;
+    border-radius: 0;
+    border-top-right-radius: 0.15em;
+    border-bottom-right-radius: 0.15em;
+    -webkit-box-shadow: -1px 0 0 rgba(0, 0, 0, 0.5), -2px 0 0 rgba(255, 255, 255, 0.5);
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.5), -2px 0 0 rgba(255, 255, 255, 0.5);
   }
 
   /* ie6 support styles - redefined buttons, because of missing support for attribute selectors */

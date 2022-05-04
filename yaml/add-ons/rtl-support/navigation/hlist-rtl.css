@@ -11,7 +11,7 @@
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
  * @package         yaml
- * @version         4.1.0
+ * @version         4.1.2
  */
 @media all {
   /**
@@ -23,10 +23,6 @@
   * @css-for    IE 5.x/Win, IE6, IE7
   * @valid      yes
   */
-  .ym-hlist {
-    /* changee direction for parent element as workaround for IE7 */
-    /* change back direction to RTL for child elements */
-  }
   .ym-hlist * {
     direction: ltr !important;
   }

@@ -4,9 +4,9 @@
 
 // BOX SIZING
 @mixin ym-box-sizing($type: border-box) {
-	-webkit-box-sizing:	$type;
-	-moz-box-sizing:	$type;
-	box-sizing:			$type;
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
 }
 
 // BOX SHADOW
@@ -34,11 +34,13 @@
 	// oldie  ==> only IE-filters for oldIE (versions before 9)
 	// both   ==> both CSS3 and oldIE versions are printed
 
+// $fallback ==> fallback color code for browsers that don't support gradients (oldIE)
+
 // As there is a default direction there is no use for a fourth if-case.
 
-@mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both) {
+@mixin ym-linear-gradient($direction: "to bottom", $start-color: #eee, $end-color: #ccc, $output: both, $fallback: $start-color) {
 	$old-direction: top;
-	$very-old-direction:"left top, left bottom";
+	$very-old-direction: "left top, left bottom";
 	$ie-direction: 0;
 
 	@if $direction == "to right" {
@@ -48,14 +50,15 @@
 	}
 
 	@if $output != "oldie" {
-		background: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
-		background:  -webkit-linear-gradient($old-direction, $start-color,$end-color);
-		background: 	-moz-linear-gradient($old-direction, $start-color,$end-color);
-		background: 	 -ms-linear-gradient($old-direction, $start-color,$end-color);
-		background:    		 linear-gradient($direction, $start-color,$end-color);
+		background-image: -webkit-gradient(linear, #{$very-old-direction}, color-stop(0%,$start-color), color-stop(100%,$end-color));
+		background-image: -webkit-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: -moz-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: -ms-linear-gradient($old-direction, $start-color,$end-color);
+		background-image: unquote("linear-gradient(#{$direction}, #{$start-color},#{$end-color})");
 	}
 
 	@if $output != "css3" {
+		background-color: $fallback;
 		$iecolor1: ie-hex-str($start-color);
 		$iecolor2: ie-hex-str($end-color);
 		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=#{$ie-direction}, startColorstr='#{$iecolor1}', endColorstr='#{$iecolor2}');
@@ -131,7 +134,7 @@
 @mixin ym-linearize-forms {
 	// linearization for form module
 	& label {
-		float:none;
+		float: none;
 	}
 
 	& .ym-label,
@@ -159,7 +162,8 @@
 
 	// reset columnar settings
 	& input[type="checkbox"],
-	& input[type="radio"] {
+	& input[type="radio"],
+	& input[type="image"] {
 		margin-left: 0 !important;
 		width: auto !important;
 		display: inline;
@@ -171,17 +175,17 @@
 //
 @mixin ym-clearfix {
 	&:before {
-		content:"";
-		display:table;
+		content: "";
+		display: table;
 	}
 
 	&:after {
-		clear:both;
-		content:".";
-		display:block;
-		font-size:0;
-		height:0;
-		visibility:hidden;
+		clear: both;
+		content: ".";
+		display: block;
+		font-size: 0;
+		height: 0;
+		visibility: hidden;
 	}
 
 	// IE < 8
@@ -227,13 +231,31 @@
 		margin-left: $margin-left;
 		margin-right: $margin-right;
 	}
-	[class*="ym-push-"],
-	[class*="ym-pull-"] { position:relative; }
 
+	// generate width classes ...
 	@for $i from 1 through $columns {
 		.ym-#{$prefix}-#{$i} { width: $column_width * $i; }
 	}
 
+	// IE7+ compatible code for relative positioning ...
+	// [class*="ym-push-"],
+	// [class*="ym-pull-"] { position: relative; }
+
+	// IE6 compatible code generation ...
+	%positioning {
+		position: relative;
+	}
+
+	@for $i from 1 through $columns - 1 {
+		.ym-push-#{$i} {
+			@extend %positioning;
+		}
+		.ym-pull-#{$i} {
+			@extend %positioning;
+		}
+	}
+
+	// generate push/pull steps ...
 	@for $i from 1 through $columns - 1 {
 		.ym-push-#{$i} { left: $column_width * $i; }
 	}

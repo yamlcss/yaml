@@ -13,16 +13,16 @@
 	*/
 
 	.ym-hlist {
-		/* changee direction for parent element as workaround for IE7 */
-		* { direction:ltr !important; }
+		// changee direction for parent element as workaround for IE7
+		* { direction: ltr !important; }
 
-		/* change back direction to RTL for child elements */
+		// change back direction to RTL for child elements
 		a,
-		strong { direction:rtl !important; }
+		strong { direction: rtl !important; }
 
 	  	ul {
-			position:relative;
-			float:right;
+			position: relative;
+			float: right;
 			// (en) Left margin of the first button
 			// (de) Abstand des ersten Buttons vom linken Rand
 			margin-left: 0; // Reset LTR
@@ -30,13 +30,13 @@
 
 		ul li {
 			float: right;
-			text-align:right !important;
+			text-align: right !important;
 		}
 	}
 
 	/* change back direction to RTL for child elements */
 	.ym-searchform {
-		direction:rtl !important;
-		float:left;
+		direction: rtl !important;
+		float: left;
 	}
 }

@@ -11,7 +11,7 @@
  *                  YAML-CDL (http://www.yaml.de/license.html)
  * @link            http://www.yaml.de
  * @package         yaml
- * @version         4.1.0
+ * @version         4.1.2
  */
 @media all {
   /* menu title */
@@ -20,7 +20,7 @@
     padding-right: 10%;
   }
 
-  /* 4 navigation kevels defined */
+  /* 4 navigation levels defined */
   .ym-vlist {
     text-align: right;
   }
